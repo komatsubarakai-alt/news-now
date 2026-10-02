@@ -1,6 +1,8 @@
 name: Sapporo News Collector
+
 permissions:
   contents: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -35,10 +37,44 @@ jobs:
           print("札幌ニュースを取得しました")
           PY
 
+      - name: Convert news to JSON
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          import json
+          import html
+
+          tree = ET.parse("sapporo_news.xml")
+          root = tree.getroot()
+
+          news = []
+
+          for item in root.findall(".//item"):
+              title = item.findtext("title", "")
+              link = item.findtext("link", "")
+              pub_date = item.findtext("pubDate", "")
+              description = item.findtext("description", "")
+
+              news.append({
+                  "title": html.unescape(title),
+                  "url": link,
+                  "published": pub_date,
+                  "description": html.unescape(description)
+              })
+
+          with open("news.json", "w", encoding="utf-8") as f:
+              json.dump(news, f, ensure_ascii=False, indent=2)
+
+          print(f"{len(news)}件のニュースを整理しました")
+          PY
+
       - name: Save news data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sapporo_news.xml
+
+          git add sapporo_news.xml news.json
+
           git commit -m "Update Sapporo news" || echo "No changes"
+
           git push
