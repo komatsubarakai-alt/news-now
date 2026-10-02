@@ -36,7 +36,7 @@ jobs:
 
           print("札幌ニュースを取得しました")
           PY
-
+          
       - name: Convert news to JSON
         run: |
           python - <<'PY'
@@ -67,7 +67,11 @@ jobs:
 
           print(f"{len(news)}件のニュースを整理しました")
           PY
-
+          
+      - name: Group news
+        run: |
+          python news_grouping.py
+          
       - name: Save news data
         run: |
           git config user.name "github-actions[bot]"
