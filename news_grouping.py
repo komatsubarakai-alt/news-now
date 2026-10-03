@@ -14,7 +14,7 @@ for article in news:
         title
     )
 
-　　key = "・".join(words[:3]) if words else "その他"
+　　key = "-".join(words[:3]) if words else "その他"
 
     if key not in groups:
         groups[key] = []
