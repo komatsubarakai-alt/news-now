@@ -71,13 +71,92 @@ jobs:
       - name: Group news
         run: |
           python news_grouping.py
+
+      - name: AI news grouping
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          with open("ai_candidates.json", "r", encoding="utf-8") as f:
+              candidates = json.load(f)
+
+          results = []
+
+          for candidate in candidates:
+              prompt = f"""
+          次の2つのニュース記事が、同じ事件・出来事について報じているか判定してください。
+
+          【記事A】
+          タイトル: {candidate["article_a"]["title"]}
+          公開日時: {candidate["article_a"]["published"]}
+
+          【記事B】
+          タイトル: {candidate["article_b"]["title"]}
+          公開日時: {candidate["article_b"]["published"]}
+
+          以下のJSONだけを返してください。
+          {{
+            "relation": "same_event / related / different",
+            "event_name": "事件・出来事の短い名前",
+            "confidence": "high / medium / low"
+          }}
+
+          same_event = 同じ事件・出来事
+          related = 関連はあるが別の出来事
+          different = 無関係
+          """
+
+              data = json.dumps({
+                  "model": "gpt-5.4-mini",
+                  "input": prompt
+              }).encode("utf-8")
+
+              request = urllib.request.Request(
+                  "https://api.openai.com/v1/responses",
+                  data=data,
+                  headers={
+                      "Content-Type": "application/json",
+                      "Authorization": "Bearer " + os.environ["OPENAI_API_KEY"]
+                  },
+                  method="POST"
+              )
+
+              try:
+                  with urllib.request.urlopen(request, timeout=60) as response:
+                      response_data = json.loads(response.read().decode("utf-8"))
+
+                  result_text = response_data["output"][0]["content"][0]["text"]
+
+                  results.append({
+                      "article_a": candidate["article_a"],
+                      "article_b": candidate["article_b"],
+                      "ai_result": result_text
+                  })
+
+              except Exception as e:
+                  print("AI判定エラー:", e)
+
+          with open("ai_results.json", "w", encoding="utf-8") as f:
+              json.dump(
+                  results,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print(f"{len(results)}組のニュースをAI判定しました")
+          PY
           
       - name: Save news data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sapporo_news.xml news.json news_groups.json ai_candidates.json
+          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json
 
           git commit -m "Update Sapporo news" || echo "No changes"
 
