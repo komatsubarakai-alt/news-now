@@ -69,7 +69,7 @@ for i, j in combinations(range(len(article_keywords)), 2):
             score += 1
 
     # 共通語が1つだけでも、長い固有性の高い言葉なら候補にする
-    if score < 2:
+    if score < 1:
         continue
 
     candidates.append({
