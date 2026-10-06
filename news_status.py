@@ -8,6 +8,38 @@ with open("news_groups_ai.json", "r", encoding="utf-8") as f:
 
 
 statuses = []
+VALID_CATEGORIES = {
+    "事件・事故",
+    "災害",
+    "政策・制度",
+    "企業・組織",
+    "地域・インフラ",
+    "対象外"
+}
+
+
+def normalize_category(category):
+    category = category.strip()
+
+    if category in VALID_CATEGORIES:
+        return category
+
+    if "インフラ" in category or "都市" in category or "再開発" in category:
+        return "地域・インフラ"
+
+    if "政策" in category or "制度" in category or "行政" in category:
+        return "政策・制度"
+
+    if "企業" in category or "組織" in category:
+        return "企業・組織"
+
+    if "災害" in category:
+        return "災害"
+
+    if "事件" in category or "事故" in category:
+        return "事件・事故"
+
+    return "対象外"
 
 
 for group in groups:
@@ -130,7 +162,9 @@ low = 単発ニュースで終わる可能性が高い
             "event_name": event_name,
             "article_count": len(articles),
                         "category":
-                ai_status.get("category", "対象外"),
+    normalize_category(
+        ai_status.get("category", "対象外")
+    ),
             "tracking_value":
                 ai_status.get("tracking_value", "low"),
             "current_stage":
