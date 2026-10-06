@@ -80,17 +80,49 @@ for i, j in combinations(range(len(article_keywords)), 2):
     })
 
 
-# AIに送る候補を重要度順に並べる
-candidates.sort(
+# 各記事から有力な候補を均等に残す
+candidates_by_article = {}
+
+for candidate in candidates:
+    url_a = candidate["article_a"].get("url", "")
+    url_b = candidate["article_b"].get("url", "")
+
+    candidates_by_article.setdefault(url_a, []).append(candidate)
+    candidates_by_article.setdefault(url_b, []).append(candidate)
+
+
+selected = []
+seen_pairs = set()
+
+# 各記事につき上位3候補まで残す
+for article_candidates in candidates_by_article.values():
+
+    article_candidates.sort(
+        key=lambda x: x["score"],
+        reverse=True
+    )
+
+    for candidate in article_candidates[:3]:
+
+        url_a = candidate["article_a"].get("url", "")
+        url_b = candidate["article_b"].get("url", "")
+
+        pair_key = tuple(sorted([url_a, url_b]))
+
+        if pair_key not in seen_pairs:
+            seen_pairs.add(pair_key)
+            selected.append(candidate)
+
+
+# 最終的な候補数を抑える
+selected.sort(
     key=lambda x: x["score"],
     reverse=True
 )
 
+MAX_CANDIDATES = 150
 
-# 多すぎる場合は上位100組まで
-MAX_CANDIDATES = 100
-
-candidates = candidates[:MAX_CANDIDATES]
+candidates = selected[:MAX_CANDIDATES]
 
 
 with open("ai_candidates.json", "w", encoding="utf-8") as f:
