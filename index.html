@@ -218,6 +218,54 @@ async function loadNews() {
 status.textContent =
   visibleGroups.length + "件の出来事を表示しています";
 
+    const filters = document.createElement("div");
+filters.id = "category-filters";
+filters.style.display = "flex";
+filters.style.gap = "8px";
+filters.style.flexWrap = "wrap";
+filters.style.margin = "16px 0 20px";
+
+status.insertAdjacentElement("afterend", filters);
+
+    const categories = [
+  "すべて",
+  "事件・事故",
+  "災害",
+  "政策・制度",
+  "企業・組織",
+  "地域・インフラ"
+];
+
+categories.forEach(categoryName => {
+  const button = document.createElement("button");
+  button.textContent = categoryName;
+  button.style.padding = "7px 12px";
+  button.style.border = "1px solid #e4e7ec";
+  button.style.borderRadius = "999px";
+  button.style.background = categoryName === "すべて" ? "#2563eb" : "#ffffff";
+  button.style.color = categoryName === "すべて" ? "#ffffff" : "#475467";
+  button.style.fontWeight = "700";
+  button.style.fontSize = "12px";
+  button.style.cursor = "pointer";
+
+  button.addEventListener("click", () => {
+  const cards = newsArea.querySelectorAll(".event");
+
+  cards.forEach(card => {
+    if (
+      categoryName === "すべて" ||
+      card.dataset.category === categoryName
+    ) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+  
+  filters.appendChild(button);
+});
+
     groups.forEach((group, index) => {
 
       if (
@@ -227,6 +275,7 @@ status.textContent =
 
       const card = document.createElement("section");
       card.className = "event";
+      card.dataset.category = group.category;
 
       const label = document.createElement("div");
       label.className = "event-label";
