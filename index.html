@@ -222,6 +222,13 @@ async function loadNews() {
       label.className = "event-label";
       label.textContent = "追跡中";
 
+      const category = document.createElement("span");
+category.style.marginLeft = "8px";
+category.style.fontSize = "12px";
+category.style.fontWeight = "700";
+category.style.color = "#667085";
+category.textContent = group.category || "対象外";
+
       const title = document.createElement("h2");
       title.textContent =
         group.event_name || "名称未設定";
@@ -292,6 +299,7 @@ statusBox.innerHTML = `
       });
 
       card.appendChild(label);
+      card.appendChild(category);
       card.appendChild(title);
       card.appendChild(count);
       card.appendChild(statusBox);
