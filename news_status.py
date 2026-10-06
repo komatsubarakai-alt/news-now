@@ -3,7 +3,7 @@ import os
 import urllib.request
 
 
-with open("news_groups_ai.json", "r", encoding="utf-8") as f:
+with open("news_groups_merged.json", "r", encoding="utf-8") as f:
     groups = json.load(f)
 
 
