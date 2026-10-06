@@ -210,10 +210,20 @@ async function loadNews() {
 
     const groups = await response.json();
 
-    status.textContent =
-      groups.length + "件の出来事を表示しています";
+    const visibleGroups = groups.filter(group =>
+  group.category !== "対象外" &&
+  group.tracking_value !== "low"
+);
+
+status.textContent =
+  visibleGroups.length + "件の出来事を表示しています";
 
     groups.forEach((group, index) => {
+
+      if (
+  group.category === "対象外" ||
+  group.tracking_value === "low"
+) return;
 
       const card = document.createElement("section");
       card.className = "event";
@@ -223,11 +233,15 @@ async function loadNews() {
       label.textContent = "追跡中";
 
       const category = document.createElement("span");
-category.style.marginLeft = "8px";
-category.style.fontSize = "12px";
-category.style.fontWeight = "700";
-category.style.color = "#667085";
 category.textContent = group.category || "対象外";
+category.style.display = "inline-block";
+category.style.marginLeft = "8px";
+category.style.padding = "4px 8px";
+category.style.borderRadius = "999px";
+category.style.fontSize = "11px";
+category.style.fontWeight = "700";
+category.style.background = "#f2f4f7";
+category.style.color = "#475467";
 
       const title = document.createElement("h2");
       title.textContent =
