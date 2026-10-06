@@ -154,13 +154,19 @@ jobs:
       - name: Create AI news groups
         run: |
           python news_ai_grouping.py
+
+      - name: Create news status
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python news_status.py
           
       - name: Save news data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json
+          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_status.json
 
           git commit -m "Update Sapporo news" || echo "No changes"
 
