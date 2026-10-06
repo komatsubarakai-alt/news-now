@@ -70,7 +70,7 @@ jobs:
           
       - name: Group news
         run: |
-          python news_grouping.py
+          python ai_candidates.py
 
       - name: AI news grouping
         env:
