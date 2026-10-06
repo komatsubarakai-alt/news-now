@@ -164,6 +164,12 @@ jobs:
         run: |
           python news_ai_grouping.py
 
+      - name: Merge follow-up news groups
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python news_group_merge.py
+
       - name: Create news status
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
