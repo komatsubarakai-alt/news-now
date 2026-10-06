@@ -47,8 +47,21 @@ for result in results:
 
     ai_result = result.get("ai_result", "")
 
-    if '"same_event"' in ai_result:
-        union(url_a, url_b)
+    try:
+        cleaned = ai_result.strip()
+
+        if cleaned.startswith("```"):
+            cleaned = cleaned.replace("```json", "")
+            cleaned = cleaned.replace("```", "")
+            cleaned = cleaned.strip()
+
+        ai_data = json.loads(cleaned)
+
+        if ai_data.get("relation") == "same_event":
+            union(url_a, url_b)
+
+    except Exception:
+        pass
 
 
 # グループを作成
@@ -71,41 +84,53 @@ for group_urls in groups.values():
     articles = []
     event_names = []
 
+    group_url_set = set(group_urls)
+
+    # このグループに属する記事を集める
     for result in results:
 
-        ai_result = result.get("ai_result", "")
+        article_a = result["article_a"]
+        article_b = result["article_b"]
 
-        # AIが返したJSON文字列を読み取る
-        try:
-            cleaned = ai_result.strip()
+        url_a = article_a["url"]
+        url_b = article_b["url"]
 
-            if cleaned.startswith("```"):
-                cleaned = cleaned.replace("```json", "")
-                cleaned = cleaned.replace("```", "")
-                cleaned = cleaned.strip()
+        # 2記事とも同じグループに属している場合だけ
+        # この判定結果を使う
+        if url_a in group_url_set and url_b in group_url_set:
 
-            ai_data = json.loads(cleaned)
+            ai_result = result.get("ai_result", "")
 
-            if ai_data.get("relation") == "same_event":
-                event_name = ai_data.get("event_name", "")
+            try:
+                cleaned = ai_result.strip()
 
-                if event_name:
-                    event_names.append(event_name)
+                if cleaned.startswith("```"):
+                    cleaned = cleaned.replace("```json", "")
+                    cleaned = cleaned.replace("```", "")
+                    cleaned = cleaned.strip()
 
-        except Exception:
-            pass
+                ai_data = json.loads(cleaned)
 
+                if ai_data.get("relation") == "same_event":
 
-        for key in ["article_a", "article_b"]:
+                    event_name = ai_data.get("event_name", "")
 
-            article = result[key]
+                    if event_name:
+                        event_names.append(event_name)
 
-            if article["url"] in group_urls:
+            except Exception:
+                pass
+
+        # 記事を追加
+        for article in [article_a, article_b]:
+
+            if article["url"] in group_url_set:
+
                 if article not in articles:
                     articles.append(article)
 
 
-    # もっとも多く出てきた事件名を採用
+    # このグループ自身の判定結果だけからイベント名を決める
     if event_names:
         event_name = Counter(event_names).most_common(1)[0][0]
     else:
@@ -113,6 +138,7 @@ for group_urls in groups.values():
 
 
     if len(articles) >= 2:
+
         output.append({
             "event_name": event_name,
             "article_count": len(articles),
