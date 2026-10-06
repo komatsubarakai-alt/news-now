@@ -249,6 +249,15 @@ categories.forEach(categoryName => {
   button.style.cursor = "pointer";
 
   button.addEventListener("click", () => {
+
+  filters.querySelectorAll("button").forEach(btn => {
+  btn.style.background = "#ffffff";
+  btn.style.color = "#475467";
+});
+
+button.style.background = "#2563eb";
+button.style.color = "#ffffff";
+    
   const cards = newsArea.querySelectorAll(".event");
 
   cards.forEach(card => {
@@ -261,6 +270,12 @@ categories.forEach(categoryName => {
       card.style.display = "none";
     }
   });
+    const shownCount = newsArea.querySelectorAll(
+  '.event:not([style*="display: none"])'
+).length;
+
+status.textContent =
+  shownCount + "件の出来事を表示しています";
 });
   
   filters.appendChild(button);
