@@ -1,10 +1,10 @@
 import json
+from collections import Counter
 
 with open("ai_results.json", "r", encoding="utf-8") as f:
     results = json.load(f)
 
 
-# 記事をグループ化するための仕組み
 parent = {}
 
 
@@ -37,7 +37,7 @@ for result in results:
         parent[url_b] = url_b
 
 
-# AIが「同じ事件」と判断した記事を結合
+# AIが同じ事件と判断した記事を結合
 for result in results:
     article_a = result["article_a"]
     article_b = result["article_b"]
@@ -63,14 +63,39 @@ for url in parent:
     groups[root].append(url)
 
 
-# 分かりやすい形に整理
 output = []
+
 
 for group_urls in groups.values():
 
     articles = []
+    event_names = []
 
     for result in results:
+
+        ai_result = result.get("ai_result", "")
+
+        # AIが返したJSON文字列を読み取る
+        try:
+            cleaned = ai_result.strip()
+
+            if cleaned.startswith("```"):
+                cleaned = cleaned.replace("```json", "")
+                cleaned = cleaned.replace("```", "")
+                cleaned = cleaned.strip()
+
+            ai_data = json.loads(cleaned)
+
+            if ai_data.get("relation") == "same_event":
+                event_name = ai_data.get("event_name", "")
+
+                if event_name:
+                    event_names.append(event_name)
+
+        except Exception:
+            pass
+
+
         for key in ["article_a", "article_b"]:
 
             article = result[key]
@@ -79,8 +104,17 @@ for group_urls in groups.values():
                 if article not in articles:
                     articles.append(article)
 
+
+    # もっとも多く出てきた事件名を採用
+    if event_names:
+        event_name = Counter(event_names).most_common(1)[0][0]
+    else:
+        event_name = "名称未設定"
+
+
     if len(articles) >= 2:
         output.append({
+            "event_name": event_name,
             "article_count": len(articles),
             "articles": articles
         })
