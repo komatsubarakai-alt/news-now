@@ -1,4 +1,4 @@
-<!doctype html>
+う<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -201,7 +201,7 @@ async function loadNews() {
   try {
 
     const response = await fetch(
-      "news_groups_ai.json?time=" + Date.now()
+  "news_status.json?time=" + Date.now()
     );
 
     if (!response.ok) {
@@ -231,6 +231,33 @@ async function loadNews() {
       count.textContent =
         group.article_count + "件の関連記事";
 
+      const statusBox = document.createElement("div");
+statusBox.style.margin = "12px 0";
+statusBox.style.padding = "14px";
+statusBox.style.background = "#f8fafc";
+statusBox.style.borderRadius = "10px";
+statusBox.style.lineHeight = "1.7";
+
+statusBox.innerHTML = `
+  <div style="font-weight:800;margin-bottom:8px;">
+    📍 現在地：${group.current_stage || "確認中"}
+  </div>
+
+  <div style="font-size:14px;margin-bottom:12px;">
+    ${group.summary || ""}
+  </div>
+
+  <div style="font-size:13px;margin-bottom:8px;">
+    <strong>最新の動き</strong><br>
+    ${group.latest || "確認中"}
+  </div>
+
+  <div style="font-size:13px;">
+    <strong>🔭 次に注目</strong><br>
+    ${group.next_watch || "確認中"}
+  </div>
+`;
+      
       const articles = document.createElement("div");
       articles.className = "articles";
 
@@ -267,6 +294,7 @@ async function loadNews() {
       card.appendChild(label);
       card.appendChild(title);
       card.appendChild(count);
+      card.appendChild(statusBox);
       card.appendChild(articles);
 
       newsArea.appendChild(card);
