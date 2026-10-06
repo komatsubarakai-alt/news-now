@@ -1,160 +1,296 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ニュースの現在地｜江別市大学生集団暴行死事件</title>
-<style>
-:root{--bg:#f4f6f8;--card:#fff;--text:#17202a;--muted:#667085;--line:#e4e7ec;--accent:#2563eb;--red:#dc2626;--green:#15803d}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.7}
-header{background:#111827;color:#fff;padding:18px 16px;position:sticky;top:0;z-index:10}
-.header-inner{max-width:900px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.logo{font-weight:800;letter-spacing:.04em}.badge{font-size:12px;background:#374151;border-radius:999px;padding:4px 9px;color:#d1d5db}
-main{max-width:900px;margin:0 auto;padding:22px 14px 50px}
-.crumb{font-size:13px;color:var(--muted);margin-bottom:10px}
-h1{font-size:26px;line-height:1.35;margin:8px 0}
-.meta{color:var(--muted);font-size:13px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px;box-shadow:0 2px 8px rgba(16,24,40,.04)}
-.latest{border-left:5px solid var(--red)}
-.label{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:4px 8px;margin-bottom:8px;background:#fee2e2;color:#b91c1c}
-h2{font-size:19px;margin:2px 0 12px} h3{font-size:16px;margin:0 0 7px}
-.summary{font-size:15px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.stat{border:1px solid var(--line);border-radius:10px;padding:12px}.stat strong{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
-.timeline{position:relative;margin:8px 0 0 7px;padding-left:22px;border-left:2px solid #dbe1e8}
-.event{position:relative;padding:0 0 18px}.event:before{content:"";position:absolute;left:-29px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
-.date{font-size:12px;font-weight:800;color:var(--accent)} .event p{margin:3px 0 0;font-size:14px}
-table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:10px 7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted)}
-.status{font-size:12px;font-weight:700;padding:3px 7px;border-radius:999px;background:#eef2ff;color:#3730a3}.fixed{background:#ecfdf3;color:#166534}.appeal{background:#fff7ed;color:#9a3412}
-.links a{display:block;color:var(--accent);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}.links a:last-child{border-bottom:0}
-.note{font-size:12px;color:var(--muted)}
-footer{max-width:900px;margin:auto;padding:0 14px 30px;color:var(--muted);font-size:12px}
-@media(max-width:600px){h1{font-size:22px}.grid{grid-template-columns:1fr 1fr}.card{padding:15px}table{font-size:12px}th,td{padding:8px 4px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ニュースの現在地</title>
+
+  <style>
+    :root {
+      --bg:#f4f6f8;
+      --card:#ffffff;
+      --text:#17202a;
+      --muted:#667085;
+      --line:#e4e7ec;
+      --accent:#2563eb;
+    }
+
+    * {
+      box-sizing:border-box;
+    }
+
+    body {
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,
+        "Segoe UI","Noto Sans JP",sans-serif;
+    }
+
+    header {
+      background:#111827;
+      color:white;
+      padding:18px 16px;
+    }
+
+    .header-inner {
+      max-width:900px;
+      margin:auto;
+    }
+
+    .logo {
+      font-size:20px;
+      font-weight:800;
+    }
+
+    .subtitle {
+      margin-top:5px;
+      font-size:12px;
+      color:#cbd5e1;
+    }
+
+    main {
+      max-width:900px;
+      margin:auto;
+      padding:22px 14px 50px;
+    }
+
+    .top {
+      margin-bottom:20px;
+    }
+
+    h1 {
+      font-size:25px;
+      margin:0 0 7px;
+    }
+
+    .description {
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    #status {
+      font-size:13px;
+      color:var(--muted);
+      margin:15px 0;
+    }
+
+    .event {
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:17px;
+      margin-bottom:14px;
+      box-shadow:0 2px 8px rgba(0,0,0,.03);
+    }
+
+    .event-label {
+      display:inline-block;
+      font-size:11px;
+      font-weight:700;
+      color:var(--accent);
+      background:#eff6ff;
+      border-radius:999px;
+      padding:4px 8px;
+      margin-bottom:8px;
+    }
+
+    .event h2 {
+      font-size:18px;
+      line-height:1.45;
+      margin:0 0 8px;
+    }
+
+    .count {
+      font-size:12px;
+      color:var(--muted);
+      margin-bottom:12px;
+    }
+
+    .articles {
+      border-top:1px solid var(--line);
+      padding-top:8px;
+    }
+
+    .article {
+      padding:9px 0;
+      border-bottom:1px solid var(--line);
+    }
+
+    .article:last-child {
+      border-bottom:0;
+    }
+
+    .article a {
+      color:var(--text);
+      text-decoration:none;
+      font-size:14px;
+      font-weight:600;
+      line-height:1.5;
+    }
+
+    .article a:hover {
+      color:var(--accent);
+    }
+
+    .date {
+      font-size:11px;
+      color:var(--muted);
+      margin-top:4px;
+    }
+
+    .error {
+      background:#fff;
+      border:1px solid #fecaca;
+      border-radius:12px;
+      padding:15px;
+      color:#991b1b;
+    }
+
+    footer {
+      text-align:center;
+      color:var(--muted);
+      font-size:11px;
+      padding:20px;
+    }
+  </style>
 </head>
+
 <body>
-<header><div class="header-inner"><div class="logo">ニュースの現在地</div><span class="badge">β Prototype</span></div></header>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">ニュースの現在地</div>
+    <div class="subtitle">
+      バラバラの報道を、ひとつの出来事として追う
+    </div>
+  </div>
+</header>
+
 <main>
-<div class="crumb">札幌・江別 / 事件・裁判</div>
-<h1>江別市大学生集団暴行死事件</h1>
-<div class="meta">最終更新：2026年8月24日　｜　報道ベースで整理</div>
 
-<section class="card latest">
-<span class="label">🔴 最新の続報</span>
-<h2>当時17歳の少年の懲役30年が確定</h2>
-<p class="summary">2026年8月7日に札幌地裁が懲役30年を言い渡した当時17歳の少年は控訴せず、判決が確定したと報じられています。一方、川口侑斗被告は無期懲役判決について8月10日付で控訴しています。</p>
-</section>
+  <div class="top">
+    <h1>札幌のニュース</h1>
 
-<section class="card">
-<h2>事件の現在地</h2>
-<div class="grid">
-<div class="stat"><strong>6人</strong><span>起訴された被告</span></div>
-<div class="stat"><strong>3件</strong><span>一審判決が確定した被告</span></div>
-<div class="stat"><strong>2人</strong><span>控訴が報じられている被告</span></div>
-<div class="stat"><strong>1人</strong><span>今後の公判を待つ被告</span></div>
-</div>
-<p class="note">※人数・裁判状況は報道時点の整理。裁判の進行により変わります。</p>
-</section>
+    <div class="description">
+      複数の報道をAIで整理し、
+      同じ事件・出来事ごとにまとめています。
+    </div>
+  </div>
 
-<section class="card" style="border-left:5px solid #f59e0b">
-<span class="label" style="background:#fef3c7;color:#92400e">🟡 今後の予定</span>
-<h2>次の裁判・手続き</h2>
-<div style="display:grid;gap:10px">
-<div style="border:1px solid #e4e7ec;border-radius:10px;padding:13px">
-<div style="font-size:12px;font-weight:800;color:#2563eb">2026年10月15日（予定）</div>
-<div style="font-weight:800;margin-top:2px">川口侑斗被告の控訴審</div>
-<div style="font-size:13px;color:#667085">※試作品として仮の日程を表示しています。実際の日程が報道・裁判所発表で確認された時点で更新する想定です。</div>
-</div>
-<div style="border:1px solid #e4e7ec;border-radius:10px;padding:13px">
-<div style="font-size:12px;font-weight:800;color:#667085">日程未定</div>
-<div style="font-weight:800;margin-top:2px">川村葉音被告の控訴審</div>
-<div style="font-size:13px;color:#667085">双方控訴。今後の日程発表を待つ。</div>
-</div>
-<div style="border:1px solid #e4e7ec;border-radius:10px;padding:13px">
-<div style="font-size:12px;font-weight:800;color:#667085">日程未定</div>
-<div style="font-weight:800;margin-top:2px">八木原亜麻被告の公判</div>
-<div style="font-size:13px;color:#667085">公判日程の発表を待つ。</div>
-</div>
-</div>
-</section>
+  <div id="status">
+    ニュースを読み込んでいます…
+  </div>
 
-<section class="card" style="border-left:5px solid #7c3aed">
-<h2>👀 次の動き</h2>
-<p class="summary">この事件で新しい裁判日程・判決・控訴・日程変更が報じられた場合、この欄を最優先で更新する想定です。</p>
-<div style="background:#f5f3ff;border-radius:10px;padding:12px;font-size:14px">
-<strong>次にチェックする情報</strong>
-<ul style="margin:6px 0 0 18px">
-<li>控訴審の期日が正式に決まったか</li>
-<li>公判の日程変更がないか</li>
-<li>新しい判決・決定が出ていないか</li>
-<li>控訴の取り下げ・新たな控訴がないか</li>
-</ul>
-</div>
-</section>
+  <div id="news"></div>
 
-<section class="card">
-<h2>🔄 日程・予定の変更履歴</h2>
-<div style="border-left:2px solid #dbe1e8;padding-left:16px">
-<div style="padding-bottom:13px">
-<div style="font-size:12px;color:#667085">現在</div>
-<div style="font-weight:700">川口被告の控訴審：日程確認待ち</div>
-</div>
-<div style="padding-bottom:13px">
-<div style="font-size:12px;color:#667085">今後、変更が発生した場合</div>
-<div>「旧日程 → 新日程」として履歴を残す</div>
-</div>
-</div>
-<p class="note">※この欄は、自動更新機能を実装した場合に、変更前の情報を残すためのスペースです。</p>
-</section>
-
-<section class="card">
-<h2>📌 ここまでの時系列</h2>
-<div class="timeline">
-<div class="event"><div class="date">2024年10月25～26日</div><p>江別市の公園で大学生が集団暴行を受け死亡。現金やカードなどを奪われたとされています。</p></div>
-<div class="event"><div class="date">2026年5月25日</div><p>6人のうち3人の裁判が開始。起訴内容を認めた被告がいました。</p></div>
-<div class="event"><div class="date">6月25日</div><p>川村葉音被告に懲役30年、当時18歳の少年に懲役20年、当時16歳の少年に懲役9年以上13年以下の判決。</p></div>
-<div class="event"><div class="date">7月9日</div><p>川村被告について検察側が控訴。その後、被告側も控訴。</p></div>
-<div class="event"><div class="date">7月13日</div><p>川口侑斗被告と当時17歳の少年の裁判が開始。</p></div>
-<div class="event"><div class="date">8月7日</div><p>川口被告に無期懲役、当時17歳の少年に懲役30年の判決。</p></div>
-<div class="event"><div class="date">8月10日</div><p>川口被告が控訴。</p></div>
-<div class="event"><div class="date">8月24日</div><p><b>当時17歳の少年が控訴せず、懲役30年が確定。</b></p></div>
-</div>
-</section>
-
-<section class="card">
-<h2>⚖️ 被告ごとの状況</h2>
-<table>
-<thead><tr><th>被告</th><th>一審</th><th>現在</th></tr></thead>
-<tbody>
-<tr><td>川口侑斗被告</td><td>無期懲役</td><td><span class="status appeal">控訴</span></td></tr>
-<tr><td>当時17歳の少年</td><td>懲役30年</td><td><span class="status fixed">確定</span></td></tr>
-<tr><td>川村葉音被告</td><td>懲役30年</td><td><span class="status appeal">双方控訴</span></td></tr>
-<tr><td>当時18歳の少年</td><td>懲役20年</td><td><span class="status fixed">確定</span></td></tr>
-<tr><td>当時16歳の少年</td><td>懲役9年以上13年以下</td><td><span class="status fixed">確定</span></td></tr>
-<tr><td>八木原亜麻被告</td><td>公判前</td><td><span class="status">今後の公判</span></td></tr>
-</tbody>
-</table>
-</section>
-
-<section class="card">
-<h2>🔎 次に確認すること</h2>
-<ul>
-<li>川口被告の控訴審の日程・審理内容</li>
-<li>川村被告の控訴審の進行</li>
-<li>八木原被告の公判日程</li>
-<li>各被告の判決・確定状況に新たな動きがないか</li>
-</ul>
-</section>
-
-<section class="card links">
-<h2>📰 関連報道</h2>
-<a href="https://www.uhb.jp/news/single.html?id=61401" target="_blank">UHB｜川口被告の控訴・当時17歳少年の判決確定に関する報道</a>
-<a href="https://www.fnn.jp/articles/-/1099989" target="_blank">FNNプライムオンライン｜当時17歳少年の判決確定</a>
-<a href="https://www.nikkansports.com/general/news/202608070000704.html" target="_blank">日刊スポーツ｜8月7日の判決</a>
-<a href="https://news.tv-asahi.co.jp/news_society/articles/000507548.html" target="_blank">テレ朝NEWS｜5月25日の初公判</a>
-<p class="note">記事リンクは外部サイト。本文の著作権は各媒体に帰属します。このページは報道内容を要約・整理する試作品です。</p>
-</section>
 </main>
-<footer>ニュースの現在地 β｜このページは2026年8月24日時点の報道をもとにした試作です。今後の予定欄には機能説明用の仮データを含みます。</footer>
+
+<footer>
+  ニュースの現在地 β
+</footer>
+
+<script>
+
+async function loadNews() {
+
+  const status = document.getElementById("status");
+  const newsArea = document.getElementById("news");
+
+  try {
+
+    const response = await fetch(
+      "news_groups_ai.json?time=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error("データを取得できませんでした");
+    }
+
+    const groups = await response.json();
+
+    status.textContent =
+      groups.length + "件の出来事を表示しています";
+
+    groups.forEach((group, index) => {
+
+      const card = document.createElement("section");
+      card.className = "event";
+
+      const label = document.createElement("div");
+      label.className = "event-label";
+      label.textContent = "追跡中";
+
+      const title = document.createElement("h2");
+      title.textContent =
+        group.event_name || "名称未設定";
+
+      const count = document.createElement("div");
+      count.className = "count";
+      count.textContent =
+        group.article_count + "件の関連記事";
+
+      const articles = document.createElement("div");
+      articles.className = "articles";
+
+      group.articles.forEach(article => {
+
+        const item = document.createElement("div");
+        item.className = "article";
+
+        const link = document.createElement("a");
+        link.href = article.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = article.title;
+
+        const date = document.createElement("div");
+        date.className = "date";
+
+        if (article.published) {
+          const d = new Date(article.published);
+
+          if (!isNaN(d)) {
+            date.textContent =
+              d.toLocaleString("ja-JP");
+          }
+        }
+
+        item.appendChild(link);
+        item.appendChild(date);
+
+        articles.appendChild(item);
+
+      });
+
+      card.appendChild(label);
+      card.appendChild(title);
+      card.appendChild(count);
+      card.appendChild(articles);
+
+      newsArea.appendChild(card);
+
+    });
+
+  } catch (error) {
+
+    status.textContent = "";
+
+    newsArea.innerHTML =
+      '<div class="error">' +
+      'ニュースを読み込めませんでした。' +
+      '</div>';
+
+    console.error(error);
+
+  }
+
+}
+
+loadNews();
+
+</script>
+
 </body>
 </html>
