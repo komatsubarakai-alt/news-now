@@ -86,7 +86,7 @@ jobs:
 
           results = []
 
-          for candidate in candidates[:20]:
+          for candidate in candidates[:100]:
               prompt = f"""
           次の2つのニュース記事が、同じ事件・出来事について報じているか判定してください。
 
