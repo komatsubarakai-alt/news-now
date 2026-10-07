@@ -223,7 +223,7 @@ for new_group in new_groups:
             event.get("event_name", "")
         )
 
-      else:
+    else:
         # 続報と確信できない場合は、新しいイベントとして登録
         import uuid
 
