@@ -1,6 +1,7 @@
 import json
 import os
 import urllib.request
+import re
 
 
 # 現在保存されている長期追跡イベントを読み込む
@@ -10,6 +11,27 @@ with open("events.json", "r", encoding="utf-8") as f:
 
 print(f"掃除対象のイベント: {len(events)}件")
 
+def normalize_title(title):
+    title = title.lower()
+
+    # 記号や空白を取り除く
+    title = re.sub(
+        r"[\s　【】\[\]（）()「」『』・\-—―…!！?？:：]",
+        "",
+        title
+    )
+
+    # よく付く媒体表記などを除く
+    words_to_remove = [
+        "yahooニュース",
+        "yahoo!ニュース",
+        "速報",
+    ]
+
+    for word in words_to_remove:
+        title = title.replace(word, "")
+
+    return title
 
 def make_event_context(event):
     return {
@@ -124,14 +146,39 @@ for event in events:
             # エラー時は安全のため記事を残す
             kept_articles.append(article)
 
+            # 同じURL・同じタイトルの記事を重複除去
+    unique_articles = []
+    seen_urls = set()
+    seen_titles = set()
+
+    for article in kept_articles:
+        url = article.get("url", "")
+        title = normalize_title(
+            article.get("title", "")
+        )
+
+        # URLが同じなら重複
+        if url and url in seen_urls:
+            continue
+
+        # 正規化したタイトルが同じなら重複
+        if title and title in seen_titles:
+            continue
+
+        if url:
+            seen_urls.add(url)
+
+        if title:
+            seen_titles.add(title)
+
+        unique_articles.append(article)
+
     cleaned_event = event.copy()
-    cleaned_event["articles"] = kept_articles
-    cleaned_event["article_count"] = len(kept_articles)
+    cleaned_event["articles"] = unique_articles
+    cleaned_event["article_count"] = len(unique_articles)
 
     # 元報道数が整理後の記事数を下回らないようにする
-    cleaned_event["source_article_count"] = max(
-        event.get("source_article_count", 0),
-        len(kept_articles)
+    cleaned_event["source_article_count"] = len(unique_articles)
     )
 
     cleaned_events.append(cleaned_event)
