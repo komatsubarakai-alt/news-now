@@ -180,9 +180,11 @@ jobs:
         run: |
           python news_status.py
 
-      - name: Update long-term events
+      - name: Track long-term events
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python events_update.py
+          python event_tracker.py
           
       - name: Save news data
         run: |
