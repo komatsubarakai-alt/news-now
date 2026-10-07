@@ -33,6 +33,18 @@ def normalize_title(title):
 
     return title
 
+def title_similarity(title_a, title_b):
+    a = set(normalize_title(title_a))
+    b = set(normalize_title(title_b))
+
+    if not a or not b:
+        return 0
+
+    common = len(a & b)
+    base = min(len(a), len(b))
+
+    return common / base
+
 def make_event_context(event):
     return {
         "event_id": event.get("event_id", ""),
@@ -161,9 +173,16 @@ for event in events:
         if url and url in seen_urls:
             continue
 
-        # 正規化したタイトルが同じなら重複
-        if title and title in seen_titles:
-            continue
+        # タイトルが同じ、またはかなり似ているなら重複
+is_similar = False
+
+for seen_title in seen_titles:
+    if title_similarity(title, seen_title) >= 0.85:
+        is_similar = True
+        break
+
+if title and is_similar:
+    continue
 
         if url:
             seen_urls.add(url)
