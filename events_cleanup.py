@@ -525,3 +525,71 @@ print(
     "統合結果を events_merged_preview.json "
     "に保存しました"
 )
+
+# 統合後プレビューの安全チェック
+validation_errors = []
+
+event_ids = set()
+
+for event in events_merged_preview:
+    event_id = event.get("event_id", "")
+    articles = event.get("articles", [])
+
+    # event_idがない
+    if not event_id:
+        validation_errors.append(
+            "event_idがないイベントがあります"
+        )
+
+    # event_idが重複している
+    elif event_id in event_ids:
+        validation_errors.append(
+            f"event_id重複: {event_id}"
+        )
+    else:
+        event_ids.add(event_id)
+
+    # 記事が0件
+    if len(articles) == 0:
+        validation_errors.append(
+            f"記事0件: {event_id}"
+        )
+
+    # 対象外が残っている
+    if event.get("category") == "対象外":
+        validation_errors.append(
+            f"対象外イベントが残っています: {event_id}"
+        )
+
+    # lowが残っている
+    if event.get("tracking_value") == "low":
+        validation_errors.append(
+            f"lowイベントが残っています: {event_id}"
+        )
+
+    # article_countと実際の記事数が違う
+    if event.get("article_count") != len(articles):
+        validation_errors.append(
+            f"記事数不一致: {event_id}"
+        )
+
+
+if validation_errors:
+    print("統合後データの安全チェックで問題を検出しました")
+
+    for error in validation_errors:
+        print("-", error)
+
+    raise RuntimeError(
+        "events_merged_preview.json の検証に失敗しました"
+    )
+
+
+print(
+    f"安全チェック成功: "
+    f"{len(events_merged_preview)}イベント"
+)
+
+print(
+    "events.json はまだ変更していません"
+)
