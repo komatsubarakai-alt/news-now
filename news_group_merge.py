@@ -1,123 +1,20 @@
 import json
 import os
 import urllib.request
+from itertools import combinations
 
-# 最初のAIグループを読み込む
 with open("news_groups_ai.json", "r", encoding="utf-8") as f:
     groups = json.load(f)
 
-# グループが1個以下なら、そのまま保存
-if len(groups) <= 1:
-    with open("news_groups_merged.json", "w", encoding="utf-8") as f:
-        json.dump(groups, f, ensure_ascii=False, indent=2)
-
-    print(f"{len(groups)}個のニュースグループを保存しました")
-    raise SystemExit
-
-# AIに渡す情報を整理
-group_summaries = []
-
-for i, group in enumerate(groups):
-    articles = []
-
-    for article in group.get("articles", [])[:5]:
-        articles.append({
-            "title": article.get("title", ""),
-            "published": article.get("published", "")
-        })
-
-    group_summaries.append({
-        "group_id": i,
-        "event_name": group.get("event_name", ""),
-        "articles": articles
-    })
-
-prompt = f"""
-以下は、すでに一度まとめられたニュースグループです。
-
-これらの中に、
-「別々のニュースに見えるが、実際には同じ出来事の続報」
-になっているグループがあれば統合してください。
-
-同じ追跡対象として統合する例:
-・事件発生 → 逮捕 → 送検 → 起訴 → 裁判 → 判決
-・事故発生 → 救助 → 被害判明 → 原因調査 → 復旧
-・大雨警報 → 冠水・浸水 → 被害判明 → 避難 → 復旧
-・政策発表 → 審議 → 決定 → 施行 → 制度変更
-・企業の計画発表 → 着工 → 開業・完成
-
-単に同じ地域、人物、テーマというだけでは統合しないでください。
-重要な判定ルール:
-・同じ地域で起きた、日時が近い、同じ単語が含まれる、という理由だけでは絶対に統合しないでください。
-・前の出来事と後の記事の間に、原因・経緯・捜査・被害・対応・手続きなどの直接的なつながりがある場合だけ統合してください。
-・例えば「札幌の大雨」と「札幌の交通事故」は、大雨が事故の原因や影響として記事内で明確につながっていない限り、別の出来事です。
-・ある出来事が原因や背景になっていても、その後に新しく別の事件・事故が発生した場合は別の追跡対象にしてください。
-・例:「大雨警報 → 道路冠水・浸水・避難・復旧」は同じ災害として統合します。
-・例:「大雨 → 後日、設備が倒れて作業員が負傷」のように新しい事故が発生した場合は、大雨との因果関係があっても別の出来事として扱ってください。
-・判断に迷う場合は統合しないでください。
-
-ニュースグループ:
-{json.dumps(group_summaries, ensure_ascii=False, indent=2)}
-
-統合すべきグループだけを、次のJSON形式で返してください。
-
-{{
-  "merge_sets": [
-    {{
-      "group_ids": [0, 2],
-      "event_name": "統合後の短く分かりやすい出来事名"
-    }}
-  ]
-}}
-
-統合するものがなければ、
-{{"merge_sets":[]}}
-と返してください。
-
-JSON以外は返さないでください。
-"""
-
-data = json.dumps({
-    "model": "gpt-5.4-mini",
-    "input": prompt
-}).encode("utf-8")
-
-request = urllib.request.Request(
-    "https://api.openai.com/v1/responses",
-    data=data,
-    headers={
-        "Content-Type": "application/json",
-        "Authorization": "Bearer " + os.environ["OPENAI_API_KEY"]
-    },
-    method="POST"
-)
-
-merge_sets = []
-
-try:
-    with urllib.request.urlopen(request, timeout=60) as response:
-        response_data = json.loads(response.read().decode("utf-8"))
-
-    result_text = response_data["output"][0]["content"][0]["text"].strip()
-
-    if result_text.startswith("```"):
-        result_text = result_text.replace("```json", "")
-        result_text = result_text.replace("```", "")
-        result_text = result_text.strip()
-
-    ai_data = json.loads(result_text)
-    merge_sets = ai_data.get("merge_sets", [])
-
-except Exception as e:
-    print("グループ統合AI判定エラー:", e)
-
-# Union-Findで統合
 parent = list(range(len(groups)))
+merge_names = {}
+
 
 def find(x):
     if parent[x] != x:
         parent[x] = find(parent[x])
     return parent[x]
+
 
 def union(a, b):
     root_a = find(a)
@@ -126,29 +23,128 @@ def union(a, b):
     if root_a != root_b:
         parent[root_b] = root_a
 
-merged_names = {}
 
-for merge_set in merge_sets:
-    ids = merge_set.get("group_ids", [])
-    event_name = merge_set.get("event_name", "")
+def group_text(group):
+    articles = []
 
-    valid_ids = [
-        i for i in ids
-        if isinstance(i, int) and 0 <= i < len(groups)
-    ]
+    for article in group.get("articles", [])[:5]:
+        articles.append({
+            "title": article.get("title", ""),
+            "published": article.get("published", "")
+        })
 
-    if len(valid_ids) < 2:
-        continue
+    return {
+        "event_name": group.get("event_name", ""),
+        "articles": articles
+    }
 
-    first = valid_ids[0]
 
-    for other in valid_ids[1:]:
-        union(first, other)
+def ask_ai(group_a, group_b):
+    prompt = f"""
+あなたは「ニュースの現在地」というニュース追跡サービスの編集者です。
 
-    if event_name:
-        merged_names[first] = event_name
+次の2つのニュースグループが、
+「同じ1つの出来事の進展・続報」なのかを厳しく判定してください。
 
-# 統合後のグループを作る
+【グループA】
+{json.dumps(group_text(group_a), ensure_ascii=False, indent=2)}
+
+【グループB】
+{json.dumps(group_text(group_b), ensure_ascii=False, indent=2)}
+
+判定ルール:
+
+・同じ地域、同じ人物、日時が近い、同じ単語があるというだけでは統合しません。
+
+・前の記事から後の記事へ、
+同じ出来事そのものが進展している場合だけ same_event にしてください。
+
+same_event の例:
+・事件発生 → 逮捕 → 送検 → 起訴 → 裁判 → 判決
+・事故発生 → 救助 → 原因調査 → 復旧
+・大雨警報 → 同じ大雨による冠水・浸水 → 避難 → 復旧
+・政策発表 → 審議 → 決定 → 施行
+・施設計画 → 着工 → 完成 → 開業
+
+different の例:
+・札幌の大雨 と、札幌で起きた無関係な交通事故
+・大雨の後に別の設備事故が新しく発生したケース
+・同じ会社で起きた別々の問題
+・同じ人物が関係する別々の事件
+
+重要:
+ある出来事が別の事件・事故の「原因」や「背景」になっていても、
+新しい独立した事件・事故が発生した場合は different にしてください。
+
+判断に迷う場合も different にしてください。
+
+次のJSONだけを返してください。
+
+{{
+  "relation": "same_event または different",
+  "event_name": "same_eventの場合のみ統合後の短い出来事名",
+  "confidence": "high / medium / low"
+}}
+"""
+
+    data = json.dumps({
+        "model": "gpt-5.4-mini",
+        "input": prompt
+    }).encode("utf-8")
+
+    request = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=data,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + os.environ["OPENAI_API_KEY"]
+        },
+        method="POST"
+    )
+
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            response_data = json.loads(
+                response.read().decode("utf-8")
+            )
+
+        text = response_data["output"][0]["content"][0]["text"].strip()
+
+        if text.startswith("```"):
+            text = text.replace("```json", "")
+            text = text.replace("```", "")
+            text = text.strip()
+
+        return json.loads(text)
+
+    except Exception as e:
+        print("グループ比較エラー:", e)
+        return {
+            "relation": "different",
+            "event_name": "",
+            "confidence": "low"
+        }
+
+
+# グループ同士を1対1で比較
+for i, j in combinations(range(len(groups)), 2):
+
+    result = ask_ai(groups[i], groups[j])
+
+    # 誤統合を防ぐため high の same_event だけ統合
+    if (
+        result.get("relation") == "same_event"
+        and result.get("confidence") == "high"
+    ):
+        union(i, j)
+
+        event_name = result.get("event_name", "")
+
+        if event_name:
+            merge_names[i] = event_name
+
+
+# 統合後のグループを作成
 merged = {}
 
 for i, group in enumerate(groups):
@@ -170,20 +166,24 @@ for i, group in enumerate(groups):
         ):
             merged[root]["articles"].append(article)
 
-# AIが付けた統合後の名前を反映
-for key in list(merged.keys()):
-    root = find(key)
 
-    for original_id, name in merged_names.items():
-        if find(original_id) == root:
-            merged[key]["event_name"] = name
+# AIが付けた統合名を反映
+for original_id, name in merge_names.items():
+    root = find(original_id)
 
-    merged[key]["article_count"] = len(merged[key]["articles"])
+    if root in merged and name:
+        merged[root]["event_name"] = name
+
 
 output = list(merged.values())
 
+for group in output:
+    group["article_count"] = len(group["articles"])
+
+
 with open("news_groups_merged.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
+
 
 print(
     f"{len(groups)}個のニュースグループを"
