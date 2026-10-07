@@ -209,6 +209,14 @@ for event in events:
         len(removed_articles)
     )
 
+# 長期追跡に不要なイベントを除外
+cleaned_events = [
+    event for event in cleaned_events
+    if event.get("category") != "対象外"
+    and event.get("tracking_value") != "low"
+    and len(event.get("articles", [])) > 0
+]
+
 with open(
     "events_cleaned_preview.json",
     "w",
