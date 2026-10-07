@@ -161,7 +161,11 @@ low = 単発ニュースで終わる可能性が高い
         statuses.append({
             "event_name": event_name,
             "article_count": len(articles),
-                        "category":
+"source_article_count": group.get(
+    "source_article_count",
+    len(articles)
+),
+"category":
     normalize_category(
         ai_status.get("category", "対象外")
     ),
