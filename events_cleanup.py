@@ -367,3 +367,161 @@ print(
     "統合候補を event_merge_preview.json "
     "に保存しました"
 )
+
+# 統合候補を反映した安全なプレビューを作る
+def merge_event_articles(event_a, event_b):
+    unique_articles = []
+    seen_urls = set()
+    seen_titles = []
+
+    for article in (
+        event_a.get("articles", []) +
+        event_b.get("articles", [])
+    ):
+        url = article.get("url", "")
+        title = normalize_title(
+            article.get("title", "")
+        )
+
+        # 同じURLの記事は1つだけ残す
+        if url and url in seen_urls:
+            continue
+
+        # タイトルがかなり似ている記事も1つだけ残す
+        if title and any(
+            title_similarity(
+                title,
+                seen_title
+            ) >= 0.85
+            for seen_title in seen_titles
+        ):
+            continue
+
+        if url:
+            seen_urls.add(url)
+
+        if title:
+            seen_titles.append(title)
+
+        unique_articles.append(article)
+
+    return unique_articles
+
+
+events_by_id = {
+    event.get("event_id", ""): event.copy()
+    for event in cleaned_events
+    if event.get("event_id")
+}
+
+removed_event_ids = set()
+
+for result in merge_results:
+    event_a_id = result.get("event_a_id", "")
+    event_b_id = result.get("event_b_id", "")
+
+    if (
+        not event_a_id
+        or not event_b_id
+        or event_a_id in removed_event_ids
+        or event_b_id in removed_event_ids
+        or event_a_id not in events_by_id
+        or event_b_id not in events_by_id
+    ):
+        continue
+
+    event_a = events_by_id[event_a_id]
+    event_b = events_by_id[event_b_id]
+
+    # 古くから追跡している方のevent_idを残す
+    a_created = event_a.get("created_at", "")
+    b_created = event_b.get("created_at", "")
+
+    if (
+        b_created
+        and (
+            not a_created
+            or b_created < a_created
+        )
+    ):
+        event_a, event_b = event_b, event_a
+        event_a_id, event_b_id = (
+            event_b_id,
+            event_a_id
+        )
+
+    merged_articles = merge_event_articles(
+        event_a,
+        event_b
+    )
+
+    # 要約などは、より新しく更新された側を優先
+    a_updated = event_a.get("updated_at", "")
+    b_updated = event_b.get("updated_at", "")
+
+    newer_event = (
+        event_b
+        if b_updated > a_updated
+        else event_a
+    )
+
+    merged_event = newer_event.copy()
+
+    merged_event["event_id"] = (
+        event_a.get("event_id", "")
+    )
+
+    merged_event["created_at"] = (
+        event_a.get("created_at", "")
+    )
+
+    merged_event["updated_at"] = max(
+        a_updated,
+        b_updated
+    )
+
+    merged_event["articles"] = merged_articles
+
+    merged_event["article_count"] = len(
+        merged_articles
+    )
+
+    # 重複イベントなので報道数を単純加算しない
+    merged_event["source_article_count"] = len(
+        merged_articles
+    )
+
+    events_by_id[event_a_id] = merged_event
+    removed_event_ids.add(event_b_id)
+
+
+events_merged_preview = [
+    event
+    for event_id, event in events_by_id.items()
+    if event_id not in removed_event_ids
+]
+
+
+with open(
+    "events_merged_preview.json",
+    "w",
+    encoding="utf-8"
+) as f:
+    json.dump(
+        events_merged_preview,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
+
+print(
+    f"統合後プレビュー: "
+    f"{len(cleaned_events)}件 → "
+    f"{len(events_merged_preview)}件"
+)
+
+print(
+    "統合結果を events_merged_preview.json "
+    "に保存しました"
+)
