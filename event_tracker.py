@@ -216,6 +216,12 @@ for new_group in new_groups:
         event["article_count"] = len(
             event.get("articles", [])
         )
+               
+        event["source_article_count"] = max(
+            event.get("source_article_count", 0),
+            event["article_count"]
+                )
+        
         event["updated_at"] = now
 
         print(
