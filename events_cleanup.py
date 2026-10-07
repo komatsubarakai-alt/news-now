@@ -179,7 +179,6 @@ for event in events:
 
     # 元報道数が整理後の記事数を下回らないようにする
     cleaned_event["source_article_count"] = len(unique_articles)
-    )
 
     cleaned_events.append(cleaned_event)
 
