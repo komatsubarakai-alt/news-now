@@ -170,6 +170,10 @@ jobs:
         run: |
           python news_group_merge.py
 
+      - name: Remove duplicate articles
+        run: |
+          python news_deduplicate.py
+
       - name: Create news status
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
