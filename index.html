@@ -313,8 +313,15 @@ category.style.color = "#475467";
 
       const count = document.createElement("div");
       count.className = "count";
-      count.textContent =
-        group.article_count + "件の関連記事";
+      const sourceCount = group.source_article_count || group.article_count;
+
+if (sourceCount > group.article_count) {
+  count.textContent =
+    sourceCount + "件の報道を" + group.article_count + "件に整理";
+} else {
+  count.textContent =
+    group.article_count + "件の関連記事";
+}
 
       const statusBox = document.createElement("div");
 statusBox.style.margin = "12px 0";
