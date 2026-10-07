@@ -177,12 +177,12 @@ for event in events:
         is_similar = False
 
         for seen_title in seen_titles:
-        if title_similarity(title, seen_title) >= 0.85:
-            is_similar = True
-            break
+            if title_similarity(title, seen_title) >= 0.85:
+                is_similar = True
+                break
 
         if title and is_similar:
-        continue
+            continue
 
         if url:
             seen_urls.add(url)
