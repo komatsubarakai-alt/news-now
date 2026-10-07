@@ -174,15 +174,15 @@ for event in events:
             continue
 
         # タイトルが同じ、またはかなり似ているなら重複
-is_similar = False
+        is_similar = False
 
-for seen_title in seen_titles:
-    if title_similarity(title, seen_title) >= 0.85:
-        is_similar = True
-        break
+        for seen_title in seen_titles:
+        if title_similarity(title, seen_title) >= 0.85:
+            is_similar = True
+            break
 
-if title and is_similar:
-    continue
+        if title and is_similar:
+        continue
 
         if url:
             seen_urls.add(url)
