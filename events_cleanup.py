@@ -234,3 +234,136 @@ print(
     "掃除結果を events_cleaned_preview.json "
     "に保存しました"
 )
+
+# 掃除後のイベント同士を比較して重複を探す
+merge_candidates = []
+
+for i in range(len(cleaned_events)):
+    for j in range(i + 1, len(cleaned_events)):
+        event_a = cleaned_events[i]
+        event_b = cleaned_events[j]
+
+        # カテゴリーが違うイベントは比較しない
+        if event_a.get("category") != event_b.get("category"):
+            continue
+
+        merge_candidates.append({
+            "event_a": event_a,
+            "event_b": event_b
+        })
+
+print(
+    f"イベント統合候補: {len(merge_candidates)}組"
+)
+
+def make_merge_prompt(event_a, event_b):
+    return f"""
+あなたは「ニュースの現在地」というニュース追跡サービスの編集者です。
+
+次の2つの保存済みイベントが、
+実際には同じ出来事・同じ長期追跡テーマなのか判定してください。
+
+単に同じ地域・人物・分野というだけでは統合しないでください。
+
+【イベントA】
+名前: {event_a.get("event_name", "")}
+現在地: {event_a.get("current_stage", "")}
+要約: {event_a.get("summary", "")}
+
+【イベントB】
+名前: {event_b.get("event_name", "")}
+現在地: {event_b.get("current_stage", "")}
+要約: {event_b.get("summary", "")}
+
+以下のJSONだけを返してください。
+
+{{
+  "relation": "same_event / different",
+  "confidence": "high / medium / low"
+}}
+"""
+
+def ask_merge_ai(event_a, event_b):
+    prompt = make_merge_prompt(event_a, event_b)
+
+    data = json.dumps({
+        "model": "gpt-5.4-mini",
+        "input": prompt
+    }).encode("utf-8")
+
+    request = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=data,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization":
+                "Bearer " + os.environ["OPENAI_API_KEY"]
+        },
+        method="POST"
+    )
+
+    with urllib.request.urlopen(
+        request,
+        timeout=60
+    ) as response:
+        response_data = json.loads(
+            response.read().decode("utf-8")
+        )
+
+    result_text = (
+        response_data["output"][0]
+        ["content"][0]["text"]
+    )
+
+    cleaned = result_text.strip()
+
+    if cleaned.startswith("```"):
+        cleaned = cleaned.replace("```json", "")
+        cleaned = cleaned.replace("```", "")
+        cleaned = cleaned.strip()
+
+    return json.loads(cleaned)
+
+merge_results = []
+
+for candidate in merge_candidates:
+    event_a = candidate["event_a"]
+    event_b = candidate["event_b"]
+
+    try:
+        result = ask_merge_ai(event_a, event_b)
+
+        if (
+            result.get("relation") == "same_event"
+            and result.get("confidence") == "high"
+        ):
+            merge_results.append({
+                "event_a_id": event_a.get("event_id", ""),
+                "event_b_id": event_b.get("event_id", ""),
+                "event_a_name": event_a.get("event_name", ""),
+                "event_b_name": event_b.get("event_name", "")
+            })
+
+    except Exception as e:
+        print("イベント統合判定エラー:", e)
+
+print(
+    f"統合候補として確定: {len(merge_results)}組"
+)
+
+with open(
+    "event_merge_preview.json",
+    "w",
+    encoding="utf-8"
+) as f:
+    json.dump(
+        merge_results,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
+print(
+    "統合候補を event_merge_preview.json "
+    "に保存しました"
+)
