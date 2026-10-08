@@ -20,6 +20,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Test tracking engine
+        run: python -m unittest discover -s tests -v
+
       - name: Get Sapporo news
         run: |
           python - <<'PY'
@@ -190,19 +193,16 @@ jobs:
         run: |
           python event_tracker.py
 
-      - name: Preview event cleanup
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          python events_cleanup.py
-          
       - name: Save news data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json  events_cleaned_preview.json event_merge_preview.json events_merged_preview.json
+          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json tracking_pending.json tracking_health.json
 
-          git commit -m "Update Sapporo news" || echo "No changes"
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Sapporo news"
+          fi
 
+          git pull --rebase origin main
           git push
