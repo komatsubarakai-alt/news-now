@@ -210,10 +210,17 @@ async function loadNews() {
 
     const groups = await response.json();
 
-    const visibleGroups = groups.filter(group =>
-  group.category !== "対象外" &&
-  group.tracking_value !== "low"
-);
+    const visibleGroups = groups
+  .filter(group =>
+    group.category !== "対象外" &&
+    group.tracking_value !== "low"
+  )
+  .sort((a, b) => {
+    const aTime = new Date(a.updated_at || 0).getTime();
+    const bTime = new Date(b.updated_at || 0).getTime();
+
+    return bTime - aTime;
+  });
 
 status.textContent =
   visibleGroups.length + "件の出来事を表示しています";
@@ -281,7 +288,7 @@ status.textContent =
   filters.appendChild(button);
 });
 
-    groups.forEach((group, index) => {
+    visibleGroups.forEach((group, index) => {
 
       if (
   group.category === "対象外" ||
