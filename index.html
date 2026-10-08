@@ -201,8 +201,8 @@ async function loadNews() {
   try {
 
     const response = await fetch(
-  "news_status.json?time=" + Date.now()
-    );
+  "events.json?time=" + Date.now()
+);
 
     if (!response.ok) {
       throw new Error("データを取得できませんでした");
