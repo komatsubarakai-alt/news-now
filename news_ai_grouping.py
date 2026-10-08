@@ -1,161 +1,72 @@
+"""Conservative source-bound grouping. Missing cross-pair proof never joins clusters."""
 import json
 from collections import Counter
-
-with open("ai_results.json", "r", encoding="utf-8") as f:
-    results = json.load(f)
-
-
-parent = {}
+from merge_safety import UpdateHeld, review, save_reviews, validate_identity
+from tracking_v1 import atomic_save
 
 
-def find(x):
-    if parent[x] != x:
-        parent[x] = find(parent[x])
-    return parent[x]
+def parse_decision(result):
+    raw = result.get('ai_result', '')
+    return raw if isinstance(raw, dict) else json.loads(raw.strip().removeprefix('```json').removeprefix('```').removesuffix('```').strip())
 
 
-def union(a, b):
-    root_a = find(a)
-    root_b = find(b)
-
-    if root_a != root_b:
-        parent[root_b] = root_a
-
-
-# 記事を登録
-for result in results:
-    article_a = result["article_a"]
-    article_b = result["article_b"]
-
-    url_a = article_a["url"]
-    url_b = article_b["url"]
-
-    if url_a not in parent:
-        parent[url_a] = url_a
-
-    if url_b not in parent:
-        parent[url_b] = url_b
-
-
-# AIが同じ事件と判断した記事を結合
-for result in results:
-    article_a = result["article_a"]
-    article_b = result["article_b"]
-
-    url_a = article_a["url"]
-    url_b = article_b["url"]
-
-    ai_result = result.get("ai_result", "")
-
-    try:
-        cleaned = ai_result.strip()
-
-        if cleaned.startswith("```"):
-            cleaned = cleaned.replace("```json", "")
-            cleaned = cleaned.replace("```", "")
-            cleaned = cleaned.strip()
-
-        ai_data = json.loads(cleaned)
-
-        if ai_data.get("relation") == "same_event":
-            union(url_a, url_b)
-
-    except Exception:
-        pass
-
-
-# グループを作成
-groups = {}
-
-for url in parent:
-    root = find(url)
-
-    if root not in groups:
-        groups[root] = []
-
-    groups[root].append(url)
-
-
-output = []
-
-
-for group_urls in groups.values():
-
-    articles = []
-    event_names = []
-
-    group_url_set = set(group_urls)
-
-    # このグループに属する記事を集める
+def negative_pairs(results):
+    pairs = set()
     for result in results:
-
-        article_a = result["article_a"]
-        article_b = result["article_b"]
-
-        url_a = article_a["url"]
-        url_b = article_b["url"]
-
-        # 2記事とも同じグループに属している場合だけ
-        # この判定結果を使う
-        if url_a in group_url_set and url_b in group_url_set:
-
-            ai_result = result.get("ai_result", "")
-
-            try:
-                cleaned = ai_result.strip()
-
-                if cleaned.startswith("```"):
-                    cleaned = cleaned.replace("```json", "")
-                    cleaned = cleaned.replace("```", "")
-                    cleaned = cleaned.strip()
-
-                ai_data = json.loads(cleaned)
-
-                if ai_data.get("relation") == "same_event":
-
-                    event_name = ai_data.get("event_name", "")
-
-                    if event_name:
-                        event_names.append(event_name)
-
-            except Exception:
-                pass
-
-        # 記事を追加
-        for article in [article_a, article_b]:
-
-            if article["url"] in group_url_set:
-
-                if article not in articles:
-                    articles.append(article)
+        try:
+            decision = parse_decision(result)
+            if decision.get('relation') in {'different', 'related'} and decision.get('confidence') == 'high':
+                pairs.add(frozenset((result['article_a']['url'], result['article_b']['url'])))
+        except (ValueError, TypeError, AttributeError, KeyError):
+            continue
+    return pairs
 
 
-    # このグループ自身の判定結果だけからイベント名を決める
-    if event_names:
-        event_name = Counter(event_names).most_common(1)[0][0]
-    else:
-        event_name = "名称未設定"
+def build_groups(results):
+    articles, decisions, held = {}, {}, []
+    blocked = negative_pairs(results)
+    for result in results:
+        a, b = result['article_a'], result['article_b']
+        articles[a['url']], articles[b['url']] = a, b
+        try:
+            decision = parse_decision(result)
+            if decision.get('relation') == 'same_event':
+                if frozenset((a['url'], b['url'])) in blocked:
+                    raise UpdateHeld('conflicting_pair_decisions')
+                validate_identity([a], [b], decision)
+                decisions[frozenset((a['url'], b['url']))] = decision
+            elif decision.get('relation') not in {'different', 'related'} or decision.get('confidence') != 'high':
+                held.append(review('article_grouping', 'uncertain_pair', result))
+        except (ValueError, TypeError, AttributeError) as exc:
+            held.append(review('article_grouping', str(exc), result))
+    clusters = [{url} for url in articles]
+    for pair, decision in decisions.items():
+        left, right = tuple(pair)
+        a = next(c for c in clusters if left in c)
+        b = next(c for c in clusters if right in c)
+        if a is b:
+            continue
+        if all(frozenset((x, y)) in decisions for x in a for y in b):
+            a.update(b); clusters.remove(b)
+        else:
+            held.append(review('article_grouping', 'transitive_pair_unproved', {
+                'articles': [articles[u] for u in sorted(a | b)]}))
+    output = []
+    for cluster in clusters:
+        names = [d.get('event_name', '') for p, d in decisions.items() if p <= cluster and d.get('event_name')]
+        output.append({'event_name': Counter(names).most_common(1)[0][0] if names else articles[next(iter(cluster))]['title'],
+                       'articles': [articles[u] for u in sorted(cluster)], 'article_count': len(cluster)})
+    return output, held
 
 
-    if len(articles) >= 2:
-
-        output.append({
-            "event_name": event_name,
-            "article_count": len(articles),
-            "articles": articles
-        })
-
-
-with open("news_groups_ai.json", "w", encoding="utf-8") as f:
-    json.dump(
-        output,
-        f,
-        ensure_ascii=False,
-        indent=2
-    )
+def main():
+    with open('ai_results.json', encoding='utf-8') as f:
+        results = json.load(f)
+    groups, held = build_groups(results)
+    atomic_save('news_groups_ai.json', groups)
+    save_reviews(held)
+    print(f'記事グループ {len(groups)}件 / 照合保留 {len(held)}件（単独記事も保持）')
 
 
-print(
-    f"{len(results)}件のAI判定結果から"
-    f"{len(output)}個のニュースグループを作りました"
-)
+if __name__ == '__main__':
+    main()

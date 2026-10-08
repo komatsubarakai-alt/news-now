@@ -76,9 +76,9 @@ def migrate(event, now):
 
 
 def event_text(event):
+    from merge_safety import source_context
     return {key: event.get(key) for key in ('event_id', 'event_name', 'category', 'current_stage', 'summary', 'lifecycle') } | {
-        'articles': [{'title': a['title'], 'url': a['url'], 'published': a.get('published', '')}
-                     for a in event.get('articles', [])[-12:]],
+        'articles': [source_context(a) for a in deduplicate(event.get('articles', [])[:4] + event.get('articles', [])[-12:])],
         'schedules': event.get('schedules', [])}
 
 
@@ -169,6 +169,8 @@ def merge_schedules(event, items, articles):
 
 def apply_report(event, articles, report, now, initial=False):
     """Attach reporting without changing current stage on duplicates or older backfill."""
+    from merge_safety import validate_update
+    validate_update(event, deduplicate(articles), report, initial=initial)
     migrate(event, now)
     before_urls = {a['url'] for a in event['articles']}
     additions = [a for a in deduplicate(articles) if a['url'] not in before_urls]

@@ -1,12 +1,24 @@
 import json
 import os
 import urllib.request
+from pathlib import Path
+from merge_safety import review, save_reviews
+from tracking_v1 import atomic_save
 
 
 with open("news_groups_deduplicated.json", "r", encoding="utf-8") as f:
     groups = json.load(f)
 
 
+# Retry saved groups first, but prefer this run's version for identical URL sets.
+previous = json.loads(Path('status_pending.json').read_text(encoding='utf-8')) if Path('status_pending.json').exists() else []
+by_urls = {}
+for group in previous + groups:
+    key = tuple(sorted(a.get('url', '') for a in group.get('articles', [])))
+    if key:
+        by_urls[key] = group
+groups = list(by_urls.values())
+pending, deferred, reviews = [], [], []
 statuses = []
 VALID_CATEGORIES = {
     "事件・事故",
@@ -42,7 +54,11 @@ def normalize_category(category):
     return "対象外"
 
 
-for group in groups:
+for index, group in enumerate(groups):
+
+    if index >= 16:
+        deferred.append(group)
+        continue
 
     event_name = group.get("event_name", "名称未設定")
     articles = group.get("articles", [])
@@ -183,6 +199,8 @@ low = 単発ニュースで終わる可能性が高い
         })
 
     except Exception as e:
+        pending.append(group)
+        reviews.append(review('status_generation', type(e).__name__, {'group': group}))
 
         print(
             f"現在地生成エラー: {event_name}: {e}"
@@ -202,6 +220,9 @@ with open(
         indent=2
     )
 
+
+atomic_save('status_pending.json', deferred + pending)
+save_reviews(reviews)
 
 print(
     f"{len(statuses)}件のニュースの現在地を作りました"

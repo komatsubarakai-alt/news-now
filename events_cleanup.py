@@ -1,3 +1,10 @@
+# Legacy writer: the scheduled workflow uses event_tracker.py instead.
+# Keep the old source for review, but never execute an unguarded repair/merge.
+raise RuntimeError(
+    "旧データ更新・掃除経路は停止しています。既存データは変更していません。"
+    "点検には python audit_merges.py を使い、付け替え・削除・統合は運営者の確認後に行ってください。"
+)
+
 import json
 import os
 import urllib.request
