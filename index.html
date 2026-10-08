@@ -154,6 +154,16 @@
       font-size:11px;
       padding:20px;
     }
+    .filters { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; }
+    button, summary { cursor:pointer; }
+    button { padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:white; color:var(--text); }
+    button[aria-pressed="true"] { background:var(--accent); color:white; }
+    input[type="search"] { width:100%; padding:12px; border:1px solid var(--line); border-radius:8px; font-size:16px; }
+    .status-box, .plans { padding:14px; background:#f8fafc; border-radius:10px; margin:12px 0; line-height:1.7; }
+    .status-box p { margin:8px 0 14px; }
+    details { margin-top:12px; border-top:1px solid var(--line); padding-top:12px; line-height:1.7; }
+    a { overflow-wrap:anywhere; }
+    :focus-visible { outline:3px solid #93c5fd; outline-offset:3px; }
   </style>
 </head>
 
@@ -188,360 +198,129 @@
 </main>
 
 <footer>
-  ニュースの現在地 β
+  ニュースの現在地 v1.0 · 報道のタイトルからAIが整理しています。詳細は各記事で確認してください。
 </footer>
 
 <script>
-
-async function loadNews() {
-
-  const status = document.getElementById("status");
-  const newsArea = document.getElementById("news");
-
+const lifecycleLabels = {active: '追跡中', dormant: '休眠中', completed: '完結・保管'};
+const categories = ['すべて', '事件・事故', '災害', '政策・制度', '企業・組織', '地域・インフラ'];
+let events = [], selectedCategory = 'すべて', selectedLifecycle = 'active', searchText = '';
+const status = document.getElementById('status');
+const newsArea = document.getElementById('news');
+function element(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+function formatDate(value) {
+  const d = new Date(value);
+  return value && !isNaN(d) ? d.toLocaleDateString('ja-JP', {timeZone: 'Asia/Tokyo'}) : '日時未確認';
+}
+function safeLink(url, title) {
+  const node = element('a', title);
   try {
-
-    const response = await fetch(
-  "events.json?time=" + Date.now()
-);
-
-    if (!response.ok) {
-      throw new Error("データを取得できませんでした");
+    const parsed = new URL(url);
+    if (['https:', 'http:'].includes(parsed.protocol)) {
+      node.href = parsed.href; node.target = '_blank'; node.rel = 'noopener noreferrer';
     }
-
-    const groups = await response.json();
-
-    const visibleGroups = groups
-  .filter(group =>
-    group.category !== "対象外" &&
-    group.tracking_value !== "low"
-  )
-  .sort((a, b) => {
-    const aTime = new Date(a.updated_at || 0).getTime();
-    const bTime = new Date(b.updated_at || 0).getTime();
-
-    return bTime - aTime;
-  });
-
-status.textContent =
-  visibleGroups.length + "件の出来事を表示しています";
-
-    const filters = document.createElement("div");
-filters.id = "category-filters";
-filters.style.display = "flex";
-filters.style.gap = "8px";
-filters.style.flexWrap = "wrap";
-filters.style.margin = "16px 0 20px";
-
-status.insertAdjacentElement("afterend", filters);
-
-    const categories = [
-  "すべて",
-  "事件・事故",
-  "災害",
-  "政策・制度",
-  "企業・組織",
-  "地域・インフラ"
-];
-
-categories.forEach(categoryName => {
-  const button = document.createElement("button");
-  button.textContent = categoryName;
-  button.style.padding = "7px 12px";
-  button.style.border = "1px solid #e4e7ec";
-  button.style.borderRadius = "999px";
-  button.style.background = categoryName === "すべて" ? "#2563eb" : "#ffffff";
-  button.style.color = categoryName === "すべて" ? "#ffffff" : "#475467";
-  button.style.fontWeight = "700";
-  button.style.fontSize = "12px";
-  button.style.cursor = "pointer";
-
-  button.addEventListener("click", () => {
-
-  filters.querySelectorAll("button").forEach(btn => {
-  btn.style.background = "#ffffff";
-  btn.style.color = "#475467";
-});
-
-button.style.background = "#2563eb";
-button.style.color = "#ffffff";
-    
-  const cards = newsArea.querySelectorAll(".event");
-
-  cards.forEach(card => {
-    if (
-      categoryName === "すべて" ||
-      card.dataset.category === categoryName
-    ) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
-    }
-  });
-    const shownCount = newsArea.querySelectorAll(
-  '.event:not([style*="display: none"])'
-).length;
-
-status.textContent =
-  shownCount + "件の出来事を表示しています";
-});
-  
-  filters.appendChild(button);
-});
-
-    visibleGroups.forEach((group, index) => {
-
-      if (
-  group.category === "対象外" ||
-  group.tracking_value === "low"
-) return;
-
-      const card = document.createElement("section");
-      card.className = "event";
-      card.dataset.category = group.category;
-
-      const label = document.createElement("div");
-      label.className = "event-label";
-      label.textContent = "追跡中";
-
-      const category = document.createElement("span");
-category.textContent = group.category || "対象外";
-category.style.display = "inline-block";
-category.style.marginLeft = "8px";
-category.style.padding = "4px 8px";
-category.style.borderRadius = "999px";
-category.style.fontSize = "11px";
-category.style.fontWeight = "700";
-category.style.background = "#f2f4f7";
-category.style.color = "#475467";
-
-      const title = document.createElement("h2");
-      title.textContent =
-        group.event_name || "名称未設定";
-
-      const updateInfo = document.createElement("div");
-updateInfo.style.fontSize = "12px";
-updateInfo.style.fontWeight = "700";
-updateInfo.style.margin = "6px 0";
-updateInfo.style.color = "#667085";
-
-if (group.updated_at) {
-  const updated = new Date(group.updated_at);
-  const now = new Date();
-
-  const updatedDay = new Date(
-    updated.getFullYear(),
-    updated.getMonth(),
-    updated.getDate()
-  );
-
-  const today = new Date(
-    now.getFullYear(),
-    now.getMonth(),
-    now.getDate()
-  );
-
-  const diffDays = Math.floor(
-    (today - updatedDay) / (1000 * 60 * 60 * 24)
-  );
-
-  let updateLabel = "";
-
-  if (diffDays === 0) {
-    updateLabel = "🔴 今日更新";
-  } else if (diffDays === 1) {
-    updateLabel = "🟠 昨日更新";
-  } else {
-    updateLabel = "最終更新：" +
-      updated.toLocaleDateString("ja-JP");
-  }
-
-  updateInfo.textContent = updateLabel;
+  } catch (_) {}
+  return node;
 }
-      
-      const count = document.createElement("div");
-      count.className = "count";
-      const sourceCount = group.source_article_count || group.article_count;
-
-if (sourceCount > group.article_count) {
-  count.textContent =
-    sourceCount + "件の報道を" + group.article_count + "件に整理";
-} else {
-  count.textContent =
-    group.article_count + "件の関連記事";
-}
-
-      const statusBox = document.createElement("div");
-statusBox.style.margin = "12px 0";
-statusBox.style.padding = "14px";
-statusBox.style.background = "#f8fafc";
-statusBox.style.borderRadius = "10px";
-statusBox.style.lineHeight = "1.7";
-
-statusBox.innerHTML = `
-  <div style="font-weight:800;margin-bottom:8px;">
-    📍 現在地：${group.current_stage || "確認中"}
-  </div>
-
-  <div style="font-size:14px;margin-bottom:12px;">
-    ${group.summary || ""}
-  </div>
-
-  <div style="font-size:13px;margin-bottom:8px;">
-    <strong>最新の動き</strong><br>
-    ${group.latest || "確認中"}
-  </div>
-
-  <div style="font-size:13px;">
-    <strong>🔭 次に注目</strong><br>
-    ${group.next_watch || "確認中"}
-  </div>
-`;
-      
-      const articles = document.createElement("div");
-articles.className = "articles";
-articles.style.display = "none";
-
-const timelineTitle = document.createElement("div");
-timelineTitle.textContent = "これまでの流れ";
-timelineTitle.style.fontWeight = "800";
-timelineTitle.style.fontSize = "14px";
-timelineTitle.style.margin = "18px 0 12px";
-
-articles.appendChild(timelineTitle);
-
-const sortedArticles = [...(group.articles || [])]
-  .sort((a, b) => {
-    return new Date(a.published || 0) -
-           new Date(b.published || 0);
-  });
-
-sortedArticles.forEach((article, articleIndex) => {
-
-  const item = document.createElement("div");
-
-  item.style.position = "relative";
-  item.style.paddingLeft = "26px";
-  item.style.paddingBottom = "18px";
-  item.style.borderLeft = "2px solid #e4e7ec";
-  item.style.marginLeft = "7px";
-
-  const dot = document.createElement("div");
-  dot.style.position = "absolute";
-  dot.style.left = "-6px";
-  dot.style.top = "3px";
-  dot.style.width = "10px";
-  dot.style.height = "10px";
-  dot.style.borderRadius = "50%";
-  dot.style.background =
-    articleIndex === sortedArticles.length - 1
-      ? "#2563eb"
-      : "#98a2b3";
-
-  const date = document.createElement("div");
-  date.style.fontSize = "12px";
-  date.style.fontWeight = "700";
-  date.style.color = "#667085";
-  date.style.marginBottom = "4px";
-
-  if (article.published) {
-    const d = new Date(article.published);
-
-    if (!isNaN(d)) {
-      date.textContent =
-        d.toLocaleDateString("ja-JP");
-    }
-  }
-
-  const link = document.createElement("a");
-  link.href = article.url;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.textContent =
-    article.title || "関連記事";
-
-  if (articleIndex === sortedArticles.length - 1) {
-    const newLabel = document.createElement("span");
-    newLabel.textContent = " NEW";
-    newLabel.style.fontSize = "10px";
-    newLabel.style.fontWeight = "800";
-    newLabel.style.color = "#2563eb";
-
-    link.appendChild(newLabel);
-  }
-
-  item.appendChild(dot);
-  item.appendChild(date);
-  item.appendChild(link);
-
-  articles.appendChild(item);
-});
-
-const articleButton = document.createElement("button");
-
-articleButton.textContent =
-  "これまでの流れを見る（" +
-  sortedArticles.length +
-  "件）";
-
-articleButton.style.width = "100%";
-articleButton.style.marginTop = "12px";
-articleButton.style.padding = "10px";
-articleButton.style.border = "1px solid #e4e7ec";
-articleButton.style.borderRadius = "8px";
-articleButton.style.background = "#ffffff";
-articleButton.style.fontWeight = "700";
-articleButton.style.cursor = "pointer";
-
-articleButton.addEventListener("click", () => {
-
-  const isOpen =
-    articles.style.display !== "none";
-
-  if (isOpen) {
-    articles.style.display = "none";
-
-    articleButton.textContent =
-      "これまでの流れを見る（" +
-      sortedArticles.length +
-      "件）";
-
-  } else {
-    articles.style.display = "block";
-
-    articleButton.textContent =
-      "これまでの流れを閉じる";
-  }
-});
-
-      card.appendChild(label);
-      card.appendChild(category);
-      card.appendChild(title);
-      card.appendChild(updateInfo);
-      card.appendChild(count);
-      card.appendChild(statusBox);
-      card.appendChild(articleButton);
-      card.appendChild(articles);
-
-      newsArea.appendChild(card);
-
+function makeFilters(values, initial, onChange, name) {
+  const area = element('div', undefined, 'filters');
+  area.setAttribute('aria-label', name);
+  for (const [value, label] of values) {
+    const button = element('button', label);
+    button.type = 'button';
+    button.setAttribute('aria-pressed', String(value === initial));
+    button.addEventListener('click', () => {
+      area.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      button.setAttribute('aria-pressed', 'true'); onChange(value); render();
     });
-
-  } catch (error) {
-
-    status.textContent = "";
-
-    newsArea.innerHTML =
-      '<div class="error">' +
-      'ニュースを読み込めませんでした。' +
-      '</div>';
-
-    console.error(error);
-
+    area.appendChild(button);
   }
-
+  return area;
 }
-
-
+function render() {
+  newsArea.replaceChildren();
+  const visible = events.filter(e => categories.slice(1).includes(e.category) && e.tracking_value !== 'low')
+    .filter(e => selectedCategory === 'すべて' || e.category === selectedCategory)
+    .filter(e => selectedLifecycle === 'all' || (e.lifecycle || 'active') === selectedLifecycle)
+    .filter(e => !searchText || [e.event_name, e.summary, ...(e.articles || []).map(a => a.title)].join(' ').includes(searchText))
+    .sort((a, b) => (Date.parse(b.updated_at) || 0) - (Date.parse(a.updated_at) || 0));
+  status.textContent = visible.length + '件の出来事を表示しています';
+  if (!visible.length) newsArea.appendChild(element('p', '条件に合う出来事はありません。', 'description'));
+  for (const event of visible) {
+    const card = element('section', undefined, 'event');
+    if (event.event_id) card.id = 'event-' + event.event_id;
+    card.append(element('span', lifecycleLabels[event.lifecycle || 'active'] || '確認中', 'event-label'),
+      element('span', ' ' + event.category, 'description'), element('h2', event.event_name || '名称未設定'));
+    const count = (event.articles || []).length;
+    card.appendChild(element('div', '最終進展：' + formatDate(event.updated_at) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
+    const box = element('div', undefined, 'status-box');
+    box.append(element('strong', '📍 現在地：' + (event.current_stage || '確認中')), element('p', event.summary || '確認中'),
+      element('strong', '最新の動き'), element('p', event.latest || '確認中'), element('strong', '次に注目'), element('p', event.next_watch || '確認中'));
+    card.appendChild(box);
+    if (event.lifecycle === 'dormant') card.appendChild(element('p', '長期間、重要な進展が確認されていません。続報で追跡を再開します。', 'description'));
+    if (event.lifecycle === 'completed') card.appendChild(element('p', '完結を確認して保管中です。新たな進展があれば追跡を再開します。', 'description'));
+    if ((event.schedules || []).length) {
+      const plans = element('div', undefined, 'plans'); plans.appendChild(element('strong', '今後の予定・確認待ち'));
+      for (const plan of event.schedules) {
+        const item = element('p');
+        let label = ({scheduled: '予定', completed: '実施確認', cancelled: '中止確認'})[plan.status] || '確認中';
+        const end = plan.due_end && new Date(plan.due_end + 'T23:59:59+09:00');
+        if (plan.status === 'scheduled' && end && end < new Date()) label = '予定時期を経過・実施確認待ち';
+        item.append(element('span', plan.label + ' — ' + label + '：'), safeLink(plan.source_url, plan.date_text));
+        plans.appendChild(item);
+      }
+      card.appendChild(plans);
+    }
+    if ((event.progress_history || []).length) {
+      const details = element('details'); details.appendChild(element('summary', '出来事の進展を見る（' + event.progress_history.length + '回）'));
+      for (const change of event.progress_history) {
+        const item = element('p', formatDate(change.at) + '：' + change.stage + ' — ' + (change.latest || ''));
+        for (const url of change.evidence_urls || []) item.append(' ', safeLink(url, '根拠記事'));
+        details.appendChild(item);
+      }
+      card.appendChild(details);
+    }
+    const timeline = element('details'); timeline.appendChild(element('summary', 'これまでの報道を見る（' + count + '件）'));
+    const articles = [...(event.articles || [])].sort((a, b) => (Date.parse(a.published) || 0) - (Date.parse(b.published) || 0));
+    for (const article of articles) {
+      const item = element('div', undefined, 'article');
+      item.append(element('div', formatDate(article.published), 'date'), safeLink(article.url, article.title || '関連記事'));
+      timeline.appendChild(item);
+    }
+    card.appendChild(timeline); newsArea.appendChild(card);
+  }
+}
+async function loadNews() {
+  try {
+    const response = await fetch('events.json?time=' + Date.now());
+    if (!response.ok) throw new Error('data load failed');
+    events = await response.json();
+    if (!Array.isArray(events)) throw new Error('invalid data');
+    const controls = element('div');
+    controls.appendChild(makeFilters(Object.entries(lifecycleLabels).concat([['all', 'すべての状態']]), selectedLifecycle, v => selectedLifecycle = v, '追跡状態'));
+    controls.appendChild(makeFilters(categories.map(c => [c, c]), selectedCategory, v => selectedCategory = v, 'カテゴリー'));
+    const input = element('input'); input.type = 'search'; input.placeholder = '出来事・記事を検索'; input.setAttribute('aria-label', '出来事・記事を検索');
+    input.addEventListener('input', () => { searchText = input.value.trim(); render(); });
+    controls.appendChild(input); status.insertAdjacentElement('beforebegin', controls);
+    render();
+    try {
+      const healthResponse = await fetch('tracking_health.json?time=' + Date.now());
+      if (healthResponse.ok) {
+        const health = await healthResponse.json();
+        const info = element('p', '自動更新：' + formatDate(health.last_run_at) + (health.pending_count ? ' ／ 判定保留 ' + health.pending_count + '件' : ''), 'description');
+        controls.appendChild(info);
+      }
+    } catch (_) {}
+  } catch (error) {
+    status.textContent = ''; newsArea.replaceChildren(element('div', 'ニュースを読み込めませんでした。時間を置いて再読み込みしてください。', 'error'));
+    console.error(error);
+  }
+}
 loadNews();
 
 </script>
