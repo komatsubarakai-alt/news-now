@@ -4,7 +4,7 @@ import json
 from itertools import combinations
 from merge_safety import IDENTITY_RULES, UpdateHeld, review, save_reviews, source_context, validate_identity, contradictory, article_content
 from news_ai_grouping import negative_pairs
-from tracking_sources import AI
+from tracking_sources import AI, BudgetExceeded
 from tracking_v1 import atomic_save, deduplicate
 
 
@@ -40,6 +40,9 @@ def merge_groups(groups, judge, blocked_pairs=None):
                 decisions[(i, j)] = result
             elif result.get('relation') != 'different' or result.get('confidence') != 'high':
                 held.append(review('group_merge', 'uncertain_groups', {'groups': [groups[i], groups[j]]}))
+        except BudgetExceeded:
+            held.append(review('group_merge', 'budget_deferred', {'remaining_from': [i, j], 'group_count': len(groups)}))
+            break
         except (ValueError, TypeError, AttributeError, RuntimeError, OSError) as exc:
             held.append(review('group_merge', str(exc), {'groups': [groups[i], groups[j]]}))
     clusters = [{i} for i in range(len(groups))]
