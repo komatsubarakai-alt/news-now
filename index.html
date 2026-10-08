@@ -398,37 +398,73 @@ statusBox.innerHTML = `
 `;
       
       const articles = document.createElement("div");
-      articles.className = "articles";
+articles.className = "articles";
+articles.style.display = "none";
 
-      group.articles.forEach(article => {
+(group.articles || []).forEach(article => {
 
-        const item = document.createElement("div");
-        item.className = "article";
+  const item = document.createElement("div");
+  item.className = "article";
 
-        const link = document.createElement("a");
-        link.href = article.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = article.title;
+  const link = document.createElement("a");
+  link.href = article.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = article.title || "関連記事";
 
-        const date = document.createElement("div");
-        date.className = "date";
+  const date = document.createElement("div");
+  date.className = "date";
 
-        if (article.published) {
-          const d = new Date(article.published);
+  if (article.published) {
+    const d = new Date(article.published);
 
-          if (!isNaN(d)) {
-            date.textContent =
-              d.toLocaleString("ja-JP");
-          }
-        }
+    if (!isNaN(d)) {
+      date.textContent =
+        d.toLocaleString("ja-JP");
+    }
+  }
 
-        item.appendChild(link);
-        item.appendChild(date);
+  item.appendChild(link);
+  item.appendChild(date);
+  articles.appendChild(item);
+});
 
-        articles.appendChild(item);
+const articleButton = document.createElement("button");
 
-      });
+articleButton.textContent =
+  "関連記事を見る（" +
+  (group.articles || []).length +
+  "件）";
+
+articleButton.style.width = "100%";
+articleButton.style.marginTop = "12px";
+articleButton.style.padding = "10px";
+articleButton.style.border = "1px solid #e4e7ec";
+articleButton.style.borderRadius = "8px";
+articleButton.style.background = "#ffffff";
+articleButton.style.fontWeight = "700";
+articleButton.style.cursor = "pointer";
+
+articleButton.addEventListener("click", () => {
+
+  const isOpen =
+    articles.style.display !== "none";
+
+  if (isOpen) {
+    articles.style.display = "none";
+
+    articleButton.textContent =
+      "関連記事を見る（" +
+      (group.articles || []).length +
+      "件）";
+
+  } else {
+    articles.style.display = "block";
+
+    articleButton.textContent =
+      "関連記事を閉じる";
+  }
+});
 
       card.appendChild(label);
       card.appendChild(category);
@@ -436,6 +472,7 @@ statusBox.innerHTML = `
       card.appendChild(updateInfo);
       card.appendChild(count);
       card.appendChild(statusBox);
+      card.appendChild(articleButton);
       card.appendChild(articles);
 
       newsArea.appendChild(card);
