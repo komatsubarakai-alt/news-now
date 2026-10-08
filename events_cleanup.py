@@ -593,3 +593,23 @@ print(
 print(
     "events.json はまだ変更していません"
 )
+
+# 安全チェックを通過した統合済みデータを
+# 本番の events.json に反映する
+with open(
+    "events.json",
+    "w",
+    encoding="utf-8"
+) as f:
+    json.dump(
+        events_merged_preview,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
+print(
+    f"本番反映成功: "
+    f"events.json を "
+    f"{len(events_merged_preview)}イベントに更新しました"
+)
