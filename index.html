@@ -409,7 +409,34 @@ statusBox.innerHTML = `
 
 }
 
+async function loadTrackedEvents() {
+  try {
+    const response = await fetch(
+      "events.json?time=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error("events.json の読み込みに失敗");
+    }
+
+    const events = await response.json();
+
+    console.log(
+      "長期追跡イベント:",
+      events.length + "件",
+      events
+    );
+
+  } catch (error) {
+    console.error(
+      "長期追跡イベントの読み込みエラー:",
+      error
+    );
+  }
+}
+
 loadNews();
+loadTrackedEvents();
 
 </script>
 
