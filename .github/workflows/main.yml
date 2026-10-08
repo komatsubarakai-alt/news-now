@@ -91,6 +91,8 @@ jobs:
           with open("ai_candidates.json", "r", encoding="utf-8") as f:
               candidates = json.load(f)
 
+          from merge_safety import IDENTITY_RULES, source_context
+
           results = []
 
           for candidate in candidates[:100]:
@@ -126,6 +128,11 @@ jobs:
           different = 無関係
           """
 
+              prompt += "\n" + IDENTITY_RULES + "\n" + json.dumps({
+                  "existing": source_context(candidate["article_a"]),
+                  "incoming": source_context(candidate["article_b"])
+              }, ensure_ascii=False)
+
               data = json.dumps({
                   "model": "gpt-5.4-mini",
                   "input": prompt
@@ -154,7 +161,12 @@ jobs:
                   })
 
               except Exception as e:
-                  print("AI判定エラー:", e)
+                  results.append({
+                      "article_a": candidate["article_a"],
+                      "article_b": candidate["article_b"],
+                      "ai_result": json.dumps({"relation": "uncertain", "confidence": "low", "reason": type(e).__name__})
+                  })
+                  print("AI判定を保留:", type(e).__name__)
 
           with open("ai_results.json", "w", encoding="utf-8") as f:
               json.dump(
@@ -198,7 +210,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json tracking_pending.json tracking_health.json
+          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json tracking_pending.json tracking_health.json merge_review.json status_pending.json
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Sapporo news"

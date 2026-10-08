@@ -1,191 +1,79 @@
+"""Group merges need source evidence for every cross-pair, never transitive union alone."""
+import copy
 import json
-import os
-import urllib.request
 from itertools import combinations
-
-with open("news_groups_ai.json", "r", encoding="utf-8") as f:
-    groups = json.load(f)
-
-parent = list(range(len(groups)))
-merge_names = {}
-
-
-def find(x):
-    if parent[x] != x:
-        parent[x] = find(parent[x])
-    return parent[x]
-
-
-def union(a, b):
-    root_a = find(a)
-    root_b = find(b)
-
-    if root_a != root_b:
-        parent[root_b] = root_a
+from merge_safety import IDENTITY_RULES, UpdateHeld, review, save_reviews, source_context, validate_identity, contradictory, article_content
+from news_ai_grouping import negative_pairs
+from tracking_sources import AI
+from tracking_v1 import atomic_save, deduplicate
 
 
 def group_text(group):
-    articles = []
-
-    for article in group.get("articles", [])[:5]:
-        articles.append({
-            "title": article.get("title", ""),
-            "published": article.get("published", "")
-        })
-
-    return {
-        "event_name": group.get("event_name", ""),
-        "articles": articles
-    }
+    return {'event_name': group.get('event_name', ''),
+            'articles': [source_context(a) for a in group.get('articles', [])]}
 
 
-def ask_ai(group_a, group_b):
-    prompt = f"""
-あなたは「ニュースの現在地」というニュース追跡サービスの編集者です。
-
-次の2つのニュースグループが、
-「同じ1つの出来事の進展・続報」なのかを厳しく判定してください。
-
-【グループA】
-{json.dumps(group_text(group_a), ensure_ascii=False, indent=2)}
-
-【グループB】
-{json.dumps(group_text(group_b), ensure_ascii=False, indent=2)}
-
-判定ルール:
-
-・同じ地域、同じ人物、日時が近い、同じ単語があるというだけでは統合しません。
-
-・前の記事から後の記事へ、
-同じ出来事そのものが進展している場合だけ same_event にしてください。
-
-same_event の例:
-・事件発生 → 逮捕 → 送検 → 起訴 → 裁判 → 判決
-・事故発生 → 救助 → 原因調査 → 復旧
-・大雨警報 → 同じ大雨による冠水・浸水 → 避難 → 復旧
-・政策発表 → 審議 → 決定 → 施行
-・施設計画 → 着工 → 完成 → 開業
-
-different の例:
-・札幌の大雨 と、札幌で起きた無関係な交通事故
-・大雨の後に別の設備事故が新しく発生したケース
-・同じ会社で起きた別々の問題
-・同じ人物が関係する別々の事件
-
-重要:
-ある出来事が別の事件・事故の「原因」や「背景」になっていても、
-新しい独立した事件・事故が発生した場合は different にしてください。
-
-判断に迷う場合も different にしてください。
-
-次のJSONだけを返してください。
-
-{{
-  "relation": "same_event または different",
-  "event_name": "same_eventの場合のみ統合後の短い出来事名",
-  "confidence": "high / medium / low"
-}}
-"""
-
-    data = json.dumps({
-        "model": "gpt-5.4-mini",
-        "input": prompt
-    }).encode("utf-8")
-
-    request = urllib.request.Request(
-        "https://api.openai.com/v1/responses",
-        data=data,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + os.environ["OPENAI_API_KEY"]
-        },
-        method="POST"
-    )
-
-    try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            response_data = json.loads(
-                response.read().decode("utf-8")
-            )
-
-        text = response_data["output"][0]["content"][0]["text"].strip()
-
-        if text.startswith("```"):
-            text = text.replace("```json", "")
-            text = text.replace("```", "")
-            text = text.strip()
-
-        return json.loads(text)
-
-    except Exception as e:
-        print("グループ比較エラー:", e)
-        return {
-            "relation": "different",
-            "event_name": "",
-            "confidence": "low"
-        }
+def ask_ai(ai, group_a, group_b):
+    return ai.ask('2グループは同一案件の直接続報か。単なる原因・背景・地域の一致は不可。'
+                  'JSON {"relation":"same_event/different/uncertain","confidence":"high/medium/low",'
+                  '"event_name":"案件名","identity_matches":[]}。グループAを既存、Bを新記事として照合。\n'
+                  + IDENTITY_RULES + '\n' + json.dumps({'A': group_text(group_a), 'B': group_text(group_b)}, ensure_ascii=False))
 
 
-# グループ同士を1対1で比較
-for i, j in combinations(range(len(groups)), 2):
-
-    result = ask_ai(groups[i], groups[j])
-
-    # 誤統合を防ぐため high の same_event だけ統合
-    if (
-        result.get("relation") == "same_event"
-        and result.get("confidence") == "high"
-    ):
-        union(i, j)
-
-        event_name = result.get("event_name", "")
-
-        if event_name:
-            merge_names[i] = event_name
-
-
-# 統合後のグループを作成
-merged = {}
-
-for i, group in enumerate(groups):
-    root = find(i)
-
-    if root not in merged:
-        merged[root] = {
-            "event_name": group.get("event_name", ""),
-            "article_count": 0,
-            "articles": []
-        }
-
-    for article in group.get("articles", []):
-        url = article.get("url", "")
-
-        if not any(
-            existing.get("url", "") == url
-            for existing in merged[root]["articles"]
-        ):
-            merged[root]["articles"].append(article)
-
-
-# AIが付けた統合名を反映
-for original_id, name in merge_names.items():
-    root = find(original_id)
-
-    if root in merged and name:
-        merged[root]["event_name"] = name
+def merge_groups(groups, judge, blocked_pairs=None):
+    blocked_pairs = blocked_pairs or set()
+    decisions, held = {}, []
+    for i, j in combinations(range(len(groups)), 2):
+        try:
+            if any(frozenset((a['url'], b['url'])) in blocked_pairs for a in groups[i]['articles'] for b in groups[j]['articles']):
+                raise UpdateHeld('explicit_pair_conflict')
+            result = judge(groups[i], groups[j])
+            if result.get('relation') == 'same_event':
+                validate_identity(groups[i]['articles'], groups[j]['articles'], result)
+                # No article may be admitted through a contaminated representative.
+                for article in groups[j]['articles']:
+                    if contradictory(groups[i].get('event_name', ''), article_content(article)):
+                        raise UpdateHeld('group_name_article_contradiction')
+                    for prior in groups[i]['articles']:
+                        if contradictory(article_content(prior), article_content(article)):
+                            raise UpdateHeld('group_article_contradiction')
+                decisions[(i, j)] = result
+            elif result.get('relation') != 'different' or result.get('confidence') != 'high':
+                held.append(review('group_merge', 'uncertain_groups', {'groups': [groups[i], groups[j]]}))
+        except (ValueError, TypeError, AttributeError, RuntimeError, OSError) as exc:
+            held.append(review('group_merge', str(exc), {'groups': [groups[i], groups[j]]}))
+    clusters = [{i} for i in range(len(groups))]
+    for (i, j), result in decisions.items():
+        left = next(c for c in clusters if i in c); right = next(c for c in clusters if j in c)
+        if left is right:
+            continue
+        if all(tuple(sorted((a, b))) in decisions for a in left for b in right):
+            left.update(right); clusters.remove(right)
+        else:
+            held.append(review('group_merge', 'transitive_group_unproved', {'group_indexes': sorted(left | right)}))
+    output = []
+    for cluster in clusters:
+        seed = min(cluster)
+        # Preserve the established seed name; AI merge labels are not authoritative facts.
+        combined = copy.deepcopy(groups[seed])
+        combined['articles'] = deduplicate([a for i in sorted(cluster) for a in groups[i]['articles']])
+        combined['article_count'] = len(combined['articles'])
+        output.append(combined)
+    return output, held
 
 
-output = list(merged.values())
+def main():
+    with open('news_groups_ai.json', encoding='utf-8') as f:
+        groups = json.load(f)
+    # Bound this stage to 100 calls; the previous group merger was unbounded.
+    ai = AI(limit=100)
+    with open('ai_results.json', encoding='utf-8') as f:
+        blocked = negative_pairs(json.load(f))
+    output, held = merge_groups(groups, lambda a, b: ask_ai(ai, a, b), blocked)
+    atomic_save('news_groups_merged.json', output)
+    save_reviews(held)
+    print(f'グループ {len(groups)}→{len(output)}件 / 統合保留 {len(held)}件')
 
-for group in output:
-    group["article_count"] = len(group["articles"])
 
-
-with open("news_groups_merged.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, ensure_ascii=False, indent=2)
-
-
-print(
-    f"{len(groups)}個のニュースグループを"
-    f"{len(output)}個に整理しました"
-)
+if __name__ == '__main__':
+    main()

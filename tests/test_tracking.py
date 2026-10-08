@@ -7,6 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 from event_tracker import enrich, lookup_event, merge_incoming
 from tracking_sources import AI, BudgetExceeded
+from merge_safety import UpdateHeld
 from tracking_v1 import (apply_report, atomic_save, completion_verified, date_time, deduplicate,
                          merge_schedules, migrate, schedule_bounds, scheduled_search_due, update_lifecycle)
 
@@ -14,17 +15,23 @@ NOW = datetime(2026, 10, 8, 11, tzinfo=timezone.utc)
 
 
 def article(title='札幌の事件 容疑者を逮捕', url='https://example.com/a', published='2026-10-07T10:00:00+00:00'):
-    return {'title': title, 'url': url, 'published': published}
+    return {'title': '江別豊幌住宅強盗 被害者山田 ' + title, 'url': url, 'published': published}
 
 
 def event():
-    return migrate({'event_id': 'e1', 'event_name': '札幌の事件', 'category': '事件・事故', 'tracking_value': 'high',
+    return migrate({'event_id': 'e1', 'event_name': '江別豊幌住宅強盗', 'category': '事件・事故', 'tracking_value': 'high',
                     'current_stage': '逮捕', 'summary': '容疑者を逮捕', 'updated_at': '2026-10-07T12:00:00+00:00',
                     'articles': [article()]}, NOW)
 
 
 def report(a, **values):
-    return {'relation': 'same_event', 'event_id': 'e1', 'confidence': 'high', 'evidence_urls': [a['url']],
+    prior = article()
+    anchors = [{'kind': kind, 'value': value, 'existing_quote': prior['title'], 'incoming_quote': a['title']}
+               for kind, value in [('case', '江別豊幌住宅強盗'), ('entity', '被害者山田')]]
+    return {'identity_matches': [{'existing_url': prior['url'], 'incoming_url': a['url'], 'anchors': anchors}],
+            'progress_evidence': [{'url': a['url'], 'quote': a['title']}],
+            'event_identity': {'value': '江別豊幌住宅強盗', 'url': a['url'], 'quote': a['title']},
+            'relation': 'same_event', 'event_id': 'e1', 'confidence': 'high', 'evidence_urls': [a['url']],
             'meaningful_change': True, 'current_stage': '起訴', **values}
 
 
@@ -64,12 +71,14 @@ class TrackingTests(unittest.TestCase):
 
     def test_untrusted_evidence_cannot_advance(self):
         e = event(); a = article(url='https://example.com/b', published=NOW.isoformat())
-        apply_report(e, [a], report(a, evidence_urls=['https://invented.invalid']), NOW)
+        with self.assertRaises(UpdateHeld):
+            apply_report(e, [a], report(a, evidence_urls=['https://invented.invalid']), NOW)
         self.assertEqual(e['progress_count'], 0)
 
     def test_low_confidence_cannot_advance(self):
         e = event(); a = article(url='https://example.com/b', published=NOW.isoformat())
-        apply_report(e, [a], report(a, confidence='medium'), NOW)
+        with self.assertRaises(UpdateHeld):
+            apply_report(e, [a], report(a, confidence='medium'), NOW)
         self.assertEqual(e['progress_count'], 0)
 
     def test_verdict_alone_not_completion(self):
@@ -78,7 +87,7 @@ class TrackingTests(unittest.TestCase):
 
     def test_final_verdict_archived(self):
         e = event(); a = article('事件の判決が確定', 'https://example.com/final', NOW.isoformat())
-        apply_report(e, [a], report(a, completed=True, completion_quote=a['title']), NOW)
+        apply_report(e, [a], report(a, completed=True, completion_quote=a['title'], current_stage='判決'), NOW)
         self.assertEqual(e['lifecycle'], 'completed')
         self.assertEqual(e['article_count'], 2)
 
@@ -113,7 +122,7 @@ class TrackingTests(unittest.TestCase):
         e = event(); e['last_progress_at'] = (NOW-timedelta(days=181)).isoformat()
         update_lifecycle([e], NOW)
         self.assertEqual(e['lifecycle'], 'dormant')
-        a = article(url='https://example.com/new', published=NOW.isoformat())
+        a = article('容疑者を起訴', url='https://example.com/new', published=NOW.isoformat())
         apply_report(e, [a], report(a), NOW)
         self.assertEqual(e['lifecycle'], 'active')
 
@@ -166,7 +175,7 @@ class TrackingTests(unittest.TestCase):
     def test_search_backfill_accepts_only_high_confidence_older_candidates(self):
         e = event(); old = article('事件発生', 'https://example.com/old', '2025-01-01T00:00:00Z')
         other = article('別の事件', 'https://example.com/other', '2025-01-02T00:00:00Z')
-        ai = FakeAI({'matches': [{'url': old['url'], 'confidence': 'high'}, {'url': other['url'], 'confidence': 'low'}, {'url': 'https://invented.invalid', 'confidence': 'high'}]})
+        ai = FakeAI({**report(old, meaningful_change=False), 'matches': [{'url': old['url'], 'confidence': 'high'}, {'url': other['url'], 'confidence': 'low'}, {'url': 'https://invented.invalid', 'confidence': 'high'}]})
         lookup_event(e, ai, 'test', NOW, True, finder=lambda q: [old, other])
         self.assertEqual(e['article_count'], 2)
         self.assertEqual(e['current_stage'], '逮捕')
@@ -187,9 +196,9 @@ class TrackingTests(unittest.TestCase):
 
     def test_new_event_is_preserved(self):
         a = article(url='https://example.com/new')
-        group = {'event_name': '新案件', 'category': '事件・事故', 'tracking_value': 'high', 'articles': [a]}
+        group = {'event_name': '江別豊幌住宅強盗', 'category': '事件・事故', 'tracking_value': 'high', 'articles': [a]}
         events = []
-        pending = merge_incoming(events, [group], FakeAI(report(a, relation='new_event', event_id='')), NOW)
+        pending = merge_incoming(events, [group], FakeAI(report(a, relation='new_event', event_id='', current_stage='逮捕')), NOW)
         self.assertEqual(pending, [])
         self.assertEqual(events[0]['article_count'], 1)
         self.assertEqual(events[0]['progress_count'], 0)
