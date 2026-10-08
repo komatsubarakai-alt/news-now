@@ -1,241 +1,543 @@
 <!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ニュースの現在地 — 公開版プレビュー</title>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0868ae"><title>ニュースの現在地 — 公開版プレビュー</title>
+<style>
+:root{--blue:#0868ae;
+  --ink:#182839;
+  --muted:#6b7d8b;
+  --line:#e7edf2;
+  --bg:#f6f9fc;
+  --red:#dc435b;
+  --purple:#7957c7;
+  --green:#16856b;
+  --orange:#d88322}
+*{box-sizing:border-box}
+body{margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;
+  line-height:1.65}
+a{color:var(--blue);
+  text-decoration:none;
+  overflow-wrap:anywhere}
+button,input,select{font:inherit}
+button,a,input,select{ -webkit-tap-highlight-color:transparent}
+button{cursor:pointer}
+button:disabled{cursor:default}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #69a9e3;
+  outline-offset:3px}
+[hidden]{display:none!important}
+.site-header{background:white;
+  border-bottom:1px solid var(--line)}
+.header-inner{max-width:1140px;
+  margin:auto;
+  padding:22px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px}
+.brand{color:var(--ink);
+  font-size:24px;
+  font-weight:850;
+  letter-spacing:-.04em}
+.tagline{display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.08em}
+.desktop-nav{display:flex;
+  align-items:center;
+  gap:26px;
+  font-size:13px;
+  font-weight:650}
+.desktop-nav a[aria-current=page]{color:var(--blue)}
+.nav-save{padding:8px 15px;
+  border:1px solid #d7e6f1;
+  border-radius:6px}
+.menu-toggle{display:none;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:7px 12px}
+.menu-links{padding:10px 24px;
+  background:white;
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px}
+.preview-note{max-width:1092px;
+  margin:14px auto 0;
+  padding:9px 14px;
+  background:#eaf3fb;
+  color:#4f6e87;
+  border-radius:6px;
+  font-size:11px}
+main{max-width:1140px;
+  margin:auto;
+  padding:22px 24px 48px}
+.searchbar{max-width:690px;
+  margin:0 auto 24px;
+  position:relative}
+.searchbar input{width:100%;
+  border:1px solid #d8e3ec;
+  background:white;
+  border-radius:8px;
+  padding:13px 48px;
+  font-size:15px;
+  box-shadow:0 3px 12px #173f6510}
+.search-icon{position:absolute;
+  left:17px;
+  top:10px;
+  font-size:22px;
+  color:#7890a3}
+.clear-search{position:absolute;
+  right:10px;
+  top:9px;
+  background:none;
+  border:0;
+  color:#74899b;
+  padding:3px 9px;
+  font-size:20px}
+.section-heading{display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  margin:20px 0 14px}
+h1{font-size:26px;
+  line-height:1.45;
+  margin:0 0 14px}
+h2{font-size:19px;
+  line-height:1.5;
+  margin:0}
+h3{font-size:16px;
+  margin:0 0 8px}
+.eyebrow{color:var(--blue);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em}
+.muted,.date{color:var(--muted);
+  font-size:12px}
+.hero-grid{display:grid;
+  grid-template-columns:1.65fr 1fr;
+  gap:18px;
+  margin-bottom:30px}
+.hero-card{position:relative;
+  min-height:330px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#174a70;
+  display:flex;
+  align-items:flex-end;
+  color:white}
+.hero-art{position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,#acd9f3 0%,#a9cadf 45%,#173e5b 100%)}
+.hero-art svg{width:100%;
+  height:100%;
+  object-fit:cover}
+.hero-card:after{content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 20%,#092d4ce0)}
+.hero-copy{position:relative;
+  z-index:1;
+  padding:24px;
+  width:100%}
+.hero-copy h2{font-size:25px;
+  margin:8px 0;
+  max-width:23ch}
+.hero-copy p{font-size:13px;
+  line-height:1.7;
+  max-width:56ch;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  margin:10px 0 16px}
+.hero-copy .date{color:#d1e5f4}
+.hero-action{background:white;
+  color:#174663;
+  border-radius:6px;
+  padding:9px 16px;
+  font-weight:700;
+  font-size:13px;
+  display:inline-block}
+.art-note{position:absolute;
+  top:12px;
+  right:14px;
+  z-index:1;
+  font-size:9px;
+  color:#375976;
+  background:#ffffffbd;
+  padding:2px 7px;
+  border-radius:4px}
+.spotlight{background:white;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px}
+.spotlight h2{margin-bottom:14px}
+.mini-row{display:flex;
+  gap:12px;
+  padding:12px 0;
+  border-top:1px solid var(--line);
+  align-items:center}
+.mini-row:first-of-type{border-top:0}
+.mini-row .title{font-size:13px;
+  font-weight:700;
+  color:var(--ink);
+  line-height:1.5;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden}
+.thumb{width:84px;
+  min-width:84px;
+  height:68px;
+  border-radius:7px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--soft);
+  color:var(--tone);
+  font-size:25px;
+  font-weight:700}
+.badge{display:inline-block;
+  background:var(--soft);
+  color:var(--tone);
+  font-size:10px;
+  font-weight:750;
+  padding:3px 9px;
+  border-radius:4px;
+  line-height:1.6}
+.incident{--tone:var(--red);
+  --soft:#fff0f2}
+.disaster{--tone:var(--purple);
+  --soft:#f2edfc}
+.policy{--tone:var(--green);
+  --soft:#e9f6f0}
+.company{--tone:var(--orange);
+  --soft:#fff3e4}
+.infra{--tone:var(--blue);
+  --soft:#eaf3fc}
+.filters{display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:2px 1px 10px;
+  scrollbar-width:thin}
+.chip{white-space:nowrap;
+  border:0;
+  border-radius:6px;
+  padding:6px 12px;
+  background:var(--soft,#edf2f6);
+  color:var(--tone,var(--muted));
+  font-size:12px;
+  font-weight:650;
+  min-height:36px}
+.chip[aria-pressed=true]{background:var(--blue);
+  color:white}
+.toolbar{display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  margin:8px 0 14px}
+.toolbar select{border:1px solid var(--line);
+  border-radius:6px;
+  padding:6px;
+  color:var(--muted);
+  background:white;
+  font-size:12px}
+.state-filters{display:flex;
+  gap:12px;
+  flex-wrap:wrap}
+.state-filters button{border:0;
+  background:none;
+  font-size:11px;
+  color:var(--muted);
+  padding:4px 0}
+.state-filters button[aria-pressed=true]{color:var(--blue);
+  font-weight:700;
+  border-bottom:2px solid var(--blue)}
+.news-list{background:white;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden}
+.news-row{padding:19px 20px;
+  display:flex;
+  gap:18px;
+  align-items:center;
+  border-bottom:1px solid var(--line)}
+.news-row:last-child{border-bottom:0}
+.row-content{flex:1;
+  min-width:0}
+.row-content h2{font-size:16px;
+  margin:6px 0}
+.row-content h2 a{color:var(--ink)}
+.row-content .summary{font-size:12px;
+  color:var(--muted);
+  margin:5px 0;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden}
+.row-content .date{font-size:11px}
+.save-button{border:1px solid #d6e4ef;
+  background:white;
+  color:var(--blue);
+  border-radius:6px;
+  padding:7px 11px;
+  font-size:12px;
+  font-weight:650;
+  white-space:nowrap;
+  min-height:38px}
+.save-button[aria-pressed=true]{background:#eaf3fc;
+  border-color:#a9cde8}
+.row-save{font-size:20px;
+  width:40px;
+  height:40px;
+  padding:0}
+.empty{padding:38px 20px;
+  text-align:center;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:10px}
+.back{display:inline-block;
+  margin-bottom:18px;
+  font-size:13px}
+.detail-layout{display:grid;
+  grid-template-columns:minmax(0,760px) 1fr;
+  gap:25px}
+.detail-card{background:white;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:28px}
+.detail-top{display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:18px}
+.detail-card h1{font-size:27px;
+  margin-bottom:8px}
+.current-box{margin:24px 0;
+  background:var(--soft);
+  border-radius:10px;
+  padding:20px;
+  display:flex;
+  gap:15px;
+  align-items:flex-start}
+.current-icon{color:white;
+  background:var(--tone);
+  border-radius:50%;
+  width:43px;
+  min-width:43px;
+  height:43px;
+  display:grid;
+  place-items:center;
+  font-size:20px}
+.current-box h2{color:var(--tone);
+  font-size:14px}
+.current-box p{font-size:14px;
+  margin:7px 0 0}
+.tabs{display:flex;
+  border-bottom:1px solid var(--line);
+  gap:18px;
+  overflow-x:auto;
+  margin-bottom:25px}
+.tabs button{white-space:nowrap;
+  background:none;
+  border:0;
+  color:var(--muted);
+  padding:11px 2px;
+  font-size:13px}
+.tabs button[aria-selected=true]{border-bottom:3px solid var(--blue);
+  color:var(--blue);
+  font-weight:750}
+.timeline{margin:20px 0;
+  padding-left:24px;
+  border-left:1px solid #dce6ee}
+.timeline-item{position:relative;
+  padding:0 0 26px 8px;
+  font-size:13px}
+.timeline-item:before{content:"";
+  position:absolute;
+  left:-30px;
+  top:8px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--tone)}
+.timeline-item h3{margin:5px 0;
+  font-size:14px}
+.timeline-item p{margin:7px 0;
+  color:var(--muted)}
+.detail-body p{font-size:14px}
+.source-row{padding:14px 0;
+  border-bottom:1px solid var(--line);
+  font-size:13px}
+.plan{padding:15px;
+  background:#f7fafc;
+  border-radius:8px;
+  margin:14px 0;
+  font-size:13px}
+.side-note{padding:20px;
+  background:#edf4fa;
+  border-radius:10px;
+  font-size:12px;
+  height:fit-content}
+.side-note h2{font-size:15px;
+  margin-bottom:10px}
+.category-grid{display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px}
+.category-card{display:flex;
+  align-items:center;
+  gap:18px;
+  padding:22px;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:10px;
+  color:var(--ink)}
+.category-card .thumb{width:52px;
+  min-width:52px;
+  height:52px}
+.category-card h2{font-size:16px}
+.category-card .category-count{margin-left:auto;
+  white-space:nowrap;
+  color:var(--muted);
+  font-size:12px}
+.local-note{font-size:12px;
+  color:var(--muted);
+  background:#edf4fa;
+  padding:14px;
+  border-radius:8px;
+  margin-bottom:20px}
+.section-page{background:white;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:30px;
+  max-width:850px;
+  margin:auto}
+.section-page h2{margin:24px 0 10px}
+.section-page p{font-size:14px}
+.section-page table{border-collapse:collapse;
+  width:100%;
+  font-size:13px}
+.section-page td,.section-page th{border:1px solid var(--line);
+  padding:12px;
+  text-align:left}
+.bottom-nav{display:none}
+footer{max-width:1092px;
+  margin:auto;
+  padding:22px 24px 35px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:11px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap}
+.footer-links{display:flex;
+  gap:16px}
+#announcement{max-width:1092px;
+  margin:8px auto;
+  color:var(--blue);
+  font-size:12px;
+  min-height:18px}
+.progress-note{padding:12px;
+  background:#f7fafc;
+  border-radius:8px;
+  font-size:12px;
+  color:var(--muted)}
 
-  <style>
-    :root {
-      --bg:#f4f6f8;
-      --card:#ffffff;
-      --text:#17202a;
-      --muted:#667085;
-      --line:#e4e7ec;
-      --accent:#2563eb;
-    }
+@media(max-width:760px){.header-inner{padding:18px 17px}
+.brand{font-size:22px}
+.desktop-nav{display:none}
+.menu-toggle{display:block}
+.preview-note{margin:9px 14px 0;
+  font-size:10px;
+  padding:7px 10px}
+main{padding:17px 14px 30px}
+.searchbar{margin-bottom:20px}
+.searchbar input{font-size:14px;
+  padding:11px 38px}
+.search-icon{left:12px;
+  top:8px}
+.hero-grid{display:block;
+  margin-bottom:22px}
+.hero-card{min-height:270px}
+.hero-copy{padding:19px}
+.hero-copy h2{font-size:22px}
+.spotlight{display:none}
+.section-heading{margin-top:12px}
+h1{font-size:23px}
+h2{font-size:18px}
+.news-row{gap:12px;
+  padding:15px 12px}
+.thumb{width:64px;
+  min-width:64px;
+  height:64px;
+  font-size:24px}
+.row-content h2{font-size:14px;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden}
+.row-content .summary{display:none}
+.row-content .date{font-size:10px}
+.row-save{width:34px;
+  height:38px;
+  font-size:18px}
+.toolbar{gap:8px}
+.state-filters{gap:10px}
+.detail-layout{display:block}
+.detail-card{padding:19px 16px}
+.detail-card h1{font-size:24px}
+.current-box{padding:15px;
+  gap:12px}
+.current-box p{font-size:13px}
+.tabs{gap:15px}
+.side-note{margin-top:18px}
+.category-grid{grid-template-columns:1fr}
+.category-card{padding:18px}
+.section-page{padding:22px 17px}
+.section-page table{font-size:11px}
+.section-page td,.section-page th{padding:8px}
+.bottom-nav{display:flex;
+  position:fixed;
+  z-index:5;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#fffffff5;
+  border-top:1px solid var(--line);
+  padding:8px 8px calc(8px + env(safe-area-inset-bottom));
+  justify-content:space-around}
+.bottom-nav a{display:flex;
+  align-items:center;
+  flex-direction:column;
+  color:#7d8e9d;
+  font-size:10px;
+  min-width:54px;
+  gap:1px}
+.bottom-nav a span{font-size:20px;
+  line-height:1.3}
+.bottom-nav a[aria-current=page]{color:var(--blue);
+  font-weight:750}
+footer{padding-bottom:98px;
+  font-size:10px}
+.footer-links{gap:12px}
+#announcement{margin:8px 16px}
+.detail-top .save-button{font-size:11px}
+}
 
-    * {
-      box-sizing:border-box;
-    }
+@media(prefers-reduced-motion:no-preference){a,button{transition:background .15s,color .15s}
+}
 
-    body {
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:-apple-system,BlinkMacSystemFont,
-        "Segoe UI","Noto Sans JP",sans-serif;
-    }
-
-    header {
-      background:#111827;
-      color:white;
-      padding:18px 16px;
-    }
-
-    .header-inner {
-      max-width:900px;
-      margin:auto;
-    }
-
-    .logo {
-      font-size:20px;
-      font-weight:800;
-    }
-
-    .subtitle {
-      margin-top:5px;
-      font-size:12px;
-      color:#cbd5e1;
-    }
-
-    main {
-      max-width:900px;
-      margin:auto;
-      padding:22px 14px 50px;
-    }
-
-    .top {
-      margin-bottom:20px;
-    }
-
-    h1 {
-      font-size:25px;
-      margin:0 0 7px;
-    }
-
-    .description {
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.7;
-    }
-
-    #status {
-      font-size:13px;
-      color:var(--muted);
-      margin:15px 0;
-    }
-
-    .event {
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:17px;
-      margin-bottom:14px;
-      box-shadow:0 2px 8px rgba(0,0,0,.03);
-    }
-
-    .event-label {
-      display:inline-block;
-      font-size:11px;
-      font-weight:700;
-      color:var(--accent);
-      background:#eff6ff;
-      border-radius:999px;
-      padding:4px 8px;
-      margin-bottom:8px;
-    }
-
-    .event h2 {
-      font-size:18px;
-      line-height:1.45;
-      margin:0 0 8px;
-    }
-
-    .count {
-      font-size:12px;
-      color:var(--muted);
-      margin-bottom:12px;
-    }
-
-    .articles {
-      border-top:1px solid var(--line);
-      padding-top:8px;
-    }
-
-    .article {
-      padding:9px 0;
-      border-bottom:1px solid var(--line);
-    }
-
-    .article:last-child {
-      border-bottom:0;
-    }
-
-    .article a {
-      color:var(--text);
-      text-decoration:none;
-      font-size:14px;
-      font-weight:600;
-      line-height:1.5;
-    }
-
-    .article a:hover {
-      color:var(--accent);
-    }
-
-    .date {
-      font-size:11px;
-      color:var(--muted);
-      margin-top:4px;
-    }
-
-    .error {
-      background:#fff;
-      border:1px solid #fecaca;
-      border-radius:12px;
-      padding:15px;
-      color:#991b1b;
-    }
-
-    footer {
-      text-align:center;
-      color:var(--muted);
-      font-size:11px;
-      padding:20px;
-    }
-    .filters { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; }
-    button, summary { cursor:pointer; }
-    button { padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:white; color:var(--text); }
-    button[aria-pressed="true"] { background:var(--accent); color:white; }
-    input[type="search"] { width:100%; padding:12px; border:1px solid var(--line); border-radius:8px; font-size:16px; }
-    .status-box, .plans { padding:14px; background:#f8fafc; border-radius:10px; margin:12px 0; line-height:1.7; }
-    .status-box p { margin:8px 0 14px; }
-    details { margin-top:12px; border-top:1px solid var(--line); padding-top:12px; line-height:1.7; }
-    a { overflow-wrap:anywhere; }
-    :focus-visible { outline:3px solid #93c5fd; outline-offset:3px; }
-  
-    .preview-note { background:#e8efff; color:#24478c; padding:10px 16px; font-size:13px; line-height:1.6; }
-    .preview-note div, .site-nav { max-width:900px; margin:auto; }
-    .site-nav { display:flex; gap:18px; flex-wrap:wrap; padding-top:14px; }
-    .site-nav a { color:#dbeafe; font-size:13px; text-decoration:none; }
-    .site-nav a[aria-current="page"] { color:white; text-decoration:underline; text-underline-offset:5px; }
-    .toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:14px 0; }
-    select { background:white; border:1px solid var(--line); border-radius:8px; padding:10px; font-size:14px; color:var(--text); max-width:100%; }
-    .stats { display:flex; gap:16px; flex-wrap:wrap; margin:18px 0; color:var(--muted); font-size:13px; }
-    .stats strong { font-size:22px; color:var(--text); margin-right:4px; }
-    .section-page { line-height:1.9; }
-    .section-page h1 { margin-bottom:24px; }
-    .section-page h2 { font-size:19px; margin-top:26px; }
-    .section-page p { max-width:65ch; }
-    .section-page table { border-collapse:collapse; width:100%; font-size:14px; }
-    .section-page td,.section-page th { border-bottom:1px solid var(--line); padding:12px 8px; text-align:left; }
-    .section-page th { background:#f8fafc; }
-    .lead { font-size:16px; }
-    .muted { color:var(--muted); font-size:13px; }
-    .empty { padding:32px 18px; text-align:center; background:white; border:1px solid var(--line); border-radius:14px; }
-    .event { overflow-wrap:anywhere; }
-    .event .status-box { margin-top:8px; }
-    .event .status-box p:last-child { margin-bottom:0; }
-    .event details details { border:0; }
-    [hidden] { display:none !important; }
-    @media(max-width:600px) { main { padding-top:18px; } .site-nav { gap:12px; } .logo { font-size:19px; } .event h2 { font-size:17px; } .event { padding:15px; } .toolbar { align-items:flex-start; } .section-page table { font-size:12px; } }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="header-inner">
-    <div class="logo">ニュースの現在地</div>
-    <div class="subtitle">
-      バラバラの報道を、ひとつの出来事として追う
-    </div>
-  </div>
-<nav class="site-nav" aria-label="サイト案内"><a href="#news">ニュース</a><a href="#about">このサイトについて</a><a href="#help">使い方</a><a href="#plans">料金案</a><a href="#feedback">訂正・ご意見</a></nav>
-</header>
-
-<div class="preview-note"><div><strong>公開版の画面案</strong> · 2026/10/8の保存データで表示しています。本番の自動収集・課金・通知には影響しません。</div></div>
-<main>
-<section id="feed-page">
-
-  <div class="top">
-    <h1>札幌のニュースを、先まで追う</h1>
-
-    <div class="description">
-      複数の報道をAIで整理し、
-      同じ事件・出来事ごとにまとめています。
-    </div>
-  </div>
-
-  <div id="status">
-    ニュースを読み込んでいます…
-  </div>
-
-  <div id="news"></div>
-</section>
+</style></head><body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="#home">ニュースの現在地<span class="tagline">気になるニュースの「今」を、わかりやすく</span></a><nav class="desktop-nav" aria-label="メイン"><a href="#news">ニュース一覧</a><a href="#categories">カテゴリー</a><a href="#about">このサイトについて</a><a class="nav-save" href="#saved">☆ 保存したニュース</a></nav><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-links" aria-label="メニューを開く">☰</button></div><nav id="menu-links" class="menu-links" aria-label="メニュー" hidden><a href="#home">ホーム</a><a href="#news">ニュース一覧</a><a href="#categories">カテゴリー</a><a href="#saved">保存したニュース</a><a href="#about">このサイトについて</a><a href="#help">使い方</a></nav></header>
+<div class="preview-note">公開版プレビュー · 2026/10/8の保存データ。実際の自動更新とは別の画面案です。</div><div id="announcement" role="status" aria-live="polite"></div><main><section id="app-page"><form class="searchbar" id="search-form" role="search"><span class="search-icon" aria-hidden="true">⌕</span><input id="search-input" type="search" aria-label="出来事・記事を検索" placeholder="ニュースを検索（例：札幌 火災 MICE）"><button class="clear-search" type="button" aria-label="検索語を消す">×</button></form><div id="screen"></div></section>
 <section id="about-page" class="section-page" hidden><h1>このサイトについて</h1><p class="lead">ニュースが「その後どうなったか」を、出来事ごとに確かめる場所です。</p><h2>5つの分野を追います</h2><p>事件・事故、災害、政策・制度、企業・組織、地域・インフラ。政策は制度そのものの動きを追います。</p><h2>報道を根拠に整理します</h2><p>記事のタイトル・公開日時・リンクからAIが現在地を整理しています。本文を転載するサイトではありません。細かな事実や背景は、リンク先の記事でご確認ください。</p><h2>分からないことも残します</h2><p>予定日が不明な計画や、実施が確認できない出来事は「確認待ち」にします。AIの照合や整理には誤りがあり得るため、訂正のご意見を受け付ける運用を準備しています。</p><h2>現在はテスト期間です</h2><p>2026年10月8日から1週間、自動更新と追跡の精度を確認しています。公開前の運用条件は別途確認します。</p></section>
 <section id="help-page" class="section-page" hidden><h1>使い方</h1><h2>現在地と報道の数を分けて見る</h2><p>「関連記事」は同じ出来事を報じた記事の数です。「進展」は逮捕から起訴へ進むなど、重要な動きを確認した回数です。同じ内容の記事が増えても進展回数は増えません。回数はv1.0への移行後から記録しています。</p><h2>追跡状態</h2><p>追跡中：続報を追っています。休眠中：長期間、重要な進展がありません。完結・保管：終結を確認して保存しています。休眠・保管からも重要な続報があれば追跡を再開します。</p><h2>検索と並び替え</h2><p>出来事名・説明・記事タイトルを検索します。複数の言葉を空白で区切ると、すべての言葉を含む出来事が表示されます。絞り込みの状態はURLに残るので、同じ一覧を共有できます。</p><h2>予定は確定事項と区別します</h2><p>予定時期を過ぎても、実施されたことを確認するまで完了扱いにしません。年や日付が曖昧な予定は、日付を推測して表示しません。</p></section>
-<section id="plans-page" class="section-page" hidden><h1>料金の設計案</h1><p class="lead">広告で読みづらくせず、気になる出来事を追いやすく。</p><p>以下は検討中の案です。購入・登録はまだできません。</p><table><thead><tr><th>無料</th><th>有料案：月額280円以下</th></tr></thead><tbody><tr><td>現在地・根拠記事の閲覧</td><td>無料の機能すべて</td></tr><tr><td>5カテゴリー・検索</td><td>出来事のウォッチリスト</td></tr><tr><td>重要な情報の訂正を確認</td><td>重要な進展をまとめて通知</td></tr><tr><td>広告なしを基本方針に</td><td>予定の確認を忘れない通知</td></tr></tbody></table><p class="muted">価格・閲覧範囲・通知方法は、テスト結果と運用費を確認してから決定します。課金機能は未実装です。</p></section>
-<section id="feedback-page" class="section-page" hidden><h1>訂正・ご意見</h1><p>気になった出来事の名前、記事のURL、どの表示に問題があるかを、URLを共有した人にお知らせください。</p><p>たとえば「別の事件の記事が混ざっている」「予定が実施済みになっている」「続報が見当たらない」といった情報が役立ちます。</p><h2>公開前に専用の窓口を用意します</h2><p>現在はテスト用の画面案です。このページから送信・個人情報の保存は行いません。公開時は、受付方法と訂正までの流れを案内します。</p><h2>公開に向けて準備しているもの</h2><p>プライバシー方針、利用条件、出典とAI利用の説明、課金時の表示と解約案内を整理しています。未確認の内容を正式な規約として掲載しません。</p></section>
-
-</main>
-
-<footer>
-  ニュースの現在地 v1.0 · 報道のタイトルからAIが整理しています。詳細は各記事で確認してください。
-</footer>
-
-<script type="application/json" id="preview-data">[
+<section id="plans-page" class="section-page" hidden><h1>料金の設計案</h1><p class="lead">広告で読みづらくせず、気になる出来事を追いやすく。</p><p>以下は検討中の案です。購入・登録はまだできません。</p><table><thead><tr><th>無料</th><th>有料案：月額280円以下</th></tr></thead><tbody><tr><td>現在地・根拠記事の閲覧</td><td>無料の機能すべて</td></tr><tr><td>5カテゴリー・検索</td><td>会員間で同期するウォッチリスト</td></tr><tr><td>重要な情報の訂正を確認</td><td>重要な進展をまとめて通知</td></tr><tr><td>広告なしを基本方針に</td><td>予定の確認を忘れない通知</td></tr></tbody></table><p class="muted">端末内の保存はこのプレビューで試せます。会員同期と通知は未実装です。価格・閲覧範囲・通知方法は、テスト結果と運用費を確認してから決定します。課金機能は未実装です。</p></section>
+<section id="feedback-page" class="section-page" hidden><h1>訂正・ご意見</h1><p>気になった出来事の名前、記事のURL、どの表示に問題があるかを、URLを共有した人にお知らせください。</p><p>たとえば「別の事件の記事が混ざっている」「予定が実施済みになっている」「続報が見当たらない」といった情報が役立ちます。</p><h2>公開前に専用の窓口を用意します</h2><p>現在はテスト用の画面案です。このページから送信・個人情報の保存は行いません。公開時は、受付方法と訂正までの流れを案内します。</p><h2>公開に向けて準備しているもの</h2><p>プライバシー方針、利用条件、出典とAI利用の説明、課金時の表示と解約案内を整理しています。未確認の内容を正式な規約として掲載しません。</p></section></main><footer><span>ニュースの現在地 · 根拠から、出来事の今を知る。</span><nav class="footer-links" aria-label="サイト案内"><a href="#about">このサイトについて</a><a href="#help">使い方</a><a href="#plans">料金案</a><a href="#feedback">訂正・ご意見</a></nav></footer><nav class="bottom-nav" aria-label="スマホのナビゲーション"><a href="#home"><span aria-hidden="true">⌂</span>ホーム</a><a href="#news"><span aria-hidden="true">▤</span>ニュース</a><a href="#categories"><span aria-hidden="true">⊞</span>カテゴリー</a><a href="#search"><span aria-hidden="true">⌕</span>検索</a><a href="#saved"><span aria-hidden="true">☆</span>保存</a></nav><script type="application/json" id="preview-data">[
   {
     "event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
     "event_name": "札幌MICE基本計画をめぐる市議会での負担・費用懸念",
@@ -1077,143 +1379,50 @@
 
 </script>
 <script>
-const lifecycleLabels = {active: '追跡中', dormant: '休眠中', completed: '完結・保管'};
-const categories = ['すべて', '事件・事故', '災害', '政策・制度', '企業・組織', '地域・インフラ'];
-let sortBy = 'progress';
-let events = [], selectedCategory = 'すべて', selectedLifecycle = 'active', searchText = '';
-const status = document.getElementById('status');
-const newsArea = document.getElementById('news');
-function element(tag, text, className) {
-  const node = document.createElement(tag);
-  if (text !== undefined) node.textContent = text;
-  if (className) node.className = className;
-  return node;
-}
-function formatDate(value) {
-  const d = new Date(value);
-  return value && !isNaN(d) ? d.toLocaleDateString('ja-JP', {timeZone: 'Asia/Tokyo'}) : '日時未確認';
-}
-function safeLink(url, title) {
-  const node = element('a', title);
-  try {
-    const parsed = new URL(url);
-    if (['https:', 'http:'].includes(parsed.protocol)) {
-      node.href = parsed.href; node.target = '_blank'; node.rel = 'noopener noreferrer';
-    }
-  } catch (_) {}
-  return node;
-}
-function makeFilters(values, initial, onChange, name) {
-  const area = element('div', undefined, 'filters');
-  area.setAttribute('aria-label', name);
-  for (const [value, label] of values) {
-    const button = element('button', label);
-    button.type = 'button';
-    button.setAttribute('aria-pressed', String(value === initial));
-    button.addEventListener('click', () => {
-      area.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', 'false'));
-      button.setAttribute('aria-pressed', 'true'); onChange(value); render();
-    });
-    area.appendChild(button);
-  }
-  return area;
-}
-function normalized(value) { return String(value || '').normalize('NFKC').toLocaleLowerCase('ja-JP'); }
-function latestSource(e) { return Math.max(0, ...(e.articles || []).map(a => Date.parse(a.published) || 0)); }
-function nextPlan(e) { return Math.min(Infinity, ...(e.schedules || []).filter(p => p.status === 'scheduled' && p.due_start).map(p => Date.parse(p.due_start) || Infinity)); }
-function rememberFilters() {
-  const u = new URL(location.href);
-  for (const [key, value, initial] of [['category',selectedCategory,'すべて'],['state',selectedLifecycle,'active'],['q',searchText,''],['sort',sortBy,'progress']]) {
-    if (value === initial) u.searchParams.delete(key); else u.searchParams.set(key,value);
-  }
-  history.replaceState(null,'',u);
-}
-function render() {
-  newsArea.replaceChildren();
-  const visible = events.filter(e => categories.slice(1).includes(e.category) && e.tracking_value !== 'low')
-    .filter(e => selectedCategory === 'すべて' || e.category === selectedCategory)
-    .filter(e => selectedLifecycle === 'all' || (e.lifecycle || 'active') === selectedLifecycle)
-    .filter(e => normalized(searchText).split(/\s+/u).filter(Boolean).every(word => normalized([e.event_name,e.summary,...(e.articles || []).map(a => a.title)].join(' ')).includes(word)))
-    .sort((a,b) => (sortBy === 'articles' ? latestSource(b)-latestSource(a) : sortBy === 'plans' ? ((nextPlan(a) === nextPlan(b)) ? 0 : nextPlan(a)-nextPlan(b)) : (Date.parse(b.last_progress_at || b.updated_at)||0)-(Date.parse(a.last_progress_at || a.updated_at)||0)) || a.event_id.localeCompare(b.event_id));
-  rememberFilters();
-  status.textContent = visible.length + '件の出来事を表示しています';
-  if (!visible.length) {
-    const empty=element('div',undefined,'empty'); empty.append(element('p','条件に合う出来事はありません。'),element('p','言葉やカテゴリーを変えてみてください。','muted')); newsArea.appendChild(empty);
-  }
-  for (const event of visible) {
-    const card = element('section', undefined, 'event');
-    if (event.event_id) card.id = 'event-' + event.event_id;
-    card.append(element('span', lifecycleLabels[event.lifecycle || 'active'] || '確認中', 'event-label'),
-      element('span', ' ' + event.category, 'description'), element('h2', event.event_name || '名称未設定'));
-    const count = (event.articles || []).length;
-    card.appendChild(element('div', '最終進展：' + formatDate(event.last_progress_at || event.updated_at) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
-    const box = element('div', undefined, 'status-box');
-    box.append(element('strong', '📍 現在地：' + (event.current_stage || '確認中')), element('p', event.summary || '確認中'));
-    const more=element('details'); more.append(element('summary','最新の動き・次に注目'),element('strong','最新の動き'),element('p',event.latest || '確認中'),element('strong','次に注目'),element('p',event.next_watch || '確認中')); box.appendChild(more);
-    card.appendChild(box);
-    if (event.lifecycle === 'dormant') card.appendChild(element('p', '長期間、重要な進展が確認されていません。続報で追跡を再開します。', 'description'));
-    if (event.lifecycle === 'completed') card.appendChild(element('p', '完結を確認して保管中です。新たな進展があれば追跡を再開します。', 'description'));
-    if ((event.schedules || []).length) {
-      const plans = element('div', undefined, 'plans'); plans.appendChild(element('strong', '今後の予定・確認待ち'));
-      for (const plan of event.schedules) {
-        const item = element('p');
-        let label = ({scheduled: '予定', completed: '実施確認', cancelled: '中止確認'})[plan.status] || '確認中';
-        const end = plan.due_end && new Date(plan.due_end + 'T23:59:59+09:00');
-        if (plan.status === 'scheduled' && end && end < new Date()) label = '予定時期を経過・実施確認待ち';
-        if (plan.status === 'scheduled' && !plan.due_start) label = '予定・日付未確定';
-        item.append(element('span', plan.label + ' — ' + label + '：'), safeLink(plan.source_url, plan.date_text));
-        plans.appendChild(item);
-      }
-      card.appendChild(plans);
-    }
-    if ((event.progress_history || []).length) {
-      const details = element('details'); details.appendChild(element('summary', '出来事の進展を見る（' + event.progress_history.length + '回）'));
-      for (const change of event.progress_history) {
-        const item = element('p', formatDate(change.at) + '：' + change.stage + ' — ' + (change.latest || ''));
-        for (const url of change.evidence_urls || []) item.append(' ', safeLink(url, '根拠記事'));
-        details.appendChild(item);
-      }
-      card.appendChild(details);
-    }
-    const timeline = element('details'); timeline.appendChild(element('summary', 'これまでの報道を見る（' + count + '件）'));
-    const articles = [...(event.articles || [])].sort((a, b) => (Date.parse(a.published) || 0) - (Date.parse(b.published) || 0));
-    for (const article of articles) {
-      const item = element('div', undefined, 'article');
-      item.append(element('div', formatDate(article.published), 'date'), safeLink(article.url, article.title || '関連記事'));
-      timeline.appendChild(item);
-    }
-    card.appendChild(timeline); newsArea.appendChild(card);
-  }
-}
-const snapshot = JSON.parse(document.getElementById('preview-data').textContent);
-function initialize() {
-  events=snapshot;
-  const params=new URLSearchParams(location.search);
-  selectedCategory=categories.includes(params.get('category')) ? params.get('category') : 'すべて';
-  selectedLifecycle=['active','dormant','completed','all'].includes(params.get('state')) ? params.get('state') : 'active';
-  sortBy=['progress','articles','plans'].includes(params.get('sort')) ? params.get('sort') : 'progress'; searchText=params.get('q') || '';
-  const controls=element('div');
-  const eligible=events.filter(e=>categories.slice(1).includes(e.category) && e.tracking_value !== 'low');
-  const stats=element('div',undefined,'stats');
-  for(const [label,count] of [['出来事',eligible.length],['根拠記事',eligible.reduce((n,e)=>n+(e.articles||[]).length,0)],['進展',eligible.reduce((n,e)=>n+(e.progress_count||0),0)]]) {const stat=element('span');stat.append(element('strong',String(count)),label);stats.appendChild(stat);} controls.appendChild(stats);
-  controls.appendChild(makeFilters(Object.entries(lifecycleLabels).concat([['all','すべての状態']]),selectedLifecycle,v=>selectedLifecycle=v,'追跡状態'));
-  controls.appendChild(makeFilters(categories.map(c=>[c,c==='すべて'?c:c+' '+eligible.filter(e=>e.category===c).length]),selectedCategory,v=>selectedCategory=v,'カテゴリー'));
-  const input=element('input'); input.type='search';input.placeholder='出来事・記事を検索';input.setAttribute('aria-label','出来事・記事を検索');input.value=searchText;
-  input.addEventListener('input',()=>{searchText=input.value.trim();render();});controls.appendChild(input);
-  const toolbar=element('div',undefined,'toolbar'); const label=element('label','並び替え ');const select=element('select');select.setAttribute('aria-label','並び替え');
-  for(const [value,text] of [['progress','重要な進展が新しい順'],['articles','報道が新しい順'],['plans','予定が近い順']]){const o=element('option',text);o.value=value;select.appendChild(o);} select.value=sortBy;select.addEventListener('change',()=>{sortBy=select.value;render();});label.appendChild(select);toolbar.appendChild(label);
-  const note=element('span','2026/10/8の保存データ · 実行結果を変更しません','muted');toolbar.appendChild(note);controls.appendChild(toolbar);status.insertAdjacentElement('beforebegin',controls);status.setAttribute('aria-live','polite');
-  render(); route();
-}
-function route() {
-  const pages=['news','about','help','plans','feedback'];const page=pages.includes(location.hash.slice(1))?location.hash.slice(1):'news';
-  document.getElementById('feed-page').hidden=page!=='news';for(const p of pages.slice(1))document.getElementById(p+'-page').hidden=page!==p;
-  document.querySelectorAll('.site-nav a').forEach(a=>{if(a.hash==='#'+page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-}
-window.addEventListener('hashchange',route);initialize();
-
-
-</script>
-
-</body>
-</html>
+const lifecycleLabels={active:'追跡中',dormant:'休眠中',completed:'完結・保管'};
+const categories=['すべて','事件・事故','災害','政策・制度','企業・組織','地域・インフラ'];
+const categoryStyles={'事件・事故':['incident','!','事件・事故の動き'],'災害':['disaster','☂','被害と復旧の動き'],'政策・制度':['policy','▤','制度の決定と実施'],'企業・組織':['company','▥','組織や事業の動き'],'地域・インフラ':['infra','⌂','地域の計画と整備']};
+const events=JSON.parse(document.getElementById('preview-data').textContent);
+const eligible=events.filter(e=>categories.slice(1).includes(e.category)&&e.tracking_value!=='low');
+const params=new URLSearchParams(location.search);
+let selectedCategory=categories.includes(params.get('category'))?params.get('category'):'すべて';
+let selectedLifecycle=['all','active','dormant','completed'].includes(params.get('state'))?params.get('state'):(location.hash.startsWith('#saved')?'all':'active');
+let sortBy=['progress','articles','plans'].includes(params.get('sort'))?params.get('sort'):'progress',searchText=params.get('q')||'';
+const storageKey='news-now:preview:saved:v1';let saved=new Set(),storageAvailable=true;
+try{const raw=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(raw))saved=new Set(raw.filter(id=>typeof id==='string'&&eligible.some(e=>e.event_id===id)));}catch(_){storageAvailable=false;}
+const screen=document.getElementById('screen'),announcement=document.getElementById('announcement'),input=document.getElementById('search-input');input.value=searchText;
+function element(tag,text,className){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(className)n.className=className;return n;}
+function link(text,hash,className){const n=element('a',text,className);n.href=hash;return n;}
+function normalized(s){return String(s||'').normalize('NFKC').toLocaleLowerCase('ja-JP');}
+function formatDate(s){const d=new Date(s);return s&&!isNaN(d)?d.toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}):'日時未確認';}
+function latestSource(e){return Math.max(0,...(e.articles||[]).map(a=>Date.parse(a.published)||0));}
+function nextPlan(e){return Math.min(Infinity,...(e.schedules||[]).filter(s=>s.status==='scheduled'&&s.due_start).map(s=>Date.parse(s.due_start)||Infinity));}
+function safeLink(url,title){const n=element('a',title);try{const u=new URL(url);if(['http:','https:'].includes(u.protocol)){n.href=u.href;n.target='_blank';n.rel='noopener noreferrer';}}catch(_){}return n;}
+function rememberFilters(){const u=new URL(location.href);for(const [k,v,d] of [['q',searchText,''],['category',selectedCategory,'すべて'],['state',selectedLifecycle,'active'],['sort',sortBy,'progress']]){if(v===d)u.searchParams.delete(k);else u.searchParams.set(k,v);}history.replaceState(null,'',u);}
+function style(e){return categoryStyles[e.category]?.[0]||'infra';}
+function badge(e){return element('span',e.category,'badge '+style(e));}
+function thumb(e){const n=element('div',categoryStyles[e.category]?.[1]||'⌂','thumb '+style(e));n.setAttribute('aria-hidden','true');return n;}
+function saveButton(e,compact=false){const n=element('button',compact?(saved.has(e.event_id)?'★':'☆'):(saved.has(e.event_id)?'★ 保存済み':'☆ 気になる・保存'),'save-button'+(compact?' row-save':''));n.type='button';n.setAttribute('aria-pressed',String(saved.has(e.event_id)));n.setAttribute('aria-label',(saved.has(e.event_id)?'保存を解除：':'保存：')+e.event_name);n.addEventListener('click',()=>toggleSaved(e.event_id));return n;}
+function toggleSaved(id){if(!eligible.some(e=>e.event_id===id))return;const adding=!saved.has(id);const next=new Set(saved);adding?next.add(id):next.delete(id);try{localStorage.setItem(storageKey,JSON.stringify([...next]));storageAvailable=true;}catch(_){storageAvailable=false;}saved=next;render();announcement.textContent=storageAvailable?(adding?'保存しました。「保存したニュース」で確認できます。':'保存を解除しました。'):'このブラウザーでは保存できません。今開いている画面の間だけ保持します。';}
+function visibleEvents(onlySaved=false){return eligible.filter(e=>!onlySaved||saved.has(e.event_id)).filter(e=>selectedCategory==='すべて'||e.category===selectedCategory).filter(e=>selectedLifecycle==='all'||(e.lifecycle||'active')===selectedLifecycle).filter(e=>normalized(searchText).split(/\s+/u).filter(Boolean).every(w=>normalized([e.event_name,e.summary,...(e.articles||[]).map(a=>a.title)].join(' ')).includes(w))).sort((a,b)=>(sortBy==='articles'?latestSource(b)-latestSource(a):sortBy==='plans'?(nextPlan(a)===nextPlan(b)?0:nextPlan(a)-nextPlan(b)):(Date.parse(b.last_progress_at||b.updated_at)||0)-(Date.parse(a.last_progress_at||a.updated_at)||0))||a.event_id.localeCompare(b.event_id));}
+function heading(text,count){const n=element('div',undefined,'section-heading');n.append(element('h2',text),element('span',count===undefined?'':count+'件','muted'));return n;}
+function row(e,mini=false){const n=element('article',undefined,mini?'mini-row':'news-row');n.append(thumb(e));const c=element('div',undefined,'row-content');c.append(badge(e));const title=element(mini?'div':'h2');title.append(link(e.event_name||'名称未設定','#event/'+encodeURIComponent(e.event_id),mini?'title':''));c.append(title);if(!mini)c.append(element('p',e.summary||'現在地を確認中です。','summary'));c.append(element('div',formatDate(e.last_progress_at||e.updated_at)+' 更新'+(mini?'':' · '+(e.articles||[]).length+'記事 · '+(lifecycleLabels[e.lifecycle||'active']||'確認中')),'date'));n.append(c);if(!mini)n.append(saveButton(e,true));return n;}
+function filterControls(root){const filters=element('div',undefined,'filters');filters.setAttribute('aria-label','カテゴリー');for(const c of categories){const b=element('button',c,'chip '+(categoryStyles[c]?.[0]||''));b.type='button';b.setAttribute('aria-pressed',String(c===selectedCategory));b.addEventListener('click',()=>{selectedCategory=c;render();});filters.append(b);}root.append(filters);const tools=element('div',undefined,'toolbar'),states=element('div',undefined,'state-filters');states.setAttribute('aria-label','追跡状態');for(const [v,t] of Object.entries(lifecycleLabels).concat([['all','すべての状態']])){const b=element('button',t);b.type='button';b.setAttribute('aria-pressed',String(v===selectedLifecycle));b.addEventListener('click',()=>{selectedLifecycle=v;render();});states.append(b);}const label=element('label','並び替え '),select=element('select');select.setAttribute('aria-label','並び替え');for(const [v,t] of [['progress','重要な進展順'],['articles','報道が新しい順'],['plans','予定が近い順']]){const o=element('option',t);o.value=v;select.append(o);}select.value=sortBy;select.addEventListener('change',()=>{sortBy=select.value;render();});label.append(select);tools.append(states,label);root.append(tools);}
+function hero(root){const featured=[...eligible].sort((a,b)=>latestSource(b)-latestSource(a)||a.event_id.localeCompare(b.event_id)).slice(0,5);if(!featured.length)return;const grid=element('div',undefined,'hero-grid'),card=element('article',undefined,'hero-card'),art=element('div',undefined,'hero-art');
+// 固定の装飾図形。記事写真として使わない。
+art.innerHTML='<svg viewBox="0 0 700 380" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><path fill="#639ac2" d="M0 175L100 112 170 157 260 100 350 157 460 96 570 152 700 105V380H0Z"/><path fill="#437797" d="M0 226L125 177 240 212 330 165 440 214 560 172 700 227V380H0Z"/><g fill="#d4e2e9"><path d="M0 275h55v-65h35v170H0zm110 105V245h52v-38h30v173zm110 0V260h64v120zm90 0V230h36v-35h28v185zm90 0V275h60V225h35v155zm112 0V255h55v125zm75 0V220h70v160z"/></g><g fill="#89aabd"><path d="M0 340h700v40H0zm74 40V275h52v105zm105 0V292h55v88zm105 0V275h46v105zm90 0V288h60v92zm126 0V304h60v76zm100 0V285h50v95z"/></g><path fill="#c57b6c" d="M565 90h8v160h-8zM554 250l15-87 15 87h-8l-7-45-7 45z"/><circle cx="569" cy="147" r="9" fill="#eff4f7"/></svg>';
+card.append(art,element('span','街並みのイメージ図','art-note'));const e=featured[0],copy=element('div',undefined,'hero-copy');copy.append(badge(e),element('h2',e.event_name),element('div',formatDate(e.updated_at)+' 更新','date'),element('p',e.summary),link('現在地を見る →','#event/'+encodeURIComponent(e.event_id),'hero-action'));card.append(copy);const side=element('aside',undefined,'spotlight');side.append(element('h2','最近報道されたニュース'));featured.slice(1).forEach(e=>side.append(row(e,true)));grid.append(card,side);root.append(grid);}
+function listPage(page){if(page==='home'&&!searchText&&selectedCategory==='すべて')hero(screen);if(page==='saved'){screen.append(element('h1','保存したニュース'),element('p','このブラウザーに保存した出来事です。同じ出来事の続報を見つけやすくするための一覧です。会員同期・通知・サーバーの追跡対象変更は行いません。','local-note'));}const visible=visibleEvents(page==='saved');screen.append(heading(searchText?'検索結果：「'+searchText+'」':page==='saved'?'気になる出来事':page==='home'?'最新のニュース':'ニュース一覧',visible.length));filterControls(screen);if(!visible.length){const empty=element('div',undefined,'empty');empty.append(element('h3',page==='saved'&&!saved.size?'気になるニュースを保存してみましょう':'条件に合う出来事はありません'),element('p',page==='saved'&&!saved.size?'一覧や詳細の☆を押すと、ここに追加されます。':'検索語・カテゴリー・追跡状態を変えてみてください。','muted'));screen.append(empty);}else{const list=element('div',undefined,'news-list');visible.forEach(e=>list.append(row(e)));screen.append(list);}}
+function categoryPage(){screen.append(element('h1','カテゴリーから探す'),element('p','5つの分野から、気になる出来事へ。','muted'));const grid=element('div',undefined,'category-grid');for(const c of categories.slice(1)){const a=link('','#news','category-card '+categoryStyles[c][0]);a.append(thumb({category:c}));const text=element('div');text.append(element('h2',c),element('div',categoryStyles[c][2],'muted'));a.append(text,element('span',eligible.filter(e=>e.category===c).length+'件 ›','category-count'));a.addEventListener('click',()=>{selectedCategory=c;selectedLifecycle='all';searchText='';input.value='';});grid.append(a);}screen.append(grid);}
+function detailPage(id,tab){const e=eligible.find(e=>e.event_id===id);if(!e){screen.append(element('h1','出来事が見つかりません'),link('ニュース一覧へ','#news'));return;}screen.append(link('‹ ニュース一覧へ','#news','back'));const layout=element('div',undefined,'detail-layout'),card=element('article',undefined,'detail-card '+style(e)),top=element('div',undefined,'detail-top');top.append(badge(e),saveButton(e));card.append(top,element('h1',e.event_name),element('div',formatDate(e.updated_at)+' 更新 · '+(lifecycleLabels[e.lifecycle||'active']||'確認中'),'date'));const current=element('div',undefined,'current-box'),text=element('div');text.append(element('h2','現在の状況 · '+(e.current_stage||'確認中')),element('p',e.summary||'確認中'));current.append(element('div','↗','current-icon'),text);card.append(current);const tabs=element('div',undefined,'tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','出来事の詳細');for(const [v,t] of [['overview','概要'],['timeline','時系列'],['sources','根拠記事'],['future','今後の予定']]){const b=element('button',t);b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(tab===v));b.id='tab-'+v;b.setAttribute('aria-controls','detail-panel');b.tabIndex=tab===v?0:-1;b.addEventListener('click',()=>{location.hash='event/'+encodeURIComponent(id)+'/'+v;});b.addEventListener('keydown',ev=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(ev.key))return;ev.preventDefault();const all=[...tabs.querySelectorAll('button')];const i=all.indexOf(b),next=ev.key==='Home'?0:ev.key==='End'?all.length-1:(i+(ev.key==='ArrowRight'?1:-1)+all.length)%all.length;all[next].focus();all[next].click();});tabs.append(b);}card.append(tabs);const body=element('div',undefined,'detail-body');body.id='detail-panel';body.setAttribute('role','tabpanel');body.setAttribute('aria-labelledby','tab-'+tab);
+if(tab==='overview'){body.append(element('h2','最新の動き'),element('p',e.latest||'確認中'),element('h2','次に注目'),element('p',e.next_watch||'確認中'),element('p','関連記事 '+(e.articles||[]).length+'件 · 重要な進展 '+(e.progress_count||0)+'回','muted'));}
+if(tab==='timeline'){body.append(element('h2','時系列で見る'),element('p','報道の時系列です。記事が増えた回数と、出来事が進展した回数は異なります。','progress-note'));const timeline=element('div',undefined,'timeline');for(const a of [...(e.articles||[])].sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0))){const item=element('div',undefined,'timeline-item');item.append(element('div',formatDate(a.published),'date'),safeLink(a.url,a.title||'根拠記事'));timeline.append(item);}body.append(timeline);if((e.progress_history||[]).length){body.append(element('h2','確認した重要な進展'));for(const p of e.progress_history){const item=element('div',undefined,'plan');item.append(element('strong',formatDate(p.at)+' · '+(p.stage||'進展')),element('p',p.latest||''));for(const u of p.evidence_urls||[])item.append(safeLink(u,'根拠記事'));body.append(item);}}else body.append(element('p','この保存データでは、v1.0移行後の重要な進展はまだ記録されていません。','muted'));}
+if(tab==='sources'){body.append(element('h2','根拠となる報道'));for(const a of e.articles||[]){const r=element('div',undefined,'source-row');r.append(safeLink(a.url,a.title||'根拠記事'),element('div',formatDate(a.published),'date'));body.append(r);}}
+if(tab==='future'){body.append(element('h2','今後の予定・次に注目'));if(!(e.schedules||[]).length)body.append(element('p','根拠を確認できた予定は、この保存データにはありません。','muted'));for(const p of e.schedules||[]){let label=({scheduled:'予定',completed:'実施確認',cancelled:'中止確認'})[p.status]||'確認中';if(p.status==='scheduled'&&!p.due_start)label='予定・日付未確定';if(p.status==='scheduled'&&p.due_end&&new Date(p.due_end+'T23:59:59+09:00')<new Date())label='予定時期を経過・実施確認待ち';const n=element('div',undefined,'plan');n.append(element('strong',p.label||'予定'),element('p',label+' · '+(p.date_text||'日付未確定')),safeLink(p.source_url,'予定の根拠記事'));body.append(n);}body.append(element('h3','次に注目'),element('p',e.next_watch||'確認中'));}
+card.append(body);const aside=element('aside',undefined,'side-note');aside.append(element('h2','この出来事を忘れずに'),element('p','☆で保存すると「保存したニュース」から開けます。通知の配信はまだありません。'),element('h2','報道で確かめる'),element('p','AIが記事タイトルから整理した画面です。詳細は根拠記事でご確認ください。'));layout.append(card,aside);screen.append(layout);}
+function routeInfo(){const parts=location.hash.slice(1).split('/');let id='';try{id=decodeURIComponent(parts[1]||'');}catch(_){}const page=['home','news','categories','saved','search','event','about','help','plans','feedback'].includes(parts[0])?parts[0]:'home';return {page,id,tab:['overview','timeline','sources','future'].includes(parts[2])?parts[2]:'overview'};}
+function render(){rememberFilters();const {page,id,tab}=routeInfo();screen.replaceChildren();const info=['about','help','plans','feedback'].includes(page);document.getElementById('app-page').hidden=info;for(const p of ['about','help','plans','feedback'])document.getElementById(p+'-page').hidden=p!==page;document.getElementById('search-form').hidden=page==='event'||page==='categories';if(!info){if(page==='categories')categoryPage();else if(page==='event')detailPage(id,tab);else listPage(page==='search'?'news':page);}document.querySelectorAll('.desktop-nav a,.bottom-nav a').forEach(a=>{const match=a.hash==='#'+page||(page==='event'&&a.hash==='#news');match?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});}
+function route(ev){if(ev?.type==='hashchange'&&routeInfo().page==='saved'){selectedCategory='すべて';selectedLifecycle='all';searchText='';input.value='';}render();document.getElementById('menu-links').hidden=true;document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');document.querySelector('.menu-toggle').setAttribute('aria-label','メニューを開く');if(routeInfo().page==='search')input.focus();}
+input.addEventListener('input',()=>{searchText=input.value;render();});document.getElementById('search-form').addEventListener('submit',e=>{e.preventDefault();location.hash='search';render();});document.querySelector('.clear-search').addEventListener('click',()=>{searchText='';input.value='';render();input.focus();});document.querySelector('.menu-toggle').addEventListener('click',e=>{const menu=document.getElementById('menu-links');menu.hidden=!menu.hidden;e.currentTarget.setAttribute('aria-expanded',String(!menu.hidden));e.currentTarget.setAttribute('aria-label',menu.hidden?'メニューを開く':'メニューを閉じる');});
+window.addEventListener('hashchange',route);window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);searchText=p.get('q')||'';selectedCategory=categories.includes(p.get('category'))?p.get('category'):'すべて';selectedLifecycle=['all','active','dormant','completed'].includes(p.get('state'))?p.get('state'):'active';sortBy=['progress','articles','plans'].includes(p.get('sort'))?p.get('sort'):'progress';input.value=searchText;route();});window.addEventListener('storage',e=>{if(e.key!==storageKey)return;try{const ids=JSON.parse(e.newValue||'[]');if(Array.isArray(ids)){saved=new Set(ids.filter(id=>eligible.some(e=>e.event_id===id)));render();}}catch(_){}});route();
+</script></body></html>
