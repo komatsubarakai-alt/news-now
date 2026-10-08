@@ -246,7 +246,7 @@ function progressDateTime(event) {
   // 初回整理や旧データの移行でも設定されるため、進展履歴がない場合は区別する。
   const confirmed = (event.progress_history || []).length > 0;
   const value = event.last_progress_at;
-  return formatDateTime(value) + (confirmed ? '' : '（初回整理・旧データの記録）');
+  return formatDateTime(value) + (confirmed ? '' : event.record_origin === 'editorial_split' ? '（編集による案件分離・記録）' : '（初回整理・旧データの記録）');
 }
 function safeLink(url, title) {
   const node = element('a', title);
