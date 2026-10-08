@@ -17,6 +17,15 @@ CATEGORIES = {'事件・事故', '災害', '政策・制度', '企業・組織',
 UTC = timezone.utc
 
 
+def scheduled_quote_plausible(item):
+    if item.get('status', 'scheduled') != 'scheduled':
+        return True
+    text = unicodedata.normalize('NFKC', item.get('date_text', item.get('quote', '')))
+    if not text:
+        return True
+    return bool(re.search(r'予定|計画|見込|目指|方針|来年|来月|来春|来夏|来秋|来冬|今春|今夏|今秋|今冬|翌年|翌月|開催決定|開業決定|\d{4}年|\d{1,2}月|\d{1,2}日|へ$', text))
+
+
 def date_time(value):
     if not value:
         return None
@@ -58,6 +67,7 @@ def migrate(event, now):
     event.setdefault('progress_count', 0)
     event.setdefault('progress_history', [])
     event.setdefault('schedules', [])
+    event['schedules'] = [s for s in event['schedules'] if scheduled_quote_plausible(s)]
     event.setdefault('last_progress_at', event.get('updated_at', event.get('created_at', now.isoformat())))
     event['articles'] = deduplicate(event.get('articles', []))
     event['article_count'] = len(event['articles'])
@@ -129,6 +139,8 @@ def merge_schedules(event, items, articles):
             continue
         url, quote, label = item.get('source_url'), item.get('quote'), item.get('label')
         if url not in sources or not isinstance(quote, str) or not quote or quote not in sources[url]['title'] or not isinstance(label, str) or not label:
+            continue
+        if not scheduled_quote_plausible(item):
             continue
         start, end, precision = schedule_bounds(quote, sources[url].get('published'))
         # Stable ID allows an explicitly rescheduled/cancelled plan to replace the old one.
