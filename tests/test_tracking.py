@@ -134,6 +134,20 @@ class TrackingTests(unittest.TestCase):
     def test_invalid_schedule_dates(self):
         self.assertEqual(schedule_bounds('2026年13月40日', '')[2], 'unknown')
 
+    def test_current_notice_is_not_a_future_schedule(self):
+        e = event(); a = article('札幌や旭川…１１地点注意報')
+        merge_schedules(e, [{'label': 'インフル注意報', 'quote': a['title'], 'source_url': a['url']}], [a])
+        self.assertEqual(e['schedules'], [])
+        e['schedules'] = [{'label': 'インフル注意報', 'date_text': a['title'], 'status': 'scheduled'}]
+        migrate(e, NOW)
+        self.assertEqual(e['schedules'], [])
+
+    def test_unresolved_future_plan_is_kept(self):
+        e = event(); a = article('２０３１年度着工へ')
+        merge_schedules(e, [{'label': '着工', 'quote': a['title'], 'source_url': a['url']}], [a])
+        self.assertEqual(len(e['schedules']), 1)
+        self.assertEqual(e['schedules'][0]['precision'], 'unknown')
+
     def test_schedules_require_actual_source_quote(self):
         e = event(); a = article('2026年11月15日 初公判予定')
         merge_schedules(e, [{'label': '初公判', 'quote': a['title'], 'source_url': a['url']}], [a])
