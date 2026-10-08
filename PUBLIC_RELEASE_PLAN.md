@@ -118,5 +118,7 @@
 
 ## 補足資料
 
+- [公開環境の費用・機能比較と推奨構成](HOSTING_COMPARISON.md)
+
 - [公開環境・通知の公式条件](PUBLIC_PLATFORM_NOTES.md)
 - [自動運転の観察記録](OBSERVATIONS.md)
