@@ -157,7 +157,9 @@
     .filters { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; }
     button, summary { cursor:pointer; }
     button { padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:white; color:var(--text); }
-    button[aria-pressed="true"] { background:var(--accent); color:white; }
+    .filters[data-filter="category"] button[aria-pressed="true"] { background:var(--accent); color:white; }
+    .filters[data-filter="lifecycle"] button[aria-pressed="true"] { background:#15803d; color:white; }
+    .count, .description { overflow-wrap:anywhere; }
     input[type="search"] { width:100%; padding:12px; border:1px solid var(--line); border-radius:8px; font-size:16px; }
     .status-box, .plans { padding:14px; background:#f8fafc; border-radius:10px; margin:12px 0; line-height:1.7; }
     .status-box p { margin:8px 0 14px; }
@@ -217,6 +219,35 @@ function formatDate(value) {
   const d = new Date(value);
   return value && !isNaN(d) ? d.toLocaleDateString('ja-JP', {timeZone: 'Asia/Tokyo'}) : '日時未確認';
 }
+// 時刻とタイムゾーンを明示した値だけを日本時間へ変換する。
+// 日付のみ・タイムゾーンなしの値から時刻を推測しない。
+function formatDateTime(value) {
+  if (typeof value !== 'string' || !value.trim()) return '日時未確認';
+  const text = value.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+    const date = new Date(text + 'T00:00:00Z');
+    return !isNaN(date) && date.toISOString().slice(0, 10) === text
+      ? text.replaceAll('-', '/') + '（時刻未確認）' : '日時未確認';
+  }
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/i.test(text)) {
+    return '日時未確認（時刻・タイムゾーン不明）';
+  }
+  const date = new Date(text);
+  const calendar = new Date(text.slice(0, 10) + 'T00:00:00Z');
+  if (isNaN(date) || isNaN(calendar) || calendar.toISOString().slice(0, 10) !== text.slice(0, 10)) return '日時未確認';
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+  }).formatToParts(date).map(part => [part.type, part.value]));
+  return parts.year + '/' + parts.month + '/' + parts.day + ' ' + parts.hour + ':' + parts.minute + '（日本時間）';
+}
+function progressDateTime(event) {
+  // last_progress_at は確認・記録した時刻。記事公開日時を代用しない。
+  // 初回整理や旧データの移行でも設定されるため、進展履歴がない場合は区別する。
+  const confirmed = (event.progress_history || []).length > 0;
+  const value = event.last_progress_at;
+  return formatDateTime(value) + (confirmed ? '' : '（初回整理・旧データの記録）');
+}
 function safeLink(url, title) {
   const node = element('a', title);
   try {
@@ -227,8 +258,9 @@ function safeLink(url, title) {
   } catch (_) {}
   return node;
 }
-function makeFilters(values, initial, onChange, name) {
+function makeFilters(values, initial, onChange, name, kind) {
   const area = element('div', undefined, 'filters');
+  area.dataset.filter = kind;
   area.setAttribute('aria-label', name);
   for (const [value, label] of values) {
     const button = element('button', label);
@@ -257,7 +289,7 @@ function render() {
     card.append(element('span', lifecycleLabels[event.lifecycle || 'active'] || '確認中', 'event-label'),
       element('span', ' ' + event.category, 'description'), element('h2', event.event_name || '名称未設定'));
     const count = (event.articles || []).length;
-    card.appendChild(element('div', '最終進展：' + formatDate(event.updated_at) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
+    card.appendChild(element('div', '最終進展（システム確認・記録）：' + progressDateTime(event) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
     const box = element('div', undefined, 'status-box');
     box.append(element('strong', '📍 現在地：' + (event.current_stage || '確認中')), element('p', event.summary || '確認中'),
       element('strong', '最新の動き'), element('p', event.latest || '確認中'), element('strong', '次に注目'), element('p', event.next_watch || '確認中'));
@@ -302,8 +334,8 @@ async function loadNews() {
     events = await response.json();
     if (!Array.isArray(events)) throw new Error('invalid data');
     const controls = element('div');
-    controls.appendChild(makeFilters(Object.entries(lifecycleLabels).concat([['all', 'すべての状態']]), selectedLifecycle, v => selectedLifecycle = v, '追跡状態'));
-    controls.appendChild(makeFilters(categories.map(c => [c, c]), selectedCategory, v => selectedCategory = v, 'カテゴリー'));
+    controls.appendChild(makeFilters(Object.entries(lifecycleLabels).concat([['all', 'すべての状態']]), selectedLifecycle, v => selectedLifecycle = v, '追跡状態', 'lifecycle'));
+    controls.appendChild(makeFilters(categories.map(c => [c, c]), selectedCategory, v => selectedCategory = v, 'カテゴリー', 'category'));
     const input = element('input'); input.type = 'search'; input.placeholder = '出来事・記事を検索'; input.setAttribute('aria-label', '出来事・記事を検索');
     input.addEventListener('input', () => { searchText = input.value.trim(); render(); });
     controls.appendChild(input); status.insertAdjacentElement('beforebegin', controls);
@@ -312,7 +344,7 @@ async function loadNews() {
       const healthResponse = await fetch('tracking_health.json?time=' + Date.now());
       if (healthResponse.ok) {
         const health = await healthResponse.json();
-        const info = element('p', '自動更新：' + formatDate(health.last_run_at) + (health.pending_count ? ' ／ 判定保留 ' + health.pending_count + '件' : ''), 'description');
+        const info = element('p', '自動更新：' + formatDateTime(health.last_run_at) + (health.pending_count ? ' ／ 判定保留 ' + health.pending_count + '件' : ''), 'description');
         controls.appendChild(info);
       }
     } catch (_) {}
