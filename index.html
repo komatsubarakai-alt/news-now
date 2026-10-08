@@ -276,7 +276,7 @@ function makeFilters(values, initial, onChange, name, kind) {
 }
 function render() {
   newsArea.replaceChildren();
-  const visible = events.filter(e => categories.slice(1).includes(e.category) && e.tracking_value !== 'low')
+  const visible = events.filter(e => e.publication_status !== 'held').filter(e => categories.slice(1).includes(e.category) && e.tracking_value !== 'low')
     .filter(e => selectedCategory === 'すべて' || e.category === selectedCategory)
     .filter(e => selectedLifecycle === 'all' || (e.lifecycle || 'active') === selectedLifecycle)
     .filter(e => !searchText || [e.event_name, e.summary, ...(e.articles || []).map(a => a.title)].join(' ').includes(searchText))
@@ -294,6 +294,11 @@ function render() {
     box.append(element('strong', '📍 現在地：' + (event.current_stage || '確認中')), element('p', event.summary || '確認中'),
       element('strong', '最新の動き'), element('p', event.latest || '確認中'), element('strong', '次に注目'), element('p', event.next_watch || '確認中'));
     card.appendChild(box);
+    for (const correction of event.corrections || []) {
+      const notice = element('p', '訂正：' + formatDateTime(correction.at) + ' — ' + correction.content, 'description');
+      for (const url of correction.source_urls || []) notice.append(' ', safeLink(url, '確認資料'));
+      card.appendChild(notice);
+    }
     if (event.lifecycle === 'dormant') card.appendChild(element('p', '長期間、重要な進展が確認されていません。続報で追跡を再開します。', 'description'));
     if (event.lifecycle === 'completed') card.appendChild(element('p', '完結を確認して保管中です。新たな進展があれば追跡を再開します。', 'description'));
     if ((event.schedules || []).length) {
@@ -329,7 +334,7 @@ function render() {
 }
 async function loadNews() {
   try {
-    const response = await fetch('events.json?time=' + Date.now());
+    const response = await fetch('public_events.json?time=' + Date.now());
     if (!response.ok) throw new Error('data load failed');
     events = await response.json();
     if (!Array.isArray(events)) throw new Error('invalid data');

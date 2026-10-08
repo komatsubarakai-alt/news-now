@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import uuid
+from publication_safety import load_corrections, excluded, protect_existing, write_public
 from merge_safety import (IDENTITY_RULES, UpdateHeld, review, save_reviews,
                           validate_saved_update, source_context)
 from tracking_sources import AI, BudgetExceeded, search
@@ -49,12 +50,16 @@ def merge_incoming(events, groups, ai, now, reviews=None):
         if not fresh:
             continue
         try:
-            report = analyze(ai, events, fresh)
+            registry = load_corrections()
+            if any(excluded(a, registry) for a in fresh):
+                raise UpdateHeld('editorial_article_hold')
+            eligible = [e for e in events if e.get('publication_status') != 'held']
+            report = analyze(ai, eligible, fresh)
             if report.get('confidence') != 'high' or not evidence(report, fresh):
                 pending.append(group)
                 reviews.append(review('event_attachment', 'uncertain_or_invalid_evidence', {'group': group}))
                 continue
-            target = next((e for e in events if e.get('event_id') == report.get('event_id')), None)
+            target = next((e for e in eligible if e.get('event_id') == report.get('event_id')), None)
             if report.get('relation') == 'same_event' and target:
                 candidate = copy.deepcopy(target)
                 apply_report(candidate, fresh, report, now)
@@ -79,7 +84,7 @@ def merge_incoming(events, groups, ai, now, reviews=None):
 
 
 def _lookup_event(event, ai, query, now, historical=False, finder=search):
-    candidates = deduplicate(finder(query))
+    candidates = [a for a in deduplicate(finder(query)) if not excluded(a, load_corrections())]
     known = {a['url'] for a in event['articles']}
     candidates = [a for a in candidates if a['url'] not in known and date_time(a.get('published'))]
     if historical:
@@ -133,6 +138,7 @@ def lookup_event(event, ai, query, now, historical=False, finder=search):
 
 def enrich(events, ai, now, finder=search, reviews=None):
     reviews = reviews if reviews is not None else []
+    events = [e for e in events if e.get('publication_status') != 'held']
     # Migrate saved events gradually; avoid a one-off unbounded API surge.
     for event in [e for e in events if not e.get('v1_enriched')][:2]:
         try:
@@ -188,6 +194,8 @@ def enrich(events, ai, now, finder=search, reviews=None):
 def main():
     now = datetime.now(timezone.utc)
     events = load('events.json', [])
+    registry = load_corrections()
+    protect_existing(events, registry)
     for event in events:
         migrate(event, now)
     # Persist failures so the next RSS window cannot silently drop unprocessed news.
@@ -215,11 +223,12 @@ def main():
             if before:
                 safe.append(before)
     events = safe
+    published = write_public(events, registry)
     save_reviews(reviews)
     atomic_save('events.json', events)
     atomic_save('tracking_pending.json', pending)
     atomic_save('tracking_health.json', {'last_run_at': now.isoformat(), 'pending_count': len(pending),
-                'event_count': len(events), 'tracking_ai_calls': 30 - ai.remaining,
+                'event_count': len(events), 'published_event_count': len(published), 'held_event_count': len(events)-len(published), 'tracking_ai_calls': 30 - ai.remaining,
                 'merge_review_count': len(load('merge_review.json', [])),
                 'backfill_needs_review': sum(e.get('backfill', {}).get('status') == 'needs_review' for e in events)})
     print(f'v1.0追跡更新: {len(events)}件 / 判定保留 {len(pending)}件')
