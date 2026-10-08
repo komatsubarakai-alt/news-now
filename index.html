@@ -401,39 +401,86 @@ statusBox.innerHTML = `
 articles.className = "articles";
 articles.style.display = "none";
 
-(group.articles || []).forEach(article => {
+const timelineTitle = document.createElement("div");
+timelineTitle.textContent = "これまでの流れ";
+timelineTitle.style.fontWeight = "800";
+timelineTitle.style.fontSize = "14px";
+timelineTitle.style.margin = "18px 0 12px";
+
+articles.appendChild(timelineTitle);
+
+const sortedArticles = [...(group.articles || [])]
+  .sort((a, b) => {
+    return new Date(a.published || 0) -
+           new Date(b.published || 0);
+  });
+
+sortedArticles.forEach((article, articleIndex) => {
 
   const item = document.createElement("div");
-  item.className = "article";
 
-  const link = document.createElement("a");
-  link.href = article.url;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.textContent = article.title || "関連記事";
+  item.style.position = "relative";
+  item.style.paddingLeft = "26px";
+  item.style.paddingBottom = "18px";
+  item.style.borderLeft = "2px solid #e4e7ec";
+  item.style.marginLeft = "7px";
+
+  const dot = document.createElement("div");
+  dot.style.position = "absolute";
+  dot.style.left = "-6px";
+  dot.style.top = "3px";
+  dot.style.width = "10px";
+  dot.style.height = "10px";
+  dot.style.borderRadius = "50%";
+  dot.style.background =
+    articleIndex === sortedArticles.length - 1
+      ? "#2563eb"
+      : "#98a2b3";
 
   const date = document.createElement("div");
-  date.className = "date";
+  date.style.fontSize = "12px";
+  date.style.fontWeight = "700";
+  date.style.color = "#667085";
+  date.style.marginBottom = "4px";
 
   if (article.published) {
     const d = new Date(article.published);
 
     if (!isNaN(d)) {
       date.textContent =
-        d.toLocaleString("ja-JP");
+        d.toLocaleDateString("ja-JP");
     }
   }
 
-  item.appendChild(link);
+  const link = document.createElement("a");
+  link.href = article.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent =
+    article.title || "関連記事";
+
+  if (articleIndex === sortedArticles.length - 1) {
+    const newLabel = document.createElement("span");
+    newLabel.textContent = " NEW";
+    newLabel.style.fontSize = "10px";
+    newLabel.style.fontWeight = "800";
+    newLabel.style.color = "#2563eb";
+
+    link.appendChild(newLabel);
+  }
+
+  item.appendChild(dot);
   item.appendChild(date);
+  item.appendChild(link);
+
   articles.appendChild(item);
 });
 
 const articleButton = document.createElement("button");
 
 articleButton.textContent =
-  "関連記事を見る（" +
-  (group.articles || []).length +
+  "これまでの流れを見る（" +
+  sortedArticles.length +
   "件）";
 
 articleButton.style.width = "100%";
@@ -454,15 +501,15 @@ articleButton.addEventListener("click", () => {
     articles.style.display = "none";
 
     articleButton.textContent =
-      "関連記事を見る（" +
-      (group.articles || []).length +
+      "これまでの流れを見る（" +
+      sortedArticles.length +
       "件）";
 
   } else {
     articles.style.display = "block";
 
     articleButton.textContent =
-      "関連記事を閉じる";
+      "これまでの流れを閉じる";
   }
 });
 
