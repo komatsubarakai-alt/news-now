@@ -318,6 +318,46 @@ category.style.color = "#475467";
       title.textContent =
         group.event_name || "名称未設定";
 
+      const updateInfo = document.createElement("div");
+updateInfo.style.fontSize = "12px";
+updateInfo.style.fontWeight = "700";
+updateInfo.style.margin = "6px 0";
+updateInfo.style.color = "#667085";
+
+if (group.updated_at) {
+  const updated = new Date(group.updated_at);
+  const now = new Date();
+
+  const updatedDay = new Date(
+    updated.getFullYear(),
+    updated.getMonth(),
+    updated.getDate()
+  );
+
+  const today = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate()
+  );
+
+  const diffDays = Math.floor(
+    (today - updatedDay) / (1000 * 60 * 60 * 24)
+  );
+
+  let updateLabel = "";
+
+  if (diffDays === 0) {
+    updateLabel = "🔴 今日更新";
+  } else if (diffDays === 1) {
+    updateLabel = "🟠 昨日更新";
+  } else {
+    updateLabel = "最終更新：" +
+      updated.toLocaleDateString("ja-JP");
+  }
+
+  updateInfo.textContent = updateLabel;
+}
+      
       const count = document.createElement("div");
       count.className = "count";
       const sourceCount = group.source_article_count || group.article_count;
@@ -393,6 +433,7 @@ statusBox.innerHTML = `
       card.appendChild(label);
       card.appendChild(category);
       card.appendChild(title);
+      card.appendChild(updateInfo);
       card.appendChild(count);
       card.appendChild(statusBox);
       card.appendChild(articles);
