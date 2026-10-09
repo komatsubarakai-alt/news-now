@@ -76,9 +76,12 @@ class MergeSafetyTests(unittest.TestCase):
         events=[]
         answer=report(mice,relation='new_event',event_id='',meaningful_change=False,
                       event_identity={'value':'MICE','url':mice['url'],'quote':mice['title']})
-        pending=merge_incoming(events,[saved],FakeAI(answer),NOW)
+        triage={}
+        pending=merge_incoming(events,[saved],FakeAI(answer),NOW,triage=triage)
         self.assertEqual(events,[])
-        self.assertEqual(len(pending),1)
+        self.assertEqual(pending,[])
+        self.assertEqual(next(iter(triage.values()))['status'],'editorial_hold')
+        self.assertEqual(next(iter(triage.values()))['group'],saved)
 
     def test_region_and_publisher_cannot_be_identity(self):
         a = article('札幌のニュース - 北海道新聞デジタル'); b = article('札幌のニュース - 北海道新聞デジタル', 'https://example.test/b')
