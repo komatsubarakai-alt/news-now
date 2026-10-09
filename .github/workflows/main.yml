@@ -44,37 +44,9 @@ jobs:
           print("札幌ニュースを取得しました")
           PY
           
-      - name: Convert news to JSON
-        run: |
-          python - <<'PY'
-          import xml.etree.ElementTree as ET
-          import json
-          import html
+      - name: Preserve sources and filter verified reprints before AI
+        run: python source_filter.py --rss sapporo_news.xml
 
-          tree = ET.parse("sapporo_news.xml")
-          root = tree.getroot()
-
-          news = []
-
-          for item in root.findall(".//item"):
-              title = item.findtext("title", "")
-              link = item.findtext("link", "")
-              pub_date = item.findtext("pubDate", "")
-              description = item.findtext("description", "")
-
-              news.append({
-                  "title": html.unescape(title),
-                  "url": link,
-                  "published": pub_date,
-                  "description": html.unescape(description)
-              })
-
-          with open("news.json", "w", encoding="utf-8") as f:
-              json.dump(news, f, ensure_ascii=False, indent=2)
-
-          print(f"{len(news)}件のニュースを整理しました")
-          PY
-          
       - name: Group news
         run: |
           python ai_candidates.py
@@ -210,7 +182,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sapporo_news.xml news.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json public_events.json tracking_pending.json tracking_health.json merge_review.json status_pending.json
+          git add sapporo_news.xml news.json news_filtered.json news_source_metrics.json source_exclusions.json news_groups.json ai_candidates.json ai_results.json news_groups_ai.json news_groups_merged.json news_groups_deduplicated.json news_status.json events.json public_events.json tracking_pending.json tracking_health.json merge_review.json status_pending.json
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Sapporo news"

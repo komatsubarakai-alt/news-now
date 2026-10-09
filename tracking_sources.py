@@ -40,5 +40,8 @@ def search(query):
     request = urllib.request.Request(url, headers={'User-Agent': 'news-now/1.0'})
     with urllib.request.urlopen(request, timeout=30) as response:
         root = ET.fromstring(response.read())
-    return [{'title': item.findtext('title', ''), 'url': item.findtext('link', ''),
-             'published': item.findtext('pubDate', '')} for item in root.findall('.//item')][:20]
+    from source_filter import parse_rss, prefilter, record_exclusions
+    # Apply the same source policy to backfill/scheduled lookup before AI as to collection.
+    kept, exclusions = prefilter(parse_rss(root))
+    record_exclusions(exclusions, 'lookup:' + query)
+    return kept[:20]
