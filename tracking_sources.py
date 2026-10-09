@@ -29,9 +29,15 @@ class AI:
         text = ''.join(chunks).strip()
         if text.startswith('```'):
             text = text.split('\n', 1)[1].rsplit('```', 1)[0].strip()
-        result = json.loads(text)
+        try:
+            result = json.loads(text)
+        except json.JSONDecodeError as exc:
+            exc.ai_response_excerpt = text[:8000]
+            raise
         if not isinstance(result, dict):
-            raise ValueError('JSON object required')
+            exc = ValueError('JSON object required')
+            exc.ai_response_excerpt = text[:8000]
+            raise exc
         return result
 
 

@@ -36,9 +36,13 @@ class FullDataSafetyTests(unittest.TestCase):
     def test_held_article_never_public_or_attached(self):
         a=article('容疑者を起訴',url='https://example.test/held'); e=event(); old=copy.deepcopy(e)
         registry={'held_articles':[{'status':'held','article':a}]}
+        triage={}
         with patch('event_tracker.load_corrections',return_value=registry):
-            pending=merge_incoming([e],[group(a)],FakeAI(report(a)),NOW)
-        self.assertEqual(e,old);self.assertEqual(len(pending),1)
+            pending=merge_incoming([e],[group(a)],FakeAI(report(a)),NOW,triage=triage)
+        self.assertEqual(e,old);self.assertEqual(pending,[])
+        retained=next(iter(triage.values()))
+        self.assertEqual(retained['status'],'editorial_hold')
+        self.assertEqual(retained['group']['articles'],[a])
         self.assertTrue(excluded({**a,'url':'https://example.test/repost'},registry))
 
     def test_held_event_frozen_and_not_public(self):

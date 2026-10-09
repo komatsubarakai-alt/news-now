@@ -217,9 +217,15 @@ def validate_saved_update(before, after):
         raise UpdateHeld('saved_metadata_contradiction')
 
 
-def review(stage, reason, payload):
+def review(stage, reason, payload, at=None, diagnostics=None):
+    from datetime import datetime, timezone
     item = {'stage': stage, 'reason': str(reason), 'payload': copy.deepcopy(payload)}
     item['review_id'] = hashlib.sha256(json.dumps(item, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:24]
+    item['schema_version'] = 2
+    item['observed_at'] = (at or datetime.now(timezone.utc)).isoformat()
+    if diagnostics is not None:
+        # Only source/answer diagnostics; never HTTP headers, API keys or request prompts.
+        item['diagnostics'] = copy.deepcopy(diagnostics)
     return item
 
 
@@ -227,5 +233,27 @@ def save_reviews(items, path='merge_review.json'):
     from pathlib import Path
     from tracking_v1 import atomic_save
     old = json.loads(Path(path).read_text()) if Path(path).exists() else []
-    unique = {i['review_id']: i for i in old + items}
+    unique = {i['review_id']: i for i in old}
+    for incoming in items:
+        item = copy.deepcopy(incoming)
+        prior = unique.get(item['review_id'], {})
+        if prior:
+            item['observation_history'] = copy.deepcopy(prior.get('observation_history', []))
+            item['observation_history'].append({k: copy.deepcopy(v) for k, v in prior.items()
+                                                if k != 'observation_history'})
+        item['first_seen_at'] = prior.get('first_seen_at', prior.get('observed_at', item.get('observed_at')))
+        item['last_seen_at'] = item.get('observed_at')
+        item['observation_count'] = prior.get('observation_count', 0) + 1
+        item['legacy_history_present'] = bool(prior.get('legacy_history_present') or
+                                              (prior and not prior.get('observed_at')))
+        unique[item['review_id']] = item
     atomic_save(path, list(unique.values()))
+    if path == 'merge_review.json':
+        recent = []
+        for item in items[-100:]:
+            group = item.get('payload', {}).get('group', {})
+            recent.append({k: item.get(k) for k in ('review_id', 'stage', 'reason', 'observed_at', 'diagnostics')} |
+                          {'event_id': item.get('payload', {}).get('event_id'),
+                           'event_name': group.get('event_name'),
+                           'article_urls': [a.get('url') for a in group.get('articles', [])]})
+        atomic_save('tracking_review_recent.json', {'schema_version': 1, 'items': recent})

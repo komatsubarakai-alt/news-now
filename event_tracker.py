@@ -35,30 +35,33 @@ def load(path, default):
     return json.loads(Path(path).read_text(encoding='utf-8')) if Path(path).exists() else default
 
 
-def merge_incoming(events, groups, ai, now, reviews=None):
+def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
+    from pending_triage import preflight, observe, failure_status, group_key
     reviews = reviews if reviews is not None else []
-    pending, deferred = [], []
-    for index, group in enumerate(groups):
-        if index >= 16:
+    triage = triage if triage is not None else {}
+    pending, deferred, attempted = [], [], 0
+    registry = load_corrections()
+    for group in groups:
+        known = {a['url'] for e in events for a in e.get('articles', [])}
+        status = preflight(group, known, registry, triage)
+        if status:
+            reason = triage.get(group_key(group), {}).get('reason', status) if status == 'manual_review' else status
+            observe(triage, group, status, reason, now)
+            continue
+        # Only groups needing an AI judgment consume the 16-group allowance.
+        if attempted >= 16:
+            observe(triage, group, 'queued', 'budget_deferred', now)
             deferred.append(group)
             continue
-        if group.get('category') not in CATEGORIES or group.get('tracking_value') == 'low':
-            continue
         articles = deduplicate(group.get('articles', []))
-        known = {a['url'] for e in events for a in e.get('articles', [])}
         fresh = [a for a in articles if a['url'] not in known]
-        if not fresh:
-            continue
+        eligible = [e for e in events if e.get('publication_status') != 'held']
+        report, target = None, None
+        attempted += 1
         try:
-            registry = load_corrections()
-            if any(excluded(a, registry) for a in fresh):
-                raise UpdateHeld('editorial_article_hold')
-            eligible = [e for e in events if e.get('publication_status') != 'held']
             report = analyze(ai, eligible, fresh)
             if report.get('confidence') != 'high' or not evidence(report, fresh):
-                pending.append(group)
-                reviews.append(review('event_attachment', 'uncertain_or_invalid_evidence', {'group': group}))
-                continue
+                raise UpdateHeld('uncertain_or_invalid_evidence')
             target = next((e for e in eligible if e.get('event_id') == report.get('event_id')), None)
             if report.get('relation') == 'same_event' and target:
                 candidate = copy.deepcopy(target)
@@ -73,13 +76,32 @@ def merge_incoming(events, groups, ai, now, reviews=None):
                 validate_saved_update(None, event)
                 events.append(event)
             else:
-                pending.append(group)
-                reviews.append(review('event_attachment', 'uncertain_relation', {'group': group}))
+                raise UpdateHeld('uncertain_relation')
+            observe(triage, group, 'already_saved', 'accepted', now)
         except Exception as exc:
-            print('続報判定を保留:', type(exc).__name__)
-            pending.append(group)
-            reviews.append(review('event_attachment', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'group': group}))
-    # Rotate failed judgments behind untouched groups so strict guards cannot starve valid news.
+            reason = str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__
+            status = failure_status(reason)
+            if isinstance(exc, UpdateHeld) and status == 'retry_system':
+                status = 'needs_evidence'
+            record = observe(triage, group, status, reason, now,
+                             decision=isinstance(exc, UpdateHeld))
+            if record['status'] != 'manual_review':
+                pending.append(group)
+            diagnostics = {
+                'target_event_id': target.get('event_id') if target else (report or {}).get('event_id'),
+                'target_event_name': target.get('event_name') if target else None,
+                'target_source_urls': [a['url'] for a in target.get('articles', [])] if target else [],
+                'input_urls': [a['url'] for a in fresh],
+                'ai_report': report,
+                'raw_ai_response': getattr(exc, 'ai_response_excerpt', None),
+                'http_status': getattr(exc, 'code', None),
+                'triage_status': record['status'],
+                'decision_attempts': record['decision_attempts'],
+            }
+            reviews.append(review('event_attachment', reason, {'group': group}, at=now,
+                                  diagnostics=diagnostics))
+            print('続報判定を保留:', reason.split(':', 1)[0])
+    # Untouched groups first; failed decisions rotate behind them.
     return deferred + pending
 
 
@@ -105,6 +127,7 @@ def _lookup_event(event, ai, query, now, historical=False, finder=search):
     if not selected:
         exc = UpdateHeld('search_identity_uncertain')
         exc.candidates = candidates
+        exc.ai_report = result
         raise exc
     try:
         if historical:
@@ -120,6 +143,7 @@ def _lookup_event(event, ai, query, now, historical=False, finder=search):
         return [a for a in candidates if a['url'] not in urls]
     except Exception as exc:
         exc.candidates = selected
+        exc.ai_report = locals().get('report', result)
         raise
 
 
@@ -177,7 +201,11 @@ def enrich(events, ai, now, finder=search, reviews=None):
         except Exception as exc:
             state['attempts'] += 1
             state['status'] = 'retry' if state['attempts'] < 3 else 'needs_review'
-            reviews.append(review('backfill', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id'], 'articles': getattr(exc, 'candidates', [])}))
+            reviews.append(review('backfill', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id'], 'articles': getattr(exc, 'candidates', [])}, at=now,
+                diagnostics={'target_event_id': event['event_id'], 'target_event_name': event['event_name'],
+                             'ai_report': getattr(exc, 'ai_report', None),
+                             'raw_ai_response': getattr(exc, 'ai_response_excerpt', None),
+                             'http_status': getattr(exc, 'code', None)}))
             print('過去記事検索を保留:', type(exc).__name__)
     for event in [e for e in events if scheduled_search_due(e, now)][:3]:
         try:
@@ -187,7 +215,11 @@ def enrich(events, ai, now, finder=search, reviews=None):
                 reviews.append(review('schedule_search', 'unselected_search_candidates', {'event_id': event['event_id'], 'articles': unselected}))
             event['last_schedule_search_at'] = now.isoformat()
         except Exception as exc:
-            reviews.append(review('schedule_search', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id'], 'articles': getattr(exc, 'candidates', [])}))
+            reviews.append(review('schedule_search', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id'], 'articles': getattr(exc, 'candidates', [])}, at=now,
+                diagnostics={'target_event_id': event['event_id'], 'target_event_name': event['event_name'],
+                             'ai_report': getattr(exc, 'ai_report', None),
+                             'raw_ai_response': getattr(exc, 'ai_response_excerpt', None),
+                             'http_status': getattr(exc, 'code', None)}))
             print('予定の追加検索を保留:', type(exc).__name__)
 
 
@@ -199,17 +231,13 @@ def main():
     for event in events:
         migrate(event, now)
     # Persist failures so the next RSS window cannot silently drop unprocessed news.
-    groups = load('tracking_pending.json', []) + load('news_status.json', [])
-    unique, seen = [], set()
-    for group in groups:
-        key = tuple(sorted(a.get('url', '') for a in group.get('articles', [])))
-        if key and key not in seen:
-            seen.add(key)
-            unique.append(group)
+    from pending_triage import current_groups
+    unique = current_groups(load('tracking_pending.json', []), load('news_status.json', []))
+    triage = load('tracking_triage.json', {}).get('items', {})
     ai = AI(limit=30)
     reviews = []
     snapshot = {e['event_id']: copy.deepcopy(e) for e in events}
-    pending = merge_incoming(events, unique, ai, now, reviews)
+    pending = merge_incoming(events, unique, ai, now, reviews, triage)
     enrich(events, ai, now, reviews=reviews)
     update_lifecycle(events, now)
     safe = []
@@ -227,7 +255,11 @@ def main():
     save_reviews(reviews)
     atomic_save('events.json', events)
     atomic_save('tracking_pending.json', pending)
+    atomic_save('tracking_triage.json', {'schema_version': 1, 'updated_at': now.isoformat(), 'items': triage})
+    from pending_triage import summary
+    triage_metrics = summary(triage, pending)
     atomic_save('tracking_health.json', {'last_run_at': now.isoformat(), 'pending_count': len(pending),
+                **triage_metrics,
                 'event_count': len(events), 'published_event_count': len(published), 'held_event_count': len(events)-len(published), 'tracking_ai_calls': 30 - ai.remaining,
                 'merge_review_count': len(load('merge_review.json', [])),
                 'backfill_needs_review': sum(e.get('backfill', {}).get('status') == 'needs_review' for e in events)})
