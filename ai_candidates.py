@@ -2,8 +2,7 @@ import json
 import re
 from itertools import combinations
 
-with open("news.json", "r", encoding="utf-8") as f:
-    news = json.load(f)
+from pathlib import Path
 
 
 # よく出てくるだけで、事件の判定にはあまり役立たない言葉
@@ -28,113 +27,115 @@ def get_keywords(title):
     ]
 
 
-# 各記事のキーワードを作る
-article_keywords = []
+def build_candidates(news):
+    # 各記事のキーワードを作る
+    article_keywords = []
 
-for article in news:
-    title = article.get("title", "")
-    keywords = get_keywords(title)
+    for article in news:
+        title = article.get("title", "")
+        keywords = get_keywords(title)
 
-    article_keywords.append({
-        "article": article,
-        "keywords": set(keywords)
-    })
-
-
-candidates = []
+        article_keywords.append({
+            "article": article,
+            "keywords": set(keywords)
+        })
 
 
-# 記事同士を比較
-for i, j in combinations(range(len(article_keywords)), 2):
-
-    a = article_keywords[i]
-    b = article_keywords[j]
-
-    common = a["keywords"] & b["keywords"]
-
-    # 共通キーワードがない場合は比較しない
-    if not common:
-        continue
-
-    # 共通キーワードの重要度を計算
-    score = 0
-
-    for word in common:
-        # 長い言葉ほど重要と判断
-        if len(word) >= 5:
-            score += 3
-        elif len(word) >= 4:
-            score += 2
-        else:
-            score += 1
-
-    # 共通語が1つだけでも、長い固有性の高い言葉なら候補にする
-    if score < 1:
-        continue
-
-    candidates.append({
-        "article_a": a["article"],
-        "article_b": b["article"],
-        "common_keywords": sorted(common),
-        "score": score
-    })
+    candidates = []
 
 
-# 各記事から有力な候補を均等に残す
-candidates_by_article = {}
+    # 記事同士を比較
+    for i, j in combinations(range(len(article_keywords)), 2):
 
-for candidate in candidates:
-    url_a = candidate["article_a"].get("url", "")
-    url_b = candidate["article_b"].get("url", "")
+        a = article_keywords[i]
+        b = article_keywords[j]
 
-    candidates_by_article.setdefault(url_a, []).append(candidate)
-    candidates_by_article.setdefault(url_b, []).append(candidate)
+        common = a["keywords"] & b["keywords"]
+
+        # 共通キーワードがない場合は比較しない
+        if not common:
+            continue
+
+        # 共通キーワードの重要度を計算
+        score = 0
+
+        for word in common:
+            # 長い言葉ほど重要と判断
+            if len(word) >= 5:
+                score += 3
+            elif len(word) >= 4:
+                score += 2
+            else:
+                score += 1
+
+        # 共通語が1つだけでも、長い固有性の高い言葉なら候補にする
+        if score < 1:
+            continue
+
+        candidates.append({
+            "article_a": a["article"],
+            "article_b": b["article"],
+            "common_keywords": sorted(common),
+            "score": score
+        })
 
 
-selected = []
-seen_pairs = set()
+    # 各記事から有力な候補を均等に残す
+    candidates_by_article = {}
 
-# 各記事につき上位3候補まで残す
-for article_candidates in candidates_by_article.values():
+    for candidate in candidates:
+        url_a = candidate["article_a"].get("url", "")
+        url_b = candidate["article_b"].get("url", "")
 
-    article_candidates.sort(
+        candidates_by_article.setdefault(url_a, []).append(candidate)
+        candidates_by_article.setdefault(url_b, []).append(candidate)
+
+
+    selected = []
+    seen_pairs = set()
+
+    # 各記事につき上位3候補まで残す
+    for article_candidates in candidates_by_article.values():
+
+        article_candidates.sort(
+            key=lambda x: x["score"],
+            reverse=True
+        )
+
+        for candidate in article_candidates[:3]:
+
+            url_a = candidate["article_a"].get("url", "")
+            url_b = candidate["article_b"].get("url", "")
+
+            pair_key = tuple(sorted([url_a, url_b]))
+
+            if pair_key not in seen_pairs:
+                seen_pairs.add(pair_key)
+                selected.append(candidate)
+
+
+    # 最終的な候補数を抑える
+    selected.sort(
         key=lambda x: x["score"],
         reverse=True
     )
 
-    for candidate in article_candidates[:3]:
+    MAX_CANDIDATES = 150
 
-        url_a = candidate["article_a"].get("url", "")
-        url_b = candidate["article_b"].get("url", "")
-
-        pair_key = tuple(sorted([url_a, url_b]))
-
-        if pair_key not in seen_pairs:
-            seen_pairs.add(pair_key)
-            selected.append(candidate)
+    candidates = selected[:MAX_CANDIDATES]
+    return candidates
 
 
-# 最終的な候補数を抑える
-selected.sort(
-    key=lambda x: x["score"],
-    reverse=True
-)
-
-MAX_CANDIDATES = 150
-
-candidates = selected[:MAX_CANDIDATES]
 
 
-with open("ai_candidates.json", "w", encoding="utf-8") as f:
-    json.dump(
-        candidates,
-        f,
-        ensure_ascii=False,
-        indent=2
-    )
+def main():
+    # Raw collection is retained; only this run's verified representatives enter AI.
+    path = Path('news_filtered.json') if Path('news_filtered.json').exists() else Path('news.json')
+    news = json.loads(path.read_text(encoding='utf-8'))
+    candidates = build_candidates(news)
+    Path('ai_candidates.json').write_text(json.dumps(candidates, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    print(f'{len(news)}件のニュースから{len(candidates)}組のAI判定候補を作りました')
 
 
-print(
-    f"{len(news)}件のニュースから"
-    f"{len(candidates)}組のAI判定候補を作りました"
-)
+if __name__ == '__main__':
+    main()

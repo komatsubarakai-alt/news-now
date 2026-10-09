@@ -63,6 +63,16 @@ def main():
     with open('ai_results.json', encoding='utf-8') as f:
         results = json.load(f)
     groups, held = build_groups(results)
+    # The capped pair selection can omit a unique or supplementary news item.
+    # Preserve it as a singleton for the existing bounded status/pending queue.
+    from pathlib import Path
+    feed = Path('news_filtered.json')
+    if feed.exists():
+        grouped_urls = {a['url'] for group in groups for a in group['articles']}
+        for article in json.loads(feed.read_text(encoding='utf-8')):
+            if article.get('url') and article['url'] not in grouped_urls:
+                groups.append({'event_name': article['title'], 'articles': [article], 'article_count': 1})
+                grouped_urls.add(article['url'])
     atomic_save('news_groups_ai.json', groups)
     save_reviews(held)
     print(f'記事グループ {len(groups)}件 / 照合保留 {len(held)}件（単独記事も保持）')
