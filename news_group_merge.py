@@ -1,5 +1,6 @@
 """Group merges need source evidence for every cross-pair, never transitive union alone."""
 import copy
+import os
 import json
 from itertools import combinations
 from merge_safety import IDENTITY_RULES, UpdateHeld, review, save_reviews, source_context, validate_identity, contradictory, article_content
@@ -69,7 +70,7 @@ def main():
     with open('news_groups_ai.json', encoding='utf-8') as f:
         groups = json.load(f)
     # Bound this stage to 100 calls; the previous group merger was unbounded.
-    ai = AI(limit=100)
+    ai = AI(limit=int(os.environ.get('MERGE_CALL_LIMIT', '100')))
     with open('ai_results.json', encoding='utf-8') as f:
         blocked = negative_pairs(json.load(f))
     output, held = merge_groups(groups, lambda a, b: ask_ai(ai, a, b), blocked)

@@ -214,11 +214,16 @@ def main():
     parser.add_argument('--rss', default='sapporo_news.xml')
     args = parser.parse_args()
     raw = parse_rss(ET.parse(args.rss).getroot())
-    kept, excluded = prefilter(raw)
+    inbox_path = Path('news_inbox.json')
+    inbox = json.loads(inbox_path.read_text(encoding='utf-8')) if inbox_path.exists() else []
+    by_url = {a['url']: a for a in inbox + raw}
+    inbox = list(by_url.values())
+    atomic_save('news_inbox.json', inbox)
+    kept, excluded = prefilter(inbox)
     atomic_save('news.json', raw)
     atomic_save('news_filtered.json', kept)
     record_exclusions(excluded, 'primary_rss')
-    metrics = measure(raw, kept, excluded)
+    metrics = measure(inbox, kept, excluded)
     metrics.update(measured_at=datetime.now(timezone.utc).isoformat(),
                    input_sha256=hashlib.sha256(Path(args.rss).read_bytes()).hexdigest())
     atomic_save('news_source_metrics.json', metrics)

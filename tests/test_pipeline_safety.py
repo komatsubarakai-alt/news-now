@@ -41,13 +41,13 @@ class PipelineSafetyTests(unittest.TestCase):
             try:
                 os.chdir(tmp)
                 Path('news_groups_deduplicated.json').write_text(json.dumps(groups))
-                with patch.dict(os.environ,{'OPENAI_API_KEY':'test'}), patch('urllib.request.urlopen',side_effect=response) as network, contextlib.redirect_stdout(io.StringIO()):
+                with patch.dict(os.environ,{'OPENAI_API_KEY':'test', 'STATUS_GROUP_LIMIT':'16', 'AI_RUN_CALL_LIMIT':'24', 'AI_DAILY_CALL_LIMIT':'40', 'AI_DAILY_USD_LIMIT':'0.20'}), patch('urllib.request.urlopen',side_effect=response) as network, contextlib.redirect_stdout(io.StringIO()):
                     runpy.run_path(str(script),run_name='__main__')
                     self.assertEqual(network.call_count,16)
                 self.assertEqual(len(json.loads(Path('news_status.json').read_text())),16)
                 self.assertEqual(json.loads(Path('status_pending.json').read_text()),groups[16:])
                 Path('news_groups_deduplicated.json').write_text('[]')
-                with patch.dict(os.environ,{'OPENAI_API_KEY':'test'}),patch('urllib.request.urlopen',side_effect=response) as network, contextlib.redirect_stdout(io.StringIO()):
+                with patch.dict(os.environ,{'OPENAI_API_KEY':'test', 'STATUS_GROUP_LIMIT':'16', 'AI_RUN_CALL_LIMIT':'24', 'AI_DAILY_CALL_LIMIT':'40', 'AI_DAILY_USD_LIMIT':'0.20'}),patch('urllib.request.urlopen',side_effect=response) as network, contextlib.redirect_stdout(io.StringIO()):
                     runpy.run_path(str(script),run_name='__main__')
                     self.assertEqual(network.call_count,1)
                 self.assertEqual(json.loads(Path('status_pending.json').read_text()),[])

@@ -1,5 +1,6 @@
 """Persistent tracking, backfill, milestone history and schedule follow-up."""
 import copy
+import os
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -78,6 +79,10 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
             else:
                 raise UpdateHeld('uncertain_relation')
             observe(triage, group, 'already_saved', 'accepted', now)
+        except BudgetExceeded:
+            observe(triage, group, 'queued', 'budget_deferred', now)
+            deferred.extend(groups[groups.index(group):])
+            break
         except Exception as exc:
             reason = str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__
             status = failure_status(reason)
@@ -95,6 +100,7 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
                 'ai_report': report,
                 'raw_ai_response': getattr(exc, 'ai_response_excerpt', None),
                 'http_status': getattr(exc, 'code', None),
+                'api_error_code': getattr(exc, 'api_error_code', None),
                 'triage_status': record['status'],
                 'decision_attempts': record['decision_attempts'],
             }
@@ -177,6 +183,8 @@ def enrich(events, ai, now, finder=search, reviews=None):
                     event['completed_at'] = now.isoformat()
                     event['completion_evidence'] = {'quote': report['completion_quote'], 'urls': report['evidence_urls']}
                 event['v1_enriched'] = True
+        except BudgetExceeded:
+            return
         except Exception as exc:
             reviews.append(review('enrichment', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id']}))
             print('既存イベント移行を保留:', type(exc).__name__)
@@ -214,6 +222,8 @@ def enrich(events, ai, now, finder=search, reviews=None):
             if unselected:
                 reviews.append(review('schedule_search', 'unselected_search_candidates', {'event_id': event['event_id'], 'articles': unselected}))
             event['last_schedule_search_at'] = now.isoformat()
+        except BudgetExceeded:
+            break
         except Exception as exc:
             reviews.append(review('schedule_search', str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__, {'event_id': event['event_id'], 'articles': getattr(exc, 'candidates', [])}, at=now,
                 diagnostics={'target_event_id': event['event_id'], 'target_event_name': event['event_name'],
@@ -234,7 +244,7 @@ def main():
     from pending_triage import current_groups
     unique = current_groups(load('tracking_pending.json', []), load('news_status.json', []))
     triage = load('tracking_triage.json', {}).get('items', {})
-    ai = AI(limit=30)
+    ai = AI(limit=int(os.environ.get('TRACKING_CALL_LIMIT', '30')))
     reviews = []
     snapshot = {e['event_id']: copy.deepcopy(e) for e in events}
     pending = merge_incoming(events, unique, ai, now, reviews, triage)
@@ -260,7 +270,7 @@ def main():
     triage_metrics = summary(triage, pending)
     atomic_save('tracking_health.json', {'last_run_at': now.isoformat(), 'pending_count': len(pending),
                 **triage_metrics,
-                'event_count': len(events), 'published_event_count': len(published), 'held_event_count': len(events)-len(published), 'tracking_ai_calls': 30 - ai.remaining,
+                'event_count': len(events), 'published_event_count': len(published), 'held_event_count': len(events)-len(published), 'tracking_ai_calls': int(os.environ.get('TRACKING_CALL_LIMIT', '30')) - ai.remaining,
                 'merge_review_count': len(load('merge_review.json', [])),
                 'backfill_needs_review': sum(e.get('backfill', {}).get('status') == 'needs_review' for e in events)})
     print(f'v1.0追跡更新: {len(events)}件 / 判定保留 {len(pending)}件')
