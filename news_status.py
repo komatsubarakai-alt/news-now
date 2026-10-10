@@ -1,9 +1,11 @@
 import json
+import hashlib
 import os
 import urllib.request
 from pathlib import Path
 from merge_safety import review, save_reviews
 from tracking_v1 import atomic_save
+from ai_cost_control import response, json_answer
 
 
 with open("news_groups_deduplicated.json", "r", encoding="utf-8") as f:
@@ -19,7 +21,13 @@ for group in previous + groups:
         by_urls[key] = group
 groups = list(by_urls.values())
 pending, deferred, reviews = [], [], []
-statuses = []
+def fingerprint(group):
+    value = {'event_name': group.get('event_name'), 'articles': group.get('articles', [])}
+    return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+statuses = json.loads(Path('news_status.json').read_text(encoding='utf-8')) if Path('news_status.json').exists() else []
+known_statuses = {fingerprint(status) for status in statuses}
+attempted = 0
 VALID_CATEGORIES = {
     "事件・事故",
     "災害",
@@ -56,10 +64,13 @@ def normalize_category(category):
 
 for index, group in enumerate(groups):
 
-    if index >= 16:
+    if fingerprint(group) in known_statuses:
+        continue
+    if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')):
         deferred.append(group)
         continue
 
+    attempted += 1
     event_name = group.get("event_name", "名称未設定")
     articles = group.get("articles", [])
 
@@ -133,47 +144,11 @@ low = 単発ニュースで終わる可能性が高い
 }}
 """
 
-    data = json.dumps({
-        "model": "gpt-5.4-mini",
-        "input": prompt
-    }).encode("utf-8")
-
-    request = urllib.request.Request(
-        "https://api.openai.com/v1/responses",
-        data=data,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization":
-                "Bearer " + os.environ["OPENAI_API_KEY"]
-        },
-        method="POST"
-    )
-
     try:
+        ai_status = json_answer(response(prompt))
 
-        with urllib.request.urlopen(
-            request,
-            timeout=60
-        ) as response:
-
-            response_data = json.loads(
-                response.read().decode("utf-8")
-            )
-
-        result_text = (
-            response_data["output"][0]
-            ["content"][0]["text"]
-        )
-
-        cleaned = result_text.strip()
-
-        if cleaned.startswith("```"):
-            cleaned = cleaned.replace("```json", "")
-            cleaned = cleaned.replace("```", "")
-            cleaned = cleaned.strip()
-
-        ai_status = json.loads(cleaned)
-
+        urls = {a.get('url') for a in articles}
+        statuses = [s for s in statuses if {a.get('url') for a in s.get('articles', [])} != urls]
         statuses.append({
             "event_name": event_name,
             "article_count": len(articles),
