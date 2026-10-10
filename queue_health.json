@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-10T10:40:22.807740+00:00",
+  "ai_pause_reason": "user_reported_negative_balance",
+  "waiting_article_count": 172,
+  "oldest_wait_at": "2026-10-09T20:36:40.968754+00:00",
+  "oldest_wait_hours": 14.06,
+  "stages": {
+    "collection": {
+      "group_count": 109,
+      "article_count": 109,
+      "oldest_wait_hours": 0.0
+    },
+    "status_generation": {
+      "group_count": 143,
+      "article_count": 141,
+      "oldest_wait_hours": 0.0
+    },
+    "tracking": {
+      "group_count": 18,
+      "article_count": 18,
+      "oldest_wait_hours": 14.06
+    }
+  },
+  "manual_review_counts": {
+    "status_generation": 0,
+    "tracking": 57
+  },
+  "collection_retained_counts": {
+    "queued": 109,
+    "already_saved": 15,
+    "out_of_scope": 5,
+    "duplicate_source": 13
+  },
+  "daily_accounted_usd": 0.0,
+  "monthly_accounted_usd": 0.0,
+  "daily_network_calls": 0,
+  "alerts": [
+    "waiting_article_count_at_least_100"
+  ],
+  "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
+}
