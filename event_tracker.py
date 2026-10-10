@@ -242,8 +242,10 @@ def main():
         migrate(event, now)
     # Persist failures so the next RSS window cannot silently drop unprocessed news.
     from pending_triage import current_groups
+    from queue_policy import prioritize_groups
     unique = current_groups(load('tracking_pending.json', []), load('news_status.json', []))
     triage = load('tracking_triage.json', {}).get('items', {})
+    unique = prioritize_groups(unique, triage, now)
     ai = AI(limit=int(os.environ.get('TRACKING_CALL_LIMIT', '30')))
     reviews = []
     snapshot = {e['event_id']: copy.deepcopy(e) for e in events}

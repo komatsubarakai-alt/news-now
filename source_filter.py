@@ -220,12 +220,28 @@ def main():
     inbox = list(by_url.values())
     atomic_save('news_inbox.json', inbox)
     kept, excluded = prefilter(inbox)
+    from queue_policy import read, triage_articles
+    collection_state = read('collection_triage.json', {'items': {}})
+    source_kept = kept
+    kept = triage_articles(kept, read('events.json', []), read('news_status.json', []),
+                          collection_state['items'], datetime.now(timezone.utc))
+    for entry in excluded:
+        a = entry['article']
+        collection_state['items'][a['url']] = {
+            'article': a, 'status': 'duplicate_source',
+            'reason': entry.get('reason', 'verified_reprint'),
+            'representative_url': entry.get('representative_url')}
+    atomic_save('collection_triage.json', collection_state)
     atomic_save('news.json', raw)
     atomic_save('news_filtered.json', kept)
     record_exclusions(excluded, 'primary_rss')
     metrics = measure(inbox, kept, excluded)
     metrics.update(measured_at=datetime.now(timezone.utc).isoformat(),
                    input_sha256=hashlib.sha256(Path(args.rss).read_bytes()).hexdigest())
+    atomic_save('news_source_metrics.json', metrics)
+    metrics['source_input_before_queue_triage'] = len(source_kept)
+    metrics['queue_triage_skipped_count'] = len(source_kept) - len(kept)
+    metrics['pair_call_capacity_after'] = min(int(__import__('os').environ.get('PAIR_CALL_LIMIT', '4')), len(__import__('ai_candidates').build_candidates(kept)))
     atomic_save('news_source_metrics.json', metrics)
     print(json.dumps(metrics, ensure_ascii=False))
 
