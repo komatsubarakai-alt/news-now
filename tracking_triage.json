@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-10T11:33:24.750466+00:00",
+  "updated_at": "2026-10-10T18:35:15.265963+00:00",
   "items": {
     "053e8aa4bfaeb247ca214d68": {
       "first_seen_at": "2026-10-09T19:37:21.457421+00:00",
@@ -4157,7 +4157,7 @@
       },
       "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZFd4MllfbkFBM0o1UjlzWkc3SmlfU3RUSTg1YlVsd1FBOEJYWlpfQW1UbmpiREZ0X1ZaWnBqaEdBWTlQME83djBvT0NjSTl1cVk3dUEzWTJoVmUwMjlheDdKNkF0Y2ZZLUtURGZjUDVkcE81MzlCekZxUlZEaDg?oc=5",
-      "last_seen_at": "2026-10-10T11:33:24.750466+00:00",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
       "source_fingerprint": "57e781b4510f05ccc39b82a173c28b0d7eb43cb60e6230ffce608318c763d60c",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZFd4MllfbkFBM0o1UjlzWkc3SmlfU3RUSTg1YlVsd1FBOEJYWlpfQW1UbmpiREZ0X1ZaWnBqaEdBWTlQME83djBvT0NjSTl1cVk3dUEzWTJoVmUwMjlheDdKNkF0Y2ZZLUtURGZjUDVkcE81MzlCekZxUlZEaDg?oc=5",
       "last_failure_at": "2026-10-10T07:37:08.350077+00:00",
@@ -5520,7 +5520,7 @@
     },
     "4e0839a0eaecaec34059786e": {
       "first_seen_at": "2026-10-09T23:36:18.876557+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 3,
       "group": {
         "event_name": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で - 北海道新聞デジタル",
         "article_count": 1,
@@ -5545,13 +5545,13 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
+      "status": "manual_review",
+      "reason": "event_name_unproved",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
       "source_fingerprint": "cf1a7b6dcb948a6ee792449e8c59617b49158f915af588791c73b5c75855a3e2",
-      "last_failure_reason": "HTTPError",
-      "last_failure_at": "2026-10-10T09:33:33.225639+00:00",
-      "last_decision_at": "2026-10-10T07:37:08.350077+00:00"
+      "last_failure_reason": "event_name_unproved",
+      "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_decision_at": "2026-10-10T18:35:15.265963+00:00"
     },
     "7a73ef50208e52adc340deb1": {
       "first_seen_at": "2026-10-09T23:36:18.876557+00:00",
@@ -5677,9 +5677,9 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
+      "status": "queued",
+      "reason": "budget_deferred",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
       "source_fingerprint": "e202ec53374aadb461a9f55329744986ecfc793dfdb94ca79979334b9d7b384b",
       "last_failure_reason": "HTTPError",
       "last_failure_at": "2026-10-10T09:33:33.225639+00:00",
@@ -6179,22 +6179,22 @@
     },
     "1bec8c2c0ae8a8320214b627": {
       "first_seen_at": "2026-10-10T00:48:42.055152+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 1,
       "group": {
         "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
         "article_count": 1,
         "source_article_count": 1,
         "category": "地域・インフラ",
         "tracking_value": "medium",
-        "current_stage": "2027年以降のダイヤ改正予測段階",
-        "summary": "札幌―旭川間の特急カムイ・ライラックについて、利用が21%減少したことを背景に大幅減便の可能性が記事タイトルで示されています。ただし、公開日時とタイトルだけでは、実際に減便が決定したかどうかは確認できません。",
-        "latest": "2026年10月9日時点では、2027年以降のJR北海道ダイヤ改正に向けた減便予測が示されている段階です。",
-        "next_watch": "JR北海道の正式なダイヤ改正発表で、カムイ・ライラックの本数見直しが行われるかどうか。現時点で明確な次の動きは確認できません。",
+        "current_stage": "2027年以降のダイヤ改正を予測した段階",
+        "summary": "記事タイトルからは、JR北海道の札幌〜旭川間の特急カムイ・ライラックについて、利用21%減少を背景に2027年以降の大幅減便が行われる可能性を予測していることが分かります。実施決定や正式発表があったとは確認できません。",
+        "latest": "2026年10月10日時点では、減便の予測を報じた段階です。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は、JR北海道の正式なダイヤ改正発表があるかどうかに注目する必要があります。",
         "articles": [
           {
             "title": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
             "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
-            "published": "Fri, 09 Oct 2026 02:34:35 GMT",
+            "published": "Sat, 10 Oct 2026 13:53:11 GMT",
             "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5\" target=\"_blank\">利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定)</a>  <font color=\"#6f6f6f\">鉄道時刻表ニュース</font>",
             "rss_source": {
               "name": "鉄道時刻表ニュース",
@@ -6204,13 +6204,44 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
-      "source_fingerprint": "5b021ad8a9ea5199e04984f1eeded6d160a9e2b85859390cc1c777730fc5c62f",
-      "last_failure_reason": "HTTPError",
-      "last_failure_at": "2026-10-10T09:33:33.225639+00:00",
-      "last_decision_at": "2026-10-10T07:37:08.350077+00:00"
+      "status": "needs_evidence",
+      "reason": "event_name_unproved",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "source_fingerprint": "31a653bd5f00125f863fe24b2f5cd15ba045228ffaaa29be6d0456310be28640",
+      "last_failure_reason": "event_name_unproved",
+      "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_decision_at": "2026-10-10T18:35:15.265963+00:00",
+      "source_history": [
+        {
+          "group": {
+            "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "地域・インフラ",
+            "tracking_value": "medium",
+            "current_stage": "2027年以降のダイヤ改正予測段階",
+            "summary": "札幌―旭川間の特急カムイ・ライラックについて、利用が21%減少したことを背景に大幅減便の可能性が記事タイトルで示されています。ただし、公開日時とタイトルだけでは、実際に減便が決定したかどうかは確認できません。",
+            "latest": "2026年10月9日時点では、2027年以降のJR北海道ダイヤ改正に向けた減便予測が示されている段階です。",
+            "next_watch": "JR北海道の正式なダイヤ改正発表で、カムイ・ライラックの本数見直しが行われるかどうか。現時点で明確な次の動きは確認できません。",
+            "articles": [
+              {
+                "title": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+                "published": "Fri, 09 Oct 2026 02:34:35 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5\" target=\"_blank\">利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定)</a>  <font color=\"#6f6f6f\">鉄道時刻表ニュース</font>",
+                "rss_source": {
+                  "name": "鉄道時刻表ニュース",
+                  "url": "https://www.train-times.net"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          },
+          "status": "retry_api",
+          "reason": "HTTPError",
+          "last_seen_at": "2026-10-10T09:33:33.225639+00:00"
+        }
+      ]
     },
     "85b1699f12ee5c3cf02b6de8": {
       "first_seen_at": "2026-10-10T00:48:42.055152+00:00",
@@ -8060,8 +8091,8 @@
         ]
       },
       "status": "already_saved",
-      "reason": "accepted",
-      "last_seen_at": "2026-10-10T11:33:24.750466+00:00",
+      "reason": "already_saved",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
       "source_fingerprint": "f6342782a6a003a57ce6f28bdcaa12380c47985df853d778fbcc780ad1f0cecb"
     },
     "7a1671682b1cf0d14bb50ca7": {
@@ -8098,6 +8129,112 @@
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T11:33:24.750466+00:00",
       "last_decision_at": "2026-10-10T11:33:24.750466+00:00"
+    },
+    "cd30194d70d395cb978144ba": {
+      "first_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "decision_attempts": 1,
+      "group": {
+        "event_name": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "容疑者の逮捕が報じられた段階",
+        "summary": "迷惑駐車を注意しようと近づいた女性をはねて逃走したとされる件で、事件発生から7か月後に27歳の男が逮捕されたと報じられています。",
+        "latest": "27歳男の逮捕が報じられたこと。",
+        "next_watch": "現時点で明確な次の動きは確認できません。",
+        "articles": [
+          {
+            "title": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
+            "published": "Sat, 10 Oct 2026 01:17:01 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5\" target=\"_blank\">迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      },
+      "status": "needs_evidence",
+      "reason": "event_name_unproved",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "source_fingerprint": "0392651914d74ba530b52dd60a41b306f040585c369961a3e76333cb3659f423",
+      "last_failure_reason": "event_name_unproved",
+      "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_decision_at": "2026-10-10T18:35:15.265963+00:00"
+    },
+    "36b4eb5a7230cd29f10874c8": {
+      "first_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "decision_attempts": 1,
+      "group": {
+        "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "店頭での通報を受けて男が逮捕された段階",
+        "summary": "リサイクルショップ店員が、売却しようとした工具に別人の名前が書かれているのを見つけて通報し、男が逮捕されたと報じられています。記事タイトルから確認できる範囲では、男の所持金は9円でした。",
+        "latest": "リサイクルショップ店員の通報をきっかけに、男が逮捕されたことです。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は、工具の入手経路や男の供述、余罪の有無などが報じられるかどうかが注目点です。",
+        "articles": [
+          {
+            "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5",
+            "published": "Sat, 10 Oct 2026 01:19:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+            "rss_source": {
+              "name": "日テレNEWS NNN",
+              "url": "https://news.ntv.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      },
+      "status": "needs_evidence",
+      "reason": "uncertain_or_invalid_evidence",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "source_fingerprint": "df66d06f95403504bfc80f758cf97b5a38c8a932cddbf955565f0582be720fe4",
+      "last_failure_reason": "uncertain_or_invalid_evidence",
+      "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_decision_at": "2026-10-10T18:35:15.265963+00:00"
+    },
+    "cdf58d2acd7159f65224e34e": {
+      "first_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "decision_attempts": 1,
+      "group": {
+        "event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "容疑者逮捕段階",
+        "summary": "札幌市で、倉庫への侵入と工具窃盗の疑いで30歳の男が逮捕されたとする記事です。記事タイトルからは、リサイクルショップ店員が通報のきっかけになったことが確認できます。",
+        "latest": "30歳男が倉庫侵入・工具窃盗の疑いで逮捕されたこと。",
+        "next_watch": "現時点で明確な次の動きは確認できません。",
+        "articles": [
+          {
+            "title": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+            "published": "Sat, 10 Oct 2026 02:28:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5\" target=\"_blank\">「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+            "rss_source": {
+              "name": "TBS NEWS DIG",
+              "url": "https://newsdig.tbs.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      },
+      "status": "needs_evidence",
+      "reason": "uncertain_or_invalid_evidence",
+      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "source_fingerprint": "aa7998a0505c25ff9850ca90a8fffa6c0a8524ffffc23e27bfd2f0be3c447293",
+      "last_failure_reason": "uncertain_or_invalid_evidence",
+      "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_decision_at": "2026-10-10T18:35:15.265963+00:00"
     }
   }
 }

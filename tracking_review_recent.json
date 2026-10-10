@@ -2,48 +2,96 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "fd1d2627bb2a651ebc587477",
+      "review_id": "974491da94dda1e778311772",
       "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-10-10T11:33:24.750466+00:00",
+      "reason": "event_name_unproved",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
       "diagnostics": {
         "target_event_id": "",
         "target_event_name": null,
         "target_source_urls": [],
         "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
         ],
         "ai_report": {
           "relation": "new_event",
           "event_id": "",
-          "confidence": "low",
+          "confidence": "high",
           "meaningful_change": false,
           "current_stage": "逮捕された段階",
-          "summary": "札幌市内で、迷惑駐車を注意しようと車に近づいた女性に車が衝突し、ひき逃げの疑いで無職の27歳の男が逮捕されたと読めます。",
-          "latest": "男は『心当たりがありません』と否認していると報じられています。",
-          "next_watch": "事故の具体的な場所、被害者のけがの程度、容疑者の供述や送検・起訴の有無が確認されるか。",
+          "summary": "札幌市で、迷惑駐車を注意しようと近づいてきた女性をはねて逃走したとして、7か月後に27歳の男が逮捕されたと読めます。",
+          "latest": "女性をはねて逃走した容疑について、7か月後に男の逮捕が報じられました。",
+          "next_watch": "逮捕容疑の内容、被害者のけがの有無、供述や送検の有無が続報で確認されるか。",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
           ],
           "schedules": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
+      ]
+    },
+    {
+      "review_id": "6a4aaed32ed1733adf70c901",
+      "stage": "event_attachment",
+      "reason": "event_name_unproved",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "TOB成立を受けた上場廃止予定の公表段階",
+          "summary": "札幌の電子カルテ開発会社CEHDについて、投資ファンドのTOB成立を受けて2027年1月に上場廃止となる予定が報じられています。",
+          "latest": "投資ファンドのTOBが成立し、27年1月上場廃止と伝えられました。",
+          "next_watch": "上場廃止の実施日程や、その後の経営体制・事業方針がどうなるかを確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
+          ],
+          "schedules": [
+            {
+              "label": "27年1月上場廃止",
+              "quote": "27年1月上場廃止",
+              "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
+              "status": "scheduled"
+            }
+          ],
           "identity_matches": [
             {
-              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
               "existing_url": "",
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "迷惑駐車を注意しようと車に近づいた女性に衝突したひき逃げ疑い",
+                  "value": "CEHD",
                   "existing_quote": "",
-                  "incoming_quote": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース"
+                  "incoming_quote": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で"
                 },
                 {
-                  "kind": "entity",
-                  "value": "無職の男(27)",
+                  "kind": "detail",
+                  "value": "投資ファンドのTOB成立",
                   "existing_quote": "",
-                  "incoming_quote": "ひき逃げの疑いで無職の男(27)を逮捕"
+                  "incoming_quote": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で"
                 }
               ]
             }
@@ -52,103 +100,153 @@
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
-      ]
-    },
-    {
-      "review_id": "a051dcc57c67549f91735238",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
-      "observed_at": "2026-10-10T11:33:24.750466+00:00",
-      "diagnostics": {
-        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
-        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
-          "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
-          "latest": "保護者が『少ない給食』に驚いたとする記事が出ており、市長は『量、献立など変わらず』と述べたとされています。",
-          "next_watch": "市の説明や給食内容の見直し有無、相談増加が続くかを確認すること",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
-          ],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
         "triage_status": "manual_review",
         "decision_attempts": 3
       },
       "event_id": null,
-      "event_name": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
+      "event_name": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で - 北海道新聞デジタル",
       "article_urls": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
       ]
     },
     {
-      "review_id": "ff3194aa353567add10ae1d6",
+      "review_id": "8ccc67b0ccaeb6b1c8025682",
       "stage": "event_attachment",
       "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-10-10T11:33:24.750466+00:00",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
       "diagnostics": {
-        "target_event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+        "target_event_id": "",
         "target_event_name": null,
         "target_source_urls": [],
         "input_urls": [
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
         ],
         "ai_report": {
-          "relation": "same_event",
-          "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
-          "confidence": "high",
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
           "meaningful_change": false,
-          "current_stage": "札幌で高校生への暴行・傷害容疑で18歳少女と16歳少年が逮捕された段階",
-          "summary": "18歳の高校生に対し、顔面を殴るなどの暴行や手の甲にタバコの火を押し当てる行為があったとされ、18歳の少女と16歳の少年が逮捕されたことが確認できます。",
-          "latest": "顔面殴打とタバコの火を押し当てる暴行で、18歳の少女と16歳の少年を逮捕したと報じられています。",
-          "next_watch": "容疑の詳細、被害者のけがの程度、送致や起訴の有無が続報で確認されるか。",
+          "current_stage": "リサイクルショップで工具の売却をめぐる逮捕段階",
+          "summary": "札幌市で、別人の名前が書かれた工具を売却しようとしたとして男が逮捕されたことが分かります。所持金は9円とされていますが、既存一覧に同一案件は確認できませんでした。",
+          "latest": "リサイクルショップ店員が通報し、男が逮捕されたと報じられています。",
+          "next_watch": "工具の入手経緯や窃盗・盗品の有無、送検や起訴の有無を確認します。",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5",
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5"
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
           ],
           "schedules": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+      ]
+    },
+    {
+      "review_id": "c0a340dafcce3f8e60a2a9ec",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "逮捕された段階",
+          "summary": "札幌市で、リサイクルショップの倉庫に侵入し工具を盗んだ疑いで30歳男が逮捕されたと読めます。",
+          "latest": "リサイクルショップ店員の通報を受け、倉庫侵入・工具窃盗の疑いで30歳男が逮捕された。",
+          "next_watch": "容疑の裏付けや被害品の詳細、起訴や処分の有無が続報で確認できるか。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZpKXkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [],
+          "progress_evidence": [],
+          "event_identity": {
+            "value": "倉庫侵入・工具窃盗の疑いで30歳男逮捕",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+            "quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG"
+          }
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "2321bb4a61de974b120d68fe",
+      "stage": "event_attachment",
+      "reason": "event_name_unproved",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "JR北海道のダイヤ改正予測段階",
+          "summary": "札幌―旭川間の特急カムイ・ライラックについて、2027年以降のダイヤ改正で大幅減便の可能性があるとする予測記事です。タイトルと説明からは、実施や正式決定は確認できません。",
+          "latest": "利用21%減少を根拠に、2027年以降に大幅減便かとする見方が示されています。",
+          "next_watch": "JR北海道からダイヤ改正の正式発表があるか、減便が実施されるかを確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+          ],
+          "schedules": [
+            {
+              "label": "2027年以降予定",
+              "quote": "2027年以降予定",
+              "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+              "status": "scheduled"
+            }
+          ],
           "identity_matches": [
             {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
+              "incoming_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+              "existing_url": "",
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "高校生に対する暴行・傷害容疑",
-                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
-                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                  "value": "札幌旭川間特急カムイライラック",
+                  "existing_quote": "",
+                  "incoming_quote": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！"
                 },
                 {
-                  "kind": "entity",
-                  "value": "18歳の少女と16歳の少年の逮捕",
-                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
-                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                  "kind": "detail",
+                  "value": "JR北海道ダイヤ改正予測",
+                  "existing_quote": "",
+                  "incoming_quote": "JR北海道ダイヤ改正予測(2027年以降予定)"
                 }
               ]
             }
@@ -161,16 +259,16 @@
         "decision_attempts": 1
       },
       "event_id": null,
-      "event_name": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - FNNプライムオンライン",
+      "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
       "article_urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
       ]
     },
     {
-      "review_id": "5f9b3835d9c9a47de751a4be",
+      "review_id": "d5793a0906e99d02092ddab1",
       "stage": "backfill",
       "reason": "search_identity_uncertain",
-      "observed_at": "2026-10-10T11:33:24.750466+00:00",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
       "diagnostics": {
         "target_event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
         "target_event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
@@ -187,10 +285,10 @@
       "article_urls": []
     },
     {
-      "review_id": "1f6cf4455d5a9316e3837890",
+      "review_id": "b7dd78300dcd2645a69167c7",
       "stage": "backfill",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNVdZZnc2SEYtdnltWXBfR2NGMjhuMExLVDk3OVhsazRCbHI5VmlKSng2ekwwMnpxQWhWcmJCTlF5RnkzTmdwbnozQmVtQWhTNEcySnhiTDZiUQ?oc=5",
-      "observed_at": "2026-10-10T11:33:24.750466+00:00",
+      "observed_at": "2026-10-10T18:35:15.265963+00:00",
       "diagnostics": {
         "target_event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
         "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
@@ -206,32 +304,8 @@
               "confidence": "high"
             }
           ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNVdZZnc2SEYtdnltWXBfR2NGMjhuMExLVDk3OVhsazRCbHI5VmlKSng2ekwwMnpxQWhWcmJCTlF5RnkzTmdwbnozQmVtQWhTNEcySnhiTDZiUQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "河川敷で暴行・公園で煙草の火を押し当てる傷害容疑",
-                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
-                  "incoming_quote": "18歳の男子高校生の顔を河川敷で殴り翌日に別の公園でタバコを両手に…傷害容疑で18歳と16歳の少年少女逮捕"
-                }
-              ]
-            },
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5SWThPWi1GbEN5YTJPRGFqaFNqTkcyVi13WkJrd2g2ZGYtajJtVHY5T0JnQlRrTW9fZmJJVnVGbTFJVHJnN3BkSHpDaWpvLTRYYnBuYktyeVJqdw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "河川敷で暴行・公園で煙草の火を押し当てる傷害容疑",
-                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
-                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌"
-                }
-              ]
-            }
-          ],
+          "identity_matches": [],
+          "progress_evidence": [],
           "meaningful_change": false,
           "relation": "same_event",
           "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d"
