@@ -3,8 +3,8 @@ import os
 from pathlib import Path
 from collections import Counter
 from datetime import datetime, timezone
-from queue_policy import read, article_fingerprint, pause_reason
-from pending_triage import group_key, preflight
+from queue_policy import read, article_fingerprint, pause_reason, already_saved_group
+from pending_triage import group_key, preflight, fingerprint
 from publication_safety import load_corrections
 from tracking_v1 import atomic_save, date_time
 from ai_cost_control import periods
@@ -19,7 +19,10 @@ def build_health(now):
     registry = load_corrections()
     inbox = [a for a in read('news_inbox.json', [])
              if collection.get(a.get('url'), {}).get('status', 'queued') == 'queued']
-    statuses = [g for g in read('status_pending.json', []) if not pause_reason(g, status_state)]
+    classified = {fingerprint(g) for g in read('news_status.json', [])}
+    statuses = [g for g in read('status_pending.json', [])
+                if not pause_reason(g, status_state) and not already_saved_group(g, events)
+                and fingerprint(g) not in classified]
     incoming = [g for g in read('tracking_pending.json', []) if not preflight(g, known, registry, tracking)]
     stages = {'collection': [{'articles': [a]} for a in inbox],
               'status_generation': statuses, 'tracking': incoming}

@@ -106,6 +106,18 @@ class QueueIntegrationTests(unittest.TestCase):
         self.assertEqual(state['group'], g)
         self.assertEqual(json.loads(Path('status_pending.json').read_text()), [])
 
+    def test_old_saved_status_pending_does_not_call_ai_or_count_as_waiting(self):
+        a = article('容疑者を起訴')
+        g = group(a)
+        self.put('events.json', [{'articles': [a]}])
+        self.put('status_pending.json', [g])
+        self.put('news_groups_deduplicated.json', [])
+        self.assertEqual(build_health(NOW)['waiting_article_count'], 0)
+        with patch('ai_cost_control.response', side_effect=AssertionError('already saved')) as calls:
+            runpy.run_path(str(self.root / 'news_status.py'), run_name='__main__')
+            calls.assert_not_called()
+        self.assertEqual(json.loads(Path('status_pending.json').read_text()), [])
+
     def test_monitor_runs_while_ai_paused_and_deduplicates_stages(self):
         a = article('容疑者を起訴', 'https://example.test/new')
         g = group(a)

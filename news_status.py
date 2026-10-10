@@ -6,7 +6,7 @@ from pathlib import Path
 from merge_safety import review, save_reviews
 from tracking_v1 import atomic_save
 from ai_cost_control import response, json_answer, BudgetExceeded
-from queue_policy import read, prioritize_groups, retain_group, pause_reason
+from queue_policy import read, prioritize_groups, retain_group, pause_reason, already_saved_group
 from pending_triage import group_key
 from datetime import datetime, timezone
 
@@ -30,6 +30,7 @@ def fingerprint(group):
     value = {'event_name': group.get('event_name'), 'articles': group.get('articles', [])}
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
+saved_events = read('events.json', [])
 statuses = json.loads(Path('news_status.json').read_text(encoding='utf-8')) if Path('news_status.json').exists() else []
 known_statuses = {fingerprint(status) for status in statuses}
 attempted = 0
@@ -69,7 +70,7 @@ def normalize_category(category):
 
 for index, group in enumerate(groups):
 
-    if fingerprint(group) in known_statuses:
+    if fingerprint(group) in known_statuses or already_saved_group(group, saved_events):
         continue
     reason = pause_reason(group, stage_state['items'])
     if reason:
