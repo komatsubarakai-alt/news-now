@@ -73931,7 +73931,7 @@
     },
     "review_id": "ccac7cd9ded9d794f93c09c9",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
       "target_event_name": "札幌市東区の共同住宅火災",
@@ -73950,10 +73950,10 @@
         "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
         "confidence": "high",
         "meaningful_change": false,
-        "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代ぐらいの女性がけがをして搬送された段階",
-        "summary": "札幌市東区の3階建て建物で火災が発生し、2階にいた70代ぐらいの女性がけがをして搬送されたことが確認できます。既存の同一案件と一致します。",
+        "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
+        "summary": "札幌市東区の3階建て建物で火災が起き、70代ぐらいの女性がけがをして搬送されたと確認できます。",
         "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞",
-        "next_watch": "けがの程度、出火原因、鎮火の有無、延焼や避難の追加報道を確認する。",
+        "next_watch": "火災の鎮火状況、負傷者の詳細、延焼の有無を確認すること",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -73967,7 +73967,7 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市東区の3階建て共同住宅で火事",
+                "value": "札幌市東区の3階建て共同住宅で火災",
                 "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
                 "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
               },
@@ -73983,8 +73983,8 @@
       },
       "raw_ai_response": null,
       "http_status": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -74012,11 +74012,97 @@
           }
         },
         "review_id": "ccac7cd9ded9d794f93c09c9"
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - UHB 北海道文化放送",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "札幌市東区の3階建て建物で火災が発生し、女性1人が搬送された段階",
+            "summary": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送されたことが分かっています。",
+            "latest": "火炎と煙が見える火災が発生し、70代ぐらいの女性1人が搬送されました。",
+            "next_watch": "現時点で明確な次の動きは確認できません。火災の鎮火状況、出火原因、建物被害や他のけが人の有無が続報で示されるかに注目されます。",
+            "articles": [
+              {
+                "title": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - UHB 北海道文化放送",
+                "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5",
+                "published": "Thu, 08 Oct 2026 20:07:12 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5\" target=\"_blank\">「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞</a>  <font color=\"#6f6f6f\">UHB 北海道文化放送</font>"
+              }
+            ]
+          }
+        },
+        "review_id": "ccac7cd9ded9d794f93c09c9",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+          "target_event_name": "札幌市東区の共同住宅火災",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代ぐらいの女性がけがをして搬送された段階",
+            "summary": "札幌市東区の3階建て建物で火災が発生し、2階にいた70代ぐらいの女性がけがをして搬送されたことが確認できます。既存の同一案件と一致します。",
+            "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞",
+            "next_watch": "けがの程度、出火原因、鎮火の有無、延焼や避難の追加報道を確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市東区の3階建て共同住宅で火事",
+                    "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                    "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "70代とみられる女性がけがをして搬送",
+                    "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                    "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 1,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 2,
     "legacy_history_present": true
   },
   {
@@ -83134,7 +83220,7 @@
     },
     "review_id": "624d118c1102cdb88709efc1",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
       "target_event_name": "札幌市東区の共同住宅火災",
@@ -83154,9 +83240,9 @@
         "confidence": "high",
         "meaningful_change": false,
         "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、女性1人が搬送された段階",
-        "summary": "札幌市東区の3階建てマンションで火事が発生し、女性1人が搬送されたことが確認できます。既存の同一案件と一致します。",
-        "latest": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区",
-        "next_watch": "搬送された女性の容体、出火原因、被害拡大や鎮火の有無を確認する。",
+        "summary": "札幌市東区の3階建てマンションで火災が起き、女性1人が搬送されたと確認できる。",
+        "latest": "窓から炎と煙が見える火災として報じられ、女性1人搬送が伝えられている。",
+        "next_watch": "その後の鎮火状況、けがの程度、出火原因の続報を確認する。",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -83170,13 +83256,13 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市東区の3階建て共同住宅の火災",
+                "value": "札幌市東区の3階建て共同住宅で火災",
                 "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
                 "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
               },
               {
                 "kind": "entity/detail",
-                "value": "女性1人の搬送",
+                "value": "女性1人搬送",
                 "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
                 "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
               }
@@ -83186,8 +83272,8 @@
       },
       "raw_ai_response": null,
       "http_status": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -83300,11 +83386,97 @@
         "last_seen_at": "2026-10-09T19:37:21.457421+00:00",
         "observation_count": 1,
         "legacy_history_present": true
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "火災発生直後の報道段階",
+            "summary": "札幌市東区の3階建てマンションで火災が発生し、女性1人が搬送されたと報じられています。記事タイトルと公開日時から確認できる範囲では、被害の全容や出火原因はまだ分かりません。",
+            "latest": "2026年10月8日夜時点で、マンション火災と女性1人の搬送が報じられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、火災原因、延焼やけが人の追加情報、現場確認の結果が出るかに注目です。",
+            "articles": [
+              {
+                "title": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5",
+                "published": "Thu, 08 Oct 2026 21:22:30 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5\" target=\"_blank\">“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>"
+              }
+            ]
+          }
+        },
+        "review_id": "624d118c1102cdb88709efc1",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+          "target_event_name": "札幌市東区の共同住宅火災",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、女性1人が搬送された段階",
+            "summary": "札幌市東区の3階建てマンションで火事が発生し、女性1人が搬送されたことが確認できます。既存の同一案件と一致します。",
+            "latest": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区",
+            "next_watch": "搬送された女性の容体、出火原因、被害拡大や鎮火の有無を確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市東区の3階建て共同住宅の火災",
+                    "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                    "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
+                  },
+                  {
+                    "kind": "entity/detail",
+                    "value": "女性1人の搬送",
+                    "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                    "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-09T19:37:21.457421+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 2,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T19:37:21.457421+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 3,
     "legacy_history_present": true
   },
   {
@@ -83339,7 +83511,7 @@
     },
     "review_id": "7746f7c7a5236d4a9504efe1",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
       "target_event_name": "札幌市のインフルエンザ注意報発表",
@@ -83369,9 +83541,9 @@
         "confidence": "high",
         "meaningful_change": false,
         "current_stage": "札幌市でインフルエンザ注意報が発表された段階",
-        "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表され、統計開始以来2番目の早さとされています。市内の小中高校では学級閉鎖が合わせて23校38クラスに上っています。",
-        "latest": "注意報発表と、学級閉鎖が23校38クラスに達したことが報じられています。",
-        "next_watch": "注意報の推移、警報への移行、学級閉鎖の増減を確認する。",
+        "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表され、市内の小中高校で学級閉鎖が合わせて23校38クラスに達していることが確認できます。",
+        "latest": "市内の小中高校では学級閉鎖が合わせて23校38クラスにあると報じられました。",
+        "next_watch": "注意報の拡大や警報への移行、学級閉鎖数の増減があるか確認する。",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -83381,46 +83553,29 @@
         "identity_matches": [
           {
             "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
-            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sTC1zY3J2d0J1MlNIQ0tUUFNFZnhCVkFfV3hjX3Z3OHV0dEpyMm45emx0Ykd5cDk5OFF0LUQxZUo2UllJZVlONmFxRFFNVVJkRUVHNUxLVFBkdTg0Z2ZPcGpsWk9BMXNYYUM0ag?oc=5",
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌で今シーズン初めてのインフルエンザ注意報",
-                "existing_quote": "札幌で“インフル注意報”　統計開始以来２番目の早さ　発熱患者の約８割が感染…流行拡大に警戒を",
+                "value": "札幌市のインフルエンザ注意報",
+                "existing_quote": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を",
                 "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
               },
               {
                 "kind": "detail",
-                "value": "市内の小中高校で学級閉鎖が23校38クラス",
-                "existing_quote": "札幌市で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞",
-                "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
-              }
-            ]
-          },
-          {
-            "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
-            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZ0E0Q0dWb1dKQ1dXam1XbVdMZzV0WUpmRk1FVW5UT0xYb0xqR1p2QzF0M3YwNnF1R0Q3UjZ1RlJmYlVjQ2Jzbk1jS0l3YW5QeTkyNnJxV2c?oc=5",
-            "anchors": [
-              {
-                "kind": "entity",
-                "value": "札幌市でのインフルエンザ注意報",
-                "existing_quote": "札幌市でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ",
-                "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
-              },
-              {
-                "kind": "detail",
-                "value": "統計史上2番目の早さ",
-                "existing_quote": "札幌でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ",
-                "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
+                "value": "市内の小中高校の学級閉鎖",
+                "existing_quote": "発熱患者の約８割が感染…流行拡大に警戒を",
+                "incoming_quote": "市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
               }
             ]
           }
-        ]
+        ],
+        "progress_evidence": []
       },
       "raw_ai_response": null,
       "http_status": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -83454,11 +83609,131 @@
           }
         },
         "review_id": "7746f7c7a5236d4a9504efe1"
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞ - UHB 北海道文化放送",
+            "article_count": 2,
+            "source_article_count": 2,
+            "category": "政策・制度",
+            "tracking_value": "medium",
+            "current_stage": "札幌市内で今シーズン初のインフルエンザ注意報が発表された段階",
+            "summary": "公開日時がいずれも2026年10月8日で、札幌で今シーズン初めてインフルエンザ注意報が発表されたことが分かります。記事タイトルによれば、過去10年で最も早く、統計史上2番目の早さの発表で、市内の小中高校では学級閉鎖が合わせて23校38クラスに上っています。",
+            "latest": "2026年10月8日朝時点で、札幌市にインフルエンザ注意報が発表されたことが最新です。",
+            "next_watch": "今後は、市内の感染状況がさらに拡大するか、学級閉鎖の学校・学級数が増えるか、注意報の継続や警報への移行があるかに注目されます。",
+            "articles": [
+              {
+                "title": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市 - FNNプライムオンライン",
+                "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
+                "published": "Thu, 08 Oct 2026 10:15:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5\" target=\"_blank\">札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>"
+              },
+              {
+                "title": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞ - UHB 北海道文化放送",
+                "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
+                "published": "Thu, 08 Oct 2026 10:21:47 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5\" target=\"_blank\">札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">UHB 北海道文化放送</font>"
+              }
+            ]
+          }
+        },
+        "review_id": "7746f7c7a5236d4a9504efe1",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+          "target_event_name": "札幌市のインフルエンザ注意報発表",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DWlpxUnlndTAwVjJzODlhakZMUU1NVVdMSWJUbWRkWmlteG9nd211WnBmT0J4T01UTmg4VWFfVUtSMER6VC1JYzJWRDlBWWRHRjE5bWlSQQ?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iTzZFOFA3bnllZE9BNDJBREx3REllRENEamJTblFIZ2VjUjk1RFJyX2lwMnhpaVRleFZkYjVmT2tXRVBJYmNYSXlvVFNRdUFJbHNIMVZmbWpZMEFzeEFLU2pQTUZkXy1nSkVRaE1VbHV6VDBPWjExTndpUzdxLU0?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE01azBLU1Axa1hqMlc1VnZUbGhkUWUtNlFFdWVSTUpJVWljR2JaWW1XSllxUGRvLUQwZEl4bHAzZFZkM0tUeUtySXhJWmhZMU1jQlFORklLak85ZTQzWmFlaE00ZzNLd1EtRmlaR1lfdUNLaUV1eVZ6YzNSMnFuNzg?oc=5",
+            "https://news.google.com/rss/articles/CBMie0FVX3lxTE02R3lMN1hFbUdVS3cxZ1ZGVVlNT3d4dkU2MXVtX3lDZ2Y3cG85S25wM0pkb3paRnpTcEFvLVNKRHZtQXBOQjI2RHRZSnBlRWJrTHJqVnlveEpKWTZtUnhkdkdWbkNJb2gtdHNhT0VLd0NQNXphVmRUTEJjQdIBgAFBVV95cUxNS0JjQVhOVHl5alh4Wk1UZ2s3c3liOTVvS3NheW1TWjAxY3dla25IMGp3VUcyTE45MnNsT0hpUjlrQzR6OVBjb2t3TXNrclRLRlVkdEY3ZWtMNHFkaFN5MnRITUhjd2szRVo1eXRJS09sb2xmcksxNGMzb2VDODVpXw?oc=5",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa3Itbmkzd25Ra1VQNVhReWR6ekVmSWJCaU5NRG1XdFhyZ2ZKRHlMV0REZHh5MnBQQ1VrZ0llSzZvYXZfS2ExYzhQRjF2WWpzSTJISTdlVDBkN2VvZ1V6bWM3aHNrX2ZyN205YUZ2NloyaldndW5NdXptYzFtOHlEOXUyT2VZb28?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GN256VkVPZjQ5NHU3ZE5RQVdWZW5VakdfbF9scFFzc2FRamtneDktWnJmUVNTajRZa3pCVEZrNmtzbkRvMGxRTFByTnRwTlBndUtOVDBPdHZYaVJLajdiUDctUXFGb1puc0tqY1ZCdjlNaFZzbDNaSWZ2d3JnZ3c?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XN3pJck9ab3VQUElRZHZSQlh4eDhMN0lncUVObUMycnF4ZGRLRlowNkhtQlpXUEZ6eUpiMThPSEdTWGZtaTFTcVZuZXB4eGpCTkZmNkFHRnJqMXpGd0U0Y1dEbGRpWjJva2ZQcmhDbi1GcnJzOGRoUm1qMnBEVUk?oc=5",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XcXljNTYyZUJRYXpYTmd6TjdBX0p1aU8wMVh6QmY3X3pqT0w3em40STEwa21jazBRX0VNUmtlNVpuTVk2THRTbGFoaGxUT1FuMUwyTHNWUEk3Y01xNGtUeU9rZml5d3hROXhFYUt3?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDRWotNzNVRXIzWTlmRlZfekpKS2RnaUFiVmJXdmMyQ2pqUzVGSWY0ZGxMcEZHTGJvVGJhamJYNjJSVm5PUU9tNTA0NGkzTk1TN0c2UFAwRHJEUQ?oc=5",
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBnTkF5eWpDTjRsMFBmekpNNUtXVzZPcE1PUVZzNV9WUmUxVjF0eGpVek1FMENUZHRlOUZoeVZPMGtXa1BoSk5QNzlYQ2JQZFBQMC1MQ0UtSGNvZjhZWjZ0bWN2TGw4QkVzbF82TA?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Fa25XU1JpREJFdW1FWVY1aXBVOWpST24xdXREVUJubXNFU3B5dE8wWkdBY0RVa3ZHQjdNWkk1bWNsczMyUlVJUEY0UC14aVpLT0lQTEpuRzBKQmE5ZEdkeHN4UUdVNmY2MFBBNA?oc=5",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "札幌市でインフルエンザ注意報が発表された段階",
+            "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表され、統計開始以来2番目の早さとされています。市内の小中高校では学級閉鎖が合わせて23校38クラスに上っています。",
+            "latest": "注意報発表と、学級閉鎖が23校38クラスに達したことが報じられています。",
+            "next_watch": "注意報の推移、警報への移行、学級閉鎖の増減を確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌で今シーズン初めてのインフルエンザ注意報",
+                    "existing_quote": "札幌で“インフル注意報”　統計開始以来２番目の早さ　発熱患者の約８割が感染…流行拡大に警戒を",
+                    "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "市内の小中高校で学級閉鎖が23校38クラス",
+                    "existing_quote": "札幌市で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞",
+                    "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
+                  }
+                ]
+              },
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZ0E0Q0dWb1dKQ1dXam1XbVdMZzV0WUpmRk1FVW5UT0xYb0xqR1p2QzF0M3YwNnF1R0Q3UjZ1RlJmYlVjQ2Jzbk1jS0l3YW5QeTkyNnJxV2c?oc=5",
+                "anchors": [
+                  {
+                    "kind": "entity",
+                    "value": "札幌市でのインフルエンザ注意報",
+                    "existing_quote": "札幌市でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ",
+                    "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "統計史上2番目の早さ",
+                    "existing_quote": "札幌でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ",
+                    "incoming_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 1,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 2,
     "legacy_history_present": true
   },
   {
@@ -111662,7 +111937,27 @@
       ],
       "group_count": 92
     },
-    "review_id": "73303c465f298287967b816e"
+    "review_id": "73303c465f298287967b816e",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:00.772497+00:00",
+    "observation_history": [
+      {
+        "stage": "group_merge",
+        "reason": "budget_deferred",
+        "payload": {
+          "remaining_from": [
+            1,
+            11
+          ],
+          "group_count": 92
+        },
+        "review_id": "73303c465f298287967b816e"
+      }
+    ],
+    "first_seen_at": "2026-10-10T02:37:00.772497+00:00",
+    "last_seen_at": "2026-10-10T02:37:00.772497+00:00",
+    "observation_count": 1,
+    "legacy_history_present": true
   },
   {
     "stage": "status_generation",
@@ -115607,7 +115902,7 @@
     },
     "review_id": "e0d04195d073265de89ccb2d",
     "schema_version": 2,
-    "observed_at": "2026-10-09T20:33:45.612124+00:00",
+    "observed_at": "2026-10-10T02:34:35.285348+00:00",
     "observation_history": [
       {
         "stage": "article_grouping",
@@ -115638,11 +115933,47 @@
           "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"秋季全道高校野球の東海大札幌高対遠軽戦\",\n  \"confidence\": \"high\"\n}"
         },
         "review_id": "e0d04195d073265de89ccb2d"
+      },
+      {
+        "stage": "article_grouping",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sMDNYVE9yRktpN1pxVVYwMDlSMm5JZmhmZTdrTXlKd0t0bkNzS0VER2xpbWVNZEFkNmFYUGdDcXFfeFp3VUVHVnRxSVllTU12OUV6UGlTOGRxZw?oc=5",
+        "payload": {
+          "article_a": {
+            "title": "【写真7枚】札幌支部の東海大札幌高 遠軽に逆転勝ち 継投で逃げ切る - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4ySUtHZFVLellTaDcyb3hUMnNsZndJLVZYZXhld05uelZiVElTbmVxRE1oLW40SGQ4ZkVCRTNEQTJQQVI5X0VWc2l5c25iaHh2N1lzVHZZT3dvdw?oc=5",
+            "published": "Fri, 09 Oct 2026 09:34:44 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE4ySUtHZFVLellTaDcyb3hUMnNsZndJLVZYZXhld05uelZiVElTbmVxRE1oLW40SGQ4ZkVCRTNEQTJQQVI5X0VWc2l5c25iaHh2N1lzVHZZT3dvdw?oc=5\" target=\"_blank\">【写真7枚】札幌支部の東海大札幌高 遠軽に逆転勝ち 継投で逃げ切る</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "article_b": {
+            "title": "一昨年覇者の東海大札幌高が13安打の猛攻 遠軽に逆転勝ち 秋季全道高校野球 - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sMDNYVE9yRktpN1pxVVYwMDlSMm5JZmhmZTdrTXlKd0t0bkNzS0VER2xpbWVNZEFkNmFYUGdDcXFfeFp3VUVHVnRxSVllTU12OUV6UGlTOGRxZw?oc=5",
+            "published": "Fri, 09 Oct 2026 08:42:23 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sMDNYVE9yRktpN1pxVVYwMDlSMm5JZmhmZTdrTXlKd0t0bkNzS0VER2xpbWVNZEFkNmFYUGdDcXFfeFp3VUVHVnRxSVllTU12OUV6UGlTOGRxZw?oc=5\" target=\"_blank\">一昨年覇者の東海大札幌高が13安打の猛攻 遠軽に逆転勝ち 秋季全道高校野球</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"秋季全道高校野球の東海大札幌高対遠軽戦\",\n  \"confidence\": \"high\"\n}"
+        },
+        "review_id": "e0d04195d073265de89ccb2d",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T20:33:45.612124+00:00",
+        "first_seen_at": "2026-10-09T20:33:45.612124+00:00",
+        "last_seen_at": "2026-10-09T20:33:45.612124+00:00",
+        "observation_count": 1,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T20:33:45.612124+00:00",
-    "last_seen_at": "2026-10-09T20:33:45.612124+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:34:35.285348+00:00",
+    "observation_count": 2,
     "legacy_history_present": true
   },
   {
@@ -116990,7 +117321,94 @@
         ]
       }
     },
-    "review_id": "da7aa57500acf532f96b80a8"
+    "review_id": "da7aa57500acf532f96b80a8",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+      "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+        "summary": "札幌で、給食無償化をめぐり「給食が少ない」と受け止める保護者の驚きが報じられています。既存記事で確認できる相談増加の流れと同じ案件です。",
+        "latest": "市長は「量、献立など変わらず」と述べていると報じられています。",
+        "next_watch": "保護者からの相談や市側の対応、献立や量の見直しがあるか確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT09PT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌で給食無償化後に「給食が少ない」との相談増",
+                "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB北海道テレビ",
+                "incoming_quote": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース"
+              },
+              {
+                "kind": "entity",
+                "value": "札幌の給食無償化",
+                "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB北海道テレビ",
+                "incoming_quote": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース"
+              }
+            ]
+          }
+        ],
+        "progress_evidence": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "政策・制度",
+            "tracking_value": "medium",
+            "current_stage": "給食無償化をめぐる運用状況の確認段階",
+            "summary": "札幌市で国の交付金を使って給食が無償化された一方、保護者が給食の量の少なさに驚いたと報じられています。市長は、量や献立は変わっていないとの認識を示しています。",
+            "latest": "2026年10月9日時点の記事で、無償化後も給食の量や献立は変わっていないと市長が説明しています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後、保護者の反応や市の追加説明、運用見直しの有無が注目されます。",
+            "articles": [
+              {
+                "title": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
+                "published": "Fri, 09 Oct 2026 00:38:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5\" target=\"_blank\">少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>"
+              }
+            ]
+          }
+        },
+        "review_id": "da7aa57500acf532f96b80a8"
+      }
+    ],
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": true
   },
   {
     "stage": "event_attachment",
@@ -118848,7 +119266,46 @@
       },
       "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌日大の秋季北海道大会敗退でセンバツ絶望\",\n  \"confidence\": \"high\"\n}"
     },
-    "review_id": "7e5dc957661fc50df73c2db8"
+    "review_id": "7e5dc957661fc50df73c2db8",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286295+00:00",
+    "observation_history": [
+      {
+        "stage": "article_grouping",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaGdHalhaR1FyaGhqWWhJaElCdmJDdlVpT1FEMkptVk9Tb3J6bGVZZ1VWdF9icjB1ZC15OU9xdC10WU83ZTRNYldVXzlrd3BRMkFrd3FSbFF5Q3lTbTFWSjRzUjEyQ2l4SmdrU3ZNenkwY2p3VkplMGE3a0tDdmM?oc=5",
+        "payload": {
+          "article_a": {
+            "title": "【北海道】北海が接戦制す！夏甲子園の札幌日大が逆転負けでセンバツ絶望的！【26年秋高校野球】｜記事一覧 - 高校野球ドットコム",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1KTF9lc1hLek1iWlUzbTR1Y0FlSVJnRVduaXZWM3UwR3AxaTlvTUQ5TzJVR0Q4ZzRfdnRZYXZNdHE3aTQ1UkRhYlJUbnRPaklWSGc?oc=5",
+            "published": "Thu, 08 Oct 2026 08:17:50 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1KTF9lc1hLek1iWlUzbTR1Y0FlSVJnRVduaXZWM3UwR3AxaTlvTUQ5TzJVR0Q4ZzRfdnRZYXZNdHE3aTQ1UkRhYlJUbnRPaklWSGc?oc=5\" target=\"_blank\">【北海道】北海が接戦制す！夏甲子園の札幌日大が逆転負けでセンバツ絶望的！【26年秋高校野球】｜記事一覧</a>  <font color=\"#6f6f6f\">高校野球ドットコム</font>",
+            "rss_source": {
+              "name": "高校野球ドットコム",
+              "url": "https://www.hb-nippon.com"
+            },
+            "collection_role": "primary"
+          },
+          "article_b": {
+            "title": "【高校野球】今夏甲子園出場の札幌日大が秋季北海道大会で敗れ、夏春連続甲子園が絶望的に（スポニチアネックス） - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaGdHalhaR1FyaGhqWWhJaElCdmJDdlVpT1FEMkptVk9Tb3J6bGVZZ1VWdF9icjB1ZC15OU9xdC10WU83ZTRNYldVXzlrd3BRMkFrd3FSbFF5Q3lTbTFWSjRzUjEyQ2l4SmdrU3ZNenkwY2p3VkplMGE3a0tDdmM?oc=5",
+            "published": "Thu, 08 Oct 2026 07:03:13 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaGdHalhaR1FyaGhqWWhJaElCdmJDdlVpT1FEMkptVk9Tb3J6bGVZZ1VWdF9icjB1ZC15OU9xdC10WU83ZTRNYldVXzlrd3BRMkFrd3FSbFF5Q3lTbTFWSjRzUjEyQ2l4SmdrU3ZNenkwY2p3VkplMGE3a0tDdmM?oc=5\" target=\"_blank\">【高校野球】今夏甲子園出場の札幌日大が秋季北海道大会で敗れ、夏春連続甲子園が絶望的に（スポニチアネックス）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          },
+          "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌日大の秋季北海道大会敗退でセンバツ絶望\",\n  \"confidence\": \"high\"\n}"
+        },
+        "review_id": "7e5dc957661fc50df73c2db8"
+      }
+    ],
+    "first_seen_at": "2026-10-10T02:34:35.286295+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286295+00:00",
+    "observation_count": 1,
+    "legacy_history_present": true
   },
   {
     "stage": "article_grouping",
@@ -119823,7 +120280,7 @@
     },
     "review_id": "4bd15182b2e38741536994c8",
     "schema_version": 2,
-    "observed_at": "2026-10-10T01:35:27.197556+00:00",
+    "observed_at": "2026-10-10T02:34:35.285824+00:00",
     "observation_history": [
       {
         "stage": "article_grouping",
@@ -119998,11 +120455,47 @@
         "last_seen_at": "2026-10-10T00:45:41.494276+00:00",
         "observation_count": 4,
         "legacy_history_present": true
+      },
+      {
+        "stage": "article_grouping",
+        "reason": "uncertain_pair",
+        "payload": {
+          "article_a": {
+            "title": "民泊が集中するエリアは 札幌市中心部のデータ可視化 3Dグラフマップ公開 - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54N2JDQ1luZ1ZINmdFRVdQZ1FGd0x6aUg5VDhtQ1dKYWlldXNuaWVub3dySnBCWGFZU2d2YzRjcjh4MEttQjFHNy1jZkVKMTNYbkJSR0tqcFNEdw?oc=5",
+            "published": "Fri, 09 Oct 2026 08:00:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE54N2JDQ1luZ1ZINmdFRVdQZ1FGd0x6aUg5VDhtQ1dKYWlldXNuaWVub3dySnBCWGFZU2d2YzRjcjh4MEttQjFHNy1jZkVKMTNYbkJSR0tqcFNEdw?oc=5\" target=\"_blank\">民泊が集中するエリアは 札幌市中心部のデータ可視化 3Dグラフマップ公開</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "article_b": {
+            "title": "札幌市の民泊最多更新3126件 賃貸→民泊に転換の動き 訪日客増加背景に - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JT2NoMGltRGdsbVZCd19Pak9UcFhwRFFFbnMzdFJfejFHMEZtMVJCMWc4Z1BMVWh6V19XQlRMdGV5ZnNfOVhGT1pCaGtDenRhbXpiZE9sYkkzZw?oc=5",
+            "published": "Fri, 09 Oct 2026 08:00:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JT2NoMGltRGdsbVZCd19Pak9UcFhwRFFFbnMzdFJfejFHMEZtMVJCMWc4Z1BMVWh6V19XQlRMdGV5ZnNfOVhGT1pCaGtDenRhbXpiZE9sYkkzZw?oc=5\" target=\"_blank\">札幌市の民泊最多更新3126件 賃貸→民泊に転換の動き 訪日客増加背景に</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "ai_result": "{\n  \"relation\": \"related\",\n  \"event_name\": \"札幌市の民泊動向\",\n  \"confidence\": \"medium\"\n}"
+        },
+        "review_id": "4bd15182b2e38741536994c8",
+        "schema_version": 2,
+        "observed_at": "2026-10-10T01:35:27.197556+00:00",
+        "first_seen_at": "2026-10-09T20:33:45.612731+00:00",
+        "last_seen_at": "2026-10-10T01:35:27.197556+00:00",
+        "observation_count": 5,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T20:33:45.612731+00:00",
-    "last_seen_at": "2026-10-10T01:35:27.197556+00:00",
-    "observation_count": 5,
+    "last_seen_at": "2026-10-10T02:34:35.285824+00:00",
+    "observation_count": 6,
     "legacy_history_present": true
   },
   {
@@ -120298,7 +120791,7 @@
     },
     "review_id": "e5259f57f11a0452e13f56c9",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -120311,41 +120804,26 @@
         "event_id": "",
         "confidence": "high",
         "meaningful_change": false,
-        "current_stage": "札幌市北区北23条西3丁目付近で下半身露出が報じられた段階",
-        "summary": "札幌市北区北23条西3丁目付近で下半身露出があったと報じられています。既存一覧には同一案件を直接示す記事は見当たりません。",
-        "latest": "10月8日に札幌市北区北23条西3丁目付近で下半身露出があったとされています。",
-        "next_watch": "警察発表や続報で、行為者の確保、被害者の有無、場所や時刻の詳細が示されるか確認します。",
+        "current_stage": "事件発生の報道段階",
+        "summary": "札幌市北区北23条西3丁目付近で10月8日に下半身露出があったとする記事です。既存一覧には同一案件を示す記事がなく、続報にも当たりません。",
+        "latest": "北区北23条西3丁目付近での下半身露出が報じられました。",
+        "next_watch": "捜査状況、被害届の有無、容疑者確保や事件化の有無を確認する。",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
-          "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4Zk9JNUFaQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5"
+          "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4ZU5PWXdFaEhwb1Rka0FjaHZVcnhhLTlyNUJRQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5"
         ],
         "schedules": [],
-        "identity_matches": [
-          {
-            "incoming_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4Zk9JNUFaQW53X091QmYxSXZEelVSdm8xYk1RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5",
-            "existing_url": "",
-            "anchors": [
-              {
-                "kind": "case",
-                "value": "札幌市北区北23条西3丁目付近で下半身露出",
-                "existing_quote": "",
-                "incoming_quote": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日"
-              },
-              {
-                "kind": "detail",
-                "value": "10月8日",
-                "existing_quote": "",
-                "incoming_quote": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日"
-              }
-            ]
-          }
-        ]
+        "event_identity": {
+          "value": "札幌市北区北２３条西３丁目付近で下半身露出",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4ZU5PWXdFaEhwb1Rka0FjaHZVcnhhLTlyNUJRQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5",
+          "quote": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日"
+        }
       },
       "raw_ai_response": null,
       "http_status": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
     "observation_history": [
       {
@@ -120378,11 +120856,96 @@
           }
         },
         "review_id": "e5259f57f11a0452e13f56c9"
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "露出事案の発生報道段階",
+            "summary": "札幌市北区北23条西3丁目付近で、10月8日に下半身露出があったとする記事が10月9日付で公開されています。記事タイトルと公開日時から確認できる範囲では、発生を伝える段階で、追加の詳細やその後の対応は分かりません。",
+            "latest": "10月9日に、10月8日の下半身露出事案を伝える記事が公開されています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。続報が出る場合は、被害状況、目撃情報、捜査や警察発表の有無が焦点になります。",
+            "articles": [
+              {
+                "title": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4UGZJOXdFaEhwb1Rka0FjaHZVcnhhLTlyNUJRQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5",
+                "published": "Fri, 09 Oct 2026 05:37:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4UGZJOXdFaEhwb1Rka0FjaHZVcnhhLTlyNUJRQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5\" target=\"_blank\">（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+                "rss_source": {
+                  "name": "ｄメニューニュース",
+                  "url": "https://topics.smt.docomo.ne.jp"
+                },
+                "collection_role": "source_unconfirmed"
+              }
+            ]
+          }
+        },
+        "review_id": "e5259f57f11a0452e13f56c9",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4UGZJOXdFaEhwb1Rka0FjaHZVcnhhLTlyNUJRQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5"
+          ],
+          "ai_report": {
+            "relation": "new_event",
+            "event_id": "",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "札幌市北区北23条西3丁目付近で下半身露出が報じられた段階",
+            "summary": "札幌市北区北23条西3丁目付近で下半身露出があったと報じられています。既存一覧には同一案件を直接示す記事は見当たりません。",
+            "latest": "10月8日に札幌市北区北23条西3丁目付近で下半身露出があったとされています。",
+            "next_watch": "警察発表や続報で、行為者の確保、被害者の有無、場所や時刻の詳細が示されるか確認します。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4Zk9JNUFaQW53X091QmYxSXZEelVSdm8xYk5RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDRyeVhPMkNSdkN6a1JUR2tpcDM2UVE2eGhCQUJrajUxZk1Db2hHeEozVTZZVjRma0hIcW9ObzFWNmdwb0EwSEJTYUd0cHlaRU12TGtBSktzRnRJMHZ0YlBwWGk4Zk9JNUFaQW53X091QmYxSXZEelVSdm8xYk1RVE5nQjBfSC3SAaIBQVVfeXFMTUFTVjVmTTFjSWxSTzE3QUVjeXNwODNPcTNxLXFNaEhIa2x5Y0pNU3dIeFRfZmZ2UzJkZ2hsTmhHMGEzYjVfTE5JSjRmSFJLdDBIdlV2V01XZ0ZKWThmMHJxWE5oZTZMX2l2Y29qb3hBRzlXTnFlLXRtMGZ5TVo1Z0hVdDFXQ3c1YmFtUFVlblBiZVZhWnlGNlU0WmlmOUctWUh3?oc=5",
+                "existing_url": "",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市北区北23条西3丁目付近で下半身露出",
+                    "existing_quote": "",
+                    "incoming_quote": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "10月8日",
+                    "existing_quote": "",
+                    "incoming_quote": "（北海道）札幌市北区北２３条西３丁目付近で下半身露出　１０月８日"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 1,
+        "legacy_history_present": true
       }
     ],
     "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 2,
     "legacy_history_present": true
   },
   {
@@ -124568,7 +125131,45 @@
       },
       "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌芸術の森美術館の「五大浮世絵師展」開幕\",\"confidence\":\"high\"}"
     },
-    "review_id": "7deee43076487885e3597798"
+    "review_id": "7deee43076487885e3597798",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285717+00:00",
+    "observation_history": [
+      {
+        "stage": "article_grouping",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCWXdiM044aUwtMkhqQU1YclFWOXExR0Z4N05hYmhKWkwwWENBQ1AyTHpOQnB1cy16eFNaU0hfdVpQdWhMaGZ4dk1KVFRJUmJWYWVtcjczV3V1Zw?oc=5",
+        "payload": {
+          "article_a": {
+            "title": "北斎に広重 五大浮世絵師の144点一堂に 札幌芸術の森美術館で10日開幕 - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDVFNQTjJVWnVHVndhZnRCS0I2QkZmd0RNMUJYMUdHdVlNWVA1M1NEUmNzSmhjUFNyU0R5empicGRzNmJaWWxCZ055ZWx5aEJRTW9ZV3pkd3VqUQ?oc=5",
+            "published": "Fri, 09 Oct 2026 10:49:44 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDVFNQTjJVWnVHVndhZnRCS0I2QkZmd0RNMUJYMUdHdVlNWVA1M1NEUmNzSmhjUFNyU0R5empicGRzNmJaWWxCZ055ZWx5aEJRTW9ZV3pkd3VqUQ?oc=5\" target=\"_blank\">北斎に広重 五大浮世絵師の144点一堂に 札幌芸術の森美術館で10日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "article_b": {
+            "title": "歌麿・写楽・北斎…人気浮世絵師の作品が140点も 札幌芸術の森美術館で10日から「五大浮世絵師展」 - HTB 北海道テレビ",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCWXdiM044aUwtMkhqQU1YclFWOXExR0Z4N05hYmhKWkwwWENBQ1AyTHpOQnB1cy16eFNaU0hfdVpQdWhMaGZ4dk1KVFRJUmJWYWVtcjczV3V1Zw?oc=5",
+            "published": "Fri, 09 Oct 2026 09:13:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCWXdiM044aUwtMkhqQU1YclFWOXExR0Z4N05hYmhKWkwwWENBQ1AyTHpOQnB1cy16eFNaU0hfdVpQdWhMaGZ4dk1KVFRJUmJWYWVtcjczV3V1Zw?oc=5\" target=\"_blank\">歌麿・写楽・北斎…人気浮世絵師の作品が140点も 札幌芸術の森美術館で10日から「五大浮世絵師展」</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+            "rss_source": {
+              "name": "HTB 北海道テレビ",
+              "url": "https://www.htb.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌芸術の森美術館の「五大浮世絵師展」開幕\",\"confidence\":\"high\"}"
+        },
+        "review_id": "7deee43076487885e3597798"
+      }
+    ],
+    "first_seen_at": "2026-10-10T02:34:35.285717+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285717+00:00",
+    "observation_count": 1,
+    "legacy_history_present": true
   },
   {
     "stage": "article_grouping",
@@ -126656,7 +127257,70 @@
         ]
       }
     },
-    "review_id": "35506981f5ada8d28d8a857a"
+    "review_id": "35506981f5ada8d28d8a857a",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5"
+      ],
+      "ai_report": {
+        "relation": "new_event",
+        "event_id": "",
+        "confidence": "medium",
+        "meaningful_change": false,
+        "current_stage": "札幌市東区のアパートの一室で火災が発生し、70代女性が搬送された段階",
+        "summary": "記事タイトルからは、札幌市東区のアパート一室で火が出て、70代女性が病院へ搬送され命に別状はないことが確認できる。既存の札幌市東区の共同住宅火災とは建物種別や内容が一致せず、同一案件と断定できないため新規扱いとする。",
+        "latest": "「火と煙が出ている」札幌市東区のアパートの一室から火 ７０代女性病院搬送 命に別状なし",
+        "next_watch": "出火原因、延焼の有無、けが人の増減、消火完了の有無を確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 2
+    },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "「火と煙が出ている」札幌市東区のアパートの一室から火 ７０代女性病院搬送 命に別状なし - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "火災発生・救急搬送の初報段階",
+            "summary": "札幌市東区のアパートの一室から火と煙が出ており、70代女性が病院に搬送されました。記事タイトル上では、女性に命に別状はないとされています。",
+            "latest": "70代女性が病院搬送され、命に別状なしと報じられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。火災原因や被害状況、出火元の確認に関する続報が出るかが注目点です。",
+            "articles": [
+              {
+                "title": "「火と煙が出ている」札幌市東区のアパートの一室から火 ７０代女性病院搬送 命に別状なし - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5",
+                "published": "Thu, 08 Oct 2026 22:32:33 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5\" target=\"_blank\">「火と煙が出ている」札幌市東区のアパートの一室から火 ７０代女性病院搬送 命に別状なし</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>"
+              }
+            ]
+          }
+        },
+        "review_id": "35506981f5ada8d28d8a857a"
+      }
+    ],
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": true
   },
   {
     "stage": "event_attachment",
@@ -133180,7 +133844,7 @@
     },
     "review_id": "e342725c466fb65632286768",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
       "target_event_name": "公安調査庁によるアレフ札幌施設への立ち入り検査",
@@ -133197,9 +133861,9 @@
         "confidence": "high",
         "meaningful_change": false,
         "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
-        "summary": "札幌のアレフ施設への公安調査庁による立ち入り検査が報じられています。今回記事でも、施設内で松本智津夫元死刑囚の写真や教材を確認したことが示されています。",
-        "latest": "松本智津夫元死刑囚の写真や教材を確認したと報じられました。",
-        "next_watch": "立ち入り検査後に追加の行政対応や改善命令、再検査が出るかを確認する。",
+        "summary": "公安調査庁が札幌のアレフ施設に立ち入り検査し、松本智津夫元死刑囚の写真や教材を確認したと報じられています。既存記事と同じ立ち入り検査の続報として確認できます。",
+        "latest": "松本智津夫元死刑囚の写真や教材を確認したとされています。",
+        "next_watch": "立ち入り検査の結果や、行政対応・団体側の反応が続報で出るか確認する。",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -133213,15 +133877,15 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "公安調査庁によるアレフ札幌施設への立ち入り検査",
-                "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ"
+                "value": "アレフ札幌施設への公安調査庁立ち入り検査",
+                "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区",
+                "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認"
               },
               {
                 "kind": "detail",
-                "value": "札幌のアレフ施設",
-                "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ"
+                "value": "松本智津夫元死刑囚の写真や教材の確認",
+                "existing_quote": "オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＿教祖だった男の写真や説法が収録された教材などを確認＜北海道",
+                "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認"
               }
             ]
           }
@@ -133230,11 +133894,101 @@
       "raw_ai_response": null,
       "http_status": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "公安調査庁による立ち入り検査が行われた段階",
+            "summary": "札幌のアレフ施設に対して公安調査庁が立ち入り検査を実施し、松本智津夫元死刑囚の写真や教材を確認したと報じられています。",
+            "latest": "2026年10月9日公開時点で、公安調査庁が札幌のアレフ施設を立ち入り検査したことが最新の動きです。",
+            "next_watch": "現時点で明確な次の動きは確認できません",
+            "articles": [
+              {
+                "title": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5",
+                "published": "Fri, 09 Oct 2026 09:06:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5\" target=\"_blank\">公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+                "rss_source": {
+                  "name": "HTB 北海道テレビ",
+                  "url": "https://www.htb.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "e342725c466fb65632286768",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+          "target_event_name": "公安調査庁によるアレフ札幌施設への立ち入り検査",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yV1cySmVNWnpoRnNNR3l2T052VEQ0RGpjUXhYZjZVdWdra2x4T1hHX2VJY1V5SFFFbFZ5UHE4WFlwY2VHanlkTllDeWJnZw?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
+            "summary": "札幌のアレフ施設への公安調査庁による立ち入り検査が報じられています。今回記事でも、施設内で松本智津夫元死刑囚の写真や教材を確認したことが示されています。",
+            "latest": "松本智津夫元死刑囚の写真や教材を確認したと報じられました。",
+            "next_watch": "立ち入り検査後に追加の行政対応や改善命令、再検査が出るかを確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "公安調査庁によるアレフ札幌施設への立ち入り検査",
+                    "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
+                    "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "札幌のアレフ施設",
+                    "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
+                    "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - HTB 北海道テレビ"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -133434,7 +134188,7 @@
     },
     "review_id": "c99a14ebc2db1bee15b9316e",
     "schema_version": 2,
-    "observed_at": "2026-10-09T22:37:12.173067+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -133447,10 +134201,10 @@
         "event_id": "",
         "confidence": "high",
         "meaningful_change": false,
-        "current_stage": "診療再開予定の公表段階",
-        "summary": "旧新得クリニックを11月に再開する予定が報じられています。JR札幌病院の中川医師が土日に診療することが示されていますが、記事タイトル上では再開済みではありません。",
-        "latest": "11月再開と、JR札幌病院の中川医師が土日に診療することが示されました。",
-        "next_watch": "11月の再開が実際に行われるか、診療体制が予定どおり始まるかを確認する。",
+        "current_stage": "医療機関の再開予定が報じられた段階",
+        "summary": "旧新得クリニックが11月に再開する見通しで、JR札幌病院の中川医師が土日に診療すると報じられています。",
+        "latest": "旧新得クリニックの11月再開と、JR札幌病院の中川医師による土日の診療が示されました。",
+        "next_watch": "実際の再開が行われたか、診療体制が継続するかを確認する。",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -133470,14 +134224,14 @@
             "existing_url": "",
             "anchors": [
               {
-                "kind": "case",
+                "kind": "case/entity/detail",
                 "value": "旧新得クリニック",
                 "existing_quote": "",
                 "incoming_quote": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療"
               },
               {
-                "kind": "entity",
-                "value": "JR札幌病院の中川医師",
+                "kind": "entity/detail",
+                "value": "JR札幌病院の中川医師が土日に診療",
                 "existing_quote": "",
                 "incoming_quote": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療"
               }
@@ -133488,11 +134242,105 @@
       "raw_ai_response": null,
       "http_status": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "event_name_unproved",
+        "payload": {
+          "group": {
+            "event_name": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療 - 北海道新聞デジタル",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "地域・インフラ",
+            "tracking_value": "medium",
+            "current_stage": "11月の再開に向けた準備段階",
+            "summary": "旧新得クリニックが11月に再開され、JR札幌病院の中川医師が土日に診療する見通しとされています。",
+            "latest": "11月再開と、JR札幌病院の中川医師が土日に診療することが報じられています。",
+            "next_watch": "11月の再開が予定どおり実施されるか、診療体制がどう整うかに注目します。",
+            "articles": [
+              {
+                "title": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療 - 北海道新聞デジタル",
+                "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5",
+                "published": "Fri, 09 Oct 2026 09:07:37 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5\" target=\"_blank\">旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+                "rss_source": {
+                  "name": "北海道新聞デジタル",
+                  "url": "https://www.hokkaido-np.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "c99a14ebc2db1bee15b9316e",
+        "schema_version": 2,
+        "observed_at": "2026-10-09T22:37:12.173067+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5"
+          ],
+          "ai_report": {
+            "relation": "new_event",
+            "event_id": "",
+            "confidence": "high",
+            "meaningful_change": false,
+            "current_stage": "診療再開予定の公表段階",
+            "summary": "旧新得クリニックを11月に再開する予定が報じられています。JR札幌病院の中川医師が土日に診療することが示されていますが、記事タイトル上では再開済みではありません。",
+            "latest": "11月再開と、JR札幌病院の中川医師が土日に診療することが示されました。",
+            "next_watch": "11月の再開が実際に行われるか、診療体制が予定どおり始まるかを確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5"
+            ],
+            "schedules": [
+              {
+                "label": "11月再開",
+                "quote": "11月再開",
+                "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5",
+                "status": "scheduled"
+              }
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80czNHTExyeDQza2hoeGdadUl3dDZuSzNDbVdqMWItTnZyRmw0V0FRVHdyZWItd0hrNW9hRmRYSktQajZHUGFVa0FPR09vckZ5aUJHdnpPc016dGEyZFZrRjZCNEk?oc=5",
+                "existing_url": "",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "旧新得クリニック",
+                    "existing_quote": "",
+                    "incoming_quote": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "JR札幌病院の中川医師",
+                    "existing_quote": "",
+                    "incoming_quote": "旧新得クリニック、11月再開 JR札幌病院の中川医師が土日に診療"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "last_seen_at": "2026-10-09T22:37:12.173067+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -137313,7 +138161,7 @@
     },
     "review_id": "78126faf6dcfe835291c602b",
     "schema_version": 2,
-    "observed_at": "2026-10-10T01:39:22.184091+00:00",
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
     "diagnostics": {
       "target_event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
       "target_event_name": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク - Infoseek",
@@ -137325,7 +138173,38 @@
             "confidence": "high"
           }
         ],
-        "identity_matches": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpWEhIb1BpS3Ftc2k1Qmx4aU5KVEh0dTdSOV9Ta1FobHMtVHhhMWRwNzBwMkVOVnRJZUNEZ1VEdEZlekNKZ0pCamJaU1lBRFEtNVZFTU8yYVZZc3BhWFVrZTYweldKeWhQUFlWZ9IBckFVX3lxTE5hZEZ0SXJaREw4Q2FOeGVEYzhNNmRyUFU5ZWFMblRnVnRFNjR2Vkx4ZGpJMXBxVHlDRHRzT3lNaW41a1Y0Tk40ckMzMGkyWVVRUTFZU2ZpN3d6ZkZVSTFUaU1Ubm5meld6M1dSeUJNYVg1UQ?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "明道香風園",
+                "existing_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク",
+                "incoming_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む 帝国データバンク"
+              },
+              {
+                "kind": "entity/detail",
+                "value": "負債2億8000万円",
+                "existing_quote": "負債2億8000万円",
+                "incoming_quote": "負債2億8000万円"
+              },
+              {
+                "kind": "entity/detail",
+                "value": "冠婚葬祭の簡素化などで需要落ち込む",
+                "existing_quote": "冠婚葬祭の簡素化などで需要落ち込む",
+                "incoming_quote": "冠婚葬祭の簡素化などで需要落ち込む"
+              }
+            ]
+          }
+        ],
+        "progress_evidence": [
+          {
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5",
+            "quote": "破産手続き開始決定"
+          }
+        ],
         "meaningful_change": false,
         "relation": "same_event",
         "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d"
@@ -137410,11 +138289,57 @@
         "last_seen_at": "2026-10-10T00:48:42.055152+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "backfill",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5",
+        "payload": {
+          "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+          "articles": [
+            {
+              "title": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む 帝国データバンク - Excite エキサイト",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5",
+              "published": "Tue, 10 Sep 2024 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5\" target=\"_blank\">【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む 帝国データバンク</a>  <font color=\"#6f6f6f\">Excite エキサイト</font>",
+              "rss_source": {
+                "name": "Excite エキサイト",
+                "url": "http://www.excite.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ]
+        },
+        "review_id": "78126faf6dcfe835291c602b",
+        "schema_version": 2,
+        "observed_at": "2026-10-10T01:39:22.184091+00:00",
+        "diagnostics": {
+          "target_event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+          "target_event_name": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク - Infoseek",
+          "ai_report": {
+            "confidence": "high",
+            "matches": [
+              {
+                "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB4TXlROTByaUg2LWJLeG52blY2WmV3aWxyTk9OMXFQWkprZnJxQ1RnWkNLR1ppUEh2TnFCLVJYcjFrdVFJOUI3eE51WjJLNE94TU9RV3VXVWNoVGJlT3BuODhEVGZ2cFlhNFVwYVBn?oc=5",
+                "confidence": "high"
+              }
+            ],
+            "identity_matches": [],
+            "meaningful_change": false,
+            "relation": "same_event",
+            "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d"
+          },
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-10-10T00:48:42.055152+00:00",
+        "last_seen_at": "2026-10-10T01:39:22.184091+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-10T00:48:42.055152+00:00",
-    "last_seen_at": "2026-10-10T01:39:22.184091+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -139157,6 +140082,1408 @@
     },
     "first_seen_at": "2026-10-10T01:39:22.184091+00:00",
     "last_seen_at": "2026-10-10T01:39:22.184091+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5",
+        "published": "Fri, 09 Oct 2026 10:17:09 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5\" target=\"_blank\">札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+        "published": "Fri, 09 Oct 2026 10:17:09 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5\" target=\"_blank\">札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌・斗南病院跡の国有地入札計画\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "19dd528df737ef1a54c61d29",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285134+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285134+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285134+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBQNnJHYnVra2RXNmxfZG5XSXA4T3RoOXc3ODY3bGdEdGVGbVdiT1BlaHBrbjdySTlsSWhxUjcxOTFuRzFNSTRaVnNRRmlCa0tDQ3ZmRnAtenhtN2ZkS2ZDOWk0NEFTM3dVRHA1bDQ3Wm93TjZ5cC1kSGpJR2dKWFE?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "「火の球が落ちてきた」 “輝く謎の物体”その正体は １０月下旬には本物の火球も？ 北海道札幌市 ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd3p6eG5felBpWFFQQ2lsSEszQVJGdjhEU3BBOUdseWJLclExV1hPUGFnYlF6VjkxYm9tblRndHVZNWdBV3RRcW4zb0YtMklkSzlMV20tOFJBZk16TWxCbHNwYnNwZjNTX0x1SjRZWXcxU1FiTFBrd3BEckJZR1AzaEZB?oc=5",
+        "published": "Fri, 09 Oct 2026 07:20:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQd3p6eG5felBpWFFQQ2lsSEszQVJGdjhEU3BBOUdseWJLclExV1hPUGFnYlF6VjkxYm9tblRndHVZNWdBV3RRcW4zb0YtMklkSzlMV20tOFJBZk16TWxCbHNwYnNwZjNTX0x1SjRZWXcxU1FiTFBrd3BEckJZR1AzaEZB?oc=5\" target=\"_blank\">「火の球が落ちてきた」 “輝く謎の物体”その正体は １０月下旬には本物の火球も？ 北海道札幌市 ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「火の球が落ちてきた」 “輝く謎の物体”その正体は １０月下旬には本物の火球も？ 北海道札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQNnJHYnVra2RXNmxfZG5XSXA4T3RoOXc3ODY3bGdEdGVGbVdiT1BlaHBrbjdySTlsSWhxUjcxOTFuRzFNSTRaVnNRRmlCa0tDQ3ZmRnAtenhtN2ZkS2ZDOWk0NEFTM3dVRHA1bDQ3Wm93TjZ5cC1kSGpJR2dKWFE?oc=5",
+        "published": "Fri, 09 Oct 2026 07:07:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBQNnJHYnVra2RXNmxfZG5XSXA4T3RoOXc3ODY3bGdEdGVGbVdiT1BlaHBrbjdySTlsSWhxUjcxOTFuRzFNSTRaVnNRRmlCa0tDQ3ZmRnAtenhtN2ZkS2ZDOWk0NEFTM3dVRHA1bDQ3Wm93TjZ5cC1kSGpJR2dKWFE?oc=5\" target=\"_blank\">「火の球が落ちてきた」 “輝く謎の物体”その正体は １０月下旬には本物の火球も？ 北海道札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌市で目撃された謎の光る物体と火球の話題\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "e7f2501409f41cdc08eebf10",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285224+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285224+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285224+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+        "published": "Sat, 10 Oct 2026 00:36:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5\" target=\"_blank\">【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
+        "published": "Sat, 10 Oct 2026 01:17:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5\" target=\"_blank\">迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌市の迷惑駐車注意中の女性はね逃走・ひき逃げ事件\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "ffdf3a67c2199f12763e924e",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285291+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285291+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285291+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ - 信濃毎日新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE10T0pSbTM4cFN1MWgwOEdlUnNzSDNhQmlYMnprRW4yX2FObVFkeEV6bW4xQ3lwRW1Ea0E1dlZxREstV2NIZDlUdHo3VW1TRnczUVNaRlFVdTFUYVVxa3otVXUxRndNOVZubG93?oc=5",
+        "published": "Fri, 09 Oct 2026 05:31:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE10T0pSbTM4cFN1MWgwOEdlUnNzSDNhQmlYMnprRW4yX2FObVFkeEV6bW4xQ3lwRW1Ea0E1dlZxREstV2NIZDlUdHo3VW1TRnczUVNaRlFVdTFUYVVxa3otVXUxRndNOVZubG93?oc=5\" target=\"_blank\">知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ</a>  <font color=\"#6f6f6f\">信濃毎日新聞デジタル</font>",
+        "rss_source": {
+          "name": "信濃毎日新聞デジタル",
+          "url": "https://www.shinmai.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ（共同通信） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+        "published": "Fri, 09 Oct 2026 05:31:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5\" target=\"_blank\">知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ（共同通信）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"知床沈没事故の控訴審と船体返却\",\"confidence\":\"high\"}"
+    },
+    "review_id": "111d29b1838a7ab20b3d593e",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285402+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285402+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285402+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1yQXdpVGUtVFRmVTB1TWJSTTZyV2lLOEVOb0NKcnZFWHN0aDJhVUZRM01aeVhKRVJnV3MwTjlQaDhpQWJXbHNjV052N3c4MVBYWHhGTC1aQVlpSzM4M2hYX19FWkVlczkxWHRia0NEMWpnMXpNMl81d053Qzl5cEk?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "フッ化水素酸の死亡事故で北大が管理帳簿を「失念」 札幌市に報告書 [北海道] - 朝日新聞",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FR2VEazlnVllEbU40ZVk0MUo1MVMxX2hsb2ZGMG53YWFxVzkwLWVxMFFRLTNQX3gzdmoyVkZQemQyZUhWVWQ2MkV2NVFCdFR3WmZyUHM3SWVSclZ6UmR1NElhUXdSYUE?oc=5",
+        "published": "Fri, 09 Oct 2026 03:23:26 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FR2VEazlnVllEbU40ZVk0MUo1MVMxX2hsb2ZGMG53YWFxVzkwLWVxMFFRLTNQX3gzdmoyVkZQemQyZUhWVWQ2MkV2NVFCdFR3WmZyUHM3SWVSclZ6UmR1NElhUXdSYUE?oc=5\" target=\"_blank\">フッ化水素酸の死亡事故で北大が管理帳簿を「失念」 札幌市に報告書 [北海道]</a>  <font color=\"#6f6f6f\">朝日新聞</font>",
+        "rss_source": {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "北大が札幌市に報告書を提出 院生のフッ化水素酸の死亡事故で（朝日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1yQXdpVGUtVFRmVTB1TWJSTTZyV2lLOEVOb0NKcnZFWHN0aDJhVUZRM01aeVhKRVJnV3MwTjlQaDhpQWJXbHNjV052N3c4MVBYWHhGTC1aQVlpSzM4M2hYX19FWkVlczkxWHRia0NEMWpnMXpNMl81d053Qzl5cEk?oc=5",
+        "published": "Fri, 09 Oct 2026 03:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1yQXdpVGUtVFRmVTB1TWJSTTZyV2lLOEVOb0NKcnZFWHN0aDJhVUZRM01aeVhKRVJnV3MwTjlQaDhpQWJXbHNjV052N3c4MVBYWHhGTC1aQVlpSzM4M2hYX19FWkVlczkxWHRia0NEMWpnMXpNMl81d053Qzl5cEk?oc=5\" target=\"_blank\">北大が札幌市に報告書を提出 院生のフッ化水素酸の死亡事故で（朝日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"北大のフッ化水素酸死亡事故に関する札幌市への報告\",\"confidence\":\"high\"}"
+    },
+    "review_id": "1dae7273ec67cada6fb215a2",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285457+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285457+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285457+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5",
+        "published": "Sat, 10 Oct 2026 01:19:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+        "published": "Sat, 10 Oct 2026 02:28:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5\" target=\"_blank\">「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌市のリサイクルショップへの工具窃盗・逮捕事件\",\"confidence\":\"high\"}"
+    },
+    "review_id": "16b2144a7fadef01194ea90a",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285511+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285511+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285511+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5",
+        "published": "Thu, 08 Oct 2026 10:18:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5\" target=\"_blank\">札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌市でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+        "published": "Thu, 08 Oct 2026 09:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5\" target=\"_blank\">札幌市でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌市のインフルエンザ注意報発表\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "dfe4273ec986ba2afb8da854",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285569+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285569+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285569+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10/17(土)秋田戦：PASS MATCH 2026～北海道コンサドーレ札幌SDGsプロジェクト～開催のお知らせ - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQZ242Z2ZmWkhKbjhzWlhLSmY3enF5ZEhkWkZxTUkySER6Z0c2RzQweTB6UlRfa1d3SmFqdnNiUzNIb2NxSnNHZGR5Y2xPNXVXcFhXOURLcER5VUxPdmFJRFR3?oc=5",
+        "published": "Fri, 09 Oct 2026 08:32:44 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQZ242Z2ZmWkhKbjhzWlhLSmY3enF5ZEhkWkZxTUkySER6Z0c2RzQweTB6UlRfa1d3SmFqdnNiUzNIb2NxSnNHZGR5Y2xPNXVXcFhXOURLcER5VUxPdmFJRFR3?oc=5\" target=\"_blank\">10/17(土)秋田戦：PASS MATCH 2026～北海道コンサドーレ札幌SDGsプロジェクト～開催のお知らせ</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "10/17(土)秋田戦：ドーレくんひろばについて - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JSjZHdTZhbWNNSDBXRXVLNUFwM3pLQktyZlN1RGRvNXZYdHdsdVRDd0xESk5jaHpyQ05FMno0NWl0V1RiNzh4N3l2cUlKNmxEZEFwblBWbktETlJUWjlRcQ?oc=5",
+        "published": "Fri, 09 Oct 2026 08:32:44 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JSjZHdTZhbWNNSDBXRXVLNUFwM3pLQktyZlN1RGRvNXZYdHdsdVRDd0xESk5jaHpyQ05FMno0NWl0V1RiNzh4N3l2cUlKNmxEZEFwblBWbktETlJUWjlRcQ?oc=5\" target=\"_blank\">10/17(土)秋田戦：ドーレくんひろばについて</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"related\",\n  \"event_name\": \"10/17(土)秋田戦に向けたスタジアム関連企画\",\n  \"confidence\": \"medium\"\n}"
+    },
+    "review_id": "d98fa060349184f8b9172466",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285641+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285641+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285641+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ライブ集中で札幌がホテル不足、宿泊代5倍も Snow Man、YOASOBI、ミセス… シェアオフィスやネットカフェ活用広がる - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2VWRHSEVvOUdFYVBsYTFyZk5jQkRld0d0N0pUYUpUYWNfWTVhdzhTSlJxSkttYWM0aXp6Q1lJZW11c3JfUkxQSDFjeXFQNy1VM2k2UmNUZzlJZw?oc=5",
+        "published": "Fri, 09 Oct 2026 08:08:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2VWRHSEVvOUdFYVBsYTFyZk5jQkRld0d0N0pUYUpUYWNfWTVhdzhTSlJxSkttYWM0aXp6Q1lJZW11c3JfUkxQSDFjeXFQNy1VM2k2UmNUZzlJZw?oc=5\" target=\"_blank\">ライブ集中で札幌がホテル不足、宿泊代5倍も Snow Man、YOASOBI、ミセス… シェアオフィスやネットカフェ活用広がる</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "民泊が集中するエリアは 札幌市中心部のデータ可視化 3Dグラフマップ公開 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54N2JDQ1luZ1ZINmdFRVdQZ1FGd0x6aUg5VDhtQ1dKYWlldXNuaWVub3dySnBCWGFZU2d2YzRjcjh4MEttQjFHNy1jZkVKMTNYbkJSR0tqcFNEdw?oc=5",
+        "published": "Fri, 09 Oct 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE54N2JDQ1luZ1ZINmdFRVdQZ1FGd0x6aUg5VDhtQ1dKYWlldXNuaWVub3dySnBCWGFZU2d2YzRjcjh4MEttQjFHNy1jZkVKMTNYbkJSR0tqcFNEdw?oc=5\" target=\"_blank\">民泊が集中するエリアは 札幌市中心部のデータ可視化 3Dグラフマップ公開</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"related\",\n  \"event_name\": \"札幌の宿泊需要・民泊集中の状況\",\n  \"confidence\": \"medium\"\n}"
+    },
+    "review_id": "5263a83d9f466750e62433ca",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285772+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285772+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285772+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JdDJSR0tBR1dfQVFzdi1ZTDYyUkxXaHRTektKQ09QRHhFX1cwaGtaUzY4VUxXQ1VmeWFVdEh5NzVXUVItOHgwaTc1WGlvY1JzbmZYMVl5ci16SHloaVhWS3VsTF92RjFERW9oeDFn?oc=5",
+        "published": "Fri, 09 Oct 2026 15:22:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1JdDJSR0tBR1dfQVFzdi1ZTDYyUkxXaHRTektKQ09QRHhFX1cwaGtaUzY4VUxXQ1VmeWFVdEh5NzVXUVItOHgwaTc1WGlvY1JzbmZYMVl5ci16SHloaVhWS3VsTF92RjFERW9oeDFn?oc=5\" target=\"_blank\">迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+        "published": "Sat, 10 Oct 2026 00:36:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5\" target=\"_blank\">【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌の迷惑駐車注意後のひき逃げ事件で男を逮捕\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "fb2d57a840aea056cd9707c9",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285882+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285882+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285882+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE13ckVCcXFldEhFRTFnTklEUUhvZnJDZDJWNmVhaXFjQy04M2U0ai1QT09xMW1HU3JRS1F5Ti1taHRrblJCTEJKaEZoWjFHdVJBc2NwV0ZYbDdhcE8yOGhoeGkyY3VMN2RmSnI1djZUSUNnQ0d6M3k3ZXBvZWM5NFU?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00VVRaWmNjOHRJWEEzcWNmclhrcUMzUHVram4wdl9FNndQWUlIOWJwbHI0dWRjZHVrM28zbGlLZDJGaW53U3N3cXZDdFN0MUV0ZHFkT3FTbV9FWERjdEkyNE96OERqTDA?oc=5",
+        "published": "Fri, 09 Oct 2026 02:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00VVRaWmNjOHRJWEEzcWNmclhrcUMzUHVram4wdl9FNndQWUlIOWJwbHI0dWRjZHVrM28zbGlLZDJGaW53U3N3cXZDdFN0MUV0ZHFkT3FTbV9FWERjdEkyNE96OERqTDA?oc=5\" target=\"_blank\">乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【歯医者に車が突っ込む】交差点で乗用車同士が衝突！はずみで1台が「歯科医院」に突っ込む＿信号待ちの女性が車を避けようと転倒…運転手と合わせ40代女性2人が搬送＿いずれも命に別状なし〈北海道札幌市〉（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13ckVCcXFldEhFRTFnTklEUUhvZnJDZDJWNmVhaXFjQy04M2U0ai1QT09xMW1HU3JRS1F5Ti1taHRrblJCTEJKaEZoWjFHdVJBc2NwV0ZYbDdhcE8yOGhoeGkyY3VMN2RmSnI1djZUSUNnQ0d6M3k3ZXBvZWM5NFU?oc=5",
+        "published": "Fri, 09 Oct 2026 03:14:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE13ckVCcXFldEhFRTFnTklEUUhvZnJDZDJWNmVhaXFjQy04M2U0ai1QT09xMW1HU3JRS1F5Ti1taHRrblJCTEJKaEZoWjFHdVJBc2NwV0ZYbDdhcE8yOGhoeGkyY3VMN2RmSnI1djZUSUNnQ0d6M3k3ZXBvZWM5NFU?oc=5\" target=\"_blank\">【歯医者に車が突っ込む】交差点で乗用車同士が衝突！はずみで1台が「歯科医院」に突っ込む＿信号待ちの女性が車を避けようと転倒…運転手と合わせ40代女性2人が搬送＿いずれも命に別状なし〈北海道札幌市〉（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌市西区の交差点での乗用車2台衝突・歯科医院突入事故\",\"confidence\":\"high\"}"
+    },
+    "review_id": "5f0885f38f329b65abb7712a",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.285946+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.285946+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.285946+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5",
+        "published": "Thu, 08 Oct 2026 10:18:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5\" target=\"_blank\">札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌市の学校でインフルエンザ猛威 すでに46校で学級・学年閉鎖 過去10年で最も早い流行入り - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5",
+        "published": "Mon, 05 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5\" target=\"_blank\">札幌市の学校でインフルエンザ猛威 すでに46校で学級・学年閉鎖 過去10年で最も早い流行入り</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌市の2026年インフルエンザ流行と学級閉鎖拡大\",\"confidence\":\"high\"}"
+    },
+    "review_id": "9e094b4bbcf2ea26132bfb59",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286032+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.286032+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286032+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌の老舗、生花小売り「明道香風園」破産手続き開始 負債2億8千万円 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01WU15ai05VXZLYWFXVUp4OEV5WVRkZUtTQTU1NGl6OHozYVlRQUV5SXBOWDR5SXlZdjY0aHhXYnJidTRRNEt0T0E2Y0xkWkoxb2pDQ0RZUWd2dw?oc=5",
+        "published": "Fri, 09 Oct 2026 08:30:10 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE01WU15ai05VXZLYWFXVUp4OEV5WVRkZUtTQTU1NGl6OHozYVlRQUV5SXBOWDR5SXlZdjY0aHhXYnJidTRRNEt0T0E2Y0xkWkoxb2pDQ0RZUWd2dw?oc=5\" target=\"_blank\">札幌の老舗、生花小売り「明道香風園」破産手続き開始 負債2億8千万円</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
+        "published": "Fri, 09 Oct 2026 05:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5\" target=\"_blank\">【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"明道香風園の破産手続き開始\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "3775074e744e5189cc129669",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286099+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.286099+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286099+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JdDJSR0tBR1dfQVFzdi1ZTDYyUkxXaHRTektKQ09QRHhFX1cwaGtaUzY4VUxXQ1VmeWFVdEh5NzVXUVItOHgwaTc1WGlvY1JzbmZYMVl5ci16SHloaVhWS3VsTF92RjFERW9oeDFn?oc=5",
+        "published": "Fri, 09 Oct 2026 15:22:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1JdDJSR0tBR1dfQVFzdi1ZTDYyUkxXaHRTektKQ09QRHhFX1cwaGtaUzY4VUxXQ1VmeWFVdEh5NzVXUVItOHgwaTc1WGlvY1JzbmZYMVl5ci16SHloaVhWS3VsTF92RjFERW9oeDFn?oc=5\" target=\"_blank\">迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
+        "published": "Sat, 10 Oct 2026 01:17:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5\" target=\"_blank\">迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌の迷惑駐車注意女性ひき逃げ事件の容疑者逮捕\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "a615b1313db9d8220e5919a7",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286216+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.286216+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286216+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+        "published": "Sat, 10 Oct 2026 00:36:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5\" target=\"_blank\">【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+        "published": "Sat, 10 Oct 2026 01:22:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5\" target=\"_blank\">高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\n  \"relation\": \"same_event\",\n  \"event_name\": \"札幌で18歳少女と16歳少年が高校生に暴行・たばこの火を押し当てた傷害事件\",\n  \"confidence\": \"high\"\n}"
+    },
+    "review_id": "47201cda91163c377fe5f81e",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286361+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.286361+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286361+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
+        "published": "Thu, 08 Oct 2026 20:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5\" target=\"_blank\">「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
+        "published": "Thu, 08 Oct 2026 21:17:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5\" target=\"_blank\">“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\":\"same_event\",\"event_name\":\"札幌市東区の3階建て建物火災\",\"confidence\":\"high\"}"
+    },
+    "review_id": "8c1741155138e6718ab9624a",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:35.286414+00:00",
+    "first_seen_at": "2026-10-10T02:34:35.286414+00:00",
+    "last_seen_at": "2026-10-10T02:34:35.286414+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+          "articles": [
+            {
+              "title": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5",
+              "published": "Fri, 09 Oct 2026 10:17:09 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5\" target=\"_blank\">札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+              "rss_source": {
+                "name": "47NEWS",
+                "url": "https://www.47news.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル",
+          "articles": [
+            {
+              "title": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+              "published": "Fri, 09 Oct 2026 10:17:09 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5\" target=\"_blank\">札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "5dcdcc40bfa5d9cd5698621a",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:34:37.629645+00:00",
+    "first_seen_at": "2026-10-10T02:34:37.629645+00:00",
+    "last_seen_at": "2026-10-10T02:34:37.629645+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "Expecting ',' delimiter: line 1 column 879 (char 878)",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+          "articles": [
+            {
+              "title": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5",
+              "published": "Fri, 09 Oct 2026 10:17:09 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5\" target=\"_blank\">札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+              "rss_source": {
+                "name": "47NEWS",
+                "url": "https://www.47news.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
+          "articles": [
+            {
+              "title": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
+              "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
+              "published": "Thu, 08 Oct 2026 20:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5\" target=\"_blank\">「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+              "rss_source": {
+                "name": "FNNプライムオンライン",
+                "url": "https://www.fnn.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "1a104cdedf1b81e443a73c4b",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:36:08.569591+00:00",
+    "first_seen_at": "2026-10-10T02:36:08.569591+00:00",
+    "last_seen_at": "2026-10-10T02:36:08.569591+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "event_name_unproved",
+    "payload": {
+      "group": {
+        "event_name": "経団連会長、IR誘致「経済循環で効果見込める」 札幌で記者会見 - 日本経済新聞",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "企業・組織",
+        "tracking_value": "medium",
+        "current_stage": "経団連会長が札幌でIR誘致に関する見解を示した段階",
+        "summary": "記事タイトルと公開日時からは、経団連会長が札幌で記者会見を開き、IR誘致について「経済循環で効果見込める」と発言したことが分かります。現時点では、この発言に対する具体的な決定や実施状況までは確認できません。",
+        "latest": "2026年10月8日に、経団連会長が札幌でIR誘致に関する記者会見を行い、経済循環による効果に言及しました。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は、IR誘致をめぐる追加の発言や、札幌側・関係団体の反応が出るかに注目されます。",
+        "articles": [
+          {
+            "title": "経団連会長、IR誘致「経済循環で効果見込める」 札幌で記者会見 - 日本経済新聞",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1liQXZkSUdOYzJPd1RwRnVmTTBhZFVpREFVdnNld3Z4ZFVESWVVbTdTNEZBNGtyYjdzWGxFbDk5VXN5dFZRQlRGa2czeC1Ta0FLcmtpMXVNNk1xaDdvQW94UERRVW16VDlLNg?oc=5",
+            "published": "Thu, 08 Oct 2026 09:53:47 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1liQXZkSUdOYzJPd1RwRnVmTTBhZFVpREFVdnNld3Z4ZFVESWVVbTdTNEZBNGtyYjdzWGxFbDk5VXN5dFZRQlRGa2czeC1Ta0FLcmtpMXVNNk1xaDdvQW94UERRVW16VDlLNg?oc=5\" target=\"_blank\">経団連会長、IR誘致「経済循環で効果見込める」 札幌で記者会見</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+            "rss_source": {
+              "name": "日本経済新聞",
+              "url": "https://www.nikkei.com"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "2a5064c477de04787d2ed254",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1liQXZkSUdOYzJPd1RwRnVmTTBhZFVpREFVdnNld3Z4ZFVESWVVbTdTNEZBNGtyYjdzWGxFbDk5VXN5dFZRQlRGa2czeC1Ta0FLcmtpMXVNNk1xaDdvQW94UERRVW16VDlLNg?oc=5"
+      ],
+      "ai_report": {
+        "relation": "new_event",
+        "event_id": "",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "経団連会長が札幌でIR誘致について記者会見した段階",
+        "summary": "経団連会長が札幌で、IR誘致は経済循環の面で効果が見込めるとの見解を示したことが確認できる。",
+        "latest": "経団連会長が札幌でIR誘致の効果に言及する記者会見を行った。",
+        "next_watch": "IR誘致に関して、札幌で具体的な検討や方針、計画の進展が報じられるか確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1liQXZkSUdOYzJPd1RwRnVmTTBhZFVpREFVdnNld3Z4ZFVESWVVbTdTNEZBNGtyYjdzWGxFbDk5VXN5dFZRQlRGa2czeC1Ta0FLcmtpMXVNNk1xaDdvQW94UERRVW16VDlLNg?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1liQXZkSUdOYzJPd1RwRnVmTTBhZFVpREFVdnNld3Z4ZFVESWVVbTdTNEZBNGtyYjdzWGxFbDk5VXN5dFZRQlRGa2czeC1Ta0FLcmtpMXVNNk1xaDdvQW94UERRVW16VDlLNg?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NSGNDckllSk5TVUNCcEJ0QTJkUjNyYmVIX0lfbzhUVlQ2eFJGWDBtTGpxTmtMRWphNU8zb3BPTENuTzRkTjd6OE5zdVdyQk9md3JmNE9LbnBSMUo1cG1scXA3OVhJTUN2ejBtcHAzZVhxZzc5ZUHSAXtBVV95cUxPRTJIOUhHNDRZbTYxOE5oSXhwVld1RWJLZnhYRHU3dEl5bW1ONnlzZlBUdFI1QzRkY0NCWndyZHRwOXhBYzJqN2ttX0FVSE52ZzdGczlnTHhlZjZ2bGRrOUVneE1CNUdPcW91MS03R2lld296SmliaV9uS0U?oc=5",
+            "anchors": [
+              {
+                "kind": "detail",
+                "value": "札幌",
+                "existing_quote": "札幌市がＭＩＣＥ施設の概要発表　２０３１年度着工へ",
+                "incoming_quote": "経団連会長、IR誘致「経済循環で効果見込める」 札幌で記者会見"
+              },
+              {
+                "kind": "entity",
+                "value": "経団連会長",
+                "existing_quote": "札幌MICE、実質600億円超も 市議会、注文や懸念相次ぐ 基本計画公表",
+                "incoming_quote": "経団連会長、IR誘致「経済循環で効果見込める」 札幌で記者会見"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 2
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN）） - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "政策・制度",
+        "tracking_value": "medium",
+        "current_stage": "学校給食無償化をめぐる運用への反応・説明段階",
+        "summary": "札幌市で、国の交付金による給食無償化後に「少ない給食」に保護者が驚いたことが報じられた。市長は、量や献立などは変わっていないと説明している。",
+        "latest": "市長が、給食の量や献立は変わっていないとの見解を示した。",
+        "next_watch": "現時点で明確な次の動きは確認できません。無償化の運用や給食内容について、市や学校側から追加説明が出るかに注目されます。",
+        "articles": [
+          {
+            "title": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN）） - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
+            "published": "Fri, 09 Oct 2026 00:38:04 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5\" target=\"_blank\">少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN））</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      }
+    },
+    "review_id": "cdadb23370d598124671f5f4",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+      "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "給食無償化後の給食量をめぐる保護者の反応が報じられている段階",
+        "summary": "札幌で給食無償化後に「給食が少ない」と感じる保護者の反応が報じられています。記事タイトル上、市長は量や献立は変わらないと説明しています。",
+        "latest": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」",
+        "next_watch": "給食量や献立の見直し、運用変更があるか確認する",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌で給食無償化後に「給食が少ない」との相談増",
+                "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋 ｜ ニュース - Zaisatsu.jp【財さつJP】",
+                "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN）） - Yahoo!ニュース"
+              },
+              {
+                "kind": "detail",
+                "value": "無償化後の給食の少なさをめぐる保護者の反応",
+                "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB北海道テレビ",
+                "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN）） - Yahoo!ニュース"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 2
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "uncertain_or_invalid_evidence",
+    "payload": {
+      "group": {
+        "event_name": "10代前半少女に不同意性交疑いで男逮捕 札幌北署 - 北海道新聞デジタル",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "high",
+        "current_stage": "男が不同意性交の疑いで逮捕された段階",
+        "summary": "北海道新聞デジタルの見出しと公開日時からは、札幌北署が10代前半少女に対する不同意性交の疑いで男を逮捕したことが分かります。現時点では逮捕以外の進展は確認できません。",
+        "latest": "2026年10月9日09時19分に、札幌北署による男の逮捕が報じられました。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は送検、容疑の認否、捜査の進展、起訴の有無などが報じられるかに注目されます。",
+        "articles": [
+          {
+            "title": "10代前半少女に不同意性交疑いで男逮捕 札幌北署 - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Z3pSV1pHb2ttUXpZSElyaGhKMjNQLWJxWThhdGpxenZLcVlCOXdHaWlxYjFKdE83TXdWd3BvUVJYZmZEdl9FYVQtR3JEdDBFRkpxS1RQQmJiUQ?oc=5",
+            "published": "Fri, 09 Oct 2026 09:19:18 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Z3pSV1pHb2ttUXpZSElyaGhKMjNQLWJxWThhdGpxenZLcVlCOXdHaWlxYjFKdE83TXdWd3BvUVJYZmZEdl9FYVQtR3JEdDBFRkpxS1RQQmJiUQ?oc=5\" target=\"_blank\">10代前半少女に不同意性交疑いで男逮捕 札幌北署</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "4b35396ac9bb7ac8c8ca090c",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Z3pSV1pHb2ttUXpZSElyaGhKMjNQLWJxWThhdGpxenZLcVlCOXdHaWlxYjFKdE83TXdWd3BvUVJYZmZEdl9FYVQtR3JEdDBFRkpxS1RQQmJiUQ?oc=5"
+      ],
+      "ai_report": {
+        "relation": "uncertain",
+        "event_id": "",
+        "confidence": "low",
+        "meaningful_change": false,
+        "current_stage": "逮捕報道の段階",
+        "summary": "札幌北署で、10代前半少女に対する不同意性交の疑いで男が逮捕されたと報じられています。既存一覧には札幌市内の別の性的暴行・住居侵入事件はありますが、本記事の被疑事実、場所、被害者属性だけでは同一案件と断定できません。",
+        "latest": "男逮捕が報じられましたが、タイトルと説明からは他の進展は確認できません。",
+        "next_watch": "同一の被害者・場所・発生状況に基づく続報や、容疑の詳細・送検・起訴の有無を確認します。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Z3pSV1pHb2ttUXpZSElyaGhKMjNQLWJxWThhdGpxenZLcVlCOXdHaWlxYjFKdE83TXdWd3BvUVJYZmZEdl9FYVQtR3JEdDBFRkpxS1RQQmJiUQ?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12Z3pSV1pHb2ttUXpZSElyaGhKMjNQLWJxWThhdGpxenZLcVlCOXdHaWlxYjFKdE83TXdWd3BvUVJYZmZEdl9FYVQtR3JEdDBFRkpxS1RQQmJiUQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOWVJGM05nanMyNTVRSm5UQUVKMDlLekoxTHdNVVhPSjV4MDUzVGNTOXRudE5POE8zdzd0aVNBQTJ5UVIwQ09PRXg5SkRCZ0JzSkJxSm5rWDl2X0V1dDVhb1h2X3hTTnd0czJaQUg4T3J3SE1JZmxzUWVkWXNNZTg?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市での性的暴行・不同意性交容疑",
+                "existing_quote": "公園内で10代前半の少女に性的暴行か 清掃員の男（31）逮捕 SNSで知り合う 札幌市 - 日テレNEWS NNN",
+                "incoming_quote": "10代前半少女に不同意性交疑いで男逮捕 札幌北署 - 北海道新聞デジタル"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 2
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」 - テレ朝NEWS",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "政策・制度",
+        "tracking_value": "medium",
+        "current_stage": "給食無償化をめぐる運用・説明が注目されている段階",
+        "summary": "札幌市の給食無償化について、保護者が「少ない」と驚いたことが報じられ、市長は量や献立は変わっていないとの認識を示しています。記事タイトルからは、無償化の実施後の見え方や説明が問題になっていると読み取れます。",
+        "latest": "市長が「量、献立など変わらず」と説明したことが最新の動きです。",
+        "next_watch": "現時点で明確な次の動きは確認できません",
+        "articles": [
+          {
+            "title": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」 - テレ朝NEWS",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5",
+            "published": "Fri, 09 Oct 2026 00:38:04 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5\" target=\"_blank\">少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」</a>  <font color=\"#6f6f6f\">テレ朝NEWS</font>",
+            "rss_source": {
+              "name": "テレ朝NEWS",
+              "url": "https://news.tv-asahi.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "947f90c97f483b6d38f4db92",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+      "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+        "summary": "札幌で給食無償化後に「少ない給食」が保護者の間で話題になっている状況を、別媒体が同内容で報じたものです。記事タイトルから確認できる範囲では、新たな制度変更や解決は示されていません。",
+        "latest": "保護者が少ない給食に驚いたことと、市長が「量、献立など変わらず」と述べたことが報じられました。",
+        "next_watch": "給食の量や献立、無償化運用に関する市側の追加説明や具体的な見直しの有無を確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌の給食無償化後の給食量・運用",
+                "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+                "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」"
+              }
+            ]
+          }
+        ],
+        "progress_evidence": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "event_name_unproved",
+    "payload": {
+      "group": {
+        "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "火災の発生と負傷者の搬送が報じられている段階",
+        "summary": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送されたと報じられています。",
+        "latest": "2026年10月8日20時時点で、建物火災と負傷者搬送が確認できる範囲の最新情報です。",
+        "next_watch": "現時点で明確な次の動きは確認できません。火災の原因、被害の詳細、女性の容体やけがの程度に関する続報があるかが注目点です。",
+        "articles": [
+          {
+            "title": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5",
+            "published": "Thu, 08 Oct 2026 20:00:01 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5\" target=\"_blank\">「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>"
+          }
+        ]
+      }
+    },
+    "review_id": "9f4abcea6d1efa5450c80bf6",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5"
+      ],
+      "ai_report": {
+        "relation": "new_event",
+        "event_id": "",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "札幌市東区の3階建て建物で火災が発生し、70代ぐらいの女性がけがをして搬送された段階",
+        "summary": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送されたと確認できる。",
+        "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞",
+        "next_watch": "消火完了の有無、被害の拡大、出火原因や追加の負傷者の有無を確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市東区の3階建て共同住宅の火災",
+                "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉 - FNNプライムオンライン",
+                "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - Yahoo!ニュース"
+              },
+              {
+                "kind": "detail",
+                "value": "70代ぐらいの女性がけがをして搬送",
+                "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉 - FNNプライムオンライン",
+                "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - Yahoo!ニュース"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "札幌市東区の3階建て建物で火災が発生し、女性1人が搬送された段階",
+        "summary": "記事タイトルからは、札幌市東区の3階建て建物から出火し、2階にいた70代くらいの女性がけがをして搬送されたことが分かります。",
+        "latest": "火炎と煙が見える状態の火災が発生し、70代ぐらいの女性がけがで搬送されました。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後、火災の原因や被害状況、女性の容体などが続報として出る可能性があります。",
+        "articles": [
+          {
+            "title": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
+            "published": "Thu, 08 Oct 2026 20:00:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5\" target=\"_blank\">「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+            "rss_source": {
+              "name": "FNNプライムオンライン",
+              "url": "https://www.fnn.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "bc2325e04da844292b3b0af5",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+      "target_event_name": "札幌市東区の共同住宅火災",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
+        "summary": "札幌市東区の3階建て建物で火災が起き、2階にいた70代ぐらいの女性がけがをして搬送されたと確認できます。既存記事と同じ事故の続報としては、火災発生と女性搬送までが一致しています。",
+        "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火し、70代ぐらいの女性が搬送された。",
+        "next_watch": "出火原因、延焼の有無、被害範囲、火災収束の有無が明示されるか確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
+        ],
+        "schedules": [],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市東区の3階建て建物の火災",
+                "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道"
+              },
+              {
+                "kind": "detail",
+                "value": "70代とみられる女性の負傷・搬送",
+                "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "uncertain_or_invalid_evidence",
+    "payload": {
+      "group": {
+        "event_name": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 東京新聞",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "high",
+        "current_stage": "控訴審の初公判待ち",
+        "summary": "知床の沈没事故をめぐる控訴審について、札幌高裁で12月初公判が開かれる見通しで、船体は返却されることが示されています。",
+        "latest": "札幌高裁で控訴審の12月初公判が予定され、船体は返却へ向かうと報じられました。",
+        "next_watch": "控訴審の初公判で何が争点になるか、また船体返却の手続きがどう進むかが注目されます。",
+        "articles": [
+          {
+            "title": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 東京新聞",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIcGdmS0VLM0JWVk5DWDhUallkUVdrOUJZdkRlSDZKSUdSLTBRM0N0ZjBmY1dDQWIyaVpFSldDN1VXTVFzYzQxa0F5amE1RkVBV25rMDhvelRVdUlVTzdTLUxBRzI?oc=5",
+            "published": "Fri, 09 Oct 2026 06:40:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIcGdmS0VLM0JWVk5DWDhUallkUVdrOUJZdkRlSDZKSUdSLTBRM0N0ZjBmY1dDQWIyaVpFSldDN1VXTVFzYzQxa0F5amE1RkVBV25rMDhvelRVdUlVTzdTLUxBRzI?oc=5\" target=\"_blank\">知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ</a>  <font color=\"#6f6f6f\">東京新聞</font>",
+            "rss_source": {
+              "name": "東京新聞",
+              "url": "https://www.tokyo-np.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "8eedfcc4eade675621a1146c",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIcGdmS0VLM0JWVk5DWDhUallkUVdrOUJZdkRlSDZKSUdSLTBRM0N0ZjBmY1dDQWIyaVpFSldDN1VXTVFzYzQxa0F5amE1RkVBV25rMDhvelRVdUlVTzdTLUxBRzI?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+        "confidence": "high",
+        "meaningful_change": false,
+        "current_stage": "控訴審の初公判日程が報じられた段階",
+        "summary": "知床沈没をめぐる控訴審について、12月に初公判が開かれる見通しと札幌高裁が船体を返却することが報じられています。",
+        "latest": "新記事でも『12月初公判』と『船体は返却へ』が確認できます。",
+        "next_watch": "控訴審の実際の初公判実施や、船体返却の具体的な進捗が報じられるか確認する。",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XcG5PZ1JfU0VYcjhJWUtGWHdHX3NLN2w5b1FBRUplV3Y1TjZqSXFHX1haQzYxaVIyalJHRGtlZmt3aUZuX3YyenVKQQ?oc=5"
+        ],
+        "schedules": [
+          {
+            "label": "12月初公判",
+            "quote": "12月初公判",
+            "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+            "status": "scheduled"
+          }
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XcG5PZ1JfU0VYcjhJWUtGWHdHX3NLN2w5b1FBRUplV3Y1TjZqSXFHX1haQzYxaVIyalJHRGtlZmt3aUZuX3YyenVKQQ?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "知床沈没",
+                "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ",
+                "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+              },
+              {
+                "kind": "detail",
+                "value": "控訴審は12月初公判",
+                "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ",
+                "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+              },
+              {
+                "kind": "detail",
+                "value": "札幌高裁、船体は返却へ",
+                "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ",
+                "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+              }
+            ]
+          }
+        ],
+        "event_identity": {
+          "value": "知床沈没",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+          "quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+        }
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "backfill",
+    "reason": "search_identity_uncertain",
+    "payload": {
+      "event_id": "0ece8d75-ae7a-43ce-a475-d9bc47af498a",
+      "articles": [
+        {
+          "title": "ヒメマス漁が本格化「予想以上の豊漁」 釧路・パンケトー - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oam1HWURfVEJoczNTcmFxMW9fR3B4NUpsNUZteF9ZNWdwbGpmempQOElRRVFBZHMzSXdwMGh2ZmFKeWh1X3dKTzlLMHJSLWM3OHpzTGFFYlRjZw?oc=5",
+          "published": "Thu, 05 Jun 2025 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oam1HWURfVEJoczNTcmFxMW9fR3B4NUpsNUZteF9ZNWdwbGpmempQOElRRVFBZHMzSXdwMGh2ZmFKeWh1X3dKTzlLMHJSLWM3OHpzTGFFYlRjZw?oc=5\" target=\"_blank\">ヒメマス漁が本格化「予想以上の豊漁」 釧路・パンケトー</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "【独自】eスポーツ世界大会 26、27年も札幌開催 複数年連続は初 - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NRm44b1RFbjlXWTRieDRxRk1YYXFsa0l1dGlZRUU2YlZ1Y09TanBiWkZVdW53X25hM1U1d19tOTR0Y1FaLXNWakdlbUVGa2VZUlg1UC03aVk2Zw?oc=5",
+          "published": "Thu, 19 Jun 2025 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NRm44b1RFbjlXWTRieDRxRk1YYXFsa0l1dGlZRUU2YlZ1Y09TanBiWkZVdW53X25hM1U1d19tOTR0Y1FaLXNWakdlbUVGa2VZUlg1UC03aVk2Zw?oc=5\" target=\"_blank\">【独自】eスポーツ世界大会 26、27年も札幌開催 複数年連続は初</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "亡き父の無念胸に“命の授業” 日航機墜落事故40年 札幌の教諭・折田さん「家族と過ごす時間を大切に」 - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qWDBySmxkUHBwV05LME5xdzFhRWJWU3JtTlhSV3h0QzZJWlk0c1k4Q2hta1pZZTJ6d3JVb0w5Z3lEQU5TSTRzZ0YwSFJZS2xQaDhEUmFrbm5rUQ?oc=5",
+          "published": "Fri, 08 Aug 2025 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qWDBySmxkUHBwV05LME5xdzFhRWJWU3JtTlhSV3h0QzZJWlk0c1k4Q2hta1pZZTJ6d3JVb0w5Z3lEQU5TSTRzZ0YwSFJZS2xQaDhEUmFrbm5rUQ?oc=5\" target=\"_blank\">亡き父の無念胸に“命の授業” 日航機墜落事故40年 札幌の教諭・折田さん「家族と過ごす時間を大切に」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "いじめ、離婚、自殺未遂… 63歳でやっと手にした女性戸籍 札幌のトランスジェンダー大井さんの思いは？ - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UTnNNSklTOHdXUC1JQWxDS2lpcXQzSTBZX0RLYUNFQVBsT2NlUENjSzVrWElKOHNLX1NsWDRpc0ppTkdydGxkMTJmZmI0Z1Z1cV8wUmNGalF2dw?oc=5",
+          "published": "Wed, 10 Sep 2025 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UTnNNSklTOHdXUC1JQWxDS2lpcXQzSTBZX0RLYUNFQVBsT2NlUENjSzVrWElKOHNLX1NsWDRpc0ppTkdydGxkMTJmZmI0Z1Z1cV8wUmNGalF2dw?oc=5\" target=\"_blank\">いじめ、離婚、自殺未遂… 63歳でやっと手にした女性戸籍 札幌のトランスジェンダー大井さんの思いは？</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "札幌市営地下鉄、スマホ定期券導入へ 窓口にもう並ばなくていい 27年度にも - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2QURJTnp0Wk5jbFc3OTRkV0lLTTlXQTJJamtib0xZa29YSElWNHQ3dlVKZ0pacUthYmtQSnVERnBJbDI1RmJZWFR6NzIxVnRKdGRFbTh0eW80dw?oc=5",
+          "published": "Mon, 16 Mar 2026 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2QURJTnp0Wk5jbFc3OTRkV0lLTTlXQTJJamtib0xZa29YSElWNHQ3dlVKZ0pacUthYmtQSnVERnBJbDI1RmJZWFR6NzIxVnRKdGRFbTh0eW80dw?oc=5\" target=\"_blank\">札幌市営地下鉄、スマホ定期券導入へ 窓口にもう並ばなくていい 27年度にも</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "札幌（４月２０日付）おくやみ - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BMGVPLTJUMUkwSWVTS1VrNFVwV0d4SENEOUx6ejI0LWZzMUdaQ1o1MUEwNFNXRWhGUUdkMmxkTk5nRzZtbEl3ekFtbTgxbkFOV3NxZUk3U2stZw?oc=5",
+          "published": "Sun, 19 Apr 2026 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BMGVPLTJUMUkwSWVTS1VrNFVwV0d4SENEOUx6ejI0LWZzMUdaQ1o1MUEwNFNXRWhGUUdkMmxkTk5nRzZtbEl3ekFtbTgxbkFOV3NxZUk3U2stZw?oc=5\" target=\"_blank\">札幌（４月２０日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "さっぽろ雪まつり、来年2月4日～11日開催 体験型充実、宿泊税活用し新たなロゴも制作 - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wcnp4emtHdEF2QlRVYzBKdHpvVkpUenhVTHVEdTQyY1FxQVBVQTVVa0kzXzZhWVJUMHhSaXV1dWpZR0xsNkd6dGx2SXo4MTZ0dXQzSm5hZDc2dw?oc=5",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wcnp4emtHdEF2QlRVYzBKdHpvVkpUenhVTHVEdTQyY1FxQVBVQTVVa0kzXzZhWVJUMHhSaXV1dWpZR0xsNkd6dGx2SXo4MTZ0dXQzSm5hZDc2dw?oc=5\" target=\"_blank\">さっぽろ雪まつり、来年2月4日～11日開催 体験型充実、宿泊税活用し新たなロゴも制作</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        }
+      ]
+    },
+    "review_id": "3d2f1356bc4abff47b20e79f",
+    "schema_version": 2,
+    "observed_at": "2026-10-10T02:37:25.460144+00:00",
+    "diagnostics": {
+      "target_event_id": "0ece8d75-ae7a-43ce-a475-d9bc47af498a",
+      "target_event_name": "札幌市の民泊最多更新3126件 賃貸→民泊に転換の動き 訪日客増加背景に - 47NEWS",
+      "ai_report": {
+        "confidence": "high",
+        "matches": [],
+        "identity_matches": []
+      },
+      "raw_ai_response": null,
+      "http_status": null
+    },
+    "first_seen_at": "2026-10-10T02:37:25.460144+00:00",
+    "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
