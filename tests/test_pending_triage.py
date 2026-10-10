@@ -127,10 +127,17 @@ class PendingTriageTests(unittest.TestCase):
 
     def test_invalid_json_answer_keeps_excerpt_without_request_credentials(self):
         payload = {'output': [{'content': [{'type': 'output_text', 'text': '{bad json'}]}]}
-        with patch.dict('os.environ', {'OPENAI_API_KEY': 'test-secret'}), patch('urllib.request.urlopen',
-                return_value=io.BytesIO(json.dumps(payload).encode())):
-            with self.assertRaises(json.JSONDecodeError) as raised:
-                AI().ask('test')
+        import os, tempfile
+        before = os.getcwd()
+        with tempfile.TemporaryDirectory() as tmp:
+            try:
+                os.chdir(tmp)
+                with patch.dict('os.environ', {'OPENAI_API_KEY': 'test-secret'}), patch('urllib.request.urlopen',
+                        return_value=io.BytesIO(json.dumps(payload).encode())):
+                    with self.assertRaises(json.JSONDecodeError) as raised:
+                        AI().ask('test')
+            finally:
+                os.chdir(before)
         self.assertEqual(raised.exception.ai_response_excerpt, '{bad json')
         self.assertNotIn('test-secret', raised.exception.ai_response_excerpt)
 
