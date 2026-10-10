@@ -2,94 +2,102 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "91a430f2c20fc6d3131bb1e1",
+      "review_id": "fd1d2627bb2a651ebc587477",
       "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-10T11:33:24.750466+00:00",
       "diagnostics": {
-        "target_event_id": null,
+        "target_event_id": "",
         "target_event_name": null,
         "target_source_urls": [],
         "input_urls": [
-          "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5"
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
         ],
-        "ai_report": null,
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "low",
+          "meaningful_change": false,
+          "current_stage": "逮捕された段階",
+          "summary": "札幌市内で、迷惑駐車を注意しようと車に近づいた女性に車が衝突し、ひき逃げの疑いで無職の27歳の男が逮捕されたと読めます。",
+          "latest": "男は『心当たりがありません』と否認していると報じられています。",
+          "next_watch": "事故の具体的な場所、被害者のけがの程度、容疑者の供述や送検・起訴の有無が確認されるか。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+              "existing_url": "",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "迷惑駐車を注意しようと車に近づいた女性に衝突したひき逃げ疑い",
+                  "existing_quote": "",
+                  "incoming_quote": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース"
+                },
+                {
+                  "kind": "entity",
+                  "value": "無職の男(27)",
+                  "existing_quote": "",
+                  "incoming_quote": "ひき逃げの疑いで無職の男(27)を逮捕"
+                }
+              ]
+            }
+          ]
+        },
         "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5"
-      ]
-    },
-    {
-      "review_id": "70da90e38668bfe3876c2790",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
         "decision_attempts": 2
       },
       "event_id": null,
-      "event_name": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で - 北海道新聞デジタル",
+      "event_name": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース",
       "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5"
       ]
     },
     {
-      "review_id": "00e09815d98a223fcd2f2e43",
+      "review_id": "a051dcc57c67549f91735238",
       "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
+      "observed_at": "2026-10-10T11:33:24.750466+00:00",
       "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5"
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
         ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5"
-      ]
-    },
-    {
-      "review_id": "e00c57c0f3945b0529a2a2d0",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
         "input_urls": [
           "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
         ],
-        "ai_report": null,
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
+          "latest": "保護者が『少ない給食』に驚いたとする記事が出ており、市長は『量、献立など変わらず』と述べたとされています。",
+          "next_watch": "市の説明や給食内容の見直し有無、相談増加が続くかを確認すること",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
+          ],
+          "schedules": []
+        },
         "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
@@ -98,306 +106,140 @@
       ]
     },
     {
-      "review_id": "6c4534b5479d64a7aedb819f",
+      "review_id": "ff3194aa353567add10ae1d6",
       "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-10T11:33:24.750466+00:00",
       "diagnostics": {
-        "target_event_id": null,
+        "target_event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
         "target_event_name": null,
         "target_source_urls": [],
         "input_urls": [
-          "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5"
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
         ],
-        "ai_report": null,
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "札幌で高校生への暴行・傷害容疑で18歳少女と16歳少年が逮捕された段階",
+          "summary": "18歳の高校生に対し、顔面を殴るなどの暴行や手の甲にタバコの火を押し当てる行為があったとされ、18歳の少女と16歳の少年が逮捕されたことが確認できます。",
+          "latest": "顔面殴打とタバコの火を押し当てる暴行で、18歳の少女と16歳の少年を逮捕したと報じられています。",
+          "next_watch": "容疑の詳細、被害者のけがの程度、送致や起訴の有無が続報で確認されるか。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "高校生に対する暴行・傷害容疑",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                },
+                {
+                  "kind": "entity",
+                  "value": "18歳の少女と16歳の少年の逮捕",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                }
+              ]
+            }
+          ]
+        },
         "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 中日新聞Web",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5"
-      ]
-    },
-    {
-      "review_id": "55bff14de76d8b73f6ddeacf",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ - 北海道新聞デジタル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
-      ]
-    },
-    {
-      "review_id": "7d74847493b33cb74c65f789",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "【独占取材】「北海道アニマルワールド」語る現在地 残る220匹は移籍20人が飼育「動物に罪はない。守りたい」目標は『地域との共生』無許可建築物撤去期限まで約1か月”ノースサファリ”の今〈北海道札幌市〉（FNNプライムオンライン） - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5"
-      ]
-    },
-    {
-      "review_id": "eb4904de0aef9be02526acc7",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "e6dee0424c311223de1a36b8",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 0
-      },
-      "event_id": null,
-      "event_name": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "1cd5129b7e0071e76851b717",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 0
-      },
-      "event_id": null,
-      "event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5"
-      ]
-    },
-    {
-      "review_id": "752b4a94d8287d3d721bc1c1",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4WDA1NGVTdFVNNTBYeWJnR0QzNmpIekJzNE5QS21zc05KN1hIclpqaTJpTHZUQlpCZWJ5Rm1yWGhWbDhtNjVCUW5CSkRuNGFKMUU3ZTA4WDhjZw?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 0
-      },
-      "event_id": null,
-      "event_name": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立 - 北海道新聞デジタル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4WDA1NGVTdFVNNTBYeWJnR0QzNmpIekJzNE5QS21zc05KN1hIclpqaTJpTHZUQlpCZWJ5Rm1yWGhWbDhtNjVCUW5CSkRuNGFKMUU3ZTA4WDhjZw?oc=5"
-      ]
-    },
-    {
-      "review_id": "e8b63b5a106f95697e781f59",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道） - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5"
-      ]
-    },
-    {
-      "review_id": "ba956edbb33ffc54e29ddbf1",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5"
-      ]
-    },
-    {
-      "review_id": "41392e0f592359714ed8d65f",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
         "decision_attempts": 1
       },
       "event_id": null,
-      "event_name": "迷惑駐車を注意した女性をひき逃げした疑い　27歳無職の男を逮捕「心当たりはありません」容疑否認　札幌 - ｄメニューニュース",
+      "event_name": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - FNNプライムオンライン",
       "article_urls": [
-        "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5"
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
       ]
     },
     {
-      "review_id": "98b21bd1b3fb998647b8248e",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5"
-      ]
-    },
-    {
-      "review_id": "eb8d44dadb95db38ad5a69f5",
-      "stage": "event_attachment",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
-      "diagnostics": {
-        "target_event_id": null,
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR?oc=5"
-        ],
-        "ai_report": null,
-        "raw_ai_response": null,
-        "http_status": 429,
-        "triage_status": "retry_api",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "札幌市が入札行った公共工事 業者が不当排除されたと訴え 第三者機関が市側の不備認めるも… - au Webポータル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR?oc=5"
-      ]
-    },
-    {
-      "review_id": "59e1133f1ecfc81297c22858",
+      "review_id": "5f9b3835d9c9a47de751a4be",
       "stage": "backfill",
-      "reason": "HTTPError",
-      "observed_at": "2026-10-10T09:33:33.225639+00:00",
+      "reason": "search_identity_uncertain",
+      "observed_at": "2026-10-10T11:33:24.750466+00:00",
       "diagnostics": {
         "target_event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
         "target_event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
-        "ai_report": null,
+        "ai_report": {
+          "confidence": "high",
+          "matches": [],
+          "identity_matches": []
+        },
         "raw_ai_response": null,
-        "http_status": 429
+        "http_status": null
       },
       "event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
+      "event_name": null,
+      "article_urls": []
+    },
+    {
+      "review_id": "1f6cf4455d5a9316e3837890",
+      "stage": "backfill",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNVdZZnc2SEYtdnltWXBfR2NGMjhuMExLVDk3OVhsazRCbHI5VmlKSng2ekwwMnpxQWhWcmJCTlF5RnkzTmdwbnozQmVtQWhTNEcySnhiTDZiUQ?oc=5",
+      "observed_at": "2026-10-10T11:33:24.750466+00:00",
+      "diagnostics": {
+        "target_event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+        "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+        "ai_report": {
+          "confidence": "high",
+          "matches": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNVdZZnc2SEYtdnltWXBfR2NGMjhuMExLVDk3OVhsazRCbHI5VmlKSng2ekwwMnpxQWhWcmJCTlF5RnkzTmdwbnozQmVtQWhTNEcySnhiTDZiUQ?oc=5",
+              "confidence": "high"
+            },
+            {
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5SWThPWi1GbEN5YTJPRGFqaFNqTkcyVi13WkJrd2g2ZGYtajJtVHY5T0JnQlRrTW9fZmJJVnVGbTFJVHJnN3BkSHpDaWpvLTRYYnBuYktyeVJqdw?oc=5",
+              "confidence": "high"
+            }
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNVdZZnc2SEYtdnltWXBfR2NGMjhuMExLVDk3OVhsazRCbHI5VmlKSng2ekwwMnpxQWhWcmJCTlF5RnkzTmdwbnozQmVtQWhTNEcySnhiTDZiUQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "河川敷で暴行・公園で煙草の火を押し当てる傷害容疑",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "18歳の男子高校生の顔を河川敷で殴り翌日に別の公園でタバコを両手に…傷害容疑で18歳と16歳の少年少女逮捕"
+                }
+              ]
+            },
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5SWThPWi1GbEN5YTJPRGFqaFNqTkcyVi13WkJrd2g2ZGYtajJtVHY5T0JnQlRrTW9fZmJJVnVGbTFJVHJnN3BkSHpDaWpvLTRYYnBuYktyeVJqdw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "河川敷で暴行・公園で煙草の火を押し当てる傷害容疑",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌"
+                }
+              ]
+            }
+          ],
+          "meaningful_change": false,
+          "relation": "same_event",
+          "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d"
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
       "event_name": null,
       "article_urls": []
     }
