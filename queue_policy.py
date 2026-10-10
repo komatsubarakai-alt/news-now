@@ -124,3 +124,9 @@ def pause_reason(group, state):
     if reasons and all(reasons):
         return 'obvious_out_of_scope'
     return None
+
+
+def already_saved_group(group, events):
+    saved = {article_fingerprint(a) for e in events for a in e.get("articles", [])}
+    articles = group.get("articles", [])
+    return bool(articles) and all(article_fingerprint(a) in saved for a in articles)
