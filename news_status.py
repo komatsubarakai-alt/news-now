@@ -5,7 +5,10 @@ import urllib.request
 from pathlib import Path
 from merge_safety import review, save_reviews
 from tracking_v1 import atomic_save
-from ai_cost_control import response, json_answer
+from ai_cost_control import response, json_answer, BudgetExceeded
+from queue_policy import read, prioritize_groups, retain_group, pause_reason
+from pending_triage import group_key
+from datetime import datetime, timezone
 
 
 with open("news_groups_deduplicated.json", "r", encoding="utf-8") as f:
@@ -19,7 +22,9 @@ for group in previous + groups:
     key = tuple(sorted(a.get('url', '') for a in group.get('articles', [])))
     if key:
         by_urls[key] = group
-groups = list(by_urls.values())
+stage_state = read('status_triage.json', {'items': {}})
+now = datetime.now(timezone.utc)
+groups = prioritize_groups(list(by_urls.values()), stage_state['items'], now)
 pending, deferred, reviews = [], [], []
 def fingerprint(group):
     value = {'event_name': group.get('event_name'), 'articles': group.get('articles', [])}
@@ -66,7 +71,12 @@ for index, group in enumerate(groups):
 
     if fingerprint(group) in known_statuses:
         continue
+    reason = pause_reason(group, stage_state['items'])
+    if reason:
+        retain_group(stage_state['items'], group, reason, reason, now)
+        continue
     if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')):
+        retain_group(stage_state['items'], group, 'queued', 'budget_deferred', now)
         deferred.append(group)
         continue
 
@@ -146,9 +156,12 @@ low = 単発ニュースで終わる可能性が高い
 
     try:
         ai_status = json_answer(response(prompt))
+        if ai_status.get('category') not in VALID_CATEGORIES or ai_status.get('tracking_value') not in {'high', 'medium', 'low'}:
+            raise ValueError('invalid_category_or_tracking_value')
 
         urls = {a.get('url') for a in articles}
         statuses = [s for s in statuses if {a.get('url') for a in s.get('articles', [])} != urls]
+        retain_group(stage_state['items'], group, 'classified', 'valid_ai_status', now)
         statuses.append({
             "event_name": event_name,
             "article_count": len(articles),
@@ -174,7 +187,11 @@ low = 単発ニュースで終わる可能性が高い
         })
 
     except Exception as e:
-        pending.append(group)
+        status = 'queued' if isinstance(e, BudgetExceeded) else 'retry_format' if isinstance(e, (ValueError, TypeError, KeyError)) else 'retry_api'
+        record = retain_group(stage_state['items'], group, status, str(e) if isinstance(e, BudgetExceeded) else type(e).__name__, now,
+                              decision=isinstance(e, (ValueError, TypeError, KeyError)))
+        if record['status'] != 'manual_review':
+            pending.append(group)
         reviews.append(review('status_generation', type(e).__name__, {'group': group}))
 
         print(
@@ -197,6 +214,7 @@ with open(
 
 
 atomic_save('status_pending.json', deferred + pending)
+atomic_save('status_triage.json', stage_state)
 save_reviews(reviews)
 
 print(

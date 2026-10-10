@@ -133,6 +133,19 @@ def main():
     path = Path('news_filtered.json') if Path('news_filtered.json').exists() else Path('news.json')
     news = json.loads(path.read_text(encoding='utf-8'))
     candidates = build_candidates(news)
+    from queue_policy import prioritize_groups, read
+    from pending_triage import group_key
+    from datetime import datetime, timezone
+    state = read('collection_triage.json', {'items': {}})['items']
+    pair_groups = [{'articles': [c['article_a'], c['article_b']]} for c in candidates]
+    pair_state = {}
+    by_key = {}
+    for candidate, group in zip(candidates, pair_groups):
+        key = group_key(group)
+        by_key[key] = candidate
+        dates = [state.get(a.get('url'), {}).get('first_seen_at') for a in group['articles']]
+        pair_state[key] = {'first_seen_at': min([d for d in dates if d], default=None)}
+    candidates = [by_key[group_key(g)] for g in prioritize_groups(pair_groups, pair_state, datetime.now(timezone.utc))]
     Path('ai_candidates.json').write_text(json.dumps(candidates, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(f'{len(news)}件のニュースから{len(candidates)}組のAI判定候補を作りました')
 
