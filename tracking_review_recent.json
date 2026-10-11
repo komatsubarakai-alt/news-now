@@ -1,4 +1,201 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "43999c6da048dac207d18d78",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
+      "observed_at": "2026-10-11T20:32:10.887151+00:00",
+      "diagnostics": {
+        "target_event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+        "target_event_name": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク - Infoseek",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpWEpIb1BpS3Ftc2k1Qmx4aU5KVEh0dTdSOV9Ta1FobHMtVHhhMWRwNzBwMkVOVnRJZUNEZ1VEdEZlekNKZ0pCamJaU1lBRFEtNVZFTU8yYVZZc3BhWFVrZTYweldKeWhQUFlWZ9IBckFVX3lxTE5hZEZ0SXJaREw4Q2FOeGVEYzhNNmRyUFU5ZWFMblRnVnRFNjR2Vkx4ZGpJMXBxVHlDRHRzT3lNaW41a1Y0Tk40ckMzMGkyWVVRUTFZU2ZpN3d6ZkZVSTFUaU1Ubm5meld6M1dSeUJNYVg1UQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "札幌の生花老舗「明道香風園」の破産手続き開始決定が報じられた段階",
+          "summary": "業歴100年超の札幌の生花老舗「明道香風園」について、破産手続き開始決定と負債約2億8000万円が確認できます。",
+          "latest": "TBS NEWS DIGが同じ破産手続き開始決定を報じています。",
+          "next_watch": "破産手続きの進行や債権者向け手続き、事業継続の有無が続報で示されるか確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpWEpIb1BpS3Ftc2k1Qmx4aU5KVEh0dTdSOV9Ta1FobHMtVHhhMWRwNzBwMkVOVnRJZUNEZ1VEdEZlekNKZ0pCamJaU1lBRFEtNVZFTU8yYVZZc3BhWFVrZTYweldKeWhQUFlWZ9IBckFVX3lxTE5hZEZ0SXJaREw4Q2FOeGVEYzhNNmRyUFU5ZWFMblRnVnRFNjR2Vkx4ZGpJMXBxVHlDRHRzT3lNaW41a1Y0Tk40ckMzMGkyWVVRUTFZU2ZpN3d6ZkZVSTFUaU1Ubm5meld6M1dSeUJNYVg1UQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "明道香風園の破産手続き開始決定",
+                  "existing_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク - Infoseek",
+                  "incoming_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG"
+                },
+                {
+                  "kind": "detail",
+                  "value": "負債約2億8000万円",
+                  "existing_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク - Infoseek",
+                  "incoming_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "明道香風園の破産手続き開始決定",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
+            "quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG"
+          }
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定 冠婚葬祭の簡素化などで需要落ち込み負債約2億8000万円 帝国データバンク - TBS NEWS DIG",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5"
+      ]
+    },
+    {
+      "review_id": "60747072fc4ae38bde1e7c6a",
+      "stage": "event_attachment",
+      "reason": "event_name_unproved",
+      "observed_at": "2026-10-11T20:32:10.887151+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMm1ZbVF6bFpQbUxRRFcteXUxUGo0MEhUMEppS0hqNUxjYWJ0VExrTmpfbEtZTXZweHV1XzBDT3JDdElKSTh4NFhuMHNEajJKQy1Cc3pVd1BwVGVpZ1RHX1NZbnd1c3M?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "ひき逃げ容疑で27歳男が逮捕された段階",
+          "summary": "札幌市豊平区で、迷惑駐車を注意した女性をはねて逃走した疑いで27歳の男が逮捕されたと報じられています。",
+          "latest": "記事タイトル上では、男は容疑について「心当たりない」としている一方、逮捕されたことが確認できます。",
+          "next_watch": "捜査の進展、容疑の裏付け、被害女性のけがの程度や事故状況の追加報道を確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMm1ZbVF6bFpQbUxRRFcteXUxUGo0MEhUMEppS0hqNUxjYWJ0VExrTmpfbEtZTXZweHV1XzBDT3JDdElKSTh4NFhuMHNEajJKQy1Cc3pVd1BwVGVpZ1RHX1NZbnd1c3M?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [],
+          "progress_evidence": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMm1ZbVF6bFpQbUxRRFcteXUxUGo0MEhUMEppS0hqNUxjYWJ0VExrTmpfbEtZTXZweHV1XzBDT3JDdElKSTh4NFhuMHNEajJKQy1Cc3pVd1BwVGVpZ1RHX1NZbnd1c3M?oc=5",
+              "quote": "ひき逃げ事件"
+            },
+            {
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMm1ZbVF6bFpQbUxRRFcteXUxUGo0MEhUMEppS0hqNUxjYWJ0VExrTmpfbEtZTXZweHV1XzBDT3JDdElKSTh4NFhuMHNEajJKQy1Cc3pVd1BwVGVpZ1RHX1NZbnd1c3M?oc=5",
+              "quote": "迷惑駐車注意の女性をはねて逃走した疑い"
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "ひき逃げ事件 迷惑駐車注意の女性をはねて逃走した疑い 27歳男を逮捕「心当たりない」 札幌市豊平区 - TBS NEWS DIG",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9KMm1ZbVF6bFpQbUxRRFcteXUxUGo0MEhUMEppS0hqNUxjYWJ0VExrTmpfbEtZTXZweHV1XzBDT3JDdElKSTh4NFhuMHNEajJKQy1Cc3pVd1BwVGVpZ1RHX1NZbnd1c3M?oc=5"
+      ]
+    },
+    {
+      "review_id": "6a7473fdf528c0369f2ca7a8",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+      "observed_at": "2026-10-11T20:32:10.887151+00:00",
+      "diagnostics": {
+        "target_event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+        "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "札幌で高校生に対する傷害容疑で18歳アルバイトの女と16歳高校生が逮捕された段階",
+          "summary": "札幌で、高校生に対する暴行・傷害容疑で18歳アルバイトの女と16歳高校生が逮捕された件です。河川敷での暴行と公園で煙草の火を押し当てたとする内容が確認できます。",
+          "latest": "同内容の別報道として、同じ傷害容疑での逮捕が伝えられています。",
+          "next_watch": "送検、起訴、容疑認否、被害の詳しい内容や事件の動機に進展があるか確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ORXRsN1VScWszdlFnblgyZ2lRUm9tcFdUa0NOTlRhYjhSVEFtZ2lqOERBQXdSLWtiQk00RDVVUG51anFxMkRkOHlPdm5BaUtQWjZRd2VlRGhrZGtqc1hQU3pxVThLR3hPVEdGUml4cGlHRkdMOXVobTVZY2NwVjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG"
+                },
+                {
+                  "kind": "detail",
+                  "value": "18歳アルバイトの女と16歳高校生",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - Yahoo!ニュース",
+                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG"
+                }
+              ]
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+      ]
+    },
+    {
+      "review_id": "3ac69877958280821570ce11",
+      "stage": "backfill",
+      "reason": "ValueError",
+      "observed_at": "2026-10-11T20:32:10.887151+00:00",
+      "diagnostics": {
+        "target_event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+        "target_event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+      "event_name": null,
+      "article_urls": []
+    }
+  ]
 }
