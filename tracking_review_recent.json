@@ -1,4 +1,262 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "312c0d07908c5a4979863be6",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5",
+      "observed_at": "2026-10-12T23:33:04.020168+00:00",
+      "diagnostics": {
+        "target_event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+        "target_event_name": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ - 47NEWS",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTE10T0pSbTM4cFN1MWgwOEdlUnNzSDNhQmlYMnprRW4yX2FObVFkeEV6bW4xQ3lwRW1Ea0E1dlZxREstV2NIZDlUdHo3VW1TRnczUVNaRlFVdTFUYVVxa3otVXUxRndNOVZubG93?oc=5",
+          "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XcG5PZ1JfU0VYcjhJWUtGWHdHX3NLN2w5b1FBRUplV3Y1TjZqSXFHX1haQzYxaVIyalJHRGtlZmt3aUZuX3YyenVKQQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "控訴審の初公判日程が報じられた段階",
+          "summary": "知床沈没をめぐる控訴審について、12月に初公判が開かれる見通しと札幌高裁が船体を返却することが報じられています。",
+          "latest": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ",
+          "next_watch": "12月初公判が実際に開かれるか、控訴審の進行や船体返却の実施有無を確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5"
+          ],
+          "schedules": [
+            {
+              "label": "12月初公判",
+              "quote": "控訴審は１２月初公判",
+              "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5",
+              "status": "scheduled"
+            }
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFN6TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "知床沈没",
+                  "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ（共同通信） - Yahoo!ニュース",
+                  "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 中日新聞Web"
+                },
+                {
+                  "kind": "detail",
+                  "value": "控訴審は12月初公判",
+                  "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ（共同通信） - Yahoo!ニュース",
+                  "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 中日新聞Web"
+                }
+              ]
+            }
+          ],
+          "progress_evidence": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ - 中日新聞Web",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2VF8zMHYtZVdMMDFmaTNjdzVSeFVFLUpMOXJ4TVVKeEVsWHpsU3RDLUN3ejZlVnlIT2VXV2x6VlBmVm5PY05fVVlaS2xjcnJnX0RiSg?oc=5"
+      ]
+    },
+    {
+      "review_id": "3da3e81ead13ab78b2b97a5c",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
+      "observed_at": "2026-10-12T23:33:04.020168+00:00",
+      "diagnostics": {
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "confidence": "high",
+          "meaningful_change": false,
+          "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
+          "summary": "札幌圏で新タクシーブランド「エゾタク」の運行開始と、江別ハイヤーの全株取得に向けた動きが報じられています。",
+          "latest": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ",
+          "next_watch": "江別ハイヤーの全株取得が完了するか、運行体制やサービス拡大の具体化が続報で確認されるか。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+          ],
+          "schedules": [],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5",
+              "anchors": [
+                {
+                  "kind": "entity",
+                  "value": "エゾタク",
+                  "existing_quote": "東京のスタートアップ企業による新タクシーブランド「エゾタク」北海道で営業開始―運転手減少と観光需要増のミスマッチ解消へ―AI活用で電話応答から配車待ち時間短縮も〈北海道札幌市〉",
+                  "incoming_quote": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ"
+                },
+                {
+                  "kind": "detail",
+                  "value": "札幌圏で営業開始",
+                  "existing_quote": "東京のスタートアップ企業による新タクシーブランド「エゾタク」北海道で営業開始―運転手減少と観光需要増のミスマッチ解消へ―AI活用で電話応答から配車待ち時間短縮も〈北海道札幌市〉",
+                  "incoming_quote": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ"
+                }
+              ]
+            }
+          ],
+          "progress_evidence": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
+              "quote": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ"
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ - 北海道新聞デジタル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+      ]
+    },
+    {
+      "review_id": "487cdcf67bb759592afd8418",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-12T23:33:04.020168+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "meaningful_change": false,
+          "current_stage": "無許可建築物撤去期限まで約1か月の段階",
+          "summary": "札幌市のノースサファリについて、動物の飼育継続と地域との共生を目指す現在地が取材されている。残る220匹を20人で飼育しており、無許可建築物の撤去期限が約1か月後に迫っていると読める。",
+          "latest": "「残る220匹は移籍20人が飼育」「無許可建築物撤去期限まで約1か月」と報じられた。",
+          "next_watch": "撤去期限までに建築物の撤去や動物の移動に実際の進展があるか、地域との共生策が具体化するかを確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5"
+          ],
+          "schedules": [
+            {
+              "label": "無許可建築物撤去期限",
+              "quote": "無許可建築物撤去期限まで約1か月",
+              "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5",
+              "status": "scheduled"
+            }
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5",
+              "existing_url": "",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "北海道アニマルワールド／ノースサファリ",
+                  "existing_quote": "",
+                  "incoming_quote": "【独占取材】「北海道アニマルワールド」語る現在地 残る220匹は移籍20人が飼育「動物に罪はない。守りたい」目標は『地域との共生』無許可建築物撤去期限まで約1か月”ノースサファリ”の今〈北海道札幌市〉（FNNプライムオンライン） - Yahoo!ニュース"
+                },
+                {
+                  "kind": "detail",
+                  "value": "残る220匹は移籍20人が飼育",
+                  "existing_quote": "",
+                  "incoming_quote": "【独占取材】「北海道アニマルワールド」語る現在地 残る220匹は移籍20人が飼育「動物に罪はない。守りたい」目標は『地域との共生』無許可建築物撤去期限まで約1か月”ノースサファリ”の今〈北海道札幌市〉（FNNプライムオンライン） - Yahoo!ニュース"
+                }
+              ]
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "【独占取材】「北海道アニマルワールド」語る現在地 残る220匹は移籍20人が飼育「動物に罪はない。守りたい」目標は『地域との共生』無許可建築物撤去期限まで約1か月”ノースサファリ”の今〈北海道札幌市〉（FNNプライムオンライン） - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE02T2VlT1ZadjBJQlZ5aEM3TXMxN1Q4cmRYOXNnTkRfbkRVN1UtV0RZT3hFY0Y4R0VVdFRadzhBejM2ZHRwSmFRM3hyYU9rRWJOYll3Sy1sbXp6ZDlUUERLVFl6RWJ4WklNRlMxZW5XTXVwZDVFSndVSDdkb3ptN1k?oc=5"
+      ]
+    },
+    {
+      "review_id": "70dc5c9dd6b08e20b15f0567",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-12T23:33:04.020168+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "meaningful_change": false,
+          "current_stage": "JR北海道のダイヤ改正予測が報じられた段階",
+          "summary": "札幌旭川間の特急カムイ・ライラックについて、利用21%減少を受けて大幅減便の可能性を予測する記事です。公開日時とタイトル上では、実際の減便決定や実施は確認できません。",
+          "latest": "2027年以降予定のダイヤ改正予測として、大幅減便の可能性が示されています。",
+          "next_watch": "JR北海道が実際にダイヤ改正を発表し、減便の有無や開始時期が明示されるか確認する。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+          ],
+          "schedules": [
+            {
+              "label": "2027年以降予定のダイヤ改正",
+              "quote": "JR北海道ダイヤ改正予測(2027年以降予定)",
+              "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+              "status": "scheduled"
+            }
+          ],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+      ]
+    }
+  ]
 }
