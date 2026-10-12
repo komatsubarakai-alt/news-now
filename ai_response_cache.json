@@ -6078,5 +6078,955 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "f35e180582afa10e80d0f32447550e33928160159d9b4c892e77add9c9f447d6": {
+    "id": "resp_080b135d6bbeed6d006acc475c3fc087d19aac00f33e1c61b4",
+    "object": "response",
+    "created_at": 1791772508,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772509,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_080b135d6bbeed6d006acc475d105087d1a32b632974ee8d1e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"relation\": \"different\",\n  \"event_name\": \"札幌市豊平区の別々の事件\",\n  \"confidence\": \"high\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1649,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 39,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1688
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "db20489d2993eadfd8e21cf3c5b7d4f12d748ea911901722fe0a2a26d1ab6b25": {
+    "id": "resp_064e4110bb763f6c006acc475d95ac87d18274ca9e863de65d",
+    "object": "response",
+    "created_at": 1791772509,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772510,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_064e4110bb763f6c006acc475e705c87d18b1358608bda6db7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"relation\": \"different\",\n  \"event_name\": \"ノースサファリ撤去問題と盗撮未遂逮捕\",\n  \"confidence\": \"high\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1789,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 43,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1832
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c3f324ee83458d7fa10394695246a9da40ce1276b6673a18a53b2affab8fdf27": {
+    "id": "resp_0845ee3469e8aa17006acc475ee1c487d1aaca28fd1b0cf455",
+    "object": "response",
+    "created_at": 1791772510,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772511,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0845ee3469e8aa17006acc475f576887d1ac1a94d22072df74",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"窃盗事件とひき逃げ事件\",\"confidence\":\"high\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1709,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1736
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "7a21dcb299ac483f6520e8c9b5741ec95346a1402177ba82a706ff7dca263605": {
+    "id": "resp_040b62463822e2ba006acc475fdd8087d1ae1b4fa2ccaec4b5",
+    "object": "response",
+    "created_at": 1791772511,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772512,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_040b62463822e2ba006acc4760439087d1b016f4ce4e7c9689",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"relation\": \"different\",\n  \"event_name\": \"別件の逮捕事件\",\n  \"confidence\": \"high\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1676,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1710
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "2c841620a3c9cd52079819d00c94b864eacfa746e6e787aa9d04e98ae32080e8": {
+    "id": "resp_03496282f3bcc9cf006acc47621ec487d1879f698fa2b978be",
+    "object": "response",
+    "created_at": 1791772514,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772516,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_03496282f3bcc9cf006acc4762850c87d1a5d7e5c4400db2f0",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"confidence\":\"high\",\"event_name\":\"迷惑駐車を注意した女性への衝突・ひき逃げ容疑事件（札幌市豊平区）\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市豊平区\",\"existing_quote\":\"札幌市豊平区\",\"incoming_quote\":\"（北海道ニュースUHB）\"},{\"kind\":\"entity/detail\",\"value\":\"27歳男\",\"existing_quote\":\"27歳男を逮捕\",\"incoming_quote\":\"無職の男(27)を逮捕\"},{\"kind\":\"entity/detail\",\"value\":\"迷惑駐車を注意しようとした女性に衝突・ひき逃げ\",\"existing_quote\":\"迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕\",\"incoming_quote\":\"【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕\"}]}],\"meaningful_change\":false,\"progress_evidence\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1928
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "0efed33e98a08eb09d637c24e1678b89b610022aae81b66d49e20abe1dbe5aef": {
+    "id": "resp_04cb3e0e55d99a6e006acc4764f9f887d1a7681d80d4e6be84",
+    "object": "response",
+    "created_at": 1791772517,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772519,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_04cb3e0e55d99a6e006acc4765c47087d18c164d059d4cb3a1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"confidence\":\"high\",\"event_name\":\"迷惑駐車を注意しようした50代女性をはねて逃走したひき逃げ事件（札幌市豊平区）\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"迷惑駐車を注意した女性をひき逃げした疑い\",\"existing_quote\":\"迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕\",\"incoming_quote\":\"迷惑駐車を注意した女性をひき逃げした疑い\"},{\"kind\":\"entity/detail\",\"value\":\"27歳男\",\"existing_quote\":\"27歳男を逮捕\",\"incoming_quote\":\"27歳無職の男を逮捕\"},{\"kind\":\"entity/detail\",\"value\":\"心当たりない / 心当たりはありません\",\"existing_quote\":\"「心当たりない」\",\"incoming_quote\":\"「心当たりはありません」\"}],\"meaningful_change\":false,\"progress_evidence\":[]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1310,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 503,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1813
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "4b67de0d7701202a7833eb017a450531e7e91b9f600401d227d27a8ef4aad286": {
+    "id": "resp_0676d3bf61de30f6006acc4768c20c87d19f8d02e0cb522c99",
+    "object": "response",
+    "created_at": 1791772520,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772522,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0676d3bf61de30f6006acc4769851087d18d57a07c8a6a00c1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"容疑者が逮捕された段階\",\n  \"summary\": \"札幌市で、リサイクルショップ店員の通報をきっかけに、倉庫侵入と工具窃盗の疑いで30歳の男が逮捕されたと報じられています。\",\n  \"latest\": \"30歳男の逮捕が伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 684,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 139,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 823
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "6c025e1a2b88dc0a71fcb23214ee8f2cee110138d39e643df386253713e37ad8": {
+    "id": "resp_0860d7d5ee955d05006acc476a62b887d18e22b8501c4f84bd",
+    "object": "response",
+    "created_at": 1791772522,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772523,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0860d7d5ee955d05006acc476af5ac87d19c212970f8c8d881",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"high\",\n  \"current_stage\": \"暴力団関与の疑いで捜査中\",\n  \"summary\": \"札幌市で、875万円の融資を受けようとした詐欺未遂事件について、暴力団の関与があるとみて捜査が進められており、暴力団事務所への家宅捜索が行われたと報じられています。\",\n  \"latest\": \"暴力団事務所に家宅捜索が入ったことが確認できます。\",\n  \"next_watch\": \"捜査の進展、関係者の特定、逮捕や送検の有無、詐欺未遂事件と暴力団の関係性の解明が注目されます。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 687,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 884
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c32fd28f11d59eae0b266b9d7ff30accd1e5a1262011b7676d5a111332d60ad5": {
+    "id": "resp_0d82383d9b162d83006acc476c0bec87d18048c25e16228e67",
+    "object": "response",
+    "created_at": 1791772524,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772524,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0d82383d9b162d83006acc476c69c887d18ca070ac23ee0ed5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"企業・組織\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"ホテル開業\",\n  \"summary\": \"ハイアットの札幌初進出となる「ハイアット セントリック 札幌」が開業したことが、公開日時付きの記事タイトルから確認できます。\",\n  \"latest\": \"2026年10月10日公開の記事で、同ホテルの開業が報じられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 839,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 133,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 972
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "43caa20024a8d8e5485fbd219c9f3cde1d2327e30a938df3589441980ab25af7": {
+    "id": "resp_0d5e1780a9f2b257006acc476d3d7487d1823211ac3e2f123a",
+    "object": "response",
+    "created_at": 1791772525,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1791772526,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0d5e1780a9f2b257006acc476dd19887d1a31a1dc741068e1f",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"店舗オープンの紹介\",\n  \"summary\": \"札幌・澄川におでん酒場「ちょいおでん」がオープンしたことを伝える記事です。記事タイトルからは、ハモだしのおでんを看板にした新店舗の紹介であることが分かります。\",\n  \"latest\": \"2026年10月9日公開の記事で、新店舗「ちょいおでん」の紹介が報じられました。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 677,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 156,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 833
+    },
+    "user": null,
+    "metadata": {}
   }
 }
