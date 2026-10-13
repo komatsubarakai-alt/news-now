@@ -289,7 +289,7 @@ function render() {
     card.append(element('span', lifecycleLabels[event.lifecycle || 'active'] || '確認中', 'event-label'),
       element('span', ' ' + event.category, 'description'), element('h2', event.event_name || '名称未設定'));
     const count = (event.articles || []).length;
-    card.appendChild(element('div', '最終進展（システム確認・記録）：' + progressDateTime(event) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
+    card.appendChild(element('div', ((event.progress_history || []).length ? '最終進展（システム確認・記録）：' : '進展未確認／初回・編集記録：') + progressDateTime(event) + ' ／ ' + count + '件の関連記事 ／ 進展' + (event.progress_count || 0) + '回', 'count'));
     const box = element('div', undefined, 'status-box');
     box.append(element('strong', '📍 現在地：' + (event.current_stage || '確認中')), element('p', event.summary || '確認中'),
       element('strong', '最新の動き'), element('p', event.latest || '確認中'), element('strong', '次に注目'), element('p', event.next_watch || '確認中'));
@@ -309,6 +309,10 @@ function render() {
         const end = plan.due_end && new Date(plan.due_end + 'T23:59:59+09:00');
         if (plan.status === 'scheduled' && end && end < new Date()) label = '予定時期を経過・実施確認待ち';
         item.append(element('span', plan.label + ' — ' + label + '：'), safeLink(plan.source_url, plan.date_text));
+        if (plan.due_start && plan.due_end) {
+          item.append(' ／ 予定範囲：' + plan.due_start + (plan.due_start === plan.due_end ? '' : '～' + plan.due_end));
+        }
+        if (plan.date_confirmation) item.append(' ', safeLink(plan.date_confirmation.source_url, '日付の確認資料'));
         plans.appendChild(item);
       }
       card.appendChild(plans);
@@ -316,7 +320,9 @@ function render() {
     if ((event.progress_history || []).length) {
       const details = element('details'); details.appendChild(element('summary', '出来事の進展を見る（' + event.progress_history.length + '回）'));
       for (const change of event.progress_history) {
-        const item = element('p', formatDate(change.at) + '：' + change.stage + ' — ' + (change.latest || ''));
+        const item = element('p', formatDateTime(change.at) + '：' + change.stage + ' — ' + (change.latest || ''));
+        if (change.source_at) item.append(' ／ 根拠記事公開：' + formatDateTime(change.source_at));
+        for (const proof of change.progress_evidence || []) item.append(' ／ 引用：' + proof.quote);
         for (const url of change.evidence_urls || []) item.append(' ', safeLink(url, '根拠記事'));
         details.appendChild(item);
       }

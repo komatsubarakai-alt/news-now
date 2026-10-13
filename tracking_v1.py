@@ -68,6 +68,11 @@ def migrate(event, now):
     event.setdefault('progress_history', [])
     event.setdefault('schedules', [])
     event['schedules'] = [s for s in event['schedules'] if scheduled_quote_plausible(s)]
+    for schedule in event['schedules']:
+        if schedule.get('precision') == 'unknown' and '年度' in schedule.get('date_text', ''):
+            start, end, precision = schedule_bounds(schedule['date_text'], schedule.get('published'))
+            if precision == 'fiscal_year':
+                schedule.update(due_start=start, due_end=end, precision=precision)
     event.setdefault('last_progress_at', event.get('updated_at', event.get('created_at', now.isoformat())))
     event['articles'] = deduplicate(event.get('articles', []))
     event['article_count'] = len(event['articles'])
@@ -76,9 +81,17 @@ def migrate(event, now):
 
 
 def event_text(event):
-    from merge_safety import source_context
+    from merge_safety import source_context, article_content, normalized
+    sources, seen = [], set()
+    for article in deduplicate(event.get('articles', [])[:4] + event.get('articles', [])[-12:]):
+        context = source_context(article)
+        key = re.sub(r'\s+', '', normalized(article_content(article).split('\n', 1)[0] + '\n' + context['description']))
+        if key in seen:
+            continue
+        seen.add(key)
+        sources.append(context)
     return {key: event.get(key) for key in ('event_id', 'event_name', 'category', 'current_stage', 'summary', 'lifecycle') } | {
-        'articles': [source_context(a) for a in deduplicate(event.get('articles', [])[:4] + event.get('articles', [])[-12:])],
+        'articles': sources,
         'schedules': event.get('schedules', [])}
 
 
@@ -109,6 +122,10 @@ def schedule_bounds(quote, published):
     """Only explicit dates. Preserve month/year precision instead of inventing a day."""
     text = unicodedata.normalize('NFKC', quote)
     if '年度' in text:
+        match = re.search(r'(\d{4})年度', text)
+        if match and 1 <= int(match.group(1)) <= 9998:
+            year = int(match.group(1))
+            return f'{year:04d}-04-01', f'{year+1:04d}-03-31', 'fiscal_year'
         return None, None, 'unknown'
     match = re.search(r'(?:(\d{4})年)?(\d{1,2})月(?:(\d{1,2})日)?', text)
     if match:
@@ -169,32 +186,61 @@ def merge_schedules(event, items, articles):
 
 def apply_report(event, articles, report, now, initial=False):
     """Attach reporting without changing current stage on duplicates or older backfill."""
-    from merge_safety import validate_update
+    from merge_safety import validate_update, article_content, normalized
+    from pending_triage import source_saved
     validate_update(event, deduplicate(articles), report, initial=initial)
     migrate(event, now)
-    before_urls = {a['url'] for a in event['articles']}
-    additions = [a for a in deduplicate(articles) if a['url'] not in before_urls]
+    prior_articles = copy.deepcopy(event['articles'])
+    before_sources = {a['url']: a for a in prior_articles}
+    additions = [a for a in deduplicate(articles) if not source_saved(a, before_sources)]
     prior_latest = date_time(event.get('last_progress_source_at')) if event['articles'] else None
-    event['articles'] = deduplicate(event['articles'] + articles)
+    for article in additions:
+        if article['url'] in before_sources:
+            event.setdefault('source_revisions', []).append({
+                'observed_at': now.isoformat(), 'article': copy.deepcopy(before_sources[article['url']])})
+    latest_sources = {a['url']: a for a in prior_articles + deduplicate(articles)}
+    event['articles'] = deduplicate(list(latest_sources.values()))
     event['article_count'] = len(event['articles'])
     event['source_article_count'] = max(event.get('source_article_count', 0), event['article_count'])
     if additions:
         event['last_article_added_at'] = now.isoformat()
     trusted = report.get('confidence') == 'high' and evidence(report, articles)
-    fresh_evidence = [a for a in articles if a['url'] in report.get('evidence_urls', []) and
-                      date_time(a.get('published')) and (prior_latest is None or date_time(a['published']) >= prior_latest)]
-    progress = trusted and report.get('meaningful_change') is True and bool(fresh_evidence) and bool(additions)
+    # Progress must be quoted in a changed source, not a previously attached URL.
+    # Registered-before reporting enriches history without becoming new progress.
+    registered = date_time(event.get('created_at'))
+    changed = {a['url']: a for a in additions}
+    supporting = []
+    for proof in report.get('progress_evidence', []) if isinstance(report.get('progress_evidence', []), list) else []:
+        if not isinstance(proof, dict):
+            continue
+        article = changed.get(proof.get('url'))
+        quote = proof.get('quote')
+        if not article or article['url'] not in report.get('evidence_urls', []) or not isinstance(quote, str) or not quote.strip():
+            continue
+        stamp = date_time(article.get('published'))
+        if not stamp or (prior_latest and stamp < prior_latest) or (registered and stamp < registered):
+            continue
+        if quote not in article_content(article):
+            continue
+        # Exact already-known facts cannot advance even if AI says true.
+        if any(normalized(quote).strip() in normalized(article_content(old)) for old in prior_articles):
+            continue
+        supporting.append({'url': article['url'], 'quote': quote, 'published': stamp.isoformat()})
+    progress = trusted and report.get('meaningful_change') is True and bool(supporting)
     if initial or progress:
         for field in ('current_stage', 'summary', 'latest', 'next_watch'):
             if isinstance(report.get(field), str) and report[field].strip():
                 event[field] = report[field].strip()
         event['updated_at'] = now.isoformat()
         event['last_progress_at'] = now.isoformat()
-        event['last_progress_source_at'] = max((date_time(a.get('published')) for a in articles if date_time(a.get('published'))), default=now).isoformat()
+        event['last_progress_source_at'] = (max(date_time(p['published']) for p in supporting) if progress and not initial else
+                                            max((date_time(a.get('published')) for a in articles if date_time(a.get('published'))), default=now)).isoformat()
         if progress and not initial:
             event['progress_count'] += 1
             event['progress_history'].append({'at': now.isoformat(), 'stage': event.get('current_stage', ''),
-                                              'latest': event.get('latest', ''), 'evidence_urls': report['evidence_urls']})
+                                              'latest': event.get('latest', ''), 'source_at': event['last_progress_source_at'],
+                                              'progress_evidence': [{'url': p['url'], 'quote': p['quote']} for p in supporting],
+                                              'evidence_urls': list(dict.fromkeys(p['url'] for p in supporting))})
         if event['lifecycle'] != 'active':
             event.setdefault('lifecycle_history', []).append({'at': now.isoformat(), 'from': event['lifecycle'], 'to': 'active'})
         event['lifecycle'] = 'active'

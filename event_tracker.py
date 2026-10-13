@@ -37,13 +37,13 @@ def load(path, default):
 
 
 def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
-    from pending_triage import preflight, observe, failure_status, group_key
+    from pending_triage import preflight, observe, failure_status, group_key, source_saved
     reviews = reviews if reviews is not None else []
     triage = triage if triage is not None else {}
     pending, deferred, attempted = [], [], 0
     registry = load_corrections()
     for group in groups:
-        known = {a['url'] for e in events for a in e.get('articles', [])}
+        known = {a['url']: a for e in events for a in e.get('articles', [])}
         status = preflight(group, known, registry, triage)
         if status:
             reason = triage.get(group_key(group), {}).get('reason', status) if status == 'manual_review' else status
@@ -55,7 +55,7 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
             deferred.append(group)
             continue
         articles = deduplicate(group.get('articles', []))
-        fresh = [a for a in articles if a['url'] not in known]
+        fresh = [a for a in articles if not source_saved(a, known)]
         eligible = [e for e in events if e.get('publication_status') != 'held']
         report, target = None, None
         attempted += 1
@@ -64,6 +64,10 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
             if report.get('confidence') != 'high' or not evidence(report, fresh):
                 raise UpdateHeld('uncertain_or_invalid_evidence')
             target = next((e for e in eligible if e.get('event_id') == report.get('event_id')), None)
+            revised_urls = {a['url'] for a in fresh if a['url'] in known}
+            if revised_urls and (report.get('relation') != 'same_event' or not target or
+                                 not revised_urls.issubset({a['url'] for a in target.get('articles', [])})):
+                raise UpdateHeld('source_revision_target_requires_review')
             if report.get('relation') == 'same_event' and target:
                 candidate = copy.deepcopy(target)
                 apply_report(candidate, fresh, report, now)
@@ -113,8 +117,9 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
 
 def _lookup_event(event, ai, query, now, historical=False, finder=search):
     candidates = [a for a in deduplicate(finder(query)) if not excluded(a, load_corrections())]
-    known = {a['url'] for a in event['articles']}
-    candidates = [a for a in candidates if a['url'] not in known and date_time(a.get('published'))]
+    from pending_triage import source_saved
+    known = {a['url']: a for a in event['articles']}
+    candidates = [a for a in candidates if not source_saved(a, known) and date_time(a.get('published'))]
     if historical:
         oldest = min((date_time(a.get('published')) for a in event['articles'] if date_time(a.get('published'))), default=None)
         candidates = [a for a in candidates if oldest and date_time(a['published']) < oldest]
@@ -240,6 +245,8 @@ def main():
     protect_existing(events, registry)
     for event in events:
         migrate(event, now)
+    from schedule_evidence import apply_verified_dates
+    apply_verified_dates(events, now)
     # Persist failures so the next RSS window cannot silently drop unprocessed news.
     from pending_triage import current_groups
     from queue_policy import prioritize_groups
@@ -251,6 +258,7 @@ def main():
     snapshot = {e['event_id']: copy.deepcopy(e) for e in events}
     pending = merge_incoming(events, unique, ai, now, reviews, triage)
     enrich(events, ai, now, reviews=reviews)
+    apply_verified_dates(events, now)
     update_lifecycle(events, now)
     safe = []
     for event in events:

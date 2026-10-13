@@ -47,7 +47,7 @@ def triage_articles(articles, events, statuses, state, now):
         mark = article_fingerprint(a)
         prior = state.setdefault(key, {'first_seen_at': now.isoformat(), 'source_history': []})
         if prior.get('source_fingerprint') not in (None, mark):
-            prior['source_history'].append({'article': copy.deepcopy(prior['article']),
+            prior.setdefault('source_history', []).append({'article': copy.deepcopy(prior['article']),
                 'status': prior['status'], 'reason': prior['reason'], 'last_seen_at': prior['last_seen_at']})
             prior['first_seen_at'] = now.isoformat()
         status, reason = 'queued', 'needs_classification'
@@ -104,7 +104,7 @@ def retain_group(state, group, status, reason, now, decision=False):
     entry = state.setdefault(key, {'first_seen_at': now.isoformat(), 'decision_attempts': 0, 'source_history': []})
     mark = fingerprint(group)
     if entry.get('source_fingerprint') not in (None, mark):
-        entry['source_history'].append({'group': copy.deepcopy(entry['group']), 'status': entry['status'], 'reason': entry['reason']})
+        entry.setdefault('source_history', []).append({'group': copy.deepcopy(entry['group']), 'status': entry['status'], 'reason': entry['reason']})
         entry['decision_attempts'] = 0
         entry['first_seen_at'] = now.isoformat()
     entry.update(group=copy.deepcopy(group), source_fingerprint=mark, status=status,
