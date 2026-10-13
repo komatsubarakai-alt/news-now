@@ -27,6 +27,9 @@ env:
   MERGE_CALL_LIMIT: "2"
   STATUS_GROUP_LIMIT: "4"
   TRACKING_CALL_LIMIT: "8"
+  AI_TRACKING_DAILY_RESERVED_USD: "0.10"
+  AI_TRACKING_DAILY_RESERVED_CALLS: "16"
+  AI_TRACKING_RUN_RESERVED_CALLS: "4"
 
 jobs:
   collect:
@@ -107,6 +110,7 @@ jobs:
       - name: Track long-term events
         if: steps.ai_gate.outputs.enabled == 'true'
         env:
+          AI_PROCESSING_STAGE: "tracking"
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python event_tracker.py

@@ -43,8 +43,19 @@ def article_content(article):
 
 
 def source_context(article):
+    content = article_content(article)
+    headline, description = content.split('\n', 1)
+    rss_source = article.get('rss_source')
+    publisher = rss_source.get('name', '') if isinstance(rss_source, dict) else ''
+    if not publisher:
+        suffix = re.split(r'\s+[-｜|]\s+', article.get('title', ''))
+        publisher = suffix[-1] if len(suffix) > 1 else ''
+    compact = lambda value: re.sub(r'\s+', '', normalized(value))
+    # Standard RSS repeats only heading + publisher; retain real extra facts.
+    if compact(description) in {compact(headline), compact(headline + publisher)}:
+        description = ''
     return {k: article.get(k, '') for k in ('title', 'url', 'published')} | {
-        'description': article_content(article).split('\n', 1)[1][:1800]}
+        'description': description[:1800]}
 
 
 def domains(text):
@@ -104,7 +115,7 @@ def validate_identity(existing, incoming, report):
     if not isinstance(matches, list):
         raise UpdateHeld('identity_schema')
     for article in incoming:
-        if article['url'] in old:
+        if article['url'] in old and article_content(article) == article_content(old[article['url']]):
             continue
         proved = False
         for match in matches:

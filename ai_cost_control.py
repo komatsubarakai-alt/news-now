@@ -87,12 +87,30 @@ def reserve(prompt, model, output_limit):
             raise BudgetExceeded('daily_budget_deferred')
         if monthly['reserved_micro_usd'] + amount > usd_limit('AI_MONTHLY_USD_LIMIT', '5.00'):
             raise BudgetExceeded('monthly_budget_deferred')
+        stage = os.environ.get('AI_PROCESSING_STAGE', 'upstream')
+        if stage not in {'upstream', 'tracking'}:
+            raise BudgetExceeded('invalid_processing_stage')
+        # Protect a share of the existing total; this never raises global caps.
+        if stage == 'upstream':
+            protected_usd = max(0, usd_limit('AI_TRACKING_DAILY_RESERVED_USD', '0') - day.get('tracking_micro_usd', 0))
+            protected_daily = max(0, int(os.environ.get('AI_TRACKING_DAILY_RESERVED_CALLS', '0')) - day.get('tracking_calls', 0))
+            protected_run = max(0, int(os.environ.get('AI_TRACKING_RUN_RESERVED_CALLS', '0')) - run.get('tracking_calls', 0))
+            if day['reserved_micro_usd'] + amount > usd_limit('AI_DAILY_USD_LIMIT', '0.20') - protected_usd:
+                raise BudgetExceeded('tracking_reserved_budget_deferred')
+            if (day['calls'] + 1 > int(os.environ.get('AI_DAILY_CALL_LIMIT', '40')) - protected_daily or
+                run['calls'] + 1 > int(os.environ.get('AI_RUN_CALL_LIMIT', '24')) - protected_run):
+                raise BudgetExceeded('tracking_reserved_calls_deferred')
         for record in (day, monthly):
             record['reserved_micro_usd'] += amount
             record['calls'] += 1
+            if stage == 'tracking':
+                record['tracking_micro_usd'] = record.get('tracking_micro_usd', 0) + amount
+                record['tracking_calls'] = record.get('tracking_calls', 0) + 1
         run['calls'] += 1
+        if stage == 'tracking':
+            run['tracking_calls'] = run.get('tracking_calls', 0) + 1
         state['last_request_at'] = now().isoformat()
-    return date, month, amount
+    return date, month, amount, stage
 
 
 def settle(reservation, payload):
@@ -101,10 +119,12 @@ def settle(reservation, payload):
     if not isinstance(inp, int) or not isinstance(out, int) or inp < 0 or out < 0:
         return  # unknown usage: keep full reserved cost
     actual = int((inp * INPUT_RATE + out * OUTPUT_RATE).to_integral_value(rounding='ROUND_CEILING'))
-    date, month, reserved = reservation
+    date, month, reserved, stage = reservation
     with ledger() as state:
         for record in (state['days'][date], state['months'][month]):
             record['reserved_micro_usd'] += actual - reserved
+            if stage == 'tracking':
+                record['tracking_micro_usd'] += actual - reserved
         if actual > reserved:
             state['billing_blocked'] = {'code': 'reservation_overrun', 'at': now().isoformat()}
 

@@ -61,10 +61,10 @@ def preflight(group, known, registry, state):
     sources = group.get('articles', [])
     if not sources or any(not safe_url(a.get('url')) or not a.get('title') for a in sources):
         return 'invalid_source'
-    if all(a['url'] in known for a in sources):
-        return 'already_saved'
-    if any(excluded(a, registry) for a in sources if a['url'] not in known):
+    if any(excluded(a, registry) for a in sources):
         return 'editorial_hold'
+    if all(source_saved(a, known) for a in sources):
+        return 'already_saved'
     if group.get('category') not in CATEGORIES:
         return 'out_of_scope'
     if group.get('tracking_value') == 'low':
@@ -91,8 +91,19 @@ def failure_status(reason):
 
 
 def summary(state, pending):
-    active_keys = {group_key(g) for g in pending}
-    counts = Counter(state[k]['status'] for k in active_keys if k in state)
+    counts = Counter(state.get(group_key(g), {}).get('status', 'unobserved') for g in pending)
+    active = sum(v for k, v in counts.items() if k not in ARCHIVED)
     return {'queue_counts': dict(counts), 'queue_count': len(pending),
+            'processing_wait_count': active,
+            'archived_in_pending_count': len(pending) - active,
+            'unobserved_pending_count': counts.get('unobserved', 0),
             'retained_group_count': len(state),
             'retained_counts': dict(Counter(x['status'] for x in state.values()))}
+
+
+def source_saved(article, known):
+    """Compatibility for callers with URL sets; runtime supplies source snapshots."""
+    if not isinstance(known, dict):
+        return article['url'] in known
+    prior = known.get(article['url'])
+    return prior is not None and fingerprint({'articles': [prior]}) == fingerprint({'articles': [article]})

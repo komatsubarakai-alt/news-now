@@ -15,7 +15,7 @@ def build_health(now):
     status_state = read('status_triage.json', {'items': {}})['items']
     tracking = read('tracking_triage.json', {'items': {}})['items']
     events = read('events.json', [])
-    known = {a['url'] for e in events for a in e.get('articles', [])}
+    known = {a['url']: a for e in events for a in e.get('articles', [])}
     registry = load_corrections()
     inbox = [a for a in read('news_inbox.json', [])
              if collection.get(a.get('url'), {}).get('status', 'queued') == 'queued']
@@ -74,6 +74,8 @@ def build_health(now):
               'daily_accounted_usd': daily.get('reserved_micro_usd', 0) / 1_000_000,
               'monthly_accounted_usd': monthly.get('reserved_micro_usd', 0) / 1_000_000,
               'daily_network_calls': daily.get('calls', 0), 'alerts': alerts,
+              'daily_tracking_network_calls': daily.get('tracking_calls', 0),
+              'daily_tracking_accounted_usd': daily.get('tracking_micro_usd', 0) / 1_000_000,
               'note': 'Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment.'}
     atomic_save('queue_monitor_state.json', {'first_seen': seen, 'history': history})
     return health
