@@ -5,12 +5,14 @@ from ai_cost_control import response, json_answer, BudgetExceeded, cached
 with open("ai_candidates.json", "r", encoding="utf-8") as f:
     candidates = json.load(f)
 
-from merge_safety import IDENTITY_RULES, source_context
+from merge_safety import IDENTITY_RULES, source_context, response_format
 
 results = []
 new_calls = 0
 
 for index, candidate in enumerate(candidates):
+    source_a = source_context(candidate['article_a'])
+    source_b = source_context(candidate['article_b'])
     prompt = f"""
 次の2つのニュース記事が、同じ事件・出来事、または同じ出来事から直接続いている続報かを判定してください。
 
@@ -24,28 +26,24 @@ for index, candidate in enumerate(candidates):
 単に同じ地域・人物・テーマを扱っているだけの場合は、同じ追跡対象にしないでください。
 
 【記事A】
-タイトル: {candidate["article_a"]["title"]}
+タイトル: {source_a["title"]}
 公開日時: {candidate["article_a"]["published"]}
 
 【記事B】
-タイトル: {candidate["article_b"]["title"]}
+タイトル: {source_b["title"]}
 公開日時: {candidate["article_b"]["published"]}
-
-以下のJSONだけを返してください。
-{{
-  "relation": "same_event / related / different",
-  "event_name": "事件・出来事の短い名前",
-  "confidence": "high / medium / low"
-}}
 
 same_event = 同じ事件・出来事、またはその出来事から直接続く続報。時間が経過していても、同じ案件の逮捕・起訴・裁判・被害判明・復旧などはsame_event
 related = 同じテーマや地域などの関連はあるが、追跡すべき出来事としては別
 different = 無関係
+relationはsame_event、related、different、uncertainのいずれか、confidenceはhigh、medium、lowのいずれか。
+same_eventの場合は記事Aを既存、記事Bを新記事としたidentity_matchesを必須とする。曖昧ならuncertain。
 """
 
-    prompt += "\n" + IDENTITY_RULES + "\n" + json.dumps({
-        "existing": source_context(candidate["article_a"]),
-        "incoming": source_context(candidate["article_b"])
+    prompt += "\n" + IDENTITY_RULES + "\n" + response_format({
+        'relation': 'uncertain', 'event_name': '', 'confidence': 'low', 'identity_matches': []}) + "\n" + json.dumps({
+        "existing": source_a,
+        "incoming": source_b
     }, ensure_ascii=False)
 
     try:
