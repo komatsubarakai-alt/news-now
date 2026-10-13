@@ -6,8 +6,10 @@ from pathlib import Path
 from merge_safety import review, save_reviews
 from tracking_v1 import atomic_save
 from ai_cost_control import response, json_answer, BudgetExceeded
-from queue_policy import read, prioritize_groups, retain_group, pause_reason, already_saved_group
+from queue_policy import (read, prioritize_groups, retain_group, pause_reason,
+                          already_saved_group, tracking_classification_index, pending_reference)
 from pending_triage import group_key
+from pending_triage import fingerprint as source_fingerprint
 from datetime import datetime, timezone
 
 
@@ -33,6 +35,7 @@ def fingerprint(group):
 saved_events = read('events.json', [])
 statuses = json.loads(Path('news_status.json').read_text(encoding='utf-8')) if Path('news_status.json').exists() else []
 known_statuses = {fingerprint(status) for status in statuses}
+tracking_waiting = tracking_classification_index(read('tracking_pending.json', []))
 attempted = 0
 VALID_CATEGORIES = {
     "事件・事故",
@@ -71,6 +74,12 @@ def normalize_category(category):
 for index, group in enumerate(groups):
 
     if fingerprint(group) in known_statuses or already_saved_group(group, saved_events):
+        continue
+    destination = tracking_waiting.get((group.get('event_name'), source_fingerprint(group)))
+    if destination is not None:
+        retain_group(stage_state['items'], group, 'tracking_waiting',
+                     'unchanged_tracking_source', now,
+                     downstream_waiting=[pending_reference(destination, 'tracking')])
         continue
     reason = pause_reason(group, stage_state['items'])
     if reason:
