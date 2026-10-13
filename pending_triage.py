@@ -6,7 +6,7 @@ from collections import Counter
 from tracking_v1 import CATEGORIES
 
 ARCHIVED = {'already_saved', 'out_of_scope', 'low_priority', 'editorial_hold',
-            'manual_review', 'invalid_source'}
+            'manual_review', 'invalid_source', 'operator_excluded'}
 
 
 def group_key(group):
@@ -70,6 +70,8 @@ def preflight(group, known, registry, state):
     if group.get('tracking_value') == 'low':
         return 'low_priority'
     prior = state.get(group_key(group), {})
+    if prior.get('status') == 'operator_excluded' and prior.get('source_fingerprint') == fingerprint(group):
+        return 'operator_excluded'
     if prior.get('status') == 'manual_review' and prior.get('source_fingerprint') == fingerprint(group):
         return 'manual_review'
     return None
