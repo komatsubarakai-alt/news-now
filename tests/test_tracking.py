@@ -138,7 +138,7 @@ class TrackingTests(unittest.TestCase):
         self.assertEqual(schedule_bounds('2033年開業予定', '')[2], 'year')
         self.assertEqual(schedule_bounds('来春開業', '')[2], 'unknown')
         self.assertEqual(schedule_bounds('11月に初公判', '')[2], 'unknown')
-        self.assertEqual(schedule_bounds('2031年度着工', '')[2], 'unknown')
+        self.assertEqual(schedule_bounds('2031年度着工', ''), ('2031-04-01', '2032-03-31', 'fiscal_year'))
 
     def test_invalid_schedule_dates(self):
         self.assertEqual(schedule_bounds('2026年13月40日', '')[2], 'unknown')
@@ -155,7 +155,7 @@ class TrackingTests(unittest.TestCase):
         e = event(); a = article('２０３１年度着工へ')
         merge_schedules(e, [{'label': '着工', 'quote': a['title'], 'source_url': a['url']}], [a])
         self.assertEqual(len(e['schedules']), 1)
-        self.assertEqual(e['schedules'][0]['precision'], 'unknown')
+        self.assertEqual(e['schedules'][0]['precision'], 'fiscal_year')
 
     def test_schedules_require_actual_source_quote(self):
         e = event(); a = article('2026年11月15日 初公判予定')
