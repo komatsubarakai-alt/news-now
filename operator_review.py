@@ -27,6 +27,12 @@ def target_digest(event):
                    ('event_id', 'event_name', 'category', 'publication_status', 'articles')})
 
 
+def review_revision(item):
+    return digest({'status': item.get('status'), 'reason': item.get('reason'),
+                   'attempts': item.get('decision_attempts'),
+                   'previous_decision_id': item.get('operator_review', {}).get('decision_id')})
+
+
 def read(root, name, default):
     path = Path(root) / name
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else default
@@ -49,6 +55,7 @@ def build_snapshot(root, now=None):
     for row in inventory['manual_reviews']:
         item = state[row['review_key']]
         rows.append({**row, 'group_hash': digest(item['group']),
+                     'review_revision': review_revision(item),
                      'source_fingerprint': fingerprint(item['group']),
                      'event_name': item['group'].get('event_name', ''),
                      'category': item['group'].get('category', ''),
@@ -90,6 +97,8 @@ def validate_decisions(document, events, state, registry, require_manual=True):
         item = state.get(key)
         if not item or (require_manual and item.get('status') != 'manual_review'):
             raise ValueError(f'{key}: 手動確認待ちではありません。画面を作り直してください')
+        if row.get('review_revision') != review_revision(item):
+            raise ValueError(f'{key}: 保留の状態が変わっています。画面を作り直してください')
         group = item.get('group', {})
         if group_key(group) != key or row.get('source_fingerprint') != fingerprint(group) or row.get('group_hash') != digest(group):
             raise ValueError(f'{key}: 記事が更新されています。再確認してください')
@@ -110,7 +119,7 @@ def validate_decisions(document, events, state, registry, require_manual=True):
         elif row.get('event_id') or row.get('target_hash'):
             raise ValueError(f'{key}: 既存イベント以外の判断に対象IDは指定できません')
         result = {k: row.get(k) for k in
-                  ('review_key', 'source_fingerprint', 'group_hash', 'action', 'event_id', 'target_hash')}
+                  ('review_key', 'source_fingerprint', 'group_hash', 'review_revision', 'action', 'event_id', 'target_hash')}
         result['note'] = note.strip()
         result['decision_id'] = digest(result)
         validated.append(result)
