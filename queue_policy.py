@@ -5,7 +5,7 @@ import json
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from tracking_v1 import atomic_save, date_time
+from tracking_v1 import CATEGORIES, atomic_save, date_time, safe_url
 from pending_triage import group_key, fingerprint
 
 # A safety/progress signal always overrides an entertainment/sports signal.
@@ -19,6 +19,69 @@ PROGRESS = re.compile(r'起訴|判決|控訴|復旧|施行|開業|逮捕|捜査|
 def article_fingerprint(article):
     data = {k: article.get(k, '') for k in ('url', 'title', 'description', 'published')}
     return hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def pending_articles(group):
+    """Only actual, well-formed queue sources can own an upstream revision."""
+    articles = group.get('articles', []) if isinstance(group, dict) else []
+    if not isinstance(articles, list) or not articles or any(
+            not isinstance(a, dict) or not safe_url(a.get('url')) or not a.get('title') or
+            any(not isinstance(a.get(k, ''), str) for k in ('title', 'description', 'published'))
+            for a in articles):
+        return []
+    return articles
+
+
+def valid_classification(group):
+    return (bool(pending_articles(group)) and
+            isinstance(group.get('event_name'), str) and bool(group['event_name'].strip()) and
+            isinstance(group.get('category'), str) and
+            isinstance(group.get('tracking_value'), str) and
+            group.get('category') in CATEGORIES | {'対象外'} and
+            group.get('tracking_value') in {'high', 'medium', 'low'})
+
+
+def pending_reference(group, stage):
+    return {'stage': stage, 'group_key': group_key(group),
+            'source_fingerprint': fingerprint(group)}
+
+
+def set_downstream_waiting(record, references):
+    previous = record.get('downstream_waiting', [])
+    if previous and previous != references:
+        record.setdefault('downstream_history', []).append({
+            'source_fingerprint': record.get('source_fingerprint'),
+            'references': copy.deepcopy(previous)})
+    if references:
+        record['downstream_waiting'] = copy.deepcopy(references)
+    else:
+        record.pop('downstream_waiting', None)
+
+
+def downstream_article_index(status_pending=(), tracking_pending=()):
+    """References only; never move sources or prove that different articles match."""
+    index = {}
+    for stage, groups in (('status_generation', status_pending), ('tracking', tracking_pending)):
+        for group in groups:
+            if stage == 'tracking' and not valid_classification(group):
+                continue
+            for article in pending_articles(group):
+                references = index.setdefault(article_fingerprint(article), [])
+                reference = pending_reference(group, stage)
+                if reference not in references:
+                    references.append(reference)
+    return index
+
+
+def tracking_classification_index(groups):
+    """Reuse only a whole unchanged group with the same name and unambiguous labels."""
+    candidates = {}
+    for group in groups:
+        if valid_classification(group):
+            key = (group['event_name'], fingerprint(group))
+            candidates.setdefault(key, []).append(group)
+    return {key: matches[0] for key, matches in candidates.items()
+            if len({(g['category'], g['tracking_value']) for g in matches}) == 1}
 
 
 def obvious_out_of_scope(article):
@@ -37,10 +100,12 @@ def read(path, default):
     return json.loads(Path(path).read_text(encoding='utf-8')) if Path(path).exists() else default
 
 
-def triage_articles(articles, events, statuses, state, now):
+def triage_articles(articles, events, statuses, state, now, *,
+                    status_pending=(), tracking_pending=()):
     """Return AI input while retaining every source, reason and changed revision."""
     saved = {article_fingerprint(a) for e in events for a in e.get('articles', [])}
     classified = {article_fingerprint(a): s for s in statuses for a in s.get('articles', [])}
+    downstream = downstream_article_index(status_pending, tracking_pending)
     accepted = []
     for a in articles:
         key = a.get('url') or article_fingerprint(a)
@@ -48,8 +113,10 @@ def triage_articles(articles, events, statuses, state, now):
         prior = state.setdefault(key, {'first_seen_at': now.isoformat(), 'source_history': []})
         if prior.get('source_fingerprint') not in (None, mark):
             prior.setdefault('source_history', []).append({'article': copy.deepcopy(prior['article']),
-                'status': prior['status'], 'reason': prior['reason'], 'last_seen_at': prior['last_seen_at']})
+                'status': prior['status'], 'reason': prior['reason'], 'last_seen_at': prior['last_seen_at'],
+                'downstream_waiting': copy.deepcopy(prior.get('downstream_waiting', []))})
             prior['first_seen_at'] = now.isoformat()
+        references = []
         status, reason = 'queued', 'needs_classification'
         if mark in saved:
             status, reason = 'already_saved', 'unchanged_saved_source'
@@ -59,8 +126,12 @@ def triage_articles(articles, events, statuses, state, now):
                 status, reason = 'out_of_scope', 'previous_ai_out_of_scope_or_low_value'
             else:
                 status, reason = 'classified_waiting', 'status_ready_for_tracking'
+        elif mark in downstream:
+            status, reason = 'downstream_waiting', 'unchanged_downstream_source'
+            references = downstream[mark]
         elif obvious_out_of_scope(a):
             status, reason = 'out_of_scope', obvious_out_of_scope(a)
+        set_downstream_waiting(prior, references)
         prior.update(article=copy.deepcopy(a), source_fingerprint=mark, status=status,
                      reason=reason, last_seen_at=now.isoformat())
         if status == 'queued':
@@ -98,15 +169,18 @@ def prioritize_groups(groups, state, now):
     return result
 
 
-def retain_group(state, group, status, reason, now, decision=False):
+def retain_group(state, group, status, reason, now, decision=False, *, downstream_waiting=()):
     """Separate JSON/evidence failure attempts from transport/credit failures."""
     key = group_key(group)
     entry = state.setdefault(key, {'first_seen_at': now.isoformat(), 'decision_attempts': 0, 'source_history': []})
     mark = fingerprint(group)
     if entry.get('source_fingerprint') not in (None, mark):
-        entry.setdefault('source_history', []).append({'group': copy.deepcopy(entry['group']), 'status': entry['status'], 'reason': entry['reason']})
+        entry.setdefault('source_history', []).append({'group': copy.deepcopy(entry['group']),
+            'status': entry['status'], 'reason': entry['reason'],
+            'downstream_waiting': copy.deepcopy(entry.get('downstream_waiting', []))})
         entry['decision_attempts'] = 0
         entry['first_seen_at'] = now.isoformat()
+    set_downstream_waiting(entry, list(downstream_waiting))
     entry.update(group=copy.deepcopy(group), source_fingerprint=mark, status=status,
                  reason=reason, last_seen_at=now.isoformat())
     if decision:

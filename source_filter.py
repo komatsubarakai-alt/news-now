@@ -224,7 +224,9 @@ def main():
     collection_state = read('collection_triage.json', {'items': {}})
     source_kept = kept
     kept = triage_articles(kept, read('events.json', []), read('news_status.json', []),
-                          collection_state['items'], datetime.now(timezone.utc))
+                          collection_state['items'], datetime.now(timezone.utc),
+                          status_pending=read('status_pending.json', []),
+                          tracking_pending=read('tracking_pending.json', []))
     for entry in excluded:
         a = entry['article']
         collection_state['items'][a['url']] = {
