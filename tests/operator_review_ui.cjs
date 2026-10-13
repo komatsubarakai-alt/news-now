@@ -16,7 +16,7 @@ const server=http.createServer((req,res)=>{res.setHeader('Content-Type','text/ht
    page.on('pageerror',e=>errors.push(e.message));
    page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1')&&!r.url().startsWith('blob:'))external.push(r.url());});
    await page.goto(`http://127.0.0.1:${server.address().port}/`);
-   assert((await page.locator('#stats').innerText()).includes('確認待ち 63件'));
+   assert((await page.locator('#stats').innerText()).includes(`確認待ち ${snapshot.reviews.length}件`));
    assert.equal(await page.locator('article.card').count(),6);
    assert.equal(await page.locator('#export').isDisabled(),true);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -40,7 +40,7 @@ const server=http.createServer((req,res)=>{res.setHeader('Content-Type','text/ht
    await page.reload();
    assert.equal(await page.locator('article.card').first().getByLabel('判断理由',{exact:true}).inputValue(),'記事本文の事件名と関係者を確認');
    await page.locator('#filter').selectOption('candidate');
-   assert((await page.locator('#page').innerText()).includes('9件'));
+   assert((await page.locator('#page').innerText()).includes(`${snapshot.reviews.filter(r=>r.exact_heading_candidate_event_ids.length).length}件`));
    await page.locator('#filter').selectOption('decided');
    assert.equal(await page.locator('article.card').count(),1);
    const stale=structuredClone(exported);stale.decisions[0].group_hash='stale';

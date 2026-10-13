@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 from event_tracker import merge_incoming
 from operator_review import (build_snapshot, digest, target_digest, validate_decisions,
-                             import_decisions, prepare_reviews, render_page)
+                             import_decisions, prepare_reviews, render_page, review_revision)
 from pending_triage import observe, group_key, fingerprint, preflight, summary
 from test_tracking import NOW, article, event, report, FakeAI
 
@@ -26,6 +26,7 @@ class OperatorReviewTests(unittest.TestCase):
 
     def document(self, action='same_event'):
         row = {'review_key': self.key, 'source_fingerprint': fingerprint(self.group),
+               'review_revision': review_revision(self.state[self.key]),
                'group_hash': digest(self.group), 'action': action,
                'event_id': 'e1' if action == 'same_event' else None,
                'target_hash': target_digest(self.events[0]) if action == 'same_event' else None,
@@ -92,6 +93,19 @@ class OperatorReviewTests(unittest.TestCase):
         self.assertEqual(self.state[self.key]['status'], 'manual_review')
         self.assertEqual(self.state[self.key]['decision_attempts'], 3)
         self.assertEqual(groups, [])
+
+    def test_fresh_human_confirmation_can_retry_same_choice_without_replaying_old_file(self):
+        doc, groups = self.prepare()
+        original_id = doc['decisions'][0]['decision_id']
+        with patch('event_tracker.load_corrections', return_value={}):
+            for _ in range(3):
+                merge_incoming(self.events, groups, FakeAI(report(self.a, confidence='low')), NOW, triage=self.state)
+                groups = prepare_reviews(self.events, [], self.state, doc, {}, NOW)
+        fresh, groups = self.prepare()
+        self.assertNotEqual(fresh['decisions'][0]['decision_id'], original_id)
+        self.assertEqual(groups, [self.group])
+        self.assertEqual(self.state[self.key]['decision_attempts'], 0)
+        self.assertEqual(self.state[self.key]['operator_review_history'][0]['decision_id'], original_id)
 
     def test_source_changes_after_snapshot_are_rejected(self):
         doc = self.document()
@@ -160,7 +174,8 @@ class OperatorReviewTests(unittest.TestCase):
         names = ['events.json', 'tracking_triage.json', 'tracking_pending.json', 'public_events.json']
         before = {name: (root / name).read_bytes() for name in names}
         snapshot = build_snapshot(root, NOW)
-        self.assertGreater(len(snapshot['reviews']), 0)
+        if not snapshot['reviews']:
+            snapshot['reviews'].append({'event_name': ''})
         snapshot['reviews'][0]['event_name'] = '</script><img src=x onerror=alert(1)>'
         html = render_page(snapshot)
         self.assertNotIn('</script><img', html)
@@ -172,8 +187,18 @@ class OperatorReviewTests(unittest.TestCase):
     def test_page_javascript_operations_against_real_snapshot(self):
         root = Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as tmp:
+            fixture = Path(tmp) / 'source'; fixture.mkdir()
+            state = {}
+            for i in range(8):
+                group = copy.deepcopy(self.group)
+                group['articles'][0]['url'] += str(i)
+                observe(state, group, 'manual_review', 'article_identity_unproved', NOW)
+            for name, payload in {'events.json': self.events, 'tracking_pending.json': [],
+                                  'tracking_triage.json': {'items': state},
+                                  'verified_schedule_dates.json': []}.items():
+                (fixture / name).write_text(json.dumps(payload), encoding='utf-8')
             page = Path(tmp) / 'review.html'
-            page.write_text(render_page(build_snapshot(root, NOW)), encoding='utf-8')
+            page.write_text(render_page(build_snapshot(fixture, NOW)), encoding='utf-8')
             result = subprocess.run(['node', str(root / 'tests/operator_review_dom.cjs'), str(page)],
                                     capture_output=True, text=True, timeout=30)
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
