@@ -38,6 +38,7 @@ def load(path, default):
 
 def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
     from pending_triage import preflight, observe, failure_status, group_key, source_saved
+    from operator_review import active_selection
     reviews = reviews if reviews is not None else []
     triage = triage if triage is not None else {}
     pending, deferred, attempted = [], [], 0
@@ -60,7 +61,21 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
         report, target = None, None
         attempted += 1
         try:
-            report = analyze(ai, eligible, fresh)
+            selection = active_selection(group, triage)
+            context = ''
+            if selection:
+                # Operator routing restricts destinations, never proves identity/progress.
+                if selection['action'] == 'same_event':
+                    eligible = [e for e in eligible if e['event_id'] == selection['event_id']
+                                and not e.get('merged_into')]
+                    if not eligible:
+                        raise UpdateHeld('operator_target_unavailable')
+                context = '運営者の振り分け希望（同一性・進展の根拠ではない）。根拠不足ならuncertain。' + json.dumps(
+                    {k: selection[k] for k in ('action', 'event_id')}, ensure_ascii=False)
+            report = analyze(ai, eligible, fresh, context=context)
+            if selection and (report.get('relation') != selection['action'] or
+                              (selection['action'] == 'same_event' and report.get('event_id') != selection['event_id'])):
+                raise UpdateHeld('operator_selection_not_supported')
             if report.get('confidence') != 'high' or not evidence(report, fresh):
                 raise UpdateHeld('uncertain_or_invalid_evidence')
             target = next((e for e in eligible if e.get('event_id') == report.get('event_id')), None)
@@ -252,6 +267,9 @@ def main():
     from queue_policy import prioritize_groups
     unique = current_groups(load('tracking_pending.json', []), load('news_status.json', []))
     triage = load('tracking_triage.json', {}).get('items', {})
+    from operator_review import prepare_reviews
+    unique = prepare_reviews(events, unique, triage,
+                             load('operator_review_decisions.json', {}), registry, now)
     unique = prioritize_groups(unique, triage, now)
     ai = AI(limit=int(os.environ.get('TRACKING_CALL_LIMIT', '30')))
     reviews = []
