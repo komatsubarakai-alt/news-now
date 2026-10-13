@@ -5,7 +5,7 @@
       "review_id": "da7aa57500acf532f96b80a8",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
         "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
@@ -21,30 +21,46 @@
           "relation": "same_event",
           "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
           "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
-          "summary": "札幌市の給食無償化を背景に、保護者が『少ない給食』に驚いていることが報じられています。既存案件と同じく、無償化後に給食量への不満・相談が出ている流れの続報です。",
-          "latest": "保護者が少ない給食に驚き、市長は量や献立は変わらないと説明しています。",
-          "next_watch": "札幌市の無償化運用について、給食量や献立の見直しが実際に行われるか。",
+          "summary": "札幌で、給食無償化の後に「少ない給食」への驚きや相談が出ている件について、市長が「量、献立など変わらず」と述べた段階です。",
+          "latest": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」",
+          "next_watch": "無償化後の給食量や献立をめぐる市側の対応変更や追加説明が出るか",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5"
           ],
-          "schedules": [
+          "identity_matches": [
             {
-              "label": "札幌の給食無償化",
-              "quote": "国の交付金で無償化の札幌",
-              "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
-              "status": "scheduled"
+              "incoming_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZjVVUDI1UmJNbVFIUlFlLThOMWlQWW9pbXZFSkJmblJLRkpRSWx2VlhoSEJEMUE3UjVSNU5XT0VPT05BQXdEMEstdDRkdzE1bEY1M1BpRnlrVnZhWjdfT0dsVDE5N3ZFZEl4OTBFSkxvbXpQTXpCMEdMTGh6SUNqWmtaVHRvSThJLVhtUjk0YWttMWxOd3lTdEFIUWN4NWZ2WWE2NWozNlFHckQxX3UyNEZVSldmNUh1NnFTaGpqV0dodjRpY1hUM3VMNVNNUkk4UHlQZzJNNnp1enRC0gGMAUFVX3lxTE80cTJINDJmRnpweURKcmItZlNWbUwzd0ZaeXZPRFZNQXJFeE81ZFNuVHg5SWtrSmlJaGRZTTEwMWMtWnFQTGdpRVRFcmNpbGpPRzFNWDZzVm5fS05Mc1NmOWtacDR4eVgzVTdkZV9xS3FoOTlfVGxCejlnbnd1Qms1LVZhQU93Z0tEbGp0?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌",
+                  "existing_quote": "札幌",
+                  "incoming_quote": "札幌"
+                },
+                {
+                  "kind": "detail",
+                  "value": "給食",
+                  "existing_quote": "「給食が少ない」「子どもがおなかをすかせて帰ってくる」",
+                  "incoming_quote": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」"
+                }
+              ]
             }
-          ]
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
@@ -56,7 +72,7 @@
       "review_id": "947f90c97f483b6d38f4db92",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
         "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
@@ -72,43 +88,46 @@
           "relation": "same_event",
           "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
-          "current_stage": "給食無償化後の運用をめぐる相談・反応が続いている段階",
-          "summary": "札幌の給食無償化をめぐり、『給食が少ない』との保護者の反応が報じられています。既存事案と同じく、無償化後の給食の量や内容をめぐる問題提起の続報とみられます。",
-          "latest": "保護者が少ない給食に驚き、市長は量や献立は変わらないと説明しています。",
-          "next_watch": "札幌市の説明や、給食の量・献立をめぐる追加対応の有無を確認する。",
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌で給食無償化後に『給食が少ない』との相談が増えている件について、市長が『量、献立など変わらず』と述べた。",
+          "latest": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」",
+          "next_watch": "給食の量や献立をめぐる対応の変更があるか。",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5"
           ],
-          "schedules": [],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE43ZXQ4ZWM0YUJGQi0zZWRrRGtnWDdFM3VDWlF4ZFg2ZThsdGI3bVlJTVBYd2VPTzZscU1JdjBlLVFYcVlmcmFoelNyV2Q1c1FkTWl6d3drdm1DWDdTWHZoQ0ZNdWc1elRGQWgyS1ZiNXZFQQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "札幌市の給食無償化",
-                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋 ｜ ニュース - Zaisatsu.jp【財さつJP】",
-                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」 - テレ朝NEWS"
+                  "value": "札幌",
+                  "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」"
                 },
                 {
                   "kind": "detail",
-                  "value": "給食が少ないことへの反応・相談",
-                  "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB北海道テレビ",
-                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」 - テレ朝NEWS"
+                  "value": "給食が少ない",
+                  "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」"
                 }
               ]
             }
-          ]
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」 - テレ朝NEWS",
@@ -120,7 +139,7 @@
       "review_id": "624d118c1102cdb88709efc1",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
         "target_event_name": "札幌市東区の共同住宅火災",
@@ -138,17 +157,17 @@
           "relation": "same_event",
           "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
-          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、女性1人が搬送された段階",
-          "summary": "札幌市東区の3階建てマンションで火事が起き、女性1人が搬送されたと確認できる。同一案件の続報として扱う。",
+          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
+          "summary": "札幌市東区の3階建て共同住宅で火事が起き、女性1人が搬送された段階。",
           "latest": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区",
-          "next_watch": "出火原因、被害拡大の有無、けが人の容体、鎮火や避難状況の続報を確認する。",
+          "next_watch": "",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5"
           ],
-          "schedules": [],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTM4U0pKcVExTTFfb2NYT0w1cjdQaDFvWDZudWpoMkxybFJ4VzZYaUp3Wmd2ZTM1VzRXcXU1Z29UTUN0eEtuUDJjU3FOb0tiN3Q3V09lZjlUcnRGTnNvUUEzM1BHVGFIMHpSYm9EcEZNdU9nWEVMZ09hWGRtWmVVNkRWcXJKRXpQNWw3Z2dB0gGAAUFVX3lxTE1GMi1oRFFBMjExc1ZqbjAyVFQ1aE1nZFZHd1luU2pIbnhvLVh2bzN2LWxQMGc4ZjhIODNqX3V4bjJXNkdXTzV3cmZlbmRNRUdSNUgtOHV2Q25NSVA5Y0dmQ25aWTl5TnpwS1IxMHE2eGlJcmVYemNCVFpwcnBKVVF5?oc=5",
@@ -156,25 +175,28 @@
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "札幌市東区",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事が起き",
-                  "incoming_quote": "3階建てのマンションで火事　女性1人搬送　札幌市東区"
+                  "value": "札幌市東区の3階建て共同住宅で火事",
+                  "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                  "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
                 },
                 {
-                  "kind": "entity/detail",
-                  "value": "3階建ての共同住宅／マンションでの火災",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事が起き",
-                  "incoming_quote": "3階建てのマンションで火事　女性1人搬送　札幌市東区"
+                  "kind": "entity",
+                  "value": "女性1人搬送",
+                  "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                  "incoming_quote": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区"
                 }
               ]
             }
-          ]
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "“窓から真っ赤な炎と煙”　3階建てのマンションで火事　女性1人搬送　札幌市東区 - ｄメニューニュース",
@@ -183,67 +205,10 @@
       ]
     },
     {
-      "review_id": "7746f7c7a5236d4a9504efe1",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
-        "target_event_name": "札幌市のインフルエンザ注意報発表",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DWlpxUnlndTAwVjJzODlhakZMUU1NVVdMSWJUbWRkWmlteG9nd211WnBmT0J4T01UTmg4VWFfVUtSMER6VC1JYzJWRDlBWWRHRjE5bWlSQQ?oc=5",
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iTzZFOFA3bnllZE9BNDJBREx3REllRENEamJTblFIZ2VjUjk1RFJyX2lwMnhpaVRleFZkYjVmT2tXRVBJYmNYSXlvVFNRdUFJbHNIMVZmbWpZMEFzeEFLU2pQTUZkXy1nSkVRaE1VbHV6VDBPWjExTndpUzdxLU0?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01azBLU1Axa1hqMlc1VnZUbGhkUWUtNlFFdWVSTUpJVWljR2JaWW1XSllxUGRvLUQwZEl4bHAzZFZkM0tUeUtySXhJWmhZMU1jQlFORklLak85ZTQzWmFlaE00ZzNLd1EtRmlaR1lfdUNLaUV1eVZ6YzNSMnFuNzg?oc=5",
-          "https://news.google.com/rss/articles/CBMie0FVX3lxTE02R3lMN1hFbUdVS3cxZ1ZGVVlNT3d4dkU2MXVtX3lDZ2Y3cG85S25wM0pkb3paRnpTcEFvLVNKRHZtQXBOQjI2RHRZSnBlRWJrTHJqVnlveEpKWTZtUnhkdkdWbkNJb2gtdHNhT0VLd0NQNXphVmRUTEJjQdIBgAFBVV95cUxNS0JjQVhOVHl5alh4Wk1UZ2s3c3liOTVvS3NheW1TWjAxY3dla25IMGp3VUcyTE45MnNsT0hpUjlrQzR6OVBjb2t3TXNrclRLRlVkdEY3ZWtMNHFkaFN5MnRITUhjd2szRVo1eXRJS09sb2xmcksxNGMzb2VDODVpXw?oc=5",
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa3Itbmkzd25Ra1VQNVhReWR6ekVmSWJCaU5NRG1XdFhyZ2ZKRHlMV0REZHh5MnBQQ1VrZ0llSzZvYXZfS2ExYzhQRjF2WWpzSTJISTdlVDBkN2VvZ1V6bWM3aHNrX2ZyN205YUZ2NloyaldndW5NdXptYzFtOHlEOXUyT2VZb28?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GN256VkVPZjQ5NHU3ZE5RQVdWZW5VakdfbF9scFFzc2FRamtneDktWnJmUVNTajRZa3pCVEZrNmtzbkRvMGxRTFByTnRwTlBndUtOVDBPdHZYaVJLajdiUDctUXFGb1puc0tqY1ZCdjlNaFZzbDNaSWZ2d3JnZ3c?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XN3pJck9ab3VQUElRZHZSQlh4eDhMN0lncUVObUMycnF4ZGRLRlowNkhtQlpXUEZ6eUpiMThPSEdTWGZtaTFTcVZuZXB4eGpCTkZmNkFHRnJqMXpGd0U0Y1dEbGRpWjJva2ZQcmhDbi1GcnJzOGRoUm1qMnBEVUk?oc=5",
-          "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XcXljNTYyZUJRYXpYTmd6TjdBX0p1aU8wMVh6QmY3X3pqT0w3em40STEwa21jazBRX0VNUmtlNVpuTVk2THRTbGFoaGxUT1FuMUwyTHNWUEk3Y01xNGtUeU9rZml5d3hROXhFYUt3?oc=5",
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDRWotNzNVRXIzWTlmRlZfekpKS2RnaUFiVmJXdmMyQ2pqUzVGSWY0ZGxMcEZHTGJvVGJhamJYNjJSVm5PUU9tNTA0NGkzTk1TN0c2UFAwRHJEUQ?oc=5",
-          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBnTkF5eWpDTjRsMFBmekpNNUtXVzZPcE1PUVZzNV9WUmUxVjF0eGpVek1FMENUZHRlOUZoeVZPMGtXa1BoSk5QNzlYQ2JQZFBQMC1MQ0UtSGNvZjhZWjZ0bWN2TGw4QkVzbF82TA?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
-          "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Fa25XU1JpREJFdW1FWVY1aXBVOWpST24xdXREVUJubXNFU3B5dE8wWkdBY0RVa3ZHQjdNWkk1bWNsczMyUlVJUEY0UC14aVpLT0lQTEpuRzBKQmE5ZEdkeHN4UUdVNmY2MFBBNA?oc=5",
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "札幌市でインフルエンザ注意報が発表された段階",
-          "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表された件の続報。市内の小中高校では学級閉鎖が合わせて23校38クラスに増えていることが示されているが、同じ注意報発表案件の範囲内で、段階の進行や終結は明示されていない。",
-          "latest": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞ - UHB 北海道文化放送",
-          "next_watch": "札幌市の注意報が警報へ移行するか、学級閉鎖の拡大や収束が報じられるか確認する。",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
-          ],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市＞ - UHB 北海道文化放送",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
-      ]
-    },
-    {
       "review_id": "7512ddd099a4ebdbfe68aeb8",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
         "target_event_name": "札幌市東区の共同住宅火災",
@@ -261,44 +226,46 @@
           "relation": "same_event",
           "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
           "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
-          "summary": "札幌市東区の3階建て建物で火災が起き、2階にいた70代ぐらいの女性がけがをして搬送された件の続報と確認できる。",
-          "latest": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送された。",
-          "next_watch": "負傷者の容体、出火原因、被害の拡大や鎮火の確認を待つ。",
+          "summary": "札幌市東区の3階建て建物で火災が起き、2階にいた70代ぐらいの女性がけがをして搬送されたと確認できる。",
+          "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞",
+          "next_watch": "",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5"
           ],
-          "schedules": [],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTX3NRMmpjMTQzZWF5VmVZb255Yjh4bGRKSnR6THB5MlkyTkphMWk2bmJ6ODcxQW9fUzE4VkdUWk44bFQ1czMxYWJsd1NNU0t4bURpQWhsRnJpUVRBa1p0X1VNRFEyMEh0QmpIV1UyNEtaQ3hPUzJDVzlqdkxvaHc?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "札幌市東区の3階建て建物の火災",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事",
-                  "incoming_quote": "札幌市東区の3階建て建物から出火"
+                  "value": "札幌市東区の3階建て",
+                  "existing_quote": "「炎と煙が見える」 3階建てマンションで火事 火元の部屋から70代女性救出 意識あり 札幌市東区",
+                  "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
                 },
                 {
-                  "kind": "entity/detail",
-                  "value": "70代ぐらいの女性が搬送された負傷",
-                  "existing_quote": "70代とみられる女性がケガをして搬送",
+                  "kind": "entity",
+                  "value": "70代女性",
+                  "existing_quote": "火元の部屋から70代女性救出",
                   "incoming_quote": "2階にいた70代ぐらいの女性がケガをして搬送"
                 }
               ]
             }
           ],
-          "progress_evidence": []
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - Yahoo!ニュース",
@@ -307,70 +274,10 @@
       ]
     },
     {
-      "review_id": "9183aab4cc6e6648376e8218",
-      "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
-          "summary": "札幌市東区の3階建て建物で火災が起き、2階にいた70代ぐらいの女性がけがをして搬送されたと確認できる。",
-          "latest": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送された。",
-          "next_watch": "消防による鎮火確認、延焼範囲、出火原因、女性の容体の続報",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak9SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
-          ],
-          "schedules": [],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak9SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市東区の3階建て共同住宅火災",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事が起き、2階の一室が燃え、70代とみられる女性がけがをして搬送されたと確認できる。",
-                  "incoming_quote": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送された。"
-                },
-                {
-                  "kind": "detail",
-                  "value": "70代女性がけがをして搬送",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事が起き、2階の一室が燃え、70代とみられる女性がけがをして搬送されたと確認できる。",
-                  "incoming_quote": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送された。"
-                }
-              ]
-            }
-          ]
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道 - FNNプライムオンライン",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
-      ]
-    },
-    {
       "review_id": "ccac7cd9ded9d794f93c09c9",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
         "target_event_name": "札幌市東区の共同住宅火災",
@@ -379,7 +286,8 @@
           "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
           "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
           "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
         ],
         "input_urls": [
           "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5"
@@ -388,17 +296,17 @@
           "relation": "same_event",
           "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
           "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
-          "summary": "札幌市東区の3階建て建物で火災が起き、2階にいた70代ぐらいの女性がけがをして搬送されたと確認できる。同一案件の続報として扱えるが、判明内容の実質的な進展はない。",
-          "latest": "札幌市東区の3階建て建物から出火し、2階にいた70代ぐらいの女性がけがをして搬送された。",
-          "next_watch": "火災原因、延焼範囲、女性の容体、鎮火や出火元の確認が報じられるか。",
+          "summary": "札幌市東区の3階建て共同住宅で火事が起き、2階の一室が燃え、70代とみられる女性がけがをして搬送されたと確認できる。",
+          "latest": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞",
+          "next_watch": "",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5"
           ],
-          "schedules": [],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VSEFxMzA1QmVWcW1LRGUwbjRCRko4aTZYXzV3OUFHYkZOODVwWEtSVWRkUk4zd3hFNVJhQzJIdUppbko4dDRNY2Iwb0VOTXdkQ0FXNFYwbw?oc=5",
@@ -406,25 +314,28 @@
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "札幌市東区の3階建て建物火災",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事",
-                  "incoming_quote": "札幌市東区の3階建て建物から出火"
+                  "value": "札幌市東区の3階建て",
+                  "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                  "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
                 },
                 {
-                  "kind": "entity/detail",
-                  "value": "2階にいた70代女性が搬送",
-                  "existing_quote": "70代とみられる女性がケガをして搬送",
-                  "incoming_quote": "2階にいた70代ぐらいの女性がケガをして搬送"
+                  "kind": "entity",
+                  "value": "70代ぐらいの女性",
+                  "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉",
+                  "incoming_quote": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞"
                 }
               ]
             }
-          ]
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "「火炎と煙が見える」札幌市東区の3階建て建物から出火…2階にいた70代ぐらいの女性がケガをして搬送＜北海道＞ - UHB 北海道文化放送",
@@ -436,7 +347,7 @@
       "review_id": "1d62941423c71ac7b1b4ad72",
       "stage": "event_attachment",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiS0FVX3lxTE82YWw2N1JRVHlPbG5hZDdiZEFvY3JmNVhYVE1mTVdqOEdoeU5ZWEpLXzBhdWpiTmdNS1RRSEEtTXo5TWNqT1FYLU1aTQ?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
+      "observed_at": "2026-10-13T18:42:55.763392+00:00",
       "diagnostics": {
         "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
         "target_event_name": "札幌市のインフルエンザ注意報発表",
@@ -455,7 +366,8 @@
           "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
           "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Fa25XU1JpREJFdW1FWVY1aXBVOWpST24xdXREVUJubXNFU3B5dE8wWkdBY0RVa3ZHQjdNWkk1bWNsczMyUlVJUEY0UC14aVpLT0lQTEpuRzBKQmE5ZEdkeHN4UUdVNmY2MFBBNA?oc=5",
           "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5"
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5",
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
         ],
         "input_urls": [
           "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82YWw2N1JRVHlPbG5hZDdiZEFvY3JmNVhYVE1mTVdqOEdoeU5ZWEpLXzBhdWpiTmdNS1RRSEEtTXo5TWNqT1FYLU1aTQ?oc=5"
@@ -464,333 +376,51 @@
           "relation": "same_event",
           "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
           "confidence": "high",
+          "multi_event": false,
           "meaningful_change": false,
           "current_stage": "札幌市でインフルエンザ注意報が発表された段階",
-          "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表された案件の続報です。今回記事も、統計開始以来2番目の早さと発熱患者の約8割が感染している点を伝えており、既報と同一内容の再報道の範囲です。",
+          "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表され、統計開始以来2番目の早さとされています。",
           "latest": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を",
-          "next_watch": "市内で警報への移行や患者数の増減、注意報の解除が正式に示されるか確認する",
+          "next_watch": "札幌市のインフルエンザ注意報が警報へ移行するか、学級閉鎖や患者数の拡大が続くか。",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82YWw2N1JRVHlPbG5hZDdiZEFvY3JmNVhYVE1mTVdqOEdoeU5ZWEpLXzBhdWpiTmdNS1RRSEEtTXo5TWNqT1FYLU1aTQ?oc=5"
           ],
-          "schedules": [],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82YWw2N1JRVHlPbG5hZDdiZEFvY3JmNVhYVE1mTVdqOEdoeU5ZWEpLXzBhdWpiTmdNS1RRSEEtTXo5TWNqT1FYLU1aTQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDRWotNzNVRXIzWTlmRlZfekpKS2RnaUFiVmJXdmMyQ2pqUzVGSWY0ZGxMcEZHTGJvVGJhamJYNjJSVm5PUU9tNTA0NGkzTk1TN0c2UFAwRHJEUQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDRWotNzNVRXIzWTlmRlZfekpKS2RnaUFiVmJXdmMyQ2pqUzVGSWY0ZGxMcEZHTGJvVGJhamJYNjJSVm5PUU9tNTA0NGkzTk1TN0c2UFAwRHJEUQ?oc=5",
               "anchors": [
                 {
                   "kind": "case",
                   "value": "札幌で“インフル注意報”",
-                  "existing_quote": "札幌市でインフルエンザ注意報 統計開始以来2番目の早さ 大きな流行になる恐れ",
+                  "existing_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市",
                   "incoming_quote": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を"
                 },
                 {
                   "kind": "detail",
-                  "value": "統計開始以来2番目の早さ",
-                  "existing_quote": "統計開始以来2番目の早さ",
-                  "incoming_quote": "統計開始以来２番目の早さ"
-                },
-                {
-                  "kind": "detail",
-                  "value": "発熱患者の約8割が感染",
-                  "existing_quote": "大きな流行になる恐れ",
-                  "incoming_quote": "発熱患者の約８割が感染…流行拡大に警戒を"
+                  "value": "統計開始以来２番目の早さ",
+                  "existing_quote": "札幌で今シーズン初めて「インフルエンザ注意報」発表―過去10年で最も早く統計史上2番目の早さ―市内の小中高校では学級閉鎖が合わせて23校38クラスに＜北海道札幌市",
+                  "incoming_quote": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を"
                 }
               ]
             }
-          ]
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
         },
         "raw_ai_response": null,
         "http_status": null,
         "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
+        "triage_status": "manual_review",
+        "decision_attempts": 3
       },
       "event_id": null,
       "event_name": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を - TVer",
       "article_urls": [
         "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82YWw2N1JRVHlPbG5hZDdiZEFvY3JmNVhYVE1mTVdqOEdoeU5ZWEpLXzBhdWpiTmdNS1RRSEEtTXo5TWNqT1FYLU1aTQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "ec3146e3666b00c05551e694",
-      "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kaFFGWlhyNzhaQXRrUUpyalhFR3lmVkU3VUlnV3hTdFcwTzhwUEFIdXlpdWRGVGFGMDdRR29FNWRXLTNYVWp2MmJ0bTRGT2NwalVDU1FVc3VVNE9uRllnT1YwdjRKZzNMWWNQUEtKVHlmUGdWUWhHWmY2dkZ0Unc?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
-          "summary": "アレフの札幌施設に対する公安調査庁の立ち入り検査について、検査時に教祖だった男の写真や説法が収録された教材などを確認したことが報じられています。",
-          "latest": "札幌施設で教材などを確認したと報じられました。",
-          "next_watch": "立ち入り検査の結果や行政対応の追加発表があるか確認する。",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kaFFGWlhyNzhaQXRrUUpyalhFR3lmVkU3VUlnV3hTdFcwTzhwUEFIdXlpdWRGVGFGMDdRR29FNWRXLTNYVWp2MmJ0bTRGT2NwalVDU1FVc3VVNE9uRllnT1YwdjRKZzNMWWNQUEtKVHlmWUhhWG1mN2Z0Unc?oc=5"
-          ],
-          "schedules": [],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kaFFGWlhyNzhaQXRrUUpyalhFR3lmVkU3VUlnV3hTdFcwTzhwUEFIdXlpdWRGVGFGMDdRR29FNWRXLTNYVWp2MmJ0bTRGT2NwalVDU1FVc3VVNE9uRllnT1YwdjRKZzNMWWNQUEtKVHlmWUhhWG1mN2Z0Unc?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Ntd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "アレフの札幌施設への公安調査庁による立ち入り検査",
-                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                  "incoming_quote": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - Yahoo!ニュース"
-                },
-                {
-                  "kind": "detail",
-                  "value": "札幌施設",
-                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                  "incoming_quote": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - Yahoo!ニュース"
-                }
-              ]
-            }
-          ]
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kaFFGWlhyNzhaQXRrUUpyalhFR3lmVkU3VUlnV3hTdFcwTzhwUEFIdXlpdWRGVGFGMDdRR29FNWRXLTNYVWp2MmJ0bTRGT2NwalVDU1FVc3VVNE9uRllnT1YwdjRKZzNMWWNQUEtKVHlmUGdWUWhHWmY2dkZ0Unc?oc=5"
-      ]
-    },
-    {
-      "review_id": "acfb71559c5d3ded148a7ab9",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJLVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
-        "target_event_name": "公安調査庁によるアレフ札幌施設への立ち入り検査",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yV1cySmVNWnpoRnNNR3l2T052VEQ0RGpjUXhYZjZVdWdra2x4T1hHX2VJY1V5SFFFbFZ5UHE4WFlwY2VHanlkTllDeWJnZw?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJLVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
-          "summary": "アレフの札幌施設への公安調査庁による立ち入り検査について、施設内で教祖だった男の写真や説法が収録された教材などを確認したとする報道です。",
-          "latest": "札幌施設に公安調査庁が立ち入り検査し、教材などを確認した。",
-          "next_watch": "立ち入り検査の結果や、追加の行政対応・処分が出るか確認する。",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJLVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5"
-          ],
-          "schedules": [],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJLVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "アレフの札幌施設に公安調査庁が立ち入り検査",
-                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                  "incoming_quote": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - UHB 北海道文化放送"
-                },
-                {
-                  "kind": "detail",
-                  "value": "教祖だった男の写真や説法が収録された教材などを確認",
-                  "existing_quote": "オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り 札幌市白石区 - Yahoo!ニュース",
-                  "incoming_quote": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - UHB 北海道文化放送"
-                }
-              ]
-            }
-          ],
-          "progress_evidence": [],
-          "event_identity": {
-            "value": "アレフの札幌施設に公安調査庁が立ち入り検査",
-            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJJVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5",
-            "quote": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - UHB 北海道文化放送"
-          }
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "教祖だった男の写真や説法が収録された教材などを確認―オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＜北海道＞ - UHB 北海道文化放送",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IYmJLVk5qTTRNUmxsS21hY3AzNVlGZU1HSjBjQUMzbk9veXZXZlJ6bkpEMEwwYlhoYm0xMUdnV0NIQWZJdGhIRC0yOVVhMmVsNzd4WEtDMA?oc=5"
-      ]
-    },
-    {
-      "review_id": "ab6ee0ae6d5359316403c171",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-        "target_event_name": "札幌市東区の共同住宅火災",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
-          "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
-          "summary": "札幌市東区のアパートの一室から火が出て、70代女性が病院搬送されたことが確認できる。既存記事と同じ火災案件の続報として扱える。",
-          "latest": "札幌市東区のアパートの一室から火が出て、70代女性が病院搬送された。",
-          "next_watch": "出火原因、被害拡大の有無、女性の容体の更新が出るか確認する。",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5"
-          ],
-          "schedules": [],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市東区",
-                  "existing_quote": "札幌市東区の3階建て共同住宅で火事",
-                  "incoming_quote": "札幌市東区のアパートの一室から火"
-                },
-                {
-                  "kind": "detail",
-                  "value": "70代女性の搬送",
-                  "existing_quote": "70代とみられる女性がケガをして搬送",
-                  "incoming_quote": "70代女性病院搬送"
-                }
-              ]
-            },
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市東区",
-                  "existing_quote": "札幌市東区の3階建てマンションで火事",
-                  "incoming_quote": "札幌市東区のアパートの一室から火"
-                },
-                {
-                  "kind": "detail",
-                  "value": "70代女性の救出・搬送",
-                  "existing_quote": "火元の部屋から70代女性救出",
-                  "incoming_quote": "70代女性病院搬送"
-                }
-              ]
-            }
-          ]
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "「火と煙が出ている」札幌市東区のアパートの一室から火 70代女性病院搬送 命に別状なし - Infoseek",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQV93c1F6XzZnTkFDTThEM2htbzRoanM2REZERC1rMnhTSE1KNENjTUhlejhJS3M5Snk1WUVSNGxZUVVqTzZHbTVwTm5fT0hNRUtLcDhKQ0tsUXp5NThUbFFRYmFVYTV1ZVoyXw?oc=5"
-      ]
-    },
-    {
-      "review_id": "6520f84a9dc163489c864712",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pS0I2TkFpTEY5RUtSX3NZWFFJY2tKSHBfSGN1SkVTUHBBNWFqaHBzT3ptYXR3Y3FPdzA5aG80T1ZUdlIwUGJDck44RQ?oc=5",
-      "observed_at": "2026-10-13T11:36:10.940580+00:00",
-      "diagnostics": {
-        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-        "target_event_name": "札幌市東区の共同住宅火災",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
-          "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pS0I2TkFpTEY5RUtSX3NZWFFJY2tKSHBfSGN1SkVTUHBBNWFqaHBzT3ptYXR3Y3FPdzA5aG80T1ZUdlIwUGJDck44RQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
-          "confidence": "high",
-          "meaningful_change": false,
-          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、女性1人が搬送された段階",
-          "summary": "札幌市東区の3階建てマンション（共同住宅）で火事があり、女性1人が搬送されたことが確認できる。",
-          "latest": "窓から真っ赤な炎と煙が見える火事として、女性1人搬送が報じられている。",
-          "next_watch": "出火原因、被害拡大、けが人の詳細や鎮火の有無が続報で確認されるか。",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pS0I2TkFpTEY5RUtSX3NZWFFJY2tKSHBfSGN1SkVTUHBBNWFqaHBzT3ptYXR3Y3FPdzA5aG80T1ZUdlIwUGJDck44RQ?oc=5"
-          ],
-          "schedules": [],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pS0I2TkFpTEY5RUtSX3NZWFFJY2tKSHBfSGN1SkVTUHBBNWFqaHBzT3ptYXR3Y3FPdzA5aG80T1ZUdlIwUGJDck44RQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市東区の3階建て共同住宅火災",
-                  "existing_quote": "【速報】札幌市東区の3階建て共同住宅で火事…2階の一室が燃え70代とみられる女性がケガをして搬送…意識はあり〈北海道札幌市〉 - FNNプライムオンライン",
-                  "incoming_quote": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区 - TVer"
-                },
-                {
-                  "kind": "detail",
-                  "value": "札幌市東区・3階建ての共同住宅/マンションで火災",
-                  "existing_quote": "「炎と煙が見える」 3階建てマンションで火事 火元の部屋から70代女性救出 意識あり 札幌市東区 - Yahoo!ニュース",
-                  "incoming_quote": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区 - TVer"
-                }
-              ]
-            }
-          ]
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区 - TVer",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pS0I2TkFpTEY5RUtSX3NZWFFJY2tKSHBfSGN1SkVTUHBBNWFqaHBzT3ptYXR3Y3FPdzA5aG80T1ZUdlIwUGJDck44RQ?oc=5"
       ]
     }
   ]

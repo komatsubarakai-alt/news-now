@@ -1,48 +1,47 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T17:35:05.093658+00:00",
+  "updated_at": "2026-10-13T18:43:27.130683+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 534,
+  "waiting_article_count": 524,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 93.96,
+  "oldest_wait_hours": 95.1,
   "stages": {
     "collection": {
-      "group_count": 45,
-      "article_count": 45,
-      "oldest_wait_hours": 4.83
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 446,
-      "article_count": 446,
-      "oldest_wait_hours": 93.96
+      "group_count": 467,
+      "article_count": 467,
+      "oldest_wait_hours": 91.12
     },
     "tracking": {
-      "group_count": 62,
-      "article_count": 63,
-      "oldest_wait_hours": 93.96
+      "group_count": 57,
+      "article_count": 57,
+      "oldest_wait_hours": 95.1
     }
   },
   "manual_review_counts": {
     "status_generation": 0,
-    "tracking": 24
+    "tracking": 30
   },
   "collection_retained_counts": {
-    "queued": 380,
+    "queued": 383,
     "downstream_waiting": 99,
     "duplicate_source": 44,
     "out_of_scope": 17,
     "already_saved": 28,
     "classified_waiting": 4
   },
-  "daily_accounted_usd": 0.0,
-  "monthly_accounted_usd": 0.712855,
-  "daily_network_calls": 0,
+  "daily_accounted_usd": 0.065223,
+  "monthly_accounted_usd": 0.778078,
+  "daily_network_calls": 18,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours",
-    "waiting_increased_three_observations"
+    "oldest_wait_at_least_48_hours"
   ],
-  "daily_tracking_network_calls": 0,
-  "daily_tracking_accounted_usd": 0.0,
+  "daily_tracking_network_calls": 8,
+  "daily_tracking_accounted_usd": 0.047849,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }
