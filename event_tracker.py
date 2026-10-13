@@ -9,6 +9,8 @@ from publication_safety import load_corrections, excluded, protect_existing, wri
 from merge_safety import (IDENTITY_RULES, UpdateHeld, review, save_reviews,
                           validate_saved_update, source_context, response_format)
 from tracking_sources import AI, BudgetExceeded, search
+from failed_response import (already_rejected, event_conditions, note_repeat,
+                             rejection_signature, remember_rejection, source_revision, safe_signature)
 from tracking_v1 import (CATEGORIES, apply_report, atomic_save, date_time, deduplicate,
                          event_text, evidence, migrate, scheduled_search_due, update_lifecycle, completion_verified)
 
@@ -37,11 +39,15 @@ TRACKING_RESPONSE = {
     'event_identity': {}, 'progress_evidence': [], 'schedules': []}
 
 
-def analyze(ai, groups, articles, context='', incoming_event_name=''):
-    return ai.ask(RULES + '\n' + IDENTITY_RULES + '\n' + response_format(TRACKING_RESPONSE)
+def analysis_prompt(groups, articles, context='', incoming_event_name=''):
+    return (RULES + '\n' + IDENTITY_RULES + '\n' + response_format(TRACKING_RESPONSE)
                   + '\n' + context + '\n今回の出来事名（データ）:\n' + json.dumps(incoming_event_name, ensure_ascii=False)
                   + '\n保存済み出来事:\n' + json.dumps([event_text(e) for e in groups], ensure_ascii=False)
                   + '\n今回の記事:\n' + json.dumps([source_context(a) for a in articles], ensure_ascii=False))
+
+
+def analyze(ai, groups, articles, context='', incoming_event_name=''):
+    return ai.ask(analysis_prompt(groups, articles, context, incoming_event_name))
 
 
 def load(path, default):
@@ -50,6 +56,7 @@ def load(path, default):
 
 def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
     from pending_triage import preflight, observe, failure_status, group_key, source_saved
+    from pending_triage import fingerprint
     from operator_review import active_selection
     reviews = reviews if reviews is not None else []
     triage = triage if triage is not None else {}
@@ -63,7 +70,8 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
             observe(triage, group, status, reason, now)
             continue
         # Only groups needing an AI judgment consume the 16-group allowance.
-        if attempted >= 16:
+        prior = triage.get(group_key(group), {})
+        if attempted >= 16 and not prior.get('rejected_responses'):
             observe(triage, group, 'queued', 'budget_deferred', now)
             deferred.append(group)
             continue
@@ -71,7 +79,9 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
         fresh = [a for a in articles if not source_saved(a, known)]
         eligible = [e for e in events if e.get('publication_status') != 'held']
         report, target = None, None
-        attempted += 1
+        signature, conditions, prompt = None, None, None
+        cached_answer = getattr(ai, 'cached_answer', None)
+        claimed = False
         try:
             selection = active_selection(group, triage)
             context = ''
@@ -84,8 +94,27 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
                         raise UpdateHeld('operator_target_unavailable')
                 context = '運営者の振り分け希望（同一性・進展の根拠ではない）。根拠不足ならuncertain。' + json.dumps(
                     {k: selection[k] for k in ('action', 'event_id')}, ensure_ascii=False)
-            report = analyze(ai, eligible, fresh, context=context,
-                             incoming_event_name=group.get('event_name', ''))
+            prompt = analysis_prompt(eligible, fresh, context=context,
+                                     incoming_event_name=group.get('event_name', ''))
+            conditions = {'group': group, 'events': event_conditions(eligible), 'registry': registry,
+                          'selection': selection, 'source_revision': source_revision(prior, fingerprint(group)),
+                          'known_revisions': [(e.get('event_id'), a) for e in events for a in e.get('articles', [])
+                                              if a['url'] in {s['url'] for s in articles}]}
+            if prior.get('rejected_responses') and callable(cached_answer):
+                signature = rejection_signature(cached_answer(prompt), 'tracking', conditions)
+                if already_rejected(prior, signature):
+                    record = observe(triage, group, prior['status'], prior['reason'], now, repeated=True)
+                    note_repeat(record, now)
+                    pending.append(group)
+                    print('続報判定を据え置き: 同じ不成立キャッシュ・根拠・検証条件')
+                    continue
+            if attempted >= 16:
+                observe(triage, group, 'queued', 'budget_deferred', now)
+                deferred.append(group)
+                continue
+            attempted += 1
+            claimed = True
+            report = ai.ask(prompt)
             if selection and (report.get('relation') != selection['action'] or
                               (selection['action'] == 'same_event' and report.get('event_id') != selection['event_id'])):
                 raise UpdateHeld('operator_selection_not_supported')
@@ -116,12 +145,23 @@ def merge_incoming(events, groups, ai, now, reviews=None, triage=None):
             deferred.extend(groups[groups.index(group):])
             break
         except Exception as exc:
+            if not claimed:
+                if attempted >= 16:
+                    observe(triage, group, 'queued', 'budget_deferred', now)
+                    deferred.append(group)
+                    continue
+                attempted += 1
             reason = str(exc) if isinstance(exc, UpdateHeld) else type(exc).__name__
             status = failure_status(reason)
             if isinstance(exc, UpdateHeld) and status == 'retry_system':
                 status = 'needs_evidence'
+            signature = (safe_signature(cached_answer, prompt, 'tracking', conditions, report)
+                         if isinstance(exc, UpdateHeld) and report is not None and callable(cached_answer) else None)
+            repeated = already_rejected(prior, signature)
             record = observe(triage, group, status, reason, now,
-                             decision=isinstance(exc, UpdateHeld))
+                             decision=isinstance(exc, UpdateHeld) and not repeated, repeated=repeated)
+            if isinstance(exc, UpdateHeld):
+                remember_rejection(record, signature, reason, now)
             if record['status'] != 'manual_review':
                 pending.append(group)
             diagnostics = {

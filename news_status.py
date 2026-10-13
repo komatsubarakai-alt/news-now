@@ -6,6 +6,8 @@ from pathlib import Path
 from merge_safety import review, save_reviews
 from tracking_v1 import atomic_save
 from ai_cost_control import response, json_answer, BudgetExceeded
+from failed_response import (already_rejected, cached_answer, note_repeat,
+                             rejection_signature, remember_rejection, source_revision, safe_signature)
 from queue_policy import (read, prioritize_groups, retain_group, pause_reason,
                           already_saved_group, tracking_classification_index, pending_reference)
 from pending_triage import group_key
@@ -85,12 +87,12 @@ for index, group in enumerate(groups):
     if reason:
         retain_group(stage_state['items'], group, reason, reason, now)
         continue
-    if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')):
+    prior = stage_state['items'].get(group_key(group), {})
+    if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')) and not prior.get('rejected_responses'):
         retain_group(stage_state['items'], group, 'queued', 'budget_deferred', now)
         deferred.append(group)
         continue
 
-    attempted += 1
     event_name = group.get("event_name", "名称未設定")
     articles = group.get("articles", [])
 
@@ -164,7 +166,25 @@ low = 単発ニュースで終わる可能性が高い
 }}
 """
 
+    conditions = {'group': group, 'source_revision': source_revision(prior, source_fingerprint(group))}
+    signature = None
+    ai_status = None
+    claimed = False
     try:
+        if prior.get('rejected_responses'):
+            signature = rejection_signature(cached_answer(prompt), 'status', conditions)
+            if already_rejected(prior, signature):
+                record = retain_group(stage_state['items'], group, prior['status'], prior['reason'], now)
+                note_repeat(record, now)
+                pending.append(group)
+                print('現在地生成を据え置き: 同じ不成立キャッシュ・記事・検証条件')
+                continue
+        if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')):
+            retain_group(stage_state['items'], group, 'queued', 'budget_deferred', now)
+            deferred.append(group)
+            continue
+        attempted += 1
+        claimed = True
         ai_status = json_answer(response(prompt))
         if ai_status.get('category') not in VALID_CATEGORIES or ai_status.get('tracking_value') not in {'high', 'medium', 'low'}:
             raise ValueError('invalid_category_or_tracking_value')
@@ -197,9 +217,21 @@ low = 単発ニュースで終わる可能性が高い
         })
 
     except Exception as e:
+        if not claimed:
+            if attempted >= int(os.environ.get('STATUS_GROUP_LIMIT', '16')):
+                retain_group(stage_state['items'], group, 'queued', 'budget_deferred', now)
+                deferred.append(group)
+                continue
+            attempted += 1
+        decision = isinstance(e, (ValueError, TypeError, KeyError))
+        signature = (safe_signature(cached_answer, prompt, 'status', conditions, ai_status)
+                     if decision and ai_status is not None else None)
+        repeated = already_rejected(prior, signature)
         status = 'queued' if isinstance(e, BudgetExceeded) else 'retry_format' if isinstance(e, (ValueError, TypeError, KeyError)) else 'retry_api'
         record = retain_group(stage_state['items'], group, status, str(e) if isinstance(e, BudgetExceeded) else type(e).__name__, now,
-                              decision=isinstance(e, (ValueError, TypeError, KeyError)))
+                              decision=decision and not repeated)
+        if decision:
+            remember_rejection(record, signature, str(e), now)
         if record['status'] != 'manual_review':
             pending.append(group)
         reviews.append(review('status_generation', type(e).__name__, {'group': group}))

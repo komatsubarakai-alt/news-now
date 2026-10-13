@@ -35,9 +35,10 @@ def current_groups(pending, incoming):
     return unique
 
 
-def observe(state, group, status, reason, now, decision=False):
+def observe(state, group, status, reason, now, decision=False, repeated=False):
     key = group_key(group)
     item = state.setdefault(key, {'first_seen_at': now.isoformat(), 'decision_attempts': 0})
+    item.pop('cached_rejection_waiting', None)
     if item.get('source_fingerprint') not in (None, fingerprint(group)):
         item.setdefault('source_history', []).append({
             'group': copy.deepcopy(item['group']), 'status': item['status'],
@@ -45,7 +46,7 @@ def observe(state, group, status, reason, now, decision=False):
         item['decision_attempts'] = 0
     item.update(group=copy.deepcopy(group), status=status, reason=reason,
                 last_seen_at=now.isoformat(), source_fingerprint=fingerprint(group))
-    if status in {'needs_evidence', 'retry_api', 'retry_format', 'retry_system'}:
+    if not repeated and status in {'needs_evidence', 'retry_api', 'retry_format', 'retry_system'}:
         item.update(last_failure_reason=reason, last_failure_at=now.isoformat())
     if decision:
         item['decision_attempts'] += 1
@@ -96,6 +97,10 @@ def summary(state, pending):
     counts = Counter(state.get(group_key(g), {}).get('status', 'unobserved') for g in pending)
     active = sum(v for k, v in counts.items() if k not in ARCHIVED)
     return {'queue_counts': dict(counts), 'queue_count': len(pending),
+            'cached_rejection_wait_count': sum(
+                bool(state.get(group_key(g), {}).get('cached_rejection_waiting')) and
+                state.get(group_key(g), {}).get('source_fingerprint') == fingerprint(g)
+                for g in pending),
             'processing_wait_count': active,
             'archived_in_pending_count': len(pending) - active,
             'unobserved_pending_count': counts.get('unobserved', 0),
