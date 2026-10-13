@@ -3,7 +3,7 @@ import copy
 import os
 import json
 from itertools import combinations
-from merge_safety import IDENTITY_RULES, UpdateHeld, review, save_reviews, source_context, validate_identity, contradictory, article_content
+from merge_safety import IDENTITY_RULES, UpdateHeld, review, save_reviews, source_context, validate_identity, contradictory, article_content, response_format
 from news_ai_grouping import negative_pairs
 from tracking_sources import AI, BudgetExceeded
 from tracking_v1 import atomic_save, deduplicate
@@ -16,9 +16,12 @@ def group_text(group):
 
 def ask_ai(ai, group_a, group_b):
     return ai.ask('2グループは同一案件の直接続報か。単なる原因・背景・地域の一致は不可。'
-                  'JSON {"relation":"same_event/different/uncertain","confidence":"high/medium/low",'
-                  '"event_name":"案件名","identity_matches":[]}。グループAを既存、Bを新記事として照合。\n'
-                  + IDENTITY_RULES + '\n' + json.dumps({'A': group_text(group_a), 'B': group_text(group_b)}, ensure_ascii=False))
+                  'relationはsame_event、different、uncertainのいずれか。confidenceはhigh、medium、lowのいずれか。'
+                  'グループAを既存、Bを新記事として照合。same_eventの場合はBの各記事のidentity_matchesを必須とする。\n'
+                  + IDENTITY_RULES + '\n'
+                  + response_format({'relation': 'uncertain', 'confidence': 'low',
+                                     'event_name': '', 'identity_matches': []}) + '\n'
+                  + json.dumps({'A': group_text(group_a), 'B': group_text(group_b)}, ensure_ascii=False))
 
 
 def merge_groups(groups, judge, blocked_pairs=None):
