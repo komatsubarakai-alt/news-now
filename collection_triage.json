@@ -70,7 +70,7 @@
       "source_fingerprint": "063586ec05cee8c660e943175db9b504c1324e22ba93bbe901fe26ca331666e6",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -1962,7 +1962,7 @@
       "source_fingerprint": "4630b1b7318607c8a5734f64aab1a79d7f44dcf6d7dca8bab30f5ae729511b95",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -1988,7 +1988,7 @@
       "source_fingerprint": "6219981e34cb0be0067ec91dc86f7a69ea3465a5593719b30ad2bc6b91d58cad",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -2196,7 +2196,7 @@
       "source_fingerprint": "14f1882cd953e37e3199bb20fe17c959074512bba7af4127cc6456d8a4144774",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -2416,7 +2416,7 @@
       "source_fingerprint": "60f820d80d954c505a78981bb13cc74250dc5a1ccff6b90ce673fafcadb3f79e",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -3133,11 +3133,18 @@
         "collection_role": "supplementary",
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "queued",
-      "reason": "needs_classification",
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOE54ell1NWotdFA2SVFJT1FVSlpkbHBENEhGQ0hUVURsb2xRT2tJalNhajBrUlpCWlBPbWthRnRlZ2x1Uk1nTUZIMmpXMVNXYmMyajdob0VJQjJFR3B5cFJYSlZET2pYcEFrdENGS1R2OHVENGZ5QjFZUUoxWktlbHZNNFotTk0?oc=5",
       "source_fingerprint": "04096336bdafb00d0f587cd409222f1c91f998a272eb1fa41131d5ecedc5ec34",
-      "last_seen_at": "2026-10-12T02:35:07.138597+00:00"
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "d701aa6b9f81b78c81740fb9",
+          "source_fingerprint": "d3260589dd2ac4a6524ca8d42449de7c0f0754bc5728a030ba15c0a5588a9237"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrMVZGS3B6X3RZa0t5S1NwdmtMdUVTUG50ZUNQRXdUbThyX1hIN0hzbUdVUWhMcTczbExHbHp2bmZYSE1kdVZQaTJWNVliLVhMVmtGdEt1TDBXMFhnTTN6S3pOOFUyNmJ1Yl9Tb1VZbjlTajl1M1JkQ1dOVHlVWWM?oc=5": {
       "article": {
@@ -3791,9 +3798,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "bebfb358b93620ba1ddf649e899e288ba664f32bb6117f2d3803dcac755e3811",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T11:36:06.868393+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "a450227b6123335405ebbf5d",
+          "source_fingerprint": "ec99bcff7c7e5d0b6f6fb8440fea977e82470870d86413a79014e9923720891d"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VMi1uc0Fwd2stMTlMSTd2d1dlUVZKSldCdS1VZG12VEFzdU83SWRFMlVEQzBkMmJPRzFfb1ZVZTNHMHFWem1PMTZYZGNFVFdoTXlreXZn?oc=5": {
       "first_seen_at": "2026-10-10T13:31:47.205286+00:00",
@@ -4475,7 +4489,7 @@
       "source_fingerprint": "2b5cb838adf948a873c01da59c03a8387a528afa22e6145cc1588727cd8a66bc",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -4841,7 +4855,7 @@
       "source_fingerprint": "bc71dde3802bb8acdf14d9a4b738777c4a26afd26a6ff8a0516e7d2c9ce48414",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -5301,7 +5315,7 @@
       "source_fingerprint": "2b7fd2ff691ce897dbdfcf18a2af41d4f35be5975878ad8167697d842447949a",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -5347,7 +5361,7 @@
       "source_fingerprint": "0a18efd2020c0f1080bff64c3f27aec5afa0668fec3403ddb8a347ce199080d5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -5406,7 +5420,7 @@
       "source_fingerprint": "32b996a6338a5afce27a95b9ab67ee5a3b8c9bb9c06fe4d2b3acbdf812b8e393",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -6044,7 +6058,7 @@
       "source_fingerprint": "1c668b9830b8d20d828e66f8a5c4f4a51ef3605906a55b55558d92a22d58315f",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -6637,7 +6651,7 @@
       "source_fingerprint": "55dda91f3effa24a17755eb958c64126d79abdb814f37942991becb19b423e5d",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -6945,7 +6959,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXVzhnbTZzcWJVbVhGcFh4LXRaOEVYQkt1Zkw5djA4c1h3eE5IS3lMVXp2NHVHcUpYcFlfQWVicjJsNFkzVFU2QzVtNGR4TU5SdlQ5S3k5c3VIUQ?oc=5",
       "source_fingerprint": "f4e5aa0a40eb643efcb0e40554a6c6d7336ec4ee5bcd1051bb69603f48d1605d",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -6986,11 +7000,18 @@
         "collection_role": "supplementary",
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "queued",
-      "reason": "needs_classification",
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CYWhfbF84emVLSVRHQVJtUVljVkpNN18tUGR4Y1ZxR2h5X05EXzN4RldUMHBtU3JJbUlseWE3RlphRjQxZ3B3RHpaWENWVGs3eFYyTFVrckwyUQ?oc=5",
       "source_fingerprint": "9a25eaf4566be65e4a9ba64abcde53c4ca013f1f8959a5d89e3ec400c594154d",
-      "last_seen_at": "2026-10-13T11:36:06.868393+00:00"
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "d0eff1a450a73b5db1239777",
+          "source_fingerprint": "e3359010724d7017fdeb26cef4a4c1e61949416074090df7e4b6af80948f35e4"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT0Z1MHR5U2RDOWI3b1NuZjg3QUJzSjl0dExhODZGamQ2SndXSzE3Y1RnZ2ZlSW02T1dkZklGZEh2Y0NzcUhSdTlFa0wyMld4NTZ6V1hDcmxyeFBiSUFKOURmNEZRQ1BVT09vc3B3UWU5UmwtNUNUVlcySGRpUml2MzlYSlpoQU5GMkE?oc=5": {
       "first_seen_at": "2026-10-11T18:35:36.302971+00:00",
@@ -7819,7 +7840,7 @@
       "source_fingerprint": "cc9ef6341fdfcc2f26c4167a75d44941cbc5e753e7ed578ac8742f7478a770d5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -7865,7 +7886,7 @@
       "source_fingerprint": "a597c6c778f1afd4b46ff38faaf0a2f0d462dc5a91624cb021e8a67b9f66d7bb",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -7981,7 +8002,7 @@
       "source_fingerprint": "ae796d89d3064307b39116563b4ccc4b98d47a8e919120547ebedf913d8db014",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8026,7 +8047,7 @@
       "source_fingerprint": "dc3fef1321696079dc2ebd990a77e9c6df9849d537cb7bfc442ff82ead8eb250",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8162,7 +8183,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBuUlNyWE5MMmlEZ2g0MnItLW10WVVVMjVRZThleFBuNHBEdS1RQlFuUmJzUGZyVFFoRHBiQkFZMWVnaklNU2c2VFNheWtzUQ?oc=5",
       "source_fingerprint": "1dbbff2b7e519b268a0a42177971669959f829a13aa4e8cd19ba146434818ece",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8180,11 +8201,15 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVW9FZmE0dWtwMU9hT1ZpV0xzeFp2R3dCZHd1OHlYUXlobkxmYXg1RWNnWTF5RzUxZHU2dXkwd01ITVRzRXhZblBlSE01N3pkOVFOTTFpejV4OUJJRGp5YkpLcGdmNjJ5dzlPM1ltSVZvRmZydS00NHVnQmJEeWpDTWMxSnpqcG8?oc=5"
+      "status": "queued",
+      "reason": "needs_classification",
+      "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVW9FZmE0dWtwMU9hT1ZpV0xzeFp2R3dCZHd1OHlYUXlobkxmYXg1RWNnWTF5RzUxZHU2dXkwd01ITVRzRXhZblBlSE01N3pkOVFOTTFpejV4OUJJRGp5YkpLcGdmNjJ5dzlPM1ltSVZvRmZydS00NHVnQmJEeWpDTWMxSnpqcG8?oc=5",
+      "source_fingerprint": "b3e4e0cf523feb7c9ed087d5ad733c4782a53ddc519e29897492e2031bd4051f",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeGxkc21IS2swZTZibjhJUjNKS0pfTHJmdnh3OWlFRTRwLW1BQlBDN3VaZ0VVNTRpRk9jU0lOd2w5bnRseWJLNlpSQ19idU4zdG1yYUZEZTlOU0lYU2k5aTBzQzE5N0Eyck5RdndnYkZaQ0xpZlZ3Z2R1OUhhN2JxS1ZLZy1xV28?oc=5": {
       "first_seen_at": "2026-10-12T04:36:55.428747+00:00",
@@ -8268,7 +8293,7 @@
       "source_fingerprint": "9150049914dcf91e6e29c9f9dd9a9e61eafec36a0e48dccc13904c2f5a99d9c6",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8362,7 +8387,7 @@
       "source_fingerprint": "075bd16259c1e8b58a4faf64f3c26350e7ff445c3aa76cc3c9c41a6452ee842b",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8388,7 +8413,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1OMlhTNGJMa3A5TVN4dlRtNTlJMzVtWVhxbTNzdlJLRWJxZXhvblhvQllOa1BKT1lKTFNFajhSUno3NzBHVjFENzJmQnpjNGVuU0duX1I3MmxkZXlwWGY4?oc=5",
       "source_fingerprint": "66710d506ff7812d32121a3e996179f003e69267550d4fa836e2cf9f5562126f",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8540,7 +8565,7 @@
       "source_fingerprint": "96bd0b748490de587db17b6870364eb5ca4f01ee29598eeb1a2aa78960432060",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8585,7 +8610,7 @@
       "source_fingerprint": "73a89e0a2d8cae7bf6fc8097d06a4dab63baab2a79d9746eaaebd237578eb25a",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8763,7 +8788,7 @@
       "source_fingerprint": "d0d188c93158dfb87c165847d5f3019d7495cf96202e0f04570991f1e21944c1",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8789,7 +8814,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX2drRlI0a0NvTVlaTVkxM3VnbXd3bGQ2SXNHRjN1UHN3OW1adEt0SVZ0N0dpSG50QmFwWmJmdmt3UWxWTlpyaGJPMk8yUnFKWGFkS1lUci1UR1FxSzRxTElsXzExNG1LcXdfZndfdFVXdnhRU2Jvc0FTRnBrYkNOQlRiVEp5MEU?oc=5",
       "source_fingerprint": "f7dcf9bdec19291c118a71aef275306736a793dcb801ff6c9598e2c4dfa8195d",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8815,7 +8840,7 @@
       "source_fingerprint": "49bc7347cfb8e8ff799182e0235483d523371c9cc0af71435dfe49ae378a085e",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8905,7 +8930,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9nRzBoblh4YUxVTVVuNUswVGY2Z3lTV1JzbW9HMDJla2tBTWwzREZ6SUl4Mk5ncUpza25oeGN1UDMzbVFNcUZTakU5NWNBUkwwdjhlczBqbHItQlZySHlOYmpoeS1ZaTZic0xqVDlQbjVlSnpRZHNORGZn?oc=5",
       "source_fingerprint": "ee56fba46427e6a1a2ca1bb782dd899985c19b8d0135a8145dd5f0722c8c497a",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -8980,7 +9005,7 @@
       "source_fingerprint": "426bee431da22cee955b98497fe7ff268ebe125762807ff136a4e9511d235b65",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9063,7 +9088,7 @@
       "source_fingerprint": "fac4c8c3b0862e15d610a7a4d14e35c4476ae71bc48023b516f676fd82ad3f69",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9125,7 +9150,7 @@
       "source_fingerprint": "40478f56b3b1a830936bdfff65c1a2b44402808cc3d3a1885d20078dfedc14f6",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9168,7 +9193,7 @@
       "source_fingerprint": "8932a6228a4ae343e4d65cc1f8601432c4a2c2b6fafed0a1d1437ac9d2a18757",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9194,7 +9219,7 @@
       "source_fingerprint": "5d74c132f2fff4f711f397b5a9388570d3d272f8c13b4e861757916037eff93f",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9284,7 +9309,7 @@
       "source_fingerprint": "3a69decced3a80fe20c7c1fccfb9fd1e868cebf540425741e6e34db71f772452",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9770,7 +9795,7 @@
       "source_fingerprint": "c061bec5d07d9eb0911ed3619ecc7bf819ac11115bdf48f17a1260a999e25ab5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -9955,7 +9980,7 @@
       "source_fingerprint": "cd47fcd4fc78d03c6146e8d262ff84ba605bf1904461ac22e6ba2ad39d0235a8",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10052,7 +10077,7 @@
       "source_fingerprint": "e7d8ff15f2b55546f35d5d3e23c027f9139337c1324faeff52a488a0b164c346",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10110,9 +10135,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "16863870dd7eb2ded3287416133db38aa3354dc6d45cf21654f1a007f7d8ca4a",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "09dfc8020c54060628d31b5d",
+          "source_fingerprint": "ffab4ae1a125f9970d4bfe5768975402715bb8aa3cf38341276a1214996d9eb5"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rQWR4RHZFeENVX3pTLVpvOHlTVk15NDVnU29jMkVrT20wd1ppQlFLakQ1SDdCUWhQb2YwTkJjUEFWUGY1WEp0eVBYSl9SSkFJNWhDX3FjLUR0dVVnRWR5M3lNWnJNaUd2elBUQXBiTUZVeVFIUWhWY2NUNDY0aUU?oc=5": {
       "first_seen_at": "2026-10-13T04:37:15.926015+00:00",
@@ -10151,7 +10183,7 @@
       "source_fingerprint": "7f991b2dc53eb3402a74be7f4d5ff0f8ab411a6d0ec208ac892be552b306650d",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10242,7 +10274,7 @@
       "source_fingerprint": "a3f0aa37c922dea19fd28b2d2067a1f16a7c0ed6c2dca7d94101e78aa1567366",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10327,7 +10359,7 @@
       "source_fingerprint": "84c590d6efb00b2e5376f5274939169dbdfec466f1e12ecf5f95778680cba1db",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10379,7 +10411,7 @@
       "source_fingerprint": "e26dce9edcd5effa15eae521f1ced248cbc3ee4ce8addfb9db692938a033e561",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10584,7 +10616,7 @@
       "source_fingerprint": "0a72ddd127ce0fb98c7f671d3ee703d8c3106d5c07ec9fea1a3d6a68d046bfc1",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10629,7 +10661,7 @@
       "source_fingerprint": "c1dd3a3ba5b7d2ee7ac7328b4d227c5c02edf3723e0abcdf1ca31ce25d57dc9b",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10738,7 +10770,7 @@
       "source_fingerprint": "3d05c6c0cb141d108474795f4c47c0fddabc18890cf1ac5eed75ef5679915a1f",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10807,7 +10839,7 @@
       "source_fingerprint": "46b924c5d48a39bd5631ac65fd11dfcebc6c068b87112ba6d7ced498c38012f8",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10833,7 +10865,7 @@
       "source_fingerprint": "3e7fbfa39bc9d6b37486418a334aefb6e10271d28d41101e20f85964497d2439",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10876,7 +10908,7 @@
       "source_fingerprint": "6ddaf30dc449576b96ef8c053b45222274bb06a191b5c45d54ee4bee6975b099",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10902,7 +10934,7 @@
       "source_fingerprint": "3a26368fe084f36f03122032dcb81217c538f5705c4a2a2906df5221eddd2e57",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -10992,7 +11024,7 @@
       "source_fingerprint": "ed610911b942137d61536431152315f057d4b36c3c2e43d5f5343ad93d1462ed",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11076,7 +11108,7 @@
       "source_fingerprint": "5b9bf13250ceaf2bcbac57d1c785dfa7a51ab097dc0227efb46e4e086ea2db8b",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11094,11 +11126,15 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQX0RSM01qMnA4UV96OG5KQXJFUjJyREV1TFF3TGkwSXk3RjRHa3k2VHFrMVFhbUp3QWFNNmZ0eGNQY1V0M19vSC1WUUdQaE56LTYzTVVCYjdDME1oNF9pWUdpVEhYdVZUU3NtY1ZHdzlmSXJId0dtd0V5UFlFYmktVzBERW1mQnM?oc=5"
+      "status": "queued",
+      "reason": "needs_classification",
+      "representative_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQX0RSM01qMnA4UV96OG5KQXJFUjJyREV1TFF3TGkwSXk3RjRHa3k2VHFrMVFhbUp3QWFNNmZ0eGNQY1V0M19vSC1WUUdQaE56LTYzTVVCYjdDME1oNF9pWUdpVEhYdVZUU3NtY1ZHdzlmSXJId0dtd0V5UFlFYmktVzBERW1mQnM?oc=5",
+      "source_fingerprint": "f9aee02c0441424d5302c337a87ff9342786c9ea4cd6c62d8e94d4b0700b7bd9",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     },
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fVC1LTzdGOUpRQ21vSGR6d1N0aHdBQndYb3Y4NjNiVjVxSFU5YjRmZ0hWS0kxSENUbENCYm9WZ3hVSnFVYlZJbG41VzhRLVYzQXliWWVtaWl5VnJCMDZrTnJYcXB1SXc?oc=5": {
       "first_seen_at": "2026-10-13T08:39:13.923060+00:00",
@@ -11117,7 +11153,7 @@
       "source_fingerprint": "de8e15b2c62e50459b3932939d2b08a0a570b87276eca26bf6b091b4971d7503",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11195,7 +11231,7 @@
       "source_fingerprint": "1aec0c528a5150ab9d1fc3fb1a396dceb3f91d211a14ef258772288ab2f1fad5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11247,7 +11283,7 @@
       "source_fingerprint": "199b977d9bf53ae584ab3d7b083e8cd22f40ec822b937e24aebd9373f48387fb",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11318,7 +11354,7 @@
       "source_fingerprint": "1e42668f93b36cd6660aa99d40de2a425b97770ae983b9b0c38c54c0e5583c91",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11371,7 +11407,7 @@
       "source_fingerprint": "e368c1f9074866ea3f3cc0fc812467950899eeecb71ef1d0dc2ae3a47edb99a7",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11415,11 +11451,15 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aOGs5Vl9pNUJTREloMG9aYTc2LWJrSDNyZ3JrR2FsdDY4SHNmM1pIMWVlNzZCVzlyWEFscXFBTlR3UWJNV05EVGJEVGNNYzkwQ1U0LW1waEd3Y0ZwZ3BXbG0wcTQ?oc=5"
+      "status": "queued",
+      "reason": "needs_classification",
+      "representative_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aOGs5Vl9pNUJTREloMG9aYTc2LWJrSDNyZ3JrR2FsdDY4SHNmM1pIMWVlNzZCVzlyWEFscXFBTlR3UWJNV05EVGJEVGNNYzkwQ1U0LW1waEd3Y0ZwZ3BXbG0wcTQ?oc=5",
+      "source_fingerprint": "685ec3d5ddfca4eea98c8dbf7da2958ff458b3d28a2b8ab246e08d29315533bc",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     },
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOWNnUXctNmVxU1BSYm13SmttU2FrUXVidWxRaGJ2SlNLSnFad3ozNXFRWE51dU1iZS1jcExsVXMwZWRWbURtcWh2MzZVWTJNbTdoR25YSlVmRmtJX2xPOXFUdmViV0ZhaWgtQ2JLOWd6bVQxNFltVUo2bHl4RnFETlRnT3A5dGV2QXFuVEF3?oc=5": {
       "article": {
@@ -11454,7 +11494,7 @@
       "source_fingerprint": "57189d83af3d1b740f933281fd7143b02845b8dbd63e413acb707a86881770e8",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11480,7 +11520,7 @@
       "source_fingerprint": "d9fb241efa79e7e2ca0d224fcc839d47be9b81d7384f27c90aec5116fd9d2189",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11506,7 +11546,7 @@
       "source_fingerprint": "b0a9a585c2998223d621bc9fc3476dbc2cb0dcea6629146737d6bfad3734b0cc",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11516,12 +11556,36 @@
       ]
     },
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRjFvSWprOXhSaC0tVXNRUGRtWHRWUjcwc0tqTGtmV25qbkRhS29xOG1VTkNleEJGMkVBdzVpLUUyd3ZtM1FsUHpVTkw3dEZ5QkF3ZHJ3TzZjUk0?oc=5": {
-      "first_seen_at": "2026-10-13T10:37:27.740959+00:00",
-      "source_history": [],
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [
+        {
+          "article": {
+            "title": "ホテルマイステイズプレミア札幌パーク 秋土用にそびえる“うなぎの山”「うな重マウンテン」登場 - 下野新聞社",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRjFvSWprOXhSaC0tVXNRUGRtWHRWUjcwc0tqTGtmV25qbkRhS29xOG1VTkNleEJGMkVBdzVpLUUyd3ZtM1FsUHpVTkw3dEZ5QkF3ZHJ3TzZjUk0?oc=5",
+            "published": "Tue, 13 Oct 2026 09:45:44 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRjFvSWprOXhSaC0tVXNRUGRtWHRWUjcwc0tqTGtmV25qbkRhS29xOG1VTkNleEJGMkVBdzVpLUUyd3ZtM1FsUHpVTkw3dEZ5QkF3ZHJ3TzZjUk0?oc=5\" target=\"_blank\">ホテルマイステイズプレミア札幌パーク 秋土用にそびえる“うなぎの山”「うな重マウンテン」登場</a>  <font color=\"#6f6f6f\">下野新聞社</font>",
+            "rss_source": {
+              "name": "下野新聞社",
+              "url": "https://www.shimotsuke.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "status": "downstream_waiting",
+          "reason": "unchanged_downstream_source",
+          "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+          "downstream_waiting": [
+            {
+              "stage": "status_generation",
+              "group_key": "037366cb31e24fcb6f2bd216",
+              "source_fingerprint": "ff63caaafc7327f2ec36e765dacfa497397f66de943e488002103a394f4b6791"
+            }
+          ]
+        }
+      ],
       "article": {
         "title": "ホテルマイステイズプレミア札幌パーク 秋土用にそびえる“うなぎの山”「うな重マウンテン」登場 - 下野新聞社",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRjFvSWprOXhSaC0tVXNRUGRtWHRWUjcwc0tqTGtmV25qbkRhS29xOG1VTkNleEJGMkVBdzVpLUUyd3ZtM1FsUHpVTkw3dEZ5QkF3ZHJ3TzZjUk0?oc=5",
-        "published": "Tue, 13 Oct 2026 09:45:44 GMT",
+        "published": "Tue, 13 Oct 2026 09:30:00 GMT",
         "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRjFvSWprOXhSaC0tVXNRUGRtWHRWUjcwc0tqTGtmV25qbkRhS29xOG1VTkNleEJGMkVBdzVpLUUyd3ZtM1FsUHpVTkw3dEZ5QkF3ZHJ3TzZjUk0?oc=5\" target=\"_blank\">ホテルマイステイズプレミア札幌パーク 秋土用にそびえる“うなぎの山”「うな重マウンテン」登場</a>  <font color=\"#6f6f6f\">下野新聞社</font>",
         "rss_source": {
           "name": "下野新聞社",
@@ -11529,15 +11593,20 @@
         },
         "collection_role": "primary"
       },
-      "source_fingerprint": "975235334991289866be67350ac6135cb2ba2eb5a10758a37fbed60e86e0eade",
-      "status": "downstream_waiting",
-      "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
-      "downstream_waiting": [
+      "source_fingerprint": "27f21f06d15ea93ef21261d2acd8941efd9735924fae37eadad3175d725b58df",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_history": [
         {
-          "stage": "status_generation",
-          "group_key": "037366cb31e24fcb6f2bd216",
-          "source_fingerprint": "ff63caaafc7327f2ec36e765dacfa497397f66de943e488002103a394f4b6791"
+          "source_fingerprint": "975235334991289866be67350ac6135cb2ba2eb5a10758a37fbed60e86e0eade",
+          "references": [
+            {
+              "stage": "status_generation",
+              "group_key": "037366cb31e24fcb6f2bd216",
+              "source_fingerprint": "ff63caaafc7327f2ec36e765dacfa497397f66de943e488002103a394f4b6791"
+            }
+          ]
         }
       ]
     },
@@ -11589,9 +11658,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "41740c5a813f927fe76857f71a89c659b27b2f600f6e0f187008701b1b4ca195",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "c1f10a8dc4a5fda903ddf30e",
+          "source_fingerprint": "0d1b4d9864e59caa18ec04b31883c63f4cf400c077f8aab8d615f83c451a6db9"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NZjBRendhZVh2c2p2bGdIWGVsdDZFWkppd3B4T2tqNlhWaGcwaFpOZExWeVpfRUVpRGJ3REFfNHhzNkJZQkdPX3c1WXY5QTQwcjNSeUxsQXBoRVB6OHc?oc=5": {
       "first_seen_at": "2026-10-13T10:37:27.740959+00:00",
@@ -11679,9 +11755,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "9bc5771a6082e37a3899d6cb846e1c913c83a92bbd5cd69bb2135401b5fdb280",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "8dc0e02d2a7ecf3ec0a25e44",
+          "source_fingerprint": "0ffb3dda2e0b305d0e5fe1fef5ff72eee531d936c7f333bebe6f501a9eaed733"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeUFDRWlWbEdSWE9xeTNMR3BpRnFCTl9IVGZhNFN2elpzNjhaWnhfWTlBWUN4cUtVQkFXTUU4WDJZX1ZIYVVjRTZ4bk9NanJjbDBHaDVjajkyZ0pSaFFzak1ubktTUXBBT2QzVFRRQkxQcUQtV2xWSHEtM0PSAYIBQVVfeXFMT095TFRBMXZGaHB4eVlxY0pRU3p0ZXMzYXFWM0l6MjBjUUlKTmVRdTFBenFQQmJZdVBPZUFFX1ZEUHNsZDRVZXdFRkw1SzdBSG01eXd0QVRmR0pGbWRjQmRXRVFlWUtvMW5zbG5zZ0RvbDh5TTZkbG5XTko4enFZcl93Zw?oc=5": {
       "first_seen_at": "2026-10-13T11:36:06.868393+00:00",
@@ -11700,7 +11783,7 @@
       "source_fingerprint": "63e229d555a8ea92afe629f5cf467cdf85192028a3ce730c283439e8b5308485",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11741,7 +11824,7 @@
       "source_fingerprint": "351c96683e0aa2189af66bafb7b4ca92fbdf88f1eefd77987af48860ab31f137",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11812,7 +11895,7 @@
       "source_fingerprint": "08849c9ae6ca394cd97aa2d8ca250ecd10c5db56e8b252303454140b9bb1b655",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -11875,11 +11958,22 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iWEhSTlNoaFUyNnRHUzZHVjdxb3NKaFVCSXJMa0g4UC1kempQNlV5MExBQlJJMVJXYThTbnFldGlrWmxmdzNsYUJwV3ZsVHJKU3Q4ajBpTVA3YkJEUHQ1ZV9sOFdfVmpWYnA0djZB?oc=5"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "representative_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iWEhSTlNoaFUyNnRHUzZHVjdxb3NKaFVCSXJMa0g4UC1kempQNlV5MExBQlJJMVJXYThTbnFldGlrWmxmdzNsYUJwV3ZsVHJKU3Q4ajBpTVA3YkJEUHQ1ZV9sOFdfVmpWYnA0djZB?oc=5",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "c1eb8577d6408b0beac26b75",
+          "source_fingerprint": "36aa956b3dbc7d4c0e005fcfe6e32899034f3cf0066c3a7c65e040d552d676c5"
+        }
+      ],
+      "source_fingerprint": "c9e9a03436bb2efdfd4f1fa1bb539854375836115d1b9d5edeaf3d96c80ba90d",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lbnpzV3pZZjlBbFNnNHpGV0N1cjV3VXhrYTNEa0hraGhNR3A0azNrVUFOQ095RFVEbHVjam5rTENKMkplejZucnBibmdCd3htV2R6N1VKeXZHU3Q2akFpazR5eTcxZG9pWUEyZUFVaEtBUVU2SWJ3ajBqVzlFRW8?oc=5": {
       "article": {
@@ -11930,9 +12024,16 @@
         "collection_role": "source_unconfirmed"
       },
       "source_fingerprint": "0e95c78dda3401efe70c2e104dfd91c570eda77ddc267a067c1bd356646b4444",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "c5cc5aeac5d0c6fd0a024d63",
+          "source_fingerprint": "c2c864deebd7eb4a9b9835178911e1ae6cc7c0410ccdf5d7240fb897348cb52b"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wR0R0QXVwLTNyd0otb2paYm5sTVlLWVFvWXpuSEQwbUNpUFl4eUVXUjBZekxaeEVhX3JLN3RyMUt4VnBXM05KX3lNbHN3dHdjcUFydmczbzZWeUwzN0x1WDFsR0VFUkFUWG9vNGRR?oc=5": {
       "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
@@ -11968,9 +12069,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "c69bc8f9b49c6e76ac8cf04237036ddf9aee2e1aa6a9c981bda20fe23ad5d6da",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "1e16c5031cee0d74be672941",
+          "source_fingerprint": "52b7959fe873f1b18aafb9a1a9bcb127abb6875a0e5bf154b934b9ef9bfb022c"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkR05XeXFhUktjbDl6NnBud0lha3Z3Z3FmczBRNXlSYW9YVnBPUTB1bUlkMVBrNWZUTmVxYUJyczhBZFdsNk5kY3lHa3dRQQ?oc=5": {
       "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
@@ -11987,9 +12095,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "b778d9b1fe2322bc6af23bcd4965620a77f3d80b033c34f10456a6c0c9bd70a2",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "f1e1f8b0c4e30e12760b15da",
+          "source_fingerprint": "ce83a3504485762384058d43d52ca6aa37e832df1744d8bf868fcdf3fdb404b0"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4tRUFoU0p2Z3lzb3FyVkZDWUZiVi1ZWlJhbFN0RzcwSDJ0QU5Jb2I4dHIxZldNZ2kwWE4zRDJNZ3p4d1Rvc29QRjI0SGhjTklqbDV0d2RlYzRabTdwejlGR3FlV18?oc=5": {
       "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
@@ -12006,9 +12121,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "271e12b1c45f9b18e4cc55338acd79798266fc7ffa8b8cfec46fe7ebf25e87ad",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "c21df8e53d0b3b0be1ef0825",
+          "source_fingerprint": "1c73d3b23e460f0e99a1352c0cb78a964a8c81b704f5596c07aa14969739de5e"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5VS1BRZ1VxNTZza2FEaC1pWlZXUlpoYllqTkc4MTNPU0wyYVNCQ2U4YW9lVWdmakVsUEZUZHVoMjdIS09ObDJpWVhmeHBzMFhqZVNOb0lzLXduUDBWX1JYTVVjaXVheHVr?oc=5": {
       "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
@@ -12025,28 +12147,53 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "c08853bab0572fdb9c5fc53830ee0a1c9ec8e31a3f5d3bea041ea6cedd5eb15a",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "c96f988ac885fcb26e56d406",
+          "source_fingerprint": "6d6e6000c57ba07caab7e26716a9a42dcbbac101b92e4f6d59b17bcc48696f9b"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5": {
-      "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
-      "source_history": [],
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [
+        {
+          "article": {
+            "title": "札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 27年度以降 - 47NEWS",
+            "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5",
+            "published": "Tue, 13 Oct 2026 10:50:32 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5\" target=\"_blank\">札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 27年度以降</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+            "rss_source": {
+              "name": "47NEWS",
+              "url": "https://www.47news.jp"
+            },
+            "collection_role": "primary"
+          },
+          "status": "queued",
+          "reason": "needs_classification",
+          "last_seen_at": "2026-10-13T18:42:36.039892+00:00",
+          "downstream_waiting": []
+        }
+      ],
       "article": {
-        "title": "札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 27年度以降 - 47NEWS",
+        "title": "札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 審議会答申案 - 47NEWS",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5",
         "published": "Tue, 13 Oct 2026 10:50:32 GMT",
-        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5\" target=\"_blank\">札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 27年度以降</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3ejBEZGVXVUNadXVGbnVQdWFuajJzSjJnaDROVXAyYUtTTzNVSDJUZ2luRTlrcjlqZ0Z3QXlDbGpTQ19qNmo1X2hpSQ?oc=5\" target=\"_blank\">札幌市、排雪「パートナーシップ制度」廃止 全区間で市が実施 審議会答申案</a>  <font color=\"#6f6f6f\">47NEWS</font>",
         "rss_source": {
           "name": "47NEWS",
           "url": "https://www.47news.jp"
         },
         "collection_role": "primary"
       },
-      "source_fingerprint": "12cc9d5c10097bf6f36ca5ce288d5b7f3964bd22fc0a3be8e80e26c374236e1b",
+      "source_fingerprint": "917c17c7d42cf772bb2a5b9f2ae7831e29bf6444aed87e2addbce3ba1a63f71c",
       "status": "queued",
       "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaldyVVlPa0xCQlhISXdnQ2RWd3dUQUhHVnpEWEJXZFpBcGM5bzVhWHNEUEVIaGRuYTFadE5EMUVTYVBoQ2dCbEc0d3Z5UWJFMWNTUnVLSnl1alRtR3NHSl96M3V5ZmVBS2hvbWtlTEc5TUhzNEE3cHdTcWN2VGsxcFhVX0NlWjTSAYwBQVVfeXFMUFZad0Q0dmVmd0dneFNteUFXQlJJTWNLZ2pDTnhvTUZSZDhvbUVSaW9PS2lkUkhaaHJtQktadTFHNHNocUlNNEJYcVQ4V25TVGloNXZvQWhKS1p6WGU0RHFNUkNueno0eFpQZGpVWVZzOHQzVWItS3NoODhsRU5US3RqZThNd1RsNzBucHE?oc=5": {
       "first_seen_at": "2026-10-13T12:45:32.414891+00:00",
@@ -12101,9 +12248,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "c15910e99fac5a4807657e845567567bf8b7f7515d831d24275ea182dbf57d19",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "92f413854daa44f0351e2516",
+          "source_fingerprint": "73fc1c36ec61f4e2a21731c2c653bac0025fe00125cd910dd319dcf75be7bcce"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOFdFZVRGRXhYemxWbjItUzR5QkxLZkdnUkdNaERHdFRySGl2LWtycHFaVXdDSk1pMVZsWmh3VUFrMWdZUjJoMmNTdnI4TTBST2RvYW9YazlsY1V2bXpmREZ6UHJJZ213OElBaDF5UDBHX3pPeTl6MWlWcFJnMndRRnVOSHN1MUNKdkpTeE93?oc=5": {
       "article": {
@@ -12183,9 +12337,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "59b042c1e186da751c8deafd0f56b3d94daf3b047c7f80805726fb8b9a3d7901",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "a824bfec66856f5660c2d63f",
+          "source_fingerprint": "255849a26d4875c8ea4389d80e10d4d3e6b9541067979e59f1964478e4627e1e"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wdjY0d253RUMyWENTZU5OSmNMOC16OGczV3N0V25ZdV93c1BfYXoyc1FZS0tCT1A0OXRaSVh5QmgwdlgwRFp4di1YWVNLa0lyWEowdHlMbDlndw?oc=5": {
       "first_seen_at": "2026-10-13T17:35:04.873656+00:00",
@@ -12220,9 +12381,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "97e3f8e3b8ac60685b073fabccba9a4ab118342c29665889dadf800ca32629cd",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "3b0a5aacc8d2510d719a5cb4",
+          "source_fingerprint": "06d4e1892b8f3f5b717e7af5bf0f61f764700d582614372f1e4dc5bfa0e42208"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13NnlmY3Y2WThLLWh3TVJsRlowcEUtMnFXbnhtOEpBcFhIcHotZzBzN1Y5c0U1YmRHSVpqbGpVT2NlTlkzRENzOENZdW5aYWM1QXA3U3JpUlNrY0dZclB1NlktOENEUQ?oc=5": {
       "first_seen_at": "2026-10-13T13:42:36.551296+00:00",
@@ -12336,9 +12504,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "e31bfba858f669ba9693886f750f3673b6b367dcb5999604f0b29641288f8e1d",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "e0d14330793ba613c99352d3",
+          "source_fingerprint": "c0214793e3718661712beb6b6d0cbe14964ada0f731526024a10c15cd925ba93"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE45NVkyQUthVElGWElyWUwzMk4xTkZTeGN6b0NCdm9kcHhlR2R1Y3ExenJhNzdBVkpyWGlxQjJSSzRfa1BhMGF6N2FQdnpqcnFnRk1zejBxdDk4TnFMYTNnOWV6NmtldThxMHBhandWRDFmY2N1ejc0cEZGOWF5UGM?oc=5": {
       "first_seen_at": "2026-10-13T13:42:36.551296+00:00",
@@ -12375,9 +12550,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "f0088e51c4f1a85a70ec0292f42527befb76bac078b456376050de3704bda959",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "48be9dec9e897abef99379f1",
+          "source_fingerprint": "4cd59228146ece07087b7b16140ec34144ae0ed5a17c96e43b5274c6e4626deb"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE8zWWdOaGNJdHJXME1iVnRJTjZUREJsQW13NVpIc3ZfelVnOXlTTEgyeGlUczVkQTB6cTZMc1pSR1VRdTNwYk1WNHVTRWJFOHlkNnRIRlJScU1OSXl4UHhWWDE4QmUtVk5HQlhPckUxSUJXMVhLaGU0dURRc0t5YTA?oc=5": {
       "first_seen_at": "2026-10-13T13:42:36.551296+00:00",
@@ -12395,9 +12577,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "e4dfbef98bdd9114ebc8952967b354ed29cab08c099ca474d59c95a00a4bf396",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "2f2b6497d461e2e5637a866a",
+          "source_fingerprint": "46a96d85f4c0e69ab2e8efa42b9346f0b5280dda0b1c726634699f2e45ab1589"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBQLVI4eDg3TVZoa0REYkhTb29FRG9tdC1idDhNbVRLOElDTWhBZ0NVa0Rjemp3MzZwMHM0dHFzWHk1a3lmTUJQNFpOSkRrb2dwUUl6RWFsa1ZnZnFlTzNqaF8xNUxua3JibVhCOGItM1dVX3lVOHVwcVpGWFFqcUk?oc=5": {
       "first_seen_at": "2026-10-13T13:42:36.551296+00:00",
@@ -12449,9 +12638,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "59dec27a6b2949b9e2e0d8348fdb1aef58a418b71753e47bcdf18526ae1982f5",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "a37c2cd7e796815ee1b81634",
+          "source_fingerprint": "cfae7e7d636d4e72e529953050f1ec785b9122a9d8033ed73e61290b7d9dd91f"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2NjgyZURla2F6SUJaLVlNcTFuekM0MzBmc3lEUGk4amVDejEtZGpENk1fTXhXdXk2akQ2WjFRNWRVaV9CVGFEblBCUFlULTZXMlUySTdjRFlhakgxaFNObjRpTklVbGFSelRXV1dB?oc=5": {
       "first_seen_at": "2026-10-13T14:40:20.422843+00:00",
@@ -12488,9 +12684,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "cc84e4dcbaf95db699093a26bc4fab2f50c7a44b10eb0ef3f0fd59792b41857f",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "b391ba3962f214a2ea5e7235",
+          "source_fingerprint": "6bf18d936fb1d01e502829a4323735893c8988f96dc94c76b44fa720579ccac4"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRXRRdzREaEdwZDdoNk5tUTlMeENYSi1MUU5kdGd0N25ydnktU0xUcEtoTUJ4RFpydHI3d2thZEF2ZVExUXZUM0wwNjQ2TXpNeTlaLURObGVEcExHN0NVRWhsWHVXaDgtbzRPR0lrRXZEVzB3YnZYOWdvSFNiNHhGUUdBM01weldH?oc=5": {
       "first_seen_at": "2026-10-13T14:40:20.422843+00:00",
@@ -12507,9 +12710,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "82711f1581bdda68859ac85b3b54d8a03d440ca121e0462aacc5e7038964b377",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "460f976e7710da9006b57576",
+          "source_fingerprint": "e8a34d5c5a61cb8d4d788e17d7845b310af300cf28eadec19871a5333311174b"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qUEpMeGRleUI3Q2tOWWM4bWxMWlRqbThRUUlkYzZxQmZaTWdjOFNYN09mZl9hQUQ4NzJsOFo4a0Zoa1ByWHZGUWwxbFJlNkEyT0d4LUEtU1ZSdi12eHNUMzlMcWpsSlBhaXoxbF9Ua9IBdEFVX3lxTFB3YzI0M25OM2RkYTdURFR1VVo0eUxyMlU0VFMwcTQyYUZ6WUtwelIxNHZaVnBGWTFTbjdONXR4QmR3WEM3MDFPc2pXQ3dTanRFX1lkMXBIOEc0SUJrc1hweEVycTRDUHBUTHA1RTJSWlJpbmZN?oc=5": {
       "first_seen_at": "2026-10-13T14:40:20.422843+00:00",
@@ -12675,9 +12885,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "70d2973211ab811cd6a4190b0e8c8e070b3ca2f982d96d1a4762d5654036f5f7",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "746ef6d4f09e3c760e5229b9",
+          "source_fingerprint": "2b4d79848c516babd13e9b6eb712fa1552d9b9069db6f355e05db9c6cf18fd76"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMib0FVX3lxTE1YNzFiZXdLVVQtemFITVEwWmtFVEwwRWkxZFZUaWx3N2xYSmpmYVB1VG82dHcxLWhfb05DNW92XzJYYmFqMlZ4QTJlcGJuSmZrNGVTYlMydjZ5SGRTbEFheXk5Um9VM3ZKN0hIWWZPSdIBdEFVX3lxTE9CZ25tWU82aWlIeFJ1dVc3dEdWU19NdE5fbzkzOGtXaXpPang2UUhRWWdOY1NVS1ctQnItT1lNc20yTTdFVHBMNGZ4M28zNGQ2U2Q2NG52Wi1PVXZITmd1UWxic1hiZl80ZHZldl95MEFzTjUw?oc=5": {
       "first_seen_at": "2026-10-13T16:37:11.267721+00:00",
@@ -12694,9 +12911,16 @@
         "collection_role": "source_unconfirmed"
       },
       "source_fingerprint": "5be85303cff6b6093863ff197a49bdd2848ba9f45aa9d1035a46d5c193b820ee",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "169e0e8f775ea12b6a8bd2ea",
+          "source_fingerprint": "2045a60e52458312bd2dc33f713f908590b40a825610f68ddf9a1e6d09219c54"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTcEdkRTdpOGpfVWJvTnREWXpxLUwzaWdtdG8ySzdTWVlKYW56NUJIbjVGZi1zeWVYdUhzYmJsYzYwTlRobzhudk96RzBRWThlTGxXYmRyQU9YSF9mcU5PUzZIOU16Wk0?oc=5": {
       "first_seen_at": "2026-10-13T16:37:11.267721+00:00",
@@ -12713,9 +12937,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "776f89be890c8975c333d357281e6a41529b736c9d6e3f9acde0a4d70f7430f9",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "fec378dc3537a102c8aacc6a",
+          "source_fingerprint": "d63cb7307da84e9a15055e5df25932b899f80f88ac6e67868f56e8591350d794"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9mek9YcVBSS2tXbVFSTU1vakZ4cnZXNGFJSTRXZDQwdm9kSDB0aDF1cmV3WXcyZGJSS2s1a3pXY1dVSGdyNTFzSmU3UVRoanQ5M3JZdWpKUlc3UjRRNmtkVDdUZUZ4QmM?oc=5": {
       "first_seen_at": "2026-10-13T16:37:11.267721+00:00",
@@ -12771,9 +13002,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "e8af1c15b39310d89e59182c0b0629b2a6db09354b6366baabb589e2459ddc6f",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "260ddc9343f8d669dc469fa3",
+          "source_fingerprint": "83696a0ffaef15480e5f0862df8e21dd44db581196be869893c0a046e151ef2f"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfMDlab2NCbE45Y1NXZTZyTHBTcXh1ZHVmZk14a2VMVFdSSmlDbWVMWGtFQnpKM0tjOVZWdHlBYUdjSEJObFNYc0c2S1pkTU9fVWNaYklmbExzeEQyVGQzbGx3cFpUWVk?oc=5": {
       "first_seen_at": "2026-10-13T17:35:04.873656+00:00",
@@ -12790,9 +13028,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "9ea1c131d9c2873b3bc690f7d815df13d25ac746dc43db0bab7f4ac7930f7d70",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "f98162610c4b11de9fdc1abd",
+          "source_fingerprint": "f60558dfe883b8f0df8d2c4aed7dec937e210f7128a67b17b4d39b984adbd4f1"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLUhUeGcxNzdXNk1BdmR5NTZKN3pBamNEZDRRdjNHcXR0ZTRZWGtmN0wtTXpicUNTTElxWDNVa1d6Q1pZV2NNT2x3cUxVRWxpRy1YRzNYdExVcV95STAxOThLWHdKWVBRWm8teFhmN0JHMDZkaGt5b3V2Yk9yM29JME5Ycmd1cGRuSmc?oc=5": {
       "first_seen_at": "2026-10-13T17:35:04.873656+00:00",
@@ -12869,6 +13114,82 @@
       "status": "queued",
       "reason": "needs_classification",
       "last_seen_at": "2026-10-13T18:42:36.039892+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wTXZCbWRyS05ySlhpbFowQ0h1UG9kbkRLZWpual9uR3ZXWlJhbG83dE9hUFQyVjBJOTJ0MUh1TmVCako0ZDdjWFNmSkdSMTV5QlVLYjF0STBPdw?oc=5": {
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [],
+      "article": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wTXZCbWRyS05ySlhpbFowQ0h1UG9kbkRLZWpual9uR3ZXWlJhbG83dE9hUFQyVjBJOTJ0MUh1TmVCako0ZDdjWFNmSkdSMTV5QlVLYjF0STBPdw?oc=5",
+        "published": "Tue, 13 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wTXZCbWRyS05ySlhpbFowQ0h1UG9kbkRLZWpual9uR3ZXWlJhbG83dE9hUFQyVjBJOTJ0MUh1TmVCako0ZDdjWFNmSkdSMTV5QlVLYjF0STBPdw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "94956ed8e032a6b7166a20debab154b32d9d69ada9f3f65326f7e2da0bd307da",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTE1UVy1FX2pURFBTOVIyZmdMWnFpZGtYQ2JmWDVydUoxd0psNVJEOEZCVlU0NF9tUnhnYlRNbGhDVW1BZmxxZDBuWjdkaTZ4SnZMdlQ4a0c1LTRHejU2NFlFZ3BpY3ZLdUVOZm9tdXdn?oc=5": {
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [],
+      "article": {
+        "title": "【きょうの天気】日中は札幌・旭川21℃、夜は雨雲が近づき下り坂に - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1UVy1FX2pURFBTOVIyZmdMWnFpZGtYQ2JmWDVydUoxd0psNVJEOEZCVlU0NF9tUnhnYlRNbGhDVW1BZmxxZDBuWjdkaTZ4SnZMdlQ4a0c1LTRHejU2NFlFZ3BpY3ZLdUVOZm9tdXdn?oc=5",
+        "published": "Tue, 13 Oct 2026 00:50:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1UVy1FX2pURFBTOVIyZmdMWnFpZGtYQ2JmWDVydUoxd0psNVJEOEZCVlU0NF9tUnhnYlRNbGhDVW1BZmxxZDBuWjdkaTZ4SnZMdlQ4a0c1LTRHejU2NFlFZ3BpY3ZLdUVOZm9tdXdn?oc=5\" target=\"_blank\">【きょうの天気】日中は札幌・旭川21℃、夜は雨雲が近づき下り坂に</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "9086028a27811d3ddf64bb44732dd4a50206737b12475f64bf9a137858c1371e",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBhaktmaE9sTWFsYzdFb1FkQWlUa1ZjclE1VFNXMmppQ0c1bGhWTzVkZTVtWUxTMko0U2Rac0FVb0hKV1ctRHNmaVRn?oc=5": {
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [],
+      "article": {
+        "title": "第21回札幌国際短編映画祭コンペ部門国際審査員にジョニー・トー、吉田大八ら決定！ 幅広い16プログラムを上映 - 映画.com",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBhaktmaE9sTWFsYzdFb1FkQWlUa1ZjclE1VFNXMmppQ0c1bGhWTzVkZTVtWUxTMko0U2Rac0FVb0hKV1ctRHNmaVRn?oc=5",
+        "published": "Tue, 13 Oct 2026 13:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiSkFVX3lxTFBhaktmaE9sTWFsYzdFb1FkQWlUa1ZjclE1VFNXMmppQ0c1bGhWTzVkZTVtWUxTMko0U2Rac0FVb0hKV1ctRHNmaVRn?oc=5\" target=\"_blank\">第21回札幌国際短編映画祭コンペ部門国際審査員にジョニー・トー、吉田大八ら決定！ 幅広い16プログラムを上映</a>  <font color=\"#6f6f6f\">映画.com</font>",
+        "rss_source": {
+          "name": "映画.com",
+          "url": "https://eiga.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "a4f8325159dbb9f54eda3da5cf0800fa09e945ce282a9ef9ef35b41dd7e80a5f",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE11cTJsRTVjdGF5Q3kyejJidmVzemg4OXA3eVdZOEtueFliZHNoU2hPc2NUQUhzVmlQejQ5R0xPYTBNWldtdF9RUW5lMFJLV2lKd2IzWmhhM2l4a2dBcllsT01LZllqM1ZjeVBvclZoM213WE5MMmc?oc=5": {
+      "first_seen_at": "2026-10-13T19:47:21.274790+00:00",
+      "source_history": [],
+      "article": {
+        "title": "食事中の患者の動画をSNS上に投稿 JR札幌病院職員が撮影 JR北海道がおわび - 産経ニュース",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE11cTJsRTVjdGF5Q3kyejJidmVzemg4OXA3eVdZOEtueFliZHNoU2hPc2NUQUhzVmlQejQ5R0xPYTBNWldtdF9RUW5lMFJLV2lKd2IzWmhhM2l4a2dBcllsT01LZllqM1ZjeVBvclZoM213WE5MMmc?oc=5",
+        "published": "Tue, 13 Oct 2026 14:49:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE11cTJsRTVjdGF5Q3kyejJidmVzemg4OXA3eVdZOEtueFliZHNoU2hPc2NUQUhzVmlQejQ5R0xPYTBNWldtdF9RUW5lMFJLV2lKd2IzWmhhM2l4a2dBcllsT01LZllqM1ZjeVBvclZoM213WE5MMmc?oc=5\" target=\"_blank\">食事中の患者の動画をSNS上に投稿 JR札幌病院職員が撮影 JR北海道がおわび</a>  <font color=\"#6f6f6f\">産経ニュース</font>",
+        "rss_source": {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "ea88e7d8114317dfde448635e68e802fa1b6c2d4d3710870598353ff2f27805e",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-10-13T19:47:21.274790+00:00"
     }
   }
 }
