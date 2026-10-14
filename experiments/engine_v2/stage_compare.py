@@ -49,7 +49,7 @@ def answer_for(sample,batch):
     return answer
 
 
-def evaluate(root,dataset):
+def evaluate(root,dataset,batch_size=4):
     before=hashes(root);saved=json.loads((root/'events.json').read_text())
     triage=json.loads((root/'tracking_triage.json').read_text()).get('items',{})
     registry=json.loads((root/'data_corrections.json').read_text())
@@ -77,7 +77,7 @@ def evaluate(root,dataset):
                 db.execute('UPDATE events SET payload=? WHERE event_id=?',(dumps(e),e['event_id']))
                 project_event(db,e,'holdout_view_only')
         bootstrap_ms=(time.perf_counter()-start)*1000
-        start=time.perf_counter();sid=begin(db,group,triage,registry)
+        start=time.perf_counter();sid=begin(db,group,triage,registry,batch_size=batch_size)
         state=inspect(db,sid);rank_position=next((i+1 for i,eid in enumerate(state['plan']) if eid==sample['target_event_id']),None)
         calls=[]
         def new_mock(prompt,batch):

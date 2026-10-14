@@ -31,6 +31,47 @@ class StagedTests(unittest.TestCase):
     def answer(self):
         a=copy.deepcopy(TRACKING_RESPONSE);a.update(report(self.g['articles'][0]));return a
     def unknown(self,prompt,batch):return copy.deepcopy(TRACKING_RESPONSE)
+    def test_batch_policies_preserve_every_candidate_and_resume(self):
+        self.add_candidates()
+        for policy,widths in [(1,[1]*7),(2,[2,2,2,1]),(4,[4,3]),(8,[7]),((1,2,4,8),[1,2,4]),((4,64),[4,3])]:
+            sid=begin(self.db,self.g,batch_size=policy)
+            state=inspect(self.db,sid)
+            self.assertEqual(step(self.db,sid,self.unknown,NOW,budget_available=False)['cursor'],0)
+            for width in widths:
+                before=state['cursor'];state=step(self.db,sid,self.unknown,NOW)
+                self.assertEqual(state['cursor'],before+width)
+                self.assertEqual(begin(self.db,self.g,batch_size=policy),sid)
+            self.assertEqual(state['status'],'needs_evidence')
+            self.assertEqual(len(state['candidate_states']),7)
+            self.assertTrue(all(s=='examined_unresolved' for s in state['candidate_states'].values()))
+    def test_changed_policy_does_not_reuse_old_session(self):
+        self.add_candidates();sid=begin(self.db,self.g,batch_size=(1,2,4,8))
+        step(self.db,sid,self.unknown,NOW)
+        new=begin(self.db,self.g,batch_size=8)
+        self.assertNotEqual(sid,new);self.assertEqual(inspect(self.db,sid)['cursor'],1)
+        self.assertEqual(inspect(self.db,new)['cursor'],0)
+    def test_widening_save_failure_reuses_answer_without_advancing_width(self):
+        self.add_candidates();sid=begin(self.db,self.g,batch_size=(1,2,4,8));calls=[]
+        def mock(p,b):calls.append(b);return self.unknown(p,b)
+        with self.assertRaises(RuntimeError):step(self.db,sid,mock,NOW,fail_save=True)
+        self.assertEqual(inspect(self.db,sid)['cursor'],0)
+        state=step(self.db,sid,mock,NOW,budget_available=False)
+        self.assertEqual(state['cursor'],1);self.assertEqual(len(calls),1)
+        state=step(self.db,sid,mock,NOW)
+        self.assertEqual(state['cursor'],3);self.assertEqual(len(calls[-1]),2)
+    def test_invalid_policy_rejected_without_session(self):
+        for value in [0,65,True,(),(1,0),(1,'2')]:
+            with self.assertRaises(ValueError):begin(self.db,self.g,batch_size=value)
+    def test_all_policies_budget_stop_preserves_article_cursor_and_tail(self):
+        self.add_candidates()
+        for policy in [1,2,4,8,(1,2,4,8),(4,64)]:
+            sid=begin(self.db,self.g,batch_size=policy);before=inspect(self.db,sid)
+            with patch('staged.reserve_mock',return_value={'status':'budget_deferred'}):
+                state=step(self.db,sid,lambda *a:self.fail('mock must not be called'),NOW,charge_simulated=True)
+            self.assertEqual(state['group'],before['group']);self.assertEqual(state['plan'],before['plan'])
+            self.assertEqual(state['cursor'],0);self.assertEqual(state['records'],[])
+            self.assertEqual(state['candidate_states'],before['candidate_states'])
+            self.assertEqual(state['status'],'budget_deferred')
     def test_next_batch_and_completed_repeat_do_not_erase_unknowns(self):
         self.add_candidates();sid=self.session()
         first=step(self.db,sid,self.unknown,NOW)

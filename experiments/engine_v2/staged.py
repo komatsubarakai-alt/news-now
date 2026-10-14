@@ -28,7 +28,11 @@ def context(db,group,triage,registry,batch_size):
 
 
 def begin(db,group,triage=None,registry=None,batch_size=4):
-    if not 1<=batch_size<=4:raise ValueError('batch size must be 1..4')
+    # A tuple is a persistent widening policy; repeat its final size.
+    sizes=batch_size if isinstance(batch_size,tuple) else (batch_size,)
+    if not sizes or any(type(n) is not int or not 1<=n<=64 for n in sizes):
+        raise ValueError('batch sizes must be integers in 1..64')
+    batch_size=','.join(map(str,sizes)) if len(sizes)>1 else sizes[0]
     triage,registry=triage or {},registry or {}
     conditions=context(db,group,triage,registry,batch_size)
     sid=digest(conditions)
@@ -44,7 +48,7 @@ def begin(db,group,triage=None,registry=None,batch_size=4):
         if not plan:reason='operator_target_unavailable'
     status=reason or ('ready' if plan else 'needs_evidence')
     with atomic(db):
-        db.execute('INSERT INTO sessions VALUES(?,?,?,?,?,?,?,?)',(sid,group_key(group),dumps(group),dumps(conditions),dumps(plan),0,status,batch_size))
+        db.execute('INSERT INTO sessions VALUES(?,?,?,?,?,?,?,?)',(sid,group_key(group),dumps(group),dumps(conditions),dumps(plan),0,status,sizes[0]))
         for r in rows:
             state='unexamined' if r['event_id'] in plan else 'operator_not_selected'
             db.execute('INSERT INTO candidate_checks VALUES(?,?,?,?)',(sid,r['event_id'],r['rank'],state))
@@ -79,13 +83,19 @@ def step(db,sid,mock,now,triage=None,registry=None,budget_available=True,charge_
     group,plan=json.loads(group_payload),json.loads(plan_text)
     if status not in ('ready','budget_deferred','retry_api'):
         return inspect(db,sid)
-    if context(db,group,triage,registry,limit)!=json.loads(old_context):
+    # Policy lives in the immutable session context; the integer column remains
+    # the initial size for compatibility with earlier prototype databases.
+    policy=json.loads(old_context)['batch_size']
+    if context(db,group,triage,registry,policy)!=json.loads(old_context):
         with atomic(db):
             db.execute('UPDATE sessions SET status=? WHERE session_id=?',('stale_requires_new_session',sid))
             db.execute('UPDATE holds SET payload=? WHERE stage=? AND group_key=?',(dumps({'group':group,'status':'stale_requires_new_session'}),'staged:'+sid,key))
         return inspect(db,sid)
     selection=active_selection(group,triage)
-    batch=plan[cursor:cursor+(1 if selection and selection['action']=='same_event' else limit)]
+    sizes=[int(n) for n in str(policy).split(',')]
+    batch_index=db.execute('SELECT count(*) FROM batch_records WHERE session_id=?',(sid,)).fetchone()[0]
+    width=sizes[min(batch_index,len(sizes)-1)]
+    batch=plan[cursor:cursor+(1 if selection and selection['action']=='same_event' else width)]
     event_index={e['event_id']:e for e in events(db)}
     known={a['url']:a for e in events(db) for a in e.get('articles',[])}
     from pending_triage import source_saved

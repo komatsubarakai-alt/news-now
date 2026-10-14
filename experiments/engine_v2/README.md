@@ -93,3 +93,20 @@ Actions成果物を唯一の正本にせず、公開リポジトリへ内部DB�
 実測は `RESULTS.md` と `results.json`。新旧で同じ保存データを用い、実データの正解ラベルを推測しません。初期試作は231テスト成功。次段階は249テスト成功、実通信0、JSONハッシュ不変です。
 
 次は、人が根拠確認した正解標本、段階的照合の実データ・予算下での有効性確認、改訂参照付きの事実・状態モデル、全運用記録の移行、永続化・予算精算・復旧の検証が必要です。正解候補の欠落、根拠のない採用、記事消失、予算台帳のリセット、運営者判断の流用、復旧不能が一つでもあれば切り替えを止めます。本番切り替えは別途承認が必要です。
+
+## 15組の確認と候補群の比較（隔離試作）
+
+`REVIEW_GUIDE.md` に使い方と15組の一覧、`review.html` に通信なしの単一ファイル確認画面があります。判断JSONは確認記録専用で、評価ラベル・本番振り分けには反映しません。全15組、特にAI採用2組も正解未確認です。
+
+`BATCH_RESULTS.md` と `batch_results.json` は固定1/2/4/8、1→2→4→8、最初4件→残り最大64件の比較です。最後の方式は残りが64件を超える場合も切り捨てず、次の64件群として保持します。段階ポリシーはセッションの不変contextに保存し、batch_size整数列は初回の件数を維持します。
+
+通信なしの再現コマンド（出力先は入力スナップショットの外）:
+
+```sh
+python experiments/engine_v2/batch_experiments.py --snapshot /path/to/frozen-copy --output-dir /tmp/news-now-batch-results
+python experiments/engine_v2/build_review.py --snapshot /path/to/frozen-copy --output /tmp/news-now-review.html
+python experiments/engine_v2/hard_samples.py --snapshot /path/to/frozen-copy --output /tmp/news-now-hard-samples.json
+python experiments/engine_v2/run_offline.py
+```
+
+固定評価JSONは前段のf4b831dスナップショットに基づきます。記事・事件・根拠が変わった別スナップショットで同じ比較結果になるとは主張しません。最新main確認時点と検証の制約は `VALIDATION.md` に記録しています。画面描画・スマホ実機は未確認で、ページJavaScriptのJSON入出力はDOM代替でテスト済みです。API料金や実AI精度の改善は未測定です。
