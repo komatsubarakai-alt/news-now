@@ -1,5 +1,7 @@
 """Offline-only SQLite shadow. No HTTP client, production writer, or AI credentials."""
 import copy
+from contextlib import contextmanager
+import uuid
 import hashlib
 import json
 import re
@@ -19,10 +21,34 @@ def dumps(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
-def connect():
-    db = sqlite3.connect(':memory:')
-    db.executescript(Path(__file__).with_name('schema.sql').read_text())
+def connect(database=':memory:'):
+    if database!=':memory:':
+        path=Path(database).resolve()
+        if path.is_relative_to(Path(__file__).resolve().parents[2]):
+            raise ValueError('temporary DB must be outside repository snapshot')
+    db=sqlite3.connect(database)
+    db.execute('PRAGMA foreign_keys=ON')
+    initialized=db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='source_files'").fetchone()
+    if not initialized:
+        db.executescript(Path(__file__).with_name('schema.sql').read_text())
+    elif not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='batch_cache'").fetchone():
+        db.close();raise ValueError('unsupported prototype schema; create a fresh temporary DB')
     return db
+
+
+@contextmanager
+def atomic(db):
+    """Savepoints compose safely with callers; nested writes cannot commit early."""
+    name='shadow_'+uuid.uuid4().hex
+    db.execute('SAVEPOINT '+name)
+    try:
+        yield
+    except BaseException:
+        db.execute('ROLLBACK TO '+name)
+        db.execute('RELEASE '+name)
+        raise
+    else:
+        db.execute('RELEASE '+name)
 
 
 def revision(db, article):
@@ -38,7 +64,7 @@ def import_snapshot(db, root, fail_after=None):
              'status_pending.json', 'operator_review_decisions.json', 'data_corrections.json',
              'ai_budget.json', 'ai_response_cache.json', 'tracking_review_recent.json')
     files = {name: (Path(root) / name).read_text() for name in names if (Path(root) / name).exists()}
-    with db:
+    with atomic(db):
         for name, text in files.items():
             db.execute('INSERT INTO source_files VALUES(?,?,?)', (name, hashlib.sha256(text.encode()).hexdigest(), text))
         for i, event in enumerate(json.loads(files.get('events.json', '[]'))):
@@ -103,7 +129,7 @@ def grams(text):
     return {text[i:i+3] for i in range(max(0, len(text)-2))}
 
 
-def rank(db, group, triage=None):
+def rank(db, group, triage=None, persist=True):
     """Retain every legacy-eligible event; rank is retrieval, never identity proof."""
     all_events = events(db)
     selection = active_selection(group, triage or {})
@@ -119,7 +145,7 @@ def rank(db, group, triage=None):
         if event.get('publication_status') == 'held':
             continue
         eid = event['event_id']; common = qgrams & grams(texts[eid])
-        score = sum(1 / frequency[g] for g in common)
+        score = sum(1 / frequency[g] for g in sorted(common))
         reasons = {'shared_character_grams': len(common), 'all_candidates_retained': True}
         if {a['url'] for a in group.get('articles', [])} & {a['url'] for a in event.get('articles', [])}:
             score += 10000; reasons['known_url'] = True
@@ -131,7 +157,10 @@ def rank(db, group, triage=None):
                 score += 1000; reasons['shared_case_number'] = True
         output.append({'event_id': eid, 'score': score, 'reasons': reasons, 'event': event})
     output.sort(key=lambda r: (-r['score'], r['event_id']))
-    with db:
+    for position, row in enumerate(output, 1):
+        row['rank'] = position
+    if persist:
+      with atomic(db):
         db.execute('DELETE FROM candidates WHERE stage=? AND group_key=?', ('tracking', group_key(group)))
         for position, row in enumerate(output, 1):
             row['rank'] = position
@@ -140,30 +169,30 @@ def rank(db, group, triage=None):
     return output
 
 
-def judge(db, group, answer, now, budget_available=True, triage=None, registry=None, fail_save=False):
+def judge(db, group, answer, now, budget_available=True, triage=None, registry=None, fail_save=False, presented_ids=None, rerank=True):
     """Mock-answer injection only. No real client. Validate before a single SQL commit."""
-    rows = rank(db, group, triage)
+    rows = rank(db, group, triage) if rerank else [{'event_id':e['event_id'],'event':e} for e in events(db) if e.get('publication_status')!='held']
     all_events = events(db); known = {a['url']: a for e in all_events for a in e.get('articles', [])}
     reason = preflight(group, known, registry or {}, triage or {})
     if reason:
-        with db:
+        with atomic(db):
             db.execute('INSERT OR REPLACE INTO holds VALUES(?,?,?)', ('judgment', group_key(group), dumps({'group':group,'status':reason})))
         return reason
     conditions = {'group':group,'events':event_conditions(all_events),'registry':registry or {},
                   'selection':active_selection(group, triage or {}),'validator':validation_revision('tracking'),
                   'model':'gpt-5.4-mini','output_limit':1200,
                   'prototype_code':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                  'prototype_version': 'v1', 'source_history': (triage or {}).get(group_key(group),{}).get('source_history',[]),
+                  'presented_ids':presented_ids,'prototype_version': 'v2', 'source_history': (triage or {}).get(group_key(group),{}).get('source_history',[]),
                   'changes': list(db.execute('SELECT id,reversed FROM changes ORDER BY id'))}
     signature = digest({'conditions':conditions,'answer':answer})
     prior = db.execute('SELECT status FROM decisions WHERE signature=?', (signature,)).fetchone()
     if prior and prior[0] == 'rejected':
         return 'same_rejected_answer'
     if not budget_available:
-        with db:
+        with atomic(db):
             db.execute('INSERT OR REPLACE INTO holds VALUES(?,?,?)', ('judgment', group_key(group), dumps({'group':group,'status':'budget_deferred'})))
         return 'budget_deferred'
-    target = next((r['event'] for r in rows if r['event_id'] == answer.get('event_id')), None)
+    target = next((r['event'] for r in rows if r['event_id'] == answer.get('event_id') and (presented_ids is None or r['event_id'] in presented_ids)), None)
     before = copy.deepcopy(target)
     try:
         selection = active_selection(group, triage or {})
@@ -181,7 +210,7 @@ def judge(db, group, answer, now, budget_available=True, triage=None, registry=N
         candidate = copy.deepcopy(target)
         apply_report(candidate, fresh, answer, now)
         validate_saved_update(target, candidate)
-        with db:
+        with atomic(db):
             db.execute('UPDATE events SET payload=? WHERE event_id=?', (dumps(candidate), target['event_id']))
             project_event(db,candidate,'validated_mock')
             db.execute('INSERT INTO changes(event_id,before_payload,after_payload,reason) VALUES(?,?,?,?)',
@@ -192,7 +221,7 @@ def judge(db, group, answer, now, budget_available=True, triage=None, registry=N
             db.execute('UPDATE candidates SET state=? WHERE group_key=? AND event_id=?', ('validated',group_key(group),target['event_id']))
         return 'accepted'
     except UpdateHeld as exc:
-        with db:
+        with atomic(db):
             db.execute('INSERT OR REPLACE INTO decisions VALUES(?,?,?,?,?,?)',
                        (signature,group_key(group),dumps(answer),dumps(conditions),'rejected',str(exc)))
             db.execute('INSERT OR REPLACE INTO holds VALUES(?,?,?)',
@@ -205,27 +234,31 @@ def undo(db, change_id):
     if not row or row[3]: raise ValueError('unknown_or_already_reversed')
     current = db.execute('SELECT payload FROM events WHERE event_id=?', (row[0],)).fetchone()[0]
     if current != row[2]: raise ValueError('later_changes_require_review')
-    with db:
+    with atomic(db):
         db.execute('UPDATE events SET payload=? WHERE event_id=?', (row[1],row[0]))
         db.execute('UPDATE changes SET reversed=1 WHERE id=?', (change_id,))
         project_event(db,json.loads(row[1]),'restored_not_revalidated')
         # Decision history is immutable; change/reversal metadata invalidates context.
 
 
-def reserve_mock(db, input_bytes, now, output_tokens=1200):
+def reserve_mock(db, input_bytes, now, output_tokens=1200, run_id=None):
     """Conservative SQL reservation for a hypothetical call; never performs a call."""
     from ai_cost_control import INPUT_RATE, OUTPUT_RATE, MODEL, periods
     if input_bytes < 0 or not 1 <= output_tokens <= 3500:
         raise ValueError('invalid_reservation')
     day, month = periods(now)
     amount = int(((input_bytes + 2048) * INPUT_RATE + output_tokens * OUTPUT_RATE).to_integral_value(rounding='ROUND_CEILING'))
-    with db:
+    with atomic(db):
         row = db.execute('SELECT payload FROM budget WHERE name=?', ('simulation',)).fetchone()
         if not row:
             row = db.execute('SELECT payload FROM budget WHERE name=?', ('legacy',)).fetchone()
         state = json.loads(row[0]) if row else {'days':{},'months':{}}
         daily = state.setdefault('days', {}).setdefault(day, {'reserved_micro_usd':0,'calls':0})
         monthly = state.setdefault('months', {}).setdefault(month, {'reserved_micro_usd':0,'calls':0})
+        if run_id is not None and not run_id.startswith('shadow-'):
+            raise ValueError('simulation run id must start with shadow-')
+        if run_id is not None and state.get('run',{}).get('id')!=run_id:
+            state['run']={'id':run_id,'calls':0,'tracking_calls':0}
         run=state.setdefault('run',{'calls':0,'tracking_calls':0})
         if state.get('billing_blocked') or daily['reserved_micro_usd']+amount>200000 or monthly['reserved_micro_usd']+amount>5000000 or daily['calls']>=40 or run.get('calls',0)>=24 or run.get('tracking_calls',0)>=8:
             return {'status':'budget_deferred','reserved_micro_usd':0,'model':MODEL}

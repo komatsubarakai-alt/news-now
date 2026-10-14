@@ -14,3 +14,7 @@ CREATE TABLE decisions(signature TEXT PRIMARY KEY,group_key TEXT,answer TEXT,con
 CREATE TABLE operator_decisions(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
 CREATE TABLE budget(name TEXT PRIMARY KEY,payload TEXT NOT NULL);
 CREATE TABLE changes(id INTEGER PRIMARY KEY,event_id TEXT REFERENCES events,before_payload TEXT,after_payload TEXT,reason TEXT,reversed INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE sessions(session_id TEXT PRIMARY KEY,group_key TEXT NOT NULL,group_payload TEXT NOT NULL,context TEXT NOT NULL,plan TEXT NOT NULL,cursor INTEGER NOT NULL,status TEXT NOT NULL,batch_size INTEGER NOT NULL);
+CREATE TABLE candidate_checks(session_id TEXT REFERENCES sessions,event_id TEXT REFERENCES events,position INTEGER,state TEXT NOT NULL,PRIMARY KEY(session_id,event_id));
+CREATE TABLE batch_records(session_id TEXT REFERENCES sessions,position INTEGER,presented TEXT NOT NULL,prompt_sha256 TEXT NOT NULL,input_bytes INTEGER NOT NULL,answer TEXT,outcome TEXT NOT NULL,PRIMARY KEY(session_id,position));
+CREATE TABLE batch_cache(request_key TEXT PRIMARY KEY,session_id TEXT REFERENCES sessions,prompt_sha256 TEXT NOT NULL,answer TEXT NOT NULL);
