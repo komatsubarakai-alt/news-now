@@ -173,6 +173,7 @@ def retain_group(state, group, status, reason, now, decision=False, *, downstrea
     """Separate JSON/evidence failure attempts from transport/credit failures."""
     key = group_key(group)
     entry = state.setdefault(key, {'first_seen_at': now.isoformat(), 'decision_attempts': 0, 'source_history': []})
+    entry.pop('cached_rejection_waiting', None)
     mark = fingerprint(group)
     if entry.get('source_fingerprint') not in (None, mark):
         entry.setdefault('source_history', []).append({'group': copy.deepcopy(entry['group']),

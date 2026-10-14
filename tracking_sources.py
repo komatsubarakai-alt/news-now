@@ -7,6 +7,7 @@ from urllib.parse import urlencode
 
 
 from ai_cost_control import BudgetExceeded, response, json_answer, cached
+from failed_response import cached_answer as cached_json_answer
 
 
 class AI:
@@ -20,6 +21,9 @@ class AI:
         if not hit:
             self.remaining -= 1
         return json_answer(payload)
+
+    def cached_answer(self, prompt):
+        return cached_json_answer(prompt, os.environ.get('TRACKING_MODEL', 'gpt-5.4-mini'))
 
 
 def search(query):
