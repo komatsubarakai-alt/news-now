@@ -1,0 +1,16 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE source_files(path TEXT PRIMARY KEY, sha256 TEXT NOT NULL, payload TEXT NOT NULL);
+CREATE TABLE events(event_id TEXT PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE aliases(event_id TEXT REFERENCES events, alias TEXT, provenance TEXT, PRIMARY KEY(event_id,alias,provenance));
+CREATE TABLE articles(url TEXT PRIMARY KEY);
+CREATE TABLE revisions(revision_id TEXT PRIMARY KEY,url TEXT REFERENCES articles,payload TEXT NOT NULL);
+CREATE TABLE event_articles(event_id TEXT REFERENCES events,revision_id TEXT REFERENCES revisions,role TEXT,PRIMARY KEY(event_id,revision_id,role));
+CREATE TABLE facts(id INTEGER PRIMARY KEY,event_id TEXT REFERENCES events,kind TEXT,source_url TEXT,revision_id TEXT REFERENCES revisions,quote TEXT,payload TEXT NOT NULL,verification TEXT NOT NULL);
+CREATE TABLE progress(id INTEGER PRIMARY KEY,event_id TEXT REFERENCES events,position INTEGER,payload TEXT NOT NULL);
+CREATE TABLE schedules(event_id TEXT REFERENCES events,schedule_id TEXT,version INTEGER,payload TEXT NOT NULL,PRIMARY KEY(event_id,schedule_id,version));
+CREATE TABLE holds(stage TEXT,group_key TEXT,payload TEXT NOT NULL,PRIMARY KEY(stage,group_key));
+CREATE TABLE candidates(stage TEXT,group_key TEXT,event_id TEXT REFERENCES events,rank INTEGER,score REAL,reasons TEXT,state TEXT NOT NULL DEFAULT 'unexamined',PRIMARY KEY(stage,group_key,event_id));
+CREATE TABLE decisions(signature TEXT PRIMARY KEY,group_key TEXT,answer TEXT,conditions TEXT,status TEXT,reason TEXT);
+CREATE TABLE operator_decisions(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
+CREATE TABLE budget(name TEXT PRIMARY KEY,payload TEXT NOT NULL);
+CREATE TABLE changes(id INTEGER PRIMARY KEY,event_id TEXT REFERENCES events,before_payload TEXT,after_payload TEXT,reason TEXT,reversed INTEGER NOT NULL DEFAULT 0);
