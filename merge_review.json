@@ -226841,7 +226841,7 @@
     },
     "review_id": "70dc5c9dd6b08e20b15f0567",
     "schema_version": 2,
-    "observed_at": "2026-10-12T23:33:04.020168+00:00",
+    "observed_at": "2026-10-15T22:44:53.855665+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -226850,38 +226850,108 @@
         "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
       ],
       "ai_report": {
-        "relation": "new_event",
+        "relation": "uncertain",
         "event_id": "",
-        "confidence": "medium",
+        "confidence": "low",
+        "multi_event": false,
         "meaningful_change": false,
-        "current_stage": "JR北海道のダイヤ改正予測が報じられた段階",
-        "summary": "札幌旭川間の特急カムイ・ライラックについて、利用21%減少を受けて大幅減便の可能性を予測する記事です。公開日時とタイトル上では、実際の減便決定や実施は確認できません。",
-        "latest": "2027年以降予定のダイヤ改正予測として、大幅減便の可能性が示されています。",
-        "next_watch": "JR北海道が実際にダイヤ改正を発表し、減便の有無や開始時期が明示されるか確認する。",
+        "current_stage": "",
+        "summary": "",
+        "latest": "",
+        "next_watch": "",
         "completed": false,
         "completion_quote": "",
-        "evidence_urls": [
-          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
-        ],
-        "schedules": [
-          {
-            "label": "2027年以降予定のダイヤ改正",
-            "quote": "JR北海道ダイヤ改正予測(2027年以降予定)",
-            "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
-            "status": "scheduled"
-          }
-        ],
-        "identity_matches": []
+        "evidence_urls": [],
+        "identity_matches": [],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "地域・インフラ",
+            "tracking_value": "medium",
+            "current_stage": "2027年以降のダイヤ改正を予測した段階",
+            "summary": "記事タイトルからは、JR北海道の札幌〜旭川間の特急カムイ・ライラックについて、利用21%減少を背景に2027年以降の大幅減便が行われる可能性を予測していることが分かります。実施決定や正式発表があったとは確認できません。",
+            "latest": "2026年10月10日時点では、減便の予測を報じた段階です。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、JR北海道の正式なダイヤ改正発表があるかどうかに注目する必要があります。",
+            "articles": [
+              {
+                "title": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+                "published": "Sat, 10 Oct 2026 13:53:11 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5\" target=\"_blank\">利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定)</a>  <font color=\"#6f6f6f\">鉄道時刻表ニュース</font>",
+                "rss_source": {
+                  "name": "鉄道時刻表ニュース",
+                  "url": "https://www.train-times.net"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "70dc5c9dd6b08e20b15f0567",
+        "schema_version": 2,
+        "observed_at": "2026-10-12T23:33:04.020168+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "new_event",
+            "event_id": "",
+            "confidence": "medium",
+            "meaningful_change": false,
+            "current_stage": "JR北海道のダイヤ改正予測が報じられた段階",
+            "summary": "札幌旭川間の特急カムイ・ライラックについて、利用21%減少を受けて大幅減便の可能性を予測する記事です。公開日時とタイトル上では、実際の減便決定や実施は確認できません。",
+            "latest": "2027年以降予定のダイヤ改正予測として、大幅減便の可能性が示されています。",
+            "next_watch": "JR北海道が実際にダイヤ改正を発表し、減便の有無や開始時期が明示されるか確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+            ],
+            "schedules": [
+              {
+                "label": "2027年以降予定のダイヤ改正",
+                "quote": "JR北海道ダイヤ改正予測(2027年以降予定)",
+                "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+                "status": "scheduled"
+              }
+            ],
+            "identity_matches": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-12T23:33:04.020168+00:00",
+        "last_seen_at": "2026-10-12T23:33:04.020168+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-12T23:33:04.020168+00:00",
-    "last_seen_at": "2026-10-12T23:33:04.020168+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-15T22:44:53.855665+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -270203,6 +270273,2107 @@
     },
     "first_seen_at": "2026-10-15T15:50:52.132119+00:00",
     "last_seen_at": "2026-10-15T15:50:52.132119+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+        "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイス火災\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス火災\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）\"}, {\"kind\": \"entity\", \"value\": \"エスカレーター\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）\"}]}]}"
+    },
+    "review_id": "f26cf3ccad8995faf4d3814a",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.320460+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.320460+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.320460+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+        "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\" target=\"_blank\">札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイス火災\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス火災\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)\"}, {\"kind\": \"entity\", \"value\": \"エスカレーター\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)\"}]}]}"
+    },
+    "review_id": "2e16525fc8d6e7e816dc8d8c",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.320696+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.320696+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.320696+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+        "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイス火災\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス火災\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」\"}, {\"kind\": \"entity\", \"value\": \"札幌ステラプレイス\", \"existing_quote\": \"札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定\", \"incoming_quote\": \"駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」\"}]}]}"
+    },
+    "review_id": "6569e68cb2f1ae1a9bcd3752",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.320908+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.320908+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.320908+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+        "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5",
+        "published": "Thu, 15 Oct 2026 21:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5\" target=\"_blank\">鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d223402176bfc2fb9039dfe3",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.320970+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.320970+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.320970+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5",
+        "published": "Thu, 15 Oct 2026 10:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5\" target=\"_blank\">ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c07a6b4d8f1c3f653344c882",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321028+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321028+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321028+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5",
+        "published": "Thu, 15 Oct 2026 10:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5\" target=\"_blank\">ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "642a380654a26e5f714541fc",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321080+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321080+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321080+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5",
+        "published": "Thu, 15 Oct 2026 10:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5\" target=\"_blank\">ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:57 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5\" target=\"_blank\">【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "40013fc3fad678b14c8d1b68",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321128+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321128+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321128+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5",
+        "published": "Thu, 15 Oct 2026 10:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5\" target=\"_blank\">ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "出張買取「買いクル札幌東西店」が開業3周年。冬支度で見直した家具・家電などを自宅で査定 - ニコニコニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PcENhRFNielN4emxteE5KWUdMOWRFMWdhYWU4NnVNdnc3X21qNXdmUUVhSUg3a3l4X05mY3g1SnVOSUNQSGhjY2dNWGF3Z29Pd09fU01Id01SVkc3ekRyMDZwTGhldjFXU3hVWGlTRmRKXzEtRThmOE01WQ?oc=5",
+        "published": "Thu, 15 Oct 2026 14:21:38 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9PcENhRFNielN4emxteE5KWUdMOWRFMWdhYWU4NnVNdnc3X21qNXdmUUVhSUg3a3l4X05mY3g1SnVOSUNQSGhjY2dNWGF3Z29Pd09fU01Id01SVkc3ekRyMDZwTGhldjFXU3hVWGlTRmRKXzEtRThmOE01WQ?oc=5\" target=\"_blank\">出張買取「買いクル札幌東西店」が開業3周年。冬支度で見直した家具・家電などを自宅で査定</a>  <font color=\"#6f6f6f\">ニコニコニュース</font>",
+        "rss_source": {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b4e1fe045932866425104034",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321174+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321174+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321174+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5",
+        "published": "Thu, 15 Oct 2026 10:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5fend0cDV5VWNCaEdkYkY2aEVHUXRQaUNIX1BXMzB1bV9QamVkT0ZPdnRiMnA3bEVtUmNQbGh5U3I2Y1J6RjlaRWFpcFAtNVRoNWhJM3h4Wl9fS01EemhJbWUwOEk2M1dzQ3ItMHhQSdIBdEFVX3lxTE5xMXFJU2lPaGphdWh6SHBVbmYtUTYycGVVckFtQVVxcTh2dHNNcmJUdUthN3FMZ3RUbGgyMkRCU2Q5MEtSR2lsQVVVbEVPU3RYcHVCV210MEF5SGZsVWNWWnR3RUhpVEp4Ujd1M2thNU9wNXBj?oc=5\" target=\"_blank\">ラオスから札幌へ身柄移送　日本人特殊詐欺グループ7人を逮捕　函館の70代男性から50万円詐取した疑い　</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5",
+        "published": "Thu, 15 Oct 2026 21:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5\" target=\"_blank\">Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b093fc36a2d2ea048f2d9aa1",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321223+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321223+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321223+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cb7d95d6ebc23cda9b82c4bd",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321272+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321272+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321272+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b9c35208aadb6c73ab2822b5",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321342+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321342+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321342+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5",
+        "published": "Wed, 14 Oct 2026 12:10:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5\" target=\"_blank\">札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "218e5933de4c20804681ff03",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321402+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321402+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321402+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か - NHKニュース",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5",
+        "published": "Thu, 15 Oct 2026 03:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か</a>  <font color=\"#6f6f6f\">NHKニュース</font>",
+        "rss_source": {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c6d7e52ab46a8cc056a0fc29",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321449+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321449+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321449+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "出張買取「買いクル札幌東西店」が開業3周年。冬支度で見直した家具・家電などを自宅で査定 - ニコニコニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PcENhRFNielN4emxteE5KWUdMOWRFMWdhYWU4NnVNdnc3X21qNXdmUUVhSUg3a3l4X05mY3g1SnVOSUNQSGhjY2dNWGF3Z29Pd09fU01Id01SVkc3ekRyMDZwTGhldjFXU3hVWGlTRmRKXzEtRThmOE01WQ?oc=5",
+        "published": "Thu, 15 Oct 2026 14:21:38 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9PcENhRFNielN4emxteE5KWUdMOWRFMWdhYWU4NnVNdnc3X21qNXdmUUVhSUg3a3l4X05mY3g1SnVOSUNQSGhjY2dNWGF3Z29Pd09fU01Id01SVkc3ekRyMDZwTGhldjFXU3hVWGlTRmRKXzEtRThmOE01WQ?oc=5\" target=\"_blank\">出張買取「買いクル札幌東西店」が開業3周年。冬支度で見直した家具・家電などを自宅で査定</a>  <font color=\"#6f6f6f\">ニコニコニュース</font>",
+        "rss_source": {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "67e94cd32fdae62b52108c62",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321494+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321494+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321494+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「おもしろ半分だった」JR札幌病院看護師が患者を撮影…SNSに不適切投稿 病院利用者「とんでもないこと」 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1TUtyeUtYQllIZ3lzWVg2T0FJbEpOVmxkSUFVSzQtNDZNb0VBMmJ0dVQ1OFhORDBlZWxmTzhoQU5MQkwzMU4tRUplakRhQTlNWUxSWU9EcGxqUQ?oc=5",
+        "published": "Wed, 14 Oct 2026 02:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1TUtyeUtYQllIZ3lzWVg2T0FJbEpOVmxkSUFVSzQtNDZNb0VBMmJ0dVQ1OFhORDBlZWxmTzhoQU5MQkwzMU4tRUplakRhQTlNWUxSWU9EcGxqUQ?oc=5\" target=\"_blank\">「おもしろ半分だった」JR札幌病院看護師が患者を撮影…SNSに不適切投稿 病院利用者「とんでもないこと」</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6335056a49593eb1b887a104",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321542+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321542+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321542+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\" target=\"_blank\">札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "7b6993d6ee4b1e802c56c2d3",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321587+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321587+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321587+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:57 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5\" target=\"_blank\">【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c96f6774dc73aa5ceed448b7",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321632+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321632+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321632+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:57 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5\" target=\"_blank\">【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1acd118c3e6520412fe2a5af",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321676+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321676+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321676+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5",
+        "published": "Thu, 15 Oct 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5tOWlLZXRZOGxNZmpzT1ZEZHVMSl9VdXUxeFNBWmdENmV5OUVLSGdSeEpUc2RJTHZwdjdzM2tjTEpYMkl3a01ES25EUmF1VEV2dzE4YkFES0NyT1o5Vm13aHpfdERSbHhJd18yRnBNZFBYSzdTcjJrOVdnT3luLWc?oc=5\" target=\"_blank\">【患者を無断で撮影し同僚に送信→その画像を勝手にSNS投稿→ネットで拡散】勤務歴1年未満の20代女性看護師2人が関与「担当看護師に共有するため撮影」「面白半分で投稿した」と釈明＜JR札幌病院＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5",
+        "published": "Thu, 15 Oct 2026 20:04:24 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5\" target=\"_blank\">Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "71405566cc7fda9aaf188b42",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321721+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321721+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321721+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5",
+        "published": "Thu, 15 Oct 2026 20:04:24 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5\" target=\"_blank\">Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2ad0b3e171eb686cb16caf96",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321767+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321767+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321767+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5",
+        "published": "Thu, 15 Oct 2026 20:04:24 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZmJOR1dXX0tSUTh3aXBBSEVRanBLSmw3RTJjeUM5RTVSRVlvODlNSVhkTmRhSUVzZlZRRzNtMjRiYTlMTXJwcTl4YXJDa1lreTdCUzNlUVMteUZ3eDluNzVnZmdVa3A0QVc4RHVzS2htR2V1dzlQdGxlUFg4MDA?oc=5\" target=\"_blank\">Ｊ２カターレ富山対コンサドーレ札幌勝敗予想キャンペーン 北陸、北海道電力「ほくでん」合同（北國新聞社）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6ff01f3d052cdcce5e1ea5d1",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321811+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321811+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321811+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5",
+        "published": "Wed, 14 Oct 2026 12:10:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5\" target=\"_blank\">札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ded0c0a5a1b44fab5f7cebdd",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321856+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321856+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321856+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5",
+        "published": "Thu, 15 Oct 2026 12:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5\" target=\"_blank\">【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5",
+        "published": "Thu, 15 Oct 2026 21:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5\" target=\"_blank\">Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "26b5e8a21f6e7cc944666189",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321902+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321902+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321902+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か - NHKニュース",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5",
+        "published": "Thu, 15 Oct 2026 03:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か</a>  <font color=\"#6f6f6f\">NHKニュース</font>",
+        "rss_source": {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "822e7a6a4f7301b2ff4fa978",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321945+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321945+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321945+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\" target=\"_blank\">札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5",
+        "published": "Thu, 15 Oct 2026 21:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5\" target=\"_blank\">鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2b5e892d31ad1029b3d04680",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.321989+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.321989+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.321989+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5",
+        "published": "Wed, 14 Oct 2026 14:50:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5STDRrQjhLQl94LWVsQ1Rta3kzcGNZTHZxMGxKYVNMTEE3Mnl2YUdwelNrWG1wdmMxMnZTV1JlOERlYkowMldkbE5DenFLbUNlZ29hOEVIbXYtOXBJSWI5VUdwaGlraXBiR3REVFFMM1l6QVhpcVR2OWc1ZFVoRDQ?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設で煙 客ら避難 15、16日は休業（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5\" target=\"_blank\">【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "87958065c8a74966782c01dc",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322034+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322034+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322034+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5",
+        "published": "Thu, 15 Oct 2026 12:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5\" target=\"_blank\">【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8fbedfbc2c79de9d5c37b94e",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322080+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322080+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322080+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5\" target=\"_blank\">【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a49ed07b4e5295dd0724ef30",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322128+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322128+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322128+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5",
+        "published": "Wed, 14 Oct 2026 12:10:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5\" target=\"_blank\">札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5",
+        "published": "Thu, 15 Oct 2026 21:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JajFEelFEWWVFaUFRel9XTDFNWmNVcmtFU1BYcVhhTTBKcXItNW1zS2xPZTRDWHJ5RkZ5cjBZV0QzcGJ2UlhHbENPaDJsdw?oc=5\" target=\"_blank\">Snow Man札幌公演で臨時シャトルバス運行へ 真駒内駅・南郷18丁目駅から予約不要〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e5296c2551f4a94d4ee5eef8",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322171+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322171+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322171+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\" target=\"_blank\">札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン - ダイヤモンド・チェーンストアオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5",
+        "published": "Thu, 15 Oct 2026 02:53:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5\" target=\"_blank\">イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン</a>  <font color=\"#6f6f6f\">ダイヤモンド・チェーンストアオンライン</font>",
+        "rss_source": {
+          "name": "ダイヤモンド・チェーンストアオンライン",
+          "url": "https://diamond-rm.net"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a4c14218d22159f89450fc6b",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322216+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322216+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322216+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5",
+        "published": "Thu, 15 Oct 2026 12:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RWmpFblk2c2FMV1U0YktmS0Y1ejMzY2tqUkpVd3Jrd3p6Szd1Y2cwSXpsX0J5UDdEbE5Oa2JGZ1NGVFFZUEpORUU3V1E0QQ?oc=5\" target=\"_blank\">【北海道の灯油価格がヤバイ】札幌は既にリッター159円…このままではガソリン超えの190円まで高騰する恐れも…価格安定を求めついに署名活動「中東情勢だけでなく流通ルートで目詰まりが起きている可能性」</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5\" target=\"_blank\">札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ed46ca9ad2f5e352256ec5cc",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322257+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322257+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322257+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5",
+        "published": "Wed, 14 Oct 2026 12:10:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5\" target=\"_blank\">札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か - NHKニュース",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5",
+        "published": "Thu, 15 Oct 2026 03:21:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uU3JkZDFaS2JUekVFZk9KMWtvTERITl9fQkpicDlUWmRJNWR0TUJmelZKRU9XMHdYY2d3OThENV9nNkJwMC1CdFpSRW1GN3FiYU12REFnMC1NUmExSjlv?oc=5\" target=\"_blank\">JR札幌駅直結の商業施設火事 当時の避難者数は700人以上か</a>  <font color=\"#6f6f6f\">NHKニュース</font>",
+        "rss_source": {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "00932c422aca1e16304dc4b5",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322298+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322298+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322298+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5",
+        "published": "Thu, 15 Oct 2026 10:59:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yQTVzVFBnZDA5cVJIREluODN0WnpmUlN1UWRtUDZVVDBkRmVtZ3FuYTZiSk5ZNlFsX3NLY2dEcUhaNkhJbElSYVRZZ21rR0tiZmxhNGlsT3hwYjFNR1d1cG5lMHo3ZnZBUU5TSzU2R3FXUkJWbXJnZTlBU2gxZE0?oc=5\" target=\"_blank\">駅直結施設「札幌ステラプレイス」の火災 隣接百貨店8階から階段避難に“20分” 1階は「焦げ臭いにおい充満、パニック」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5",
+        "published": "Wed, 14 Oct 2026 12:10:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VcU85azBoeFdZUTE5RHY1WHhZU2J5Q0R5OTJfZEdWVWtJVmZrXzZ1cWtJeVFzUXJ6a3hiZkpIZ0F3OHU0VU1pcWdtWGRpOTZZaHNkRmdDbm5MNEJEOWFXMWRGRzg4NXdaeWE4cFVibVY0Z3ZEeFJIVUFZUTVDUWs?oc=5\" target=\"_blank\">札幌ステラプレイスで火事…買い物客らが一斉に避難…JR札幌駅周辺が騒然…1人が体調不良訴える＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2ef37cc0ba55bfc8f3f417c9",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322362+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322362+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322362+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5\" target=\"_blank\">札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "054791d512ad15bcfdd29a91",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322409+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322409+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322409+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5",
+        "published": "Thu, 15 Oct 2026 21:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5\" target=\"_blank\">鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e90039896f3ac0a7aa314089",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322457+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322457+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322457+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5\" target=\"_blank\">ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9e944b2a9f3f4f12af48760a",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322497+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322497+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322497+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5\" target=\"_blank\">＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0a39a101ff1f9025d5bd1117",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322537+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322537+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322537+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5\" target=\"_blank\">ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5\" target=\"_blank\">札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "27cf4e7906ba9cef61625057",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322575+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322575+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322575+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5\" target=\"_blank\">ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5\" target=\"_blank\">＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e068f6956891f00f07b8ce1f",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322616+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322616+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322616+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5\" target=\"_blank\">野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "613ed5031c4503c53a560dfb",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322656+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322656+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322656+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5\" target=\"_blank\">野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5\" target=\"_blank\">ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fa0ac4e2c01ab0993b22f87c",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322697+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322697+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322697+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5\" target=\"_blank\">野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5\" target=\"_blank\">札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2d506819814be12bedc0bd74",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322736+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322736+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322736+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜北海道コンサドーレ札幌＞あすホームで秋田戦 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5",
+        "published": "Thu, 15 Oct 2026 20:23:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5\" target=\"_blank\">＜北海道コンサドーレ札幌＞あすホームで秋田戦</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ee4d7286f8ed4bfa38218787",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322774+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322774+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322774+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tUnBjTW9wQllkaWdqdWxSY3NpNWFwclUyQUpTNWdYS0FmMXA1dExQVTgwTmpmcWF3bDRxR1BGZ1U2NHZkbjZScV9Jb24xaFZnRkh1YTNMZ0lNQQ?oc=5\" target=\"_blank\">野村裕基 札幌で29日に講座と公演 人間賛歌の劇 狂言を次代に 「教えることも修行」魅力伝える</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜北海道コンサドーレ札幌＞あすホームで秋田戦 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5",
+        "published": "Thu, 15 Oct 2026 20:23:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5\" target=\"_blank\">＜北海道コンサドーレ札幌＞あすホームで秋田戦</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9af73a0833d7c49ff3e15780",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322815+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322815+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322815+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mVXFYeDdfRWgyN0dTblBzWVV3YVdfWHlrLXhnZnlKTmY5Y3RCSnlyZzJuY3VPR3pWR0JkNlFLRzFPdThLNDBONlN0RjRCcExVZndGUnkyZjlRZw?oc=5\" target=\"_blank\">ワインと仁木産食材 堪能 札幌からツアー ブドウ収穫も体験</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜北海道コンサドーレ札幌＞あすホームで秋田戦 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5",
+        "published": "Thu, 15 Oct 2026 20:23:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTmcwSkdCTHNfeUs5ZnFlU1BtVlRHUTNvSHo2eHdNRW5wYU1LWDk2X0tjTG80a1ZyaThjaEt3RmVMNDhxakpUOHZycE5IcS1oUlhxcWhUQUo?oc=5\" target=\"_blank\">＜北海道コンサドーレ札幌＞あすホームで秋田戦</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "025388166085c010b31723fe",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322852+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322852+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322852+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「おもしろ半分だった」JR札幌病院看護師が患者を撮影…SNSに不適切投稿 病院利用者「とんでもないこと」 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1TUtyeUtYQllIZ3lzWVg2T0FJbEpOVmxkSUFVSzQtNDZNb0VBMmJ0dVQ1OFhORDBlZWxmTzhoQU5MQkwzMU4tRUplakRhQTlNWUxSWU9EcGxqUQ?oc=5",
+        "published": "Wed, 14 Oct 2026 02:42:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1TUtyeUtYQllIZ3lzWVg2T0FJbEpOVmxkSUFVSzQtNDZNb0VBMmJ0dVQ1OFhORDBlZWxmTzhoQU5MQkwzMU4tRUplakRhQTlNWUxSWU9EcGxqUQ?oc=5\" target=\"_blank\">「おもしろ半分だった」JR札幌病院看護師が患者を撮影…SNSに不適切投稿 病院利用者「とんでもないこと」</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "eca377dc7ac1655afc02ac71",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322894+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322894+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322894+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "副首都オール北海道で 推進会議が初会合【札幌市】 - 釧路新聞電子版",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4yUHZackFYTURrRmt5U3RrQ250d3AzS091QWE5dVltTGZmYXVHTEFwb0c5S2FuQnRzdEl0anhoc04xcmxGWXlDejAwTlVMNk9YOEpJ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:42 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE4yUHZackFYTURrRmt5U3RrQ250d3AzS091QWE5dVltTGZmYXVHTEFwb0c5S2FuQnRzdEl0anhoc04xcmxGWXlDejAwTlVMNk9YOEpJ?oc=5\" target=\"_blank\">副首都オール北海道で 推進会議が初会合【札幌市】</a>  <font color=\"#6f6f6f\">釧路新聞電子版</font>",
+        "rss_source": {
+          "name": "釧路新聞電子版",
+          "url": "https://kushironews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5",
+        "published": "Thu, 15 Oct 2026 21:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMNzdXSFVvRXVEZEhkZmpQRHc0TG1OV2UyblhKNk13NTR4alN2QnlrY20zU1gxZVY0YktublR4YnNXT1J0bXVxbXVuaEh3dm5zd2N5UzhXaEJwbm9BOUpIQUt5VHlvc3NhdDd3cXVyVDNCUmRrVWpvc3JrdERCeFk?oc=5\" target=\"_blank\">鈴木知事「北海道が目指す副首都の姿を示したい」 副首都指定に向け初会合 取り組み加速へ（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e1eff93aaeca00d39c4f5baa",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322935+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322935+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322935+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qdGdYa1U0N19wWWk1VTZlQlp4NklGNVpHMS0xU3BYbEtMZmpGS1M4ZU5aX2pxT0dIdlNob0xyTXMyOW8xZXV4Q3lNYTJ6b3ZYZEJwdHhISFFnUQ?oc=5\" target=\"_blank\">10月23日から札幌国際短編映画祭 ドラマからアニメまで 多彩に96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン - ダイヤモンド・チェーンストアオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5",
+        "published": "Thu, 15 Oct 2026 02:53:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5\" target=\"_blank\">イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン</a>  <font color=\"#6f6f6f\">ダイヤモンド・チェーンストアオンライン</font>",
+        "rss_source": {
+          "name": "ダイヤモンド・チェーンストアオンライン",
+          "url": "https://diamond-rm.net"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e91cb52721d3e865f60d75eb",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.322983+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.322983+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.322983+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+        "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン - ダイヤモンド・チェーンストアオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5",
+        "published": "Thu, 15 Oct 2026 02:53:43 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LRWhxOC1tdjg4SmwxWnJwaUtUZ2xESzlJMzRlcnFGbGxWRG1KSnBzRGJKTjc2MmltSDNHRVpNMHRFeFlNZnpEZDdpTVdfX3Vkc2ZR?oc=5\" target=\"_blank\">イオン北海道、札幌市清田区「イオン札幌平岡店」1階直営売場を10月17日リニューアルオープン</a>  <font color=\"#6f6f6f\">ダイヤモンド・チェーンストアオンライン</font>",
+        "rss_source": {
+          "name": "ダイヤモンド・チェーンストアオンライン",
+          "url": "https://diamond-rm.net"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "47f5e960366d156d31a6a4e0",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.323024+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.323024+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.323024+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:57 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBSenZValZEQk9Ra2sxSktjdklFM05QQnJ3Vmp2SUI3dWF6Q194eWRpTF9hYWo1d21Ib0M4RHFqRzRqaThUZVRFcUh0OHRnOW85S0FUeFFlQm9UUWRaeDhHZkZyTDZUSmlpYWlXZFRYY3JMNE9ZV2R4cm9ZWjc0V2M?oc=5\" target=\"_blank\">【札幌市中央区】10/16 最低9℃、ひんやりするタイミングも、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5",
+        "published": "Thu, 15 Oct 2026 20:39:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82WkFOM0lpQU9MZ184U1ZzQzRTV2p1U0ZUanRNUTYzM2ktcDh1SFh5Ni1oZFFhVFdncGNiRk5ibC1DZHcwWGFkRjFXM2FUQThEbW94dVlIdHdEOGY4VllmMEFnaGdyOWcyRVh6S1FVWVhaUzk3S2l6YmExVUdsZ2s?oc=5\" target=\"_blank\">【札幌市北区】10/16 最低9℃、ひんやりする場面も、朝は雨で昼間から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "109bf5e4955683620de47db5",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.323071+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.323071+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.323071+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pRWRJWUo3aVZXTm5SQ0VNekdpenBjTG9UM1dpVGNISWlGRGpacTNRR2lJaEFsaHM5LTJ0U0ZheUtkRTE0QzhzZlQwaVM4cUVZVlhXRkc2VVVpdw?oc=5\" target=\"_blank\">札幌国際短編映画祭 23日開幕 ドラマからアニメまで 多彩96本</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5",
+        "published": "Thu, 15 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KRHNjVkg4UlkwSV9KTVUySi1SSW94ejBQem9YRU80NFNBSWNNRjhRdFRXOENxNGhaZkJpdjlxWUIyc2gwM2RralJ5azV3WXUyTFVPcnNzbFpXdw?oc=5\" target=\"_blank\">＜社告＞北海道新聞の札幌圏面・デジタルがこの秋から、さらに充実</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "480ef59899bb7ccce327a800",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:37.323110+00:00",
+    "first_seen_at": "2026-10-15T22:44:37.323110+00:00",
+    "last_seen_at": "2026-10-15T22:44:37.323110+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+          "articles": [
+            {
+              "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+              "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+              "rss_source": {
+                "name": "TBS NEWS DIG",
+                "url": "https://newsdig.tbs.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+          "articles": [
+            {
+              "title": "先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載） - 日テレNEWS NNN",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5",
+              "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5oX24xWWFjaFZxWTRzZ0FTR2lsRFdyWWItOTNiQVhIbXJjSnJHTEdMdzNNQzBBLVZsU283UEVLcnltcXhlZ1R2ZDI1Yzk5LU1QcTVnWFlCX3pfRU9aZnVTRE0wWlFjbms4UXNzSmZVNF9jZEY2SkhVY1ZvTlRtd0k?oc=5\" target=\"_blank\">先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事（2026年10月15日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+              "rss_source": {
+                "name": "日テレNEWS NNN",
+                "url": "https://news.ntv.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "8526dea718435c68be5b0fe2",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:41.038832+00:00",
+    "first_seen_at": "2026-10-15T22:44:41.038832+00:00",
+    "last_seen_at": "2026-10-15T22:44:41.038832+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+          "articles": [
+            {
+              "title": "札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定 - TBS NEWS DIG",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5",
+              "published": "Thu, 15 Oct 2026 08:42:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE92ak84djVPLVFXMU1hN20zVEhBNmFtUnphUXd5TzFmX3hCdU9HU29QWXFVNzRaNXNHUzdKaklGczh1Z01CR3lkeXUzT0hIYUNISHR3R0Fadw?oc=5\" target=\"_blank\">札幌ステラプレイス火災 すべてのエスカレーターを緊急点検 16日も休業 営業再開は未定</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+              "rss_source": {
+                "name": "TBS NEWS DIG",
+                "url": "https://newsdig.tbs.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+          "articles": [
+            {
+              "title": "札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載) - ライブドアニュース",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5",
+              "published": "Thu, 15 Oct 2026 07:38:01 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE10eEpuN1NYM2J2SGF5OENmdzVWQlhwRmdCZmVSSUw0NzU4clQwM21SazVCUGFaM2VpRnlsd0NZT3d5cmQxdGZpd2tRTVh3THRIYmk1SzJNUGlmWmFTYUE?oc=5\" target=\"_blank\">札幌ステラプレイスのエスカレーター火災、先月の点検では異常なしだった (2026年10月15日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+              "rss_source": {
+                "name": "ライブドアニュース",
+                "url": "https://news.livedoor.com"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "a029a31e94f7367d68ecfef7",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:43.696098+00:00",
+    "first_seen_at": "2026-10-15T22:44:43.696098+00:00",
+    "last_seen_at": "2026-10-15T22:44:43.696098+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "budget_deferred",
+    "payload": {
+      "remaining_from": [
+        0,
+        3
+      ],
+      "group_count": 26
+    },
+    "review_id": "d976df229056c54954562daa",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:43.709751+00:00",
+    "first_seen_at": "2026-10-15T22:44:43.709751+00:00",
+    "last_seen_at": "2026-10-15T22:44:43.709751+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "uncertain_or_invalid_evidence",
+    "payload": {
+      "group": {
+        "event_name": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道） - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "企業・組織",
+        "tracking_value": "medium",
+        "current_stage": "老舗花店の破産開始手続きが報じられた段階",
+        "summary": "老舗花店について、破産開始手続きに入ったと報じられています。記事タイトルと公開日時から確認できる範囲では、それ以上の手続きの進展や原因、今後の対応は分かりません。",
+        "latest": "2026年10月9日公開の記事で、老舗花店の破産開始手続きが報じられました。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は、破産手続きの進行状況や事業継続・店舗への影響に関する続報が出るかが注目点です。",
+        "articles": [
+          {
+            "title": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道） - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5",
+            "published": "Fri, 09 Oct 2026 05:22:21 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5\" target=\"_blank\">大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      }
+    },
+    "review_id": "a9036e0326b3a926d28d1fbf",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:53.855665+00:00",
+    "diagnostics": {
+      "target_event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "札幌の生花老舗の破産手続き開始決定が報じられた段階",
+        "summary": "札幌の生花老舗について破産手続き開始が報じられています。",
+        "latest": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道）",
+        "next_watch": "破産手続きの進展や事業整理の続報",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5",
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpWEpIb1BpS3Ftc2k1Qmx4aU5KVEh0dTdSOV9Ta1FobHMtVHhhMWRwNzBwMkVOVnRJZUNEZ1VEdEZlekNKZ0pCamJaU1lBRFEtNVZFTU8yYVZZc3BhWFVrZTYweldKeWhQUFlWZ9IBckFVX3lxTE5hZEZ0SXJaREw4Q2FOeGVEYzhNNmRyUFU5ZWFMblRnVnRFNjR2Vkx4ZGpJMXBxVHlDRHRzT3lNaW41a1Y0Tk40ckMzMGkyWVVRUTFZU2ZpN3d6ZkZVSTFUaU1Ubm5meld6M1dSeUJNYVg1UQ?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BUTNDUHVXS1JqWnRaVExwRG0yR3ZkNVJIbWs0LU1vSnY1aS1Oa3hmSXJQbDJMX1pxb3ZqcW1jcndWU2d1cHo3VlItMWZGMXZMLXJ6bUJmMzgzZ2FyUWo0WW11YURzeFY3YTFJRDhxaDd2TkRUX1VrY205MUw4alE?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpWEpIb1BpS3Ftc2k1Qmx4aU5KVEh0dTdSOV9Ta1FobHMtVHhhMWRwNzBwMkVOVnRJZUNEZ1VEdEZlekNKZ0pCamJaU1lBRFEtNVZFTU8yYVZZc3BhWFVrZTYweldKeWhQUFlWZ9IBckFVX3lxTE5hZEZ0SXJaREw4Q2FOeGVEYzhNNmRyUFU5ZWFMblRnVnRFNjR2Vkx4ZGpJMXBxVHlDRHRzT3lNaW41a1Y0Tk40ckMzMGkyWVVRUTFZU2ZpN3d6ZkZVSTFUaU1Ubm5meld6M1dSeUJNYVg1UQ?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "老舗花店",
+                "existing_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク",
+                "incoming_quote": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道）"
+              },
+              {
+                "kind": "entity",
+                "value": "破産開始手続き",
+                "existing_quote": "【倒産情報】業歴100年を超える札幌の生花老舗「明道香風園」が破産手続き開始決定　負債2億8000万円、冠婚葬祭の簡素化などで需要落ち込む　帝国データバンク",
+                "incoming_quote": "大丸やラフィラにも 老舗花店が破産開始手続き（テレビ北海道）"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
+    "last_seen_at": "2026-10-15T22:44:53.855665+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "schedule_search",
+    "reason": "ValueError",
+    "payload": {
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "articles": []
+    },
+    "review_id": "74b0286d1424b29df893f49d",
+    "schema_version": 2,
+    "observed_at": "2026-10-15T22:44:53.855665+00:00",
+    "diagnostics": {
+      "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "target_event_name": "札幌市の副首都整備担当部設置",
+      "ai_report": null,
+      "raw_ai_response": null,
+      "http_status": null
+    },
+    "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
+    "last_seen_at": "2026-10-15T22:44:53.855665+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
