@@ -147,22 +147,24 @@ def export_context(db):
     # Include all public-affecting and validity state; never stale-serve a prepared
     # generation after a correction, cancellation or operator recheck.
     tables=('events','sync_decision_state','sync_event_holds','sync_heads','sync_component_epochs','sync_adoptions','sync_decisions')
+    tables=list(tables)+[r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'pub_%' AND name!='pub_generated' ORDER BY name")]
     return digest({t:sorted(db.execute('SELECT * FROM '+t).fetchall(),key=repr) for t in tables})
 
 
 def prepare_export(db,registry):
     compatibility=legacy_public(db,registry)
-    # No imported fact, operator evaluation reference, or mock/saved-response
-    # rehearsal has an independent publication approval. Fail closed, explicitly.
-    public=[]
-    holds=[{'event_id':e['event_id'],'reason':'publication_evidence_not_independently_verified','classification':'unconfirmed'} for e in compatibility]
+    import publication
+    projection=publication.project(db,registry)
+    public=projection['events'];holds=projection['holds']
     payload={'public_events':public,'compatibility_preview':compatibility,'publication_holds':holds,
              'private_holds':[{'stage':r[0],'group_key':r[1],'payload':json.loads(r[2])} for r in db.execute('SELECT stage,group_key,payload FROM holds ORDER BY stage,group_key')],
-             'can_publish':False,'preview_only':True,'schema':'same top-level event array; no public wrapper or new mandatory field'}
+             'publication_status':projection['notices'],'approval_ids':projection['used_approval_ids'],
+             'scope':'isolated_simulation','can_publish':False,'preview_only':True,'schema':'same top-level event array; no public wrapper or new mandatory field'}
     context=digest({'state':export_context(db),'registry':registry})
     payload['registry']=copy.deepcopy(registry)
     generation=digest({'payload':payload,'context':context})
     with atomic(db):db.execute('INSERT OR IGNORE INTO e2e_exports VALUES(?,?,?)',(generation,dumps(payload),context))
+    publication.mark_generated(db,generation,projection['used_approval_ids'])
     return generation
 
 
@@ -189,7 +191,8 @@ def materialize(db,generation,output_root,*,snapshot_root,failpoint=None):
     if target.is_symlink():raise ValueError('symlink generation forbidden')
     target.mkdir(parents=True,exist_ok=True)
     files={'public_events.json':payload['public_events'],'compatibility_preview.json':payload['compatibility_preview'],
-           'publication_holds.json':payload['publication_holds'],'private_holds.json':payload['private_holds']}
+           'publication_holds.json':payload['publication_holds'],'private_holds.json':payload['private_holds'],
+           'publication_status.json':payload.get('publication_status',[])}
     def write(name,value):
         path=target/name
         if path.is_symlink():raise ValueError('symlink file forbidden')
@@ -211,7 +214,8 @@ def materialize(db,generation,output_root,*,snapshot_root,failpoint=None):
         hashes[name]=write(name,value)
         if index==0:sync.fault('after_first_file',failpoint)
     sync.fault('before_manifest',failpoint)
-    write('manifest.json',{'generation':generation,'files':hashes,'preview_only':True,'can_publish':False})
+    write('manifest.json',{'generation':generation,'files':hashes,'preview_only':True,'can_publish':False,'scope':'isolated_simulation',
+        'roles':{'public_events.json':'approved_simulation_only','compatibility_preview.json':'unapproved_comparison_only','publication_status.json':'withdrawal_and_recheck_notices'}})
     return {'directory':str(target),'hashes':hashes,'can_publish':False}
 
 
@@ -228,3 +232,31 @@ def compare_public(old,new):
             'article_urls_equal':{(e['event_id'],a['url']) for e in old for a in e.get('articles',[])}=={(e['event_id'],a['url']) for e in new for a in e.get('articles',[])},
             'progress_total_old':sum(e.get('progress_count',0) for e in old),'progress_total_new':sum(e.get('progress_count',0) for e in new),
             'differences':differences,'display_fields_compared':list(DISPLAY_FIELDS)}
+
+
+def load_approved_simulation(db,generation,directory):
+    """Read the approved rehearsal artifact only; never accept a renamed preview.
+
+    Requires the originating SQLite state. An existing file is not an approval,
+    and an old generation cannot be reused after withdrawal/revision.
+    """
+    import publication
+    publication.initialize(db);publication.refresh(db)
+    path=Path(directory)
+    if any(p.is_symlink() for p in [path,*path.parents]):raise ValueError('symlink artifact forbidden')
+    row=db.execute('SELECT payload,context_hash FROM e2e_exports WHERE generation=?',(generation,)).fetchone()
+    if row is None:raise ValueError('unknown artifact generation')
+    original=json.loads(row[0])
+    if row[1]!=digest({'state':export_context(db),'registry':original['registry']}):raise ValueError('stale artifact after approval or source change')
+    manifest=json.loads((path/'manifest.json').read_text())
+    if manifest.get('generation')!=generation or manifest.get('scope')!='isolated_simulation' or manifest.get('can_publish') is not False or manifest.get('roles',{}).get('public_events.json')!='approved_simulation_only':raise ValueError('not an approved simulation artifact')
+    values={}
+    for name,key in [('public_events.json','public_events'),('publication_status.json','publication_status')]:
+        file=path/name
+        if file.is_symlink():raise ValueError('symlink artifact forbidden')
+        data=file.read_bytes()
+        if hashlib.sha256(data).hexdigest()!=manifest.get('files',{}).get(name):raise ValueError('artifact hash mismatch')
+        value=json.loads(data)
+        if value!=original.get(key,[]):raise ValueError('artifact does not match approved database generation')
+        values[key]=value
+    return {'events':values['public_events'],'notices':values['publication_status'],'scope':'isolated_simulation','deployable':False}

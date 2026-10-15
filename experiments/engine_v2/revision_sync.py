@@ -121,6 +121,14 @@ def _decision(db,op_id,event_id,kind,outcome,payload,evidence_ids,now,verificati
     for eid in ids:db.execute('INSERT INTO sync_dependencies VALUES(?,?)',(did,eid))
     return did
 
+def notify_publication(db,op_id,now):
+    # Optional isolated extension. No schema, approval or production migration is
+    # created by an existing sync operation unless the rehearsal was initialized.
+    if db.execute("SELECT 1 FROM sqlite_master WHERE name='pub_approvals'").fetchone():
+        from publication import refresh
+        refresh(db,op_id,now)
+
+
 def record_reference(db,op_id,event_id,kind,outcome,payload,evidence_ids,now,supersedes=None):
     """Preserve operator/imported judgments; never adopt them as source truth."""
     if kind not in ('ai','operator'):raise ValueError('unknown decision kind')
@@ -133,6 +141,7 @@ def record_reference(db,op_id,event_id,kind,outcome,payload,evidence_ids,now,sup
             if old!=(event_id,kind):raise ValueError('superseded judgment scope mismatch')
         did=_decision(db,op_id,event_id,kind,outcome,payload,evidence_ids,now,'operator_review_only' if kind=='operator' else 'imported_or_simulated_reference_only')
         if supersedes:_transition(db,op_id,supersedes,'superseded','explicit replacement judgment')
+        notify_publication(db,op_id,now)
         return finish(db,op_id,command,{'decision_id':did,'status':'recorded_reference_only'},now)
 
 def change_source(db,op_id,article,expected_state,now,body_text=UNSET,outcome='updated',error=None,failpoint=None):
@@ -179,6 +188,7 @@ def change_source(db,op_id,article,expected_state,now,body_text=UNSET,outcome='u
                 if not all(evidence_current(db,e) for e in deps):db.execute("UPDATE sync_jobs SET status='needs_recheck' WHERE job_id=?",(jid,))
             db.execute('DELETE FROM sync_fetch_waits WHERE url=?',(article['url'],));fault('after_invalidation',failpoint)
             result={'state_id':new['state_id'],'changed_components':sorted(changed_components),'affected_decisions':sorted(affected),'affected_events':sorted(event_ids),'transport_retry':False}
+        notify_publication(db,op_id,now)
         fault('before_receipt',failpoint);finish(db,op_id,command,result,now)
     fault('after_commit',failpoint)
     return result
@@ -339,6 +349,7 @@ def adopt(db,op_id,jid,now,failpoint=None,supersedes=None):
                 if old!=(event_id,'ai'):raise ValueError('superseded AI decision scope mismatch')
                 _transition(db,op_id,supersedes,'superseded','new guarded adoption')
         result={'status':outcome,'decision_id':did,'adoption_id':op_id if outcome=='accepted' else None}
+        notify_publication(db,op_id,now)
         fault('before_receipt',failpoint);finish(db,op_id,command,result,now)
     fault('after_commit',failpoint)
     return result
@@ -359,7 +370,8 @@ def cancel(db,op_id,adoption_id,now,failpoint=None):
         db.execute('INSERT INTO sync_event_epochs VALUES(?,1) ON CONFLICT(event_id) DO UPDATE SET epoch=epoch+1',(event_id,))
         refresh_links(db,event_id);fault('after_links',failpoint)
         archive_facts(db,event_id,op_id,'after_cancel')
-        result={'status':'cancelled','adoption_id':adoption_id};fault('before_receipt',failpoint);finish(db,op_id,command,result,now)
+        result={'status':'cancelled','adoption_id':adoption_id};notify_publication(db,op_id,now)
+        fault('before_receipt',failpoint);finish(db,op_id,command,result,now)
     fault('after_commit',failpoint)
     return result
 
