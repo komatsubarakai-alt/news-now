@@ -233,14 +233,19 @@ class RevisionSyncTests(unittest.TestCase):
         change_source(self.db,'heading',changed,head(self.db,self.url)['state_id'],NOW,body_text=self.body)
         self.assertFalse(job_current(self.db,job))
         self.assertEqual(call_mock(self.db,job,lambda p:self.fail('stale prompt'),NOW)['status'],'needs_recheck')
-    def test_reverted_body_gets_new_validation_generation_but_reuses_response(self):
+    def test_reverted_body_gets_new_validation_generation_and_version_bound_response(self):
         job=self.job();call_mock(self.db,job,lambda p:copy.deepcopy(TRACKING_RESPONSE),NOW);old=adopt(self.db,'old-result',job,NOW)
         change_source(self.db,'change',self.article,head(self.db,self.url)['state_id'],NOW,body_text='SYNTHETIC corrected')
         change_source(self.db,'restore',self.article,head(self.db,self.url)['state_id'],NOW,body_text=self.body)
         self.assertEqual(self.status(old['decision_id']),'needs_recheck');self.assertFalse(job_current(self.db,job))
         fresh=self.job();self.assertNotEqual(fresh,job);budget=self.budget()
-        self.assertEqual(call_mock(self.db,fresh,lambda p:self.fail('same prompt cache'),NOW)['status'],'cached')
-        self.assertEqual(self.budget(),budget)
+        self.assertEqual(call_mock(self.db,fresh,lambda p:copy.deepcopy(TRACKING_RESPONSE),NOW)['status'],'cached')
+        # The restored edition has a different generation-bound prompt, so it
+        # gets one new reservation. Repeating that same edition gets none.
+        after=self.budget()
+        self.assertEqual(json.loads(after)['run']['calls'],json.loads(budget)['run']['calls']+1)
+        self.assertEqual(call_mock(self.db,fresh,lambda p:self.fail('duplicate restored-edition call'),NOW)['status'],'cached')
+        self.assertEqual(self.budget(),after)
     def test_reservation_from_prior_day_cannot_bypass_today_budget(self):
         from datetime import timedelta
         job=self.job()

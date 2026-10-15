@@ -98,7 +98,7 @@ def shared_source():
     finally:fixture.tearDown()
 
 
-def body_only_blocker():
+def body_only_reapproval():
     fixture=PublicationTests();fixture.setUp()
     try:
         db=fixture.db;body=sync.add_evidence(db,'e1',fixture.url,'body','100万円')
@@ -109,20 +109,21 @@ def body_only_blocker():
         jid=sync.make_job(db,'e1',fixture.g,[fresh],NOW)
         answer=copy.deepcopy(TRACKING_RESPONSE);answer.update(report(fixture.source));sync.call_mock(db,jid,lambda p:answer,NOW)
         outcome=sync.adopt(db,'new-body-only-judgment',jid,NOW)['status']
-        try:fixture.approve('body-reapproval','field','current_stage',evidence_ids=[fresh],supersedes=aid)
+        new_decision=db.execute("SELECT decision_id FROM sync_adoptions WHERE adoption_id='new-body-only-judgment'").fetchone()[0]
+        fixture.did=new_decision
+        try:new_approval=fixture.approve('body-reapproval','field','current_stage',evidence_ids=[fresh],supersedes=aid)
         except ValueError:blocked=True
         else:blocked=False
-        assert outcome=='already_saved' and blocked
+        assert outcome=='accepted' and not blocked
         return {'basis':'synthetic unchanged URL/title/description/published, body only changed',
-                'prior_approval_status':fixture.state(aid),'new_legacy_guard_outcome':outcome,'reapproval_safely_blocked':blocked,
-                'remaining_work':'body-only judgment revalidation path; do not bypass existing preflight or reuse stale accepted judgment'}
+                'prior_approval_status':fixture.state(aid),'new_legacy_guard_outcome':outcome,'explicit_reapproval_completed':not blocked,'new_approval_status':fixture.state(new_approval)}
     finally:fixture.tearDown()
 
 
 def run(root):
     before=hashes(root);started=time.perf_counter();life,artifacts=synthetic_lifecycle()
     result={'snapshot_revision':'f4b831d3fa1f514b2713ecca5acebc8a6aaaf99c','existing_data':baseline(root),
-        'synthetic_lifecycle':life,'shared_source':shared_source(),'body_only_blocker':body_only_blocker(),
+        'synthetic_lifecycle':life,'shared_source':shared_source(),'body_only_reapproval':body_only_reapproval(),
         'json_hashes_before':before,'json_hashes_unchanged':before==hashes(root),'real_api_calls':0,
         'production_approval_operations':0,'simulated_only':True,'elapsed_ms':(time.perf_counter()-started)*1000}
     assert result['json_hashes_unchanged'];return result,artifacts
@@ -140,7 +141,7 @@ def markdown(result):
         '承認・取消し・根拠失効と履歴をSQLiteの同じ保存範囲に記録。保存前失敗は全体を戻し、保存後の応答消失は同じ操作IDで再開。古い操作の結果を取得しても、その承認は再有効化しません。',
         '公開ファイル生成の途中失敗も同じ世代で再開。承認・根拠が変わった後の古いファイルは専用読取関数が拒否します。比較用JSONを改名しmanifestのハッシュを書き換えた場合も、SQLiteに保存した承認済み世代との一致検査で拒否します。',
         '', '## 残る阻止条件','',
-        '- 本文だけの変更では旧処理の重複防止が already_saved を返し、新しい承認根拠に使える採用判断を作れない場合があります。旧判断の流用で回避せず、再承認を止めることを確認済みです。本文版を理解した再検証経路が必要です。',
+        '- 本文版対応の再検証経路を追加し、本文だけの変更後も新しい判断と明示再承認で処理できることを確認しました。残る阻止条件は認証・運用・実データ検証です。',
         '- 承認者は模擬ID。本人確認・権限管理・スマホ管理UI・実際の公開配信には接続していません。',
         '- 既存サイトは公開状態JSONをまだ表示しません。取消し理由の安全な定型表示と履歴表示の設計だけで、実画面への接続は未実装です。',
         '- 根拠失効はその根拠IDに対して恒久記録。失効取消しの管理UIは未実装で、新しい根拠版・判断・明示再承認が必要です。',
@@ -162,6 +163,6 @@ def main():
     (out/'publication_results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     (out/'PUBLICATION_RESULTS.md').write_text(markdown(result))
     for name,value in artifacts.items():(out/(name+'.json')).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'existing':result['existing_data'],'phases':result['synthetic_lifecycle']['phases'],'shared':result['shared_source'],'blocker':result['body_only_blocker'],'json_hashes_unchanged':True},ensure_ascii=False))
+    print(json.dumps({'existing':result['existing_data'],'phases':result['synthetic_lifecycle']['phases'],'shared':result['shared_source'],'body_only_reapproval':result['body_only_reapproval'],'json_hashes_unchanged':True},ensure_ascii=False))
 
 if __name__=='__main__':main()

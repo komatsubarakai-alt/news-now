@@ -169,10 +169,15 @@ def rank(db, group, triage=None, persist=True):
     return output
 
 
-def judge(db, group, answer, now, budget_available=True, triage=None, registry=None, fail_save=False, presented_ids=None, rerank=True):
+def judge(db, group, answer, now, budget_available=True, triage=None, registry=None, fail_save=False, presented_ids=None, rerank=True, known_event_id=None):
     """Mock-answer injection only. No real client. Validate before a single SQL commit."""
     rows = rank(db, group, triage) if rerank else [{'event_id':e['event_id'],'event':e} for e in events(db) if e.get('publication_status')!='held']
     all_events = events(db); known = {a['url']: a for e in all_events for a in e.get('articles', [])}
+    if known_event_id is not None:
+        scoped=next((e for e in all_events if e['event_id']==known_event_id),None)
+        if scoped is None or presented_ids is None or known_event_id not in presented_ids:raise ValueError('invalid per-event source-version scope')
+        if answer.get('relation')=='same_event' and answer.get('event_id')!=known_event_id:raise ValueError('answer/source-version target mismatch')
+        known.update({a['url']:a for a in scoped.get('articles',[])})
     reason = preflight(group, known, registry or {}, triage or {})
     if reason:
         with atomic(db):
@@ -182,7 +187,7 @@ def judge(db, group, answer, now, budget_available=True, triage=None, registry=N
                   'selection':active_selection(group, triage or {}),'validator':validation_revision('tracking'),
                   'model':'gpt-5.4-mini','output_limit':1200,
                   'prototype_code':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                  'presented_ids':presented_ids,'prototype_version': 'v2', 'source_history': (triage or {}).get(group_key(group),{}).get('source_history',[]),
+                  'presented_ids':presented_ids,'known_event_id':known_event_id,'prototype_version': 'v2', 'source_history': (triage or {}).get(group_key(group),{}).get('source_history',[]),
                   'changes': list(db.execute('SELECT id,reversed FROM changes ORDER BY id'))}
     signature = digest({'conditions':conditions,'answer':answer})
     prior = db.execute('SELECT status FROM decisions WHERE signature=?', (signature,)).fetchone()

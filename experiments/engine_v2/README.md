@@ -1,8 +1,10 @@
 # ニュースの現在地：隔離SQLiteシャドー試作品
 
-本番非接続の隔離試作品です。今回の公開承認・取消し検証では、本番移行の可否は判断せず、残る阻止条件を整理しています。
+本番非接続の隔離試作品です。本文改訂後の再判定・明示再承認を通信なしで検証しています。本番には接続せず、残る阻止条件を整理しています。
 
-最新の公開承認・取消し検証は **PUBLICATION_RESULTS.md**、設計は **PUBLICATION_DESIGN.md**、テスト・不変確認は **PUBLICATION_VALIDATION.md** です。明示的な模擬承認のある項目だけを公開形式へ出力し、既存公開34件は未承認のままです。実際の承認・公開には接続していません。
+最新の本文改訂後の再判定・再承認は **BODY_REVISION_RESULTS.md**、設計は **BODY_REVISION_DESIGN.md**、テストと不変確認は **BODY_REVISION_VALIDATION.md** です。本文だけの変更でalready_savedに止められていた経路を修正しました。
+
+前段の公開承認・取消し検証は **PUBLICATION_RESULTS.md**、当時の設計は **PUBLICATION_DESIGN.md**、当時のテストは **PUBLICATION_VALIDATION.md** です。明示的な模擬承認のある項目だけを公開形式へ出力し、既存公開34件は未承認のままです。実際の承認・公開には接続していません。
 
 以前の一気通貫検証は **E2E_RESULTS.md**、当時の構成は **E2E_DESIGN.md**、当時のテストは **E2E_VALIDATION.md** です。`e2e_preview/compatibility_preview.json` は比較専用で、公開・本番切り替えには使用できません。
 

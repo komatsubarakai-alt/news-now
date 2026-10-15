@@ -19,3 +19,9 @@ CREATE TABLE IF NOT EXISTS sync_fetch_waits(url TEXT PRIMARY KEY REFERENCES sep_
 CREATE TABLE IF NOT EXISTS sync_event_holds(event_id TEXT PRIMARY KEY REFERENCES events,reason TEXT NOT NULL,op_id TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS sync_fact_archive(archive_id TEXT PRIMARY KEY,event_id TEXT REFERENCES events,original_fact_id INTEGER NOT NULL,payload TEXT NOT NULL,op_id TEXT NOT NULL,phase TEXT NOT NULL);
 CREATE VIEW IF NOT EXISTS sync_event_review_status AS SELECT event_id,count(*) AS pending_judgments FROM (SELECT d.event_id FROM sync_decisions d JOIN sync_decision_state s USING(decision_id) WHERE s.status='needs_recheck' UNION ALL SELECT event_id FROM sync_event_holds) GROUP BY event_id;
+CREATE TABLE IF NOT EXISTS sync_content_heads(event_id TEXT REFERENCES events,url TEXT REFERENCES sep_urls,edition_id TEXT NOT NULL,state_id TEXT REFERENCES sync_source_states,adoption_id TEXT REFERENCES sync_adoptions,PRIMARY KEY(event_id,url));
+CREATE TABLE IF NOT EXISTS sync_content_changes(adoption_id TEXT PRIMARY KEY REFERENCES sync_adoptions,before_payload TEXT NOT NULL,after_payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sync_revision_validations(operation_id TEXT PRIMARY KEY,decision_id TEXT REFERENCES sync_decisions,event_id TEXT REFERENCES events,source_editions TEXT NOT NULL,guard_input_hash TEXT,canonical_after_hash TEXT,guard_outcome TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sync_revision_requests(request_id TEXT PRIMARY KEY,command_hash TEXT NOT NULL,job_id TEXT REFERENCES sync_jobs,result TEXT,command_payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sync_content_editions(edition_id TEXT PRIMARY KEY,state_id TEXT REFERENCES sync_source_states,payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sync_revision_transitions(transition_id TEXT PRIMARY KEY,request_id TEXT REFERENCES sync_revision_requests,old_status TEXT,new_status TEXT NOT NULL,at TEXT NOT NULL);
