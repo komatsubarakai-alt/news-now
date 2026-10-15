@@ -4,7 +4,7 @@ import json
 import tempfile
 from pathlib import Path
 import operator_app as app
-from operator_demo import populate
+from operator_task_demo import populate
 
 
 def build(output, snapshot_root=None, demo=False):
@@ -21,7 +21,7 @@ def build(output, snapshot_root=None, demo=False):
                     if not db.execute('SELECT 1 FROM sync_heads WHERE url=?',(article['url'],)).fetchone():app.sync.seed(db,article)
         else:raise ValueError('explicit demo or snapshot required')
         state=app.snapshot(db)
-        encoded=json.dumps(state,ensure_ascii=False).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
+        encoded=json.dumps(state,ensure_ascii=False,indent=2).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
         html=Path(app.__file__).with_name('operator_ui.html.template').read_text()
         html=html.replace('<script id="offlineSnapshot" type="application/json">null</script>',
                           '<script id="offlineSnapshot" type="application/json">'+encoded+'</script>')

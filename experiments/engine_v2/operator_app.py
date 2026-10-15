@@ -16,6 +16,7 @@ from engine import atomic, connect, dumps, events, import_snapshot, rank
 from failed_response import digest
 import revision_sync as sync
 import publication as pub
+import operator_tasks as tasks
 
 SCOPE = 'isolated_operator_rehearsal'
 SCHEMA = '''
@@ -30,6 +31,7 @@ CREATE TABLE IF NOT EXISTS ui_reviews(review_id TEXT PRIMARY KEY, event_id TEXT 
 
 def initialize(db):
     pub.initialize(db)
+    tasks.initialize(db)
     with atomic(db):
         for stmt in SCHEMA.split(';'):
             if stmt.strip(): db.execute(stmt)
@@ -122,6 +124,8 @@ def snapshot(db):
     result = dict(scope=SCOPE, can_publish=False, items=items, queues=queues, history=history,
                   legacy_operator_records=[json.loads(r[0]) for r in db.execute('SELECT payload FROM operator_decisions ORDER BY rowid')],
                   approved_preview=projection['events'], notices=projection['notices'])
+    result['data_scope']='synthetic_demo' if db.execute("SELECT 1 FROM sqlite_master WHERE name='ui_demo_meta'").fetchone() else 'saved_snapshot_not_revalidated'
+    result['work']=tasks.worklist(db,result)
     result['revision'] = digest(result)
     return result
 
@@ -141,9 +145,15 @@ def operate(db, command, failpoint=None):
         action = command.get('action')
         eid = command.get('event_id')
         item = next((v for v in state['items'] if v['event']['event_id'] == eid), None)
-        if item is None and not (action=='queue_review' and eid is None): raise ValueError('unknown event')
+        if item is None and not (action in ('queue_review','task_review','reopen_task') and eid is None): raise ValueError('unknown event')
         at = now(); actor = 'simulation:local-operator'
-        if action=='queue_review':
+        if action=='reopen_task':
+            result=tasks.reopen(db,state,command,at)
+        elif action=='task_review':
+            result=tasks.review(db,state,command,at)
+        elif action=='approve_bundle':
+            result=tasks.bundle(db,state,command,at,failpoint=failpoint)
+        elif action=='queue_review':
             queue=next((q for q in state['queues'] if q['queue_id']==command.get('queue_id')),None)
             if queue is None: raise ValueError('unknown queue')
             outcome=command.get('result'); reason=command.get('reason','')
@@ -222,6 +232,15 @@ def preview_target(db, command):
         db.execute('ROLLBACK TO ui_preview');db.execute('RELEASE ui_preview')
 
 
+def preview_bundle(db,command):
+    state=snapshot(db)
+    if command.get('revision')!=state['revision']:raise ValueError('画面が古くなりました。再読込してください。')
+    db.execute('SAVEPOINT ui_bundle_preview')
+    try:return tasks.bundle(db,state,dict(command,op='preview-bundle'),now(),preview=True)
+    finally:
+        db.execute('ROLLBACK TO ui_bundle_preview');db.execute('RELEASE ui_bundle_preview')
+
+
 def open_owned(path):
     p=Path(path)
     if p.is_symlink() or p.parent.is_symlink(): raise ValueError('symlink DB forbidden')
@@ -285,13 +304,13 @@ class Handler(BaseHTTPRequestHandler):
         if (not self.valid_host() or self.headers.get('Origin') != self.server.origin or
             not hmac.compare_digest(self.headers.get('X-Local-Token',''),self.server.token)):
             return self.respond(403,dumps({'error':'local session required'}))
-        if self.path not in ('/api/operate','/api/preview'): return self.respond(404,'{}')
+        if self.path not in ('/api/operate','/api/preview','/api/preview-bundle'): return self.respond(404,'{}')
         try:
             size=int(self.headers.get('Content-Length','0'))
             if not 0<size<=65536: raise ValueError('request size rejected')
             if self.headers.get('Content-Type')!='application/json': raise ValueError('JSON required')
             command=json.loads(self.rfile.read(size))
-            result=preview_target(self.server.app,command) if self.path=='/api/preview' else operate(self.server.app,command)
+            result=preview_bundle(self.server.app,command) if self.path=='/api/preview-bundle' else preview_target(self.server.app,command) if self.path=='/api/preview' else operate(self.server.app,command)
             self.respond(200,dumps({'result':result,'state':snapshot(self.server.app)}))
         except (ValueError,TypeError,KeyError) as exc: self.respond(409,dumps({'error':str(exc)}))
 
@@ -305,7 +324,7 @@ def main():
     path=args.db or str(Path(tempfile.mkdtemp(prefix='news-now-operator-'))/'operator.sqlite')
     db=copy_isolated(args.copy_db,path) if args.copy_db else open_owned(path)
     if args.demo:
-        from operator_demo import populate
+        from operator_task_demo import populate
         if not events(db): populate(db)
     elif args.snapshot and not events(db):
         import_snapshot(db,args.snapshot.resolve())

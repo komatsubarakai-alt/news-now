@@ -10,7 +10,7 @@ class OperatorPreviewTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             p=Path(td)/'screen.html';result=preview.build(p,demo=True);html=p.read_text()
             self.assertFalse(result['can_publish']);self.assertIn("connect-src 'none'",html)
-            self.assertIn('offline-read-only',html);self.assertIn('読み取り専用HTML',html)
+            self.assertIn('offline-read-only',html);self.assertIn('閲覧専用',html)
             self.assertNotIn('src="http',html);self.assertNotIn('__LOCAL_TOKEN__',html)
     def test_output_inside_repo_rejected_before_write(self):
         with self.assertRaises(ValueError):preview.build(app.ROOT/'operator-test.html',demo=True)
