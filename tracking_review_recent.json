@@ -1,4 +1,549 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "cdadb23370d598124671f5f4",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌の給食無償化をめぐり、保護者が『少ない給食』に驚いたことや、市長が量や献立は変わらないと説明したことが報じられている。",
+          "latest": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN））",
+          "next_watch": "無償化後の給食の量や運用に関する追加説明、改善、制度変更の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌",
+                  "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN））"
+                },
+                {
+                  "kind": "detail",
+                  "value": "無償化",
+                  "existing_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+                  "incoming_quote": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN））"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "少ない給食に保護者驚く 国の交付金で無償化の札幌 市長「量、献立など変わらず」（テレビ朝日系（ANN）） - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5"
+      ]
+    },
+    {
+      "review_id": "f27c0f9d4dc9c45c030cf50a",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
+          "latest": "『足りる？』無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+                },
+                {
+                  "kind": "detail",
+                  "value": "給食が少ない",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB 北海道テレビ",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "a051dcc57c67549f91735238",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
+          "latest": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」",
+          "next_watch": "無償化後の給食量や献立をめぐる追加対応、調査、説明の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」"
+                },
+                {
+                  "kind": "detail",
+                  "value": "無償化",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "少ない給食に保護者驚く　国の交付金で無償化の札幌　市長「量、献立など変わらず」 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "ea0b140a6367778024d7c9cf",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+        "target_event_name": "公安調査庁によるアレフ札幌施設への立ち入り検査",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yV1cySmVNWnpoRnNNR3l2T052VEQ0RGpjUXhYZjZVdWdra2x4T1hHX2VJY1V5SFFFbFZ5UHE4WFlwY2VHanlkTllDeWJnZw?oc=5",
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tWGdiLV9adDJOVXpPa0VadlJIRFIwMVZIenJfbzZDVlg1RkRFTDlfSDB3a0hHY2ZhUkFkNTlxTGFhMkpRZm5LcE9fRDlSczlyRTduS1RINzBrT2lSazlodW1RNkkzMGJlLVd2a013?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
+          "summary": "アレフの札幌施設への公安調査庁による立ち入り検査が報じられています。",
+          "latest": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "アレフの札幌施設に公安調査庁が立ち入り検査",
+                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区",
+                  "incoming_quote": "オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＿教祖だった男の写真や説法が収録された教材などを確認＜北海道＞"
+                },
+                {
+                  "kind": "entity",
+                  "value": "アレフ",
+                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区",
+                  "incoming_quote": "オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＿日本祖だった男の写真や説法が収録された教材などを確認＜北海道＞"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "オウム真理教の後継団体「アレフ」の札幌施設に公安調査庁が立ち入り検査＿教祖だった男の写真や説法が収録された教材などを確認＜北海道＞ - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5"
+      ]
+    },
+    {
+      "review_id": "96c0f0ebcfee767fe4e0a762",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
+        "target_event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "国有地の入札予定が報じられた段階",
+          "summary": "札幌・斗南病院跡の国有地について、2027年春にも入札を実施し、定期借地で民間企業も対象にする方針が報じられています。",
+          "latest": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Xam9wdm12c2lGOXhfM1ZjZkpodGpTTDJ1TUxkUVlhU0oyeDJiMnNrSVVyaXpKVDBUd20zWVlkekFXY0hsZm94emdhdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌・斗南病院跡の国有地",
+                  "existing_quote": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+                  "incoming_quote": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル"
+                },
+                {
+                  "kind": "detail",
+                  "value": "27年春にも入札",
+                  "existing_quote": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 47NEWS",
+                  "incoming_quote": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": [
+            {
+              "label": "27年春にも入札",
+              "quote": "27年春にも入札",
+              "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
+              "status": "scheduled"
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "札幌・斗南病院跡の国有地、27年春にも入札 定期借地 民間企業も対象 - 北海道新聞デジタル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5"
+      ]
+    },
+    {
+      "review_id": "5798807bcbeb78f3813910be",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
+          "summary": "新タクシーブランド「エゾタク」の札幌圏での営業開始と、AI・デジタル活用による運転手不足対策の取り組みが続報として報じられている。",
+          "latest": "札幌に新タクシー「エゾタク」誕生！採用者の約半数が20〜30代…AI・デジタル活用で運転手不足に挑む",
+          "next_watch": "営業体制の拡大や、採用・配車効率化の進展があるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌圏で運行開始",
+                  "existing_quote": "タクシー新興企業「ニューモ」、 札幌圏で運行開始 江別ハイヤー買収へ",
+                  "incoming_quote": "札幌に新タクシー「エゾタク」誕生！採用者の約半数が20〜30代…AI・デジタル活用で運転手不足に挑む"
+                },
+                {
+                  "kind": "detail",
+                  "value": "新タクシーブランド「エゾタク」",
+                  "existing_quote": "札幌圏に新顔タクシー「エゾタク」 江別ハイヤーもニューモ傘下に",
+                  "incoming_quote": "札幌に新タクシー「エゾタク」誕生！採用者の約半数が20〜30代…AI・デジタル活用で運転手不足に挑む"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "札幌に新タクシー「エゾタク」誕生！採用者の約半数が20〜30代…AI・デジタル活用で運転手不足に挑む - UHB 北海道文化放送",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "ffdbd99b98390e3ef37d1838",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+        "target_event_name": "札幌市東区の共同住宅火災",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNUE4cnNOQmtPQWoxQjFRUTVVRFBITDN0Ykx4elhLZnNwSWFwSXFDSVZOWnEweXBpMjRZcXRyay1FNW1xU0FrdnNLaWJKUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVJGdGpRQlI0TzdsTkpxekFsMzhUc0M2SEtFQ25MMjROMVZBXzJlQzRuTVotLUN6bHl4Vi1URFhMWmhLdGNoZTk1WUJ2amZieTRNdWZTLU9WbzA0dWRkOHR6YVpYRXhnRVlpRFZnRTB5aGhHSTRVeE9aalp5ekNtQTJhREJTMmJ1N0xGLXJ3?oc=5",
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PQlZEZ2FOTm1WREw0S2oyU2J1bkpaSmJLbU9vd3NkUVJ5ajZqM3lpeVc4N2dWQklMM3ZXcE10eENfWDJLM0VIa2NmaDljV0JHZXNYM1I0RQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEZDelRCRVBOUUhLYi1POWEtb1BJM0wtbWp3b2tkekUtYTJjYmtNck8yQmJwaGdSYVF5MlI2eW5oVmlPRy1IRk5UYlhnLXRLVVVfYXFQVFVzNS1CY3FCcW1VUVA0eVZiWk5HZWp2V0sxTG9WVlB3S3pCLVc0eHdtM0ZVd1BWSTQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95ajNiVVdyWTRNZENpTGRPOU9iSHhOODVfV3ltWGhlbEx5TkNuak5SWHdPWDdrUHA0NnZXdm4yTGYzYWNJWHpHa09mVFY0UQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "札幌市東区の3階建て共同住宅で火災が発生し、70代とみられる女性がけがをして搬送された段階",
+          "summary": "札幌市東区の3階建て共同住宅で火事が起き、2階の一室が燃え、70代とみられる女性がけがをして搬送されたと確認できる。",
+          "latest": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN - 日テレNEWS NNN",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ieEQyV3NCZ3kxSVhxVUpFbGFWRWdJNTNJUmhMbFdKY1Q1NUx5ckVjZkZJcU9mTDVpcXMzVjVnZG80WTlNQUdaaTJuVlNCMHltVGt1Q1VIUGttSHZDd0tzczZtSW1yVzFRb1NpMEZiN1RuXzFGelo1d1hIRHBaQ1U?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市東区",
+                  "existing_quote": "札幌市東区の3階建てマンションで火事",
+                  "incoming_quote": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN - 日テレNEWS NNN"
+                },
+                {
+                  "kind": "entity",
+                  "value": "女性1人搬送",
+                  "existing_quote": "3階建てマンションで火事 火元の部屋から70代女性救出 意識あり 札幌市東区",
+                  "incoming_quote": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN - 日テレNEWS NNN"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "“窓から真っ赤な炎と煙” 3階建てのマンションで火事 女性1人搬送 札幌市東区（2026年10月8日掲載）｜STV NEWS NNN - 日テレNEWS NNN",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5"
+      ]
+    },
+    {
+      "review_id": "3da3e81ead13ab78b2b97a5c",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
+      "observed_at": "2026-10-15T15:50:52.132119+00:00",
+      "diagnostics": {
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
+          "summary": "新タクシーブランド「エゾタク」が札幌圏で運行開始し、江別ハイヤーの全株取得へ向かう動きが報じられている。",
+          "latest": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "「エゾタク」設立",
+                  "existing_quote": "「エゾタク」設立",
+                  "incoming_quote": "「エゾタク」設立"
+                },
+                {
+                  "kind": "detail",
+                  "value": "江別ハイヤーの全株取得へ",
+                  "existing_quote": "江別ハイヤー買収へ",
+                  "incoming_quote": "江別ハイヤーの全株取得へ"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "「エゾタク」設立 運行開始 札幌圏でタクシー新興ニューモ 江別ハイヤーの全株取得へ - 北海道新聞デジタル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5"
+      ]
+    }
+  ]
 }
