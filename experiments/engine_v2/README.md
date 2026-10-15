@@ -2,7 +2,9 @@
 
 本番非接続。今回の結論は **試作継続には価値あり、本番移行は不可** です。
 
-最新の段階的照合の評価は `STAGE_RESULTS.md`、実記事評価表は `EVALUATION.md` です。初期試作の結果は `RESULTS.md` に保持しています。
+最新の一気通貫検証は **E2E_RESULTS.md**、構成と公開前停止の理由は **E2E_DESIGN.md**、テストと不変確認は **E2E_VALIDATION.md** です。公開承認の移行は未実装で、新公開JSONは安全のため空です。`e2e_preview/compatibility_preview.json` は比較専用で、公開・本番切り替えには使用できません。
+
+段階的照合の評価は `STAGE_RESULTS.md`、実記事評価表は `EVALUATION.md` です。初期試作の結果は `RESULTS.md` に保持しています。
 
 ## 実行
 

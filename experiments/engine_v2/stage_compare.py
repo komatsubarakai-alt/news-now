@@ -49,7 +49,7 @@ def answer_for(sample,batch):
     return answer
 
 
-def evaluate(root,dataset,batch_size=4,db_hook=None,db_final_hook=None):
+def evaluate(root,dataset,batch_size=4,db_hook=None,db_final_hook=None,pipeline=None):
     before=hashes(root);saved=json.loads((root/'events.json').read_text())
     triage=json.loads((root/'tracking_triage.json').read_text()).get('items',{})
     registry=json.loads((root/'data_corrections.json').read_text())
@@ -83,17 +83,17 @@ def evaluate(root,dataset,batch_size=4,db_hook=None,db_final_hook=None):
                 db.execute('UPDATE events SET payload=? WHERE event_id=?',(dumps(e),e['event_id']))
                 project_event(db,e,'holdout_view_only')
         bootstrap_ms=(time.perf_counter()-start)*1000
-        start=time.perf_counter();sid=begin(db,group,triage,registry,batch_size=batch_size)
+        start=time.perf_counter();sid=(pipeline.begin(db,group,triage,registry) if pipeline is not None else begin(db,group,triage,registry,batch_size=batch_size))
         state=inspect(db,sid);rank_position=next((i+1 for i,eid in enumerate(state['plan']) if eid==sample['target_event_id']),None)
         calls=[]
         def new_mock(prompt,batch):
             calls.append(prompt);return answer_for(sample,batch)
         for _ in range(40):
             if state['status']!='ready':break
-            state=step(db,sid,new_mock,NOW,triage,registry)
+            state=(pipeline.step(db,sid,new_mock,NOW,triage,registry) if pipeline is not None else step(db,sid,new_mock,NOW,triage,registry))
         else:raise AssertionError('unbounded scheduler')
         new_ms=(time.perf_counter()-start)*1000
-        if db_final_hook is not None:db_final_hook(db,sample,state)
+        extra=db_final_hook(db,sample,state) if db_final_hook is not None else None
         result_events=events(db)
         changed_new={e['event_id'] for e in result_events if e!=next(x for x in corpus if x['event_id']==e['event_id'])}
         changed_old={e['event_id'] for e in old if e!=next(x for x in corpus if x['event_id']==e['event_id'])}
@@ -115,9 +115,14 @@ def evaluate(root,dataset,batch_size=4,db_hook=None,db_final_hook=None):
                         'legacy_ms':old_ms,'staged_ms':new_ms,'sqlite_bootstrap_ms':bootstrap_ms,
                         'legacy_wrong_merge':old_wrong,'staged_wrong_merge':new_wrong,
                         'legacy_changed_event_ids':sorted(changed_old),'staged_changed_event_ids':sorted(changed_new),
-                        'event_payloads_equal':old==result_events,'input_preserved':query_retained,
+                        'integrated_comparison':extra,'event_payloads_equal':old==result_events,'input_preserved':query_retained,
                         'legacy_input_preserved':old_input_preserved,'legacy_catalog_preserved':old_catalog_preserved,
                         'all_candidate_states_preserved':retained_states,'states':dict(Counter(state['candidate_states'].values()))})
+        if pipeline is not None:
+            from publication_safety import protect_existing,public_events
+            from end_to_end import compare_public,legacy_public
+            public_old=copy.deepcopy(old);protect_existing(public_old,registry)
+            results[-1]['public_comparison']=compare_public(public_events(public_old),legacy_public(db,registry))
         db.close()
     summary={}
     for label in ('same_event','different_event','manual_review'):

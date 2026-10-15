@@ -30,7 +30,7 @@ def context(db,group,triage,registry,batch_size):
 def begin(db,group,triage=None,registry=None,batch_size=4):
     # A tuple is a persistent widening policy; repeat its final size.
     sizes=batch_size if isinstance(batch_size,tuple) else (batch_size,)
-    if not sizes or any(type(n) is not int or not 1<=n<=64 for n in sizes):
+    if not sizes or type(sizes[0]) is not int or any(not (type(n) is int and 1<=n<=64) and not (n=='rest' and i==len(sizes)-1) for i,n in enumerate(sizes)):
         raise ValueError('batch sizes must be integers in 1..64')
     batch_size=','.join(map(str,sizes)) if len(sizes)>1 else sizes[0]
     triage,registry=triage or {},registry or {}
@@ -75,7 +75,7 @@ def valid_answer(answer,batch):
     return answer.get('relation')!='same_event' or answer.get('event_id') in batch
 
 
-def step(db,sid,mock,now,triage=None,registry=None,budget_available=True,charge_simulated=False,fail_save=False,simulation_run_id=None):
+def step(db,sid,mock,now,triage=None,registry=None,budget_available=True,charge_simulated=False,fail_save=False,simulation_run_id=None,adjudicate=None):
     triage,registry=triage or {},registry or {}
     row=db.execute('SELECT group_key,group_payload,context,plan,cursor,status,batch_size FROM sessions WHERE session_id=?',(sid,)).fetchone()
     if not row:raise KeyError(sid)
@@ -92,7 +92,7 @@ def step(db,sid,mock,now,triage=None,registry=None,budget_available=True,charge_
             db.execute('UPDATE holds SET payload=? WHERE stage=? AND group_key=?',(dumps({'group':group,'status':'stale_requires_new_session'}),'staged:'+sid,key))
         return inspect(db,sid)
     selection=active_selection(group,triage)
-    sizes=[int(n) for n in str(policy).split(',')]
+    sizes=[len(plan) if n=='rest' else int(n) for n in str(policy).split(',')]
     batch_index=db.execute('SELECT count(*) FROM batch_records WHERE session_id=?',(sid,)).fetchone()[0]
     width=sizes[min(batch_index,len(sizes)-1)]
     batch=plan[cursor:cursor+(1 if selection and selection['action']=='same_event' else width)]
@@ -130,7 +130,8 @@ def step(db,sid,mock,now,triage=None,registry=None,budget_available=True,charge_
             db.execute('INSERT INTO batch_cache VALUES(?,?,?,?)',(request_key,sid,prompt_hash,encoded))
     valid=valid_answer(answer,batch)
     with atomic(db):
-        outcome=judge(db,group,answer,now,triage=triage,registry=registry,presented_ids=batch,rerank=False) if valid else 'invalid_answer_schema_or_target'
+        outcome=(adjudicate(db,sid,cursor,group,answer,batch,prompt,now,triage,registry) if adjudicate is not None else
+                 judge(db,group,answer,now,triage=triage,registry=registry,presented_ids=batch,rerank=False) if valid else 'invalid_answer_schema_or_target')
         next_cursor=cursor+len(batch)
         invalid_count=db.execute("SELECT count(*) FROM batch_records WHERE session_id=? AND outcome='invalid_answer_schema_or_target'",(sid,)).fetchone()[0]+int(not valid)
         result_status='accepted' if outcome=='accepted' else ('ready' if next_cursor<len(plan) else 'needs_evidence')
