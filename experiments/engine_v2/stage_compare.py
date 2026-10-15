@@ -71,6 +71,11 @@ def evaluate(root,dataset,batch_size=4):
             waiting=merge_incoming(old,[copy.deepcopy(group)],LegacyMock(),NOW,triage=old_state)
         old_ms=(time.perf_counter()-start)*1000
         old_status=old_state.get(group_key(group),{}).get('status','unknown')
+        # Manual review leaves the automatic queue but remains in triage.group.
+        old_groups=waiting+[record.get('group',{}) for record in old_state.values()]
+        old_input_preserved=any(incoming==article for e in old for article in e.get('articles',[])) or any(
+            incoming==article for pending in old_groups for article in pending.get('articles',[]))
+        old_catalog_preserved={e['event_id'] for e in corpus}<={e['event_id'] for e in old}
         db=connect();start=time.perf_counter();import_snapshot(db,root)
         with db:
             for e in corpus:
@@ -108,6 +113,7 @@ def evaluate(root,dataset,batch_size=4):
                         'legacy_ms':old_ms,'staged_ms':new_ms,'sqlite_bootstrap_ms':bootstrap_ms,
                         'legacy_wrong_merge':old_wrong,'staged_wrong_merge':new_wrong,
                         'event_payloads_equal':old==result_events,'input_preserved':query_retained,
+                        'legacy_input_preserved':old_input_preserved,'legacy_catalog_preserved':old_catalog_preserved,
                         'all_candidate_states_preserved':retained_states,'states':dict(Counter(state['candidate_states'].values()))})
         db.close()
     summary={}

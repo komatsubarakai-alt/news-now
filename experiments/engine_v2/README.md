@@ -110,3 +110,16 @@ python experiments/engine_v2/run_offline.py
 ```
 
 固定評価JSONは前段のf4b831dスナップショットに基づきます。記事・事件・根拠が変わった別スナップショットで同じ比較結果になるとは主張しません。最新main確認時点と検証の制約は `VALIDATION.md` に記録しています。画面描画・スマホ実機は未確認で、ページJavaScriptのJSON入出力はDOM代替でテスト済みです。API料金や実AI精度の改善は未測定です。
+
+## 運営者の確認記録を使った再検証
+
+`operator_review_records.json` は添付された15組の記録をそのまま保持した検証入力です。元の `evaluation.json` や本番の運営者振り分け設定へ反映していません。本文確認済み7組、未確認部分がある同一判断6組、保留2組、従来の暫定18組を分けた結果は `OPERATOR_REVALIDATION.md` と `operator_revalidation_results.json` にあります。
+
+```sh
+python experiments/engine_v2/operator_revalidation.py --snapshot /path/to/frozen-copy --records experiments/engine_v2/operator_review_records.json --output-dir /tmp/news-now-operator-revalidation
+python experiments/engine_v2/run_offline.py
+```
+
+固定f4b831dスナップショットの一時コピーで比較します。入力は読み取り専用、出力先は入力の外です。記録の事件ID・根拠ハッシュに加え、元の記事ペアから根拠ハッシュを再計算します。不正・欠落・重複のある15組の読み込みは一括拒否します。
+
+人の判断を模擬AI回答やプロンプトへ差し込まず、従来と同じ回答で候補・入力サイズを再評価します。本文を読んだフラグやメモだけで既存の安全検証を通すことはありません。本文確認済みも運営者の申告に基づく評価参照で、本文原文と引用は未提供です。
