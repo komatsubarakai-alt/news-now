@@ -136,3 +136,16 @@ python experiments/engine_v2/run_offline.py
 ```
 
 本文引用の下書きは `article_store.validate_quotes` で検証し、`import_quotes` で一時DBへ追記保存できます。形式を満たしても原文一致未検証の記録であり、正解や本番統合へ自動反映しません。7組14出典のURL・事件ID・版IDを変えずに、実際に分かる確認日時と短い原文引用だけを追記してください。
+
+## 改訂・判断同期の試作
+
+`REVISION_SYNC_DESIGN.md` に依存、操作ID、採用/取消し、引用照合、予算と障害復旧の設計を記録しました。`revision_sync.py` / `revision_sync.sql` は一時SQLite専用の同期APIです。根拠と判断を追記保存し、変更された本文・見出し・日時・取得状態に依存する判断だけを再確認待ちにします。運営者判断の再確認をAIで上書きせず、旧根拠も採用/取消しの前後で退避します。
+
+```sh
+python experiments/engine_v2/sync_replay.py --snapshot /path/to/frozen-copy --output-dir /tmp/news-now-revision-sync
+python experiments/engine_v2/run_offline.py
+```
+
+結果は `SYNC_RESULTS.md` と `sync_results.json`。固定33組の互換比較と、明示した模擬本文・改訂・障害の試験は分離しています。新同期APIを段階照合の全経路へ接続した評価ではありません。本文だけ更新された場合に既存の安全検証を迂回する機能も追加していません。
+
+呼出し順序はinitialize → 明示したseed → add_evidence/record_reference → make_job → call_mock（模擬のみ）→ adopt。訂正はexpected_state付きchange_source、取消しはcancelです。応答不明・日跨ぎ予約は自動再呼出しせず照合待ちになります。公開出力・本番導入・DB永続化・実API利用は含みません。

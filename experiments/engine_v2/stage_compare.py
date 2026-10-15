@@ -49,7 +49,7 @@ def answer_for(sample,batch):
     return answer
 
 
-def evaluate(root,dataset,batch_size=4,db_hook=None):
+def evaluate(root,dataset,batch_size=4,db_hook=None,db_final_hook=None):
     before=hashes(root);saved=json.loads((root/'events.json').read_text())
     triage=json.loads((root/'tracking_triage.json').read_text()).get('items',{})
     registry=json.loads((root/'data_corrections.json').read_text())
@@ -93,6 +93,7 @@ def evaluate(root,dataset,batch_size=4,db_hook=None):
             state=step(db,sid,new_mock,NOW,triage,registry)
         else:raise AssertionError('unbounded scheduler')
         new_ms=(time.perf_counter()-start)*1000
+        if db_final_hook is not None:db_final_hook(db,sample,state)
         result_events=events(db)
         changed_new={e['event_id'] for e in result_events if e!=next(x for x in corpus if x['event_id']==e['event_id'])}
         changed_old={e['event_id'] for e in old if e!=next(x for x in corpus if x['event_id']==e['event_id'])}
