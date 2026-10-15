@@ -49,7 +49,7 @@ def answer_for(sample,batch):
     return answer
 
 
-def evaluate(root,dataset,batch_size=4):
+def evaluate(root,dataset,batch_size=4,db_hook=None):
     before=hashes(root);saved=json.loads((root/'events.json').read_text())
     triage=json.loads((root/'tracking_triage.json').read_text()).get('items',{})
     registry=json.loads((root/'data_corrections.json').read_text())
@@ -77,6 +77,7 @@ def evaluate(root,dataset,batch_size=4):
             incoming==article for pending in old_groups for article in pending.get('articles',[]))
         old_catalog_preserved={e['event_id'] for e in corpus}<={e['event_id'] for e in old}
         db=connect();start=time.perf_counter();import_snapshot(db,root)
+        if db_hook is not None:db_hook(db)
         with db:
             for e in corpus:
                 db.execute('UPDATE events SET payload=? WHERE event_id=?',(dumps(e),e['event_id']))
@@ -112,6 +113,7 @@ def evaluate(root,dataset,batch_size=4):
                         'staged_total_bytes':sum(len(p.encode()) for p in calls),
                         'legacy_ms':old_ms,'staged_ms':new_ms,'sqlite_bootstrap_ms':bootstrap_ms,
                         'legacy_wrong_merge':old_wrong,'staged_wrong_merge':new_wrong,
+                        'legacy_changed_event_ids':sorted(changed_old),'staged_changed_event_ids':sorted(changed_new),
                         'event_payloads_equal':old==result_events,'input_preserved':query_retained,
                         'legacy_input_preserved':old_input_preserved,'legacy_catalog_preserved':old_catalog_preserved,
                         'all_candidate_states_preserved':retained_states,'states':dict(Counter(state['candidate_states'].values()))})

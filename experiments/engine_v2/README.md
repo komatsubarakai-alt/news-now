@@ -123,3 +123,16 @@ python experiments/engine_v2/run_offline.py
 固定f4b831dスナップショットの一時コピーで比較します。入力は読み取り専用、出力先は入力の外です。記録の事件ID・根拠ハッシュに加え、元の記事ペアから根拠ハッシュを再計算します。不正・欠落・重複のある15組の読み込みは一括拒否します。
 
 人の判断を模擬AI回答やプロンプトへ差し込まず、従来と同じ回答で候補・入力サイズを再評価します。本文を読んだフラグやメモだけで既存の安全検証を通すことはありません。本文確認済みも運営者の申告に基づく評価参照で、本文原文と引用は未提供です。
+
+## 記事の重複と事件同一性の分離
+
+`ARTICLE_IDENTITY_DESIGN.md` に追加11表と運用境界の設計、`article_store.py` と `article_store.sql` に一時SQLiteの読み込み試作があります。`source_quote_template.json` は本文確認済み7組の引用下書きです。原文引用は空、実際の本文確認日時はnullを維持し、既知の判断記録日時と混同しません。
+
+`SEPARATION_RESULTS.md` と `separation_results.json` は現行方式・分離前試作・分離後試作を同条件で比較した結果です。記事の分離による追加の費用削減は主張せず、候補・判定・入力が変わらないことを確認しています。読み込み表であり、採用・訂正・取消し後の同期はまだ未実装です。
+
+```sh
+python experiments/engine_v2/separation_compare.py --snapshot /path/to/frozen-copy --output-dir /tmp/news-now-article-separation
+python experiments/engine_v2/run_offline.py
+```
+
+本文引用の下書きは `article_store.validate_quotes` で検証し、`import_quotes` で一時DBへ追記保存できます。形式を満たしても原文一致未検証の記録であり、正解や本番統合へ自動反映しません。7組14出典のURL・事件ID・版IDを変えずに、実際に分かる確認日時と短い原文引用だけを追記してください。
