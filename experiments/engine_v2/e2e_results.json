@@ -1,0 +1,3605 @@
+{
+  "snapshot_revision": "f4b831d3fa1f514b2713ecca5acebc8a6aaaf99c",
+  "comparison": {
+    "snapshot_revision": "f4b831d3fa1f514b2713ecca5acebc8a6aaaf99c",
+    "label_counts": {
+      "same_event": 9,
+      "different_event": 9,
+      "manual_review": 15
+    },
+    "summary": {
+      "same_event": {
+        "samples": 9,
+        "target_retained": 9,
+        "ranks": {
+          "count": 9,
+          "min": 1,
+          "median": 1,
+          "mean": 1,
+          "max": 1
+        },
+        "legacy_statuses": {
+          "already_saved": 9
+        },
+        "staged_statuses": {
+          "accepted": 9
+        },
+        "legacy_wrong_merges": 0,
+        "staged_wrong_merges": 0,
+        "legacy_total_bytes": {
+          "count": 9,
+          "min": 63262,
+          "median": 63790,
+          "mean": 63676.111,
+          "max": 63892
+        },
+        "staged_total_bytes": {
+          "count": 9,
+          "min": 14974,
+          "median": 16157,
+          "mean": 16661.778,
+          "max": 20278
+        },
+        "legacy_ms": {
+          "count": 9,
+          "min": 4.331660999014275,
+          "median": 4.9076690011133906,
+          "mean": 4.888,
+          "max": 5.6600899988552555
+        },
+        "staged_ms": {
+          "count": 9,
+          "min": 44.18565100058913,
+          "median": 45.548181999038206,
+          "mean": 47.554,
+          "max": 63.3168009990186
+        },
+        "staged_batches": {
+          "count": 9,
+          "min": 1,
+          "median": 1,
+          "mean": 1,
+          "max": 1
+        }
+      },
+      "different_event": {
+        "samples": 9,
+        "target_retained": 9,
+        "ranks": {
+          "count": 9,
+          "min": 2,
+          "median": 11,
+          "mean": 12.667,
+          "max": 32
+        },
+        "legacy_statuses": {
+          "needs_evidence": 9
+        },
+        "staged_statuses": {
+          "needs_evidence": 9
+        },
+        "legacy_wrong_merges": 0,
+        "staged_wrong_merges": 0,
+        "legacy_total_bytes": {
+          "count": 9,
+          "min": 63289,
+          "median": 63351,
+          "mean": 63457.333,
+          "max": 63892
+        },
+        "staged_total_bytes": {
+          "count": 9,
+          "min": 69560,
+          "median": 69777,
+          "mean": 69885.444,
+          "max": 70343
+        },
+        "legacy_ms": {
+          "count": 9,
+          "min": 4.231463000905933,
+          "median": 4.47149100000388,
+          "mean": 4.447,
+          "max": 4.541794998658588
+        },
+        "staged_ms": {
+          "count": 9,
+          "min": 64.88600900047459,
+          "median": 69.61127700196812,
+          "mean": 81.297,
+          "max": 129.00439399891184
+        },
+        "staged_batches": {
+          "count": 9,
+          "min": 2,
+          "median": 2,
+          "mean": 2,
+          "max": 2
+        }
+      },
+      "manual_review": {
+        "samples": 15,
+        "target_retained": 14,
+        "ranks": {
+          "count": 14,
+          "min": 1,
+          "median": 1.0,
+          "mean": 1.071,
+          "max": 2
+        },
+        "legacy_statuses": {
+          "needs_evidence": 10,
+          "manual_review": 3,
+          "already_saved": 2
+        },
+        "staged_statuses": {
+          "needs_evidence": 10,
+          "manual_review": 3,
+          "accepted": 2
+        },
+        "legacy_wrong_merges": null,
+        "staged_wrong_merges": null,
+        "legacy_total_bytes": {
+          "count": 15,
+          "min": 63289,
+          "median": 63439,
+          "mean": 63553.133,
+          "max": 64035
+        },
+        "staged_total_bytes": {
+          "count": 15,
+          "min": 15389,
+          "median": 69919,
+          "mean": 62803.333,
+          "max": 70715
+        },
+        "legacy_ms": {
+          "count": 15,
+          "min": 3.858096999465488,
+          "median": 4.334294997534016,
+          "mean": 4.487,
+          "max": 5.495855999470223
+        },
+        "staged_ms": {
+          "count": 15,
+          "min": 45.615565999469254,
+          "median": 136.08683299753466,
+          "mean": 127.943,
+          "max": 187.0258670023759
+        },
+        "staged_batches": {
+          "count": 15,
+          "min": 1,
+          "median": 2,
+          "mean": 1.867,
+          "max": 2
+        }
+      }
+    },
+    "rows": [
+      {
+        "sample_id": "real-001",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63296,
+        "staged_total_bytes": 15464,
+        "legacy_ms": 5.6600899988552555,
+        "staged_ms": 44.29634899861412,
+        "sqlite_bootstrap_ms": 149.21808800136205,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "5d4bafaf-011f-4e26-9014-22a57b3fef2b"
+        ],
+        "staged_changed_event_ids": [
+          "5d4bafaf-011f-4e26-9014-22a57b3fef2b"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 72.37791599982302
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-002",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63262,
+        "staged_total_bytes": 17870,
+        "legacy_ms": 4.331660999014275,
+        "staged_ms": 44.854907999251736,
+        "sqlite_bootstrap_ms": 145.15887499874225,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "de81a3e4-e37c-4423-ac06-9a5d26e7be7e"
+        ],
+        "staged_changed_event_ids": [
+          "de81a3e4-e37c-4423-ac06-9a5d26e7be7e"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 67.12135300040245
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 3,
+          "unexamined": 30,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-003",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "c14a0e3e-653c-4b41-8000-b4d0597275ae",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63830,
+        "staged_total_bytes": 15245,
+        "legacy_ms": 4.9076690011133906,
+        "staged_ms": 45.548181999038206,
+        "sqlite_bootstrap_ms": 144.94154199928744,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "c14a0e3e-653c-4b41-8000-b4d0597275ae"
+        ],
+        "staged_changed_event_ids": [
+          "c14a0e3e-653c-4b41-8000-b4d0597275ae"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 69.77798899970367
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-004",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "c2d01fb9-77ed-48ef-bc0c-8eab7285f4e9",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63768,
+        "staged_total_bytes": 20278,
+        "legacy_ms": 4.584649002936203,
+        "staged_ms": 45.930710999527946,
+        "sqlite_bootstrap_ms": 154.81406600156333,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "c2d01fb9-77ed-48ef-bc0c-8eab7285f4e9"
+        ],
+        "staged_changed_event_ids": [
+          "c2d01fb9-77ed-48ef-bc0c-8eab7285f4e9"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 72.09283799966215
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 3,
+          "unexamined": 30,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-005",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "78bcef99-1ca6-47fa-ae41-fd5c219b1d5b",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63790,
+        "staged_total_bytes": 14974,
+        "legacy_ms": 4.50773400007165,
+        "staged_ms": 44.18565100058913,
+        "sqlite_bootstrap_ms": 148.80122099930304,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "78bcef99-1ca6-47fa-ae41-fd5c219b1d5b"
+        ],
+        "staged_changed_event_ids": [
+          "78bcef99-1ca6-47fa-ae41-fd5c219b1d5b"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 67.70297899856814
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "validated": 1,
+          "examined_unresolved": 3
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-006",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63795,
+        "staged_total_bytes": 16157,
+        "legacy_ms": 5.278460997942602,
+        "staged_ms": 47.300101003202144,
+        "sqlite_bootstrap_ms": 147.44542100015678,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "09ca7666-428d-40df-bdc9-7d75a21acbe1"
+        ],
+        "staged_changed_event_ids": [
+          "09ca7666-428d-40df-bdc9-7d75a21acbe1"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 70.0039370021841
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "validated": 1,
+          "unexamined": 30,
+          "examined_unresolved": 3
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-007",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63892,
+        "staged_total_bytes": 16532,
+        "legacy_ms": 4.973857998265885,
+        "staged_ms": 45.48585199881927,
+        "sqlite_bootstrap_ms": 147.25180299865315,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "fab8ff4a-59a8-4e3f-b7d9-312007f89467"
+        ],
+        "staged_changed_event_ids": [
+          "fab8ff4a-59a8-4e3f-b7d9-312007f89467"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 71.72973300112062
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-008",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "eea45021-9422-4ee0-b7cb-a709a57c2eb6",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63856,
+        "staged_total_bytes": 15271,
+        "legacy_ms": 4.812710001715459,
+        "staged_ms": 47.06544500004384,
+        "sqlite_bootstrap_ms": 149.5791699999245,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "eea45021-9422-4ee0-b7cb-a709a57c2eb6"
+        ],
+        "staged_changed_event_ids": [
+          "eea45021-9422-4ee0-b7cb-a709a57c2eb6"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 70.64718999754405
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-009",
+        "label": "same_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63596,
+        "staged_total_bytes": 18165,
+        "legacy_ms": 4.932466999889584,
+        "staged_ms": 63.3168009990186,
+        "sqlite_bootstrap_ms": 152.42754300197703,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [
+          "cd3f5f7e-7ba9-4e72-886f-550866a8433d"
+        ],
+        "staged_changed_event_ids": [
+          "cd3f5f7e-7ba9-4e72-886f-550866a8433d"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 111.50780199750443
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-010",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+        "target_rank": 2,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63833,
+        "staged_total_bytes": 70311,
+        "legacy_ms": 4.485270997975022,
+        "staged_ms": 129.00439399891184,
+        "sqlite_bootstrap_ms": 150.0880989988218,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 31,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 83.09034299963969
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-011",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "c14a0e3e-653c-4b41-8000-b4d0597275ae",
+        "target_rank": 2,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63892,
+        "staged_total_bytes": 70343,
+        "legacy_ms": 4.4160270008433145,
+        "staged_ms": 127.51014799869154,
+        "sqlite_bootstrap_ms": 177.60465500032296,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 31,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 74.61361800233135
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-012",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "b4674f16-08ac-4666-9038-b4718418f8ff",
+        "target_rank": 18,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63318,
+        "staged_total_bytes": 69696,
+        "legacy_ms": 4.407784999784781,
+        "staged_ms": 70.137111000804,
+        "sqlite_bootstrap_ms": 148.28894899983425,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 73.12845600245055
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-013",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_rank": 15,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63289,
+        "staged_total_bytes": 69560,
+        "legacy_ms": 4.231463000905933,
+        "staged_ms": 69.61127700196812,
+        "sqlite_bootstrap_ms": 148.45743099795072,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 71.34073300039745
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-014",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+        "target_rank": 32,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63427,
+        "staged_total_bytes": 70154,
+        "legacy_ms": 4.533062998234527,
+        "staged_ms": 64.88600900047459,
+        "sqlite_bootstrap_ms": 151.7351510010485,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 78.92500999878393
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-015",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+        "target_rank": 6,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63341,
+        "staged_total_bytes": 69777,
+        "legacy_ms": 4.509776998020243,
+        "staged_ms": 65.92317300237482,
+        "sqlite_bootstrap_ms": 148.76089099925593,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 74.19637700149906
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-016",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "eea45021-9422-4ee0-b7cb-a709a57c2eb6",
+        "target_rank": 9,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63351,
+        "staged_total_bytes": 69763,
+        "legacy_ms": 4.47149100000388,
+        "staged_ms": 67.29361500038067,
+        "sqlite_bootstrap_ms": 148.68692100208136,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 74.23727700006566
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-017",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+        "target_rank": 19,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63303,
+        "staged_total_bytes": 69582,
+        "legacy_ms": 4.541794998658588,
+        "staged_ms": 70.09596900024917,
+        "sqlite_bootstrap_ms": 149.19162400110508,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 73.44493799973861
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-018",
+        "label": "different_event",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "e98c5d08-4d42-4ae4-8b60-294778a05c75",
+        "target_rank": 11,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63362,
+        "staged_total_bytes": 69783,
+        "legacy_ms": 4.427273997862358,
+        "staged_ms": 67.21184300113237,
+        "sqlite_bootstrap_ms": 151.60541799923521,
+        "legacy_wrong_merge": false,
+        "staged_wrong_merge": false,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 5,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 76.01570699989679
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-019",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63399,
+        "staged_total_bytes": 69878,
+        "legacy_ms": 4.309519001253648,
+        "staged_ms": 187.0258670023759,
+        "sqlite_bootstrap_ms": 147.81928899901686,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 83.91952900274191
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-020",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5476859f-fa90-4ad0-a0ff-f12c0115af0c",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63318,
+        "staged_total_bytes": 69647,
+        "legacy_ms": 3.858096999465488,
+        "staged_ms": 130.4507780005224,
+        "sqlite_bootstrap_ms": 147.51815699855797,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 74.59451400063699
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-021",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5c4bb2fd-3d87-491c-be56-825ca2674374",
+        "target_rank": null,
+        "target_retained": false,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63289,
+        "staged_total_bytes": 69560,
+        "legacy_ms": 4.280504999769619,
+        "staged_ms": 136.08683299753466,
+        "sqlite_bootstrap_ms": 148.33526499933214,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 74.73263900101301
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-022",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "e72f1865-5261-49b1-ba55-ae5e7ac47a00",
+        "target_rank": 2,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63776,
+        "staged_total_bytes": 70099,
+        "legacy_ms": 4.170330998022109,
+        "staged_ms": 128.64579999950365,
+        "sqlite_bootstrap_ms": 152.7050450022216,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 76.47958100278629
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-023",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "e98c5d08-4d42-4ae4-8b60-294778a05c75",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63391,
+        "staged_total_bytes": 69919,
+        "legacy_ms": 5.495855999470223,
+        "staged_ms": 140.97826900251675,
+        "sqlite_bootstrap_ms": 148.74606800003676,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 77.23818199883681
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-024",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63811,
+        "staged_total_bytes": 70218,
+        "legacy_ms": 4.334876997745596,
+        "staged_ms": 119.80242899880977,
+        "sqlite_bootstrap_ms": 149.14265900006285,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 78.06876800168538
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-025",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63958,
+        "staged_total_bytes": 70386,
+        "legacy_ms": 4.334294997534016,
+        "staged_ms": 141.24531600100454,
+        "sqlite_bootstrap_ms": 151.59953699912876,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 69.76672400196549
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-026",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63467,
+        "staged_total_bytes": 70168,
+        "legacy_ms": 4.229238998959772,
+        "staged_ms": 131.9537669987767,
+        "sqlite_bootstrap_ms": 147.84201100337668,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 79.86638600050355
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 33,
+          "new_events": 33,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-027",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63295,
+        "staged_total_bytes": 69631,
+        "legacy_ms": 4.168789000686957,
+        "staged_ms": 140.40101800128468,
+        "sqlite_bootstrap_ms": 148.61703499991563,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 77.75369899900397
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-028",
+        "label": "manual_review",
+        "mock_source": "label_driven_guard_test",
+        "target_event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "needs_evidence",
+        "staged_status": "needs_evidence",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63296,
+        "staged_total_bytes": 69585,
+        "legacy_ms": 4.301426997699309,
+        "staged_ms": 133.74126199778402,
+        "sqlite_bootstrap_ms": 151.45317400310887,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 34,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 77.58368299982976
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-029",
+        "label": "manual_review",
+        "mock_source": "saved_response_counterfactual",
+        "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "manual_review",
+        "staged_status": "manual_review",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63787,
+        "staged_total_bytes": 70219,
+        "legacy_ms": 4.586090999509906,
+        "staged_ms": 158.93308500017156,
+        "sqlite_bootstrap_ms": 156.53082899734727,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 31,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 76.1073240028054
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-030",
+        "label": "manual_review",
+        "mock_source": "saved_response_counterfactual",
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "manual_review",
+        "staged_status": "manual_review",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 64035,
+        "staged_total_bytes": 70715,
+        "legacy_ms": 4.628243998013204,
+        "staged_ms": 138.52780099841766,
+        "sqlite_bootstrap_ms": 148.1195190026483,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 31,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 72.01363700005459
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-031",
+        "label": "manual_review",
+        "mock_source": "saved_response_counterfactual",
+        "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "manual_review",
+        "staged_status": "manual_review",
+        "legacy_calls": 1,
+        "staged_batches": 2,
+        "legacy_total_bytes": 63678,
+        "staged_total_bytes": 70001,
+        "legacy_ms": 4.414315000758506,
+        "staged_ms": 136.7242249980336,
+        "sqlite_bootstrap_ms": 146.66130600016913,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [],
+        "staged_changed_event_ids": [],
+        "integrated_comparison": {
+          "sync_adoptions": 0,
+          "sync_decisions": 31,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 71.51980100024957
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "examined_unresolved": 34
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-032",
+        "label": "manual_review",
+        "mock_source": "saved_response_counterfactual",
+        "target_event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63358,
+        "staged_total_bytes": 15389,
+        "legacy_ms": 4.845897998166038,
+        "staged_ms": 45.615565999469254,
+        "sqlite_bootstrap_ms": 142.38034099980723,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [
+          "fab8ff4a-59a8-4e3f-b7d9-312007f89467"
+        ],
+        "staged_changed_event_ids": [
+          "fab8ff4a-59a8-4e3f-b7d9-312007f89467"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 67.88219199734158
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "unexamined": 30,
+          "examined_unresolved": 3,
+          "validated": 1
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      },
+      {
+        "sample_id": "real-033",
+        "label": "manual_review",
+        "mock_source": "saved_response_counterfactual",
+        "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+        "target_rank": 1,
+        "target_retained": true,
+        "legacy_status": "already_saved",
+        "staged_status": "accepted",
+        "legacy_calls": 1,
+        "staged_batches": 1,
+        "legacy_total_bytes": 63439,
+        "staged_total_bytes": 16635,
+        "legacy_ms": 5.345343000954017,
+        "staged_ms": 49.017723998986185,
+        "sqlite_bootstrap_ms": 143.50461400317727,
+        "legacy_wrong_merge": null,
+        "staged_wrong_merge": null,
+        "legacy_changed_event_ids": [
+          "09ca7666-428d-40df-bdc9-7d75a21acbe1"
+        ],
+        "staged_changed_event_ids": [
+          "09ca7666-428d-40df-bdc9-7d75a21acbe1"
+        ],
+        "integrated_comparison": {
+          "sync_adoptions": 1,
+          "sync_decisions": 1,
+          "operator_records_preserved": 15,
+          "foreign_key_errors": [],
+          "strict_public_events": 0,
+          "export_ms": 69.36622400098713
+        },
+        "event_payloads_equal": true,
+        "input_preserved": true,
+        "legacy_input_preserved": true,
+        "legacy_catalog_preserved": true,
+        "all_candidate_states_preserved": true,
+        "states": {
+          "validated": 1,
+          "unexamined": 30,
+          "examined_unresolved": 3
+        },
+        "public_comparison": {
+          "old_events": 34,
+          "new_events": 34,
+          "event_ids_equal": true,
+          "article_urls_equal": true,
+          "progress_total_old": 0,
+          "progress_total_new": 0,
+          "differences": [],
+          "display_fields_compared": [
+            "event_id",
+            "event_name",
+            "category",
+            "tracking_value",
+            "lifecycle",
+            "updated_at",
+            "current_stage",
+            "summary",
+            "latest",
+            "next_watch",
+            "articles",
+            "progress_count",
+            "progress_history",
+            "last_progress_at",
+            "schedules",
+            "corrections",
+            "source_revisions"
+          ]
+        }
+      }
+    ],
+    "json_hashes_unchanged": true,
+    "real_api_calls": 0,
+    "independent_human_review": "not_completed",
+    "real_model_accuracy": "unconfirmed",
+    "real_api_cost": "unconfirmed",
+    "limitations": [
+      "purpose-selected mostly reprint positives; labels verified only against stored source text",
+      "incoming URL withheld from all event current articles but names/summaries/reprints remain; not a temporal holdout",
+      "mock answers are label-driven; saved answers are counterfactual injections, not new-prompt cache hits",
+      "CPU measured once, sqlite bootstrap reported separately; no total-production latency claim",
+      "negative pair labels do not label every other event; other candidates remain unresolved"
+    ]
+  },
+  "cohorts": {
+    "provisional_same": {
+      "samples": 9,
+      "target_retained": 9,
+      "target_ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "legacy_bytes": 573085,
+      "integrated_bytes": 149956,
+      "legacy_ms": 43.989298999804305,
+      "integrated_ms": 427.983999998105,
+      "integrated_groups": 9,
+      "legacy_statuses": {
+        "already_saved": 9
+      },
+      "integrated_statuses": {
+        "accepted": 9
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "provisional_different": {
+      "samples": 9,
+      "target_retained": 9,
+      "target_ranks": [
+        2,
+        2,
+        18,
+        15,
+        32,
+        6,
+        9,
+        19,
+        11
+      ],
+      "legacy_bytes": 571116,
+      "integrated_bytes": 628969,
+      "legacy_ms": 40.023945992288645,
+      "integrated_ms": 731.6735390049871,
+      "integrated_groups": 18,
+      "legacy_statuses": {
+        "needs_evidence": 9
+      },
+      "integrated_statuses": {
+        "needs_evidence": 9
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "operator_same_partial": {
+      "samples": 3,
+      "target_retained": 3,
+      "target_ranks": [
+        1,
+        1,
+        1
+      ],
+      "legacy_bytes": 190257,
+      "integrated_bytes": 209965,
+      "legacy_ms": 14.034613999683643,
+      "integrated_ms": 459.95790300366934,
+      "integrated_groups": 6,
+      "legacy_statuses": {
+        "needs_evidence": 3
+      },
+      "integrated_statuses": {
+        "needs_evidence": 3
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "operator_hold_neither": {
+      "samples": 1,
+      "target_retained": 1,
+      "target_ranks": [
+        1
+      ],
+      "legacy_bytes": 63318,
+      "integrated_bytes": 69647,
+      "legacy_ms": 3.858096999465488,
+      "integrated_ms": 130.4507780005224,
+      "integrated_groups": 2,
+      "legacy_statuses": {
+        "needs_evidence": 1
+      },
+      "integrated_statuses": {
+        "needs_evidence": 1
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "operator_hold_partial": {
+      "samples": 1,
+      "target_retained": 0,
+      "target_ranks": [
+        null
+      ],
+      "legacy_bytes": 63289,
+      "integrated_bytes": 69560,
+      "legacy_ms": 4.280504999769619,
+      "integrated_ms": 136.08683299753466,
+      "integrated_groups": 2,
+      "legacy_statuses": {
+        "needs_evidence": 1
+      },
+      "integrated_statuses": {
+        "needs_evidence": 1
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "operator_same_neither": {
+      "samples": 3,
+      "target_retained": 3,
+      "target_ranks": [
+        2,
+        1,
+        1
+      ],
+      "legacy_bytes": 191250,
+      "integrated_bytes": 157449,
+      "legacy_ms": 14.14391799698933,
+      "integrated_ms": 316.1913249969075,
+      "integrated_groups": 5,
+      "legacy_statuses": {
+        "needs_evidence": 1,
+        "manual_review": 1,
+        "already_saved": 1
+      },
+      "integrated_statuses": {
+        "needs_evidence": 1,
+        "manual_review": 1,
+        "accepted": 1
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    },
+    "operator_same_both": {
+      "samples": 7,
+      "target_retained": 7,
+      "target_ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "legacy_bytes": 445183,
+      "integrated_bytes": 435429,
+      "legacy_ms": 30.985691992100328,
+      "integrated_ms": 876.4629009965574,
+      "integrated_groups": 13,
+      "legacy_statuses": {
+        "needs_evidence": 4,
+        "manual_review": 2,
+        "already_saved": 1
+      },
+      "integrated_statuses": {
+        "needs_evidence": 4,
+        "manual_review": 2,
+        "accepted": 1
+      },
+      "internal_event_payloads_equal": true,
+      "compatibility_public_equal": true
+    }
+  },
+  "publication": {
+    "source_events": 38,
+    "committed_public_events": 34,
+    "legacy_gate_public_events": 34,
+    "strict_public_events": 0,
+    "committed_vs_existing_gate": {
+      "old_events": 34,
+      "new_events": 34,
+      "event_ids_equal": true,
+      "article_urls_equal": true,
+      "progress_total_old": 0,
+      "progress_total_new": 0,
+      "differences": [],
+      "display_fields_compared": [
+        "event_id",
+        "event_name",
+        "category",
+        "tracking_value",
+        "lifecycle",
+        "updated_at",
+        "current_stage",
+        "summary",
+        "latest",
+        "next_watch",
+        "articles",
+        "progress_count",
+        "progress_history",
+        "last_progress_at",
+        "schedules",
+        "corrections",
+        "source_revisions"
+      ]
+    },
+    "existing_gate_vs_strict": {
+      "old_events": 34,
+      "new_events": 0,
+      "event_ids_equal": false,
+      "article_urls_equal": false,
+      "progress_total_old": 0,
+      "progress_total_new": 0,
+      "differences": [
+        {
+          "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "0ece8d75-ae7a-43ce-a475-d9bc47af498a",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "16f6c9c4-65cc-4ffd-949d-6db78b0a707e",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "17f4fb8e-a2d5-4c80-bb79-7d4d52bd5751",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "4002f5d8-6c3f-4678-afee-87597a7cb104",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "5476859f-fa90-4ad0-a0ff-f12c0115af0c",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "719c979d-347a-5455-a5da-55aefe678081",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "78bcef99-1ca6-47fa-ae41-fd5c219b1d5b",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "9221460f-6f50-4b9e-8b36-a973832fdb6d",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "9306d825-ed38-4ba3-a70b-df864f172f2d",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "94f0509e-43e6-462e-b16e-20841b269827",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "978be146-7669-4e02-8b03-c79ea6ac34f1",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "b24416a0-0300-4fd8-85b2-36bd46fa5329",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "b4674f16-08ac-4666-9038-b4718418f8ff",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "c14a0e3e-653c-4b41-8000-b4d0597275ae",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "c2d01fb9-77ed-48ef-bc0c-8eab7285f4e9",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "ca8d913f-1f71-4fee-923d-a1608e2aa145",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "e72f1865-5261-49b1-ba55-ae5e7ac47a00",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "e7de3c44-9ece-4d4f-86e7-b18cfa1cd98d",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "e98c5d08-4d42-4ae4-8b60-294778a05c75",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "eea45021-9422-4ee0-b7cb-a709a57c2eb6",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "f5c1d0e9-a503-5f99-b2d0-994c96ce14ec",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "fb55e9b6-3f90-47ed-bf76-cdddb6a6076b",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        },
+        {
+          "event_id": "fbecb958-e0f1-470b-a84c-37f73542972b",
+          "field": "presence",
+          "classification": "unconfirmed",
+          "reason": "publication proof required or existing publication gate",
+          "old": true,
+          "new": false
+        }
+      ],
+      "display_fields_compared": [
+        "event_id",
+        "event_name",
+        "category",
+        "tracking_value",
+        "lifecycle",
+        "updated_at",
+        "current_stage",
+        "summary",
+        "latest",
+        "next_watch",
+        "articles",
+        "progress_count",
+        "progress_history",
+        "last_progress_at",
+        "schedules",
+        "corrections",
+        "source_revisions"
+      ]
+    },
+    "strict_publication_holds": 34,
+    "array_schema_compatible": true,
+    "legacy_display_fields_preserved_exactly": true,
+    "manifest_preview_only": true,
+    "can_publish": false,
+    "reason": "no independent publication approvals in imported data or saved/mock rehearsals; no reference promoted",
+    "unchanged_ids_and_urls_in_sqlite": true,
+    "internal_holds": 976
+  },
+  "capped_saved_queue": {
+    "groups": 73,
+    "statuses": {
+      "needs_evidence": 8,
+      "budget_deferred": 45,
+      "manual_review": 7,
+      "editorial_hold": 1,
+      "low_priority": 3,
+      "out_of_scope": 6,
+      "already_saved": 2,
+      "explicit_source_selection_required": 1
+    },
+    "all_groups_retained": true,
+    "unexamined_candidates": 1549,
+    "mock_calls": 8,
+    "input_bytes": 67530,
+    "day_reserved_micro_usd": 106138,
+    "month_reserved_micro_usd": 959997,
+    "daily_limit_micro_usd": 200000,
+    "monthly_limit_micro_usd": 5000000,
+    "tracking_run_call_limit": 8,
+    "source_budget_file_unchanged": true,
+    "ms": 959.2518460012798,
+    "simulation_only": true,
+    "rows": [
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "needs_evidence",
+        "group_retained": true,
+        "cursor": 1,
+        "candidates": 34,
+        "unexamined": 0
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "editorial_hold",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "low_priority",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "manual_review",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "already_saved",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "already_saved",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "low_priority",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "low_priority",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "explicit_source_selection_required",
+        "group_retained": true,
+        "reason": "source changed: select/restart explicitly"
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "out_of_scope",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 34
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      },
+      {
+        "status": "budget_deferred",
+        "group_retained": true,
+        "cursor": 0,
+        "candidates": 34,
+        "unexamined": 1
+      }
+    ]
+  },
+  "recovery_and_source_probes": {
+    "recovery": {
+      "basis": "synthetic fixture only, not real accuracy data",
+      "mock_calls": 2,
+      "distinct_reservations": 2,
+      "extra_reservations_for_retries_and_readoption": 0,
+      "guarded_adoption_history": 3,
+      "cancelled_adoptions": 1,
+      "progress_count": 1,
+      "source_revision_history": 1,
+      "operation_receipts": 5,
+      "input_bytes_fixture_legacy": 6446,
+      "input_bytes_fixture_with_dependency_context": 7383,
+      "atomic_failure_rollback": true,
+      "sqlite_reopen_recovery": true,
+      "foreign_key_errors": []
+    },
+    "shared_source": {
+      "basis": "real-022 URL and incident IDs, synthetic bodies/changes/references",
+      "shared_incident_ids": [
+        "e72f1865-5261-49b1-ba55-ae5e7ac47a00",
+        "719c979d-347a-5455-a5da-55aefe678081"
+      ],
+      "body_changed_affected_decisions": 3,
+      "body_changed_affected_events": 2,
+      "unrelated_decision_current": true,
+      "unrelated_answer_cache_exactly_preserved": true,
+      "legacy_tables_except_simulation_budget_unchanged": true,
+      "title_only_affected_decisions": 1,
+      "publication_only_affected_decisions": 1,
+      "timeout_affected_decisions": 0,
+      "deleted_affected_decisions": 5,
+      "quote_checks_synthetic_only": {
+        "historical": {
+          "status": "exact_literal_match",
+          "state_id": "fa44c39e3266a3c3100f89a7352485f69b681cbfb154b21500d9007f0f0e52fa",
+          "version_id": "52ed8200784e14e36925c5d15886464f2764abdca0d86c2f86d0f3c7dc20bce3",
+          "content_hash": "937254f122fdf60544d81496ae8c3f2ab3c020c6f9a2056155882e975a1fe7a5",
+          "source_verified": false,
+          "literal_match": true,
+          "gold_promoted": false
+        },
+        "current_old_reference": {
+          "status": "stale_source",
+          "source_verified": false,
+          "gold_promoted": false
+        },
+        "new_body_old_quote": {
+          "status": "literal_mismatch",
+          "state_id": "1e0d34f1ef5b4a51c4e7621339fe90f95249ea07a96521ad8a07161afea7c51c",
+          "version_id": "52ed8200784e14e36925c5d15886464f2764abdca0d86c2f86d0f3c7dc20bce3",
+          "content_hash": "7dad90f33a28ff12d3c238194375518d3ab10902ec6a8e0963792ee914d38725",
+          "source_verified": false,
+          "literal_match": false,
+          "gold_promoted": false
+        },
+        "new_body_new_quote": {
+          "status": "exact_literal_match",
+          "state_id": "1e0d34f1ef5b4a51c4e7621339fe90f95249ea07a96521ad8a07161afea7c51c",
+          "version_id": "52ed8200784e14e36925c5d15886464f2764abdca0d86c2f86d0f3c7dc20bce3",
+          "content_hash": "7dad90f33a28ff12d3c238194375518d3ab10902ec6a8e0963792ee914d38725",
+          "source_verified": false,
+          "literal_match": true,
+          "gold_promoted": false
+        }
+      },
+      "real_article_body_or_accuracy_claim": false
+    },
+    "operator": {
+      "basis": "provided review records, explicitly simulated metadata change",
+      "bound_records": 15,
+      "unbound": [],
+      "changed_sample": "real-022",
+      "affected_sample_ids": [
+        "real-022"
+      ],
+      "expected_impact_exact": true,
+      "other_operator_records_still_current": 14,
+      "legacy_tables_unchanged": true,
+      "original_operator_records_preserved": 15
+    },
+    "stored_revision": {
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03UDVpbzY4dDFDQ19EdmV2RzQ4RGlqWktOSEI0VHFtVi1pQXpubmEzOF9HY2NOQ05yRUlFX24xX2FkU2RYdnZ4aHd3aGRVODhocHcwQXhrSVlGUQ?oc=5",
+      "event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+      "old_version": "1500205a4e9190b70ab374478e00247e928dbfd1e7199c2cf8d931f2bcde7adb",
+      "new_version": "a5d3a6c91ef709809f2f419a7f7c091767d71f7919676b0fadc2a32f118fb9b5",
+      "old_published": "Wed, 07 Oct 2026 06:33:59 GMT",
+      "new_published": "Wed, 07 Oct 2026 02:01:50 GMT",
+      "affected_decisions": 1,
+      "basis": "two actually saved variants; replay order is synthetic, not publication chronology",
+      "historical_version_retained": true
+    }
+  },
+  "elapsed_ms": 14046.246070000052,
+  "real_api_calls": 0,
+  "real_api_cost": "unconfirmed",
+  "real_model_accuracy": "unconfirmed",
+  "status_semantics": {
+    "classification": "specification_difference",
+    "reason": "legacy already_saved and new accepted can represent the same final event payload; not a change in evidence threshold"
+  },
+  "json_hashes_before": {
+    "events_before_full_audit.json": "4f414954318f75e813dfe3ebb5c2db5c9fc2de2b23cac987065e12bdf195e09d",
+    "status_triage.json": "4017201bf638e999566babfff9e18ab3f8a755a8ceabe8fae0220cf814527dd2",
+    "public_events.json": "78f530854abfafdde96ea4314e002667e1055d95598156af6f85a73c659dee01",
+    "events.json": "e144477cfe905073996af9004a9bc66f72edb446c115f992d5c3ac9f89cd058b",
+    "news.json": "7cb6c8151320f8b5fc964e7506916a901ef7db605406666cb78aa507d449df7d",
+    "operator_review_decisions.json": "b36a4908e3f7ecbb14e070029e60e7cc79985838eaa403a56e777766dc1ac086",
+    "ai_budget.json": "677ab32aa4acdee57bd74f6f9966516f5ae0fed87dfa30970e23d4c5a6430fd5",
+    "status_pending.json": "ab8cc180e38b8cd4c2a00a146d176db43c41a71f596844d24bc34cdf7efadb7c",
+    "tracking_review_recent.json": "3d49915c13f2efc95cb3990619de7b282ccbdda10a0e2d34d0f3219cdebacaab",
+    "verified_schedule_dates.json": "eadb6f153ea07a240f8c601d0cd4a57e1d0e21d5c4b8436a9c9bc3ab0020abf5",
+    "news_groups_merged.json": "1c5f30db938ddcad8bb5cc7fd7325eee7fb0108e8a10cf567a4d24ecddf6ff81",
+    "news_groups_ai.json": "1c5f30db938ddcad8bb5cc7fd7325eee7fb0108e8a10cf567a4d24ecddf6ff81",
+    "data_corrections.json": "08bd710de2a236606af6ee7bbea5892908a8da7be00968b2df582e762b494faa",
+    "ai_results.json": "3b8f64aeae526187902181a2bbd564d36e168cb2992034fa03feb560ae2b0514",
+    "event_merge_preview.json": "2979bb9192911e39a7da531722cae8a7cae6c14157a34adeebdd103e11ef0d81",
+    "news_status.json": "a2b93cebaa84b58efa907fd94fce0b7720c5c506090fc80120a1866ff602b828",
+    "source_exclusions.json": "f8bedd34e3d5141f8a8f719d90553e1eb1595248ea65786f74bc5e0cb80d6116",
+    "tracking_triage.json": "b9d1ee0208a2ee81fc36eb40e9fb7c21e589a3cd3fe4ca14102dc2e3b30bb268",
+    "news_groups_deduplicated.json": "a6f75b176ae7fd953be099cfd96068850240011258605040718fc117ef45a186",
+    "queue_monitor_state.json": "ea3ba2e55982ef5f17f79969e98afc0c07ef00327bbff7df064120c2b0262684",
+    "news_groups.json": "7a28d8039ae2ba0ce7d157b5d9b7215da4f9eed5f8dc0a181e21c4b1d5062b52",
+    "events_merged_preview.json": "0c3dc71a82924c41772d0c8c6153437babea23906447f85847c7573ece4db90b",
+    "news_source_metrics.json": "925e2124775e23edace5c846b3fdaedab6019bd39772704cbec5706f5f928633",
+    "ai_candidates.json": "405ef75cea42fec6b97902faaa72221b6dd3c1e35c3d699098f04db9463b527e",
+    "tracking_pending.json": "fa7adef9b14fd5faa11742db29bbbd18c1b78daaae62ce001301855ec110812d",
+    "news_filtered.json": "9ca97b79129b24e94b5c514e54a53694c1cb80f712a41e9aa698a3420aec5272",
+    "queue_health.json": "c508d5f4aca3f8c62f6827ea2789676f57da2da6ec8c7535094fc380a7eb536e",
+    "news_inbox.json": "b2fa57f7c3155e79ade01d20690945f663c05869ee84c1da09d00be21e1946ce",
+    "events_cleaned_preview.json": "3a705166695cb4305cf1213da528b311ff3a540bc52f1a4b75a3dd6b16b1e0d5",
+    "tracking_health.json": "1c1139a8456189b87b8e18faa292fc252e1e596e12907aea9453c63079c58ed3",
+    "ai_response_cache.json": "a06c437044f03ab8249028a506cbc839a2bdd07845e68ae44bb52f42d9e910bd",
+    "collection_triage.json": "f0e7e34d8085554f494d3565a5149e6c5ba7cd6724120c4c01fb09cd5fff1afb"
+  },
+  "json_hashes_unchanged": true,
+  "limitations": [
+    "saved answers are counterfactual replays, never actual cached replies to a new prompt",
+    "no imported proof/review/mock result has independent publication authority; strict public output intentionally empty",
+    "compatibility_preview.json is comparison-only, never deployable",
+    "no production scheduler integration; the entire remainder may still exceed practical model input limits and then must be held",
+    "SQLite and filesystem are separate commits; immutable generation plus final manifest supports resumption, not a distributed transaction",
+    "manual body flags have no supplied original-body quotes or check timestamps; do not become gold",
+    "full merge_review.json migration and browser visual inspection remain unconfirmed"
+  ],
+  "network_attempts": 0
+}
