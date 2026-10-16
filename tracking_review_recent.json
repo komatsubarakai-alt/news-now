@@ -1,4 +1,268 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "1985bd056c5bd4214e41fd87",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "",
+          "latest": "",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR"
+          ],
+          "identity_matches": [],
+          "event_identity": {
+            "value": "札幌市が入札行った公共工事",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR",
+            "quote": "札幌市が入札行った公共工事"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "札幌市が入札行った公共工事 業者が不当排除されたと訴え 第三者機関が市側の不備認めるも… - au Webポータル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KRVVKUTNqamZZRF9fLVN3dzVOZkZtLXVQV09Ob1dGSEZ6RlR6UkVmamdZTjQ3QUN0NVhaVVJtTU9DNVcxY2xyZ0k5X2tHX19KNDZneUVuUTRpdWNsblRiZE1pbFRPV2pubEpodFNR?oc=5"
+      ]
+    },
+    {
+      "review_id": "a054f3d447f7dac3ed6dedc7",
+      "stage": "event_attachment",
+      "reason": "ValueError",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": null,
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxZEZ5RW1pZmxON3ZWWG5qRkU1clJxZkVGSEI1QlJ3eHdpdGdHLUYtaFloc3IyT1phSWdlRGQ3TVBPWW1GUzhwQXo5UGkyVWFJUWR1QWxtZXFpdkRBV190b0RDWmlDYnJJVlA0VDloUVRXMEgxY3NBcC0yZ3gxSlk?oc=5"
+        ],
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "retry_format",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxZEZ5RW1pZmxON3ZWWG5qRkU1clJxZkVGSEI1QlJ3eHdpdGdHLUYtaFloc3IyT1phSWdlRGQ3TVBPWW1GUzhwQXo5UGkyVWFJUWR1QWxtZXFpdkRBV190b0RDWmlDYnJJVlA0VDloUVRXMEgxY3NBcC0yZ3gxSlk?oc=5"
+      ]
+    },
+    {
+      "review_id": "323a937438279616f10342b7",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+        "target_event_name": "札幌市のインフルエンザ注意報発表",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DWlpxUnlndTAwVjJzODlhakZMUU1NVVdMSWJUbWRkWmlteG9nd211WnBmT0J4T01UTmg4VWFfVUtSMER6VC1JYzJWRDlBWWRHRjE5bWlSQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRUJHZHB5VVVYeEdmMHF2NjliNEZSc2ZrLXByODdjQjFqbFRRZTRLdnRSaFRWcXNrZW1QUlVUMGdBNDlVNWpUaE52aTRoOHhUWGJVM0dtZndzQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iTzZFOFA3bnllZE9BNDJBREx3REllRENEamJTblFIZ2VjUjk1RFJyX2lwMnhpaVRleFZkYjVmT2tXRVBJYmNYSXlvVFNRdUFJbHNIMVZmbWpZMEFzeEFLU2pQTUZkXy1nSkVRaE1VbHV6VDBPWjExTndpUzdxLU0?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01azBLU1Axa1hqMlc1VnZUbGhkUWUtNlFFdWVSTUpJVWljR2JaWW1XSllxUGRvLUQwZEl4bHAzZFZkM0tUeUtySXhJWmhZMU1jQlFORklLak85ZTQzWmFlaE00ZzNLd1EtRmlaR1lfdUNLaUV1eVZ6YzNSMnFuNzg?oc=5",
+          "https://news.google.com/rss/articles/CBMie0FVX3lxTE02R3lMN1hFbUdVS3cxZ1ZGVVlNT3d4dkU2MXVtX3lDZ2Y3cG85S25wM0pkb3paRnpTcEFvLVNKRHZtQXBOQjI2RHRZSnBlRWJrTHJqVnlveEpKWTZtUnhkdkdWbkNJb2gtdHNhT0VLd0NQNXphVmRUTEJjQdIBgAFBVV95cUxNS0JjQVhOVHl5alh4Wk1UZ2s3c3liOTVvS3NheW1TWjAxY3dla25IMGp3VUcyTE45MnNsT0hpUjlrQzR6OVBjb2t3TXNrclRLRlVkdEY3ZWtMNHFkaFN5MnRITUhjd2szRVo1eXRJS09sb2xmcksxNGMzb2VDODVpXw?oc=5",
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa3Itbmkzd25Ra1VQNVhReWR6ekVmSWJCaU5NRG1XdFhyZ2ZKRHlMV0REZHh5MnBQQ1VrZ0llSzZvYXZfS2ExYzhQRjF2WWpzSTJISTdlVDBkN2VvZ1V6bWM3aHNrX2ZyN205YUZ2NloyaldndW5NdXptYzFtOHlEOXUyT2VZb28?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GN256VkVPZjQ5NHU3ZE5RQVdWZW5VakdfbF9scFFzc2FRamtneDktWnJmUVNTajRZa3pCVEZrNmtzbkRvMGxRTFByTnRwTlBndUtOVDBPdHZYaVJLajdiUDctUXFGb1puc0tqY1ZCdjlNaFZzbDNaSWZ2d3JnZ3c?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XN3pJck9ab3VQUElRZHZSQlh4eDhMN0lncUVObUMycnF4ZGRLRlowNkhtQlpXUEZ6eUpiMThPSEdTWGZtaTFTcVZuZXB4eGpCTkZmNkFHRnJqMXpGd0U0Y1dEbGRpWjJva2ZQcmhDbi1GcnJzOGRoUm1qMnBEVUk?oc=5",
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XcXljNTYyZUJRYXpYTmd6TjdBX0p1aU8wMVh6QmY3X3pqT0w3em40STEwa21jazBRX0VNUmtlNVpuTVk2THRTbGFoaGxUT1FuMUwyTHNWUEk3Y01xNGtUeU9rZml5d3hROXhFYUt3?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDRWotNzNVRXIzWTlmRlZfekpKS2RnaUFiVmJXdmMyQ2pqUzVGSWY0ZGxMcEZHTGJvVGJhamJYNjJSVm5PUU9tNTA0NGkzTk1TN0c2UFAwRHJEUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBnTkF5eWpDTjRsMFBmekpNNUtXVzZPcE1PUVZzNV9WUmUxVjF0eGpVek1FMENUZHRlOUZoeVZPMGtXa1BoSk5QNzlYQ2JQZFBQMC1MQ0UtSGNvZjhZWjZ0bWN2TGw4QkVzbF82TA?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rQTJPX19MbmtFVGFPUWh1ZGNHUVBrSzVVVWh2T09lRkZ2a2s2NWtkNl85QlFwVmlqWXhkQURNdVV1ZkRQckZpUWdSNU14WlFJRmdzcVNWZEZ0MVlFMGhBSnUwcTQ4RUswbHhzdDlJOEF2dFp2Y1dOYmxmQTRmY2s?oc=5",
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Fa25XU1JpREJFdW1FWVY1aXBVOWpST24xdXREVUJubXNFU3B5dE8wWkdBY0RVa3ZHQjdNWkk1bWNsczMyUlVJUEY0UC14aVpLT0lQTEpuRzBKQmE5ZEdkeHN4UUdVNmY2MFBBNA?oc=5",
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81SnRObC1IUy1aenZKN2VsYkVYS2lfd1hNblJxeklSTFhYY2tLRE4xXzFwY0Y1bHM1VGRiRlFNUkpRN0pPVEJSRnJzOGJmZw?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE53aGNKWmdzZzVVLXp6ZUd0WXZLMDRnd1c5WVpEQXJKTGpMOHJGa0ZFSlRNTHBQNnVoa1ltbW5DVHdKZExnY1BVRDBxRW9ZQjZ3NEhwazJOU2tHZmF0bllrcnhsajhWN0dtTmZsanNwbGVjX1dBYldvWENfTlEyT1E?oc=5",
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE13dC1QeUdRbVpPdEF1YzNpcW9obzduT2lnMG02aGFBb0VyVmp2Q1JFcXBrbkpYMl9nRi1nREhrRHJFWlpuV2ozcUVYMFpyWGF2OUNod0ppRQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "札幌市でインフルエンザ注意報が発表された段階",
+          "summary": "札幌市で今シーズン初めてインフルエンザ注意報が発表された出来事。統計開始以来2番目の早さとされ、流行拡大への警戒が報じられている。",
+          "latest": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を",
+          "next_watch": "札幌市の注意報が警報へ移行するか、感染拡大や学級閉鎖の増加が続報で確認されるか。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DWlpxUnlndTAwVjJzODlhakZMUU1NVVdMSWJUbWRkWmlteG9nd211WnBmT0J4T01UTmg4VWFfVUtSMER6VC1JYzJWRDlBWWRHRjE5bWlSQQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市のインフルエンザ注意報発表",
+                  "existing_quote": "札幌市で早くも\"流行入り\"発表",
+                  "incoming_quote": "札幌で“インフル注意報”"
+                },
+                {
+                  "kind": "detail",
+                  "value": "統計開始以来２番目の早さ",
+                  "existing_quote": "過去10年で最も早く",
+                  "incoming_quote": "統計開始以来２番目の早さ"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "札幌市のインフルエンザ注意報",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
+            "quote": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5"
+      ]
+    },
+    {
+      "review_id": "97f88ff1af3d3d210616289c",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+        "target_event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌で、迷惑駐車を注意した女性をひき逃げした疑いで27歳無職の男が逮捕された件の報道です。",
+          "latest": "迷惑駐車を注意した女性をひき逃げした疑い　27歳無職の男を逮捕「心当たりはありません」容疑否認　札幌",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTF10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "迷惑駐車を注意した女性をひき逃げした疑い",
+                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い",
+                  "incoming_quote": "迷惑駐車を注意した女性をひき逃げした疑い"
+                },
+                {
+                  "kind": "entity",
+                  "value": "27歳無職の男を逮捕",
+                  "existing_quote": "27歳無職の男を逮捕",
+                  "incoming_quote": "27歳無職の男を逮捕"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "迷惑駐車を注意した女性をひき逃げした疑い",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTF10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
+            "quote": "迷惑駐車を注意した女性をひき逃げした疑い"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "迷惑駐車を注意した女性をひき逃げした疑い　27歳無職の男を逮捕「心当たりはありません」容疑否認　札幌 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5"
+      ]
+    },
+    {
+      "review_id": "06f2460c995595648a81d98a",
+      "stage": "backfill",
+      "reason": "search_identity_uncertain",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+        "target_event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
+        "ai_report": {
+          "confidence": "low",
+          "matches": [],
+          "evidence_urls": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+      "event_name": null,
+      "article_urls": []
+    },
+    {
+      "review_id": "74b0286d1424b29df893f49d",
+      "stage": "schedule_search",
+      "reason": "ValueError",
+      "observed_at": "2026-10-16T17:45:22.102254+00:00",
+      "diagnostics": {
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_event_name": "札幌市の副首都整備担当部設置",
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "event_name": null,
+      "article_urls": []
+    }
+  ]
 }
