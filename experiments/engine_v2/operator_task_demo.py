@@ -6,6 +6,7 @@ from failed_response import digest
 from article_store import version_id
 from operator_demo import populate as original_demo
 import revision_sync as sync
+import operator_comparison as comparison
 
 CASES=[
  ('01','同じ事件・進展なし','江別豊幌住宅強盗 被害者山田 逮捕の経緯を改めて報道','none'),
@@ -40,9 +41,10 @@ def populate(db):
         sync.seed(db,article,body_text=None if kind=='body_missing' else body)
         group=dict(event_name='【架空】'+label,articles=[article],category='事件・事故',tracking_value='high')
         target='demo-e2' if kind in ('new','none','revision','shared') else 'demo-e1'
+        scoped_title=title.split(' と ')[0] if kind=='shared' else title
         if kind not in ('hold','missing'):
-            sync.add_evidence(db,target,article['url'],'title',title)
-            if kind!='body_missing':sync.add_evidence(db,target,article['url'],'body',title)
+            sync.add_evidence(db,target,article['url'],'title',scoped_title)
+            if kind!='body_missing':sync.add_evidence(db,target,article['url'],'body',scoped_title)
         if kind=='revision':
             proof=sync.add_evidence(db,target,article['url'],'body',title)
             sync.record_reference(db,'demo-review-before-edit',target,'operator','same_event',{'scope':'fictional_reference_only'},[proof],at)
@@ -51,10 +53,21 @@ def populate(db):
             for eid in ('demo-e2','demo-e3'):
                 event=next(e for e in events(db) if e['event_id']==eid);event['articles'].append(copy.deepcopy(article))
                 with db:db.execute('UPDATE events SET payload=? WHERE event_id=?',(dumps(event),eid))
-                ev=sync.add_evidence(db,eid,article['url'],'body',title)
+                scoped=title.split(' と ')[0] if eid=='demo-e2' else title.split(' と ')[1].removesuffix(' の比較')
+                ev=sync.add_evidence(db,eid,article['url'],'body',scoped)
                 sync.record_reference(db,'demo-shared-'+eid,eid,'operator','same_event',{'scope':'fictional_reference_only'},[ev],at)
             sync.change_source(db,'demo-shared-body-edited',article,sync.head(db,article['url'])['state_id'],at,body_text=body+' 比較記事の本文が改訂されました。')
+            for eid in ('demo-e2','demo-e3'):
+                scoped=title.split(' と ')[0] if eid=='demo-e2' else title.split(' と ')[1].removesuffix(' の比較')
+                sync.add_evidence(db,eid,article['url'],'body',scoped)
         payload=dict(status='manual_review',reason='【架空の操作確認】'+label,group=group)
         with db:
             for stage in ('tracking_triage','tracking_pending.json'):
                 db.execute('INSERT OR REPLACE INTO holds VALUES(?,?,?)',(stage,'demo-case-'+number,dumps(payload) if stage=='tracking_triage' else dumps(group)))
+    # Author-provided annotations for these fictional fixtures only. No news extraction.
+    comparison.initialize(db)
+    with db:
+        for eid,url,quote,proof in db.execute('SELECT event_id,url,quote,evidence_id FROM sync_evidence WHERE quote IS NOT NULL').fetchall():
+            for field,values in {'case_name':['江別豊幌住宅強盗','別市の別住宅強盗'],'place':['江別豊幌','別市'],'entities':['被害者山田','被害者佐藤'],'action':['住宅強盗']}.items():
+                for value in values:
+                    if value in quote and sync.verify_quote(db,proof,current=True)['status']=='exact_literal_match':comparison.add_note(db,eid,url,field,value,proof)

@@ -6,10 +6,12 @@ from failed_response import digest, event_conditions
 from article_store import version_id
 import revision_sync as sync
 import publication as pub
+import operator_comparison as comparison
 
 SCHEMA='''
 CREATE TABLE IF NOT EXISTS ui_task_reviews(op TEXT PRIMARY KEY,task_id TEXT NOT NULL,context_hash TEXT NOT NULL,event_id TEXT REFERENCES events,relation TEXT NOT NULL,progress TEXT,correction TEXT NOT NULL,reason TEXT NOT NULL,evidence_ids TEXT NOT NULL,decision_id TEXT REFERENCES sync_decisions,recorded_at TEXT NOT NULL,event_occurred_at TEXT,progress_assessment TEXT NOT NULL,article_payload TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS ui_correction_alerts(op TEXT PRIMARY KEY REFERENCES ui_task_reviews,task_id TEXT NOT NULL,event_id TEXT REFERENCES events,payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS ui_review_details(op TEXT PRIMARY KEY REFERENCES ui_task_reviews,payload TEXT NOT NULL);
 '''
 HUMAN={'manual_review','needs_evidence','editorial_hold'}
 TERMINAL={'out_of_scope','low_priority','already_saved','accepted','resolved','completed'}
@@ -18,6 +20,7 @@ PROGRESS={'new','none','unknown','possible_correction'}
 
 def initialize(db):
     with atomic(db):
+        comparison.initialize(db)
         for statement in SCHEMA.split(';'):
             if statement.strip():db.execute(statement)
 
@@ -38,7 +41,11 @@ def quote_ids(db,eid,url):
 
 def refs(db,task_id):
     keys=('op','task_id','context_hash','event_id','relation','progress','correction','reason','evidence_ids','decision_id','recorded_at','event_occurred_at','progress_assessment','article_payload')
-    return [dict(zip(keys,row)) for row in db.execute('SELECT * FROM ui_task_reviews WHERE task_id=? ORDER BY rowid DESC',(task_id,))]
+    records=[dict(zip(keys,row)) for row in db.execute('SELECT * FROM ui_task_reviews WHERE task_id=? ORDER BY rowid DESC',(task_id,))]
+    for r in records:
+        extra=db.execute('SELECT payload FROM ui_review_details WHERE op=?',(r['op'],)).fetchone()
+        if extra:r['review_details']=json.loads(extra[0])
+    return records
 
 
 def records_current(db,row,context):
@@ -113,7 +120,7 @@ def worklist(db,state):
             for selected in [None]+[c['event_id'] for c in candidates]:
                 proof_state=[(r['evidence_id'],r['verification']) for r in evidence(db,selected,url) if r['quote']] if selected else []
                 contexts[selected or 'none']=digest(dict(article=a,variants=sorted(unit['variants']),source=source_context,epochs=epochs,
-                    selected_event=event_conditions([events[selected]['event']]) if selected in events else None,proof=proof_state,required=required,owners=owners))
+                    selected_event=event_conditions([events[selected]['event']]) if selected in events else None,proof=proof_state,comparison=comparison.comparison(db,events[selected]['event'],url) if selected in events else None,required=required,owners=owners))
             context=contexts[(record['event_id'] or 'none') if record else (suggested or 'none')]
             current=bool(record and records_current(db,record,context))
             category='identity';reason='同じ事件か、安全に決める根拠を人が確認する必要があります。';priority=2
@@ -157,6 +164,9 @@ def worklist(db,state):
         related=next((t for t in tasks if t['category']=='hold' and (t['required_event_id']==p['event_id'] or t['suggested_event_id']==p['event_id'] or (t.get('record') or {}).get('event_id')==p['event_id'])),None)
         if p['category']=='hold' and related:related.setdefault('publication_rechecks',[]).append(p)
         else:tasks.append(p)
+    for t in tasks:
+        if 'article' in t:
+            t['comparison_by_event']={c['event_id']:comparison.comparison(db,events[c['event_id']]['event'],t['article']['url']) for c in t['candidates'] if c['event_id'] in events}
     tasks.sort(key=lambda t:(t['priority'],t['task_id']))
     counts={k:sum(t['category']==k for t in tasks) for k in ('identity','progress','publication','hold')}
     review_history=[]
@@ -166,6 +176,7 @@ def worklist(db,state):
 
 
 def review(db,state,command,at):
+    details=comparison.review_details(command)
     task=next((t for t in state['work']['tasks'] if t['task_id']==command.get('task_id') and 'article' in t),None)
     if task is None:raise ValueError('この確認作業は完了済みか変更されています。再読込してください。')
     if command.get('context_hash')!=task['context_hash']:raise ValueError('記事や根拠が変わりました。再確認してください。')
@@ -201,6 +212,12 @@ def review(db,state,command,at):
                 if old.get('stage')!=proposed:continue
                 # Literal repeated fact is a duplicate candidate, never a new counted progression.
                 if any(p.get('quote') and p['quote'] in q for p in old.get('progress_evidence',[]) for q in incoming_quotes):assessment='already_recorded_literal_candidate'
+                elif assessment!='already_recorded_literal_candidate':assessment='needs_evidence'
+        extra=details['progress_details']
+        if extra is not None:
+            if any(i not in quotes for i in extra.get('evidence_ids',[])):raise ValueError('別事件・別記事版の引用は使えません。')
+            selected=[r['quote'] for r in evidence(db,eid,task['article']['url']) if r['evidence_id'] in extra.get('evidence_ids',[])]
+            if not extra.get('new_fact','').strip() or not any(extra['new_fact'] in q and proposed and proposed in q for q in selected) or not extra.get('difference','').strip() or not extra.get('duplicate_checked'):assessment='needs_evidence'
     correction_possible=progress=='possible_correction' or progress=='new' and task.get('correction_hint',False)
     if correction_possible:assessment='possible_correction'
     op=command['op'];ids=list(quotes);ref=None
@@ -211,10 +228,11 @@ def review(db,state,command,at):
         previous=next((r for r in refs(db,task['task_id']) if r['event_id']==eid),None)
         blocked=relation=='hold' or progress in ('unknown','possible_correction') or assessment in ('needs_evidence','possible_correction')
         ref=sync.record_reference(db,'ui-task:'+op,eid,'operator','hold' if blocked else relation,
-            dict(scope='operator_review_only',relation=relation,progress_review=progress,proposed_stage=proposed,progress_assessment=assessment,new_progress_counted=False,correction_review='possible' if correction_possible else 'not_requested',reason=reason,article=task['article'],source_context_hash=task['review_contexts'][eid or 'none'],event_occurred_at=occurred,occurred_at_verification='operator_reported_not_verified'),
+            dict(scope='operator_review_only',relation=relation,progress_review=progress,proposed_stage=proposed,progress_assessment=assessment,new_progress_counted=False,correction_review='possible' if correction_possible else 'not_requested',reason=reason,review_details=details,article=task['article'],source_context_hash=task['review_contexts'][eid or 'none'],event_occurred_at=occurred,occurred_at_verification='operator_reported_not_verified'),
             ids,at,supersedes=previous['decision_id'] if previous else None)
     correction='possible' if correction_possible else 'not_requested'
     db.execute('INSERT INTO ui_task_reviews VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(op,task['task_id'],task['review_contexts'][eid or 'none'],eid,relation,progress,correction,reason,dumps(ids),ref['decision_id'] if ref else None,at.isoformat(),occurred,assessment,dumps(task['article'])))
+    db.execute('INSERT INTO ui_review_details VALUES(?,?)',(op,dumps(details)))
     if correction=='possible':
         db.execute('INSERT INTO ui_correction_alerts VALUES(?,?,?,?)',(op,task['task_id'],eid,dumps(dict(article=task['article'],reason=reason,scope='unverified_correction_alert_not_published'))))
     return dict(status='recorded_reference_only',decision_id=ref['decision_id'] if ref else None,relation=relation,progress=progress,correction=correction,progress_assessment=assessment,new_progress_counted=False,adopted=False,published=False)
