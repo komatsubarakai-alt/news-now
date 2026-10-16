@@ -20898,5 +20898,480 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "cb5bccd31587eb14a8551ebe39b9869d2e336d5bf93a9db75ab82de0e2d70159": {
+    "id": "resp_093148b0b8ea975f006ad1ac937e5c87d1aa9fc187a696c793",
+    "object": "response",
+    "created_at": 1792126099,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792126102,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_093148b0b8ea975f006ad1ac951d0c87d19ab4e38c8a20d664",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌ステラプレイス火災（エスカレーター火災・機械トラブル疑い）\",\"confidence\":\"medium\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPVlZINWlDSjhYZk9LMTlDWkphQmxZdUhIX3N6bjdOeVMyYUlERmFoOTRDdWowQnhBQ1ZpaGh5bEVFbHlHT3c0NmVFTjRFMkE4Mm5GclkwVzFrTk83Wno2ME5OQzRQSEdlYnJiMWthS0ZpNUowbUVvdFlBUnNnd1g3TDJB?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LbTY3T1RrYWtUXzk2YW8za3VRbVB2Z09hT2tvNThMc3FtRXFPWjk4Q1dsQ3lzMnNRZ0ZMNnpDVU5aVzlSYjcwY0E3UWZwM2pBbE9LWndTYkxQZk1Mb0dCX3dEVVdUZDg?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌ステラプレイス火災\",\"existing_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\",\"incoming_quote\":\"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事\"},{\"kind\":\"entity\",\"value\":\"エスカレーター\",\"existing_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\",\"incoming_quote\":\"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事\"}]}],\"meaningful_change\":true,\"progress_evidence\":[{\"url\":\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPVlZINWlDSjhYZk9LMTlDWkphQmxZdUhIX3N6bjdOeVMyYUlERmFoOTRDdWowQnhBQ1ZpaGh5bEVFbHlHT3c0NmVFTjRFMkE4Mm5GclkwVzFrTk83Wno2ME5OQzRQSEdlYnJiMWthS0ZpNUowbUVvdFlBUnNnd1g3TDJB?oc=5\",\"quote\":\"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事\"}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1825,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 699,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2524
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "e256a80f312dd07429951d755b6a1bc82ccfef71667dd60050248e5bcc18ef77": {
+    "id": "resp_0ae5f6093310451d006ad1ac972ddc87d1924d649adfaaa7a2",
+    "object": "response",
+    "created_at": 1792126103,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792126105,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0ae5f6093310451d006ad1ac97fccc87d1a59cfdcaf86271f7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌ステラプレイスの火災（エスカレーターの機械トラブル疑い）\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1tWHZEd05oLW1hdmxDRmQ4djZMRDl3dksyZXRGN1lQbDhlSG1NbDljbXJvTWNpaEFjMjNwa205ZWJ1RVl6d3M2SWotWVFLWWs3LXkxVTZsaFo0OHN6SmNZLThNQnk5bVQ2UzFPcmFxN3NyeE1UUFc3ekdzdHhZZzA?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LbTY3T1RrYWtUXzk2YW8za3VRbVB2Z09hT2tvNThMc3FtRXFPWjk4Q1dsQ3lzMnNRZ0ZMNnpDVU5aVzlSYjcwY0E3UWZwM2pBbE9LWndTYkxQZk1Mb0dCX3dEVVdUZDg?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌ステラプレイスの火災\",\"existing_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\",\"incoming_quote\":\"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事\"},{\"kind\":\"entity\",\"value\":\"エスカレーター\",\"existing_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\",\"incoming_quote\":\"先月の点検で“異常なし” エスカレーターなぜ燃えた 利用者の多さ影響か 札幌ステラプレイスの火事\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1769,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 515,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2284
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "3408dad241212114a5f176935b7d30289141e1ee33562745419167ad60107708": {
+    "id": "resp_02012eb9587a5376006ad1ac99bc7087d193e7bbeb5c7aa559",
+    "object": "response",
+    "created_at": 1792126105,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792126107,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_02012eb9587a5376006ad1ac9a79b087d1933f459c4fb914e3",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌ステラプレイスでの火災と臨時休業\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LbTY3T1RrYWtUXzk2YW8za3VRbVB2Z09hT2tvNThMc3FtRXFPWjk4Q1dsQ3lzMnNRZ0ZMNnpDVU5aVzlSYjcwY0E3UWZwM2pBbE9LWndTYkxQZk1Mb0dCX3dEVVdUZDg?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxVTlhRUVNRmF2TThvU2dpZ2IyNlVaODVOdVJkUkUwWU9KSjNIT0ljQzhYOWxySmFXM1FfYW9Vbk4yU29wbTBYa1RIdEVpN2JwZ2dQenRPVEF2NXFWNHc?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌ステラプレイス\",\"existing_quote\":\"札幌ステラプレイスで火災、隣接百貨店8階から階段避難に20分\",\"incoming_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\"},{\"kind\":\"detail\",\"value\":\"火災\",\"existing_quote\":\"札幌ステラプレイスで火災、隣接百貨店8階から階段避難に20分\",\"incoming_quote\":\"札幌ステラプレイス火災はエスカレーターの「機械トラブル」か ステラプレイスは臨時休業 札幌市\"}]}],\"meaningful_change\":false,\"progress_evidence\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1732,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 457,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2189
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "824130e1a3de0767c3ddeb7520d97705fca9568cf1a7d2b6663ed91eec423425": {
+    "id": "resp_0c098080d0fb52c5006ad1ac9c1b6087d1a044960c83bd3b28",
+    "object": "response",
+    "created_at": 1792126108,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792126110,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0c098080d0fb52c5006ad1ac9cd7e887d183e97997f54ba404",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5oQ1dSOHh0c256bTkySkV5RzRsR25Fd1N3djhHSjFPajY3OXNKUUVuQ0hhOFhZeG5UZUtQWmFLMC1yQVRyVDhHUllubkpuckJVVVlleUZCeEI3MW12eFo4VkZMZ2Rpc2dnSVRjbHktOTlULUxIWnc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiakFVX3lxTE1jMEY3SzVCQzYwVWM5NS1BNEhJR1RFaXRKeDh6Si1aQ1RfMTc4bGVheXFFc2tpRS05czRyYTNsdmp1MzVQWTNuV1lVazVjREo4SWhGZGc0NDlVeDAzYThxdmF4UFhYTmlEcFE?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\",\"existing_quote\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\",\"incoming_quote\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\"},{\"kind\":\"entity\",\"value\":\"モエレ沼公園野球場\",\"existing_quote\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\",\"incoming_quote\":\"【AIカメラで広がる札幌でのスポーツDXによるまちづくり】北海道初となる「マチスポ」本格運用がモエレ沼公園野球場でスタート！\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1797,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 621,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2418
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "62ea451f168992d22addcdbbcab7743fcbf43090e83172bd37db74c0c68000b8": {
+    "id": "resp_0a6111a50dc15695006ad1aca359e487d1882a3de2ea936c9c",
+    "object": "response",
+    "created_at": 1792126115,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792126118,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0a6111a50dc15695006ad1aca3fb8887d1a7b53a2137a76336",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"confidence\":\"high\",\"matches\":[{\"url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\",\"confidence\":\"high\"},{\"url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5\",\"confidence\":\"high\"}],\"evidence_urls\":[\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\",\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5\"],\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市、副首都整備担当部を立ち上げ 10月16日付で\",\"existing_quote\":\"札幌市、副首都整備担当部を立ち上げ 10月16日付で\",\"incoming_quote\":\"札幌市、副首都整備担当部を立ち上げ 10月16日付で\"}]},{\"incoming_url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5\",\"anchors\":[{\"kind\":\"detail\",\"value\":\"10月16日付\",\"existing_quote\":\"10月16日付で班から格上げ\",\"incoming_quote\":\"10月16日付で\"},{\"kind\":\"detail\",\"value\":\"副首都整備担当部\",\"existing_quote\":\"札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ\",\"incoming_quote\":\"札幌市 副首都整備担当部を１６日に設置\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 6852,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1131,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 7983
+    },
+    "user": null,
+    "metadata": {}
   }
 }
