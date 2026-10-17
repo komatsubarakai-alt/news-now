@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T14:42:18.940233+00:00",
+  "updated_at": "2026-10-17T21:42:37.310757+00:00",
   "items": {
     "053e8aa4bfaeb247ca214d68": {
       "first_seen_at": "2026-10-09T19:37:21.457421+00:00",
@@ -583,7 +583,7 @@
       },
       "status": "editorial_hold",
       "reason": "editorial_hold",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "92349db377d2384199ac09f61f16c10e950227c06af24ccb5731f1af01f9cbf9"
     },
     "fea6b8aca01e48df33a9b509": {
@@ -840,7 +840,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "42668982100d2c2229871a3c1c754ddd62c63feea3d4bc1c4276ccc751e0147e"
     },
     "c9e6b5aa870629cedab48158": {
@@ -1391,7 +1391,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "b37045d740bafdd63ac4f0402884a9fa462f3fab5f7d07db545dd3a7f0e77c34"
     },
     "0498299019233567d5205a49": {
@@ -1450,7 +1450,7 @@
     },
     "ff6bbde881bed1378cf89eed": {
       "first_seen_at": "2026-10-09T19:37:21.457421+00:00",
-      "decision_attempts": 1,
+      "decision_attempts": 2,
       "group": {
         "event_name": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB 北海道テレビ",
         "article_count": 1,
@@ -1475,13 +1475,13 @@
           }
         ]
       },
-      "status": "queued",
-      "reason": "budget_deferred",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "status": "needs_evidence",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "c5c206737c0677cbae84d5a286a9b01d9f6a8a7c5cc31f3ef46f9ed91da720b1",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
-      "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
-      "last_decision_at": "2026-10-15T15:50:52.132119+00:00",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
       "rejected_responses": {
         "f1d448b4d6ceada21e601d76e55b2a282e56b2819e2feaa9bb0b8c346e7927db": {
           "signature": {
@@ -1493,6 +1493,17 @@
           },
           "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
+        },
+        "5798709dd2f3ab25439dd32954c8a70e704f16d965f053c112af080853f3c123": {
+          "signature": {
+            "request_key": "e62e17edfb88f2b439e79d96ceaf78801b290e9a54c1eb84444576b8e216a695",
+            "answer_hash": "1372e54b7e99f3198de362dc244c3df01d389a94a5b71a1a475d4a6001ee1298",
+            "conditions_hash": "901406a1b50c6100d51ac3469a50dc8afd2ff1f723ade3b9fa1fd2e67b90a3a3",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "5798709dd2f3ab25439dd32954c8a70e704f16d965f053c112af080853f3c123"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
         }
       },
       "cached_rejection_skips": 4,
@@ -1528,7 +1539,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "08c8969e5c532e7527fdd179b653374a6a76d265e3a4c344fb2042e24007365f",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T03:37:50.262692+00:00",
@@ -1563,7 +1574,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "caebd3647367365b6b483c14a18e23c6d07524fce7afedd4dd1efcd63180e583",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T03:37:50.262692+00:00",
@@ -1631,7 +1642,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OanYxbV9fLU1EbWFNWjlGRS1OTGpuNnd6M3cwT3kxUmFZWnA5ZDk2UjNwY19qaHRmU2N5NVltSVRKeklrMkZad3hSQTNYSUZHTDlmNGFubm4zUQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "1b71f69155a29e5f35aaa4ab7606734cfddf175d61b10b80de0a4ccf363e19fd",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OanYxbV9fLU1EbWFNWjlGRS1OTGpuNnd6M3cwT3kxUmFZWnA5ZDk2UjNwY19qaHRmU2N5NVltSVRKeklrMkZad3hSQTNYSUZHTDlmNGFubm4zUQ?oc=5",
       "last_failure_at": "2026-10-14T07:00:22.339099+00:00",
@@ -1668,8 +1679,8 @@
           "rejected_at": "2026-10-14T07:00:22.339099+00:00"
         }
       },
-      "cached_rejection_skips": 12,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 13,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "24d5106a3607aa602140b30c": {
@@ -1729,7 +1740,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE4zWFl0Z0FGZHdfRFZ1VFk0Vk1SZ1FubFpGd24wWWt5WkNrQ1BIOWhfaG5RNUo2QjRpOW5Pek5EZmFuN2hONG82eUFXYWxBMnRvTGhlXy1RQW1uMTZTS2pqV1pGWlZwdEZzcjE1eXdUTThTY19oZmlwTFFZRmVFcGc?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "feb6774a7fce9f158dc7c2b8ad3cc24451980d590714847771e40b0d9a0e9f8f",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE4zWFl0Z0FGZHdfRFZ1VFk0Vk1SZ1FubFpGd24wWWt5WkNrQ1BIOWhfaG5RNUo2QjRpOW5Pek5EZmFuN2hONG82eUFXYWxBMnRvTGhlXy1RQW1uMTZTS2pqV1pGWlZwdEZzcjE1eXdUTThTY19oZmlwTFFZRmVFcGc?oc=5",
       "last_failure_at": "2026-10-14T07:00:22.339099+00:00",
@@ -1766,8 +1777,8 @@
           "rejected_at": "2026-10-14T07:00:22.339099+00:00"
         }
       },
-      "cached_rejection_skips": 12,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 13,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "48eb9649edeaf7fb2f3ce569": {
@@ -1831,7 +1842,7 @@
       },
       "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE01WU15ai05VXZLYWFXVUp4OEV5WVRkZUtTQTU1NGl6OHozYVlRQUV5SXBOWDR5SXlZdjY0aHhXYnJidTRRNEt0T0E2Y0xkWkoxb2pDQ0RZUWd2dw?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "43f38e518e69839b5ae5b4dcf409bc4653e9e0bc302ff015e3a1a38a39a2d63a",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE01WU15ai05VXZLYWFXVUp4OEV5WVRkZUtTQTU1NGl6OHozYVlRQUV5SXBOWDR5SXlZdjY0aHhXYnJidTRRNEt0T0E2Y0xkWkoxb2pDQ0RZUWd2dw?oc=5",
       "last_failure_at": "2026-10-10T04:37:25.703535+00:00",
@@ -1866,7 +1877,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "0850cab1af129556da914c8163eab0816830e395377cde0d05909f1e0346260b"
     },
     "6f4509e3b2d23cac9ce71a56": {
@@ -1899,7 +1910,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "1dd7675ba3cddf65de2aa273e5ff5d326b64c61e6468771bb63a14f8aaba240b",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
       "last_failure_at": "2026-10-14T07:00:22.339099+00:00",
@@ -1962,8 +1973,8 @@
           "rejected_at": "2026-10-14T07:00:22.339099+00:00"
         }
       },
-      "cached_rejection_skips": 12,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 13,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "82f2f895169243580ce56415": {
@@ -2022,7 +2033,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9fRjVQbXQtLUVOS0RRc2lhSTlIbnRkTzVXSHlxakZvZEQ1c19tZlozWjk0UzN2S1BxWTJTMUptUVI2RzF2ZHVMZjhCVlgzU25fT1BWU0dybTBLekZwalYxQzIxY0JjZ1JkMnRTSlo3UDMyZ3hsR0VPMHdpTm1FN2s?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "e98dabfadda83fef927f58c99f3cfdbf4f11554ce384be726f688bc1293481eb",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9fRjVQbXQtLUVOS0RRc2lhSTlIbnRkTzVXSHlxakZvZEQ1c19tZlozWjk0UzN2S1BxWTJTMUptUVI2RzF2ZHVMZjhCVlgzU25fT1BWU0dybTBLekZwalYxQzIxY0JjZ1JkMnRTSlo3UDMyZ3hsR0VPMHdpTm1FN2s?oc=5",
       "last_failure_at": "2026-10-14T07:00:22.339099+00:00",
@@ -2059,8 +2070,8 @@
           "rejected_at": "2026-10-14T07:00:22.339099+00:00"
         }
       },
-      "cached_rejection_skips": 12,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 13,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "5ef6006f027d4903710150a0": {
@@ -2120,7 +2131,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "0b805c2b0278eb1587e8fad99f56a7ce8f10193b0640eeba8970dcd7e817e7f0",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T04:37:25.703535+00:00",
@@ -2185,7 +2196,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PcW9vRnRJVnpFSVZ6UWd2RjhNS05WZUh5SXotZ0NxWFNjMFU2VzhEUUhpQWVIQ1Mwc0hmemZ5Xzl1elRWZnFPYWZCSmdaZmIwUXVnbktKbk82QQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "c127fe99f7d36b9f0bad9c85faca743e9bb91c3597305a192a7a17f74340245e",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PcW9vRnRJVnpFSVZ6UWd2RjhNS05WZUh5SXotZ0NxWFNjMFU2VzhEUUhpQWVIQ1Mwc0hmemZ5Xzl1elRWZnFPYWZCSmdaZmIwUXVnbktKbk82QQ?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2222,8 +2233,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "81a7b10d5c90be709519df6f": {
@@ -2255,7 +2266,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YelRWU2NDSHhOS3N4dVF4VjBrb2JVV3U3VDRmWlNBblZtX05vcE5GUzBtLXZ0SWV5V0ZybWo2S0RMenpLc0oyZXJjLTNPVWpLTmpJeEJQbXRsQQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "d781d41c74d53245d3c152f64e1fc67aca74f57c92006f642b31386ce7962e48",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YelRWU2NDSHhOS3N4dVF4VjBrb2JVV3U3VDRmWlNBblZtX05vcE5GUzBtLXZ0SWV5V0ZybWo2S0RMenpLc0oyZXJjLTNPVWpLTmpJeEJQbXRsQQ?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2292,8 +2303,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "40ff8b2d57988579b419c533": {
@@ -2352,7 +2363,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWEFVX3lxTE1VcjQxZDlZcUw0aS1tVjNpSURtZFROYl9fa0dpQjJmbktZdmVUV1N2ZVhWNkVKMGQ4R2VsbEN2cEkzX1ViaEV6VDJ3cF8zSlJEQXMtTnZDeXM?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4614555dda127f1bc4862841e992e9c0d33b4ce54392d91a1a7763182a5233b8",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWEFVX3lxTE1VcjQxZDlZcUw0aS1tVjNpSURtZFROYl9fa0dpQjJmbktZdmVUV1N2ZVhWNkVKMGQ4R2VsbEN2cEkzX1ViaEV6VDJ3cF8zSlJEQXMtTnZDeXM?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2389,8 +2400,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "7122cb591c82600e489757e5": {
@@ -2459,7 +2470,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1pYkRjMU54bjBaS2xoY01BRm1tU1Z4RTB6UUZOeXBxdko5THVQeF9HaTFUdE5iU2VxSm1aT1ltZngzMl9ReExYeVhsOGJaX2FVOUhmam5Ic2hhUkhTeFlLSF9LZ1ctQVlYcl90YXYwcVgxZTk1TkR0QVc3R1RXdE0?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4dcf05a72670afebbce77bb336f2e3456288569cd5e1e9b742b4f39131742a2e",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1pYkRjMU54bjBaS2xoY01BRm1tU1Z4RTB6UUZOeXBxdko5THVQeF9HaTFUdE5iU2VxSm1aT1ltZngzMl9ReExYeVhsOGJaX2FVOUhmam5Ic2hhUkhTeFlLSF9LZ1ctQVlYcl90YXYwcVgxZTk1TkR0QVc3R1RXdE0?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2496,8 +2507,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "b804be6160b7454610e91a5d": {
@@ -2524,7 +2535,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxNjdDV2IxXy1XaVhtTTdyWTdETWM2YnBzTEdvanZhVVBGdjVkRlhnYS1aX0U5bEdfb1lMZ244bTdlcW1zSk5GbG9jN1E3eUFlUGVSREE1UThldw?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "ec2d8fb9607d9b5172889ac6b640a4162f2343c77906e0aea5fdb6c32928befe",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxNjdDV2IxXy1XaVhtTTdyWTdETWM2YnBzTEdvanZhVVBGdjVkRlhnYS1aX0U5bEdfb1lMZ244bTdlcW1zSk5GbG9jN1E3eUFlUGVSREE1UThldw?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2561,8 +2572,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "ad9769d7418d8af472087ac9": {
@@ -2594,7 +2605,7 @@
       },
       "status": "needs_evidence",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "d8a38390c766a7b61ed8c94d4b6a8f14dddbb6d78fb4ed90c1797913a3380b13",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2631,8 +2642,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "ab1543e53038b275d2dfc6f2": {
@@ -2659,7 +2670,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9PS0JCbl91d3B5dFk3Y3Bjc295SExkV01mU240Zm1lZHZyNHRTZ21ScVRyeXJMdVNRVW1IcjRLSGVGUDRRbWN5NzYxS0poX0NTVUh5bWFDZUVQLVZlX2hjUmxzajNCam84UTJoa1pJZ0kydDhBR2Y5bjl3OWY5eEU?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "a1ad120a5227547ca102cf487988b80ecbc1f4d0659af568106dc458fd7ffc8d",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9PS0JCbl91d3B5dFk3Y3Bjc295SExkV01mU240Zm1lZHZyNHRTZ21ScVRyeXJMdVNRVW1IcjRLSGVGUDRRbWN5NzYxS0poX0NTVUh5bWFDZUVQLVZlX2hjUmxzajNCam84UTJoa1pJZ0kydDhBR2Y5bjl3OWY5eEU?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -2696,8 +2707,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "fa6325ee3be1895305a39716": {
@@ -2797,7 +2808,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4dc9f3828728060ff848cea1d080fe3cc8b21d1248d0c6b2e7379af55847416c",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T05:35:45.930922+00:00",
@@ -2832,7 +2843,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "cc61d0064f7a7b8188d72d32f1e0e395ad1bc87db73b7143c4a04335b11174ce"
     },
     "76b4957060d8b657bb29027d": {
@@ -3089,7 +3100,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9SVUJfQ1dBQ2REdTZJVWkzRHlmOVJHVmtIRVRUQzB2WGdfbV9ubEhXZDJ2N2ZsMjZEOG5RRHRtekdXb1B1ZDhQN1YwMnB5OWNmTFAxeUNEemxza0tibDJ0MWJxVS1ybmRPQUdLSHNEWVU0VENBTWpfVTFTRHp1Y2M?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "5817ad0b4b2da9d4f7b9c5269e692eaf84b00a397c81fef998df6808af314e53",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9SVUJfQ1dBQ2REdTZJVWkzRHlmOVJHVmtIRVRUQzB2WGdfbV9ubEhXZDJ2N2ZsMjZEOG5RRHRtekdXb1B1ZDhQN1YwMnB5OWNmTFAxeUNEemxza0tibDJ0MWJxVS1ybmRPQUdLSHNEWVU0VENBTWpfVTFTRHp1Y2M?oc=5",
       "last_failure_at": "2026-10-14T20:47:03.116351+00:00",
@@ -3126,8 +3137,8 @@
           "rejected_at": "2026-10-14T20:47:03.116351+00:00"
         }
       },
-      "cached_rejection_skips": 10,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 11,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "1bc757ea7afbd0baf1acd23e": {
@@ -3191,7 +3202,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "a7beacca840cd4c8298c04bfe2bbef3f96f8375b9ee6704ef76fd1bec728f9f9",
       "source_history": [
         {
@@ -3271,7 +3282,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hUkR5TlE2Tkg0QlAyVi0xN195YWQyWXhUS0M5dk0xdHMzcjVnYzBRLU9SMzZCMDRidk9vLTE4V2xtWVBUcFZRUWZjaDFkXzdaVmNMU0VPS3V1UQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "3ad75a53d5d79b9bdf5d0b87ee58e8f99bf268e8c588d02b403464c26874271d",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hUkR5TlE2Tkg0QlAyVi0xN195YWQyWXhUS0M5dk0xdHMzcjVnYzBRLU9SMzZCMDRidk9vLTE4V2xtWVBUcFZRUWZjaDFkXzdaVmNMU0VPS3V1UQ?oc=5",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -3308,8 +3319,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "da552a1fc31fa515880bb6fe": {
@@ -3368,7 +3379,7 @@
       },
       "status": "needs_evidence",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "7a4bf52f2daeef20b02d16a6cf56559e0d869af8dfc780b708d4194decd75762",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -3405,8 +3416,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "c0f5278ab55acfe90f86b8a1": {
@@ -3438,7 +3449,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00VVRaWmNjOHRJWEEzcWNmclhrcUMzUHVram4wdl9FNndQWUlIOWJwbHI0dWRjZHVrM28zbGlLZDJGaW53U3N3cXZDdFN0MUV0ZHFkT3FTbV9FWERjdEkyNE96OERqTDA?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "534a14ab5e450e63696845c59ed9abbba39a44ceeac491f0c59c66acb6735e1a",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00VVRaWmNjOHRJWEEzcWNmclhrcUMzUHVram4wdl9FNndQWUlIOWJwbHI0dWRjZHVrM28zbGlLZDJGaW53U3N3cXZDdFN0MUV0ZHFkT3FTbV9FWERjdEkyNE96OERqTDA?oc=5",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -3475,8 +3486,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "0b4ebfb5cd178980b08ca844": {
@@ -3508,7 +3519,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE1KYkVtcEFjU0Y0ZGFBTzJNUDcxMzhUMUw1bU9ES1I5R241bndNbmZOVUJocFJZUzB5NTNoMGhUek5Vbk9aeGRNRnJZaVhpQQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "bbdfa71e07dfe3fa48e13c889023fc898ed9b47439c82d678ccbc198ff3378c8",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE1KYkVtcEFjU0Y0ZGFBTzJNUDcxMzhUMUw1bU9ES1I5R241bndNbmZOVUJocFJZUzB5NTNoMGhUek5Vbk9aeGRNRnJZaVhpQQ?oc=5",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -3545,8 +3556,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "8bd1f1f7b4aaa2f3ee7d4732": {
@@ -3642,7 +3653,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "315dd0375ded0cd2f4a983f80630666e51bf6de4214b6e36e5e95bf32827bd15"
     },
     "529a2b5f260e1a18a0979c9d": {
@@ -4075,7 +4086,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "86f52a7a3975f66a4b2784e35e6ca82b9e03c13cbf25c84422c6f49dd5a3ea44",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ocHZrZHpWaEY4ZTI1bDRoZmlib0l0ejF3WW03emRTTlZkdUZOYVZPSmFKdm1uNFBzNUwzdDlObl9zd1ROVXV1LTlRck5kWmxRd0taX00xS19sQQ?oc=5",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -4112,8 +4123,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "66dbf407a93adc1ddec0400c": {
@@ -4146,7 +4157,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "dc3701dc6177c1c0780191ad348544b42a4d6b48b5c46a507497d0fce72a6171",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE52dFhVa044eDBJOWlPbkZnRlJlRXBjQ2Z2QzU1Z1Y3SE9acnZIYUd2b2FiMXNBTGNVQW9idjUzMWZFM2lfOXJYNEc1Wnc4LWpzWUQwTXlpRllMVEJNNXozSkFLRTdhV3NhVm9JQlRGT0ZCYkl2MUNRZnZzNGVnbHM?oc=5",
       "last_failure_at": "2026-10-15T02:48:22.840988+00:00",
@@ -4183,8 +4194,8 @@
           "rejected_at": "2026-10-15T02:48:22.840988+00:00"
         }
       },
-      "cached_rejection_skips": 9,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 10,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "8429f854e700c41adb216950": {
@@ -4314,7 +4325,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
-      "last_seen_at": "2026-10-17T14:42:18.940233+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "569532e237d894a99bb65f384c258aa5109b009e11a0dc126b5301d7b77ba0fd",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZSkMtbXp3NnFXbFRsNGpZZTJxMjFwTXV4NWZDVkswdXMzTmRWUndtTTZwMURxLURpVzFVbm1tUExGVDZqVVhtbkhHUDlGeG5LOXdrVWhLbnNBS2VBb004ZDFicG1EZ2pUTm5VcEUwT1lqUFJ4UktwTlYwMUFOOE0?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -4351,8 +4362,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 7,
-      "last_cached_rejection_skip_at": "2026-10-17T14:42:18.940233+00:00",
+      "cached_rejection_skips": 8,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "f1b5f4605b994fbfa08d4a27": {
@@ -4487,7 +4498,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "c1298cf25c9c62eced06c8c77bf5826a1bd8953c56c1ce1802b40c01a5bd7e8e",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-10T06:42:59.163973+00:00",
@@ -4555,7 +4566,7 @@
       },
       "status": "low_priority",
       "reason": "low_priority",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "8d889121ffeecfa13eff973be70b2751056dbef178089ebc2aed0474256fb0cc"
     },
     "da4cc9538becccfeb0940755": {
@@ -4683,7 +4694,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4f4a8f231c3f24698d9396b0faa3b7ea16162c593d079770361df58d09978b0d"
     },
     "4cb378ea2deb5705567cec0a": {
@@ -4999,7 +5010,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "8a8d83170572bbeb63971d6b4a79167b16662602d7d816da5ee26992fa99a984",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ0RYV1l6RWRCMi12N1Rwa29SaUVoMi1RN1pzWWp5RFhHUllSLVZrc2xpd3ZibnpPdVJ5TURIUUlTVW1BTUFoNkE3anNmaUlNVUFaYTJ4QUxtXzdfeUFyS2M4cEIyUUM3S1NTSW5MOEM4azNVcDBHMWFuRDRSWFhIM0ozSFpUQ1nSAYwBQVVfeXFMTzRxMkg0MmZGenB5REpyYi1mU1ZtTDN3Rlp5dk9EVk1BckV4TzVkU25UeDlJa2tKaUloZFlNMTAxYy1acVBMZ2lFVEVyY2lsak9HMU1YNnNWbl9LTkxzU2Y5a1pwNHh5WDNVN2RlX3FLcWg5OV9UbEJ6OWdud3VCazUtVmFBT3dnS0RsanQ?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -5036,8 +5047,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "a7e1b91880078564ef86f0ba": {
@@ -5188,7 +5199,7 @@
       },
       "status": "manual_review",
       "reason": "event_name_unproved",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "ec63cbce3e90af4e3a52555010f332f373d1ad2d763a2971b7b9b0f7200c70fd",
       "last_failure_reason": "event_name_unproved",
       "last_failure_at": "2026-10-10T07:37:08.350077+00:00",
@@ -5224,7 +5235,7 @@
       },
       "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZFd4MllfbkFBM0o1UjlzWkc3SmlfU3RUSTg1YlVsd1FBOEJYWlpfQW1UbmpiREZ0X1ZaWnBqaEdBWTlQME83djBvT0NjSTl1cVk3dUEzWTJoVmUwMjlheDdKNkF0Y2ZZLUtURGZjUDVkcE81MzlCekZxUlZEaDg?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "57e781b4510f05ccc39b82a173c28b0d7eb43cb60e6230ffce608318c763d60c",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9zZFd4MllfbkFBM0o1UjlzWkc3SmlfU3RUSTg1YlVsd1FBOEJYWlpfQW1UbmpiREZ0X1ZaWnBqaEdBWTlQME83djBvT0NjSTl1cVk3dUEzWTJoVmUwMjlheDdKNkF0Y2ZZLUtURGZjUDVkcE81MzlCekZxUlZEaDg?oc=5",
       "last_failure_at": "2026-10-10T07:37:08.350077+00:00",
@@ -5292,7 +5303,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "1eea21ebdf73f97eab0fae2e48328c9dad79cb4c8d4f472c1105e05c724187ee",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1oVURyeFVlc3hOVXB0aklCTHQ2NFFDcE0zT3RKLVB2MjJ5NjU1NTNJdnlHcnY1ZHc4NF9WOTJHVE5XWVpZUlZJSWZCMGpjOWNGS3I0TGFaQnlWWklhZUFYaU0wTGV2OHg5NWVkcVBaQTNTU3JOd2d6bExjZFpGT0E?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -5329,8 +5340,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "fe3b6677584ac074765259d4": {
@@ -5430,7 +5441,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "6ddb0afbab8bb0d4e563a6535ed070b333a7ffc1e07ed08b2d0057c8369807c8"
     },
     "33972782961f645e6beff477": {
@@ -5559,7 +5570,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4ea3ec5ee7dfecfdc78c481791f1843aadb20c12c6d2d5b497509c1ea71d363e"
     },
     "a2712b7a338be2abcc3d9bb5": {
@@ -5656,7 +5667,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "26e9792fc315614e3d07fe39888b5794dbfee1e0ab0edc3764b3944ff06781b3",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UMUNQYjJ1SDZNSlVrN2Z3ZWFkN0hHcTI3Vk9QWWt3RDlMZU1tZVNoektlMV92OHB6cEV4U3FISHNTclR2RXJ5eFNldjJQWnU3UnZadFdHeXBlZw?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -5693,8 +5704,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "8c1b2b419082c1109aa745dd": {
@@ -5825,7 +5836,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "d5f4fa014fd761416f2146663589e55eab1aba8631048d4b01ef9ce9143dc3ba",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IVnQtN2VMY21VTS13Vm9FdnJqRnJzZ0RjdGpzUlFTT2tvc0kyODNfOE5RN0sxVlplSWJtWFBaeS1hYkJILU5iald5a04tNFhPT0pYQjZvTQ?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -5862,8 +5873,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "96e3d6ca9c2288fcf93f6a0c": {
@@ -6026,7 +6037,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "22b8afff78bc932fb87551356e2165f1cce7ab00b30b86095964c3d550fdf984",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE55cUNuWm5yQXlveHNHMURnd1UzZ1hzMkRZeHF3ck5TM0EwSDdnbTF1bVFQeVVMQ3Y1TldweEw4N2xuTXZDVDJNYjhSSlFaYVlYY3drak5HQWxyYXZ2VjBrd0xVTDVQZXJtV3dDdEpTODZ0a1k0NVE1MGpoMU9nVEU?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -6063,8 +6074,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "861d1ab35d7e8798459acd28": {
@@ -6440,10 +6451,10 @@
         "source_article_count": 1,
         "category": "対象外",
         "tracking_value": "low",
-        "current_stage": "展覧会の開催前告知",
-        "summary": "札幌芸術の森美術館で、北斎や広重を含む五大浮世絵師の144点を集めた展覧会が10日に開幕すると伝えている記事です。タイトルと公開日時から確認できる範囲では、イベントの開催予定が示されている段階です。",
-        "latest": "2026年10月9日に、10日開幕予定の展覧会として報じられました。",
-        "next_watch": "現時点で明確な次の動きは確認できません。",
+        "current_stage": "美術展の開催告知",
+        "summary": "札幌芸術の森美術館で、北斎や広重を含む五大浮世絵師の作品144点を集めた展示が10日に開幕すると伝えられています。",
+        "latest": "公開日時時点では、展示の開幕が案内されています。",
+        "next_watch": "現時点で明確な次の動きは確認できません",
         "articles": [
           {
             "title": "北斎に広重 五大浮世絵師の144点一堂に 札幌芸術の森美術館で10日開幕 - 北海道新聞デジタル",
@@ -6460,7 +6471,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-10T07:37:08.350077+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4bab9fea59d7749e45292653c69b6d08fb06cee37b587a9135845e4cafa4835f"
     },
     "51b533107f8cacb227a5c8b1": {
@@ -6736,8 +6747,8 @@
         "tracking_value": "medium",
         "current_stage": "TOB成立後の上場廃止予定が示された段階",
         "summary": "札幌の電子カルテ開発企業CEHDについて、投資ファンドによるTOBが成立し、2027年1月に上場廃止となる見通しが示されています。",
-        "latest": "2026年10月9日時点で、投資ファンドのTOB成立と2027年1月の上場廃止予定が報じられています。",
-        "next_watch": "上場廃止までの手続きの進み方や、TOB成立後の経営体制・事業運営の変化があるかが注目点です。",
+        "latest": "2026年10月9日公開時点で、投資ファンドのTOB成立と2027年1月の上場廃止予定が報じられています。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は上場廃止までの手続きの進行や、TOB後の会社運営に関する追加発表があるかが注目点です。",
         "articles": [
           {
             "title": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で - 北海道新聞デジタル",
@@ -6754,7 +6765,7 @@
       },
       "status": "manual_review",
       "reason": "event_name_unproved",
-      "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "cf1a7b6dcb948a6ee792449e8c59617b49158f915af588791c73b5c75855a3e2",
       "last_failure_reason": "event_name_unproved",
       "last_failure_at": "2026-10-10T18:35:15.265963+00:00",
@@ -6886,7 +6897,7 @@
       },
       "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "e202ec53374aadb461a9f55329744986ecfc793dfdb94ca79979334b9d7b384b",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE05NG1LcjM2VzRzc2NjVVZ4Mzl4ZWtyNnpWR2FvRkNPdnlBZVJoVFFkNWozX2RkaDhTT2tYZFFkY1o1WDRVMXNJN3pkMUpjbkhfMmY0NnVfMnpFdw?oc=5",
       "last_failure_at": "2026-10-11T20:32:10.887151+00:00",
@@ -6933,10 +6944,10 @@
         "source_article_count": 1,
         "category": "対象外",
         "tracking_value": "low",
-        "current_stage": "スポーツ選手に関するコラム記事の掲載",
-        "summary": "北海道コンサドーレ札幌の川原颯斗選手に関するコラム記事が2026年10月7日に公開されています。タイトルから確認できる範囲では、選手の数字や恩師のコメントを扱う内容です。",
-        "latest": "2026年10月7日9時00分27秒に関連記事が公開されたことが確認できます。",
-        "next_watch": "現時点で明確な次の動きは確認できません",
+        "current_stage": "スポーツ選手に関するコラム記事",
+        "summary": "北海道コンサドーレ札幌の川原颯斗に関する紹介・分析記事であり、記事タイトルと公開日時からは事件性や継続的な追跡が必要な出来事は確認できません。",
+        "latest": "2026年10月7日にフットボールチャンネルで関連コラムが公開されています。",
+        "next_watch": "現時点で明確な次の動きは確認できません。",
         "articles": [
           {
             "title": "「俺、勝ち癖があるんです」。北海道コンサドーレ札幌・川原颯斗が持つ興味深い数字、恩師は 「楽をさせてもらっていたと痛感する存在」【コラム】 - フットボールチャンネル",
@@ -6953,7 +6964,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-10T08:36:46.087021+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "387a9aff49f857f3f5f066f7418152ee9d139e9af58314c75db9b65c6bcfc72d"
     },
     "08783db32241bf8e18d6677b": {
@@ -7082,7 +7093,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "6e6548df08bfa5f515f9bcc475978cf2264acb613a3aa36db96c4254d398bad9"
     },
     "8d0739e82e6a1bd35a1fc60a": {
@@ -7310,7 +7321,7 @@
       },
       "status": "needs_evidence",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "6dcd1b39fa2a6896da7718cc849a1ca2e2f709009b799a9b231b0b6a286add30",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rbmdxY09qdl9Yejd6NlVaVXdqTXk3ZVB2VndxLWdrRHBRSFhzclA3c2lhazFqNXB3ZjZOYzFVTmtocnhTVHpXcHp6WGROV3dEUUxUWWdVMTVkZw?oc=5",
       "last_failure_at": "2026-10-15T15:50:52.132119+00:00",
@@ -7347,8 +7358,8 @@
           "rejected_at": "2026-10-15T15:50:52.132119+00:00"
         }
       },
-      "cached_rejection_skips": 4,
-      "last_cached_rejection_skip_at": "2026-10-16T17:45:22.102254+00:00",
+      "cached_rejection_skips": 5,
+      "last_cached_rejection_skip_at": "2026-10-17T21:42:37.310757+00:00",
       "cached_rejection_waiting": true
     },
     "6a82d3c8a09e6b1914482c22": {
@@ -7381,7 +7392,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "5db7f49ce9cde9b3cdbff1006dfb0e88e59da601be74b5bad9a24b01aff2cf6b",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-12T23:33:04.020168+00:00",
@@ -7416,7 +7427,7 @@
       },
       "status": "low_priority",
       "reason": "low_priority",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "79e969c04973609e46e4ec0a84175581e6fe9ff1924a8daec365b2d981901917"
     },
     "1bec8c2c0ae8a8320214b627": {
@@ -7448,7 +7459,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "31a653bd5f00125f863fe24b2f5cd15ba045228ffaaa29be6d0456310be28640",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-15T22:44:53.855665+00:00",
@@ -7672,23 +7683,23 @@
     },
     "e769652a938d04e6792b3950": {
       "first_seen_at": "2026-10-10T01:39:22.184091+00:00",
-      "decision_attempts": 0,
+      "decision_attempts": 1,
       "group": {
-        "event_name": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+        "event_name": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - Yahoo!ニュース",
         "article_count": 1,
         "source_article_count": 1,
         "category": "事件・事故",
         "tracking_value": "medium",
-        "current_stage": "交通事故の発生直後",
-        "summary": "札幌市西区で車2台が衝突し、そのうち1台がはずみで歯科医院に突っ込んだと報じられています。40代女性2人が病院に搬送されました。",
-        "latest": "事故が起き、40代女性2人が病院へ搬送された段階です。",
-        "next_watch": "現時点で明確な次の動きは確認できません。今後、けがの程度や事故原因、警察の調査結果が報じられるかが注目点です。",
+        "current_stage": "発生直後の事故報道",
+        "summary": "札幌市西区の交差点で乗用車2台が衝突し、うち1台が歯科医院に突っ込んだ事故が報じられています。近くにいた歩行者が巻き込まれるなど、40代女性2人が病院に搬送されたとされています。",
+        "latest": "2026年10月9日公開時点で、事故の発生と負傷者の搬送が伝えられています。",
+        "next_watch": "事故原因や詳しい状況、負傷者の容体についての続報が出るかが注目点です。",
         "articles": [
           {
-            "title": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+            "title": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - Yahoo!ニュース",
             "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
             "published": "Fri, 09 Oct 2026 02:22:13 GMT",
-            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5\" target=\"_blank\">札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5\" target=\"_blank\">乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
             "rss_source": {
               "name": "Yahoo!ニュース",
               "url": "https://news.yahoo.co.jp"
@@ -7698,10 +7709,58 @@
           }
         ]
       },
-      "status": "already_saved",
-      "reason": "already_saved",
-      "last_seen_at": "2026-10-10T01:39:22.184091+00:00",
-      "source_fingerprint": "92b85f9ea6bab1670daef0bf017912392924f41d3fbf2788e55dab6b6b71dac9"
+      "status": "needs_evidence",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
+      "source_fingerprint": "5532b3967adc204f5c5aa6aac4e9a0c3f196e5c493705ee7b451d78890f35cc0",
+      "source_history": [
+        {
+          "group": {
+            "event_name": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "交通事故の発生直後",
+            "summary": "札幌市西区で車2台が衝突し、そのうち1台がはずみで歯科医院に突っ込んだと報じられています。40代女性2人が病院に搬送されました。",
+            "latest": "事故が起き、40代女性2人が病院へ搬送された段階です。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後、けがの程度や事故原因、警察の調査結果が報じられるかが注目点です。",
+            "articles": [
+              {
+                "title": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+                "published": "Fri, 09 Oct 2026 02:22:13 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5\" target=\"_blank\">札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          },
+          "status": "already_saved",
+          "reason": "already_saved",
+          "last_seen_at": "2026-10-10T01:39:22.184091+00:00"
+        }
+      ],
+      "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
+      "rejected_responses": {
+        "d21f898d4bd8165c34c4c8790645a3cda1b2b716f75e4e40f818e802a70d9e27": {
+          "signature": {
+            "request_key": "9a0b1597ad6164a44ecf87f983bd4783a1b8cfe07bd946a1778a44e20a88da3d",
+            "answer_hash": "c9b55fce0410cc30f81d67f91d744d967ca52dec36620ae5b6874733850c3a32",
+            "conditions_hash": "f68f481b72e4ee45005e67d03ad91f98ec4e47dafdbdceee33012f84a19e8f69",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "d21f898d4bd8165c34c4c8790645a3cda1b2b716f75e4e40f818e802a70d9e27"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
+        }
+      }
     },
     "79d93cde00aa805448418f11": {
       "first_seen_at": "2026-10-10T01:39:22.184091+00:00",
@@ -7733,7 +7792,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "8a4a288f4dace2a1a077284e49591c6f043ce48ada2b1917756d29197d4de499"
     },
     "8079631ffb096bd680bc08c1": {
@@ -7766,7 +7825,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "72d78f451871e15d6714c3d87c9ef0f4298be68b3050e543304f84432fdbfee0"
     },
     "7beaa24b39cb0c9c91dccae2": {
@@ -7798,7 +7857,7 @@
       },
       "status": "low_priority",
       "reason": "low_priority",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "0ff60574ac2a9de796af0fda3a3b84989d491df9482ad61fa45e754404cd57b5"
     },
     "79d1ee6b131209e77a25c7ff": {
@@ -7961,7 +8020,7 @@
       },
       "status": "manual_review",
       "reason": "uncertain_or_invalid_evidence",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "00cf4ef2ab948588e5474d096d1b74269e42efd1f69da95f4ef8e2714e9e8cc7",
       "last_failure_reason": "uncertain_or_invalid_evidence",
       "last_failure_at": "2026-10-15T22:44:53.855665+00:00",
@@ -8296,9 +8355,9 @@
         "source_article_count": 1,
         "category": "対象外",
         "tracking_value": "low",
-        "current_stage": "スポーツの試合前分析記事",
-        "summary": "記事タイトルから確認できるのは、磐田がホームで札幌戦を迎えるにあたり、3連敗中の状況で取り戻すべき点を論じた内容であることまでです。試合結果や、その後の大きな出来事はタイトルと公開日時からは分かりません。",
-        "latest": "2026年10月9日公開の、磐田対札幌戦に向けた論点整理記事です。",
+        "current_stage": "スポーツ試合の事前分析記事",
+        "summary": "記事タイトルと公開日時からは、ジュビロ磐田の札幌戦を前にした分析・展望記事であることしか確認できません。試合結果や新たな事象の発生は読み取れません。",
+        "latest": "2026年10月9日公開の、磐田と札幌戦に向けた論点整理記事です。",
         "next_watch": "現時点で明確な次の動きは確認できません。",
         "articles": [
           {
@@ -8316,7 +8375,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-10T02:37:25.460144+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "4bf6b8d513ab0e7142566f4366d6aae303d4197d37f94629ee420bb37bf71d9a"
     },
     "eb367a195084a1f4b1132180": {
@@ -8353,7 +8412,7 @@
     },
     "323dbac015600fc151d3eebb": {
       "first_seen_at": "2026-10-10T03:37:50.262692+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 3,
       "group": {
         "event_name": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認 - Yahoo!ニュース",
         "article_count": 1,
@@ -8379,17 +8438,30 @@
           }
         ]
       },
-      "status": "retry_format",
-      "reason": "ValueError",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "status": "manual_review",
+      "reason": "uncertain_or_invalid_evidence",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "7b360132bcf15d4c6c2548e802d7f41a5a6abd0c6c3987d99d0819c6f5498235",
-      "last_failure_reason": "ValueError",
-      "last_failure_at": "2026-10-16T17:45:22.102254+00:00",
-      "last_decision_at": "2026-10-10T08:36:46.087021+00:00"
+      "last_failure_reason": "uncertain_or_invalid_evidence",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
+      "rejected_responses": {
+        "2a5fb2b120ab364e69170173c23950e1f9a189aba9e784937d0b5ee0d8da30f8": {
+          "signature": {
+            "request_key": "fee08b7cec99387e5e796772a44b3da7aaa520a8c6fb54779203bd4441008969",
+            "answer_hash": "9beb020757187c275a6a7a09675e985d76bc3cd9793731de64230d542eb75d0b",
+            "conditions_hash": "a6113576be092c2c53d3bf0d7c96809e71490c95ff36c6da9e59211cbc8d49bb",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "2a5fb2b120ab364e69170173c23950e1f9a189aba9e784937d0b5ee0d8da30f8"
+          },
+          "reason": "uncertain_or_invalid_evidence",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
+        }
+      }
     },
     "9844413e639f164b8f0561f4": {
       "first_seen_at": "2026-10-10T03:37:50.262692+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 3,
       "group": {
         "event_name": "札幌で“インフル注意報” 統計開始以来２番目の早さ 発熱患者の約８割が感染…流行拡大に警戒を - Yahoo!ニュース",
         "article_count": 1,
@@ -8415,13 +8487,13 @@
           }
         ]
       },
-      "status": "needs_evidence",
+      "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "147a36cebc2ca118fdb0281670c891489d3520d7c587a119f759a3b7c631c915",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
-      "last_failure_at": "2026-10-16T17:45:22.102254+00:00",
-      "last_decision_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
       "rejected_responses": {
         "ab64e44855a438ec208b139620e3cc2783622e89e7e0aed5f55b5e95147c0511": {
           "signature": {
@@ -8433,6 +8505,17 @@
           },
           "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
           "rejected_at": "2026-10-16T17:45:22.102254+00:00"
+        },
+        "5d1e6509388e2a19372b3c687f003a4bf03deaf9c0a9cfe17c0a85cab26ba2a6": {
+          "signature": {
+            "request_key": "663ab62fe3e7b530a91e8b7321f7458b8237af033e9b7141e507464e8863762a",
+            "answer_hash": "c5f0bc23ff3a2364d54287b391f4c0a780976a787ba7d535b921d87aad9af456",
+            "conditions_hash": "b86857af60aa2c2960a536c70b6f80a7c15bcce1a3cd7397c9d10c06fab9e9d5",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "5d1e6509388e2a19372b3c687f003a4bf03deaf9c0a9cfe17c0a85cab26ba2a6"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnZZRzJNZkxSQ1N4Qnc1WlN0bkNRZXh4dm1QVVUtWVFpMW10Z2tOU2YxZExEbGtBeVNoRC1oM3BYWFhvRVVkZVJ4d01LZmhGTnVOWWpfcFpzTUlXZ3NPdmJadVQ0RmVlQ2ZZcFFZWm0wZTM3UUxWNU9BRUdKaWRZYkMwbHF4dHdpLVlOT0lB?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
         }
       }
     },
@@ -8498,7 +8581,7 @@
       },
       "status": "out_of_scope",
       "reason": "out_of_scope",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "aab459a959de77734be16c2df377fde02fd7e63cb7e37d1d04a400cb3fe55824"
     },
     "7f43ffa100f7c5293324adad": {
@@ -8631,7 +8714,7 @@
     },
     "0922ca6232313196ef4f583d": {
       "first_seen_at": "2026-10-10T06:42:59.163973+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 3,
       "group": {
         "event_name": "迷惑駐車を注意した女性をひき逃げした疑い　27歳無職の男を逮捕「心当たりはありません」容疑否認　札幌 - ｄメニューニュース",
         "article_count": 1,
@@ -8656,13 +8739,13 @@
           }
         ]
       },
-      "status": "needs_evidence",
+      "status": "manual_review",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "2f236fc743e80e82f2523185dce6e2c598394f7fc23795c76110737501f04baa",
       "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
-      "last_failure_at": "2026-10-16T17:45:22.102254+00:00",
-      "last_decision_at": "2026-10-16T17:45:22.102254+00:00",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
       "rejected_responses": {
         "226ef4dd591bd31737d62d76fb3e85ffd11522ac630f75d236a1d7e083845077": {
           "signature": {
@@ -8674,6 +8757,17 @@
           },
           "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
           "rejected_at": "2026-10-16T17:45:22.102254+00:00"
+        },
+        "088f6e63c43ada5ae1fed6256afbe294baeab4f42c3d88bdf54e26f4e45ebc1d": {
+          "signature": {
+            "request_key": "2bd09fd4a328d0f06abb922793b20928b187fdbc14b50385e5c47ae2b8c1692b",
+            "answer_hash": "12db3584a679ade52ba5e8f5bc7d4e49686b1f726f3e9aa7c4c10634a7335f36",
+            "conditions_hash": "8743ac67284697cb6ddd079a11dbf8838c15ba70c3673e62e6cadedb701a46d7",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "088f6e63c43ada5ae1fed6256afbe294baeab4f42c3d88bdf54e26f4e45ebc1d"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBLbkYwZHVmOUpFOHZnYmpyUkRaalo3bHRWajNVdDdJZGxkdWlNclRWNlJ2d3Z6OWpuUTB0VXF6Z3VHaUZiZk1PUVo5LTFTY2JycEZHZDc3WHlOMDZhVlc0MWl6VVBYblNyN19wTtIBckFVX3lxTE10Q0dMc3ItMGloWURsUGZhSW9nVE4tY2hWOTJBLTJoVVpqcFhCdnhCSVZvXzZxNHdxYWl0a3JSR29MQlZTcVZqZUNqa1REX1lwWlV1ektiTVVpbXRZcjFXTXVLUm95emhaeDZxc1JWMUZJdw?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
         }
       }
     },
@@ -8973,7 +9067,7 @@
     },
     "156a352a0162b3df4afd37b0": {
       "first_seen_at": "2026-10-10T07:37:08.350077+00:00",
-      "decision_attempts": 2,
+      "decision_attempts": 3,
       "group": {
         "event_name": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認（北海道ニュースUHB） - Yahoo!ニュース",
         "article_count": 1,
@@ -8999,13 +9093,26 @@
           }
         ]
       },
-      "status": "queued",
-      "reason": "budget_deferred",
-      "last_seen_at": "2026-10-16T17:45:22.102254+00:00",
+      "status": "manual_review",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "bd467fe2d4acea10f9e4cbd5d8b036914bb46727c43d44accc4315d4105cfb2d",
-      "last_failure_reason": "uncertain_or_invalid_evidence",
-      "last_failure_at": "2026-10-10T11:33:24.750466+00:00",
-      "last_decision_at": "2026-10-10T11:33:24.750466+00:00"
+      "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
+      "rejected_responses": {
+        "9d4c797e7a580d802bdc797f9e906d4fd962b8cdf91d890e2869432319ba1b4d": {
+          "signature": {
+            "request_key": "611264612e042ea75b015b8610e9f99993b7a2dd9239fb4993a022977f6a7f29",
+            "answer_hash": "8ffdd0c756c3ad537055b052072fd022f113338882ef849f77ba3581e6990e93",
+            "conditions_hash": "069ed50cadac53c3af5fd3a8919c20d87a7821869757880d9c0ff5166e7f5b68",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "9d4c797e7a580d802bdc797f9e906d4fd962b8cdf91d890e2869432319ba1b4d"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSHlycVUxLWpEYjhYZW9WQnRqX1JjUTZwOTllZUxtTVF6aUxUdG9fckdyQVd0ejlNY1hYNHdaanIySnZKTC1OQkpWanNla3ppeVNvMGQwOHJOZFFmbmdjSFg5YVZ0TDU3VlR5UW1MTVR1cDRkQWF0c2NyYXQ0TWc?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
+        }
+      }
     },
     "ffcc0d4b3ee85e29dde85c1f": {
       "first_seen_at": "2026-10-10T08:36:46.087021+00:00",
@@ -9042,7 +9149,7 @@
     },
     "72ee180a789912badb7b443f": {
       "first_seen_at": "2026-10-10T08:36:46.087021+00:00",
-      "decision_attempts": 0,
+      "decision_attempts": 1,
       "group": {
         "event_name": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
         "article_count": 1,
@@ -9067,26 +9174,40 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
+      "status": "needs_evidence",
+      "reason": "uncertain_or_invalid_evidence",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "b450510dba46499557ea6790529a1c90fd8aa6df3213529d267e3f20467bd5c1",
-      "last_failure_reason": "HTTPError",
-      "last_failure_at": "2026-10-10T09:33:33.225639+00:00"
+      "last_failure_reason": "uncertain_or_invalid_evidence",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
+      "rejected_responses": {
+        "11cc9196d263d428dca0106a0fe7ee2b38ce1e53748d9d4b59c5bdd87473025c": {
+          "signature": {
+            "request_key": "a9166b131658f46d533a7d9fad7d289932c0aed2aeae04471ed3dfb12c6e619b",
+            "answer_hash": "577642dce1b931143ad64628033b025110e5f806fdf3128dd342fbf3afee2778",
+            "conditions_hash": "b99647147779f26fe537ba2e99a6fa0510e720dc7089d1b4e16bda89c6cc582a",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "11cc9196d263d428dca0106a0fe7ee2b38ce1e53748d9d4b59c5bdd87473025c"
+          },
+          "reason": "uncertain_or_invalid_evidence",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
+        }
+      }
     },
     "0bb12723a1314a7f3c38815e": {
       "first_seen_at": "2026-10-10T08:36:46.087021+00:00",
-      "decision_attempts": 0,
+      "decision_attempts": 1,
       "group": {
         "event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
         "article_count": 1,
         "source_article_count": 1,
         "category": "事件・事故",
         "tracking_value": "medium",
-        "current_stage": "窃盗容疑で男が逮捕された段階",
-        "summary": "無断で倉庫に侵入し、ドライバー1台を盗んだ疑いで、自称・無職の男（30）が逮捕されたことが分かります。タイトル上では、工具に別の人の名前のシールが貼られていたことが発覚の端緒になったとされています。",
-        "latest": "自称・無職の男（30）の逮捕が報じられています。",
-        "next_watch": "現時点で明確な次の動きは確認できません。今後、容疑の詳しい経緯や送検、続報が出るかどうかが注目点です。",
+        "current_stage": "逮捕直後",
+        "summary": "自称・無職の男(30)が、無断で倉庫に侵入しドライバー1台を盗んだ疑いで逮捕されたと報じられています。工具に別人の名前のシールが貼られていたことが発覚のきっかけでした。",
+        "latest": "男が窃盗容疑で逮捕されたことが分かっています。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後、容疑の認否や余罪、捜査の進展が報じられる可能性はあります。",
         "articles": [
           {
             "title": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
@@ -9102,12 +9223,26 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
+      "status": "needs_evidence",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "379fa870b3a300b79d03df04816468ae952ad3337272d44d8f708c311bdd2e6b",
-      "last_failure_reason": "HTTPError",
-      "last_failure_at": "2026-10-10T09:33:33.225639+00:00"
+      "last_failure_reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+      "last_failure_at": "2026-10-17T21:42:37.310757+00:00",
+      "last_decision_at": "2026-10-17T21:42:37.310757+00:00",
+      "rejected_responses": {
+        "b3468db9c577ce236615e9fafb320bf60207e5f65af86cc9ac0bc16781790fbe": {
+          "signature": {
+            "request_key": "778d0d62cda8ef2229f22b4123e5fd3d4003897af68271f5c5ba7ffe918c0be4",
+            "answer_hash": "b080ac6702a737525191e4576c20007ec060008fc1b9b8ab6305b371fc7b4955",
+            "conditions_hash": "a6b1da64dfcbda2fbfea93e3f1bbbcf3a4185987df2a8f5dbcf410e9ce7250a9",
+            "validation_revision": "07a69657d4e9ce8dd054e416979a74c014196c7c1d13803583bd8669e5381751",
+            "key": "b3468db9c577ce236615e9fafb320bf60207e5f65af86cc9ac0bc16781790fbe"
+          },
+          "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+          "rejected_at": "2026-10-17T21:42:37.310757+00:00"
+        }
+      }
     },
     "7cc4363cebe172e88bd7d16a": {
       "first_seen_at": "2026-10-10T08:36:46.087021+00:00",
@@ -9168,9 +9303,9 @@
           }
         ]
       },
-      "status": "retry_api",
-      "reason": "HTTPError",
-      "last_seen_at": "2026-10-10T09:33:33.225639+00:00",
+      "status": "queued",
+      "reason": "budget_deferred",
+      "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
       "source_fingerprint": "07fa41b28a29540dd2d9a038ef50a220463a7fd92f574f0e66971329fb15c3a5",
       "last_failure_reason": "HTTPError",
       "last_failure_at": "2026-10-10T09:33:33.225639+00:00"
