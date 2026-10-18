@@ -2,227 +2,10 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "6e27de684acd6cc6ea6eb975",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
-      "observed_at": "2026-10-18T16:44:51.323328+00:00",
-      "diagnostics": {
-        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
-        "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
-          "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
-          "summary": "東京のスタートアップ企業ニューモによる新タクシーブランド「エゾタク」が、札幌圏で営業を開始したと報じられています。関連記事では、江別ハイヤーがニューモ傘下に入る動きや、AIを活用した電話応答・配車待ち時間の短縮が取り上げられています。",
-          "latest": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
-          "next_watch": "江別ハイヤー買収の進展や、札幌圏での運行体制の拡大が確認できるか",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
-          ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
-                  "existing_quote": "タクシー新興企業「ニューモ」、 札幌圏で運行開始 江別ハイヤー買収へ",
-                  "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
-                }
-              ]
-            }
-          ],
-          "event_identity": {},
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ - 北海道新聞デジタル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "7187d049d94c9761cd7c829a",
-      "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-10-18T16:44:51.323328+00:00",
-      "diagnostics": {
-        "target_event_id": "",
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "uncertain",
-          "event_id": "",
-          "confidence": "low",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "",
-          "summary": "",
-          "latest": "",
-          "next_watch": "",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [],
-          "identity_matches": [],
-          "event_identity": {},
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "149728b9bab7b95e8d4e11db",
-      "stage": "event_attachment",
-      "reason": "event_name_unproved",
-      "observed_at": "2026-10-18T16:44:51.323328+00:00",
-      "diagnostics": {
-        "target_event_id": "",
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
-        ],
-        "ai_report": {
-          "relation": "new_event",
-          "event_id": "",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "18歳の少女と16歳の少年を逮捕",
-          "summary": "顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行で、18歳の少女と16歳の少年が逮捕された記事。18歳の高校生がやけどなどのけがをしたとされる。",
-          "latest": "顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕",
-          "next_watch": "被害状況、容疑内容、2人の認否や送検・起訴の有無",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
-          ],
-          "identity_matches": [],
-          "event_identity": {
-            "value": "顔面殴打と手の甲へのタバコの火",
-            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5",
-            "quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
-          },
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - FNNプライムオンライン",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WaTdfNkdFRUhYajFmODJBbS1RUXh2UUtXMXA4dldOdHlXNFJ3V1BucDZFWF9NWkRxZnFXbEZacUFpS2lzQWoteWJLbXdQUQ?oc=5"
-      ]
-    },
-    {
-      "review_id": "0c4ce7a03c2df1867ef9a156",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
-      "observed_at": "2026-10-18T16:44:51.323328+00:00",
-      "diagnostics": {
-        "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
-        "target_event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "逮捕",
-          "summary": "札幌で、迷惑駐車を注意した女性をはねて逃走した疑いで27歳男が逮捕された段階。",
-          "latest": "7か月後…27歳男を逮捕",
-          "next_watch": "起訴や容疑の認否、被害女性のけがの程度に進展があるか",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
-          ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTF56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕",
-                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
-                  "incoming_quote": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市"
-                },
-                {
-                  "kind": "entity",
-                  "value": "27歳男",
-                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
-                  "incoming_quote": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市"
-                }
-              ]
-            }
-          ],
-          "event_identity": {},
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE85Y3BnQ3FmZmJxZUVKTEdvR05tenQyY1c5UWtTS3dIZ0k3aWFXNnB5MnQ2YXpidE14enNBcUhOUk9JVUN3dzB3d2I2R3NLUTVvTVl6SkhhUUVEQmoyeDRMSG9RV1VqSld0YzNCdWRXYVRHR0toOU1MUHlkSTBtLXc?oc=5"
-      ]
-    },
-    {
       "review_id": "a19cb845fac7a8badafffa30",
       "stage": "backfill",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
-      "observed_at": "2026-10-18T16:44:51.323328+00:00",
+      "observed_at": "2026-10-18T23:38:27.117962+00:00",
       "diagnostics": {
         "target_event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
         "target_event_name": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立 - 北海道新聞デジタル",
@@ -244,7 +27,7 @@
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立",
+                  "value": "CEHD",
                   "existing_quote": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で",
                   "incoming_quote": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立"
                 }
@@ -259,6 +42,85 @@
         "http_status": null
       },
       "event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
+      "event_name": null,
+      "article_urls": []
+    },
+    {
+      "review_id": "1d1955365ef744e8bb96bbd1",
+      "stage": "backfill",
+      "reason": "search_identity_uncertain",
+      "observed_at": "2026-10-18T23:38:27.117962+00:00",
+      "diagnostics": {
+        "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+        "target_event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
+        "ai_report": {
+          "confidence": "low",
+          "matches": [],
+          "evidence_urls": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+      "event_name": null,
+      "article_urls": []
+    },
+    {
+      "review_id": "ad68ebb841efd8e632aa810e",
+      "stage": "schedule_search",
+      "reason": "ValueError",
+      "observed_at": "2026-10-18T23:38:27.117962+00:00",
+      "diagnostics": {
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_event_name": "札幌市の副首都整備担当部設置",
+        "ai_report": {
+          "confidence": "high",
+          "matches": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "confidence": "high"
+            },
+            {
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "confidence": "high"
+            }
+          ],
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                  "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                  "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
+                }
+              ]
+            },
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                  "existing_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                  "incoming_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ"
+                }
+              ]
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "event_name": null,
       "article_urls": []
     }

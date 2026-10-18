@@ -298561,7 +298561,7 @@
     },
     "review_id": "a19cb845fac7a8badafffa30",
     "schema_version": 2,
-    "observed_at": "2026-10-18T16:44:51.323328+00:00",
+    "observed_at": "2026-10-18T23:38:27.117962+00:00",
     "diagnostics": {
       "target_event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
       "target_event_name": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立 - 北海道新聞デジタル",
@@ -298583,7 +298583,7 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立",
+                "value": "CEHD",
                 "existing_quote": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で",
                 "incoming_quote": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立"
               }
@@ -298597,8 +298597,1788 @@
       "raw_ai_response": null,
       "http_status": null
     },
+    "observation_history": [
+      {
+        "stage": "backfill",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
+        "payload": {
+          "event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
+          "articles": [
+            {
+              "title": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
+              "published": "Fri, 09 Oct 2026 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5\" target=\"_blank\">CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ]
+        },
+        "review_id": "a19cb845fac7a8badafffa30",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T16:44:51.323328+00:00",
+        "diagnostics": {
+          "target_event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
+          "target_event_name": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立 - 北海道新聞デジタル",
+          "ai_report": {
+            "confidence": "high",
+            "matches": [
+              {
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
+                "confidence": "high"
+              }
+            ],
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4WDA1NGVTdFVNNTBYeWJnR0QzNmpIekJzNE5QS21zc05KN1hIclpqaTJpTHZUQlpCZWJ5Rm1yWGhWbDhtNjVCUW5CSkRuNGFKMUU3ZTA4WDhjZw?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立",
+                    "existing_quote": "CEHD、27年1月上場廃止 札幌の電子カルテ開発 投資ファンドのTOB成立で",
+                    "incoming_quote": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立"
+                  }
+                ]
+              }
+            ],
+            "meaningful_change": false,
+            "relation": "same_event",
+            "event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e"
+          },
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-10-18T16:44:51.323328+00:00",
+        "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-18T16:44:51.323328+00:00",
-    "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
+    "last_seen_at": "2026-10-18T23:38:27.117962+00:00",
+    "observation_count": 2,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "54341333617e7e3a3b27ec94",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447376+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447376+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447376+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1be4a8b17bf1759908095ae2",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447457+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447457+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447457+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 21:33:54 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5\" target=\"_blank\">＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "7e9c8f958f867afb9d084ac3",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447511+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447511+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447511+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5",
+        "published": "Fri, 16 Oct 2026 09:51:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5\" target=\"_blank\">札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "dfc24e2b091ded9dfc55c858",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447561+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447561+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447561+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:53:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5\" target=\"_blank\">「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2bf92ebaa363e0516f1e44eb",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447609+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447609+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447609+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5",
+        "published": "Thu, 15 Oct 2026 07:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5\" target=\"_blank\">患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9766b707a8c9cf2248c5d03a",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447657+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447657+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447657+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5",
+        "published": "Sat, 17 Oct 2026 03:12:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5\" target=\"_blank\">空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8351995b64b5582afc0956c2",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447702+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447702+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447702+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5",
+        "published": "Fri, 16 Oct 2026 09:51:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5\" target=\"_blank\">札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "742c455c64099280103133c8",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447747+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447747+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447747+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+        "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5",
+        "published": "Sat, 17 Oct 2026 01:00:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5\" target=\"_blank\">交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b899271966dece3bb3b96090",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447798+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447798+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447798+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「認知症の方にもやさしいお店・事業所」登録事業 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5",
+        "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5\" target=\"_blank\">「認知症の方にもやさしいお店・事業所」登録事業</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌で国慶節祝賀会 日台友好議員連盟、鶴居村に感謝状【札幌市】 - 釧路新聞電子版",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JeGxqSWNIRS1sbU5sZnpkTnM5b1o0Ymx2bkhPbWN3Mm5qckFuQ2xiZzV0QzJoWHNIOWVlY0hOb296RnZmQzJzZjBieVpZemFieXVz?oc=5",
+        "published": "Sun, 18 Oct 2026 19:00:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JeGxqSWNIRS1sbU5sZnpkTnM5b1o0Ymx2bkhPbWN3Mm5qckFuQ2xiZzV0QzJoWHNIOWVlY0hOb296RnZmQzJzZjBieVpZemFieXVz?oc=5\" target=\"_blank\">札幌で国慶節祝賀会 日台友好議員連盟、鶴居村に感謝状【札幌市】</a>  <font color=\"#6f6f6f\">釧路新聞電子版</font>",
+        "rss_source": {
+          "name": "釧路新聞電子版",
+          "url": "https://kushironews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8c58b33c440e12dfae6cf090",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447873+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447873+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447873+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「認知症の方にもやさしいお店・事業所」登録事業 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5",
+        "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5\" target=\"_blank\">「認知症の方にもやさしいお店・事業所」登録事業</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 沖縄タイムス社",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5",
+        "published": "Sun, 18 Oct 2026 23:00:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5\" target=\"_blank\">障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">沖縄タイムス社</font>",
+        "rss_source": {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "22d27e043c3cb0bd6e07a7fd",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.447950+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.447950+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.447950+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「認知症の方にもやさしいお店・事業所」登録事業 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5",
+        "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOR25qZzFiUHVxTEl4RUs2VWJHbzM5NURaMVR5bUxlZkRJMERRNEFKdWU4Nml4Ml9YMDg5eEhFTjV4T1VMVzhsYnA2UjZUVEFBTEwtZE1ZZUhKdGFSdk5kYmJ1OTBHRkFXSW5EN2dqei13LUExNzRYbEVZcHZOejVJM1ZxMDN4d2t0dnZYY2loNWNzX3hqeVBSLXA5eEgxdw?oc=5\" target=\"_blank\">「認知症の方にもやさしいお店・事業所」登録事業</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:02:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "73994f3c9cd77964c8e8e647",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448001+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448001+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448001+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1fe2f07425eb1919b4bfb29b",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448049+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448049+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448049+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5",
+        "published": "Sat, 17 Oct 2026 01:00:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5\" target=\"_blank\">交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c73b3aa89b461dd9c2f16d76",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448094+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448094+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448094+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 21:33:54 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5\" target=\"_blank\">＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "SnowManなど公演 ファン集中 ライブ後の「宿」任せて 札幌圏で参入 シェアオフィスやカラオケ店 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5scGhLbTFzM0djcm0tb21sVWw2RWpaOGhheTgyNGVVNlozalRHTWxrMExqOEJsQTVvZEhOUFJVOGdYV0VrOUM2OEZzak9pcmlXREtQWnptOHppdw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:45:09 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5scGhLbTFzM0djcm0tb21sVWw2RWpaOGhheTgyNGVVNlozalRHTWxrMExqOEJsQTVvZEhOUFJVOGdYV0VrOUM2OEZzak9pcmlXREtQWnptOHppdw?oc=5\" target=\"_blank\">SnowManなど公演 ファン集中 ライブ後の「宿」任せて 札幌圏で参入 シェアオフィスやカラオケ店</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "726866985c8193299e0898d5",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448142+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448142+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448142+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5",
+        "published": "Sun, 18 Oct 2026 22:52:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "33e5dcf179c85a424e52c912",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448188+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448188+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448188+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5",
+        "published": "Sun, 18 Oct 2026 22:52:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c14cc400d5778c33d63ca3de",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448231+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448231+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448231+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:53:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5\" target=\"_blank\">「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2a3d5a20e520d0bc3dd52049",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448275+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448275+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448275+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:53:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02QkJnMnlCNzNSS2NnV3dsRGFGdnQxaEdGNUtWTzlMNTAyZS03Q2hXdjA5NXlVcXVPRmxnZHhYWXdPTVpKRmxLc1Vxd1p1QTFlbWozcmkteHB4dDhuN2toTzI5LXlLR0FWUjlsSWktbTA1YXA4enE4T3JGaFZqZkU?oc=5\" target=\"_blank\">「うお～札幌に居る～～！！」紅白出場・人気女性歌手、まさか“8年ぶり”路上ゲリラライブ ネット騒然「ぎゃー！行きたかった」</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "58b8f7cc46822d51a4950ac3",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448320+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448320+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448320+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5",
+        "published": "Sat, 17 Oct 2026 03:12:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5\" target=\"_blank\">空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8d751f9b92d561b0938e2868",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448367+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448367+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448367+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5",
+        "published": "Sat, 17 Oct 2026 03:12:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1zLWJyZVptM1ppR2xaNlpvckFHWlBXb3BYMTloWlR1V2VJOWlsNVo5aFl1VWY2bVU3ek5MSVFrZVlyZ0h4ODEzdE5WTmw3alUzdUFsWnY3OUc4eEpOOU5xV2FwNTFvSFVyTWhjeXdENXNBRW9RUUhSb005YXFPdW8?oc=5\" target=\"_blank\">空き家率が全国平均より高い北海道 札幌で過去最大規模の「空き家・空き地」の活用促す無料相談会開催</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2516fc411b9bf4e11342a6d3",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448407+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448407+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448407+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5",
+        "published": "Sat, 17 Oct 2026 01:00:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTGh0VUhlUml2MW4yOHZ5Ykk3QlIwdWlBOEE3Sm1XUWMxcWt4Wk9PNFM2bUowZXZfOEx3aWdFYlJNX3JUemVuamhXRUFFb3NjQlA4M0RjVDF4V2U0c2dkdGVDWlo1RzFGMnBaU1RKWTJ5cTdfcVR0SklBbnBOX1E?oc=5\" target=\"_blank\">交際する20代女性の顔面を殴打、頭に頭突き「彼氏に殴られた」と女性が110番し発覚 暴行容疑の33歳男「振り払う際に当たったかも」札幌市中央区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "67c6ec63dcb7deb27f43d53c",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448499+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448499+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448499+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5",
+        "published": "Thu, 15 Oct 2026 07:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5\" target=\"_blank\">患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c834aea961ec452b046d24ac",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448546+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448546+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448546+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5",
+        "published": "Thu, 15 Oct 2026 07:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9HX2ZHVzhCZUlRR1p5Z0xwSzB1MmhjcUUyb1JWWWpqSVhWRko0LU1xV2w5NEpyMlBVMzVrMHZEMm1ja2ZxelVGX0NvN08zdDFSUkJJSTRJMGRSUXdZYW9WN3dPNFkzVDVkczJCWHU2X0RrdGF4T3dwSUJpNnBqRmM?oc=5\" target=\"_blank\">患者の動画を飲み会で“共有” 看護師がフォロワー限定でSNS投稿するも…拡散 JR札幌病院</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "024a19bee492c81b7410bbef",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448588+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448588+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448588+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "18 | 10月 | 2026 - 札幌美容形成外科",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5",
+        "published": "Sun, 18 Oct 2026 09:20:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5\" target=\"_blank\">18 | 10月 | 2026</a>  <font color=\"#6f6f6f\">札幌美容形成外科</font>",
+        "rss_source": {
+          "name": "札幌美容形成外科",
+          "url": "https://s-bi.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "灯油_1Ｌ_159円 - 札幌美容形成外科",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBMDRpWnZmQkhveUJKZ0FWUGZ1R1pfRHdld2pISDlYTVVORE5JcU5DN3BHcjJfYVc2NW03T0tmallsNGpLbW83VUV1YVBNd05vTHJzSFNxeWFob1ExUzRsc2c0YlF1cVU?oc=5",
+        "published": "Sun, 18 Oct 2026 09:20:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBMDRpWnZmQkhveUJKZ0FWUGZ1R1pfRHdld2pISDlYTVVORE5JcU5DN3BHcjJfYVc2NW03T0tmallsNGpLbW83VUV1YVBNd05vTHJzSFNxeWFob1ExUzRsc2c0YlF1cVU?oc=5\" target=\"_blank\">灯油_1Ｌ_159円</a>  <font color=\"#6f6f6f\">札幌美容形成外科</font>",
+        "rss_source": {
+          "name": "札幌美容形成外科",
+          "url": "https://s-bi.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4ce3411ee81ae5a7ce925898",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448629+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448629+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448629+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 21:33:54 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OeUd6U210V3FSbXNCZHM3TjlLazVKQ0VOaWJ0WThzb19oSFJnWjcwX19mTnl6SmFLVFlQZkNRVGNOOXo0cS1VVFVQWHBFdHM4Z0JVNVA1TUFvUQ?oc=5\" target=\"_blank\">＜がんを防ごう＞呼吸で動くがん 陽子線治療正確に 札幌孝仁会記念病院 来月から</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3ea8c71b5281e514567c2b5d",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448671+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448671+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448671+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "18 | 10月 | 2026 - 札幌美容形成外科",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5",
+        "published": "Sun, 18 Oct 2026 09:20:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5\" target=\"_blank\">18 | 10月 | 2026</a>  <font color=\"#6f6f6f\">札幌美容形成外科</font>",
+        "rss_source": {
+          "name": "札幌美容形成外科",
+          "url": "https://s-bi.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2813bf750d8f562719e734f0",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448711+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448711+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448711+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "18 | 10月 | 2026 - 札幌美容形成外科",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5",
+        "published": "Sun, 18 Oct 2026 09:20:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiQEFVX3lxTE1IRDhadHhUeDRjNml4cnhyd05NOEtUUEhySFR6dVl3MGczQ3dBS2F5dERoUE1KSEJVU3VkdGlhdTA?oc=5\" target=\"_blank\">18 | 10月 | 2026</a>  <font color=\"#6f6f6f\">札幌美容形成外科</font>",
+        "rss_source": {
+          "name": "札幌美容形成外科",
+          "url": "https://s-bi.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6b7d6999d9d1be9200e9bd50",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448753+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448753+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448753+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MaEh2VUlLWmFiaXV5LVVHb3lyRkxRNjBfNGZfUjNDcFZlZjEyVzQwRl93R2ZxdExidUFqcnJGemIwOXBELUFoSVlYVFNFdDlaZjIxdnZuQXlEcDRwVXNQcnVmdTJ1QW0ybXBxci0xR1kxUC13YkRiTks0eUU5NEU?oc=5\" target=\"_blank\">【札幌市北区】10/19 最高21℃、やや風がある、朝は雨で昼間はくもりの予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 22:40:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a31ef946cf256ebda7d85f0d",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448798+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448798+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448798+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5",
+        "published": "Sun, 18 Oct 2026 20:41:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3QTlBU01tU0hORWdieERPOW84NzNqSHl3SXZQRFRIcjNNRUdYOGV3Qy1lUC15VlUxVlNKcTlNN0s5MjA3ZDc5YVNOWW9NY1ZsVFYyUUJpX1Nfc1cxbTBLT19EVExrSzVPQ0szbTlzbUlRZ3QwOHJqNVNTU1hFT1U?oc=5\" target=\"_blank\">【札幌市中央区】10/19 最高21℃、朝は雨と風、夕方から晴れる予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 22:40:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e8780f8f65c979b88ee98c36",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448840+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448840+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448840+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:48:51 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5",
+        "published": "Sun, 18 Oct 2026 21:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b5a81f796e91b9ad64fc8fdd",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448917+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448917+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448917+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:45:27 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:48:51 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4534bfc6242d1d3c76670486",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.448966+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.448966+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.448966+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:48:51 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫 - TVer",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5",
+        "published": "Sun, 18 Oct 2026 22:50:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">TVer</font>",
+        "rss_source": {
+          "name": "TVer",
+          "url": "https://tver.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3192a5069bb95843d9c785d3",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449009+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449009+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449009+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:45:27 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5",
+        "published": "Sun, 18 Oct 2026 21:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "25b797563a2f8cbd2b5a4f06",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449056+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449056+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449056+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:45:27 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1MVTIzUEFuYmNNUlFLS2UyTnd3YVh5MkVOWDhFLXlDcEZmZklxdEJCOWoydjYzS1lZVVd2dUZNY1poQXRCUkJyWFAtTTN1MHRzOXR5ZmZRSGlIVFNfZ0NGbDF0bmdHWHhCUDhkbtIBckFVX3lxTE1MaWNRQ3QyQmdEUkkyX2MxaXhxb25pSW5fc3YtVVVDZmtuYTM5UldNRHFUWmdYWXBqN2xYMk52Qmw4a0R2RnB0TnVoekgtR1J4YllpLTJnaHlEV2tmd2RhazJOUUR2eTY2eUhZQkZtSzRndw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫 - TVer",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5",
+        "published": "Sun, 18 Oct 2026 22:50:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">TVer</font>",
+        "rss_source": {
+          "name": "TVer",
+          "url": "https://tver.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "eb65c78661624fd372494925",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449099+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449099+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449099+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5",
+        "published": "Sun, 18 Oct 2026 21:48:51 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9IdmpJTXBfejJjNkV5V25VanMxc2lFZFo2SXE5MzBfS2xhUGRFZDBrVjJPWnpjTDZaVk1vWGhlRWxZWk9JYUV2SHNienBuRWJyb0lnSE54Q2JQYmRsRmoyekdyX3NmM0dVbFFaT3d1d1ZuR1Vpc0xBeWNlTdIBgAFBVV95cUxPTUZGOFFPd2xrTHY0TlFWNkEydVA4SnV2M0I0TXJ0d1JmUlE1MVlfTkEyektBYWthNk12d2wzOW5JbEhCbkpwMXFyQ1R3MDdLaTVYRHhPRUt6ek10Nm1EdXFybkdnMmFXZndvdGZtRlF6WmZzemdSTVVsbklIMWl3Tw?oc=5\" target=\"_blank\">札幌でウォーキングイベント　街並みを楽しみながら歩く　秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:09:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6a74aaba7948353915ffa156",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449157+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449157+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449157+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5",
+        "published": "Sun, 18 Oct 2026 22:52:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE85d0hZS1RwdVZOeGZGTlNsNDhZY1otOTlYTmtScUpvSk9FWUhWUWMwR3VBbERQN2NLMjVfZF82QWg1di1QZmJNRlhHWmRCc2RTOXBkUW8ybVZWVlRVcjRSNkxVMnVvb2RUME5uY29GOC1DQlVGSzF0SlZGQTVNWWc?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ\"札幌大球\"通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5",
+        "published": "Sun, 18 Oct 2026 22:40:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sdnZPSmRzQTdvd1RfZURJbzNiUVozY0c3Qi1hUXZvZkdyU295YjEyX3lqYzNQRktBeEhlNGZ1S2R0M3VtbW5ocnNxU0xzUQ?oc=5\" target=\"_blank\">直径50センチ！巨大キャベツ”札幌大球”通常の約10倍の大きさにびっくり_地元の子供たちが収穫体験_明治時代からの伝統野菜を後世に引き継ごうと畑のオーナー募集し栽培〈札幌〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e8bb88f5281c3f879d4bb3c2",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449206+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449206+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449206+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫 - TVer",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5",
+        "published": "Sun, 18 Oct 2026 22:50:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5HZ2ZGLXNiVXk2bG1YbklUbTFqQk9IdjU2YzZzSnY0QWtqWE8yVFBpYU5WdmJOMGl4M1NwM21FSTNmenRqbnBiNnBFNA?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫</a>  <font color=\"#6f6f6f\">TVer</font>",
+        "rss_source": {
+          "name": "TVer",
+          "url": "https://tver.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5",
+        "published": "Sun, 18 Oct 2026 21:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9hdEs5TmlxOVVWNC1TRkJtWXc3OTdaNW1BU1RuajE1WUJDNFAtNnRqOHQ4ekZkWWk2TzYxX29DSTFIbFdheEhWQVFIRHFzNnFHMkhkUWxMc0tYNlI5V3IxMGswb19ZNy1na2drUEJjMDN5THRTNE11NlJtRWF5MXM?oc=5\" target=\"_blank\">札幌でウォーキングイベント 街並みを楽しみながら歩く 秋空の下…スポーツの秋を満喫（STVニュース北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d58f02c4998980b521495b2d",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449251+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449251+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449251+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:09:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:02:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "865380cdf65ab03cd3ca1b52",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449298+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449298+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449298+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 沖縄タイムス社",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5",
+        "published": "Sun, 18 Oct 2026 23:00:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5\" target=\"_blank\">障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">沖縄タイムス社</font>",
+        "rss_source": {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:09:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbFhvR212YlI2QjZuR2wyNVh4WHRKNkpIQXAzTDU5RnY4U1gzYUlEVksyb0RMM3FPYUluRFlZSHo3NGFLR0hmRXF0YTdvbnhadGoyYnJGM2MwVkxoR21Kd1p2T1VkLUw3QjVTaWlDTWlnNFVuRnZUV002ZmRWenQwbUFNWkZ3WVh3SVlF0gGQAUFVX3lxTE0zZC1fWjROSEFZcHVzb1U0aWloNUl1ckZVd2NNaW5rV2gxOEFFTFR3OFVNdm9RbVFBNlJ2U2NTdm9sNnVId3E5TUVaaGkxQ3NVaWR1RWVoLXc5b1lzUjFBV0ZjZnFVTXg4V3ZteHRFczd3T0NmNUFuVXhtbUVfN1poVEZfUkxzRzN2U3NmcEp1MQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り　札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a5b23128a36dc116653d3dea",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449345+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449345+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449345+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 沖縄タイムス社",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5",
+        "published": "Sun, 18 Oct 2026 23:00:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVnRHaXlZaS1EUUxFT2wyNVNVSmh3QlZYd3RGdmN5R1luX3doVDl2QnMzYVhXVW5BaDJ5UWdVWElxSExWY1k3ZGJNNXYtNW5kZjhpemVMTDVfaGZlOUE?oc=5\" target=\"_blank\">障害者２０人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">沖縄タイムス社</font>",
+        "rss_source": {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5",
+        "published": "Sun, 18 Oct 2026 23:02:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE14aHJGb2pSbzBGOWNuRi1uYTlibUQ3UmVFQUJFZXIxVHVsbTdIcnhJdWNEaGJWc3ZvY3Z5aUs1djRYMmVVeHo1Q3JQQQ?oc=5\" target=\"_blank\">障害者20人とブドウ栽培、ワイン造り 札幌の事業所「力発揮できる機会を」</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fb3899bd2bb9da8c9b8ea049",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:12.449389+00:00",
+    "first_seen_at": "2026-10-18T23:38:12.449389+00:00",
+    "last_seen_at": "2026-10-18T23:38:12.449389+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5",
+              "published": "Sat, 17 Oct 2026 10:00:01 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9JQkNMUm5nT09Jb2U3UTNGYURSYXh5Znd5MjZrd0Z1WVBna1RESFJmQXFRZTlQdkdhUlk5dlc1b1g4OFpPeDF1eFBuQVI4SnUzaWlXQmo3WGo3M2EwTWp2dkNSUF9CSlZXWmoxcVFJZ0dOOWpDLTRsZHJzdGVyZkk?oc=5\" target=\"_blank\">【札幌の住宅街で火災】「平屋の建物から煙が出ている」 札幌市白石区の住宅内部が全焼 消防車など15台が出動＿4時間後に消し止め けが人なし 出火原因を調査〈札幌市白石区〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+          "articles": [
+            {
+              "title": "札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5",
+              "published": "Fri, 16 Oct 2026 09:51:40 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNOURhdlJQZ1VzX0tDcF9IQ2FFYzF0QjdxQnZzUjBuWHlidTEzZTlVaDJRTjRITVp2RFlBWnNhX3JfS0xTd1ZvTkVDV2s1MmdpVXFLT1RjQXdpZk54WmxiTDRSemt6ZUplZHBDcTkxYmVLZzNSVjZjUmhFamxhSXNBZm1R?oc=5\" target=\"_blank\">札幌のバス運賃値上げを申請 1区は30円値上げで270円に ジェイ・アール北海道バス ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+              "rss_source": {
+                "name": "ＳＴＶ札幌テレビ 放送",
+                "url": "https://www.stv.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "bca47282d30b54e2cf7f9aeb",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:13.235738+00:00",
+    "first_seen_at": "2026-10-18T23:38:13.235738+00:00",
+    "last_seen_at": "2026-10-18T23:38:13.235738+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "budget_deferred",
+    "payload": {
+      "remaining_from": [
+        0,
+        4
+      ],
+      "group_count": 26
+    },
+    "review_id": "df211769a653c5ba18451434",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:16.269757+00:00",
+    "first_seen_at": "2026-10-18T23:38:16.269757+00:00",
+    "last_seen_at": "2026-10-18T23:38:16.269757+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "backfill",
+    "reason": "search_identity_uncertain",
+    "payload": {
+      "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+      "articles": [
+        {
+          "title": "「新種の変態」？ ピアノカバーばっかり盗む男が逮捕 マニアックすぎる性癖が起こした珍事件を振り返ってみた - Infoseek",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zQmFVYTNfZ1I2QjZqSFhiRDliRnlFUmtaR2pHTmV5ekJILXRtT1Q1aXpiTUdSX3BVZ1ZfbUQzM3lmTmlTTFpxQlBobTRUUlFVbnJteHVOSkZEOFlpZF81eg?oc=5",
+          "published": "Sat, 24 Oct 2020 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zQmFVYTNfZ1I2QjZqSFhiRDliRnlFUmtaR2pHTmV5ekJILXRtT1Q1aXpiTUdSX3BVZ1ZfbUQzM3lmTmlTTFpxQlBobTRUUlFVbnJteHVOSkZEOFlpZF81eg?oc=5\" target=\"_blank\">「新種の変態」？ ピアノカバーばっかり盗む男が逮捕 マニアックすぎる性癖が起こした珍事件を振り返ってみた</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+          "rss_source": {
+            "name": "Infoseek",
+            "url": "https://news.infoseek.co.jp"
+          },
+          "collection_role": "primary"
+        }
+      ]
+    },
+    "review_id": "1d1955365ef744e8bb96bbd1",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:27.117962+00:00",
+    "diagnostics": {
+      "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+      "target_event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
+      "ai_report": {
+        "confidence": "low",
+        "matches": [],
+        "evidence_urls": [],
+        "identity_matches": []
+      },
+      "raw_ai_response": null,
+      "http_status": null
+    },
+    "first_seen_at": "2026-10-18T23:38:27.117962+00:00",
+    "last_seen_at": "2026-10-18T23:38:27.117962+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "schedule_search",
+    "reason": "ValueError",
+    "payload": {
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "articles": [
+        {
+          "title": "札幌市、副首都整備担当部を立ち上げ 10月16日付で - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+          "published": "Wed, 30 Sep 2026 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\" target=\"_blank\">札幌市、副首都整備担当部を立ち上げ 10月16日付で</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+          "rss_source": {
+            "name": "日本経済新聞",
+            "url": "https://www.nikkei.com"
+          },
+          "collection_role": "primary"
+        },
+        {
+          "title": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ - 北海道新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+          "published": "Wed, 30 Sep 2026 07:00:00 GMT",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5\" target=\"_blank\">札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+          "rss_source": {
+            "name": "北海道新聞デジタル",
+            "url": "https://www.hokkaido-np.co.jp"
+          },
+          "collection_role": "primary"
+        }
+      ]
+    },
+    "review_id": "ad68ebb841efd8e632aa810e",
+    "schema_version": 2,
+    "observed_at": "2026-10-18T23:38:27.117962+00:00",
+    "diagnostics": {
+      "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "target_event_name": "札幌市の副首都整備担当部設置",
+      "ai_report": {
+        "confidence": "high",
+        "matches": [
+          {
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+            "confidence": "high"
+          },
+          {
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+            "confidence": "high"
+          }
+        ],
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
+              }
+            ]
+          },
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                "existing_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                "incoming_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null
+    },
+    "first_seen_at": "2026-10-18T23:38:27.117962+00:00",
+    "last_seen_at": "2026-10-18T23:38:27.117962+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
