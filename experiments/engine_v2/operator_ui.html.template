@@ -49,7 +49,7 @@ const reviewInputs=new Map();
 function reviewKey(t,eid){return JSON.stringify(['operator-input-v2',t.task_id,eid,t.review_contexts[eid||'none'],t.drafts_by_event?.[eid]?.draft_id]);}
 function keepReview(){if(!choice?.contextKey)return;reviewInputs.set(choice.contextKey,JSON.parse(JSON.stringify(choice)));if(!OFFLINE_DATA)try{sessionStorage.setItem(choice.contextKey,JSON.stringify(choice));}catch{note('入力の一時保持が使えません。この画面内では保持します。');}}
 function loadChoice(t,eid){const key=reviewKey(t,eid);let stored=reviewInputs.get(key);if(!stored&&!OFFLINE_DATA)try{stored=JSON.parse(sessionStorage.getItem(key)||'null');}catch{}
- const base={contextKey:key,taskId:t.task_id,eid,relation:null,progress:null,proposed_stage:null,reason:'',reason_codes:[],new_fact:'',difference:'',evidence_ids:[],duplicate_checked:false,occurred:'',branches:{},lastSameProgress:null,applied_fields:[]};
+ const base={contextKey:key,taskId:t.task_id,eid,relation:null,progress:null,proposed_stage:null,reason:'',reason_codes:[],new_fact:'',difference:'',evidence_ids:[],duplicate_checked:false,occurred:'',branches:{},lastSameProgress:null,applied_fields:[],copied_review_op:null};
  return stored?.contextKey===key?{...base,...stored}:base;
 }
 function switchDecision(relation,progress){
@@ -76,9 +76,20 @@ function supportingArticles(t,eid,parent,selectable=false){
 function supportSummary(t,parent){const draft=t.drafts_by_event?.[choice.eid];if(!draft)return;
  const d=el('details',undefined,parent);d.className='support-summary';el('summary','判断材料の下書き（提案・未確認）',d);
  el('p',draft.reused_ai.length?'保存済みAI回答と引用を再利用しました。今回のAPI通信はありません。':'保存引用・記録からルールで整理しました。AI生成ではなく、API通信もありません。',d);
- for(const [key,label] of [['same_event_reasons','同じ事件と考える材料'],['different_event_reasons','別事件の可能性・相違点']]){el('h3',label+'（未確認）',d);for(const text of draft[key])el('p',text,d);}
+ const m=draft.materials;el('strong','ルールによる参考情報・未確定',d);
+ if(m){for(const [key,label] of [['matches','同じ事件と考えられる材料'],['differences','別事件の可能性・相違点'],['unknown','まだ確認できていない情報']]){const section=el('section',undefined,d);el('h3',label,section);if(!m[key].length)el('p','保存情報から確認できる材料はありません。',section);for(const point of m[key]){el('p',point.label+'：'+point.status,section);const refs=el('details',undefined,section);el('summary','両側の保存引用を確認',refs);for(const [side,name] of [['existing','既存事件'],['incoming','新しい記事']]){el('strong',name,refs);if(!point[side].length)el('p','未確認（対応する引用なし）',refs);for(const r of point[side]){el('blockquote',r.quote,refs);link(r.url,refs);el('small',r.verification,refs);}}}}el('h3','次に確認すること',d);for(const text of m.next_checks)el('p','・'+text,d);el('p','単語・保存文字列の一致だけでは、同一事件や進展は確定しません。',d);}
  if(draft.reused_ai.length){const a=el('details',undefined,d);el('summary','保存済みAIの提案と記録ID',a);for(const r of draft.reused_ai){el('p','AIの理由（未確認）：'+(r.reason||'未確認'),a);el('p','段階の候補：'+(r.stage||'未確認'),a);}detail('再利用した判断ID',draft.reused_ai.map(r=>r.decision_id),a);}
  el('p','判断・公開承認は選択しません。対象事件と引用を人が確認してください。',d);
+}
+function reviewReuse(t,parent,redraw){const prev=t.drafts_by_event?.[choice.eid]?.previous_input;if(!prev||!choice.relation)return;
+ const box=el('section',undefined,parent);box.className='support-box reuse-input';el('p','前回の入力：'+jp(prev.relation)+' ／ '+(prev.progress?jp(prev.progress):'進展は未確認')+'（'+date(prev.recorded_at)+'・再確認が必要）',box);
+ const compatible=choice.relation===prev.relation&&choice.progress===prev.progress;
+ const b=button('前回の入力を再利用する（要確認）',()=>{
+  if(!compatible)return;const keys=['new_fact','difference','proposed_stage'];const values=Object.fromEntries(keys.map(k=>[k,prev[k]||null]));
+  if((choice.reason&&choice.reason!==prev.reason_text||keys.some(k=>choice[k]&&choice[k]!==values[k]))&&!confirm('現在の入力を前回の入力で置き換えますか？'))return;
+  choice.reason=prev.reason_text;choice.reason_codes=prev.reason_codes.filter(c=>reasonOptions().includes(c));if(choice.progress==='new')for(const k of keys)choice[k]=values[k]||'';
+  choice.evidence_ids=[];choice.duplicate_checked=false;choice.copied_review_op=prev.op;keepReview();redraw();
+ },box);b.disabled=!compatible;el('small','同じ判断を選んだ場合に入力だけをコピーします。引用選択・重複確認・承認は引き継ぎません。',box);
 }
 function progressSupport(t,parent,redraw){const draft=t.drafts_by_event?.[choice.eid];if(!draft)return;
  const box=el('section',undefined,parent);box.className='support-box';el('h3','進展の下書き（提案・未確認）',box);
@@ -118,11 +129,11 @@ function comparisonPanel(t,e,parent){
   const r=comparison?.rows.find(r=>r.field===key)||{label,status:'未確認',existing:[],incoming:[]};const tr=el('tr',undefined,body);const th=el('th',r.label,tr);th.scope='row';el('span',r.status,th).className='badge';
   for(const side of ['existing','incoming']){const td=el('td',undefined,tr);if(!r[side].length)el('span','未確認',td);else{for(const value of new Set(r[side].map(v=>v.value)))el('p',value,td);const d=el('details',undefined,td);el('summary','引用・出典',d);for(const x of r[side]){el('blockquote',x.quote,d);link(x.url,d);el('small',x.verification,d);}}}
  }
- const factRow=el('tr',undefined,body);el('th','事実・引用（出典未検証）',factRow).scope='row';
+ const factRow=el('tr',undefined,body);const factHead=el('th','事実・引用（出典未検証）',factRow);factHead.scope='row';el('span',t.drafts_by_event?.[choice.eid]?.materials?.fact_status||'未確認',factHead).className='badge';
  for(const key of ['existing_facts','incoming_facts']){const td=el('td',undefined,factRow);const values=comparison?.[key]||[];if(!values.length)el('p','未確認',td);const d=el('details',undefined,td);el('summary',values.length+'件の事実・引用',d);for(const [url,quote] of values.slice(0,2)){el('blockquote',quote,d);link(url,d);}if(values.length>2)el('small','残りの引用は下の詳細へ',td);}
  const facts=el('details',undefined,box);el('summary','事実・引用の全件と確認状態',facts);
  for(const [key,label] of [['existing_facts','既存事件の記録を裏付ける引用'],['incoming_facts','新しい記事の引用']]){el('h3',label,facts);const values=comparison?.[key]||[];if(!values.length)el('p','未確認（項目別に対応づけた引用がありません）',facts);for(const [url,quote] of values){el('blockquote',quote,facts);link(url,facts);}}
- el('small','「保存内容との文字列一致」は本文の出典確認や正解確認ではありません。',facts);
+ el('small',t.drafts_by_event?.[choice.eid]?.materials?.fact_note||'引用の一致・矛盾は未確認です。',facts);el('small','「保存内容との文字列一致」は本文の出典確認や正解確認ではありません。',facts);
 }
 function quotePanel(t,eid,parent){const d=el('details',undefined,parent);el('summary','対象事件の根拠記事・引用・確認状態',d);supportingArticles(t,eid,d);if(t.edition_conflict)detail('版の候補（未確認）',t.article_variants,d);}
 function review(parent){
@@ -143,6 +154,7 @@ function review(parent){
  function draw(){
   relationBox.replaceChildren();second.replaceChildren();saveArea.replaceChildren();alerts.replaceChildren();warningList(t,choice.eid,alerts);
   for(const [label,value] of [['同じ事件','same_event'],['別の事件','different_event'],['判断できない・保留','hold']]){const b=button(label,()=>{switchDecision(value);changed();},relationBox);b.setAttribute('aria-pressed',String(choice.relation===value));}
+  reviewReuse(t,second,draw);
   if(choice.relation==='same_event'){
    el('h3','第2段階：新しい進展がありますか？',second);el('p','同じ事件という確認だけでは、進展を確定しません。',second);
    const box=el('div',undefined,second);box.className='choices';
@@ -166,7 +178,7 @@ function review(parent){
   const b=button(OFFLINE_DATA?'閲覧専用：記録は保存できません':'確認記録を保存して次へ',()=>submit(false),saveArea,'primary');b.disabled=Boolean(OFFLINE_DATA)||!choice.relation||(choice.relation==='same_event'&&!choice.progress);
   if(choice.relation==='same_event'&&!choice.progress){const first=button('事件の確認だけ記録し、進展は後で確認',()=>submit(true),saveArea);first.disabled=Boolean(OFFLINE_DATA);}
  }
- function submit(first){const progress=first?null:choice.progress;const command={action:'task_review',task_id:t.task_id,context_hash:t.context_hash,event_id:choice.eid,relation:choice.relation,progress,proposed_stage:progress==='new'?choice.proposed_stage:null,reason:[...choice.reason_codes,choice.reason.trim()].filter(Boolean).join('／'),reason_codes:choice.reason_codes,event_occurred_at:progress==='new'&&choice.occurred?new Date(choice.occurred+':00+09:00').toISOString():null};const proposal=t.drafts_by_event?.[choice.eid];if(proposal)command.draft_review={draft_id:proposal.draft_id,applied_fields:choice.applied_fields};keepReview();if(progress==='new')command.progress_details={new_fact:choice.new_fact,difference:choice.difference,evidence_ids:choice.evidence_ids,duplicate_checked:choice.duplicate_checked};post(command,{nextTask:true,category:view.category});}
+ function submit(first){const progress=first?null:choice.progress;const command={action:'task_review',task_id:t.task_id,context_hash:t.context_hash,event_id:choice.eid,relation:choice.relation,progress,proposed_stage:progress==='new'?choice.proposed_stage:null,reason:[...choice.reason_codes,choice.reason.trim()].filter(Boolean).join('／'),reason_codes:choice.reason_codes,event_occurred_at:progress==='new'&&choice.occurred?new Date(choice.occurred+':00+09:00').toISOString():null};const proposal=t.drafts_by_event?.[choice.eid];if(choice.copied_review_op)command.copied_review_op=choice.copied_review_op;if(proposal)command.draft_review={draft_id:proposal.draft_id,applied_fields:choice.applied_fields};keepReview();if(progress==='new')command.progress_details={new_fact:choice.new_fact,difference:choice.difference,evidence_ids:choice.evidence_ids,duplicate_checked:choice.duplicate_checked};post(command,{nextTask:true,category:view.category});}
  draw();if(t.record)detail('前回の確認記録（詳細情報）',t.history,parent);
 }
 
