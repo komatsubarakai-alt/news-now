@@ -7,6 +7,7 @@ from article_store import version_id
 import revision_sync as sync
 import publication as pub
 import operator_comparison as comparison
+import operator_support as support
 
 SCHEMA='''
 CREATE TABLE IF NOT EXISTS ui_task_reviews(op TEXT PRIMARY KEY,task_id TEXT NOT NULL,context_hash TEXT NOT NULL,event_id TEXT REFERENCES events,relation TEXT NOT NULL,progress TEXT,correction TEXT NOT NULL,reason TEXT NOT NULL,evidence_ids TEXT NOT NULL,decision_id TEXT REFERENCES sync_decisions,recorded_at TEXT NOT NULL,event_occurred_at TEXT,progress_assessment TEXT NOT NULL,article_payload TEXT NOT NULL);
@@ -167,6 +168,7 @@ def worklist(db,state):
     for t in tasks:
         if 'article' in t:
             t['comparison_by_event']={c['event_id']:comparison.comparison(db,events[c['event_id']]['event'],t['article']['url']) for c in t['candidates'] if c['event_id'] in events}
+            t['drafts_by_event']={c['event_id']:support.build(db,t,events[c['event_id']]['event']) for c in t['candidates'] if c['event_id'] in events}
     tasks.sort(key=lambda t:(t['priority'],t['task_id']))
     counts={k:sum(t['category']==k for t in tasks) for k in ('identity','progress','publication','hold')}
     review_history=[]
@@ -188,6 +190,7 @@ def review(db,state,command,at):
     if eid is None and relation!='hold':raise ValueError('比較する事件を選んでください。')
     if eid is not None and eid not in [c['event_id'] for c in task['candidates']]:raise ValueError('照合していない事件は選べません。')
     if task['required_event_id'] and eid!=task['required_event_id']:raise ValueError('共有記事は対象の事件ごとに確認してください。')
+    support.audit(task,command,details)
     if task['formal_event_id'] and relation=='same_event' and eid!=task['formal_event_id']:raise ValueError('既存の運営者指定先と異なります。保留して指定を確認してください。')
     if task.get('edition_conflict') and relation!='hold':raise ValueError('同じURLの複数版があり現在版を確認できません。保留してください。')
     if relation!='hold' and (task.get('fetch_wait') or task.get('source',{} ) and task['source']['availability'] in ('deleted','empty_body')):raise ValueError('記事の削除・取得状態を確認できません。保留してください。')

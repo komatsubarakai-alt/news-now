@@ -71,3 +71,8 @@ def populate(db):
             for field,values in {'case_name':['江別豊幌住宅強盗','別市の別住宅強盗'],'place':['江別豊幌','別市'],'entities':['被害者山田','被害者佐藤'],'action':['住宅強盗']}.items():
                 for value in values:
                     if value in quote and sync.verify_quote(db,proof,current=True)['status']=='exact_literal_match':comparison.add_note(db,eid,url,field,value,proof)
+    # A saved simulated response demonstrates reuse; it is never adopted or billed.
+    url='https://example.test/demo-02'
+    proof,quote=db.execute("SELECT evidence_id,quote FROM sync_evidence WHERE event_id='demo-e2' AND url=? AND field='body' AND quote IS NOT NULL",(url,)).fetchone()
+    sync.record_reference(db,'demo-saved-ai-draft','demo-e2','ai','same_event',
+        {'reason':'【架空の保存済み模擬AI】事件名と人物の記述を比較する提案です。未確認です。','current_stage':'起訴','progress_evidence':[{'url':url,'quote':quote}]},[proof],at)

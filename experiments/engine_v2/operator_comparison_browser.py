@@ -51,7 +51,7 @@ def run():
                 if progress:page.get_by_role('button',name=progress,exact=True).click()
                 check('reason group '+relation+str(progress),page.get_by_label(expected,exact=True).is_visible() and page.get_by_label(unexpected,exact=True).count()==0)
                 options=page.locator('fieldset input');options.nth(0).check();options.nth(1).check();check('multi select '+relation,options.nth(0).is_checked() and options.nth(1).is_checked())
-                page.get_by_role('button',name='判断できない・保留' if relation!='判断できない・保留' else '別の事件',exact=True).click();check('reasons cleared on changed decision '+relation,page.evaluate('choice.reason_codes.length===0'))
+                page.get_by_role('button',name='判断できない・保留' if relation!='判断できない・保留' else '別の事件',exact=True).click();check('only active decision reasons used '+relation,page.evaluate('choice.reason_codes.every(c=>reasonOptions().includes(c))'))
             open_case('08');check('body missing visible',page.get_by_text('本文未確認',exact=True).is_visible())
             open_case('05');check('missing quote stops visibly',page.get_by_text('停止：有効な引用根拠が不足しています',exact=True).is_visible())
             open_case('09');check('revised edition warning',page.get_by_text('再確認：記事の内容が変更されています',exact=True).is_visible())
