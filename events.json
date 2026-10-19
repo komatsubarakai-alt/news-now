@@ -2277,8 +2277,8 @@
     "updated_at": "2026-10-18T16:44:51.323328+00:00",
     "v1_enriched": true,
     "backfill": {
-      "attempts": 2,
-      "status": "retry"
+      "attempts": 3,
+      "status": "needs_review"
     },
     "search_query": "CEHD 上場廃止 TOB 札幌"
   },
@@ -2319,7 +2319,9 @@
     "v1_enriched": true,
     "backfill": {
       "attempts": 1,
-      "status": "retry"
+      "status": "searched",
+      "done": true,
+      "checked_at": "2026-10-19T05:47:02.193253+00:00"
     },
     "search_query": "工具に別の人の名前 シール 倉庫侵入 ドライバー窃盗"
   }

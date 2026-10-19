@@ -5,7 +5,7 @@
       "review_id": "a19cb845fac7a8badafffa30",
       "stage": "backfill",
       "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QaTlTT0s5UGF2Vks2NHZqbllQSGF0RDNCM0lDa1NkZWh1eVlVUHBybnlGRHd2MUNEZlU1YWhHUEhCRF9HRUYwZmhkOV91cXFxVVR2aG03Z0E1dw?oc=5",
-      "observed_at": "2026-10-18T23:38:27.117962+00:00",
+      "observed_at": "2026-10-19T05:47:02.193253+00:00",
       "diagnostics": {
         "target_event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
         "target_event_name": "札幌のＣＥＨＤ 1月に上場廃止 ＴＯＢ成立 - 北海道新聞デジタル",
@@ -42,85 +42,6 @@
         "http_status": null
       },
       "event_id": "45d087ed-d6ca-4e09-a2aa-ba536362355e",
-      "event_name": null,
-      "article_urls": []
-    },
-    {
-      "review_id": "1d1955365ef744e8bb96bbd1",
-      "stage": "backfill",
-      "reason": "search_identity_uncertain",
-      "observed_at": "2026-10-18T23:38:27.117962+00:00",
-      "diagnostics": {
-        "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
-        "target_event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
-        "ai_report": {
-          "confidence": "low",
-          "matches": [],
-          "evidence_urls": [],
-          "identity_matches": []
-        },
-        "raw_ai_response": null,
-        "http_status": null
-      },
-      "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
-      "event_name": null,
-      "article_urls": []
-    },
-    {
-      "review_id": "ad68ebb841efd8e632aa810e",
-      "stage": "schedule_search",
-      "reason": "ValueError",
-      "observed_at": "2026-10-18T23:38:27.117962+00:00",
-      "diagnostics": {
-        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
-        "target_event_name": "札幌市の副首都整備担当部設置",
-        "ai_report": {
-          "confidence": "high",
-          "matches": [
-            {
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
-              "confidence": "high"
-            },
-            {
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
-              "confidence": "high"
-            }
-          ],
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
-            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5"
-          ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
-                  "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
-                  "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
-                }
-              ]
-            },
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
-                  "existing_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
-                  "incoming_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ"
-                }
-              ]
-            }
-          ]
-        },
-        "raw_ai_response": null,
-        "http_status": null
-      },
-      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "event_name": null,
       "article_urls": []
     }
