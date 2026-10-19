@@ -1,4 +1,398 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "f27c0f9d4dc9c45c030cf50a",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+        "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+          "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
+          "latest": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+          "next_watch": "相談増加の背景説明や、札幌市・学校側の対応が続報で示されるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "無償化影響か",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+                },
+                {
+                  "kind": "detail",
+                  "value": "給食が少ない",
+                  "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                  "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB 北海道テレビ",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "6e27de684acd6cc6ea6eb975",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+        "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
+          "summary": "東京のスタートアップ企業ニューモによる新タクシーブランド「エゾタク」が、札幌圏で営業を開始したと報じられています。関連記事では、江別ハイヤーがニューモ傘下に入る動きや、AIを活用した電話応答・配車待ち時間の短縮が取り上げられています。",
+          "latest": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+          "next_watch": "江別ハイヤーの買収手続きの進展や、札幌圏での運行体制拡大の続報",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始",
+                  "existing_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+                  "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+                },
+                {
+                  "kind": "entity",
+                  "value": "江別ハイヤー買収",
+                  "existing_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+                  "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+            "quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ - 北海道新聞デジタル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "9e12bcdcd047fd77d728c986",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
+        "target_event_name": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "札幌市西区で車2台が衝突し、うち1台が歯科医院に突っ込んだ事故の発生が報じられた段階",
+          "summary": "札幌市西区の交差点で乗用車2台が衝突し、うち1台が歯科医院に突っ込んだ事故が報じられています。40代女性2人が病院に搬送されたことまで確認できます。",
+          "latest": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点",
+          "next_watch": "事故原因、負傷者の容体、現場対応の続報",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市西区の交差点",
+                  "existing_quote": "札幌市西区で車2台が衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
+                  "incoming_quote": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点"
+                },
+                {
+                  "kind": "entity",
+                  "value": "40代女性2人",
+                  "existing_quote": "40代女性2人が病院に搬送",
+                  "incoming_quote": "40代女性2人を病院搬送"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+      ]
+    },
+    {
+      "review_id": "7187d049d94c9761cd7c829a",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "uncertain",
+          "event_id": "",
+          "confidence": "low",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "",
+          "latest": "",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [],
+          "identity_matches": [],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "8ccc67b0ccaeb6b1c8025682",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌市で、工具のシールに別人の名前があったことをきっかけに倉庫侵入・工具窃盗の疑いで男が逮捕された案件。",
+          "latest": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市での倉庫侵入・工具窃盗",
+                  "existing_quote": "無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                  "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+                },
+                {
+                  "kind": "detail",
+                  "value": "リサイクルショップ店員が通報",
+                  "existing_quote": "「工具に別の人の名前のシールが貼ってある」",
+                  "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "工具に別人の名前",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5",
+            "quote": "「売却しようとした工具に別人の名前が」"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+      ]
+    },
+    {
+      "review_id": "4e206e8565f86d78d6dbfa60",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+        "target_event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌市で、倉庫侵入と工具窃盗の疑いで30歳の男が逮捕された段階です。",
+          "latest": "リサイクルショップ店員が通報し、倉庫侵入・工具窃盗の疑いで30歳男逮捕",
+          "next_watch": "捜査の進展、送検・起訴の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "倉庫侵入・工具窃盗の疑い",
+                  "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                  "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "30歳男",
+                  "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                  "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "74b0286d1424b29df893f49d",
+      "stage": "schedule_search",
+      "reason": "ValueError",
+      "observed_at": "2026-10-19T18:57:50.580384+00:00",
+      "diagnostics": {
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_event_name": "札幌市の副首都整備担当部設置",
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "event_name": null,
+      "article_urls": []
+    }
+  ]
 }

@@ -192696,40 +192696,135 @@
     },
     "review_id": "8ccc67b0ccaeb6b1c8025682",
     "schema_version": 2,
-    "observed_at": "2026-10-10T18:35:15.265963+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
-      "target_event_id": "",
+      "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
       "target_event_name": null,
       "target_source_urls": [],
       "input_urls": [
         "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
       ],
       "ai_report": {
-        "relation": "new_event",
-        "event_id": "",
-        "confidence": "medium",
+        "relation": "same_event",
+        "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+        "confidence": "high",
+        "multi_event": false,
         "meaningful_change": false,
-        "current_stage": "リサイクルショップで工具の売却をめぐる逮捕段階",
-        "summary": "札幌市で、別人の名前が書かれた工具を売却しようとしたとして男が逮捕されたことが分かります。所持金は9円とされていますが、既存一覧に同一案件は確認できませんでした。",
-        "latest": "リサイクルショップ店員が通報し、男が逮捕されたと報じられています。",
-        "next_watch": "工具の入手経緯や窃盗・盗品の有無、送検や起訴の有無を確認します。",
+        "current_stage": "逮捕",
+        "summary": "札幌市で、工具のシールに別人の名前があったことをきっかけに倉庫侵入・工具窃盗の疑いで男が逮捕された案件。",
+        "latest": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市",
+        "next_watch": "",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5"
         ],
-        "schedules": [],
-        "identity_matches": []
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市での倉庫侵入・工具窃盗",
+                "existing_quote": "無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+              },
+              {
+                "kind": "detail",
+                "value": "リサイクルショップ店員が通報",
+                "existing_quote": "「工具に別の人の名前のシールが貼ってある」",
+                "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+              }
+            ]
+          }
+        ],
+        "event_identity": {
+          "value": "工具に別人の名前",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblNFSGZ6ZUtqRE0?oc=5",
+          "quote": "「売却しようとした工具に別人の名前が」"
+        },
+        "progress_evidence": [],
+        "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "店頭での通報を受けて男が逮捕された段階",
+            "summary": "リサイクルショップ店員が、売却しようとした工具に別人の名前が書かれているのを見つけて通報し、男が逮捕されたと報じられています。記事タイトルから確認できる範囲では、男の所持金は9円でした。",
+            "latest": "リサイクルショップ店員の通報をきっかけに、男が逮捕されたことです。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、工具の入手経路や男の供述、余罪の有無などが報じられるかどうかが注目点です。",
+            "articles": [
+              {
+                "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - 日テレNEWS NNN",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5",
+                "published": "Sat, 10 Oct 2026 01:19:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+                "rss_source": {
+                  "name": "日テレNEWS NNN",
+                  "url": "https://news.ntv.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "8ccc67b0ccaeb6b1c8025682",
+        "schema_version": 2,
+        "observed_at": "2026-10-10T18:35:15.265963+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+          ],
+          "ai_report": {
+            "relation": "new_event",
+            "event_id": "",
+            "confidence": "medium",
+            "meaningful_change": false,
+            "current_stage": "リサイクルショップで工具の売却をめぐる逮捕段階",
+            "summary": "札幌市で、別人の名前が書かれた工具を売却しようとしたとして男が逮捕されたことが分かります。所持金は9円とされていますが、既存一覧に同一案件は確認できませんでした。",
+            "latest": "リサイクルショップ店員が通報し、男が逮捕されたと報じられています。",
+            "next_watch": "工具の入手経緯や窃盗・盗品の有無、送検や起訴の有無を確認します。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTFBURGxGa1dPWmhlSGlLWHd1YU1RM0Fid19XY2lzb2FBdEM5U3ViTWdhOTlnTDBrN0E5X2pyM1ZmUUhtODNocFpPTElSdnFyQi00d09PbTN4Vmc3MFg4b1JidWxVOWRSV1V6bms0eEdiUUR2TENfblFNSGZ6ZUtqRE0?oc=5"
+            ],
+            "schedules": [],
+            "identity_matches": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-10T18:35:15.265963+00:00",
+        "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-10T18:35:15.265963+00:00",
-    "last_seen_at": "2026-10-10T18:35:15.265963+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -270532,7 +270627,7 @@
     },
     "review_id": "f27c0f9d4dc9c45c030cf50a",
     "schema_version": 2,
-    "observed_at": "2026-10-17T21:42:37.310757+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
       "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
       "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
@@ -270553,7 +270648,7 @@
         "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
         "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
         "latest": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
-        "next_watch": "相談増加の背景や、給食内容・量の見直し、自治体側の対応が新たに示されるか",
+        "next_watch": "相談増加の背景説明や、札幌市・学校側の対応が続報で示されるか",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -270566,32 +270661,28 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌",
-                "existing_quote": "札幌市の〝貧乏給食〟が波紋",
+                "value": "無償化影響か",
+                "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
                 "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
               },
               {
                 "kind": "detail",
                 "value": "給食が少ない",
-                "existing_quote": "札幌市の〝貧乏給食〟が波紋",
-                "incoming_quote": "「給食が少ない」"
+                "existing_quote": "４月から無償化、札幌市の〝貧乏給食〟が波紋",
+                "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
               }
             ]
           }
         ],
-        "event_identity": {
-          "value": "札幌で給食無償化後に「給食が少ない」との相談増加",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
-          "quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
-        },
+        "event_identity": {},
         "progress_evidence": [],
         "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -270686,11 +270777,108 @@
         "last_seen_at": "2026-10-15T15:50:52.132119+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB 北海道テレビ",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "政策・制度",
+            "tracking_value": "medium",
+            "current_stage": "給食無償化に関連した運用上の影響が報じられている段階",
+            "summary": "記事タイトルからは、札幌で給食の無償化が影響している可能性を背景に、「給食が少ない」「子どもがおなかをすかせて帰ってくる」といった相談が増えていることが示されています。制度や運用の見直しが必要かどうかが論点とみられますが、詳細はタイトルだけでは断定できません。",
+            "latest": "2026年10月7日時点で、給食の量に関する相談増が取り上げられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。相談の増加を受けて、自治体や学校側が給食の量や無償化制度の運用について対応や説明を行うかが注目点です。",
+            "articles": [
+              {
+                "title": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌 - HTB 北海道テレビ",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+                "published": "Wed, 07 Oct 2026 09:39:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5\" target=\"_blank\">【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+                "rss_source": {
+                  "name": "HTB 北海道テレビ",
+                  "url": "https://www.htb.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "f27c0f9d4dc9c45c030cf50a",
+        "schema_version": 2,
+        "observed_at": "2026-10-17T21:42:37.310757+00:00",
+        "diagnostics": {
+          "target_event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+          "target_event_name": "札幌で給食無償化後に「給食が少ない」との相談増加",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WUUpPNElPNEFjTElxVjZQUEVNUHFPMS03eW9nTTBmY254Q0VIcE12OTlGWE9XYWRjdjdlaFhMdEtYTHBXckJOb3diT0c4WkUxRW9yd3l6cDZLSXNScml6X3BMaEwyNXBLTXhqeDhhQVluVjlLY2I3TWw3VWk2Vm8?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "給食無償化後の運用をめぐる相談増加が報じられている段階",
+            "summary": "札幌で、給食無償化の影響かどうかは記事タイトルだけでは断定できませんが、『給食が少ない』『子どもがおなかをすかせて帰ってくる』といった相談が増えていることが報じられています。",
+            "latest": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌",
+            "next_watch": "相談増加の背景や、給食内容・量の見直し、自治体側の対応が新たに示されるか",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wX1hlbFkzMFZteEVlTlo1WUdfUHYyZEN4Z01STGZnNXU2UzVxd0xlWmtqMkJHaUlaRXVXZWZwTXdMcTlBZ3FFWE5kSlhDaURG?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌",
+                    "existing_quote": "札幌市の〝貧乏給食〟が波紋",
+                    "incoming_quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "給食が少ない",
+                    "existing_quote": "札幌市の〝貧乏給食〟が波紋",
+                    "incoming_quote": "「給食が少ない」"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {
+              "value": "札幌で給食無償化後に「給食が少ない」との相談増加",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RmdyX3E2WkRFTUg2bmM3eTZGRjlQS3JjaFoteTE3YzZQempJWGpXQXM1SEo2STdoVm5DemRnY3VSX2U2a3lvMkowQXNyS2FYeXZwNXRoYVdxQQ?oc=5",
+              "quote": "【足りる？】無償化影響か「給食が少ない」「子どもがおなかをすかせて帰ってくる」相談増 背景には…札幌"
+            },
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-15T15:50:52.132119+00:00",
+        "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-15T15:50:52.132119+00:00",
-    "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -272781,7 +272969,7 @@
     },
     "review_id": "74b0286d1424b29df893f49d",
     "schema_version": 2,
-    "observed_at": "2026-10-18T03:46:34.530095+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
       "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "target_event_name": "札幌市の副首都整備担当部設置",
@@ -272855,11 +273043,33 @@
         "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
         "observation_count": 3,
         "legacy_history_present": false
+      },
+      {
+        "stage": "schedule_search",
+        "reason": "ValueError",
+        "payload": {
+          "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "articles": []
+        },
+        "review_id": "74b0286d1424b29df893f49d",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T03:46:34.530095+00:00",
+        "diagnostics": {
+          "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "target_event_name": "札幌市の副首都整備担当部設置",
+          "ai_report": null,
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
+        "last_seen_at": "2026-10-18T03:46:34.530095+00:00",
+        "observation_count": 4,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
-    "last_seen_at": "2026-10-18T03:46:34.530095+00:00",
-    "observation_count": 4,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 5,
     "legacy_history_present": false
   },
   {
@@ -292737,7 +292947,7 @@
     },
     "review_id": "9e12bcdcd047fd77d728c986",
     "schema_version": 2,
-    "observed_at": "2026-10-17T21:42:37.310757+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
       "target_event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
       "target_event_name": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
@@ -292756,7 +292966,7 @@
         "current_stage": "札幌市西区で車2台が衝突し、うち1台が歯科医院に突っ込んだ事故の発生が報じられた段階",
         "summary": "札幌市西区の交差点で乗用車2台が衝突し、うち1台が歯科医院に突っ込んだ事故が報じられています。40代女性2人が病院に搬送されたことまで確認できます。",
         "latest": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点",
-        "next_watch": "けが人の容体、事故原因、現場対応の続報",
+        "next_watch": "事故原因、負傷者の容体、現場対応の続報",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -292769,15 +292979,15 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市西区で車2台衝突",
-                "existing_quote": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
+                "value": "札幌市西区の交差点",
+                "existing_quote": "札幌市西区で車2台が衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
                 "incoming_quote": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点"
               },
               {
-                "kind": "detail",
-                "value": "歯科医院に突っ込む",
-                "existing_quote": "うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
-                "incoming_quote": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点"
+                "kind": "entity",
+                "value": "40代女性2人",
+                "existing_quote": "40代女性2人が病院に搬送",
+                "incoming_quote": "40代女性2人を病院搬送"
               }
             ]
           }
@@ -292790,11 +293000,105 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "発生直後の事故報道",
+            "summary": "札幌市西区の交差点で乗用車2台が衝突し、うち1台が歯科医院に突っ込んだ事故が報じられています。近くにいた歩行者が巻き込まれるなど、40代女性2人が病院に搬送されたとされています。",
+            "latest": "2026年10月9日公開時点で、事故の発生と負傷者の搬送が伝えられています。",
+            "next_watch": "事故原因や詳しい状況、負傷者の容体についての続報が出るかが注目点です。",
+            "articles": [
+              {
+                "title": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点 - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+                "published": "Fri, 09 Oct 2026 02:22:13 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5\" target=\"_blank\">乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          }
+        },
+        "review_id": "9e12bcdcd047fd77d728c986",
+        "schema_version": 2,
+        "observed_at": "2026-10-17T21:42:37.310757+00:00",
+        "diagnostics": {
+          "target_event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
+          "target_event_name": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送 - Yahoo!ニュース",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "eeee866d-7be8-410c-9d23-8a9c35babde3",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "札幌市西区で車2台が衝突し、うち1台が歯科医院に突っ込んだ事故の発生が報じられた段階",
+            "summary": "札幌市西区の交差点で乗用車2台が衝突し、うち1台が歯科医院に突っ込んだ事故が報じられています。40代女性2人が病院に搬送されたことまで確認できます。",
+            "latest": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点",
+            "next_watch": "けが人の容体、事故原因、現場対応の続報",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzYkkwNXpVbWNXZzk4ZlVzdjRDQWtxMjhBbXphLWFPS0Z1bkhLTERxcm0ydGRUQkVNbnpsX2cxVzY4WHpzUE1RS3BTZWozRnRFeVQ2b2hIblIyT3FqY3ZrNEdjbG5XZGhvZmZWWFRPYkZFTGFPWUE5MVhVVzlYVVE?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市西区で車2台衝突",
+                    "existing_quote": "札幌市西区で車2台衝突 うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
+                    "incoming_quote": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点"
+                  },
+                  {
+                    "kind": "detail",
+                    "value": "歯科医院に突っ込む",
+                    "existing_quote": "うち1台がはずみで歯科医院に突っ込む 40代女性2人が病院に搬送",
+                    "incoming_quote": "乗用車2台が衝突し大破、うち1台がはずみで歯科医院に突っ込む 近くにいた歩行者が巻き込まれるなど40代女性2人を病院搬送 札幌市西区の交差点"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-17T21:42:37.310757+00:00",
+        "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-17T21:42:37.310757+00:00",
-    "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -293011,7 +293315,7 @@
     },
     "review_id": "7187d049d94c9761cd7c829a",
     "schema_version": 2,
-    "observed_at": "2026-10-18T16:44:51.323328+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -293040,8 +293344,8 @@
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -293111,11 +293415,79 @@
         "last_seen_at": "2026-10-17T21:42:37.310757+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "事故現場での再発防止に向けた現場診断が行われた段階",
+            "summary": "バイクの死亡事故を受け、石狩で札幌北署などが現場診断を実施したことが分かります。記事タイトルから確認できる範囲では、事故後の再発防止対応が進められています。",
+            "latest": "札幌北署などが事故現場を診断した。",
+            "next_watch": "現時点で明確な次の動きは確認できません",
+            "articles": [
+              {
+                "title": "バイク死亡事故 再発防げ 石狩 札幌北署など現場診断 - 北海道新聞デジタル",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5",
+                "published": "Fri, 09 Oct 2026 23:39:40 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5\" target=\"_blank\">バイク死亡事故 再発防げ 石狩 札幌北署など現場診断</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+                "rss_source": {
+                  "name": "北海道新聞デジタル",
+                  "url": "https://www.hokkaido-np.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "7187d049d94c9761cd7c829a",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T16:44:51.323328+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZnF0cS1ydVFhelFIRk5SODZwU2NIUlVTcm5NdW1YblhjX1hLSzZwZHlWeklhQ0R3d3ZhLXhkNkV3T0hHVkUxdWJIdkNyMm5zMUhWNk5zOWRoQQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "uncertain",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [],
+            "identity_matches": [],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-17T21:42:37.310757+00:00",
+        "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-17T21:42:37.310757+00:00",
-    "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -298337,7 +298709,7 @@
     },
     "review_id": "6e27de684acd6cc6ea6eb975",
     "schema_version": 2,
-    "observed_at": "2026-10-18T16:44:51.323328+00:00",
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
     "diagnostics": {
       "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
       "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
@@ -298358,7 +298730,7 @@
         "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
         "summary": "東京のスタートアップ企業ニューモによる新タクシーブランド「エゾタク」が、札幌圏で営業を開始したと報じられています。関連記事では、江別ハイヤーがニューモ傘下に入る動きや、AIを活用した電話応答・配車待ち時間の短縮が取り上げられています。",
         "latest": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
-        "next_watch": "江別ハイヤー買収の進展や、札幌圏での運行体制の拡大が確認できるか",
+        "next_watch": "江別ハイヤーの買収手続きの進展や、札幌圏での運行体制拡大の続報",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -298371,14 +298743,24 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
-                "existing_quote": "タクシー新興企業「ニューモ」、 札幌圏で運行開始 江別ハイヤー買収へ",
+                "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始",
+                "existing_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+                "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+              },
+              {
+                "kind": "entity",
+                "value": "江別ハイヤー買収",
+                "existing_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
                 "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
               }
             ]
           }
         ],
-        "event_identity": {},
+        "event_identity": {
+          "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+          "quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+        },
         "progress_evidence": [],
         "schedules": []
       },
@@ -298386,11 +298768,100 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ - 北海道新聞デジタル",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "企業・組織",
+            "tracking_value": "medium",
+            "current_stage": "札幌圏での運行開始と、江別ハイヤー買収に向けた動きが報じられている段階",
+            "summary": "タクシー新興企業「ニューモ」が札幌圏で運行を始め、江別ハイヤーを買収する方針であることが記事タイトルから分かります。",
+            "latest": "2026年10月8日時点で、ニューモが札幌圏での運行を開始し、江別ハイヤー買収へ進んでいると報じられました。",
+            "next_watch": "江別ハイヤーの買収が実際に完了するか、札幌圏での運行拡大やサービス内容に関する続報があるか注目です。",
+            "articles": [
+              {
+                "title": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ - 北海道新聞デジタル",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+                "published": "Thu, 08 Oct 2026 03:57:33 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5\" target=\"_blank\">タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+                "rss_source": {
+                  "name": "北海道新聞デジタル",
+                  "url": "https://www.hokkaido-np.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "6e27de684acd6cc6ea6eb975",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T16:44:51.323328+00:00",
+        "diagnostics": {
+          "target_event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+          "target_event_name": "新タクシーブランド「エゾタク」の北海道での営業開始",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE01d2k0Wk5Na2dyVVpsS3FRY3hleUE4Vjk1Z2VwUFROWkVFQ1VybEFNZDBhVDVycTdobUZYckFiMVNzcXRSTXBxV21rTER5NXFvQUZXTUVPcnFIZDl0aUJCb09scnhhM0hDSnFOTUdzRThMQjE5eDZuTm82b0R3bTA?oc=5",
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2s5NC0wQThKS184N0ppd3h6bnh4WTY0dktEVnpPQWpCWnprR2N4Z1p4bTFjRmxlZUNPbDhxbE00X2x3RkVyaWxxVENYTG5ZMmJqNkxsckFpVWZiUk1rUURyTDNMZUEtNlRwRnBzR2UyMXVsSUczR0U1VWVDSndMNlhxc0lFeDVXeGFwRHFn?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "北海道での営業開始と運行体制の立ち上げ段階",
+            "summary": "東京のスタートアップ企業ニューモによる新タクシーブランド「エゾタク」が、札幌圏で営業を開始したと報じられています。関連記事では、江別ハイヤーがニューモ傘下に入る動きや、AIを活用した電話応答・配車待ち時間の短縮が取り上げられています。",
+            "latest": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+            "next_watch": "江別ハイヤー買収の進展や、札幌圏での運行体制の拡大が確認できるか",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwWmdpZEZpSFgzSTNMZUdiOWU5dWFqQmZhTXZ5eWgyYWtIZHlOMDRjLTk2b201MnVVc3Rpc2FNaFNWcjZrRmx5dS1hTDhFRXRMNjNwNlVkWVJSUQ?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ",
+                    "existing_quote": "タクシー新興企業「ニューモ」、 札幌圏で運行開始 江別ハイヤー買収へ",
+                    "incoming_quote": "タクシー新興企業「ニューモ」、札幌圏で運行開始 江別ハイヤー買収へ"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-18T16:44:51.323328+00:00",
+        "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-18T16:44:51.323328+00:00",
-    "last_seen_at": "2026-10-18T16:44:51.323328+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -308085,6 +308556,2122 @@
     "observed_at": "2026-10-19T11:49:08.228948+00:00",
     "first_seen_at": "2026-10-19T11:49:08.228948+00:00",
     "last_seen_at": "2026-10-19T11:49:08.228948+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+        "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+        "published": "Mon, 19 Oct 2026 03:18:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\" target=\"_blank\">エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイスの火災による臨時休業と営業再開\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス\", \"existing_quote\": \"札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業\", \"incoming_quote\": \"エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース\"}, {\"kind\": \"detail\", \"value\": \"火災で臨時休業\", \"existing_quote\": \"札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業\", \"incoming_quote\": \"エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース\"}]}]}"
+    },
+    "review_id": "618544bcd69703a1c2383e1c",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.681809+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.681809+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.681809+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+        "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイスの火災による臨時休業と営業再開\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス\", \"existing_quote\": \"札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業\", \"incoming_quote\": \"【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉\"}, {\"kind\": \"detail\", \"value\": \"火災で臨時休業\", \"existing_quote\": \"札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業\", \"incoming_quote\": \"【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉\"}]}]}"
+    },
+    "review_id": "68fc81ee4d5dad76ad4bebe1",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.681999+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.681999+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.681999+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+        "published": "Mon, 19 Oct 2026 03:18:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\" target=\"_blank\">エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5",
+        "published": "Mon, 19 Oct 2026 07:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5\" target=\"_blank\">【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイスのエスカレーター火事と営業再開\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイス\", \"existing_quote\": \"エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース\", \"incoming_quote\": \"【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし\"}, {\"kind\": \"detail\", \"value\": \"エスカレーター火事\", \"existing_quote\": \"エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース\", \"incoming_quote\": \"【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし\"}]}]}"
+    },
+    "review_id": "dea774a9ab1ae08a69ae1933",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682133+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682133+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682133+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "12cb7a1637051e3617864ead",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682165+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682165+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682165+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+        "published": "Mon, 19 Oct 2026 03:18:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\" target=\"_blank\">エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "083310bf4c68d7808660abe4",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682189+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682189+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682189+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+        "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌（１０月２０日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5\" target=\"_blank\">札幌（１０月２０日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "eb27a900ec398d871c041203",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682212+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682212+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682212+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌（１０月２０日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5\" target=\"_blank\">札幌（１０月２０日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 09:32:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5\" target=\"_blank\">札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "233eb343e5bcfe47eb233068",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682233+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682233+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682233+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5",
+        "published": "Mon, 19 Oct 2026 07:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5\" target=\"_blank\">【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8d135fa3a9a428e73a78ef05",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682255+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682255+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682255+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+        "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 05:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5\" target=\"_blank\">救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cb993cd92ffd722697e6b9b9",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682278+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682278+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682278+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:55 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "adad412999cef2ee26fe2447",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682302+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682302+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682302+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌（１０月２０日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1veFB3eUQzSmI0Vlp4dkE5TzdOQnY4NVdsd2x1djRaZHBNdDFmdFNQRGFmeWJrU1NBcnpMTHhFZ3J5YldjdXB5cGlibDNWQm92cGFIR3p4ekZDdw?oc=5\" target=\"_blank\">札幌（１０月２０日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 05:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5\" target=\"_blank\">救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a0257df25090fd6660277c1b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682320+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682320+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682320+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4528c64ba8673757ca903ece",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682344+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682344+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682344+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+        "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5",
+        "published": "Mon, 19 Oct 2026 07:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5\" target=\"_blank\">【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "7b33647fdefa1c65067f9e06",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682364+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682364+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682364+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5",
+        "published": "Sun, 18 Oct 2026 03:30:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5\" target=\"_blank\">「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "215758ed5371095b8625e2b9",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682388+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682388+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682388+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌市北区 新栄荘 - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5",
+        "published": "Mon, 19 Oct 2026 12:24:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5\" target=\"_blank\">札幌市北区 新栄荘</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "厚別区厚別中央３条２丁目一棟マンション - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5",
+        "published": "Mon, 19 Oct 2026 17:21:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5\" target=\"_blank\">厚別区厚別中央３条２丁目一棟マンション</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "7f1b5d7d613933afc582af33",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682411+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682411+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682411+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5",
+        "published": "Mon, 19 Oct 2026 09:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5\" target=\"_blank\">【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "369cd81012b0dd179bfe9b64",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682437+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682437+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682437+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌で公園トイレの蛍光灯１４８本、誰かが勝手に付け替える…「盗難ではなく交換！？」ＳＮＳで反響 - 読売新聞",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JUF9aYzc1WGNmdkVGbWtXWWtyZWpnUkJUMlpyNFVUUVBtd3FYbHZYMEpIZUIxWUUyY1pKRzBQcjBhcFFlRGZqdkgycnRGejJ5aWg1ei1KUGlGemY2QnJDVWpvV09zQQ?oc=5",
+        "published": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JUF9aYzc1WGNmdkVGbWtXWWtyZWpnUkJUMlpyNFVUUVBtd3FYbHZYMEpIZUIxWUUyY1pKRzBQcjBhcFFlRGZqdkgycnRGejJ5aWg1ei1KUGlGemY2QnJDVWpvV09zQQ?oc=5\" target=\"_blank\">札幌で公園トイレの蛍光灯１４８本、誰かが勝手に付け替える…「盗難ではなく交換！？」ＳＮＳで反響</a>  <font color=\"#6f6f6f\">読売新聞</font>",
+        "rss_source": {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fcadb0e0b65572c67cfd861b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682458+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682458+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682458+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5",
+        "published": "Mon, 19 Oct 2026 11:45:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9EMTF6eFZxbkx5akplUXhiOUN1WnNaWF92NDZOQWFiN01KSkJ0UFZOemZocDFqZEwwTC0yNi1aZ0hlQ0o4MmRfUHpQbENsb1RxdFFUQ3VOY0FvWTBHMVRaRDNoaXBHWlVlZHE5bWlqSG93cUJXU1o5dFZCMldpLWc?oc=5\" target=\"_blank\">【札幌の男性が約4300万円”投資”で被害】スマホに動画広告「株価が5倍に増える」→リンク先からLINEグループに→”センセイ”が「絶対に儲かる方法教えます」〈みやぶれ詐欺〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5",
+        "published": "Mon, 19 Oct 2026 09:01:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5\" target=\"_blank\">10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3fa40b57b1139d582fa57ac3",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682481+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682481+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682481+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5",
+        "published": "Sat, 17 Oct 2026 03:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5\" target=\"_blank\">Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「知らない男に殴られた」1人で散歩中の70歳男性がバットのようなもので突然襲われけが フード姿の男が逃走中 札幌市白石区 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5obmZ6WENEbnQ0amtzSWFCZkVfcE5lSHVJUkZqYVlobHZtWW5GUVZXSGU1dDZENEpvVjFZSFJCYWlObGV1LWZaamJGOTdKNFhGY091WVlYTG02VEVMazVxSU9lVk5TYjA?oc=5",
+        "published": "Sun, 18 Oct 2026 06:17:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5obmZ6WENEbnQ0amtzSWFCZkVfcE5lSHVJUkZqYVlobHZtWW5GUVZXSGU1dDZENEpvVjFZSFJCYWlObGV1LWZaamJGOTdKNFhGY091WVlYTG02VEVMazVxSU9lVk5TYjA?oc=5\" target=\"_blank\">「知らない男に殴られた」1人で散歩中の70歳男性がバットのようなもので突然襲われけが フード姿の男が逃走中 札幌市白石区</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ca5fd4e85187f17d183425a2",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682504+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682504+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682504+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:55 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4d1ed9f791d27115621a525a",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682526+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682526+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682526+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5\" target=\"_blank\">「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "札幌市交通資料館 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBSMW90Q1N0OXZFdmVMOWpEMjdlc3kxY1ZzeU1fOFRBbnVKTnp3SUFScGxzNUVHQV9CaGc0Si1UdnFua0NUbE90ZHZNLWVUSGpMY1RVMEh6ZkJmTUJubVQ3UXpjUmFYeENM?oc=5",
+        "published": "Thu, 15 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTFBSMW90Q1N0OXZFdmVMOWpEMjdlc3kxY1ZzeU1fOFRBbnVKTnp3SUFScGxzNUVHQV9CaGc0Si1UdnFua0NUbE90ZHZNLWVUSGpMY1RVMEh6ZkJmTUJubVQ3UXpjUmFYeENM?oc=5\" target=\"_blank\">札幌市交通資料館</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5a2b82ed82adacf0849b91cf",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682563+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682563+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682563+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5\" target=\"_blank\">「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5",
+        "published": "Mon, 19 Oct 2026 09:23:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5\" target=\"_blank\">【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "95e65f12dc95ac6da50d9d81",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682587+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682587+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682587+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌市北区 新栄荘 - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5",
+        "published": "Mon, 19 Oct 2026 12:24:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5\" target=\"_blank\">札幌市北区 新栄荘</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト - rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5",
+        "published": "Mon, 19 Oct 2026 17:36:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5\" target=\"_blank\">【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト</a>  <font color=\"#6f6f6f\">rakumachi.jp</font>",
+        "rss_source": {
+          "name": "rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "018a75b91c75685a232a5e9d",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682611+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682611+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682611+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5\" target=\"_blank\">「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5\" target=\"_blank\">ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1332a242c37e09b7c01605f8",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682634+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682634+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682634+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5\" target=\"_blank\">「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b66a436732512231278c4dbd",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682655+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682655+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682655+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5",
+        "published": "Mon, 19 Oct 2026 11:10:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE4zenRKN0xEd05CcWZUemJyZmpnMUNibzdCZmM5OE9qbVhyZ2NydUR3MkpiOWZzVm9FZDVnMGtkNDVkYXZkTXVxNWFwZHlyLWpyOTdYdmZTaXI2Z0dUNFpmZkJpWkFyR29FcDRsSnRrYw?oc=5\" target=\"_blank\">「駐車場の近くに徘徊しています」住宅街で“巨大角シカ”出没 庭に居座るも被害なし 体長1m以上のオス 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1b5a35d0d770d95d6c9b7a9b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682676+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682676+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682676+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5\" target=\"_blank\">ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b10d11ed1c59dff14955999c",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682700+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682700+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682700+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+        "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5",
+        "published": "Sun, 18 Oct 2026 03:30:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5\" target=\"_blank\">「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cea7827d280c0529e5516bf6",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682722+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682722+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682722+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5",
+        "published": "Sat, 17 Oct 2026 03:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5\" target=\"_blank\">Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "65d28a2c7eaae920bc05d6c3",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682747+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682747+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682747+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース - PR TIMES",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5",
+        "published": "Mon, 19 Oct 2026 03:00:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5\" target=\"_blank\">「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース</a>  <font color=\"#6f6f6f\">PR TIMES</font>",
+        "rss_source": {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "06a320b54ba1fbe2986f65a6",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682769+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682769+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682769+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2f9888eb516e4b4ff9b9c56b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682787+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682787+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682787+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5",
+        "published": "Mon, 19 Oct 2026 07:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1mMzZoNzJ0RFJjVF81a0t4bzR4ZHNUYVBLQ0RVTldkWTlSX3JzanRSSUFHNXBVMlNaZjRFNXhjbnU3dG9hSU1ab2owaG1IR1RCckpnVnZRdDF0TlR3MDZtdVk3dm1pQ3BBSkNNRmN3?oc=5\" target=\"_blank\">【札幌ステラプレイス】火事から全館営業再開 エスカレーター内部に燃えた形跡 先月の点検では異常なし</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9wZmYwYzJ6WDRkcklkU2U4MnlxV2FYQ1Bld2tRS2VsQTg1THBqVkx1MmhaMENEYWNIemxyeTZzYnlmaXR3MlNnbV84cjlPMXRqQ2pDVU1ObElxTUdubW5JdUYyVEFXQU5nNnRScEd3?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9wZmYwYzJ6WDRkcklkU2U4MnlxV2FYQ1Bld2tRS2VsQTg1THBqVkx1MmhaMENEYWNIemxyeTZzYnlmaXR3MlNnbV84cjlPMXRqQ2pDVU1ObElxTUdubW5JdUYyVEFXQU5nNnRScEd3?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f3f98427309851ba795b43ff",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682808+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682808+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682808+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「知らない男に殴られた」1人で散歩中の70歳男性がバットのようなもので突然襲われけが フード姿の男が逃走中 札幌市白石区 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5obmZ6WENEbnQ0amtzSWFCZkVfcE5lSHVJUkZqYVlobHZtWW5GUVZXSGU1dDZENEpvVjFZSFJCYWlObGV1LWZaamJGOTdKNFhGY091WVlYTG02VEVMazVxSU9lVk5TYjA?oc=5",
+        "published": "Sun, 18 Oct 2026 06:17:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5obmZ6WENEbnQ0amtzSWFCZkVfcE5lSHVJUkZqYVlobHZtWW5GUVZXSGU1dDZENEpvVjFZSFJCYWlObGV1LWZaamJGOTdKNFhGY091WVlYTG02VEVMazVxSU9lVk5TYjA?oc=5\" target=\"_blank\">「知らない男に殴られた」1人で散歩中の70歳男性がバットのようなもので突然襲われけが フード姿の男が逃走中 札幌市白石区</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1d1bc1d7e68ee894b70d2cde",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682827+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682827+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682827+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5",
+        "published": "Sat, 17 Oct 2026 03:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5\" target=\"_blank\">Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5",
+        "published": "Mon, 19 Oct 2026 09:01:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5\" target=\"_blank\">10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "43dff9775db0b462508f0f01",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682848+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682848+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682848+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5",
+        "published": "Sat, 17 Oct 2026 03:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwV205VHEzQWxoYUQySmNuWXZsVWpjbUhwclFDT1V3b0JVc2xUY1psRU93MF9oVVNBQWtYWmVxcDNJREhUcm1UeUJ0QmVmOVJLcVJORTdEQlFXVm1Ea0llTVA2bE5pM3c?oc=5\" target=\"_blank\">Snow Man（スノーマン）ドームツアー札幌公演で臨時シャトルバスが運行へ 地下鉄真駒内駅・南郷18丁目駅～会場を往復 10月30日～11月1日</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2ae85908a7344fc3d52bf39f",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682868+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682868+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682868+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌市北区 新栄荘 - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5",
+        "published": "Mon, 19 Oct 2026 12:24:08 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21CYV91cXYwY2NNb0ttc19RVTRFVDlSQ09vdEk5QzVOZHgxcVp4WmhJR1hfZElyamxkZ0hNdDJoWFV1LV9adFRONTYycDQ1eHpaMGhNUzdmUVgzcHFoVklxN2tNaWhJU2JIVXV0dEFMdHNzb3NXUUtGQlg1NVpuZ09FYXNYeXZJRmc?oc=5\" target=\"_blank\">札幌市北区 新栄荘</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5d5a9cdb2a4b1fd350a90064",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682888+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682888+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682888+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "厚別区厚別中央３条２丁目一棟マンション - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5",
+        "published": "Mon, 19 Oct 2026 17:21:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5\" target=\"_blank\">厚別区厚別中央３条２丁目一棟マンション</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6e8d71c45fa35fd5aad54bfb",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682907+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682907+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682907+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌(道央)の過去の天気(実況天気・2026年10月) - tenki.jp",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5",
+        "published": "Sun, 18 Oct 2026 06:31:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tdmltYWlKaUtzWEs1NHR1LUxBWUJmS2JVTWVMekM5cWd1NGpZTzhGbGdreDRWVlFSOU5GVXFTSjlab1B5bkNfbHo3SHpuWnNKQXdfRHg3cktqRzgz?oc=5\" target=\"_blank\">札幌(道央)の過去の天気(実況天気・2026年10月)</a>  <font color=\"#6f6f6f\">tenki.jp</font>",
+        "rss_source": {
+          "name": "tenki.jp",
+          "url": "https://tenki.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト - rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5",
+        "published": "Mon, 19 Oct 2026 17:36:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5\" target=\"_blank\">【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト</a>  <font color=\"#6f6f6f\">rakumachi.jp</font>",
+        "rss_source": {
+          "name": "rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "103be7ef4a84e6ae2bdb47ca",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682927+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682927+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682927+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9wZmYwYzJ6WDRkcklkU2U4MnlxV2FYQ1Bld2tRS2VsQTg1THBqVkx1MmhaMENEYWNIemxyeTZzYnlmaXR3MlNnbV84cjlPMXRqQ2pDVU1ObElxTUdubW5JdUYyVEFXQU5nNnRScEd3?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9wZmYwYzJ6WDRkcklkU2U4MnlxV2FYQ1Bld2tRS2VsQTg1THBqVkx1MmhaMENEYWNIemxyeTZzYnlmaXR3MlNnbV84cjlPMXRqQ2pDVU1ObElxTUdubW5JdUYyVEFXQU5nNnRScEd3?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:55 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "55eb6e5bd244cd56c9f1a760",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682947+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682947+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682947+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5",
+        "published": "Mon, 19 Oct 2026 13:03:55 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5saWQyTVE0NGlYQnJrTFBRRzcwd1pwbUJzNllWOTYwN3JOVW93Q01jUHpwcjRwZkF5bnI1anVuTXYwVkQwajJRby1XdEFwNjRoWEY4bG8wQXhielpJZldfMHZhZTRzYUVSWjhqTVMtV0ZFdllmT28tdXFheTdnaFU?oc=5\" target=\"_blank\">サッポロファクトリーで巨大ツリー点灯 高さ15メートル、電飾5万個（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5",
+        "published": "Sun, 18 Oct 2026 03:30:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVVlYLWdrY1NBeVo5ZE9RVUZ2aDVSSGJRbUUxX0JjclhuV3o1V0hVWGdka3hfdVpXZUdhRjM3d2FqUXVRNENwajFjbHlZMmViUlFvNk9EX3RPQm8xM3pnUy1ZMExJS1Qzc01SV2pXeFFZd2Q0VzBsd2hlc1czQm8?oc=5\" target=\"_blank\">「感慨深いです。」 大きさはふつうのキャベツのおよそ１０倍…札幌の伝統野菜「札幌大球」収穫が行われる</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "05641cf67b23cf8efbd67371",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682970+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682970+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682970+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5",
+        "published": "Mon, 19 Oct 2026 09:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5\" target=\"_blank\">【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5",
+        "published": "Mon, 19 Oct 2026 09:23:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5\" target=\"_blank\">【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "026d9666e19a2bd4b60361a1",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.682996+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.682996+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.682996+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5",
+        "published": "Mon, 19 Oct 2026 09:44:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBwd0lZMG1tbl9DMXVyZnBGRk0tQXJqSEZjMU5rbzdmNFNwa1JGbE9vcUJKWk4wcm1sT2xMMWU5Z0NUUDdmSW9EbjdxZURaTkFvZlZ5eEsxUVFnMHExUzNFTkR6R1k5czlaSHpaLTl2TGpfby1WcjQ5VjdTZ9IBgAFBVV95cUxOYndXenRhYkZaZTlrZUowcEFYRjdFRUVMTE5FLU9NaVNaQ0lzdTBhVmZvbUtiNlAwX1BKY2FzVWprd0hOT1hZUmtTNmcwRzFMQ2ZCZ25RdTBMaVd1MkgtZEZiZXRYLTg0RGxJejAwOFI1M21DWF9SdUF4SU04N2lDSA?oc=5\" target=\"_blank\">【解説】11月までライブ集中　SnowManに合わせ臨時便も　JRは札幌駅から夜の便を増便</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5\" target=\"_blank\">ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ac68da6cf1803f3d196db262",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683021+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683021+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683021+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5",
+        "published": "Mon, 19 Oct 2026 09:01:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WVDJ1TFY1S1pKT0VHLUFVb0pkaG9qbThhT0JMS3BwUFE1Y2VVZk9BaTZzbkdYdHJsWDd0R0dOMlJxUjlMZzBETklZOTVodVF3eHpnWGpZM01KWkFIVGNUbVpn?oc=5\" target=\"_blank\">10/31(土)湘南戦：「SCOグループ Connect Dreams for 105 Years Match」の開催について</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース - PR TIMES",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5",
+        "published": "Mon, 19 Oct 2026 03:00:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5\" target=\"_blank\">「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース</a>  <font color=\"#6f6f6f\">PR TIMES</font>",
+        "rss_source": {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e9b435fde9201c9340606d09",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683042+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683042+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683042+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 09:32:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5\" target=\"_blank\">札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 05:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrM2VVRVd4SElBekdncHRTbEVjcVFLVkF6OW9EVEFfWW5UUklMQ0huZl9yMmEtaHVrZUpoS25QdHVScTNBeFp6RWNKOXhxSGcwdGVfVUU5TGc5QQ?oc=5\" target=\"_blank\">救命措置、望まぬ場合は中止へ みとり想定の傷病者 札幌市消防局が新ルール</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d6d5800974840e3876a4b13c",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683062+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683062+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683062+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5",
+        "published": "Mon, 19 Oct 2026 09:32:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5\" target=\"_blank\">札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5",
+        "published": "Mon, 19 Oct 2026 09:23:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5\" target=\"_blank\">【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8802748cdf75b9bd71090359",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683083+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683083+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683083+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5",
+        "published": "Mon, 19 Oct 2026 09:23:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9od0FMQmhKeUwwTzNwV3JxRmphUXZxUU9PcjhxN1FkdEtrRFZ2NjhBaEJfcDlhNUpkaHlZZ2o0bHlTalhwLVN5cDhnb3E1aWpQaUNaemJ2NE9RcHdDcTRJeGU1TkZIZldWNi1vRNIBckFVX3lxTE5xMktZc1BMT3FaVmZCYWZqQnZpejJhdnRPUFhic1Q1VjBpT3NlMGMwU2hRTHV1QVF4T2MwX1FEbi1DdTF1T2szR3BBamxxWXktYVJtdTNTZ3p2ZWpZanRPajJ6aTNlVFdMTVpUVUh0ajN1dw?oc=5\" target=\"_blank\">【現場からリポート】札幌・東区の住宅街にシカ「駐車場にシカがいる！」午後3時半ごろから居座る</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxOc2ZFSThzdTV3b1lWaXFORU5kUEFRQjJ2aDZ2bVljT0RGZ3R5LWxKa3J4QjNmM3JEZ3IxUUhOdVYzY1ByUnp2bDY4bG5sbFp4d0VOREEyUVpxSUh1SUtWZ015NFV6bnFJaGlZLVVjdjZ1enQtYU55MXdwU0dKLVdpQTd2OVNSN2PSAYABQVVfeXFMTjZjOHJUQThVb2Zrb2VuVDhEbE8zMmlBZkJDN0lYZDdfcjJxLUdsN19id21FTEY1R0ZfZ2p0b2NuVVdHU19ERGR1YXZUYkhYVlFja1l2REM2d2FzTFBqVWJ5X2IzTmRSSTFKQko5ZVVFWnRxMzdtX1dGY3gwTEJXeTI?oc=5\" target=\"_blank\">ライブで宿泊難民相次ぐ札幌　シェアオフィスで受け入れも「ホテル料金より安く」商機見出す新たな動き</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2be3cc9e2246752d56aa3fd9",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683105+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683105+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683105+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース - PR TIMES",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5",
+        "published": "Mon, 19 Oct 2026 03:00:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5\" target=\"_blank\">「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース</a>  <font color=\"#6f6f6f\">PR TIMES</font>",
+        "rss_source": {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5\" target=\"_blank\">ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c2aa06e005faf9bee1d8e99f",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683125+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683125+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683125+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース - PR TIMES",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5",
+        "published": "Mon, 19 Oct 2026 03:00:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbFlFQUpzM2wySWNZeTMxTTZfU0Q2aHBMRjRWVnBpMnprNVVwSTJ6TEc0cVFra2VadUxxeXZSM09SZDc3cENvbi12bkVNRlM1TlVBY2piX2ZiU0xGN0N1QlZaT3JJNWJhSHc?oc=5\" target=\"_blank\">「JUMP SHOP」が手がけるライフスタイルブランド『RofJ BY JUMP SHOP』が北海道・札幌に初出店! 2026年10月31日(土)より札幌PARCOにて期間限定オープン! | ベネリック株式会社のプレスリリース</a>  <font color=\"#6f6f6f\">PR TIMES</font>",
+        "rss_source": {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4341c4290c707362d4dacb2b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683147+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683147+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683147+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZEVBRHd4SlJybWNxaUtzc0pFUUhYaG5fS3p4X2VzbEEwVERwQ1JlQUFLdzJ6U2lENDByZTZIcVNrVHBVUk9SaUwyVGZaS0RIbGY3X3hZMjNIYy1SdmZwY2JXaTZlbWVrVEJwOTlIR09MMlJXdy11WE1xMTdiWWs?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8b37ccbff87ea75f1bde75a4",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683167+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683167+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683167+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "厚別区厚別中央３条２丁目一棟マンション - www.rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5",
+        "published": "Mon, 19 Oct 2026 17:21:45 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEp2OTZKWUFMcEktX09tS0FrVDAxdnRXN1VJUndEbkhwOG9aM0dfSVVfRzI2SVJZcl80c1MzbHdxNGE1c2s3Nm9icTNWTk1NNGhQSWdGT0p1UVh0eGRPS2FiNVc1UGRsM3FMTmtCQnM3UG9hM3ZMSm1MMnN6Y284X0g4VzRPZ0l0Wnc?oc=5\" target=\"_blank\">厚別区厚別中央３条２丁目一棟マンション</a>  <font color=\"#6f6f6f\">www.rakumachi.jp</font>",
+        "rss_source": {
+          "name": "www.rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト - rakumachi.jp",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5",
+        "published": "Mon, 19 Oct 2026 17:36:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNbkFHSEwyRk9CX0JvcG4yUTdnU1FPMW9XYnBBMnFsQ2xRMjd1a1NQTWVYcXFNdFZNZ2pVcHN4RE5BTkdkRE84QU44Y3FIN0N5djU2SVVkeHQwN2d1a05RNUFIbWVOZE53WnhCcmhVcXlkNXJ3Qkh3NmM0cHQ0X3dvQ3VQZ1ROcG91cUE?oc=5\" target=\"_blank\">【楽待】北海道札幌市豊平区 1棟マンション | 収益物件数No.1不動産投資サイト</a>  <font color=\"#6f6f6f\">rakumachi.jp</font>",
+        "rss_source": {
+          "name": "rakumachi.jp",
+          "url": "https://www.rakumachi.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8d5c85f8a8e8b436ca54c18d",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683188+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683188+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683188+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載） - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5",
+        "published": "Mon, 19 Oct 2026 08:16:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE02S0dvVEExUWhGeEZ4d0pPNG4wMTdTYzF3dDBvSGhReGRDSFVPV1VESzU1QWV0dXZKSmhCUU4zRjBhSkEzVjlDcWJReXZvNVlzdGs3cW5fdklsRkx1R0xCd29obm9qcnJpRUZ4QXFOeFNHdkVPTFB1dDRyaGU1dVk?oc=5\" target=\"_blank\">キョロキョロ警戒する様子も オスのシカが住宅街で徘徊 １日かけて３キロほど移動か 札幌市東区（2026年10月19日掲載）</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5",
+        "published": "Mon, 19 Oct 2026 09:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9IdWh6cy13R21INmRkU2x1MEZSc1VoVmVKQWJPMFFPVlE1UzR2UlJ1ZmNza0lodjFCaHlkV0t5VHMwQVhodVV3X09GOWVoTzhOdGhxVElxaFhxUWpUX0E?oc=5\" target=\"_blank\">ライブが集中する札幌で、宿泊難民のファンを受け入れる新たな動きが広がる (2026年10月19日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2fc59a24a9e55de85f63a631",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:32.683207+00:00",
+    "first_seen_at": "2026-10-19T18:57:32.683207+00:00",
+    "last_seen_at": "2026-10-19T18:57:32.683207+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+          "articles": [
+            {
+              "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+              "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末 - 北海道新聞デジタル",
+          "articles": [
+            {
+              "title": "札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末 - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5",
+              "published": "Mon, 19 Oct 2026 09:32:45 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QemZnQkxDV2JPWUNOY0tIVDU0RFc0MUdOVDVOcWxlWEtvek1FbTlVaWlMNktLUjI1UVZxYmc0akRuYUh2NVBPVk9TeHpGS3J2U2o3Y0JOSXk3QQ?oc=5\" target=\"_blank\">札幌・東区にシカ 住宅敷地内にとどまる 店舗駐車場から2.5キロ移動の末</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "83973692165888b5003b4b4b",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:33.176194+00:00",
+    "first_seen_at": "2026-10-19T18:57:33.176194+00:00",
+    "last_seen_at": "2026-10-19T18:57:33.176194+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+          "articles": [
+            {
+              "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+              "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース - Infoseek",
+          "articles": [
+            {
+              "title": "エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース - Infoseek",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5",
+              "published": "Mon, 19 Oct 2026 03:18:45 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1Mb3RvMnJWN3RGckgtSUYyX2YydW95UFZtNmkySWRpUzdDdDJkM2h3ME9xclNlU1RSOV9vMkZseWZiNERFLUg1NVNWTnliQVNPdFVvNTE0Yk5KcTlIUVUzUkxfWHp2Q1BJU2pNeQ?oc=5\" target=\"_blank\">エスカレーター火事で休業の札幌ステラプレイス、今日19日から営業再開 一部エスカレーターは停止続く｜Infoseekニュース</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+              "rss_source": {
+                "name": "Infoseek",
+                "url": "https://news.infoseek.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "86490989e7d2b633fb8524af",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:36.458664+00:00",
+    "first_seen_at": "2026-10-19T18:57:36.458664+00:00",
+    "last_seen_at": "2026-10-19T18:57:36.458664+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+          "articles": [
+            {
+              "title": "札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業 - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5",
+              "published": "Fri, 16 Oct 2026 09:33:05 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HQ01nbFhhQlpuTXdoWmJnOTdHNGpnQkFxZURvdVM1Y1pBRjczOEFtclR5ZHNBTFhucjBWVjVLblhFMlV4Skl3Z0xldzQ5c1dhclJvMzA2c0NuUQ?oc=5\" target=\"_blank\">札幌ステラプレイス、19日再開 一部店舗は17日から 火災で臨時休業</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5",
+              "published": "Mon, 19 Oct 2026 10:30:02 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5zUnROcUV4OVhRM2lLRU1XMUlUU2FwT3lRTnlTRWFXcUpfQUstY0dvbWZFbjdLaGlLaWhFRjhiQk1PZzZ5SmZ1M1YtUWlIYnpyWHd2eHMzLVJld3QxMGFOMkExN3lFWHRVSGRFcGd3b1dmRWJXN0FLM281bzg3eE0?oc=5\" target=\"_blank\">【火災から5日】札幌ステラプレイスが”全面営業再開”出火当時700～800人が避難も「ケガ人なし」スムーズな避難の背景に『訓練』あり→火災発生6日前にも実施→防災意識高まる〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "0a12b9f4c1af36c9020d51c6",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:39.572891+00:00",
+    "first_seen_at": "2026-10-19T18:57:39.572891+00:00",
+    "last_seen_at": "2026-10-19T18:57:39.572891+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "budget_deferred",
+    "payload": {
+      "remaining_from": [
+        0,
+        4
+      ],
+      "group_count": 29
+    },
+    "review_id": "0c30709b651bd43d0348bec3",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:39.594449+00:00",
+    "first_seen_at": "2026-10-19T18:57:39.594449+00:00",
+    "last_seen_at": "2026-10-19T18:57:39.594449+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "容疑者逮捕段階",
+        "summary": "札幌市で、倉庫への侵入と工具窃盗の疑いで30歳の男が逮捕されたとする記事です。記事タイトルからは、リサイクルショップ店員が通報のきっかけになったことが確認できます。",
+        "latest": "30歳男が倉庫侵入・工具窃盗の疑いで逮捕されたこと。",
+        "next_watch": "現時点で明確な次の動きは確認できません。",
+        "articles": [
+          {
+            "title": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+            "published": "Sat, 10 Oct 2026 02:28:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5\" target=\"_blank\">「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+            "rss_source": {
+              "name": "TBS NEWS DIG",
+              "url": "https://newsdig.tbs.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "4e206e8565f86d78d6dbfa60",
+    "schema_version": 2,
+    "observed_at": "2026-10-19T18:57:50.580384+00:00",
+    "diagnostics": {
+      "target_event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+      "target_event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - TBS NEWS DIG",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "逮捕",
+        "summary": "札幌市で、倉庫侵入と工具窃盗の疑いで30歳の男が逮捕された段階です。",
+        "latest": "リサイクルショップ店員が通報し、倉庫侵入・工具窃盗の疑いで30歳男逮捕",
+        "next_watch": "捜査の進展、送検・起訴の有無",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DdzVYRFVCZkpaVkRhVXJTNzZXcG9UVGQ0WHdLcGpqbnN2SVJNcjAtTXVrOFlQaGEzdU9TREhLX2NNNzJxaGZoLVljRW5wRTFkZkpxZ2Fxb1pzUXkwU19VVDJvRGQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "倉庫侵入・工具窃盗の疑い",
+                "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+              },
+              {
+                "kind": "entity",
+                "value": "30歳男",
+                "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 2
+    },
+    "first_seen_at": "2026-10-19T18:57:50.580384+00:00",
+    "last_seen_at": "2026-10-19T18:57:50.580384+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
