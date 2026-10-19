@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T16:50:58.202212+00:00",
+  "updated_at": "2026-10-19T17:44:59.955903+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 1297,
+  "waiting_article_count": 1300,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 237.23,
+  "oldest_wait_hours": 238.13,
   "stages": {
     "collection": {
-      "group_count": 26,
-      "article_count": 26,
-      "oldest_wait_hours": 6.05
+      "group_count": 29,
+      "article_count": 29,
+      "oldest_wait_hours": 6.95
     },
     "status_generation": {
       "group_count": 1210,
       "article_count": 1222,
-      "oldest_wait_hours": 232.04
+      "oldest_wait_hours": 232.94
     },
     "tracking": {
       "group_count": 49,
       "article_count": 49,
-      "oldest_wait_hours": 237.23
+      "oldest_wait_hours": 238.13
     }
   },
   "manual_review_counts": {
@@ -27,7 +27,7 @@
     "tracking": 41
   },
   "collection_retained_counts": {
-    "queued": 599,
+    "queued": 602,
     "classified_waiting": 5,
     "duplicate_source": 90,
     "out_of_scope": 33,
@@ -39,7 +39,8 @@
   "daily_network_calls": 0,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours"
+    "oldest_wait_at_least_48_hours",
+    "waiting_increased_three_observations"
   ],
   "daily_tracking_network_calls": 0,
   "daily_tracking_accounted_usd": 0.0,
