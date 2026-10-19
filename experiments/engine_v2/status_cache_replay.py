@@ -151,6 +151,19 @@ def answer_identity(payload):
     return digest({'completion': diagnostics.completion(payload), 'answer': answer})
 
 
+def response_hash(db, meta, *, mock=None, legacy=None):
+    legacy = legacy or {}
+    row = db.execute('SELECT payload,answer_hash FROM status_exact_cache WHERE binding=?', (digest(meta),)).fetchone()
+    if row:
+        payload = json.loads(row[0])
+        if digest(payload) != row[1]: return digest({'bad_checksum': digest(payload)})
+        return digest({'answer': answer_identity(payload), 'bound': True})
+    if mock and meta['request_hash'] in mock.answers:
+        return digest({'answer': answer_identity(mock.answers[meta['request_hash']]), 'bound': True})
+    if meta['request_hash'] in legacy:
+        return digest({'answer': answer_identity(legacy[meta['request_hash']]), 'bound': False})
+    return None
+
 def run(db, groups, now, *, triage=None, registry=None, raw_legacy_cache=None,
         cache_first=True, cache_limit=16, scan_limit=2000, processing_limit=4,
         mock=None, fail_save=False, observed_ledger=None):
@@ -168,20 +181,9 @@ def run(db, groups, now, *, triage=None, registry=None, raw_legacy_cache=None,
     initialize(db)
     triage, registry, legacy = triage or {}, registry or {}, raw_legacy_cache or {}
     queue = [copy.deepcopy(g) for g in groups]
-    def response_hash(meta):
-        row = db.execute('SELECT payload,answer_hash FROM status_exact_cache WHERE binding=?', (digest(meta),)).fetchone()
-        if row:
-            payload = json.loads(row[0])
-            if digest(payload) != row[1]: return digest({'bad_checksum': digest(payload)})
-            return digest({'answer': answer_identity(payload), 'bound': True})
-        if mock and meta['request_hash'] in mock.answers:
-            return digest({'answer': answer_identity(mock.answers[meta['request_hash']]), 'bound': True})
-        if meta['request_hash'] in legacy:
-            return digest({'answer': answer_identity(legacy[meta['request_hash']]), 'bound': False})
-        return None
 
     metas = [binding(db, g, triage, registry) for g in queue]
-    keys = [digest({'binding': meta, 'answer_hash': response_hash(meta)}) for meta in metas]
+    keys = [digest({'binding': meta, 'answer_hash': response_hash(db, meta, mock=mock, legacy=legacy)}) for meta in metas]
     if len(keys) != len(set(keys)): raise ValueError('duplicate queue entry')
     metrics = dict(cache_checked=0, cache_validated=0, rejected=0, legacy_unknown=0,
                    processing_used=0, mock_requests=0, new_results=0)
