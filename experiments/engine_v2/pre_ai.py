@@ -9,13 +9,14 @@ import html
 import json
 import re
 import sqlite3
+import scope_protection
 from collections import defaultdict
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-RULE_VERSION = 'pre-ai-scope-1'
+RULE_VERSION = 'pre-ai-scope-2'
 JST = timezone(timedelta(hours=9))
 FIELDS = ('url', 'title', 'description', 'published')
 # Protection takes precedence over ALL light-topic signals. False positives are
@@ -41,7 +42,7 @@ def digest(x):
 
 
 def rule_id():
-    return RULE_VERSION + ':' + hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    return RULE_VERSION + ':' + digest([hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), scope_protection.revision()])
 
 
 def version_id(article):
@@ -75,25 +76,30 @@ def jst_day(value):
 def classify(article):
     title = article.get('title')
     desc = article.get('description', '')
-    # HTML tags removed ONLY for scope screening; strict grouping uses originals.
-    text = html.unescape(re.sub(r'<[^>]*>', ' ', (title if isinstance(title, str) else '') + '\n' + (desc if isinstance(desc, str) else '')))
-    protected = PROTECT.search(text)
+    # Guard both fields before considering any ordinary-topic candidate.
+    text = '\n'.join(value for _, value in scope_protection.fields(title, desc))
+    protection = scope_protection.assess(title, desc, PROTECT)
     missing = not isinstance(title, str) or not title.strip()
     candidate = None
-    signals = [protected.group()] if protected else []
-    if not missing and not protected and not AMBIGUOUS.search(text):
+    signals = [r['signal'] for r in protection['signals']]
+    if not missing and protection['status'] is None and not AMBIGUOUS.search(text):
         for subtype, topic, context in [('sports', SPORT, RESULT), ('product', PRODUCT, PROMO),
                                          ('event', EVENT, ANNOUNCE), ('celebrity', CELEB, LIGHT_NEWS)]:
             if topic.search(text) and context.search(text):
                 candidate = subtype
                 signals = [topic.search(text).group(), context.search(text).group()]
                 break
-    # A token is a conservative protection signal, not proof of factual accuracy.
-    status = 'hold' if missing else 'inside' if protected else 'outside_candidate' if candidate else 'hold'
-    return {'status': status, 'subtype': candidate, 'protected': bool(protected),
-            'reason': 'missing_title' if missing else 'protected_scope_signal' if protected else 'topic_and_context' if candidate else 'scope_unconfirmed',
+    mixed = bool(candidate and scope_protection.mixed_topic_uncertain(title, desc,
+        [SPORT, RESULT, PRODUCT, PROMO, EVENT, ANNOUNCE, CELEB, LIGHT_NEWS]))
+    status = ('hold' if missing else protection['status'] if protection['status'] is not None
+              else 'hold' if mixed else 'outside_candidate' if candidate else 'hold')
+    reason = ('missing_title' if missing else protection['reason'] if protection['status'] is not None
+              else 'mixed_topic_unconfirmed' if mixed else 'topic_and_context' if candidate else 'scope_unconfirmed')
+    return {'status': status, 'subtype': candidate if status == 'outside_candidate' else None,
+            'protected': protection['status'] == 'inside', 'reason': reason,
             'basis': 'saved_headline_and_rss_only', 'body_verified': False,
-            'matched_signals': signals,
+            'matched_signals': signals, 'protection_contexts': protection['signals'],
+            'uncertainty_contexts': protection['cautions'],
             'article_version': version_id(article), 'rule_id': rule_id(),
             'recheck_on': ['article_revision', 'rss_source_change', 'rule_change', 'operator_override', 'new_evidence'],
             'safe_exclusion_confirmed': False}
