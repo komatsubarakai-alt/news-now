@@ -192,7 +192,7 @@ def run_status(db, groups, now, *, operation_id, ledger, triage=None, registry=N
         return result
 
 
-def plan_tracking(due_jobs, normal_jobs, ledger, now, *, call_limit=8):
+def plan_tracking(due_jobs, normal_jobs, ledger, now, *, call_limit=8, retry_db=None):
     """One due job (up to two known AI prompts) and at least one normal job.
 
     No news finder/transport. Caller supplies saved prompt sizes, never estimates
@@ -204,7 +204,7 @@ def plan_tracking(due_jobs, normal_jobs, ledger, now, *, call_limit=8):
     if type(call_limit) is not int or not 0<=call_limit<=8: raise ValueError('invalid tracking call limit')
     # tracking_calls includes this run's prior tracking traffic; never grant a fresh eight.
     call_limit=min(call_limit,max(0,8-ledger.get('run',{}).get('tracking_calls',0)))
-    selected=[];waiting={};env=Envelope(ledger,now);seen=set();dues=[];normals=[]
+    selected=[];waiting={};retry_decisions={};env=Envelope(ledger,now);seen=set();dues=[];normals=[]
     for jobs,dest in ((due_jobs,dues),(normal_jobs,normals)):
         for job in jobs:
             ident=job['id']
@@ -215,7 +215,21 @@ def plan_tracking(due_jobs, normal_jobs, ledger, now, *, call_limit=8):
             sizes=job.get('prompt_bytes')
             if not isinstance(sizes,list) or not sizes or any(type(x) is not int or x<0 for x in sizes):
                 waiting[ident]=['unknown'];continue
-            dest.append((job,sum(reservation(x) for x in sizes),len(sizes)))
+            amount=sum(reservation(x) for x in sizes)
+            if retry_db is not None:
+                import tracking_retry as retry
+                context=job.get('retry_context')
+                if context is not None and ((dest is dues)!=(context.get('stage') in {'schedule_selection','schedule_analysis'})):
+                    raise ValueError('retry stage mismatch')
+                if context is not None and job.get('event_id')!=context.get('event_id'):
+                    raise ValueError('retry target mismatch')
+                decision=retry.gate(retry_db,context,now,run_id=ledger.get('run',{}).get('id'),
+                                    resources_available=(not env.causes(amount,len(sizes),tracking=True)
+                                                         and len(sizes)<=call_limit))
+                retry_decisions[ident]=decision
+                if not decision['allowed']:
+                    waiting[ident]=['retry_suppressed',decision['cause']];continue
+            dest.append((job,amount,len(sizes)))
     def take(entry):
         job,amount,calls=entry
         causes=(['processing_slots'] if env.calls+calls>call_limit else [])+env.causes(amount,calls,tracking=True)
@@ -230,10 +244,10 @@ def plan_tracking(due_jobs, normal_jobs, ledger, now, *, call_limit=8):
     for entry in normals: take(entry)
     return {'selected':selected,'due_selected':int(admitted),'wait_reasons':waiting,
             'reservation_micro_usd':env.reserved,'reserved_calls':env.calls,
-            'actual_network_calls':0,'can_publish':False}
+            'retry_decisions':retry_decisions,'actual_network_calls':0,'can_publish':False}
 
 
-def scheduled_jobs(saved_events, now, prompt_sizes=None):
+def scheduled_jobs(saved_events, now, prompt_sizes=None, retry_contexts=None):
     """Use existing due-date rules; missing saved search inputs remain unknown."""
     from tracking_v1 import scheduled_search_due
     due=[e for e in saved_events if scheduled_search_due(e,now)]
@@ -241,12 +255,14 @@ def scheduled_jobs(saved_events, now, prompt_sizes=None):
     due.sort(key=lambda e: (date_time(e.get('last_schedule_search_at')) or
                             date_time('1970-01-01T00:00:00+00:00'), e['event_id']))
     return [{'id':'schedule:'+e['event_id'],'event_id':e['event_id'],
-             'prompt_bytes':(prompt_sizes or {}).get(e['event_id'])} for e in due]
+             'prompt_bytes':(prompt_sizes or {}).get(e['event_id']),
+             **({'retry_context':retry_contexts['schedule:'+e['event_id']]}
+                if retry_contexts and 'schedule:'+e['event_id'] in retry_contexts else {})} for e in due]
 
 
 def run_round(db, groups, saved_events, normal_jobs, now, *, operation_id, ledger,
               schedule_prompt_sizes=None, triage=None, registry=None,
-              raw_legacy_cache=None, mock=None, fail_save=False):
+              raw_legacy_cache=None, mock=None, fail_save=False, retry_contexts=None):
     """Share ONE projected ledger across tracking and status; no real reservations.
 
     The due/normal plan is made first. Its full call bundles are deducted before
@@ -255,7 +271,7 @@ def run_round(db, groups, saved_events, normal_jobs, now, *, operation_id, ledge
     """
     initialize(db)
     input_hash=digest({'groups':groups,'events':saved_events,'normal':normal_jobs,
-                       'now':now.isoformat(),'ledger':ledger,'sizes':schedule_prompt_sizes,
+                       'now':now.isoformat(),'ledger':ledger,'sizes':schedule_prompt_sizes,'retry_contexts':retry_contexts,
                        'triage':triage,'registry':registry,'legacy':raw_legacy_cache,
                        'mock':mock.answers if mock else None,'validator':cache.validator_hash(),'scheduler':digest(Path(__file__).read_text())})
     op='round:'+operation_id
@@ -264,7 +280,7 @@ def run_round(db, groups, saved_events, normal_jobs, now, *, operation_id, ledge
         if previous[0]!=input_hash:raise ValueError('operation input changed')
         result=json.loads(previous[1]);result['operation_replayed']=True;return result
     with atomic(db):
-        tracking=plan_tracking(scheduled_jobs(saved_events,now,schedule_prompt_sizes),normal_jobs,ledger,now)
+        tracking=plan_tracking(scheduled_jobs(saved_events,now,schedule_prompt_sizes,retry_contexts),normal_jobs,ledger,now,retry_db=db)
         projected=copy.deepcopy(ledger);day,month=periods(now)
         amount=tracking['reservation_micro_usd'];calls=tracking['reserved_calls']
         for name,key in [('days',day),('months',month)]:
