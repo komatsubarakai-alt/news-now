@@ -145,9 +145,30 @@ def operate(db, command, failpoint=None):
         action = command.get('action')
         eid = command.get('event_id')
         item = next((v for v in state['items'] if v['event']['event_id'] == eid), None)
-        if item is None and not (action in ('queue_review','task_review','reopen_task') and eid is None): raise ValueError('unknown event')
+        if item is None and not (action in ('queue_review','task_review','reopen_task','quote_record') and eid is None): raise ValueError('unknown event')
         at = now(); actor = 'simulation:local-operator'
-        if action=='reopen_task':
+        if action=='quote_record':
+            import quote_bindings
+            task=next((t for t in state['work']['tasks'] if t['task_id']==command.get('task_id') and t.get('article')),None)
+            if not task or command.get('context_hash')!=task['review_contexts'].get(eid or 'none'):
+                raise ValueError('記事・引用の確認画面が変更されています。')
+            if eid is not None and eid not in [c['event_id'] for c in task['candidates']]:raise ValueError('unknown quote candidate')
+            if task.get('required_event_id') and eid!=task['required_event_id']:raise ValueError('shared article event scope mismatch')
+            if task.get('edition_conflict'):raise ValueError('article version selection is unresolved')
+            if command.get('confirmed') is not True:raise ValueError('引用の保存先を確認してください。')
+            url=task['article']['url']
+            source=tasks.head(db,url)
+            if source is None:source=sync.seed(db,task['article'])
+            if command.get('kind')=='body' and source['components']['body'] is None:raise ValueError('本文未取得です。')
+            qid=quote_bindings.record(db,'ui-quote:'+op,event_id=eid,url=url,quote=command.get('quote'),kind=command.get('kind'),origin='operator_input',now=at,state_id=source['state_id'])
+            result=dict(status='quote_reference_saved',quote_id=qid,adopted=False,published=False)
+        elif action=='quote_confirm':
+            import quote_bindings
+            quote=quote_bindings.inspect(db,command.get('quote_id'))
+            if quote['event_id']!=eid or command.get('confirmed') is not True:raise ValueError('引用・対象事件の確認が必要です。')
+            quote_bindings.confirm(db,'ui-quote-check:'+op,quote['quote_id'],kind=command.get('kind'),actor=actor,checked_at=command.get('checked_at'),decision_id=command.get('decision_id'))
+            result=dict(status='quote_confirmation_saved',adopted=False,published=False)
+        elif action=='reopen_task':
             result=tasks.reopen(db,state,command,at)
         elif action=='task_review':
             result=tasks.review(db,state,command,at)
