@@ -282,6 +282,8 @@ def make_job(db,event_id,group,evidence_ids,now,triage=None,registry=None,*,pres
     with atomic(db):
         db.execute('INSERT OR IGNORE INTO sync_jobs VALUES(?,?,?,?,?,?)',(jid,event_id,dumps(context),prompt,cache_key,'ready'))
         for eid in ids:db.execute('INSERT OR IGNORE INTO sync_job_evidence VALUES(?,?)',(jid,eid))
+        from response_provenance import prepare_job
+        prepare_job(db,jid,now)
     return jid
 
 def job_current(db,jid):
@@ -331,6 +333,8 @@ def call_mock(db,jid,mock,now,run_id='shadow-revision-sync',failpoint=None):
     with atomic(db):
         encoded=dumps(answer)
         db.execute('INSERT INTO sync_answer_cache VALUES(?,?,?)',(key,encoded,digest(answer)))
+        from response_provenance import save_job_response
+        save_job_response(db,jid,answer,now)
         db.execute("UPDATE sync_reservations SET transport_status='cached' WHERE cache_key=?",(key,))
     fault('after_cache',failpoint)
     return {'status':'cached','answer':answer}
