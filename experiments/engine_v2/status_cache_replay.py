@@ -44,6 +44,8 @@ def initialize(db):
         '''CREATE TABLE IF NOT EXISTS status_wait_reasons(
           item TEXT PRIMARY KEY, cause TEXT NOT NULL, basis TEXT NOT NULL,
           recorded_at TEXT NOT NULL)''',
+        '''CREATE TABLE IF NOT EXISTS status_cache_response_records(
+          binding TEXT PRIMARY KEY, response_record_id TEXT NOT NULL)''',
     )
     with atomic(db):
         for statement in statements: db.execute(statement)
@@ -64,7 +66,8 @@ def request(group):
 def validator_hash():
     return digest({'existing_status_validator': validation_revision('status'),
                    'isolated_classifier': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                   'completion_validation': hashlib.sha256(Path(diagnostics.__file__).read_bytes()).hexdigest()})
+                   'completion_validation': hashlib.sha256(Path(diagnostics.__file__).read_bytes()).hexdigest(),
+                   'response_provenance': hashlib.sha256(Path(__file__).with_name('response_provenance.py').read_bytes()).hexdigest()})
 
 
 def binding(db, group, triage, registry):
@@ -94,8 +97,17 @@ def capture(db, group, payload, *, triage=None, registry=None, origin='mock_resp
     meta = binding(db, group, triage or {}, registry or {})
     key = digest(meta)
     with atomic(db):
+        from datetime import datetime, timezone
+        import response_provenance as provenance
+        at = datetime.now(timezone.utc)
+        record_id = None
+        if pending_articles(group):
+            capture_id = provenance.prepare_status(db, group, triage or {}, registry or {}, at)
+            record_id = provenance.save(db, 'fixture:' + digest([meta, payload]), capture_id, payload, at)
         db.execute('INSERT OR REPLACE INTO status_exact_cache VALUES(?,?,?,?,?,?,?,?)',
                    (key, *meta.values(), digest(payload), dumps(payload), origin))
+        if record_id:
+            db.execute('INSERT OR REPLACE INTO status_cache_response_records VALUES(?,?)', (key, record_id))
     return key
 
 
@@ -224,8 +236,21 @@ def run(db, groups, now, *, triage=None, registry=None, raw_legacy_cache=None,
                 try:
                     payload = json.loads(row[0])
                     if digest(payload) != row[1]: raise ValueError('cache_payload_changed')
-                    if tuple(meta.values()) != row[2:6] or row[6] != 'mock_response':
+                    if tuple(meta.values()) != row[2:6] or row[6] not in ('mock_response', 'provenance_response'):
                         raise ValueError('cache_context_mismatch')
+                    proof = db.execute('SELECT response_record_id FROM status_cache_response_records WHERE binding=?', (digest(meta),)).fetchone()
+                    if not proof: raise ValueError('cache_provenance_missing')
+                    import response_provenance as provenance
+                    # Invalid answers are still validated below and memoized once.
+                    source_record = db.execute('SELECT capture_id,payload_hash FROM response_records WHERE record_id=?', proof).fetchone()
+                    if not source_record: raise ValueError('cache_provenance_missing')
+                    if source_record[1] != row[1]: raise ValueError('cache_payload_changed')
+                    if not provenance.current(db, source_record[0],
+                        request(group), group['articles'], {'group': group, 'binding': meta}, meta['validator_hash']):
+                        raise ValueError('cache_context_mismatch')
+                    qualified = provenance.reusable(db, proof[0], request(group), group['articles'],
+                                 {'group': group, 'binding': meta}, meta['validator_hash'])
+                    if not qualified['allowed']: raise ValueError('cache_context_mismatch')
                     with atomic(db): save_reference(key, group, meta, payload)
                     metrics['cache_validated'] += 1
                     metrics['new_results'] += 1
