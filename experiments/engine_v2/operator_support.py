@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from failed_response import digest
 import revision_sync as sync
+import quote_bindings
 
 STAGES=('逮捕','送検','起訴','判決','施行','復旧')
 NO_PROGRESS={'新しい事実がない':'no_new_facts','既報と同じ内容':'same_report','解説・振り返り記事':'commentary','既に記録済みの進展':'already_recorded'}
@@ -48,8 +49,10 @@ def cards(db,event_id,url):
         verification=sync.verify_quote(db,proof,current=True)
         current=sync.head(db,url)
         times={v[0] for v in db.execute("SELECT value FROM ui_comparison_notes WHERE event_id=? AND url=? AND field='occurred_at' AND evidence_id=?",(event_id,url,proof)) if v[0] in quote} if verification['status']=='exact_literal_match' else set()
-        result.append(dict(event_id=event_id,evidence_id=proof,article=article,version_id=state[0],quote=quote,field=field,verification=verification,
-            availability=current['availability'],body_available=bool(current['body_id'] and current['components']['body']),source_verification='未検証',event_occurred_at=None,event_occurrence_text=next(iter(times)) if len(times)==1 else None))
+        bindings=[q for q in quote_bindings.for_event(db,event_id,url) if q['event_id']==event_id and q['evidence_id']==proof]
+        source_confirmed=any(q['source_confirmation']=='confirmed' for q in bindings)
+        result.append(dict(event_id=event_id,evidence_id=proof,article=article,version_id=state[0],quote=quote,field=field,verification=verification,binding_records=bindings,
+            availability=current['availability'],body_available=bool(current['body_id'] and current['components']['body']),source_verification='運営者の確認記録あり（真実性の承認ではありません）' if source_confirmed else '未検証',event_occurred_at=None,event_occurrence_text=next(iter(times)) if len(times)==1 else None))
     return result
 
 def build(db,task,event):
@@ -85,7 +88,8 @@ def build(db,task,event):
         proposed_stage=suggested,stage_candidates=stage_candidates,new_fact=source['quote'] if source else '',difference=('保存記録「'+str(event.get('current_stage') or '未確認')+'」と引用中の「'+suggested+'」を比較してください。時系列・進展は未確認です。') if suggested else '',
         evidence_ids=[source['evidence_id']] if source else [],duplicate_candidates=duplicate,event_occurred_at=None,evidence_cards=proofs,
         context_hash=task['review_contexts'][eid],event_id=eid,article_url=url,article_version=task.get('source'),scope='unconfirmed_operator_support_only',
-        materials=materials(comp,task),previous_input=previous_input(db,task,eid))
+        materials=materials(comp,task),previous_input=previous_input(db,task,eid),
+        quote_binding_notes=quote_bindings.for_event(db,eid,url))
     result['draft_id']=digest(dict(value=result,code=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()))
     return result
 
