@@ -32773,5 +32773,195 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "c329f8cf23be493c98df628df3f05603afa87f23fb593e723d55e43e7eb3b090": {
+    "id": "resp_01102da1bdf1d7ab006ad71dedb4e487d1a305cb1782e4cadc",
+    "object": "response",
+    "created_at": 1792482797,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792482801,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_01102da1bdf1d7ab006ad71deebcac87d1aba5533903792196",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市東区で女性が乗用車にはねられ死亡し、運転の男（22）を逮捕した事故\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5OWFYyQnZsMFA2UWN2OVA3VFExX2hSQjBYbVo4TW5fY2w0bDRnZnFsTHQ4NnNvWU56bFpQalpaYW5yVEpaXzd1TFJTaHVBMG9vMi1aa2VKSHhCc09XdUZxRElTNlQxUDBQcjU4VmZ3?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tdktfdnlYREZXaHB3QXFXeW1ZQTJnUG5SdmppQ2NsUHdQRFNiZE9KX0Z0X0gzcmhrZHNMLU5VSlNEU3ZaOUtIZUl1UFcxSS1oamJqNW5wemEyUQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"女性が乗用車にはねられ死亡\",\"existing_quote\":\"女性が乗用車にはねられ死亡 乗用車運転の男（22）を逮捕 現場は大型商業施設に近い住宅街 札幌市東区\",\"incoming_quote\":\"女性が乗用車にはねられ死亡 乗用車運転の男（22）を逮捕 現場は大型商業施設に近い住宅街 札幌市東区\"},{\"kind\":\"entity\",\"value\":\"乗用車運転の男（22）\",\"existing_quote\":\"女性が乗用車にはねられ死亡 乗用車運転の男（22）を逮捕 現場は大型商業施設に近い住宅街 札幌市東区\",\"incoming_quote\":\"女性が乗用車にはねられ死亡 乗用車運転の男（22）を逮捕 現場は大型商業施設に近い住宅街 札幌市東区\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1751,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 509,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2260
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "b29145002453816431f4a3ef78e5e214e04a377f6e645b9c29a77bfca760731b": {
+    "id": "resp_02dea08c8fb295fb006ad71df7687487d1b685be81868ae84b",
+    "object": "response",
+    "created_at": 1792482807,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792482809,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_02dea08c8fb295fb006ad71df80bc087d1a05be300c4a74122",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"容疑者の逮捕と容疑否認の段階\",\n  \"summary\": \"迷惑駐車を注意した女性をひき逃げした疑いで、27歳の無職の男が逮捕されたと報じられています。男は「心当たりはありません」として容疑を否認しています。\",\n  \"latest\": \"27歳無職の男が逮捕され、本人は容疑を否認しています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。捜査の進展や、容疑の裏付けに関する続報が出るかどうかが注目点です。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 683,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 868
+    },
+    "user": null,
+    "metadata": {}
   }
 }
