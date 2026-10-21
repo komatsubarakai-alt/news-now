@@ -35,6 +35,23 @@ class ReviewFormTests(unittest.TestCase):
         for forbidden in ('<script src=','<link ','fetch(','XMLHttpRequest(','sendBeacon(','localStorage.'):
             self.assertNotIn(forbidden,text)
         self.assertIn("connect-src 'none'",text);self.assertTrue('JSONへ書き出す' in text);self.assertIn('JSONを保存したことを確認',text)
+    def test_import_controls_not_collapsed(self):
+        text=f.render(self.result)
+        self.assertIn('<div id="transfer" role="region"',text)
+        self.assertNotIn('<details id="transfer"',text)
+        self.assertIn('placeholder="保存したJSON全文をここに貼り付けてください"',text)
+        self.assertIn('貼り付けたJSONを検証する',text)
+    def test_file_picker_not_mime_restricted(self):
+        text=f.render(self.result)
+        self.assertIn('<input id="importFile" type="file">',text)
+        self.assertIn('reader.readAsText',text)
+    def test_ack_explains_when_it_is_enabled(self):
+        text=f.render(self.result)
+        self.assertIn('aria-describedby="savedAckHelp"',text)
+        self.assertIn('読み込みのために押す必要はありません',text)
+        ui=(f.HERE/'review_form_ui.js').read_text()
+        self.assertNotIn("await writer.close();unexported=false;document.getElementById('savedAck').disabled=true",ui)
+        self.assertIn('保存確認済み（再確認できます）',ui)
     def test_private_output_outside_repo(self):
         with self.assertRaises(ValueError):f.write(self.result,a.ROOT/'private.html')
     def test_schema_js_cases(self):
