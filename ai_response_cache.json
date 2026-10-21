@@ -37428,5 +37428,955 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "604094ee3c387ebf07c6bf319eef755de200f751b11e3d67f63da992f137c6a9": {
+    "id": "resp_01be0807224eaa69006ad940d23f8487d0a2bdb79eaa0d8c88",
+    "object": "response",
+    "created_at": 1792622802,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622803,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_01be0807224eaa69006ad940d331e087d0b0b5677ab2a89d92",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1794,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1814
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "f929a19380168f9389d9bbd1c1bf584951b8294759e164a57d9d2dbc6b89ae47": {
+    "id": "resp_0318329ddb45b67b006ad940d3ff7487d084bc5c801fb6aaeb",
+    "object": "response",
+    "created_at": 1792622804,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622804,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0318329ddb45b67b006ad940d49c4087d0a9f404f020f71245",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1782,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1802
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "fb4fedb36c300ca760b7b2035c85331d817c5043a96b9b5048379e1cb9b8e809": {
+    "id": "resp_0b1dba3e5c6e5e8f006ad940d54e3487d08acead48a99d9887",
+    "object": "response",
+    "created_at": 1792622805,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622805,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b1dba3e5c6e5e8f006ad940d5dad087d0b02adb9ade96d768",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1777,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1797
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c341c030b3b1681647e1d9537ffe183c4b1349b9faeda974574c9fe15c0949e3": {
+    "id": "resp_06e4d25658a12087006ad940d660c887d0ac4f76d307a8c07f",
+    "object": "response",
+    "created_at": 1792622806,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622808,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_06e4d25658a12087006ad940d6cda087d0b9a8f84cd63418d5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌の住宅街に連日居座るシカ出没\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1tMWFHaU4zTkdNaDVTS0tycEwwaXJZYkE5Wm9ick81T1dXa2FJdFQ5cXVuM0JIVnA5Y1JZblhfMS1mejJ6V2NTT3haNm9oZ1JwOFB4OVRETTd5cTNQdkdNZDM4UHU5cFR4b2s2X1Jn?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1lYWh6SHJTSFNDbTdIT2hiRjlSN0pUVHY5Tm5KaW9WV1RpdFJncHo4Q2QtakRuWENKZGJ3cklfaV9pZDNGd0JKZElSak9DbUdYYmJpcGtzNkt5ZGYzX2I1bF9QX3pGeUxxaG5ObA?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"【シカ出没】札幌の住宅街に連日居座り…大きな角を車に突き立てるようなしぐさも…この時季は発情期を迎え攻撃的に「動いているものはライバルのオスか探しているメス」〈北海道〉\",\"existing_quote\":\"【シカ出没】札幌の住宅街に連日居座り…大きな角を車に突き立てるようなしぐさも…この時季は発情期を迎え攻撃的に「動いているものはライバルのオスか探しているメス」〈北海道〉（FNNプライムオンライン）\",\"incoming_quote\":\"【シカ出没】札幌の住宅街に連日居座り…大きな角を車に突き立てるようなしぐさも…この時季は発情期を迎え攻撃的に「動いているものはライバルのオスか探しているメス」〈北海道〉\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1908,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 535,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2443
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "741aac38be8a6718ccb39f583a395513df15fd57946f289cee63815283aa36e6": {
+    "id": "resp_061fd94bf49c2e8d006ad940db78b087d0b120ae4f166e5ac2",
+    "object": "response",
+    "created_at": 1792622812,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622812,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_061fd94bf49c2e8d006ad940dc6dfc87d0a5a2066d85cea4f5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1518,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1538
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "9c719b3dd2efc8dc1b083e2bc3a068858b63938cc435c7daee98f9850a11a123": {
+    "id": "resp_088faee4525f6ca4006ad940dcdad087d08e2f50af6e68e4d3",
+    "object": "response",
+    "created_at": 1792622812,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622813,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_088faee4525f6ca4006ad940dd57c487d0a67f7f2ecfe70c5e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1588,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1608
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "fa8f16a9a14628c9e2364e3961ce3e092ff33dece703184114172f36356089b1": {
+    "id": "resp_0fc577427eafe074006ad940e0f8d887d0a14645984734cb59",
+    "object": "response",
+    "created_at": 1792622817,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622818,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0fc577427eafe074006ad940e189a487d0aba606a5e06af501",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"交通事故による負傷者の搬送段階\",\n  \"summary\": \"札幌市で、交差点で乗用車同士が衝突し、はずみで1台が歯科医院に突っ込んだと報じられています。信号待ちの女性が車を避けようとして転倒し、運転手と合わせて40代女性2人が搬送されましたが、いずれも命に別状はないとされています。\",\n  \"latest\": \"事故で40代女性2人が搬送され、いずれも命に別状なしと伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。事故原因の説明や、歯科医院への被害状況について続報が出るかどうかが注目点です。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 786,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1012
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "5cc2301740106508a1b5bb603fec8eaebbf4eb1feb9d0cabea8df7fb8912ae44": {
+    "id": "resp_0f5cc19e712b0dca006ad940e2badc87d0af0dac395e1fb748",
+    "object": "response",
+    "created_at": 1792622818,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622820,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0f5cc19e712b0dca006ad940e37e8c87d082f725bdb55a1476",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"おくやみ記事の掲載\",\n  \"summary\": \"記事タイトルと公開日時からは、北海道新聞デジタルの「札幌（１０月１０日付）おくやみ」という訃報・おくやみ情報の掲載記事であることしか確認できません。事件や継続的な動きがある出来事とは判断できません。\",\n  \"latest\": \"2026年10月9日11時30分に「札幌（１０月１０日付）おくやみ」が公開されたことが確認できます。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 629,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 172,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 801
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "1eaac9cf23189f6614ff5e0a89d17d12ead2bbf4b3d64d090ebcc4f007f73326": {
+    "id": "resp_04a133cfbe465582006ad940e4915c87d0aa1eacaf8bedf97a",
+    "object": "response",
+    "created_at": 1792622820,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622821,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_04a133cfbe465582006ad940e51cb887d0b2d8a78c4d3b4d7c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"応援企画・話題化の段階\",\n  \"summary\": \"記事タイトルと公開日時から確認できる範囲では、日本ハムのCS勝利を期待して札幌圏のファンや飲食店がハムカツで盛り上がっているという内容です。\",\n  \"latest\": \"2026年10月7日公開の記事で、ハムカツを通じた日本ハム応援の盛り上がりが伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 668,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 160,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 828
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "2b8b38a402f9d6db75d354089487e853967bf2a1d9076a95877054d144fe0a5e": {
+    "id": "resp_05541f056a76a2f7006ad940e61d0487d0ab791f0766931e79",
+    "object": "response",
+    "created_at": 1792622822,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792622823,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_05541f056a76a2f7006ad940e6f2f087d09c1521d487252a82",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"店舗オープンの告知段階\",\n  \"summary\": \"ナンガの札幌初出店について、10月9日にサッポロファクトリーへオープンすると告知している記事です。ダウンが50種類以上あり、限定アイテムもあるとしています。\",\n  \"latest\": \"2026年10月9日に札幌初出店の店舗がオープンすると案内されています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 692,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 146,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 838
+    },
+    "user": null,
+    "metadata": {}
   }
 }
