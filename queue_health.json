@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-21T02:47:22.137587+00:00",
+  "updated_at": "2026-10-21T03:49:07.256563+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 1508,
+  "waiting_article_count": 1507,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 271.17,
+  "oldest_wait_hours": 272.2,
   "stages": {
     "collection": {
-      "group_count": 36,
-      "article_count": 36,
-      "oldest_wait_hours": 38.97
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 1410,
-      "article_count": 1423,
-      "oldest_wait_hours": 265.98
+      "group_count": 1444,
+      "article_count": 1457,
+      "oldest_wait_hours": 267.01
     },
     "tracking": {
-      "group_count": 49,
-      "article_count": 49,
-      "oldest_wait_hours": 271.17
+      "group_count": 50,
+      "article_count": 50,
+      "oldest_wait_hours": 272.2
     }
   },
   "manual_review_counts": {
@@ -27,22 +27,21 @@
     "tracking": 43
   },
   "collection_retained_counts": {
-    "queued": 675,
+    "queued": 687,
     "classified_waiting": 5,
-    "duplicate_source": 112,
+    "duplicate_source": 115,
     "out_of_scope": 38,
     "already_saved": 28,
-    "downstream_waiting": 831
+    "downstream_waiting": 830
   },
-  "daily_accounted_usd": 0.159398,
-  "monthly_accounted_usd": 2.126553,
-  "daily_network_calls": 18,
+  "daily_accounted_usd": 0.181397,
+  "monthly_accounted_usd": 2.148552,
+  "daily_network_calls": 30,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours",
-    "waiting_increased_three_observations"
+    "oldest_wait_at_least_48_hours"
   ],
-  "daily_tracking_network_calls": 8,
-  "daily_tracking_accounted_usd": 0.133121,
+  "daily_tracking_network_calls": 9,
+  "daily_tracking_accounted_usd": 0.135629,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }
