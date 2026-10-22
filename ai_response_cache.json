@@ -40183,5 +40183,955 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "7c070a684b4819e40d3378ecb56d5287d0c42f56a43aa71cc6436bafb8bdea7a": {
+    "id": "resp_0e547ed411b54083006ada9f85492c87d2866af4d54c846998",
+    "object": "response",
+    "created_at": 1792712581,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712582,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0e547ed411b54083006ada9f86192887d28ef18d6889479d3a",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1648,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1668
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "eb60aac3b188bc8b8799adfe2e3ff98b85d8ec3e53d448530f8e9dd5c4c1b97f": {
+    "id": "resp_045898c929ed586b006ada9f86bc5887d28d5640de907914f3",
+    "object": "response",
+    "created_at": 1792712582,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712586,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_045898c929ed586b006ada9f876e8487d29d32461bcbd62f6d",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市内での集団暴走容疑で高校生ら9人逮捕\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUDVOeWtMTTVfRnJNWklDSktQRzFTekI0SlhLZkIzR3NKY0RJWE0zOHptb1pSeW15cU8tek1ZMW1sWHhyeGQ3R0ZpcG1lTFBKTUJnYkRXZU1sQkkydFNTdk04T3hCaVFLVE1WcjVQX3FNUHdjMjhwdmZteFhoSGxmSVVGb0U1aUNfaGlNVjNYSHd3LU0tdFo3WG5waC04N0VPbE1scFREeEc2MzJLWUtrRjhnaGZZRWRucU5TNFBXU3BKaDY4ajJYMUNFaEgweHlYcUF0eHFESTBXd9IBigFBVV95cUxOSEg4d2xEYUt4LW9Gdms3Wll5WTVLS1Mtenl4dk5UamNUSjVRcTBQbzBTSVRmeFJOTHN4aVhJVlNzeE1ZdU9BQmNRZGpmdW9OYkNfTDVBZjY5eHpGdm1YczVRYV9qUzhsT2xkbFRTdFlaV1pQcFBfc0xnal9CMzN0NjhoSVFrblVQNkE?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHWXlmZE52WHk4N2ZVSTFvdVlqVVhtTWRONW5UYnZydmpSSWxocEtVWFMxLXAtWnhsQmF4eGotdWRiaVFYeC1zaklxUmFkM2poelUySExnb1FfMHdoUlM3MDc2LTI?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌\",\"existing_quote\":\"軽トラックなどで“暴走行為” 高校生ら9人を逮捕 札幌（ANNニュース）\",\"incoming_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\"},{\"kind\":\"entity\",\"value\":\"9人を逮捕\",\"existing_quote\":\"軽トラックなどで“暴走行為” 高校生ら9人を逮捕 札幌（ANNニュース）\",\"incoming_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1941,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 678,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2619
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "eea787737e834f3df3ad37aa3fea1e870a65623bc4c9c22ce4394ef0638f4f5a": {
+    "id": "resp_08b68ed982575501006ada9f8abb2c87d2b926a07fb1fdf1c8",
+    "object": "response",
+    "created_at": 1792712586,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712587,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_08b68ed982575501006ada9f8b67d487d2bbf5a03f21899cd5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1776,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1796
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "dfeefb0cd1a4de5e953b6a30fb3f634ac4937ec69ae44a9c0c5f482de85eadad": {
+    "id": "resp_0fd52ca59344759f006ada9f8c519c87d294d547673b49ecb1",
+    "object": "response",
+    "created_at": 1792712588,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712589,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0fd52ca59344759f006ada9f8d073487d2af0fbbb03272c5ca",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1710,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1730
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "9e77b69177bd1445a4ca71ea346706dbc7b578e5500c3912b6991ac26523c1db": {
+    "id": "resp_0ab66ab2fd56ca0b006ada9f903e5887d296bbf200a1b59603",
+    "object": "response",
+    "created_at": 1792712592,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712592,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0ab66ab2fd56ca0b006ada9f90bac087d2a2b3a9105b970563",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1412
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "670248ab6b6a2e27409937df666a0ef1da441566b0051cc9a8483511c12a541d": {
+    "id": "resp_0145706606bb90f5006ada9f91147087d2a501477e2f5f96ec",
+    "object": "response",
+    "created_at": 1792712593,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712593,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0145706606bb90f5006ada9f9181a887d29595856ec2b86fc7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1659,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1685
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "6c89c425884265181eec2c722bb8769efc5bf1068f2510ef9a878aa18154ac82": {
+    "id": "resp_0781865957086618006ada9f9560fc87d2bb727b8622a9a5fc",
+    "object": "response",
+    "created_at": 1792712597,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712598,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0781865957086618006ada9f95e2a087d2a58c8bd5845aed3b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"地域・インフラ\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"データ可視化の公開\",\n  \"summary\": \"札幌市中心部で民泊が集中するエリアを可視化した3Dグラフマップが公開されたことが、記事タイトルから確認できます。\",\n  \"latest\": \"2026年10月9日に、札幌市中心部の民泊集中エリアを示す3Dグラフマップが公開されました。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 660,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 145,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 805
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "13abe3852b3a4b6dc1ce498b0acbca6e6e47fc9fca2dc17f9ff0062ad04bb215": {
+    "id": "resp_0b3a26b16a55ce45006ada9f96d67087d297887ca9299c8067",
+    "object": "response",
+    "created_at": 1792712598,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712600,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b3a26b16a55ce45006ada9f973d6c87d2b9ffb88f7bf6465c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"政策・制度\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"政治家の発言をめぐる波紋が広がっている段階\",\n  \"summary\": \"記事タイトルと公開日時からは、簗農水大臣の「道路予算カット」発言に対し、札幌市長が苦言を呈し、鈴木宗男氏も強く批判するなど、北海道内で反発が広がっていることが分かります。発言の是非が政治面で問題視されている状況です。\",\n  \"latest\": \"2026年10月10日時点で、札幌市長が「政治家として問題がある」と苦言を示し、鈴木宗男氏も「人としての矜持が問われている」と一喝していることが最新の動きです。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。今後は簗農水大臣本人や政府側の説明、発言の撤回や訂正の有無、道内自治体や関係者の追加反応が出るかに注目されます。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 720,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1002
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "287e80028b5c7d2fd5773b8840336e9ccc0c0d26c2981b8a946b96ddaa99c3f4": {
+    "id": "resp_016cf5af138ac925006ada9f98e98c87d29d0da854edcfdbd3",
+    "object": "response",
+    "created_at": 1792712600,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712602,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_016cf5af138ac925006ada9f992f0487d29427566ec9ead562",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"映画祭の審査員発表段階\",\n  \"summary\": \"第21回札幌国際短編映画祭について、国際審査員3名が決定したことが分かります。記事タイトルからは、香港の映画監督ジョニー・トー氏や吉田大八監督らが札幌へ向かう予定であることが読み取れますが、これ以上の進展は確認できません。\",\n  \"latest\": \"国際審査員3名が決定したと発表されたことです。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 686,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 862
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "901fee39a809565b918d01b10165eaa6bbeaa0b2aa8c760545aaa1331ac07ea6": {
+    "id": "resp_0fb8b3d1fcd811c1006ada9f9a49d487d2b31b16b1e4006da4",
+    "object": "response",
+    "created_at": 1792712602,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792712603,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0fb8b3d1fcd811c1006ada9f9afa2c87d2b5fb76eebf45df6c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"ピンクリボン月間に合わせた啓発イベントの報道段階\",\n  \"summary\": \"記事タイトルからは、札幌のJRタワーで乳がんの早期発見を呼びかけ、ピンク色にライトアップしたことが分かります。継続的な追跡が必要な出来事というより、単発の啓発企画として読めます。\",\n  \"latest\": \"2026年10月9日時点で、JRタワーで乳がん早期発見の呼びかけとピンク色のライトアップが行われたことが報じられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 686,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 883
+    },
+    "user": null,
+    "metadata": {}
   }
 }
