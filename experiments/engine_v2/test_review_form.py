@@ -43,7 +43,7 @@ class ReviewFormTests(unittest.TestCase):
         self.assertIn('貼り付けたJSONを検証する',text)
     def test_file_picker_not_mime_restricted(self):
         text=f.render(self.result)
-        self.assertIn('<input id="importFile" type="file">',text)
+        self.assertIn('<input id="importFile" type="file" hidden>',text)
         self.assertIn('reader.readAsText',text)
     def test_ack_explains_when_it_is_enabled(self):
         text=f.render(self.result)
@@ -52,6 +52,18 @@ class ReviewFormTests(unittest.TestCase):
         ui=(f.HERE/'review_form_ui.js').read_text()
         self.assertNotIn("await writer.close();unexported=false;document.getElementById('savedAck').disabled=true",ui)
         self.assertIn('保存確認済み（再確認できます）',ui)
+    def test_import_stage_displays_exist(self):
+        text=f.render(self.result)
+        for identifier in ('selectedFileName','readStatus','verifyStatus','restoreStatus','restoreComparisonSummary'):
+            self.assertIn('id="'+identifier+'"',text)
+    def test_file_import_precedes_auxiliary_paste(self):
+        text=f.render(self.result)
+        self.assertLess(text.index('id="chooseImportFile"'),text.index('id="jsonTransfer"'))
+        self.assertIn('長いJSONを貼り付ける必要はありません',text)
+    def test_restore_comparison_is_not_approval(self):
+        text=f.render(self.result)
+        self.assertIn('復元した回答・メモの照合',text)
+        self.assertIn('元判断の正しさや承認を確認した結果ではありません',text)
     def test_private_output_outside_repo(self):
         with self.assertRaises(ValueError):f.write(self.result,a.ROOT/'private.html')
     def test_schema_js_cases(self):
