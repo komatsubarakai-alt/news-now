@@ -41133,5 +41133,290 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "c1d9818e2d78c4b13f372c0b20206c55341709398dbf33465a73676901434da8": {
+    "id": "resp_0e1be145f1979be5006adaf4b884e487d1a96ccd28c3b2f8ec",
+    "object": "response",
+    "created_at": 1792734392,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792734395,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0e1be145f1979be5006adaf4b994c887d1b5fbdbec01810b54",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市内２５キロを集団暴走した疑いで少年ら９人を逮捕\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMibkFVX3lxTE4zUXQwMURuQ0ZlN3ZVMmRMQWVHRTFMaGxQVVktd3dhZTRwckZNbkM5bF9YWV9QQmVpelEybVo2QXVuT1ExLUF3MjVYemVHQXJ6Qld3bUxUQl9aZDBiLXRLd2psNUNRMnM1SjlBenVn?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rWVczSW85WXBHQ2d2NTJDZmUtMTBzbjFOSW5CdUhhLTBzZjFMcjl3RzNwYUVncDA0QTZrYkpaN1IzQXItZENtaXA4NjMxTEoxeFUxTjFUbFMzWXZsd1liQ0NFN2xRQQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市内２５キロを集団暴走\",\"existing_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\",\"incoming_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\"},{\"kind\":\"entity\",\"value\":\"少年ら９人\",\"existing_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\",\"incoming_quote\":\"バイクや車で札幌市内２５キロを集団暴走の疑い、蛇行運転や信号無視も…少年ら９人を逮捕\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1754,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 504,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2258
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "b4887149c936e28402ed0b7fbbbd854a4d457b41cbae1a5f09da8f280b538a35": {
+    "id": "resp_0f9206655544887f006adaf4c2cd4887d19a430e53a30f85e0",
+    "object": "response",
+    "created_at": 1792734402,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792734404,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0f9206655544887f006adaf4c3c70c87d1a3e7c42a13c8012f",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"高校野球の試合結果\",\n  \"summary\": \"東海大札幌高が遠軽に逆転勝ちし、継投で逃げ切ったことが分かります。記事タイトルと公開日時から確認できる範囲では、スポーツの試合結果に関する報道です。\",\n  \"latest\": \"2026年10月9日に、東海大札幌高が遠軽に逆転勝ちしたと報じられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 672,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 157,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 829
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "37368228a65ae907be61a3a486c4344d187829262f0eebb8385647d6344a3e07": {
+    "id": "resp_0380af23383bbe47006adaf4c50a4087d1b80cd646764d1f03",
+    "object": "response",
+    "created_at": 1792734405,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792734407,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0380af23383bbe47006adaf4c5f97087d1905612d6043c776f",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"事故発生・搬送済み\",\n  \"summary\": \"札幌市で、交差点で乗用車同士が衝突し、はずみで1台が歯科医院に突っ込んだ。信号待ちの女性が車を避けようとして転倒し、運転手と合わせて40代女性2人が搬送されたが、いずれも命に別状はない。\",\n  \"latest\": \"2026年10月9日公開時点で、搬送された2人はいずれも命に別状なしと報じられている。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 786,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 974
+    },
+    "user": null,
+    "metadata": {}
   }
 }
