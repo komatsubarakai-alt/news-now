@@ -299298,10 +299298,30 @@
     },
     "review_id": "289ba6617a070e34d5c1fdf7",
     "schema_version": 2,
-    "observed_at": "2026-10-18T16:44:38.762030+00:00",
+    "observed_at": "2026-10-23T18:55:36.183404+00:00",
+    "observation_history": [
+      {
+        "stage": "group_merge",
+        "reason": "budget_deferred",
+        "payload": {
+          "remaining_from": [
+            0,
+            6
+          ],
+          "group_count": 21
+        },
+        "review_id": "289ba6617a070e34d5c1fdf7",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T16:44:38.762030+00:00",
+        "first_seen_at": "2026-10-18T16:44:38.762030+00:00",
+        "last_seen_at": "2026-10-18T16:44:38.762030+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-18T16:44:38.762030+00:00",
-    "last_seen_at": "2026-10-18T16:44:38.762030+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-23T18:55:36.183404+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -301599,7 +301619,7 @@
     },
     "review_id": "ad68ebb841efd8e632aa810e",
     "schema_version": 2,
-    "observed_at": "2026-10-18T23:38:27.117962+00:00",
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
     "diagnostics": {
       "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "target_event_name": "札幌市の副首都整備担当部設置",
@@ -301626,7 +301646,7 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                "value": "札幌市、副首都整備担当部",
                 "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
                 "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
               }
@@ -301638,7 +301658,7 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                "value": "札幌市、副首都の担当部新設",
                 "existing_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
                 "incoming_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ"
               }
@@ -301649,9 +301669,98 @@
       "raw_ai_response": null,
       "http_status": null
     },
+    "observation_history": [
+      {
+        "stage": "schedule_search",
+        "reason": "ValueError",
+        "payload": {
+          "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "articles": [
+            {
+              "title": "札幌市、副首都整備担当部を立ち上げ 10月16日付で - 日本経済新聞",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "published": "Wed, 30 Sep 2026 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5\" target=\"_blank\">札幌市、副首都整備担当部を立ち上げ 10月16日付で</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+              "rss_source": {
+                "name": "日本経済新聞",
+                "url": "https://www.nikkei.com"
+              },
+              "collection_role": "primary"
+            },
+            {
+              "title": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ - 北海道新聞デジタル",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "published": "Wed, 30 Sep 2026 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5\" target=\"_blank\">札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+              "rss_source": {
+                "name": "北海道新聞デジタル",
+                "url": "https://www.hokkaido-np.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ]
+        },
+        "review_id": "ad68ebb841efd8e632aa810e",
+        "schema_version": 2,
+        "observed_at": "2026-10-18T23:38:27.117962+00:00",
+        "diagnostics": {
+          "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "target_event_name": "札幌市の副首都整備担当部設置",
+          "ai_report": {
+            "confidence": "high",
+            "matches": [
+              {
+                "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+                "confidence": "high"
+              },
+              {
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+                "confidence": "high"
+              }
+            ],
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                    "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                    "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
+                  }
+                ]
+              },
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                    "existing_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ",
+                    "incoming_quote": "札幌市、副首都の担当部新設 16日付で班から格上げ 具体的検討加速へ"
+                  }
+                ]
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-10-18T23:38:27.117962+00:00",
+        "last_seen_at": "2026-10-18T23:38:27.117962+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-18T23:38:27.117962+00:00",
-    "last_seen_at": "2026-10-18T23:38:27.117962+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -327358,7 +327467,7 @@
     },
     "review_id": "bc6e1abc032b6724bd948bcf",
     "schema_version": 2,
-    "observed_at": "2026-10-20T20:49:51.796746+00:00",
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
     "diagnostics": {
       "target_event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
       "target_event_name": null,
@@ -327410,11 +327519,104 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "逮捕報道",
+            "summary": "札幌市で、倉庫への侵入と工具窃盗の疑いで30歳の男が逮捕されたと報じられています。記事タイトルからは、リサイクルショップ店員の通報が端緒になったことが分かります。",
+            "latest": "30歳男の逮捕が報じられたこと。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、容疑の認否や押収品、余罪の有無などが報じられるかどうかに注目されます。",
+            "articles": [
+              {
+                "title": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市 - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13TEpsR3RNZlpPUEtmYzNhYi03Ml9tTkZSbW5WZG9Odi1wbnJVVy1USUcxSnU0TkRPV2R5NDZyTGIzVmVzanhNYVVOOGw2OFhYR0ROZm1tZVBIRGg1YTVOTGhla00ya1RzTUlCUGVlUkwyUEdGVkpyTm0xcWhHdVk?oc=5",
+                "published": "Sat, 10 Oct 2026 02:29:13 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE13TEpsR3RNZlpPUEtmYzNhYi03Ml9tTkZSbW5WZG9Odi1wbnJVVy1USUcxSnU0TkRPV2R5NDZyTGIzVmVzanhNYVVOOGw2OFhYR0ROZm1tZVBIRGg1YTVOTGhla00ya1RzTUlCUGVlUkwyUEdGVkpyTm0xcWhHdVk?oc=5\" target=\"_blank\">「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          }
+        },
+        "review_id": "bc6e1abc032b6724bd948bcf",
+        "schema_version": 2,
+        "observed_at": "2026-10-20T20:49:51.796746+00:00",
+        "diagnostics": {
+          "target_event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE13TEpsR3RNZlpPUEtmYzNhYi03Ml9tTkZSbW5WZG9Odi1wbnJVVy1USUcxSnU0TkRPV2R5NDZyTGIzVmVzanhNYVVOOGw2OFhYR0ROZm1tZVBIRGg1YTVOTGhla00ya1RzTUlCUGVlUkwyUEdGVkpyTm0xcWhHdVk?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "b565866f-bfb4-4888-b054-97e69d71a3f2",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "逮捕",
+            "summary": "札幌市で、倉庫侵入と工具窃盗の疑いで30歳の男が逮捕された段階です。",
+            "latest": "札幌市で、倉庫侵入と工具窃盗の疑いで30歳の男が逮捕された段階です。",
+            "next_watch": "送検や起訴など手続きの進展が報じられるか確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTE13TEpsR3RNZlpPUEtmYzNhYi03Ml9tTkZSbW5WZG9Odi1wbnJVVy1USUcxSnU0TkRPV2R5NDZyTGIzVmVzanhNYVVOOGw2OFhYR0ROZm1tZVBIRGg1YTVOTGhla00ya1RzTUlCUGVlUkwyUEdGVkpyTm0xcWhHdVk?oc=5",
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13TEpsR3RNZlpPUEtmYzNhYi03Ml9tTkZSbW5WZG9Odi1wbnJVVy1USUcxSnU0TkRPV2R5NDZyTGIzVmVzanhNYVVOOGw2OFhYR0ROZm1tZVBIRGg1YTVOTGhla00ya1RzTUlCUGVlUkwyUEdGVkpyTm0xcWhHdVk?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5INEo3bkZVeWxDNjRiSGNJaDVQb3RZZl81YWk1SU1QSWhORFljSFkwSmFZR0JMN2lrZEhYYXFWTGp6N3l5OVBhRl9nYzhUZlhSSnlfR3ZEVFZiUEN5YjE3NlFRNjBKZTg?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "倉庫侵入・工具窃盗の疑いで30歳男逮捕",
+                    "existing_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市",
+                    "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "30歳男",
+                    "existing_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市",
+                    "incoming_quote": "「別人の名前シールが…」リサイクルショップ店員が通報 倉庫侵入・工具窃盗の疑いで30歳男逮捕 札幌市"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-20T20:49:51.796746+00:00",
+        "last_seen_at": "2026-10-20T20:49:51.796746+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-20T20:49:51.796746+00:00",
-    "last_seen_at": "2026-10-20T20:49:51.796746+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -367962,6 +368164,1746 @@
     "observed_at": "2026-10-23T11:48:34.450964+00:00",
     "first_seen_at": "2026-10-23T11:48:34.450964+00:00",
     "last_seen_at": "2026-10-23T11:48:34.450964+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"違法改造されたバイクでの暴走事件（札幌市内約25キロ）\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市\", \"existing_quote\": \"【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市\", \"incoming_quote\": \"【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞\"}, {\"kind\": \"detail\", \"value\": \"札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す\", \"existing_quote\": \"【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市\", \"incoming_quote\": \"【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞\"}]}]}"
+    },
+    "review_id": "2a6c1080d81ff3cb96b60f4f",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952315+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952315+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952315+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5",
+        "published": "Thu, 22 Oct 2026 10:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5\" target=\"_blank\">【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "40c23d1c09e2a4dd230786cd",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952383+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952383+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952383+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5",
+        "published": "Fri, 23 Oct 2026 11:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5\" target=\"_blank\">地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5",
+        "published": "Thu, 22 Oct 2026 07:32:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5\" target=\"_blank\">カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4ac41fc963d8d0c9f416fd96",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952438+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952438+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952438+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5",
+        "published": "Fri, 23 Oct 2026 05:02:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5\" target=\"_blank\">世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "dbbaa36edb25f39c650a49c1",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952478+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952478+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952478+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5",
+        "published": "Thu, 22 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5\" target=\"_blank\">北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:51:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5\" target=\"_blank\">「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "43e0af927e6a1a62a7efcb0a",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952514+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952514+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952514+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5",
+        "published": "Thu, 22 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5\" target=\"_blank\">北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5",
+        "published": "Fri, 23 Oct 2026 02:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5\" target=\"_blank\">行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3986e2529d51bc29675725a0",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952546+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952546+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952546+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5",
+        "published": "Thu, 22 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE84MGpWMkFKTXZmZTV4RnNoMkxyYWlyVHNhYlFhakRQQThKb1NOM2pwekZPcnlwUGlidVZ6SkdPSkw3NHJNOWg0eldMNlFvYTByTjdaenF3NUhMUQ?oc=5\" target=\"_blank\">北の豆腐店一冊で丸わかり 札幌「まち文化研」が記録冊子発行</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌（１０月２４日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5\" target=\"_blank\">札幌（１０月２４日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3546a3340b6533e0b3dedb5d",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952578+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952578+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952578+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4df9e4f22f7742724ef038e2",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952613+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952613+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952613+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b3b988c6a125b725339b8e55",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952648+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952648+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952648+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5",
+        "published": "Thu, 22 Oct 2026 07:32:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5\" target=\"_blank\">カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "72fd5e684472e2899df78ab0",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952731+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952731+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952731+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5",
+        "published": "Thu, 22 Oct 2026 22:00:38 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5\" target=\"_blank\">札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3c849d724b000232543255e4",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952766+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952766+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952766+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5",
+        "published": "Fri, 23 Oct 2026 11:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5\" target=\"_blank\">地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e2cf0b8cbb3e3dcff737564e",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952801+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952801+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952801+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE96R2JrMzFMb2doUlJ4M2Z0R1NLWnEyMTNRczRWUXBwZ0dzNmItM195UGdEbjF6cF9UWUt4dzBTY19fckRYTXV4bGVnQlByUQ?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5",
+        "published": "Thu, 22 Oct 2026 10:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5\" target=\"_blank\">【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "90462c83ac6976ce126022a4",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952835+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952835+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952835+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5",
+        "published": "Fri, 23 Oct 2026 11:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNZnA4dkxiVks4UkJCa29EVWE1OTctNG1tVU9mNFAzZmJ2aXJLU3ppMTd5WGxwLXduOFp1V3NhNUlIM3pVbDlWX1ZxWlBiTjhZdDlIWFVodHBfbW1XUzRLMDFvN0V0NlFuYjIwS2tjRVFsSjlGQkg3dko2Y1RGalFPMXN2b1I4bGs?oc=5\" target=\"_blank\">地下鉄南北線に“黒い珍客”カラスが乗車 つり革や座席を行ったり来たり…大通駅で下車 北海道札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "34f0ab3f97479344acf3b3d4",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952867+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952867+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952867+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース） - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5",
+        "published": "Fri, 23 Oct 2026 09:25:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5\" target=\"_blank\">札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース）</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "さっぽろウェルネスプロジェクト - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5",
+        "published": "Tue, 20 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5\" target=\"_blank\">さっぽろウェルネスプロジェクト</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c84ab102e7c8a62d5f820254",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952900+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952900+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952900+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース） - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5",
+        "published": "Fri, 23 Oct 2026 09:25:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5\" target=\"_blank\">札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース）</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+        "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "326e1d6c8d33ce24afa566d4",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952930+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952930+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952930+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース） - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5",
+        "published": "Fri, 23 Oct 2026 09:25:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5\" target=\"_blank\">札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース）</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5",
+        "published": "Wed, 21 Oct 2026 08:57:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5\" target=\"_blank\">来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "67ba56323aa373ae0fe94c61",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952960+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952960+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952960+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "12/12(土)富山戦：STV番組「道産人間オズブラウン」コラボ企画「オズブラフェスタ」開催決定のお知らせ - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aUzBXQk8zbi1NRlJSRDI1aXVWVkdQMmpiSWM3dkdOQzh5OGY2aV9zaUJESXk3MnpVaUVwNkNiTkRxbUV6YjRRRGVqcFZ1MzlNaXk4V050M2hYVU91bC0tUnhR?oc=5",
+        "published": "Fri, 23 Oct 2026 10:03:49 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aUzBXQk8zbi1NRlJSRDI1aXVWVkdQMmpiSWM3dkdOQzh5OGY2aV9zaUJESXk3MnpVaUVwNkNiTkRxbUV6YjRRRGVqcFZ1MzlNaXk4V050M2hYVU91bC0tUnhR?oc=5\" target=\"_blank\">12/12(土)富山戦：STV番組「道産人間オズブラウン」コラボ企画「オズブラフェスタ」開催決定のお知らせ</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【第2弾開催中！】北海道コンサドーレ札幌 函館開催記念 スペシャルオークション開催のお知らせ - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4waVNhT2JxUnNlTDJtLTlTT0k1TXBSaGlyTkFvaXJjRVlFcWZqNGZ5ZkNVdnpPQVk4NnZFU0JkMHpLTlB4aXd4V0wwcFNZSlRHNjNrUHpQYW55aVNwWFI1Q25n?oc=5",
+        "published": "Fri, 23 Oct 2026 13:05:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE4waVNhT2JxUnNlTDJtLTlTT0k1TXBSaGlyTkFvaXJjRVlFcWZqNGZ5ZkNVdnpPQVk4NnZFU0JkMHpLTlB4aXd4V0wwcFNZSlRHNjNrUHpQYW55aVNwWFI1Q25n?oc=5\" target=\"_blank\">【第2弾開催中！】北海道コンサドーレ札幌 函館開催記念 スペシャルオークション開催のお知らせ</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "624661fffd69c1d2a56aca10",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.952994+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.952994+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.952994+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:51:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5\" target=\"_blank\">「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5",
+        "published": "Fri, 23 Oct 2026 02:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5\" target=\"_blank\">行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9e3b5a1296a98bd8bd1f5b26",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953024+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953024+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953024+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5",
+        "published": "Fri, 23 Oct 2026 12:51:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oUTRTWFc4THBxY0RNTmtwaWdiX1JnU3Y3S0k0T3ZmNG4wb2NQQVpfRXRlTnRFemtSMzIxOW1CSDRXTUZ1TjVITjQ2d29HRXB1WkFBQkVBSWhBUQ?oc=5\" target=\"_blank\">「札幌で世界と渡り合いたかった」 初音ミク生んだクリプトン社長が講演</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌（１０月２４日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5\" target=\"_blank\">札幌（１０月２４日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4fa937389ec664e4bbe0215a",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953052+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953052+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953052+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "12/12(土)富山戦：STV番組「道産人間オズブラウン」コラボ企画「オズブラフェスタ」開催決定のお知らせ - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aUzBXQk8zbi1NRlJSRDI1aXVWVkdQMmpiSWM3dkdOQzh5OGY2aV9zaUJESXk3MnpVaUVwNkNiTkRxbUV6YjRRRGVqcFZ1MzlNaXk4V050M2hYVU91bC0tUnhR?oc=5",
+        "published": "Fri, 23 Oct 2026 10:03:49 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aUzBXQk8zbi1NRlJSRDI1aXVWVkdQMmpiSWM3dkdOQzh5OGY2aV9zaUJESXk3MnpVaUVwNkNiTkRxbUV6YjRRRGVqcFZ1MzlNaXk4V050M2hYVU91bC0tUnhR?oc=5\" target=\"_blank\">12/12(土)富山戦：STV番組「道産人間オズブラウン」コラボ企画「オズブラフェスタ」開催決定のお知らせ</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cba0afd66bd099c5ce3458aa",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953084+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953084+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953084+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5",
+        "published": "Fri, 23 Oct 2026 02:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pQnhEWm8xT2VIM2tWdm1FUVpIdlhrVDRJNGR1WmJ3WjdXSDFXQlREWU92TzdXT295djIwUFA4Y2NoblhSTlpOclNPUGlUZm1JYndLZzRDMDhtQQ?oc=5\" target=\"_blank\">行列店「らーめん優月」2号店が札幌・東区にオープン 看板はエスカレーラーメン＜MYタウン東区＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌（１０月２４日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hdEdEZW9VMU94bjlZbWE2NTkzZi1SODFhZDNsMENJdURXQlprb1RtUm1OMmYxa1YzN20yYkZ4dmNfd2I3Qjdna2cwQUMyZDl3N0llQjRwdFBKZw?oc=5\" target=\"_blank\">札幌（１０月２４日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0262cdf5eea046807270bd4e",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953112+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953112+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953112+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "雪の季節到来2026 - 札幌美容形成外科",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kdjQ3R1hwUkV1bnNHRE9FTWFzdzk1T2ZDd2MwQXRLWk9rSC1iRkdjVWtQT3VORkpTWnk4MXB0SUNkaFFNd1NiWmhsVjlVX2lHQUFXZ2tQUklXcHIzOExPR0pDdVcwT1k?oc=5",
+        "published": "Fri, 23 Oct 2026 10:42:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kdjQ3R1hwUkV1bnNHRE9FTWFzdzk1T2ZDd2MwQXRLWk9rSC1iRkdjVWtQT3VORkpTWnk4MXB0SUNkaFFNd1NiWmhsVjlVX2lHQUFXZ2tQUklXcHIzOExPR0pDdVcwT1k?oc=5\" target=\"_blank\">雪の季節到来2026</a>  <font color=\"#6f6f6f\">札幌美容形成外科</font>",
+        "rss_source": {
+          "name": "札幌美容形成外科",
+          "url": "https://s-bi.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5",
+        "published": "Thu, 22 Oct 2026 10:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5\" target=\"_blank\">【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "574f92bdffc6c1d6e5879474",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953144+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953144+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953144+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5e54daa7e78ca141a3940e0e",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953177+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953177+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953177+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5",
+        "published": "Thu, 22 Oct 2026 07:32:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE50WU1pRWlTcnB3amNsY0E2bnNJV0JrM0dDTzRnSUM2d2V0MGwwUUZRazBwSGpyVF9Td0xObW1SV0taQ2tPUTJuZE1ZbmpTRDU2ZTFNZlZQYURldEZvTlc1XzFHNFRtYnpEd1RiSEhrUXBsQzhXbEpiaWI5WUM1WlE?oc=5\" target=\"_blank\">カラスが“無賃乗車” つり革を行ったり来たり 運行に数分遅れもけが人なし 札幌・地下鉄南北線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "be574b564b4b42bf44fb6265",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953211+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953211+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953211+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5",
+        "published": "Thu, 22 Oct 2026 10:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5\" target=\"_blank\">【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1e6d23b95f1029db6e030d16",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953242+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953242+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953242+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5",
+        "published": "Fri, 23 Oct 2026 05:02:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5\" target=\"_blank\">世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b02b9ce063556cc39ff5caeb",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953274+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953274+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953274+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+        "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5",
+        "published": "Thu, 22 Oct 2026 22:00:38 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5\" target=\"_blank\">札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3d1ceb255c9ff736ace8ac71",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953306+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953306+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953306+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5",
+        "published": "Thu, 22 Oct 2026 10:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1MN2tBZE5lSEgyUjkxQWVNYjFveUZKeGQ1eld2SUV2OTduTVZuTzdySXdxZHc5X1M5MlpZeDVvS05GTE1oWG56MHQ5aktsWXItYUt0dXczMWdiV2NadWlXbndKOGw4cFIzWV9teGlrUW1VNjcwS19Kd1VSQVQtTUE?oc=5\" target=\"_blank\">【雪の季節到来】札幌市内の平地も雪景色に 峠は一面の銀世界…カー用品店はタイヤ交換で混雑「30台分全て埋まっている」…11月はタイヤ脱落事故が急増 自分で交換する際の注意点は〈北海道〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f75a82875392bc9d18785dc0",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953338+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953338+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953338+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5",
+        "published": "Fri, 23 Oct 2026 05:02:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9wSkl3VUdmTDdfMVA2UnNYV3NIUm1YWll5T283SUNHY2JBY1JHNVVVWXBJQnRmNjVSQmtvVDJLekhDN25NUmtYSzN4WjlDalJUX0FxM0ZST0ZtSXdtQ0VLaGpucDNoZ0VlRTJJSldRT01XWmZiUnNYbmZSRHAtYUk?oc=5\" target=\"_blank\">世界の短編映画約90作品が一堂に…「作品との出会いを」札幌国際短編映画祭が開幕 25日はグランプリ作品の上映も</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "19ca2a3a4e14be025245ad60",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953368+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953368+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953368+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5",
+        "published": "Thu, 22 Oct 2026 22:00:38 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uTVhBSkJydTBOMjVmWTNnTjZHTHUxTC1nV3o0TnVIa0hnVGhWZmJQbzRDVGd1bXJJQnowMEg3LTNJMkVXNE16NWl2R2lpckd3WGR6SVg4ZXplUC1oSFhCTmFCN2hlSjdiM2VmX3ZRWndLUXBwNFItcExoeWRjcTQ?oc=5\" target=\"_blank\">札幌ドーム「2億1000万円の黒字転換」は本当の復活か…イベント誘致・利用料補塡に公金3億4000万円、“独り立ち”の実態</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "14b93f6d1da0178a44da40b3",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953399+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953399+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953399+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5",
+        "published": "Wed, 21 Oct 2026 08:57:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5\" target=\"_blank\">来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "be390fd57fcadc771a6722c8",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953447+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953447+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953447+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5",
+        "published": "Fri, 23 Oct 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBVeXdmd1kxd0xpdGxxTXczTmFnTzRKby0xRC0yLUE3UEdvOV9GWkdqU1lmSzlPdE9YUzBla1NPcmljT19lV0d3d2Z0TElOem9UT3F4N05NZGhkYVY0RzNPNVhkdnRzb1FZd0JMTm1tZ0JNMk5yZjlxY2dLZkQ3Qlk?oc=5\" target=\"_blank\">光と紅葉のコラボレーション 中島公園でライトアップ 幻想的な光景…見ごろは11月ごろまで 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "さっぽろウェルネスプロジェクト - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5",
+        "published": "Tue, 20 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5\" target=\"_blank\">さっぽろウェルネスプロジェクト</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "96df6da0ecd8949d9fe4539a",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953480+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953480+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953480+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5",
+        "published": "Wed, 21 Oct 2026 08:57:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NkZDT2FfbWVraVMwUElfZk9CNFZYNzBxdkVzWnZ0dDJqX09mWUdPNTBJczVHWGFoM3BJdWJrWWZSWFdjWmZnVE11ZWlOWVE2dkt0YVJJdDNyZw?oc=5\" target=\"_blank\">来年のさっぽろ雪まつり 札幌市と陸上自衛隊が協定書 自衛隊の大雪像制作が「2基から1基」に縮小へ</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "さっぽろウェルネスプロジェクト - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5",
+        "published": "Tue, 20 Oct 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFBPR3JqZkNfTkJsRExLRlI0QjgxWFFOTkdhN25nYzdEVEJYM2xFakJYNVZUbVB2V1NHaXE0blNqM0xaR3pTSzQ0YWprN0ZEQ29xSDBRSlItTlZnZmQ4SThnS1VfNUlmd0VFMjM3a283MWo?oc=5\" target=\"_blank\">さっぽろウェルネスプロジェクト</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fd5a7039b6fc0fdd8ce7d773",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:31.953511+00:00",
+    "first_seen_at": "2026-10-23T18:55:31.953511+00:00",
+    "last_seen_at": "2026-10-23T18:55:31.953511+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+          "articles": [
+            {
+              "title": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5",
+              "published": "Fri, 23 Oct 2026 08:20:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5\" target=\"_blank\">店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+              "rss_source": {
+                "name": "ｄメニューニュース",
+                "url": "https://topics.smt.docomo.ne.jp"
+              },
+              "collection_role": "source_unconfirmed"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース） - ｄメニューニュース",
+          "articles": [
+            {
+              "title": "札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース） - ｄメニューニュース",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5",
+              "published": "Fri, 23 Oct 2026 09:25:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE50eVdfcy1KcW5ublpUMkhwNUtNS3lUMi1mNzduUkcyaFdZclNDcWFaOTJFeEx2QjBsTk11RFl3R0ZEcDZoWHJON0tiZmE0TnptTUs3SEVYWU9SVDlyMmdlRVdETjI2TmR1UHMtWA?oc=5\" target=\"_blank\">札幌中心部で続く大規模工事 都心アクセス道路と地下鉄さっぽろ駅改良の現状と影響をリポート（HTB北海道ニュース）</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+              "rss_source": {
+                "name": "ｄメニューニュース",
+                "url": "https://topics.smt.docomo.ne.jp"
+              },
+              "collection_role": "source_unconfirmed"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "b34835bae9ffc26fe06a6069",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:32.761426+00:00",
+    "first_seen_at": "2026-10-23T18:55:32.761426+00:00",
+    "last_seen_at": "2026-10-23T18:55:32.761426+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+          "articles": [
+            {
+              "title": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5",
+              "published": "Fri, 23 Oct 2026 08:20:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5\" target=\"_blank\">店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+              "rss_source": {
+                "name": "ｄメニューニュース",
+                "url": "https://topics.smt.docomo.ne.jp"
+              },
+              "collection_role": "source_unconfirmed"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞ - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5",
+              "published": "Fri, 23 Oct 2026 12:30:02 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhZzNNMm5iY3pSUE55ZUxURko3cnFDQ25rWTNmWHlxR0JGQmtmVU91RTFZZlkwYjQ4bEZmTDBsM1FJa2V1dTRDeHNZZlE5TXQwX2ZZVGc2TEtfXzRMakVqcHdiS3BxTEtXdnk2VldpLUk0UDZIaEM3NUxfRmstemM?oc=5\" target=\"_blank\">【違法改造されたバイクで暴走か】札幌市内で約25キロにわたり蛇行運転や信号無視など繰り返す…高校生含む17～21歳の男9人を送検…別の少年1人も書類送検する方針＜北海道札幌市＞</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "527718471698ce1b8962a00e",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:32.761501+00:00",
+    "first_seen_at": "2026-10-23T18:55:32.761501+00:00",
+    "last_seen_at": "2026-10-23T18:55:32.761501+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+          "articles": [
+            {
+              "title": "店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検 - ｄメニューニュース",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5",
+              "published": "Fri, 23 Oct 2026 08:20:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZ051cmJwWmgwSkxyTXFrQnUwd05CQXpBRHg0dXdaT0JoQ3JyWDZ6MXh2X01nSXdFTUpyNUVScmVqT1g4MkoxZ2k5TG15LVlDZU5sR01yZDRhQXQ5YWlHd0FPVUZYR29sU2VwMdIBckFVX3lxTE83bi1PSGxEenlhZGszcDVpVzJ3UmV1MXNTYU04d1pFVjNaOS1EZVQzXzhCaXUwdnQzelpfVXRYcHE5czl2N3ZJSzdETWJYeTVsbFNBeUNsdWYydlhQLVVvR2JJcnk5VXZ4R2hJLXZpSjFiZw?oc=5\" target=\"_blank\">店舗で女性客にみだらな行為をした疑いで逮捕の男性経営者を不起訴処分に「理由は非公表」札幌地検</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+              "rss_source": {
+                "name": "ｄメニューニュース",
+                "url": "https://topics.smt.docomo.ne.jp"
+              },
+              "collection_role": "source_unconfirmed"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5",
+              "published": "Fri, 23 Oct 2026 14:53:33 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8taFhKeGJFRVhyeDJGT1BRQkVLZy1rOHBQc3puaVZYemx4dVdWemJYTEV1aXdXZ1BoU1JVR1pfcTFjMU15UzJ6VUhwcVk3bTFIRm1CZWFXOEFXajlNdG5NUzVZY25NU3NVQUtQdDVlSEpvUXpWd3JTMmpteUNmalE?oc=5\" target=\"_blank\">札幌のホテルに藻岩山スキー場コラボ宿泊プラン 道具一式レンタル付き（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "2f90241f23b1e5f280971eba",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:32.761549+00:00",
+    "first_seen_at": "2026-10-23T18:55:32.761549+00:00",
+    "last_seen_at": "2026-10-23T18:55:32.761549+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - au Webポータル",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "逮捕が報じられた段階",
+        "summary": "リサイクルショップで、売却しようとした工具に別人の名前が書かれていたことを店員が見つけ、通報につながったとみられます。男は逮捕され、所持金は9円と報じられています。",
+        "latest": "男が逮捕されたことが最新の動きです。",
+        "next_watch": "今後は、工具の来歴や男の認否、余罪の有無などが報じられるかが注目点ですが、現時点で明確な次の動きは確認できません。",
+        "articles": [
+          {
+            "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - au Webポータル",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5",
+            "published": "Sat, 10 Oct 2026 01:21:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+            "rss_source": {
+              "name": "au Webポータル",
+              "url": "https://article.auone.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "1aaa7a008468588e7cde12d3",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
+    "diagnostics": {
+      "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+      "target_event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "逮捕",
+        "summary": "札幌市で、無断で倉庫に侵入し工具を盗んだ疑いの男が逮捕された件の続報です。リサイクルショップ店員が通報し、売却しようとした工具に別人の名前があったことが発覚したと確認できます。",
+        "latest": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市",
+        "next_watch": "容疑の認否や送検、被害品の詳細が続報で出るか",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rbm5FbkJhZXZRYXZ0d1V2bnNQWW5HZmZFUWdzTlZtTW1kNGFiZmwxWDVsLVBSQkdrbmstOEpVeDl5bHBRcEhHNXNORU00M2VUS1k1TlNueXFUaVpHVW9kQzNfMDVEd3h6TGNRQ3Rn?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市",
+                "existing_quote": "無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+              },
+              {
+                "kind": "entity",
+                "value": "工具",
+                "existing_quote": "「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認 - FNNプライムオンライン",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "high",
+        "current_stage": "ひき逃げの疑いで男が逮捕された段階",
+        "summary": "迷惑駐車を注意しようと車に近づいた女性に車が衝突し、ひき逃げの疑いで無職の男（27）が逮捕された。男は「心当たりがありません」と否認している。",
+        "latest": "ひき逃げの疑いで無職の男（27）が逮捕され、容疑を否認している。",
+        "next_watch": "容疑の裏付けや事故の詳細、被害女性のけがの程度、今後の捜査の進展に注目されます。",
+        "articles": [
+          {
+            "title": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認 - FNNプライムオンライン",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5",
+            "published": "Sat, 10 Oct 2026 00:40:34 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5\" target=\"_blank\">【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+            "rss_source": {
+              "name": "FNNプライムオンライン",
+              "url": "https://www.fnn.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "5c9f848973048acf089962bd",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
+    "diagnostics": {
+      "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+      "target_event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "逮捕",
+        "summary": "札幌で、迷惑駐車を注意した女性をひき逃げした疑いで27歳無職の男が逮捕された。",
+        "latest": "迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕",
+        "next_watch": "",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xU1VyVmxON3JCWnpYVjZtdHRoS3l4V2h6eXEwZU4wWl9jZDdGNUs4QTVESkdQdWswT1VveUV3WHNwZ0p4REpjOXYxbmNNUQ?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "迷惑駐車を注意した女性をひき逃げした疑い",
+                "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                "incoming_quote": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認"
+              },
+              {
+                "kind": "entity",
+                "value": "27歳無職の男",
+                "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                "incoming_quote": "【迷惑駐車？の車がひき逃げか】迷惑駐車を注意しようと車に近づいた女性に衝突…ひき逃げの疑いで無職の男(27)を逮捕—「心当たりがありません」と否認"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "ValueError",
+    "payload": {
+      "group": {
+        "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "男が逮捕された段階",
+        "summary": "リサイクルショップに工具を売ろうとした男について、工具に別人の名前が書かれていたことを店員が不審に思い通報し、男が逮捕されたと報じられています。所持金は9円だったとされています。",
+        "latest": "リサイクルショップ店員の通報を受けて男が逮捕されたことが伝えられています。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後は、男の容疑の内容や工具の入手経緯について続報が出るかが注目点です。",
+        "articles": [
+          {
+            "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5",
+            "published": "Sat, 10 Oct 2026 01:19:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+            "rss_source": {
+              "name": "ｄメニューニュース",
+              "url": "https://topics.smt.docomo.ne.jp"
+            },
+            "collection_role": "source_unconfirmed"
+          }
+        ]
+      }
+    },
+    "review_id": "3095508a42aec726960cd225",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
+    "diagnostics": {
+      "target_event_id": null,
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+      ],
+      "ai_report": null,
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "retry_format",
+      "decision_attempts": 0
+    },
+    "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "逮捕が伝えられた段階",
+        "summary": "18歳の高校生が暴行を受け、やけどなどのけがをした事件として報じられています。18歳の少女と16歳の少年が逮捕されたことまで確認できます。",
+        "latest": "18歳の少女と16歳の少年が逮捕されたことが報じられています。",
+        "next_watch": "現時点で明確な次の動きは確認できません。",
+        "articles": [
+          {
+            "title": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+            "published": "Sat, 10 Oct 2026 00:36:01 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5\" target=\"_blank\">【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      }
+    },
+    "review_id": "995ce412e4a3c26de079b6b8",
+    "schema_version": 2,
+    "observed_at": "2026-10-23T18:55:48.443886+00:00",
+    "diagnostics": {
+      "target_event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+      "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "傷害容疑での逮捕段階",
+        "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕されたと報じられている。",
+        "latest": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕",
+        "next_watch": "",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "高校生に河川敷で暴行",
+                "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+              },
+              {
+                "kind": "entity",
+                "value": "18歳アルバイトの女と16歳高校生",
+                "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+              }
+            ]
+          }
+        ],
+        "event_identity": {
+          "value": "高校生に河川敷で暴行",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+          "quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌"
+        },
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
+    "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
