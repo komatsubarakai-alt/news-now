@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T06:57:26.498838+00:00",
+  "updated_at": "2026-10-24T07:46:32.582267+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 1958,
+  "waiting_article_count": 1954,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 347.33,
+  "oldest_wait_hours": 348.15,
   "stages": {
     "collection": {
-      "group_count": 21,
-      "article_count": 21,
-      "oldest_wait_hours": 20.18
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 1878,
-      "article_count": 1895,
-      "oldest_wait_hours": 342.15
+      "group_count": 1895,
+      "article_count": 1912,
+      "oldest_wait_hours": 342.96
     },
     "tracking": {
       "group_count": 42,
       "article_count": 42,
-      "oldest_wait_hours": 347.33
+      "oldest_wait_hours": 348.15
     }
   },
   "manual_review_counts": {
@@ -39,8 +39,7 @@
   "daily_network_calls": 22,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours",
-    "waiting_increased_three_observations"
+    "oldest_wait_at_least_48_hours"
   ],
   "daily_tracking_network_calls": 8,
   "daily_tracking_accounted_usd": 0.165866,
