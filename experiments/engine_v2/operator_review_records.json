@@ -1,0 +1,173 @@
+{
+  "schema": "news-now-review-v1",
+  "repository": "komatsubarakai-alt/news-now",
+  "dataset_sha256": "3bd576ef6efdfaa0738bff49dc68d7cf2cc6ec644f23c974c9eb73a6eb06b68a",
+  "snapshot_revision": "f4b831d3fa1f514b2713ecca5acebc8a6aaaf99c",
+  "records": [
+    {
+      "sample_id": "real-019",
+      "evidence_sha256": "ddce06df27e4f8626b1ba03096f85b50ac8d82b7e23c944ab32e4455087e120a",
+      "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+      "choice": "same_event",
+      "note": "元記事は速報で、新記事はその続報。\n\n元記事は削除されていた。",
+      "reviewed_at": "2026-10-15T03:31:58.026Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-020",
+      "evidence_sha256": "fed622cb36ebb82e1fba3546d42b4eb21e3314094d9fa10f62ee04b33f30161c",
+      "event_id": "5476859f-fa90-4ad0-a0ff-f12c0115af0c",
+      "choice": "hold",
+      "note": "どちらの記事も削除されていた。",
+      "reviewed_at": "2026-10-15T03:32:11.653Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-021",
+      "evidence_sha256": "5bd00359b1fdffa13bdca6719d307fd71a34c191d1ccbdcff9edca79eb7c2739",
+      "event_id": "5c4bb2fd-3d87-491c-be56-825ca2674374",
+      "choice": "hold",
+      "note": "新記事の本文が一文字も表示されず、不明。",
+      "reviewed_at": "2026-10-15T03:33:11.772Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-022",
+      "evidence_sha256": "f7ecb28b40b23816e5307aba6a16ccacfec14b89621fbe8a6936e0009e46380b",
+      "event_id": "e72f1865-5261-49b1-ba55-ae5e7ac47a00",
+      "choice": "same_event",
+      "note": "表題、公開時間、HTBが全く同じで、中身を見なくても同じ記事。\n収集でダブったか？",
+      "reviewed_at": "2026-10-15T03:35:34.509Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-023",
+      "evidence_sha256": "d912493423be14c390bfffd97f9817eb346e8c09e8f191c09924e2334e323a4b",
+      "event_id": "e98c5d08-4d42-4ae4-8b60-294778a05c75",
+      "choice": "same_event",
+      "note": "元記事は削除されていたが、速報と続報の関係で間違いない。",
+      "reviewed_at": "2026-10-15T03:38:37.099Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-024",
+      "evidence_sha256": "55635b269ac0abfc0a1568c44d4fb90bc72e551464cb0a23a9e4091ca7ab6717",
+      "event_id": "91f93057-10f0-4a7b-b557-87023c0335da",
+      "choice": "same_event",
+      "note": "1つの事件に対していろいろな視点からいろいろな記事が出ている。\nまとめ方に工夫が必要。",
+      "reviewed_at": "2026-10-15T03:41:33.463Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-025",
+      "evidence_sha256": "640dfbf5b0c082fb00e93bf4c6615a26022fd2d638b56b5eb17135be612dfcac",
+      "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+      "choice": "same_event",
+      "note": "「インフルエンザが流行っている」という元記事の続報として新記事の「注意報」が続報",
+      "reviewed_at": "2026-10-15T03:43:55.073Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-026",
+      "evidence_sha256": "7c200fd3c28ec3391439bd4d49d8b696ad6ba270ffdac8f1ce49ed4c4188ff24",
+      "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+      "choice": "same_event",
+      "note": "新記事は削除されていたが、同じ事件に対して視点が違う記事もしくは続報",
+      "reviewed_at": "2026-10-15T03:46:18.997Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-027",
+      "evidence_sha256": "fd236c73d36ea856ee884f4bca4da9247b8afcd9ef997f8127abc7ce8bc736eb",
+      "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+      "choice": "same_event",
+      "note": "白石警察署と手稲区で同じと判断できるが、AIにそれが判断できるかは不安",
+      "reviewed_at": "2026-10-15T03:48:59.956Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-028",
+      "evidence_sha256": "36d94406a30821ca18a52c07951e6af669b5bf3f52945dd0f0e71b3b8d5ff4a8",
+      "event_id": "5d4bafaf-011f-4e26-9014-22a57b3fef2b",
+      "choice": "same_event",
+      "note": "新記事は続報。",
+      "reviewed_at": "2026-10-15T03:50:06.995Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-029",
+      "evidence_sha256": "f3daeb7a097bbb76b02c6de231620cc7f7ef6ae53a88618ebd461371ad8b09a5",
+      "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+      "choice": "same_event",
+      "note": "人は同じ事件と判断できるが、AIでは難しい？\n白石警察署、29歳、「態度に腹が立った」で判断",
+      "reviewed_at": "2026-10-15T03:52:58.975Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-030",
+      "evidence_sha256": "815c90b10407cbe751879bf7303179d2a31ecac2d48e506a6074d4904bd5a3e9",
+      "event_id": "e07d39ee-7cf2-4895-a948-14fd727c0d76",
+      "choice": "same_event",
+      "note": "公開日時も表題も一致してる。",
+      "reviewed_at": "2026-10-15T03:53:35.088Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-031",
+      "evidence_sha256": "ea500362f12bb922116f0350a3710b0ddc5589642eb584b78c910f4fa0a5eae3",
+      "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+      "choice": "same_event",
+      "note": "白石警察署、29歳、「態度に腹が立った」で判断",
+      "reviewed_at": "2026-10-15T03:55:06.354Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-032",
+      "evidence_sha256": "6235387e3de1d17dc6fcd29695da6a05c2f8f39ec4993810626c029884cb3c14",
+      "event_id": "fab8ff4a-59a8-4e3f-b7d9-312007f89467",
+      "choice": "same_event",
+      "note": "元記事が速報で新記事が続報",
+      "reviewed_at": "2026-10-15T03:56:22.193Z",
+      "incoming_body_checked": true,
+      "reference_body_checked": true,
+      "record_scope": "review_only"
+    },
+    {
+      "sample_id": "real-033",
+      "evidence_sha256": "0d6c334ede2236014148f141af2ef44463caa06339acd4f613f80eec23779fbe",
+      "event_id": "09ca7666-428d-40df-bdc9-7d75a21acbe1",
+      "choice": "same_event",
+      "note": "表題が一致している",
+      "reviewed_at": "2026-10-15T03:57:11.162Z",
+      "incoming_body_checked": false,
+      "reference_body_checked": false,
+      "record_scope": "review_only"
+    }
+  ]
+}
