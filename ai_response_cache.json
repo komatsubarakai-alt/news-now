@@ -42938,5 +42938,385 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "ff0e879fe397ec9f35b53d8ee6b89b3d5e3c28e6bae0dd24c1c2e22640a32a9c": {
+    "id": "resp_05c66bdf18efec00006adc043bd47087d2967fe2ac84f7f0e0",
+    "object": "response",
+    "created_at": 1792803899,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792803900,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_05c66bdf18efec00006adc043cc9ec87d29549a6655994c834",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1771,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1791
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "5d67b7cea3576f93afde2e1ab293e449daffa326fc23b9a724d998d5d37e9a47": {
+    "id": "resp_08f56199e551878a006adc043d304487d28a112fb2fc3207a6",
+    "object": "response",
+    "created_at": 1792803901,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792803902,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_08f56199e551878a006adc043e152c87d2a8ea73f3858bb4fb",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1783,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1803
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "24fd9711564a66b72c95ba4bf358ac9c92ebc676d52a45fceb1aaafc4e8282a7": {
+    "id": "resp_090e965eef224dcb006adc043e8ca887d29f577dc1c2225d5f",
+    "object": "response",
+    "created_at": 1792803902,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792803903,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_090e965eef224dcb006adc043f818487d28ca367e9d8c2a729",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1805,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1825
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "f794cbf8ed9a62c9de4c72cf7620b7c473a5ff73760317376497ffaab7a597cc": {
+    "id": "resp_00e0da03fa2d0a74006adc0440564c87d2839ec051308a48c5",
+    "object": "response",
+    "created_at": 1792803904,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792803908,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_00e0da03fa2d0a74006adc0440cd4087d28a6fd3a914c5c4f8",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5JUjVLZ2ZYWV9zQ3J1NW5pUTBGdFFPVDUxY19CekpyalFJc3pUaGcwcW9vamV2SDJPSkxaeUI4b1FISVN5SFV1SnZUSktoZmZvTjlOaURSVmd3azFNR3lNczItNklEalY1WEZJMzQ1dmdDV0xyaVhQOXNsUHlmM28?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE84R21WVU5iRVRERXlLSUc3ZmMyZmZTUHJpbFVOWloxMVV6VHNPNGh6YlRjSm52bU9sa1hLQzFuQTIxTnNPZEpnU00tb1Uzdw?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃\",\"existing_quote\":\"【ヒグマ速報】「クマがいる」登山道の先にクマの”お尻”が…札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃＿近くにいた登山者5人は下山して無事〈北海道札幌市中央区〉\",\"incoming_quote\":\"【ヒグマ速報】「クマがいる」登山道の先にクマの\\\"お尻\\\"が…札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃＿近くにいた登山者5人は下山して無事〈北海道札幌市中央区〉\"},{\"kind\":\"detail\",\"value\":\"近くにいた登山者5人は下山して無事\",\"existing_quote\":\"【ヒグマ速報】「クマがいる」登山道の先にクマの”お尻”が…札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃＿近くにいた登山者5人は下山して無事〈北海道札幌市中央区〉\",\"incoming_quote\":\"【ヒグマ速報】「クマがいる」登山道の先にクマの\\\"お尻\\\"が…札幌市中央区旭丘の藻岩山でクマのような動物の後ろ姿を目撃＿近くにいた登山者5人は下山して無事〈北海道札幌市中央区〉\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1898,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 675,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2573
+    },
+    "user": null,
+    "metadata": {}
   }
 }
