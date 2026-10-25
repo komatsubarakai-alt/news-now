@@ -45693,5 +45693,195 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "3a692cae3a622fdcb6384c8d55c57f3fbd1a58d4c2eaf6f29a5b95508a757232": {
+    "id": "resp_06cd601ba8564c32006addddbd34d887d095b464d7a76022e9",
+    "object": "response",
+    "created_at": 1792925117,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792925119,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_06cd601ba8564c32006addddbe612487d0b86309cda7e5a9a7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"イベント告知\",\n  \"summary\": \"ジュビロ磐田の公式サイトで、10月10日(土)の札幌戦にEXILE／三代目 J SOUL BROTHERSの小林直己さんが来場することが告知されています。\",\n  \"latest\": \"来場決定の告知が公開されています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 715,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 842
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "381c39f2a71f580af40fe12999d65020bdd32c03b216fae014254b344af90d7f": {
+    "id": "resp_0346606ecf53b1ac006addddbfcb4487d0aaea7e46efed0340",
+    "object": "response",
+    "created_at": 1792925119,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792925121,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0346606ecf53b1ac006addddc02d4c87d08749f9d6ff6cb684",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"政策・制度\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"空き家対策と固定資産税の制度について問題提起が行われている段階\",\n  \"summary\": \"記事タイトルからは、札幌の空き家放置を促す要因として、解体すると固定資産税が3〜4倍になる税制上の壁を市に問いかける内容だと分かります。具体的な制度変更や行政対応の有無は、タイトルと公開日時だけでは確認できません。\",\n  \"latest\": \"2026年10月10日に、札幌の空き家問題と固定資産税の負担増について問題提起する記事が公開されました。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。市側の見解、税制見直しの議論、空き家対策の具体策が出るかに注目されます。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 678,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 909
+    },
+    "user": null,
+    "metadata": {}
   }
 }
