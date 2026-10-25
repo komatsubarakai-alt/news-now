@@ -44743,5 +44743,955 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "37ef1866d687407e1a26eed04bbbd07b99de4719942e1777dddfd74f26723959": {
+    "id": "resp_02b0527da85cfef4006add7c2fc90487d28e9af3aa78c99c97",
+    "object": "response",
+    "created_at": 1792900143,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900144,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_02b0527da85cfef4006add7c3090dc87d28704e5535f6897db",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1680,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1700
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "4ceb870563abbbef6794fb66ac9f30fb1ee4cf5cfd0bba5653b31f7b2853917a": {
+    "id": "resp_0638eefdfe443c1f006add7c30f3bc87d2923cf8b10f63a70b",
+    "object": "response",
+    "created_at": 1792900144,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900145,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0638eefdfe443c1f006add7c31c3d887d2a0312488c2a4ade1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1696,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1716
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "588fb16501e48c2b2774020ea1a442297807bca14cd77f04881e8b2b3bc4ef69": {
+    "id": "resp_0cc73fda8bf02103006add7c3228bc87d2920629d59771f96e",
+    "object": "response",
+    "created_at": 1792900146,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900149,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0cc73fda8bf02103006add7c32f31487d29f24b3daa5f7d0b7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌で面識のない70代男性を金属製の棒で殴った傷害事件\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE0tTEJTUVFBRFZydERnb0lDem1CakJDZzdVZmprVTg2aS15T0s2SUE1R0JWak5fSEZZRHdzZXRhRDgxdjk3LXNRZzNuR0dQaElMbTdKX0JJcVFXRTFDNkF1T25aVkxhSjdDbGsxVHR0TUFkYlJuQ1pjVHBjbVV1VXc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5KMUlOcDM4aUV4YnhmcEZZbE9wV2x6SmU5djA5SXMyLV9wbWtwTU9iMmtNUTBCMDROM1ZicmJ4UGRieFRPTi1Lbks2aEJCd1NKQUVzNTVYMWZYWUpFSjktclh1SFZoNzZyRi1ENDJiYW9MNlRBb1E?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌\",\"existing_quote\":\"金属棒で殴った疑い、札幌の高校生逮捕 散歩中の70代男性けが\",\"incoming_quote\":\"【面識がない人に…なぜ？】面識ない70代男性を突然“金属製の棒”で殴り逃走…容疑者は17歳の高校生＿傷害の疑いで逮捕「事実の通り」容疑認める＿男性は後頭部や腕にけがするも命は無事〈北海道札幌市〉\"},{\"kind\":\"entity\",\"value\":\"70代男性\",\"existing_quote\":\"金属棒で殴った疑い、札幌の高校生逮捕 散歩中の70代男性けが\",\"incoming_quote\":\"【面識がない人に…なぜ？】面識ない70代男性を突然“金属製の棒”で殴り逃走…容疑者は17歳の高校生＿傷害の疑いで逮捕「事実の通り」容疑認める＿男性は後頭部や腕にけがするも命は無事〈北海道札幌市〉\"},{\"kind\":\"detail\",\"value\":\"金属製の棒\",\"existing_quote\":\"金属棒で殴った疑い、札幌の高校生逮捕 散歩中の70代男性けが\",\"incoming_quote\":\"【面識がない人に…なぜ？】面識ない70代男性を突然“金属製の棒”で殴り逃走…容疑者は17歳の高校生＿傷害の疑いで逮捕「事実の通り」容疑認める＿男性は後頭部や腕にけがするも命は無事〈北海道札幌市〉\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1843,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 717,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2560
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "f971a8af34cded806aacbd9a49c744a81e5dfce5517c2e1b1f23a9c0009eb6dd": {
+    "id": "resp_08d144fad6ae5e68006add7c3631d487d2b39678171fa1ba36",
+    "object": "response",
+    "created_at": 1792900150,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900154,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_08d144fad6ae5e68006add7c37016087d29c476c6fbc58a90c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌あおぞらマラソン 2026 オータム大会\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMi3ANBVV95cUxNaGJISHlRUXo0MThRc1NrcGo2dks5V1lyVFA1YnNCZmQ4dEg4eExLYmpZZDNpRk5HcjVpdGdLN1QzZ2paUkQ5YWZmMTl3OXJ0dlZySUJucHVhd3JZTElGWXFCeDJBRFlCWDVHc0J5Q196MXpoRlVrWFNjNkpWWnhDRU5aTXcxaFMyTWhUV015RjZHdURzcV9kQ2pndW9FNndQNEtQWFM5cGdxQ04yeFRRVWg5ZDhxbzhjUWQ2aVNuMXlDN3hIWUlmbHFydnhEam1vNE9aS25DeGYzaXM2NmU3UE1OSVEyQzhuN0VtSUs0cDRVZFRMNHBxdFhCV29hT2FHMHBWbEhzNWZ2LVpsM2pYVE9TNjN5eEkyQ1J6eC1RdS1YTFM0VUhhdEw5RmRPTFozUGtJaVAtcXRHX2pDaTVJanFwbDNSYmwxY3BWcW9jN2RlNWl6YWNNZ2EzM3VlQTVMOFprUTVlUHFQeXBxa0ZscWVGdXJwc2Vacy03V2lDSkswTXg1R3JLRkNZX2dxOHFiX3dIUEVZMTZMMmMxQVgtOUU4c2FLMDFrVFZTeXlZdGUxd2RGaVh1aGI1RjZJZGNpb1NudERQaUNVNjliZ05QVnFHVTkyMjRTWE1kLQ?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMirgJBVV95cUxNaU9RWXBIUDJIRVRQNWw0S3VfZmMwYWhiU3dnUFhLVjdTZUlrRjRobXZiRTFxOFNuNllvT25pVkxfNmlqZzVoNkxKT1hDOU1YdUVGMDZQS1YwLURVMGluT2wzeDNPZzR5ZWhENFJ2VUVMenkzWVBaOW9hTkRoaUlLbWNvWEt2R2V5QzdJc3ROV3BsSW1oLXp4RnRva2d5VWRNZTJSZkd3Q2NhRWdGUXpCUHg1Z1lqbWpuX0NBN2lWaFRaZXNUM3NiZEwwWC1sQlBUS3hTamhseEJESkQ3U2JuU3pQbGNWZ3NjOUJIcnI1WFQtSzVyU3d5U1dnZW5WUmQzVnlsb3B3VEZmdmlCUnlJQXEtOHVRaGFyOXUweExUa2V0S2hUNDIwXzU5alFZQQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌あおぞらマラソン 2026 オータム大会\",\"existing_quote\":\"~#TBS【公式||LIVE放送】 札幌あおぞらマラソン 2026 オータム大会 ライブ 2026年10月25日\",\"incoming_quote\":\"!>【公式LIVE放送!】 札幌あおぞらマラソン 2026 オータム大会放送・テレビ放送 2026年10月25日\"},{\"kind\":\"detail\",\"value\":\"2026年10月25日\",\"existing_quote\":\"~#TBS【公式||LIVE放送】 札幌あおぞらマラソン 2026 オータム大会 ライブ 2026年10月25日\",\"incoming_quote\":\"!>【公式LIVE放送!】 札幌あおぞらマラソン 2026 オータム大会放送・テレビ放送 2026年10月25日\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 2263,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1014,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3277
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "3dc2023dc260f0cd625a55019b611de83d27b0dad4ff964f4096bd731640de8d": {
+    "id": "resp_077e3f8909f4294f006add7c3e23f087d2b6e37919f6ad0647",
+    "object": "response",
+    "created_at": 1792900158,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900158,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_077e3f8909f4294f006add7c3eac6487d28b9ce389157a6954",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1448,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1468
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "30e52fbbaca274a7ed3e56706e02b6b39f8ce8e29331410931923cf00f2956d9": {
+    "id": "resp_01f3a106cea7662a006add7c3f0e6887d2a7ef24f0e5f5243e",
+    "object": "response",
+    "created_at": 1792900159,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900160,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_01f3a106cea7662a006add7c3ff99487d2aba07c9a6c13a84b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1436,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1456
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "f24af2a777dd1e16322d01667327ef48261ec9d57147dd1c88dc68f434600fcf": {
+    "id": "resp_0351c1148f6f57a5006add7c446fc887d2b5e411bdc9aaa63e",
+    "object": "response",
+    "created_at": 1792900164,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900165,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0351c1148f6f57a5006add7c44daf887d29755597501185123",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"傷害容疑で逮捕された段階\",\n  \"summary\": \"札幌で、高校生に対する暴行や煙草の火を押し当てる行為に関し、18歳のアルバイトの女と16歳の高校生が傷害容疑で逮捕されたとする記事です。\",\n  \"latest\": \"18歳の女と16歳の高校生が傷害容疑で逮捕されたことが伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。今後、捜査の進展や容疑の詳しい経緯が報じられるかどうかが注目点です。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 701,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 893
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "5a5633bd2320d2630d467306bf5bfd7a4deae9c20557ac3e36e61158b6d3f10b": {
+    "id": "resp_0b098e5e25cef4e5006add7c46341c87d29e0714ede9cdc4a6",
+    "object": "response",
+    "created_at": 1792900166,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900167,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b098e5e25cef4e5006add7c469c3087d2b0f636feaffa026c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"警察官の逮捕報道段階\",\n  \"summary\": \"札幌・白石署の警察官が、妻への暴行容疑で逮捕されたと報じられています。記事タイトルからは、本人が「態度に腹が立った」と供述していることが分かります。\",\n  \"latest\": \"警察官の逮捕と、その供述が報じられたこと。\",\n  \"next_watch\": \"今後、容疑の詳細や所属先の対応、処分の有無が明らかになるかが注目点です。現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 677,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 857
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "17c2782565f0964b783f75452ea1fe443fb64cb942c196d918431fc997a28f63": {
+    "id": "resp_0537072c0ebf8dce006add7c47d0cc87d28aba9db79d6a72a8",
+    "object": "response",
+    "created_at": 1792900167,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900169,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0537072c0ebf8dce006add7c488eac87d290b65b45f200699e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"high\",\n  \"current_stage\": \"指示役2人の逮捕が報じられた段階\",\n  \"summary\": \"札幌での強盗容疑などに関し、通信アプリで残忍な指示を出したとされる『闇バイト』強盗の指示役2人が逮捕されたと報じられています。首都圏で相次いだ強盗事件ですでに逮捕されていた人物がいることも、記事タイトルから確認できます。\",\n  \"latest\": \"2026年10月8日付で、通信アプリを使って犯行を指示したとみられる指示役2人の逮捕が報じられました。\",\n  \"next_watch\": \"この2人の関与の詳細や、札幌の事件および首都圏で相次いだ強盗事件との関連がどこまで明らかになるか、続報が出るかに注目されます。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 780,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1028
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "2ffbed3b4cafd780985c926db35da7a7b3250d193777e5125959312dd06c2e65": {
+    "id": "resp_0e6a1eb751ab662b006add7c4a416887d2b54b0bd078bfb0ab",
+    "object": "response",
+    "created_at": 1792900170,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792900171,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0e6a1eb751ab662b006add7c4af93487d2997ae22fa650d784",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"イベント開催中\",\n  \"summary\": \"札幌で「秋のサルビア展」が開催中だと分かります。記事タイトルと公開日時からは、イベントの開催状況以上の進展は確認できません。\",\n  \"latest\": \"2026年10月10日時点で、札幌で秋のサルビア展が開催されていることが確認できます。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 665,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 803
+    },
+    "user": null,
+    "metadata": {}
   }
 }
