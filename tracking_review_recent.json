@@ -2,23 +2,415 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "e92ee2c8d1f5142033f3f1fa",
-      "stage": "backfill",
-      "reason": "search_identity_uncertain",
-      "observed_at": "2026-10-27T13:16:37.838827+00:00",
+      "review_id": "9d50127b823f14122bfb0f1c",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
       "diagnostics": {
-        "target_event_id": "800e34e2-0a12-484c-b7cb-31a2349bc3ff",
-        "target_event_name": "札幌市が入札行った公共工事 業者が不当排除されたと訴え 第三者機関が市側の不備認めるも… - 日テレNEWS NNN",
+        "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+        "target_event_name": "札幌市で29歳警察官が同居する妻を絞めた疑いで逮捕",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NVkdmYWxMU3VfRG54cUFRemExZXB0WTNMSWlvRnRQYzJINjh0MWFjX3hld1NnRXRGWXFtbEVhMHRyb2ctZmk3Smt2bDI5NW1HVE9LWHVXU0kzWEdScnFSQ0pRMUZ2eThWWTFfZnhTMlUyS1Y1LWhMVVRLaHlDcTQ?oc=5",
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xUmtVSndKTjU2NTNXYmlsMUlqaHZVSC1Da25MNDYwRmFXVG5tcnlkajVOY1JpY3ZjRVFhU0h3NDVFNFMyenRJRW5GUFd4S1FlLTI5T0RvSQ?oc=5",
+          "https://news.google.com/rss/articles/CBMidkFVX3lxTE11QUdBVEtTMHpEU2l0ZURVMXF0M0ZuaGxRUnd3UEhmTm93UllSd01Tejd2eWhqY2Z2T2ZiSUJCdm9zQTJraFZIUTJIWkx4bWpDMUNkUU1UZG5ENjI1X3dna2tJU0E1bTRKUlNCck11d3g4ekx2TXc?oc=5",
+          "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZHNySGQ4NC1vOHdaTFg4Q1RhZnZTZFJ4R09QMDhXLTkyZmxFTXJkV2x5ejJNY3VIVnBoZUJwNUVmVkxqWjRDbFBxRW5Cb3pjczJpXw?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pLUtjbjhScDdRcXExYXNiMTN2YkV2UzBZNDRVT2d4VF9vV19abXRoRmZsV1F5OEtEYjJEWnlTSldndXZXZDAyLUtURDFxSE9zcnVNN05HOE5LVl91Vm03alM2QUNTQk1rcE1GOUhac3BKTUNvd1ctX1VWeUd3Y0k?oc=5",
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTE95OWpCdFZlcnNJSzg5Rjl6bHNVaVZJU2U0V1dTdkx4OGIyaUoxRmdBNDF3Y1hvcXBKbGkwNUtEbHp2T3NBY3lweEVpVEp5NjVtQ05HR2lmMUh3VlNKLVZSZTZkM0dSQjZMazZN?oc=5",
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBuMi16VE9NdVljYml4eGJpVFViQW9RODl4NjRZWGEzT2w2RjMzN0VEeDItNHZiVzRIVS1ybkk4U3JBcS1WbzljeTFTbU1KSVU0X2RiQmRxTVU4UTJKY0U2ZHVnMTh5QVE?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaFVid0FrZXdHWFl6T0duNVlDTFFDX2otRzVlc1lQTC1lSFJrZmZkdjJNMGkwdTc0bFNRbk4yOHM1MXB2dmNacU90dWpOd2xfbkdIaHFISUVCLXZkSTNhR3ZpVXRPS0hrUkNNMmoyYURVdHRrS0xDODNJWjQ4N1k?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5"
+        ],
         "ai_report": {
-          "confidence": "low",
-          "matches": [],
-          "evidence_urls": [],
-          "identity_matches": []
+          "relation": "same_event",
+          "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "警察官の暴行疑いで逮捕された段階",
+          "summary": "札幌・白石署の警察官が同居する妻への暴行容疑で逮捕された件。",
+          "latest": "「態度に腹が立った」と供述",
+          "next_watch": "捜査の進展や処分の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NVkdmYWxMU3VfRG54cUFRemExZXB0WTNMSWlvRnRQYzJINjh0MWFjX3hld1NnRXRGWXFtbEVhMHRyb2ctZmk3Smt2bDI5NW1HVE9LWHVXU0kzWEdScnFSQ0pRMUZ2eThWWTFfZnhTMlUyS1Y1LWhMVVRLaHlDcTQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市",
+                  "existing_quote": "〈札幌市〉",
+                  "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                },
+                {
+                  "kind": "entity",
+                  "value": "妻",
+                  "existing_quote": "同居する妻の首を後ろから腕で絞めた疑い",
+                  "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "札幌・白石署の警察官が妻にDVか",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+            "quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース） - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5"
+      ]
+    },
+    {
+      "review_id": "995ce412e4a3c26de079b6b8",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
+      "diagnostics": {
+        "target_event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+        "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "傷害容疑での逮捕段階",
+          "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕されたと報じられている。",
+          "latest": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "高校生に河川敷で暴行",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                },
+                {
+                  "kind": "entity",
+                  "value": "18歳アルバイトの女と16歳高校生",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "【顔面殴打→手の甲にタバコの火】顔面を殴ったり、手の甲にタバコの火を押し当てたりするなどの暴行…18歳の高校生がやけどなどのけが―18歳の少女と16歳の少年を逮捕 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GQk9ueDc2bWJwaUUxS2dNQS0tLTJJc0ZvWW9iTTJTN2ZvSGgzUm5BQ1ZZaHRtWE9tb1U4bTNCSXZjek13eGVwaFJIRXcyTXJPUndCbXcwUVNBdldIN05xRXdIVFMxUW5uQjRoNHNneWxVZHdjT2k2NTdMTGFWVUU?oc=5"
+      ]
+    },
+    {
+      "review_id": "eed89ec49f67c9e2d25d4db8",
+      "stage": "event_attachment",
+      "reason": "uncertain_relation",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
+      "diagnostics": {
+        "target_event_id": "f350708b-d6ca-4e09-a2aa-ba536362355e",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wczZwSUlCTHd5NzBJaGlWLW1Od0g5WkluTjB0OEY1b1BuMjJGTVVIWlFvUHlCcFpHOU5icXlGUUlEclhWalBpRlJaMkJYYVl2RG5UamxoaTFicEYzUHBFRVN2dTBRaHBZMVoxeUZBbmJnWUV0bWhCNklfRdIBgAFBVV95cUxPYTUzWVpLVXR6WGlNLWhKb19nMFI1R1ZlcUpsN0tzcEFBY1BUS1JPSE1Lb2tWelB2RmJPSmhaVTVlOVI0UVgxczZNeXdiQ1QtWTBlRG82djNFYk5Bd1VWaGNlR092VS1EdnhHVG5pYS1LS1RSek1BdmZHU1FEV0N4ag?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "f350708b-d6ca-4e09-a2aa-ba536362355e",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": true,
+          "current_stage": "逮捕",
+          "summary": "札幌市で、迷惑駐車を注意しようと近づいてきた女性をはねて逃走した疑いで27歳男が逮捕された段階。",
+          "latest": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市",
+          "next_watch": "送検や起訴、続報で容疑の詳細や被害状況が新たに示されるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wczZwSUlCTHd5NzBJaGlWLW1Od0g5WkluTjB0OEY1b1BuMjJGTVVIWlFvUHlCcFpHOU5icXlGUUlEclhWalBpRlJaMkJYYVl2RG5UamxoaTFicEYzUHBFRVN2dTBRaHBZMVoxeUZBbmJnWUV0bWhCNklfRdIBgAFBVV95cUxPYTUzWVpLVXR6WGlNLWhKb19nMFI1R1ZlcUpsN0tzcEFBY1BUS1JPSE1Lb2tWelB2RmJPSmhaVTVlOVI0UVgxczZNeXdiQ1QtWTBlRG82djNFYk5Bd1VWaGNlR092VS1EdnhHVG5pYS1LS1RSek1BdmZHU1FEV0N4ag?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wczZwSUlCTHd5NzBJaGlWLW1Od0g5WkluTjB0OEY1b1BuMjJGTVVIWlFvUHlCcFpHOU5icXlGUUlEclhWalBpRlJaMkJYYVl2RG5UamxoaTFicEYzUHBFRVN2dTBRaHBZMVoxeUZBbmJnWUV0bWhCNklfRdIBgAFBVV95cUxPYTUzWVpLVXR6WGlNLWhKb19nMFI1R1ZlcUpsN0tzcEFBY1BUS1JPSE1Lb2tWelB2RmJPSmhaVTVlOVI0UVgxczZNeXdiQ1QtWTBlRG82djNFYk5Bd1VWaGNlR092VS1EdnhHVG5pYS1LS1RSek1BdmZHU1FEV0N4ag?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTF56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "迷惑駐車を注意しようと近づいてきた女性をはね逃走",
+                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "incoming_quote": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "27歳男",
+                  "existing_quote": "27歳無職の男を逮捕",
+                  "incoming_quote": "27歳男を逮捕"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wczZwSUlCTHd5NzBJaGlWLW1Od0g5WkluTjB0OEY1b1BuMjJGTVVIWlFvUHlCcFpHOU5icXlGUUlEclhWalBpRlJaMkJYYVl2RG5UamxoaTFicEYzUHBFRVN2dTBRaHBZMVoxeUZBbmJnWUV0bWhCNklfRdIBgAFBVV95cUxPYTUzWVpLVXR6WGlNLWhKb19nMFI1R1ZlcUpsN0tzcEFBY1BUS1JPSE1Lb2tWelB2RmJPSmhaVTVlOVI0UVgxczZNeXdiQ1QtWTBlRG82djNFYk5Bd1VWaGNlR092VS1EdnhHVG5pYS1LS1RSek1BdmZHU1FEV0N4ag?oc=5",
+              "quote": "7か月後…27歳男を逮捕"
+            }
+          ],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wczZwSUlCTHd5NzBJaGlWLW1Od0g5WkluTjB0OEY1b1BuMjJGTVVIWlFvUHlCcFpHOU5icXlGUUlEclhWalBpRlJaMkJYYVl2RG5UamxoaTFicEYzUHBFRVN2dTBRaHBZMVoxeUZBbmJnWUV0bWhCNklfRdIBgAFBVV95cUxPYTUzWVpLVXR6WGlNLWhKb19nMFI1R1ZlcUpsN0tzcEFBY1BUS1JPSE1Lb2tWelB2RmJPSmhaVTVlOVI0UVgxczZNeXdiQ1QtWTBlRG82djNFYk5Bd1VWaGNlR092VS1EdnhHVG5pYS1LS1RSek1BdmZHU1FEV0N4ag?oc=5"
+      ]
+    },
+    {
+      "review_id": "042c37b29349bcce7b45c485",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
+      "diagnostics": {
+        "target_event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+        "target_event_name": "【「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "2af412e0-853d-4a8c-9aae-3be20f337075",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌市で、無断で倉庫に侵入しドライバーを1台盗んだ疑いで30歳の男が逮捕された段階です。",
+          "latest": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9wWFljWTRtOXk1X1psN0pFWVJoVEg2YVdPNDVyVVBPYUhHTWkzLXN2SjQ1Ym9Kb0I1dk8zM0JmT3FDQkNKSU1BTkc4Nk1lUm5fRG9pUzFLZVNWRXRYSHJvcnptRUw5WXdkaVhvRk1jbU4zTjVFYTlmMGUxNmdvMGs?oc=5",
+              "anchors": [
+                {
+                  "kind": "detail",
+                  "value": "工具",
+                  "existing_quote": "「工具に別の人の名前」で窃盗発覚",
+                  "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "リサイクルショップ店員",
+                  "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                  "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+                },
+                {
+                  "kind": "detail",
+                  "value": "男逮捕",
+                  "existing_quote": "「工具に別の人の名前」で窃盗発覚】「工具に別の人の名前のシールが貼ってある」…無断で倉庫に侵入しドライバーを1台盗んだ疑いで自称・無職の男(30)を逮捕",
+                  "incoming_quote": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+      ]
+    },
+    {
+      "review_id": "59be4491c381fee3c888bf18",
+      "stage": "event_attachment",
+      "reason": "uncertain_relation",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
+      "diagnostics": {
+        "target_event_id": "f350708b-d6ca-4e09-a2aa-ba536362355e",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYS1lMV2Y0N2ZHUFJER29tRnhBU0VXVlUwSlJzR0xTWFVFOUVUYWRwaEhtcTl0am11NVZoSHdjRFk4RnZGZ2RnT1RNdnQwTHkzSW9iT2ltYlZRRnpOU1hhemxSLTh5bUQ1S3lqVGZn?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "f350708b-d6ca-4e09-a2aa-ba536362355e",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌で、迷惑駐車を注意した女性をはねて逃走した疑いで27歳の男が逮捕された件の続報です。",
+          "latest": "7か月後…27歳男を逮捕",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYS1lMV2Y0N2ZHUFJER29tRnhBU0VXVlUwSlJzR0xTWFVFOUVUYWRwaEhtcTl0am11NVZoSHdjRFk4RnZGZ2RnT1RNdnQwTHkzSW9iT2ltYlZRRnpOU1hhemxSLTh5bUQ1S3lqVGZn?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYS1lMV2Y0N2ZHUFJER29tRnhBU0VXVlUwSlJzR0xTWFVFOUVUYWRwaEhtcTl0am11NVZoSHdjRFk4RnZGZ2RnT1RNdnQwTHkzSW9iT2ltYlZRRnpOU1hhemxSLTh5bUQ1S3lqVGZn?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTF56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "incoming_quote": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "27歳男",
+                  "existing_quote": "27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "incoming_quote": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "迷惑駐車を注意しようと近づいてきた女性をはね逃走 7か月後…27歳男を逮捕 札幌市 - au Webポータル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYS1lMV2Y0N2ZHUFJER29tRnhBU0VXVlUwSlJzR0xTWFVFOUVUYWRwaEhtcTl0am11NVZoSHdjRFk4RnZGZ2RnT1RNdnQwTHkzSW9iT2ltYlZRRnpOU1hhemxSLTh5bUQ1S3lqVGZn?oc=5"
+      ]
+    },
+    {
+      "review_id": "ad68ebb841efd8e632aa810e",
+      "stage": "schedule_search",
+      "reason": "ValueError",
+      "observed_at": "2026-10-27T22:59:05.784325+00:00",
+      "diagnostics": {
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_event_name": "札幌市の副首都整備担当部設置",
+        "ai_report": {
+          "confidence": "high",
+          "matches": [
+            {
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "confidence": "high"
+            },
+            {
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "confidence": "high"
+            }
+          ],
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1bW0wU3ZXTlZuS2IySzFUZGhJbnRNMGJJOW56MzVmSEF5V0FFNU9nd1lsM0FjTmNsMXRudFp0X3pqTjNoNk0wXzE4T3FlUFNpX25XeGRqTUZWZ01LbGIyaU5qczhlRDBYZk8ySHZn?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市、副首都整備担当部を１６日に設置",
+                  "existing_quote": "札幌市 副首都整備担当部を１６日に設置",
+                  "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
+                },
+                {
+                  "kind": "detail",
+                  "value": "副首都整備担当部",
+                  "existing_quote": "札幌市 副首都整備担当部を１６日に設置",
+                  "incoming_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で"
+                }
+              ]
+            },
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1bW0wU3ZXTlZuS2IySzFUZGhJbnRNMGJJOW56MzVmSEF5V0FFNU9nd1lsM0FjTmNsMXRudFp0X3pqTjNoNk0wXzE4T3FlUFNpX25XeGRqTUZWZ01LbGIyaU5qczhlRDBYZk8ySHZn?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "16日付で",
+                  "existing_quote": "10月16日付で",
+                  "incoming_quote": "16日付で班から格上げ"
+                },
+                {
+                  "kind": "detail",
+                  "value": "班から格上げ",
+                  "existing_quote": "16日付で班から格上げ",
+                  "incoming_quote": "16日付で班から格上げ"
+                }
+              ]
+            }
+          ]
         },
         "raw_ai_response": null,
         "http_status": null
       },
-      "event_id": "800e34e2-0a12-484c-b7cb-31a2349bc3ff",
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "event_name": null,
       "article_urls": []
     }
