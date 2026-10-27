@@ -51203,5 +51203,290 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "acfc5ea53d561fd22744a9cd5325bb162178e02d67a41c404d3c7bf5f48ba486": {
+    "id": "resp_0a64cabe60b59665006ae0a40c4e8087d2b9b45ec5f97e825d",
+    "object": "response",
+    "created_at": 1793106956,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793106961,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0a64cabe60b59665006ae0a40d96d887d2a86b96479af1728c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市手稲区役所でガス漏れ 一時閉鎖で利用者・職員ら約350人避難 臨時点検中に異臭で発覚\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5UdFlWek1mU1dqX0dseEk2WHFsUG9BSHExVGhHYnVhZmRxNlA3NUJHWkRTcjZ3TFJIRVJWa21WaUZCLVhJZmR2OWhRQWZjMUJWWU00Wjc5dVcxN213Z096SDlLRDJCUkFMSkNIVUk1SdIBdEFVX3lxTE92M3FLdjFIVXNKQzBxZVhVQ2VZNjI1TWZfdDE5aXpOcWtnNGhKLVpwZWJ6QXYxRENsTFVMZnIwXzM5SGdOSDI2VFRTRDNSR0FtMUZYNEJqWVdZMno5a29wekNUdi1WUUJ1MzVnMEh1dHN6aWdu?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAweUtob0VqQ2pzUllCb3FSTy0yYVFZUjJqcnd3TG1TX0dvY1Y5XzMtVEdqa25xaVFDbC1hQjUtMTBMaEg1SENaVFJyR3FaWmw3ME9SUl9NaU9BREhUT25aWEMyMWdjWTg?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市手稲区役所でガス漏れ\",\"existing_quote\":\"【速報】札幌市手稲区役所でガス漏れ 一時閉鎖で利用者・職員ら約350人避難 臨時点検中に異臭で発覚\",\"incoming_quote\":\"【速報】札幌市手稲区役所でガス漏れ　一時閉鎖で利用者・職員ら約350人避難　臨時点検中に異臭で発覚\"},{\"kind\":\"detail\",\"value\":\"一時閉鎖で利用者・職員ら約350人避難\",\"existing_quote\":\"【速報】札幌市手稲区役所でガス漏れ 一時閉鎖で利用者・職員ら約350人避難 臨時点検中に異臭で発覚\",\"incoming_quote\":\"【速報】札幌市手稲区役所でガス漏れ　一時閉鎖で利用者・職員ら約350人避難　臨時点検中に異臭で発覚\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1876,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 658,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2534
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "86bfe7885c45dcb9ab6dcd0db6a67bd5eaa6d2d43d72e374858bd76c28a03d49": {
+    "id": "resp_056837a94e9d08ee006ae0a411f07887d2a69fd81778cb9288",
+    "object": "response",
+    "created_at": 1793106961,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793106977,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_056837a94e9d08ee006ae0a41e675087d2ab69c3e95891eb8e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市手稲区役所でガス漏れ 職員や市民ら300人避難 けが人なし\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE90QzBZYjBRcnlCZFZJQWlmUFZxckVpYTFjR0w0SldSSGZPb2VpT1BxbHkwTm1YVzU5OGRkRTFtQnVicWFOdS1lVEpwNFpMNzk2b2VKMnRJZ2dtVU1TOWtCNmlZdFI2MnJJTXBKLXJLNVBlck5FdWJUZUtrWVdiMjA?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMickFVX3lxTE40c1VpMVplZHNlS3pwSnZTNy14UmZVV19RVVBNZWNpMmVCNE0tTlBSUFVsYVdJWnhaRS1aS01FclRxUkx5M2pUMmxHdUlVeHdUdi0wRXljSEtwbDc3cHVqdUpuWHhya1d4UEpCNEQ2X0Vldw?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市手稲区役所でガス漏れ\",\"existing_quote\":\"札幌市手稲区役所でガス漏れ 職員や市民ら300人避難 けが人なし [北海道]\",\"incoming_quote\":\"札幌市手稲区役所でガス漏れ 職員や市民ら300人避難 けが人なし（朝日新聞）\"},{\"kind\":\"detail\",\"value\":\"職員や市民ら300人避難\",\"existing_quote\":\"札幌市手稲区役所でガス漏れ 職員や市民ら300人避難 けが人なし [北海道]\",\"incoming_quote\":\"札幌市手稲区役所でガス漏れ 職員や市民ら300人避難 けが人なし（朝日新聞）\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1741,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 504,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2245
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c5d1f96e6353c450f8261e25ff693ae449f495ec0f148fb96080f15f71cb4447": {
+    "id": "resp_0a7b1e874f978ad3006ae0a42dfc4887d286073c8ffc956ada",
+    "object": "response",
+    "created_at": 1793106990,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793106992,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0a7b1e874f978ad3006ae0a42fa19487d282051155f6393562",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"対象外\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"試合結果の速報\",\n  \"summary\": \"J2磐田がリーグ戦第10節でPKによる得点で1-0の完封勝利を収め、リーグ戦の連敗を3で止めたことが分かります。\",\n  \"latest\": \"2026年10月10日15:37時点で、磐田の1-0勝利と連敗ストップが速報されています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 690,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 148,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 838
+    },
+    "user": null,
+    "metadata": {}
   }
 }
