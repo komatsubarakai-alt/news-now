@@ -2,10 +2,261 @@
   "schema_version": 1,
   "items": [
     {
+      "review_id": "7f233c0d1cc09530a20b76c0",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
+      "diagnostics": {
+        "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+        "target_event_name": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌 - HTB 北海道テレビ",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JODM3Vmo1UF9PYVFwZkNrT1RNbGM0UWNSMnZTanpGME5zV1NoNkV3N2NydS1JM0RGUzFwM0o5ZkNEMUxHZk5CV3pJN2R6aDdOaXRjRWhYYjd4bHBoREkwXzVicjlPc0daUDBpa3FyajdGVTNDdEJRYU1CeTE4c3M?oc=5",
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JdDJSR0tBR1dfQVFzdi1ZTDYyUkxXaHRTektKQ09QRHhFX1cwaGtaUzY4VUxXQ1VmeWFVdEh5NzVXUVItOHgwaTc1WGlvY1JzbmZYMVl5ci16SHloaVhWS3VsTF92RjFERW9oeDFn?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "迷惑駐車を注意した女性をはねて逃走した疑いで、27歳男が逮捕された段階。",
+          "latest": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "迷惑駐車を注意した女性をはねて逃走",
+                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "incoming_quote": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区"
+                },
+                {
+                  "kind": "entity",
+                  "value": "27歳男",
+                  "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                  "incoming_quote": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5"
+      ]
+    },
+    {
+      "review_id": "a3c8e45c11c92d08e5953912",
+      "stage": "event_attachment",
+      "reason": "ValueError",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
+      "diagnostics": {
+        "target_event_id": null,
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+        ],
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "retry_format",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+      ]
+    },
+    {
+      "review_id": "d6accfad6ee929432925d8dc",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
+      "diagnostics": {
+        "target_event_id": "4002f5d8-6c3f-4678-afee-87597a7cb104",
+        "target_event_name": "2年前の札幌「闇バイト」事件 指示役か 2人再逮捕 強盗容疑 - 北海道新聞デジタル",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "4002f5d8-6c3f-4678-afee-87597a7cb104",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "2年前の札幌の「闇バイト」事件で、強盗容疑による再逮捕が報じられた段階",
+          "summary": "2年前の札幌の「闇バイト」事件について、指示役とみられる2人が強盗容疑で再逮捕されたと確認できる。記事では、通信アプリでの残忍な指示内容と、札幌で80代男性を縛って現金を奪った疑い、首都圏で相次いだ強盗事件で既に逮捕されていたことが示されている。",
+          "latest": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞",
+          "next_watch": "強盗容疑での再逮捕に続く起訴や裁判手続きの有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFk5eXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌「闇バイト」事件",
+                  "existing_quote": "2年前の札幌「闇バイト」事件",
+                  "incoming_quote": "\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞"
+                },
+                {
+                  "kind": "entity",
+                  "value": "指示役2人",
+                  "existing_quote": "指示役か 2人再逮捕 強盗容疑",
+                  "incoming_quote": "\"闇バイト\"強盗の指示役2人を逮捕"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "札幌「闇バイト」事件",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5",
+            "quote": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞ - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+      ]
+    },
+    {
+      "review_id": "8a99231de86fa7e1706b3a3f",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5"
+        ],
+        "ai_report": {
+          "relation": "uncertain",
+          "event_id": "",
+          "confidence": "low",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "",
+          "latest": "",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [],
+          "identity_matches": [],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "【道路予算カット発言】「政治家として問題がある」札幌市長が苦言…鈴木宗男氏も「人としての矜持が問われている」と一喝＿簗農水大臣に対して北海道内でも波紋 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5"
+      ]
+    },
+    {
+      "review_id": "108ac8004a8a54f7ff6fe8a8",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "札幌の空き家と固定資産税をめぐる税制上の問題を問う内容。",
+          "latest": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
+          ],
+          "identity_matches": [],
+          "event_identity": {
+            "value": "札幌の空き家放置を加速させる税金の壁",
+            "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5",
+            "quote": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う - 選挙ドットコム",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
+      ]
+    },
+    {
       "review_id": "74b0286d1424b29df893f49d",
       "stage": "schedule_search",
       "reason": "ValueError",
-      "observed_at": "2026-10-28T09:44:51.179046+00:00",
+      "observed_at": "2026-10-28T16:41:30.974453+00:00",
       "diagnostics": {
         "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
         "target_event_name": "札幌市の副首都整備担当部設置",
