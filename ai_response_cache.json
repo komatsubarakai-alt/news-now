@@ -56238,5 +56238,100 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "288376e62a9ded4be233d69f720d36da9179032aeab08fc1a24682f09ab848df": {
+    "id": "resp_06e8c641dabf18a2006ae304ea4c0887d0969fb2970cce545c",
+    "object": "response",
+    "created_at": 1793262826,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793262828,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_06e8c641dabf18a2006ae304eb855c87d0882770361f93caba",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌のマッサージサロンでの性的暴行疑いによる56歳男の逮捕\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2a2dnQ1pkMklhejl1TUwzX1FZTmV2NmpLTVV5NWR1QmVSQmtZQ2NqWnVuaWRWbGJwaXZmTU9TN3EyRVBUNTdtVDI2dFZWRUpZYTZIVGxkbDgxZw?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMihwFBVV95cUxOTWdPX0dzSjJ6TkdMNWViQjhDamxTMGhncnNqcERtd05aTWJRMklsNktuSVpwNGZFQWt6LTBScnhrS25DVzRyU21mR21fWll5NGpzcGxYX19RZmROZ3dkSGR4VU1ZV3N3Q2ZCRFVNdGFZZHlKcHdOU1d3OGxKMDJCUm44NHlZZXc?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市\",\"existing_quote\":\"マッサージサロンで女性従業員に性的暴行か 会社役員の男（56）逮捕 容疑否認 札幌市\",\"incoming_quote\":\"札幌のマッサージサロンで女性店員に性的暴行か 客の56歳男を逮捕 「下半身は触ったが…」容疑を否認\"},{\"kind\":\"entity\",\"value\":\"56歳男\",\"existing_quote\":\"マッサージサロンで女性従業員に性的暴行か 会社役員の男（56）逮捕 容疑否認 札幌市\",\"incoming_quote\":\"札幌のマッサージサロンで女性店員に性的暴行か 客の56歳男を逮捕 「下半身は触ったが…」容疑を否認\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1757,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2252
+    },
+    "user": null,
+    "metadata": {}
   }
 }
