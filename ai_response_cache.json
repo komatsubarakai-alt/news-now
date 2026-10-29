@@ -55288,5 +55288,955 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "4b88e4c05e76877232ac4d2bc0989e17c58bcdd16d62d23089eb9359d4a48935": {
+    "id": "resp_0b5b4529b7271960006ae2a643486887d29a4a4890645517ce",
+    "object": "response",
+    "created_at": 1793238595,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238598,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b5b4529b7271960006ae2a64441b487d2a039d4f53382397a",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市の地下鉄駅エスカレーターで女性のスカート内を盗撮した34歳の男の現行犯逮捕\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5LeWR5MUk3OFlqQ3pDTXhLSEEycTVHVy12N21Yam5KZlRkb1E3SEZEY2xGOV9aUlBkRVh5TWIwNFVvd2NDU1FGLXBabGFPQ1RLQXZ0VkhtQUxhdDdtdkhCV2kwTWJlT05UNW52d2lPQWJxcGJ2UGdRdGdWcEd6anM?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9vdGpsbHI4czlBdVhJckY3OGYyYXozUUtxeWlvSW5GX0h3ZmRaUDNVN0RHMlcyNDFTc2hlOFlWQnVXeTU2YVFTN2x6Ym5icVZYYU16a2MzZmdZU2VsZVpFbTZXYXloSnVwdU9Mb1dHRWZNQmZGRDFoSm9IOExORkU?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市\",\"existing_quote\":\"「スカートの中を撮られた」駅のエスカレーターで女性に後ろから近づきスカート内を盗撮…34歳の男を現行犯逮捕＿男の後ろにいた男性が目撃〈北海道札幌市〉\",\"incoming_quote\":\"地下鉄のエスカレーターで女性のスカート内を盗撮 苫小牧市在住の男（34）を逮捕 札幌市（STVニュース北海道）\"},{\"kind\":\"entity\",\"value\":\"34歳の男\",\"existing_quote\":\"「スカートの中を撮られた」駅のエスカレーターで女性に後ろから近づきスカート内を盗撮…34歳の男を現行犯逮捕＿男の後ろにいた男性が目撃〈北海道札幌市〉\",\"incoming_quote\":\"地下鉄のエスカレーターで女性のスカート内を盗撮 苫小牧市在住の男（34）を逮捕 札幌市（STVニュース北海道）\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1841,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 590,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2431
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "19922c1aedb102b7a38cfb071a3c131082107ff5812720adf9a239ffc8c37c16": {
+    "id": "resp_02b7cd55509e4b43006ae2a6465ddc87d280d288f8277c1654",
+    "object": "response",
+    "created_at": 1793238598,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238600,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_02b7cd55509e4b43006ae2a647316487d29dc06a210a4c4bc8",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"北海道の初雪と暴風雪・強風被害\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN1RUV21jaUpjOVg5bkVqSmZaTnJZQXRfUHdtdzNTbmE2SVJreW5QZUNsOUpsTmhVUDJiVVVMZDU5WkRsa0d3cmpmQUliaFI4b1VyS1FtVmE1RTR5clp3Y0J3TWVvQVQwaVlwYUE5UEJqcDJMNVotNzRNMVcwWjV4b3U2MjV6V2JZ?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlVmhvVmJYYURlY0RoRVk2eXNwcUxlUjJLZW1weThJWkNPTTE1UlZGN2E5a0dtUG9DTk44S1dPWjJsRVhWVV9mbFhjT0xTa25nYlpTSVBZS3NkQQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌・函館などで初雪\",\"existing_quote\":\"【写真16枚】札幌・函館などで初雪 道内強風被害相次ぐ、伊達で男性意識不明\",\"incoming_quote\":\"【写真15枚】札幌・函館など6カ所で初雪 日本海側、夕方まで暴風雪予想\"},{\"kind\":\"detail\",\"value\":\"暴風雪\",\"existing_quote\":\"【写真16枚】札幌・函館などで初雪 道内強風被害相次ぐ、伊達で男性意識不明\",\"incoming_quote\":\"【写真15枚】札幌・函館など6カ所で初雪 日本海側、夕方まで暴風雪予想\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1724,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 456,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2180
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "8e2ea4c93688604992f56b7916bd7608e0a573635884335ff150e4004f103442": {
+    "id": "resp_0656640e8b0d8347006ae2a648fa1c87d2bd4e6252e4e78ec0",
+    "object": "response",
+    "created_at": 1793238601,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238602,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0656640e8b0d8347006ae2a649d30487d2a3c0281e8680d7fc",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"event_name\":\"\",\"confidence\":\"high\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1823,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1843
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "7bd821c9a461d988a623ad035f52a0c882142a9ad039ecb2a39eb1d4e01a1f33": {
+    "id": "resp_003442fd95f58257006ae2a64a797887d2abda724a14df1320",
+    "object": "response",
+    "created_at": 1793238602,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238604,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_003442fd95f58257006ae2a64ae5c887d2bde07095d0d197a8",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌などで初雪を観測 広い範囲で今季一番の寒さに １２月上旬並みの寒気…積雪や暴風警報も 北海道\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBESnVLQTI1cDdhTjJJMWRmeXh1VzhaMHJVWWMwekljdVRfVUVZOEZJM016ckl2ZUFpX0hyUmN6YkpwQUVUYVZ1U3V1Vk4ySzNfMDBwZ2hyOFJLSTJZdkxEVFBXMUJ1MWNOSVYwaWkzV2oxSjYxRmEtVWtKd3pJdjg?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNWDVoWkY1eXJEeS1lOWxvY3lpb1ZxcTJFOG1wTThNR044MXVVd0MwRDNOLUFSbFdodktvZXVhMWxfN0tuY3VwNFV6MU5nNzE4WEM0TWNORWFXUU9lQmJaZE5jVUVOaE15cFZ1R2Z3YVl1YWpPNzhyNmRiQ0NaSjQ0bmF3?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌などで初雪を観測\",\"existing_quote\":\"札幌などで初雪を観測\",\"incoming_quote\":\"札幌などで初雪を観測\"},{\"kind\":\"detail\",\"value\":\"１２月上旬並みの寒気…積雪や暴風警報も 北海道\",\"existing_quote\":\"１２月上旬並みの寒気…積雪や暴風警報も 北海道\",\"incoming_quote\":\"１２月上旬並みの寒気…積雪や暴風警報も 北海道\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1879,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 470,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2349
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "5875559013a69ceb3a0549946c7695e69bfef2044ca8855b3201069521126745": {
+    "id": "resp_036f193442831bd2006ae2a652cce887d2815589713c5c4f5d",
+    "object": "response",
+    "created_at": 1793238610,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238613,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_036f193442831bd2006ae2a65357bc87d2aa09c7b8a145950c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"confidence\":\"high\",\"event_name\":\"「スカートの中を撮られた」駅のエスカレーターで女性に後ろから近づきスカート内を盗撮…34歳の男を現行犯逮捕＿男の後ろにいた男性が目撃〈北海道札幌市〉 - Yahoo!ニュース\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5LeWR5MUk3OFlqQ3pDTXhLSEEycTVHVy12N21Yam5KZlRkb1E3SEZEY2xGOV9aUlBkRVh5TWIwNFVvd2NDU1FGLXBabGFPQ1RLQXZ0VkhtQUxhdDdtdkhCV2kwTWJlT05UNW52d2lPQWJxcGJ2UGdRdGdWcEd6anM?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9vdGpsbHI4czlBdVhJckY3OGYyYXozUUtxeWlvSW5GX0h3ZmRaUDNVN0RHMlcyNDFTc2hlOFlWQnVXeTU2YVFTN2x6Ym5icVZYYU16a2MzZmdZU2VsZVpFbTZXYXloSnVwdU9Mb1dHRWZNQmZGRDFoSm9IOExORkU?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"34歳の男を現行犯逮捕\",\"existing_quote\":\"「スカートの中を撮られた」駅のエスカレーターで女性に後ろから近づきスカート内を盗撮…34歳の男を現行犯逮捕＿男の後ろにいた男性が目撃〈北海道札幌市〉\",\"incoming_quote\":\"地下鉄のエスカレーターで女性のスカート内を盗撮 苫小牧市在住の男（34）を逮捕 札幌市（STVニュース北海道）\"},{\"kind\":\"entity\",\"value\":\"札幌市\",\"existing_quote\":\"「スカートの中を撮られた」駅のエスカレーターで女性に後ろから近づきスカート内を盗撮…34歳の男を現行犯逮捕＿男の後ろにいた男性が目撃〈北海道札幌市〉\",\"incoming_quote\":\"地下鉄のエスカレーターで女性のスカート内を盗撮 苫小牧市在住の男（34）を逮捕 札幌市（STVニュース北海道）\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1563,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 631,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2194
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "31525b3baf56df2678c73fb987f7154f8f5108c5f8318393595705e15d82d0e4": {
+    "id": "resp_0d9ffb0be869fd6f006ae2a655867c87d28f6f1aa1837611cc",
+    "object": "response",
+    "created_at": 1793238613,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238614,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0d9ffb0be869fd6f006ae2a656620887d289722fc9baf36ec1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1509,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1529
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "bda42070b3976ed028950e39a21ba91a7eb513412a299651937af51a6465b037": {
+    "id": "resp_0a2c9b717a279e03006ae2a65d731087d2b30e58399a7385b1",
+    "object": "response",
+    "created_at": 1793238621,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238623,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0a2c9b717a279e03006ae2a65e5a6887d2b056abb0e6fb161c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"逮捕直後\",\n  \"summary\": \"札幌市で、下着を撮影しようとスマホを女性の胸元に向けたとして、地方公務員の男（34）が逮捕されたと報じられています。記事タイトルからは、男が「盗撮のことで揉めている」と話していたことが分かります。\",\n  \"latest\": \"地方公務員の男（34）が逮捕されたことです。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。今後は、事件の詳しい経緯や容疑の裏付け、処分や送検に関する報道が出るかどうかが注目点です。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 688,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 886
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c6d49467d990e78e26278eb8861c0adbe4dd7e0eb2b1867a31bedcbb6de92b73": {
+    "id": "resp_0f4341018da580cb006ae2a65f70f087d2a23b647bc6e3c207",
+    "object": "response",
+    "created_at": 1793238623,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238624,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0f4341018da580cb006ae2a65fc92c87d28dee7853590f646d",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"現行犯逮捕・容疑認否の段階\",\n  \"summary\": \"札幌市で、地方公務員の34歳の男が女性の胸元をスマホで撮影しようとしたとして現行犯逮捕され、容疑を認めています。余罪の有無も含めて捜査が進められています。\",\n  \"latest\": \"男が現行犯逮捕され、「間違いありません」と容疑を認めていることが報じられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。今後は余罪の有無や、捜査結果、送検・処分の判断が報じられるかが注目点です。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 746,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 952
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "62604e4a2e7b626bbb705e77d62f195c5e34d868abb4facd56dfbf853a2a3f65": {
+    "id": "resp_097aa4b7aabb8080006ae2a660d79487d286c98f07bda0f588",
+    "object": "response",
+    "created_at": 1793238624,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238625,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_097aa4b7aabb8080006ae2a661455087d2ab0d597f0daf00a6",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"high\",\n  \"current_stage\": \"逮捕・容疑認める段階\",\n  \"summary\": \"北海道札幌市で、SNSで知り合いこの日が初対面だった10代前半の少女に公園で性的暴行をしたとして、31歳の清掃員の男が逮捕され、容疑を認めていると報じられています。\",\n  \"latest\": \"31歳の男が逮捕され、『間違いありません』と容疑を認めたこと。\",\n  \"next_watch\": \"今後は、捜査の進展や送検、起訴の有無、裁判での判断が注目されます。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 708,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 179,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 887
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "63c7b921a67fe5c1ee7f07e537031c02374b5d1dc919cdb57ffb492d8dc53847": {
+    "id": "resp_0eef96c4d7af41b1006ae2a6623c7c87d29bb6e8c110bbfb1d",
+    "object": "response",
+    "created_at": 1793238626,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793238627,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0eef96c4d7af41b1006ae2a662a49887d2883c9e124b257a6f",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"逮捕・容疑認める段階\",\n  \"summary\": \"札幌市中央区で、30代女性の下着を盗撮しようとした疑いがある34歳の公務員の男が、警察に逮捕されたと報じられています。記事タイトル上では、男は容疑について「まちがいありません」と認めています。\",\n  \"latest\": \"警察が男を逮捕し、男が容疑を認めていることが伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 713,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 170,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 883
+    },
+    "user": null,
+    "metadata": {}
   }
 }
