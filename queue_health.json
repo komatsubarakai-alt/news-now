@@ -1,48 +1,47 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-30T19:28:04.604839+00:00",
+  "updated_at": "2026-10-30T23:52:18.146288+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 2738,
+  "waiting_article_count": 2734,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 503.85,
+  "oldest_wait_hours": 508.25,
   "stages": {
     "collection": {
-      "group_count": 23,
-      "article_count": 23,
-      "oldest_wait_hours": 0.0
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 2653,
-      "article_count": 2677,
-      "oldest_wait_hours": 498.66
+      "group_count": 2674,
+      "article_count": 2700,
+      "oldest_wait_hours": 503.06
     },
     "tracking": {
-      "group_count": 38,
-      "article_count": 38,
-      "oldest_wait_hours": 503.85
+      "group_count": 34,
+      "article_count": 34,
+      "oldest_wait_hours": 508.25
     }
   },
   "manual_review_counts": {
     "status_generation": 0,
-    "tracking": 58
+    "tracking": 62
   },
   "collection_retained_counts": {
-    "queued": 1130,
+    "queued": 1132,
     "classified_waiting": 5,
-    "duplicate_source": 181,
-    "out_of_scope": 66,
+    "duplicate_source": 186,
+    "out_of_scope": 67,
     "already_saved": 28,
-    "downstream_waiting": 1692
+    "downstream_waiting": 1694
   },
-  "daily_accounted_usd": 0.0,
-  "monthly_accounted_usd": 3.882856,
-  "daily_network_calls": 0,
+  "daily_accounted_usd": 0.159191,
+  "monthly_accounted_usd": 4.042047,
+  "daily_network_calls": 16,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours",
-    "waiting_increased_three_observations"
+    "oldest_wait_at_least_48_hours"
   ],
-  "daily_tracking_network_calls": 0,
-  "daily_tracking_accounted_usd": 0.0,
+  "daily_tracking_network_calls": 6,
+  "daily_tracking_accounted_usd": 0.134658,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }

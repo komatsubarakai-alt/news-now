@@ -244305,10 +244305,30 @@
     },
     "review_id": "cb7411e1e2b5158b077b8cb9",
     "schema_version": 2,
-    "observed_at": "2026-10-14T00:59:07.667439+00:00",
+    "observed_at": "2026-10-30T23:51:34.528360+00:00",
+    "observation_history": [
+      {
+        "stage": "group_merge",
+        "reason": "budget_deferred",
+        "payload": {
+          "remaining_from": [
+            0,
+            3
+          ],
+          "group_count": 30
+        },
+        "review_id": "cb7411e1e2b5158b077b8cb9",
+        "schema_version": 2,
+        "observed_at": "2026-10-14T00:59:07.667439+00:00",
+        "first_seen_at": "2026-10-14T00:59:07.667439+00:00",
+        "last_seen_at": "2026-10-14T00:59:07.667439+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-14T00:59:07.667439+00:00",
-    "last_seen_at": "2026-10-14T00:59:07.667439+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-10-30T23:51:34.528360+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -273240,7 +273260,7 @@
     },
     "review_id": "74b0286d1424b29df893f49d",
     "schema_version": 2,
-    "observed_at": "2026-10-30T01:04:59.666708+00:00",
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
     "diagnostics": {
       "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "target_event_name": "札幌市の副首都整備担当部設置",
@@ -273556,11 +273576,33 @@
         "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
         "observation_count": 14,
         "legacy_history_present": false
+      },
+      {
+        "stage": "schedule_search",
+        "reason": "ValueError",
+        "payload": {
+          "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "articles": []
+        },
+        "review_id": "74b0286d1424b29df893f49d",
+        "schema_version": 2,
+        "observed_at": "2026-10-30T01:04:59.666708+00:00",
+        "diagnostics": {
+          "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "target_event_name": "札幌市の副首都整備担当部設置",
+          "ai_report": null,
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
+        "last_seen_at": "2026-10-30T01:04:59.666708+00:00",
+        "observation_count": 15,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-15T22:44:53.855665+00:00",
-    "last_seen_at": "2026-10-30T01:04:59.666708+00:00",
-    "observation_count": 15,
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "observation_count": 16,
     "legacy_history_present": false
   },
   {
@@ -371367,7 +371409,7 @@
     },
     "review_id": "3095508a42aec726960cd225",
     "schema_version": 2,
-    "observed_at": "2026-10-24T21:44:51.788053+00:00",
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
     "diagnostics": {
       "target_event_id": null,
       "target_event_name": null,
@@ -371380,7 +371422,7 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "retry_format",
-      "decision_attempts": 0
+      "decision_attempts": 2
     },
     "observation_history": [
       {
@@ -371433,11 +371475,62 @@
         "last_seen_at": "2026-10-23T18:55:48.443886+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "ValueError",
+        "payload": {
+          "group": {
+            "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "男が逮捕された段階",
+            "summary": "リサイクルショップに工具を売ろうとした男について、工具に別人の名前が書かれていたことを店員が不審に思い通報し、男が逮捕されたと報じられています。所持金は9円だったとされています。",
+            "latest": "リサイクルショップ店員の通報を受けて男が逮捕されたことが伝えられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、男の容疑の内容や工具の入手経緯について続報が出るかが注目点です。",
+            "articles": [
+              {
+                "title": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5",
+                "published": "Sat, 10 Oct 2026 01:19:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5\" target=\"_blank\">「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+                "rss_source": {
+                  "name": "ｄメニューニュース",
+                  "url": "https://topics.smt.docomo.ne.jp"
+                },
+                "collection_role": "source_unconfirmed"
+              }
+            ]
+          }
+        },
+        "review_id": "3095508a42aec726960cd225",
+        "schema_version": 2,
+        "observed_at": "2026-10-24T21:44:51.788053+00:00",
+        "diagnostics": {
+          "target_event_id": null,
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+          ],
+          "ai_report": null,
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "retry_format",
+          "decision_attempts": 0
+        },
+        "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
+        "last_seen_at": "2026-10-24T21:44:51.788053+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-23T18:55:48.443886+00:00",
-    "last_seen_at": "2026-10-24T21:44:51.788053+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -384438,7 +384531,7 @@
     },
     "review_id": "9d50127b823f14122bfb0f1c",
     "schema_version": 2,
-    "observed_at": "2026-10-27T22:59:05.784325+00:00",
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
     "diagnostics": {
       "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
       "target_event_name": "札幌市で29歳警察官が同居する妻を絞めた疑いで逮捕",
@@ -384462,9 +384555,9 @@
         "multi_event": false,
         "meaningful_change": false,
         "current_stage": "警察官の暴行疑いで逮捕された段階",
-        "summary": "札幌・白石署の警察官が同居する妻への暴行容疑で逮捕された件。",
-        "latest": "「態度に腹が立った」と供述",
-        "next_watch": "捜査の進展や処分の有無",
+        "summary": "札幌・白石署勤務の29歳警察官が、同居する妻への暴行容疑で逮捕された件の続報です。",
+        "latest": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）",
+        "next_watch": "送検や起訴など、手続き上の次の進展があるか",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -384477,32 +384570,46 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "札幌市",
-                "existing_quote": "〈札幌市〉",
-                "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                "value": "札幌・白石署",
+                "existing_quote": "札幌・白石署勤務",
+                "incoming_quote": "札幌・白石署の警察官"
               },
               {
                 "kind": "entity",
                 "value": "妻",
-                "existing_quote": "同居する妻の首を後ろから腕で絞めた疑い",
-                "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                "existing_quote": "同居する妻",
+                "incoming_quote": "妻にDVか"
+              }
+            ]
+          },
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NVkdmYWxMU3VfRG54cUFRemExZXB0WTNMSWlvRnRQYzJINjh0MWFjX3hld1NnRXRGWXFtbEVhMHRyb2ctZmk3Smt2bDI5NW1HVE9LWHVXU0kzWEdScnFSQ0pRMUZ2eThWWTFfZnhTMlUyS1Y1LWhMVVRLaHlDcTQ?oc=5",
+            "anchors": [
+              {
+                "kind": "entity",
+                "value": "妻",
+                "existing_quote": "同居する妻",
+                "incoming_quote": "妻にDVか"
+              },
+              {
+                "kind": "detail",
+                "value": "暴行容疑",
+                "existing_quote": "暴行容疑で逮捕",
+                "incoming_quote": "暴行容疑で逮捕"
               }
             ]
           }
         ],
-        "event_identity": {
-          "value": "札幌・白石署の警察官が妻にDVか",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
-          "quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
-        },
+        "event_identity": {},
         "progress_evidence": [],
         "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -384603,11 +384710,114 @@
         "last_seen_at": "2026-10-25T16:47:11.381143+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース） - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "警察官の逮捕報道段階",
+            "summary": "札幌・白石署の警察官が、妻への暴行容疑で逮捕されたと報じられています。記事タイトルからは、本人が「態度に腹が立った」と供述していることが分かります。",
+            "latest": "警察官の逮捕と、その供述が報じられたこと。",
+            "next_watch": "今後、容疑の詳細や所属先の対応、処分の有無が明らかになるかが注目点です。現時点で明確な次の動きは確認できません。",
+            "articles": [
+              {
+                "title": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース） - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+                "published": "Fri, 09 Oct 2026 05:36:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5\" target=\"_blank\">札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          }
+        },
+        "review_id": "9d50127b823f14122bfb0f1c",
+        "schema_version": 2,
+        "observed_at": "2026-10-27T22:59:05.784325+00:00",
+        "diagnostics": {
+          "target_event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+          "target_event_name": "札幌市で29歳警察官が同居する妻を絞めた疑いで逮捕",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NVkdmYWxMU3VfRG54cUFRemExZXB0WTNMSWlvRnRQYzJINjh0MWFjX3hld1NnRXRGWXFtbEVhMHRyb2ctZmk3Smt2bDI5NW1HVE9LWHVXU0kzWEdScnFSQ0pRMUZ2eThWWTFfZnhTMlUyS1Y1LWhMVVRLaHlDcTQ?oc=5",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xUmtVSndKTjU2NTNXYmlsMUlqaHZVSC1Da25MNDYwRmFXVG5tcnlkajVOY1JpY3ZjRVFhU0h3NDVFNFMyenRJRW5GUFd4S1FlLTI5T0RvSQ?oc=5",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE11QUdBVEtTMHpEU2l0ZURVMXF0M0ZuaGxRUnd3UEhmTm93UllSd01Tejd2eWhqY2Z2T2ZiSUJCdm9zQTJraFZIUTJIWkx4bWpDMUNkUU1UZG5ENjI1X3dna2tJU0E1bTRKUlNCck11d3g4ekx2TXc?oc=5",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrZHNySGQ4NC1vOHdaTFg4Q1RhZnZTZFJ4R09QMDhXLTkyZmxFTXJkV2x5ejJNY3VIVnBoZUJwNUVmVkxqWjRDbFBxRW5Cb3pjczJpXw?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pLUtjbjhScDdRcXExYXNiMTN2YkV2UzBZNDRVT2d4VF9vV19abXRoRmZsV1F5OEtEYjJEWnlTSldndXZXZDAyLUtURDFxSE9zcnVNN05HOE5LVl91Vm03alM2QUNTQk1rcE1GOUhac3BKTUNvd1ctX1VWeUd3Y0k?oc=5",
+            "https://news.google.com/rss/articles/CBMia0FVX3lxTE95OWpCdFZlcnNJSzg5Rjl6bHNVaVZJU2U0V1dTdkx4OGIyaUoxRmdBNDF3Y1hvcXBKbGkwNUtEbHp2T3NBY3lweEVpVEp5NjVtQ05HR2lmMUh3VlNKLVZSZTZkM0dSQjZMazZN?oc=5",
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBuMi16VE9NdVljYml4eGJpVFViQW9RODl4NjRZWGEzT2w2RjMzN0VEeDItNHZiVzRIVS1ybkk4U3JBcS1WbzljeTFTbU1KSVU0X2RiQmRxTVU4UTJKY0U2ZHVnMTh5QVE?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaFVid0FrZXdHWFl6T0duNVlDTFFDX2otRzVlc1lQTC1lSFJrZmZkdjJNMGkwdTc0bFNRbk4yOHM1MXB2dmNacU90dWpOd2xfbkdIaHFISUVCLXZkSTNhR3ZpVXRPS0hrUkNNMmoyYURVdHRrS0xDODNJWjQ4N1k?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "a344ef1c-cae5-424d-805f-ad8a69c27939",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "警察官の暴行疑いで逮捕された段階",
+            "summary": "札幌・白石署の警察官が同居する妻への暴行容疑で逮捕された件。",
+            "latest": "「態度に腹が立った」と供述",
+            "next_watch": "捜査の進展や処分の有無",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NVkdmYWxMU3VfRG54cUFRemExZXB0WTNMSWlvRnRQYzJINjh0MWFjX3hld1NnRXRGWXFtbEVhMHRyb2ctZmk3Smt2bDI5NW1HVE9LWHVXU0kzWEdScnFSQ0pRMUZ2eThWWTFfZnhTMlUyS1Y1LWhMVVRLaHlDcTQ?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市",
+                    "existing_quote": "〈札幌市〉",
+                    "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "妻",
+                    "existing_quote": "同居する妻の首を後ろから腕で絞めた疑い",
+                    "incoming_quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {
+              "value": "札幌・白石署の警察官が妻にDVか",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsOUllYV9RSXFnMkNqTEFfeVliOC1KUC1COW5Eek9NbDV2UFJFUWRhYWlwbkRFdlRaMUlSOG5EeldsdEJnQlh4eDlUYUNGeVBTZndOeXlSSk84VnYxUjdRZXZfUGFVZUxseXpfR1RwUWdmd09EVTN3OWhBUEtfcmc?oc=5",
+              "quote": "札幌・白石署の警察官が妻にDVか 暴行容疑で逮捕 「態度に腹が立った」と供述（HTB北海道ニュース）"
+            },
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
+        "last_seen_at": "2026-10-27T22:59:05.784325+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
-    "last_seen_at": "2026-10-27T22:59:05.784325+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -384926,7 +385136,7 @@
     },
     "review_id": "3ad278db07fc4431fa7c9fe6",
     "schema_version": 2,
-    "observed_at": "2026-10-26T16:10:18.526057+00:00",
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -384935,14 +385145,14 @@
         "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5"
       ],
       "ai_report": {
-        "relation": "uncertain",
+        "relation": "new_event",
         "event_id": "",
-        "confidence": "low",
+        "confidence": "medium",
         "multi_event": false,
         "meaningful_change": false,
         "current_stage": "",
-        "summary": "",
-        "latest": "",
+        "summary": "札幌市厚別区もみじ台西４丁目付近で不審な接触があったとする記事です。",
+        "latest": "（北海道）札幌市厚別区もみじ台西４丁目付近で不審な接触　１０月１０日",
         "next_watch": "",
         "completed": false,
         "completion_quote": "",
@@ -384950,15 +385160,19 @@
           "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5"
         ],
         "identity_matches": [],
-        "event_identity": {},
+        "event_identity": {
+          "value": "札幌市厚別区もみじ台西４丁目付近で不審な接触",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5",
+          "quote": "（北海道）札幌市厚別区もみじ台西４丁目付近で不審な接触　１０月１０日"
+        },
         "progress_evidence": [],
         "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -385034,11 +385248,81 @@
         "last_seen_at": "2026-10-25T16:47:11.381143+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "（北海道）札幌市厚別区もみじ台西４丁目付近で不審な接触　１０月１０日 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "不審な接触の発生情報が出ている段階",
+            "summary": "記事タイトルと公開日時からは、2026年10月10日に北海道札幌市厚別区もみじ台西4丁目付近で不審な接触があったことが分かります。それ以上の経過や詳細は確認できません。",
+            "latest": "2026年10月10日 06:25 GMT時点で、不審な接触があったと報じられていること",
+            "next_watch": "現時点で明確な次の動きは確認できません",
+            "articles": [
+              {
+                "title": "（北海道）札幌市厚別区もみじ台西４丁目付近で不審な接触　１０月１０日 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5",
+                "published": "Sat, 10 Oct 2026 06:25:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5\" target=\"_blank\">（北海道）札幌市厚別区もみじ台西４丁目付近で不審な接触　１０月１０日</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+                "rss_source": {
+                  "name": "ｄメニューニュース",
+                  "url": "https://topics.smt.docomo.ne.jp"
+                },
+                "collection_role": "source_unconfirmed"
+              }
+            ]
+          }
+        },
+        "review_id": "3ad278db07fc4431fa7c9fe6",
+        "schema_version": 2,
+        "observed_at": "2026-10-26T16:10:18.526057+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5"
+          ],
+          "ai_report": {
+            "relation": "uncertain",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdFTGxVRzBqRzRSOGk1Wnlick1TWERKbUI1bW9lNUJaVDdFbHNKd3JwZmZxcC1Sdm1RanNFZ05NOE14b1BoOUZ4ZEpDMzdzLWtuSEs3U3JrU0dra2RTSnpXNktHcnVtVDY4UTR0R2lHUTdrNUo0WmFoNnVtYU85aS1FXzBMU0thYkhlY3ZITWJNZlRrS2VTNWNib03SAaIBQVVfeXFMTldkVXRLdHJHc3JadnJtVm9FMFR6T0h1c1lhUXBoanNyZkFTTnBzLWs4Wm9kQWZQeUVrd0tUSmNFdDFMRnRDYk9Sak42WVZiSmRieVhlSzhpMkdOa3lCYkxadDBic3BwYWhaRGRCT005ZWd2bHlLbXhPQVlCVWlYbzZqU3c2a0R5TEtVOHVucGNKNFhnazdxaWJLRjNHV2FiQTFB?oc=5"
+            ],
+            "identity_matches": [],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
+        "last_seen_at": "2026-10-26T16:10:18.526057+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
-    "last_seen_at": "2026-10-26T16:10:18.526057+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -439747,6 +440031,2209 @@
     "observed_at": "2026-10-30T14:14:33.365802+00:00",
     "first_seen_at": "2026-10-30T14:14:33.365802+00:00",
     "last_seen_at": "2026-10-30T14:14:33.365802+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+        "published": "Fri, 30 Oct 2026 11:09:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\" target=\"_blank\">10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"ノースサファリサッポロの撤去・完全撤退問題\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"ノースサファリサッポロ\", \"existing_quote\": \"【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区\", \"incoming_quote\": \"10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に\"}, {\"kind\": \"detail\", \"value\": \"撤去期限\", \"existing_quote\": \"【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区\", \"incoming_quote\": \"10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に\"}, {\"kind\": \"entity\", \"value\": \"220頭の動物や施設の移設先見通せず\", \"existing_quote\": \"【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区\", \"incoming_quote\": \"10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に\"}]}]}"
+    },
+    "review_id": "58513965344f4e9fedc7c33b",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012563+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012563+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012563+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5",
+        "published": "Fri, 30 Oct 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5\" target=\"_blank\">札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5",
+        "published": "Fri, 30 Oct 2026 20:30:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5\" target=\"_blank\">「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "abe069446662b53857981e9e",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012790+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012790+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012790+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+        "published": "Fri, 30 Oct 2026 11:09:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\" target=\"_blank\">10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "71e3b891b43380431366dccb",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012836+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012836+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012836+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5",
+        "published": "Fri, 30 Oct 2026 09:01:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5\" target=\"_blank\">「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "20fb8f6046cad58b81c768d4",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012873+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012873+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012873+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:45:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "49c0c2b6e69447122d2d4ce8",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012908+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012908+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012908+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5",
+        "published": "Fri, 30 Oct 2026 09:01:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5\" target=\"_blank\">「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "eb4646551fc563e60c18a2c5",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012943+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012943+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012943+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「通常2万4600円が5000円に」札幌―根室往復約1000km、鉄道ファン日帰り旅の結末（鉄道乗蔵） - エキスパート - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHFGcWR6TVpwODhIbUxDWE01X2FzUjRYRWJvalhBMG5IYnMycmpyNjhSTTB2N2RSYXlpZXFlUGtxaXZndUF3WkJFbHF3WGFQTWloVWdLNjNidXNLQWhfQ3ZndFoxZXV1S0hPTkxHSEY2RUZFdGhvazROb0lsMHZjWW5HTVMxbzlt?oc=5",
+        "published": "Thu, 29 Oct 2026 10:01:03 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHFGcWR6TVpwODhIbUxDWE01X2FzUjRYRWJvalhBMG5IYnMycmpyNjhSTTB2N2RSYXlpZXFlUGtxaXZndUF3WkJFbHF3WGFQTWloVWdLNjNidXNLQWhfQ3ZndFoxZXV1S0hPTkxHSEY2RUZFdGhvazROb0lsMHZjWW5HTVMxbzlt?oc=5\" target=\"_blank\">「通常2万4600円が5000円に」札幌―根室往復約1000km、鉄道ファン日帰り旅の結末（鉄道乗蔵） - エキスパート</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a49fcff849b55763ffca78ba",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.012977+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.012977+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.012977+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+        "published": "Fri, 30 Oct 2026 11:09:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\" target=\"_blank\">10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e083b81b3667f6cd3b43dd44",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013011+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013011+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013011+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:45:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "88b02a65672e945b00069e92",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013045+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013045+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013045+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の土木資材販売「フィックス」破産開始決定 負債8500万円 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wNmhxX1pkUFlqdUNyLWdrT09MX0dISW1wSkU4SFFvRThsd19nc0ViWXN2RnRCdWpmR1BaT2psQ2RlX1lsdm1GdHJoRQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:30:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wNmhxX1pkUFlqdUNyLWdrT09MX0dISW1wSkU4SFFvRThsd19nc0ViWXN2RnRCdWpmR1BaT2psQ2RlX1lsdm1GdHJoRQ?oc=5\" target=\"_blank\">札幌の土木資材販売「フィックス」破産開始決定 負債8500万円</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5",
+        "published": "Wed, 28 Oct 2026 08:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5\" target=\"_blank\">ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "861ce0a128de8e42f6eadea3",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013078+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013078+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013078+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の土木資材販売「フィックス」破産開始決定 負債8500万円 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wNmhxX1pkUFlqdUNyLWdrT09MX0dISW1wSkU4SFFvRThsd19nc0ViWXN2RnRCdWpmR1BaT2psQ2RlX1lsdm1GdHJoRQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:30:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wNmhxX1pkUFlqdUNyLWdrT09MX0dISW1wSkU4SFFvRThsd19nc0ViWXN2RnRCdWpmR1BaT2psQ2RlX1lsdm1GdHJoRQ?oc=5\" target=\"_blank\">札幌の土木資材販売「フィックス」破産開始決定 負債8500万円</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「自分らしさとは」新聞の投稿教材に授業 NIE札幌地区セミナー - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA5UmlSZzEyYUJiejhXOHBzXzNFLW5nSmNNUTN0eFBPZ0pvSmlwRjg3aXYza1UxSTFrNWdPTWlFaUZ0YzhhZDhQNVN0Yw?oc=5",
+        "published": "Fri, 30 Oct 2026 13:57:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFA5UmlSZzEyYUJiejhXOHBzXzNFLW5nSmNNUTN0eFBPZ0pvSmlwRjg3aXYza1UxSTFrNWdPTWlFaUZ0YzhhZDhQNVN0Yw?oc=5\" target=\"_blank\">「自分らしさとは」新聞の投稿教材に授業 NIE札幌地区セミナー</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "417ce291a22114849bb3c154",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013106+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013106+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013106+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5",
+        "published": "Fri, 30 Oct 2026 11:17:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5\" target=\"_blank\">24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "48cfaae887135db5604a7239",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013136+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013136+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013136+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2a24fd1e6fd2da211b939829",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013169+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013169+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013169+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5",
+        "published": "Fri, 30 Oct 2026 11:17:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5\" target=\"_blank\">24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【期限せまる】ノースサファリ、除却期限前日も建物や動物残る 移送先・新施設は札幌近郊3候補地で難航 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BMmRhcENXT1pWcDVyOW9fUnpKMUhQcFFscmhEYVJJa0lZVm5xcHR0ZnVtLW95ZTFrb0ZSNDZITHVfaG52dFJOMmR3aU9QdGVVRzlrckl5WlE4b2xCS2JJVVhybUt0eVhNWFkwa0xR?oc=5",
+        "published": "Fri, 30 Oct 2026 09:34:32 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9BMmRhcENXT1pWcDVyOW9fUnpKMUhQcFFscmhEYVJJa0lZVm5xcHR0ZnVtLW95ZTFrb0ZSNDZITHVfaG52dFJOMmR3aU9QdGVVRzlrckl5WlE4b2xCS2JJVVhybUt0eVhNWFkwa0xR?oc=5\" target=\"_blank\">【期限せまる】ノースサファリ、除却期限前日も建物や動物残る 移送先・新施設は札幌近郊3候補地で難航</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "02cb61c7c78e3c803eb96be3",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013199+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013199+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013199+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5",
+        "published": "Fri, 30 Oct 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5\" target=\"_blank\">札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a8b0ff9f3755b85a079ee2c5",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013233+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013233+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013233+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5",
+        "published": "Fri, 30 Oct 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTWltaEc5WXNfcnB5MkpTWm1SX2ZZWTlxOGhHUThOeFgxY1MwbkczNE0tMGxwTTZyby1hSG5OYWhRcXEtYjFIN21QUXFqb2VNYXplZ01ZUXZuelB4WnBTT0lBalFGX0VsQ2t3bTJVRWtzaklWTFl0VEx0Zkkwd1HSAXJBVV95cUxOdzdDV0hlaVY1Wmh1V09fa0R6UlhzUnE4NE43YWEzMkx1dDFWODB0RU14ejF2ZzBPaU9KdDctU0p1Y1BfM29rbFlMN0pYN2ZLRXNwMDhuYWdMZFlLNmE3U0M5YkVfWWNPZWFLbVZ1WWJEQ3c?oc=5\" target=\"_blank\">札幌で面識のない男性に暴行し現金など脅し取った疑いで逮捕の20歳男性　札幌地検が不起訴に</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5",
+        "published": "Fri, 30 Oct 2026 11:17:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5\" target=\"_blank\">24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "84d77dd61756b0829e16850f",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013265+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013265+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013265+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5",
+        "published": "Fri, 30 Oct 2026 09:01:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNkMEUxTm1vMlpMNTl6Zi1OYktONFg3NWxFaEFSLWotamd5TEU5U2k1VldGNGM3VUR2cEo2amFSOWtTb0FhUVo1Rk5hN0xXSGNNWlZER2U2QVNQMFpUZW1PMlJlRnQ1MnBGR1FLOG9fa01tTF8zZGExZWhnMkQ0UjZUUWthQk1R?oc=5\" target=\"_blank\">「昔は3時間台、今は大半が4時間台」札幌―釧路の特急は､なぜ所要時間が延びた？（鉄道乗蔵） - エキスパート</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「通常2万4600円が5000円に」札幌―根室往復約1000km、鉄道ファン日帰り旅の結末（鉄道乗蔵） - エキスパート - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHFGcWR6TVpwODhIbUxDWE01X2FzUjRYRWJvalhBMG5IYnMycmpyNjhSTTB2N2RSYXlpZXFlUGtxaXZndUF3WkJFbHF3WGFQTWloVWdLNjNidXNLQWhfQ3ZndFoxZXV1S0hPTkxHSEY2RUZFdGhvazROb0lsMHZjWW5HTVMxbzlt?oc=5",
+        "published": "Thu, 29 Oct 2026 10:01:03 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHFGcWR6TVpwODhIbUxDWE01X2FzUjRYRWJvalhBMG5IYnMycmpyNjhSTTB2N2RSYXlpZXFlUGtxaXZndUF3WkJFbHF3WGFQTWloVWdLNjNidXNLQWhfQ3ZndFoxZXV1S0hPTkxHSEY2RUZFdGhvazROb0lsMHZjWW5HTVMxbzlt?oc=5\" target=\"_blank\">「通常2万4600円が5000円に」札幌―根室往復約1000km、鉄道ファン日帰り旅の結末（鉄道乗蔵） - エキスパート</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "62c61db1d931fe34e6b2125f",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013298+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013298+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013298+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5",
+        "published": "Fri, 30 Oct 2026 22:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5\" target=\"_blank\">【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9717e14a6ed670f1cfc515a3",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013330+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013330+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013330+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5",
+        "published": "Fri, 30 Oct 2026 22:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5\" target=\"_blank\">【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5",
+        "published": "Fri, 30 Oct 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5\" target=\"_blank\">【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "910fcbe6613569c97793ab4a",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013372+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013372+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013372+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5",
+        "published": "Wed, 28 Oct 2026 08:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5\" target=\"_blank\">ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "道とJR、北海道エアポートが大雪の帰宅困難者対応を協議 札幌駅関連施設の優先解放や列車の夜間休憩所など - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iWUtQcjY1SXdtOWY4TjRyTEdkVjA1aFJuQnJ6aFQwTHZZbjhsSm1QVVVaX1dTbEZYcVFZR1pEbTNMNF9TbDZGY1NGVVZtRGgxazc0RDI5WFNoUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:01:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iWUtQcjY1SXdtOWY4TjRyTEdkVjA1aFJuQnJ6aFQwTHZZbjhsSm1QVVVaX1dTbEZYcVFZR1pEbTNMNF9TbDZGY1NGVVZtRGgxazc0RDI5WFNoUQ?oc=5\" target=\"_blank\">道とJR、北海道エアポートが大雪の帰宅困難者対応を協議 札幌駅関連施設の優先解放や列車の夜間休憩所など</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c9900ced1d7ff3c04b2c3843",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013405+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013405+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013405+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "絵画や手芸 表現のびやか 札幌 あすまで障害者アート展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5\" target=\"_blank\">絵画や手芸 表現のびやか 札幌 あすまで障害者アート展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5",
+        "published": "Fri, 30 Oct 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5\" target=\"_blank\">【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "43c0a458dc9c8759f8135c7b",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013434+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013434+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013434+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5",
+        "published": "Fri, 30 Oct 2026 11:17:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE82Smw5MEY2SnRXTzVQelJQQWpMckNsUkpQTldJUTY3V2hndEVjMFlfcjVScERRMXNQYWMxTU5VVDZQTjdPTTB3dHpQdWt3WDhzeDhNVV8tLTF5enIxcGxkTFY2NFRxdmltbFYwdzBR?oc=5\" target=\"_blank\">24時間コインランドリーから面識ない女性の下着盗んだか 男（45）逮捕 余罪ほのめかす 札幌市</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ca1fede175af3ff5dd3f8c5d",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013465+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013465+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013465+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5",
+        "published": "Fri, 30 Oct 2026 20:30:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5\" target=\"_blank\">「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "816f414a779304978644d996",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013500+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013500+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013500+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5",
+        "published": "Thu, 29 Oct 2026 02:59:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5\" target=\"_blank\">【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "69ce435bfb1e77177b216e15",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013533+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013533+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013533+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌大球」 食べて応援 市役所地下食堂 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5\" target=\"_blank\">「札幌大球」 食べて応援 市役所地下食堂</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5",
+        "published": "Fri, 30 Oct 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5\" target=\"_blank\">【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "853ccd55aaf4541092e11a2a",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013561+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013561+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013561+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5",
+        "published": "Wed, 28 Oct 2026 08:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5\" target=\"_blank\">ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f7b173d970ae63842f6505ee",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013595+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013595+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013595+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5",
+        "published": "Wed, 28 Oct 2026 08:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5\" target=\"_blank\">ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f1ba8d1a01f27499cc23f76a",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013625+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013625+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013625+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5",
+        "published": "Fri, 30 Oct 2026 20:30:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5\" target=\"_blank\">「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5",
+        "published": "Wed, 28 Oct 2026 08:15:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZFFMdVlkdndrT2NlLUR4cXVtcXdGaF9KS3VZdmlJZmFpdHlqSlk0ckZxeXAxOF9ONl9PdkhZd09jQ2k1eTNNNnN1UW5jMTVLcHF5NDFFWUplcE5rY3NEdkRROUQtZGtZUWRrWEV5ekRFb2ZCQUhHc0R6aExrVkk?oc=5\" target=\"_blank\">ソフトウェア開発のオープンソース（札幌）が破産開始決定（テレビ北海道）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8e62cf5085e8df42f968d260",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013655+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013655+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013655+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5",
+        "published": "Fri, 30 Oct 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MSXVWUC1UbkVUSWZBNzZJWk9NRnRieW82UjA2VlBsNmIzUlVxU1YzX1NyVVJxX2FhcWFBcGEyT1dod3k5UjhoeGFOVGpTUzZQWFVIQjZjYzkzdw?oc=5\" target=\"_blank\">【独自】不同意わいせつ罪の北海道警察元警部補、死亡で公訴棄却 札幌地裁</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "39c0e6e7d4374d5a93beb4dd",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013685+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013685+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013685+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5",
+        "published": "Fri, 30 Oct 2026 21:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE96QUF3ajRDNC1ieDhwcjFOdlJhbzRBSTNYY0VkVTU2MFlOWXQya1BRWUdzM29ZclpiTGc1Yjcwd0V4WE1kcEwzS1lTV3pFM0s1b3Zua3Z5T0I1MnVhRk1BM2dDUmtnX2wta085TnVwNkZpUm4ycnh1Vm1nNzRVMEk?oc=5\" target=\"_blank\">洗濯物が1枚足りない？24時間営業コインランドリーで20代女性の下着を盗む…45歳男「私がやったことで間違いないです」余罪ほのめかし警察が捜査〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "aa9e3ce90df950e2aef543c4",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013718+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013718+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013718+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+        "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5",
+        "published": "Thu, 29 Oct 2026 02:59:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5\" target=\"_blank\">【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a76f9767d62e414a9f4822bb",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013747+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013747+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013747+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5",
+        "published": "Fri, 30 Oct 2026 20:30:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBmVmZqdlJ1bjhUVTJiZ1NnRUVMbVkxY2VXV2FteVAyeHZzNVdOcXlXR1huMnYwYVU5UUVBSEo3ZEFuUEU3Rm9YQ25kSEhlLVZiNWhlMlBkYzI1OGtxZ3QwS25PbTY2Qm85dllkVTNUaHl5d1dxU1ZSQk1udDdpaW8?oc=5\" target=\"_blank\">「身に覚えがありません」完全否認_ゲームセンターで男性が置き忘れた長財布に男の手が…現金約1万5000円が入った財布を盗んだ疑いで55歳男を逮捕〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5",
+        "published": "Thu, 29 Oct 2026 02:59:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE94NUhYcGllMVAyM3lpRXdhd0V0Z1NWSTlTTzh1bUFUbnNZaHNndEZET1VYRzF4OHpIdl9KbzU5UU9KeHJ3dHJtaFVUUHlKa2loa3UzWW93dVRULVN4b1hvMF9yUTJ5QldoeFcwUFFoWFZ5b2FRcFRWalJTQ1JCdEE?oc=5\" target=\"_blank\">【クマ出没】札幌の住宅街に体長約1メートルの1頭がうろつく、深夜ごみを出しに外出した住民が目撃、警察が警戒活動続ける 札幌市豊平区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "25623fa5cee5abfea5d88bde",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013777+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013777+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013777+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "絵画や手芸 表現のびやか 札幌 あすまで障害者アート展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5\" target=\"_blank\">絵画や手芸 表現のびやか 札幌 あすまで障害者アート展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「札幌大球」 食べて応援 市役所地下食堂 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5\" target=\"_blank\">「札幌大球」 食べて応援 市役所地下食堂</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3cf790c0478212e55c3d3843",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013804+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013804+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013804+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5",
+        "published": "Fri, 30 Oct 2026 22:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yd0NFLVcwSC1XNzhzR2tYV1plUnpQelVUdTQ3VHktQy1xcE5yOGRCZzZQa0hhTEQ4VUR4a3JjUGs5T24xRUVsdkZlOHF5cHNvaFBjeUw2RzJ4NjE2UnB0SG9HTzNURkdqbXgxRVhMYjQ3VjZJNDkzUmotS1hsaE0?oc=5\" target=\"_blank\">【裁判詳報】「パキスタン人が盗んだ」 チェーンソー紛失で恨み…モスク放火の男に判決 札幌地裁</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5",
+        "published": "Fri, 30 Oct 2026 09:45:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPV2JGY0hxaUkzb080d1RTU08wTThmSFdjcDY0amNlSkkyX0VsdWZMVlFIT1c1bXpKLXBKVTJSOVkzY3hOWXNWQUhEb0RadG5TWVNhY1J1MVJ0N0puNDJHQXZtdWUtRVNPLXdLeFRhSHVETzBMUXNDcHZDYzBTN0JCeFRWSXR4YjQ?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fccf49ba11cc8f18200de763",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013834+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013834+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013834+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "絵画や手芸 表現のびやか 札幌 あすまで障害者アート展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5\" target=\"_blank\">絵画や手芸 表現のびやか 札幌 あすまで障害者アート展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "478755d639324d8f2845292d",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013866+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013866+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013866+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "絵画や手芸 表現のびやか 札幌 あすまで障害者アート展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5\" target=\"_blank\">絵画や手芸 表現のびやか 札幌 あすまで障害者アート展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "輝くポケモン像 迫力に驚き 札幌三越で大黄金展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5\" target=\"_blank\">輝くポケモン像 迫力に驚き 札幌三越で大黄金展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6c2ec901c43ca49c1a66e112",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013895+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013895+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013895+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌大球」 食べて応援 市役所地下食堂 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5\" target=\"_blank\">「札幌大球」 食べて応援 市役所地下食堂</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1da2f022ac4e0878a031696d",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013922+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013922+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013922+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌大球」 食べて応援 市役所地下食堂 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5\" target=\"_blank\">「札幌大球」 食べて応援 市役所地下食堂</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "輝くポケモン像 迫力に驚き 札幌三越で大黄金展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5\" target=\"_blank\">輝くポケモン像 迫力に驚き 札幌三越で大黄金展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "84f5e6e63bb582cb1965260e",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013948+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013948+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013948+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "輝くポケモン像 迫力に驚き 札幌三越で大黄金展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZRzVrYVlGMVFlanJfT3ZmTHZZMDk3dVBLVmJ0bHBiOFhySzBxOUZyNVVqRS12WkV1dGpwclpwT0lGQ1puT19EMVI5QVFGaGQ4bG1qb0hSNm8?oc=5\" target=\"_blank\">輝くポケモン像 迫力に驚き 札幌三越で大黄金展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e559611f4b082e560d9b6113",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.013974+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.013974+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.013974+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "絵画や手芸 表現のびやか 札幌 あすまで障害者アート展 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zMDVFUUtsNUsxR3FMc1VVdnJmUHZ4QmQ5Q0FwLWpuV3pETHJSc2ktWjV6aDY0OEpua0g0MUlXcnR0Rlc5Z2NBNzNReTE4UGdONWdldjhsTDBnZw?oc=5\" target=\"_blank\">絵画や手芸 表現のびやか 札幌 あすまで障害者アート展</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5",
+        "published": "Fri, 30 Oct 2026 08:50:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5\" target=\"_blank\">札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "11dc2ef5f666774a1cf70693",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014001+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014001+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014001+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「札幌大球」 食べて応援 市役所地下食堂 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tM2J3S20yNWNmM0xBUThyZEphWTEwSnJpVnBpN05ZUG5GNDdORmpLZTZOeldHT3RNUXBuOUJxNXR2Qk1DdnVJSV80Q2lESVRDTGZOdUtxOU9KUQ?oc=5\" target=\"_blank\">「札幌大球」 食べて応援 市役所地下食堂</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5",
+        "published": "Fri, 30 Oct 2026 08:50:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5\" target=\"_blank\">札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "89a927738b40a9c21e1cd217",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014027+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014027+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014027+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5",
+        "published": "Fri, 30 Oct 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkFZNzl6NlQyU3B1RHA5eldzWi1ONktRNWtINEJsbFI3bTNRNmp6Nzg2c2tPZm1jZkJvVFlWNldJWTkwZ09kS1BHbW5reUxBQWNZMkxUT3Fodw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5",
+        "published": "Fri, 30 Oct 2026 08:50:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KOEh4cDJ2RUpSODhraEU4S1JXakF0ZEgyMmtWMkZFUi1tSWxlaUZnSXZwVkxMSThwOFFlYmJlOUluWlU4OXpMYnRubjliaFZUeU96MDJxYzNkdw?oc=5\" target=\"_blank\">札幌弁護士会、プロ雀士とコラボ PR動画で対局・対談「身近に感じて」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "01bd0d1909995846d62e9bfb",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014054+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014054+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014054+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5358dbb5aa7ece26a8b1fe85",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014084+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014084+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014084+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e67e1a43d41b420048f5939a",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014117+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014117+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014117+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRSGZQUlNYbi1FNHg4bTJrTURvdHJINm9DQS01OUNUMTZ1VHdTT0w1WXc2cTNRUEQ2cTVZbGJWUEJqUFFxa3NOLTlqZWJxX3ZvTENmcTd4b2p5T1BSeXR3?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRSGZQUlNYbi1FNHg4bTJrTURvdHJINm9DQS01OUNUMTZ1VHdTT0w1WXc2cTNRUEQ2cTVZbGJWUEJqUFFxa3NOLTlqZWJxX3ZvTENmcTd4b2p5T1BSeXR3?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8dd442d9187b4b56fa220f57",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014147+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014147+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014147+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1kVk9GMnNKOXcwWVBrd0hpcDV1czlpejdnUFNJMGpuX0pwLWRpTXBzM1dsRjJEbFU1WTRNRDZwV01qdVFIZEtTWTF6WmRrUEEyeEFrbjRJTzZIaEpkLUFjWTFWWVFHeV9VWF9tTNIBckFVX3lxTE9MbGg1OFFPRmU1NmlDY29xVDNQWDFSTlNFMFpUVmtWN21wLUlCWUZmeTdvRk5Xc2lCTjhENzdkU1c1Sk8zRzdaMFVmekVUNjMtRVVZeWc4S2xja0xWTFd5M2Z0cm45SjBOU2l4dk9PNTdidw?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選　３人が出馬表明…主張は　“直面する課題”にどう対応？　北海道</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRSGZQUlNYbi1FNHg4bTJrTURvdHJINm9DQS01OUNUMTZ1VHdTT0w1WXc2cTNRUEQ2cTVZbGJWUEJqUFFxa3NOLTlqZWJxX3ZvTENmcTd4b2p5T1BSeXR3?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRSGZQUlNYbi1FNHg4bTJrTURvdHJINm9DQS01OUNUMTZ1VHdTT0w1WXc2cTNRUEQ2cTVZbGJWUEJqUFFxa3NOLTlqZWJxX3ZvTENmcTd4b2p5T1BSeXR3?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5395213607570394345c5703",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014175+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014175+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014175+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "2026年10月末をもって閉店・休業する店舗まとめ - 札幌速報",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5",
+        "published": "Thu, 29 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5\" target=\"_blank\">2026年10月末をもって閉店・休業する店舗まとめ</a>  <font color=\"#6f6f6f\">札幌速報</font>",
+        "rss_source": {
+          "name": "札幌速報",
+          "url": "https://sapporo-sokuho.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e6ff409df2b5cd091be98245",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014204+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014204+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014204+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5",
+        "published": "Fri, 30 Oct 2026 09:47:29 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5oNEdOMHMxMm9pb3BBWVBuLUNGYjlJVnRldFZxd0VhQ2YwTW1WYm5raTlrdXg5UlhmTi1GX3VlcGVBOHVCX2xKeGZuVndKWXpoOFBaS2tqb29NM3dVeWExekVmbnNrcTA2WnRwLVRB?oc=5\" target=\"_blank\">【解説】来年春の札幌市長選 ３人が出馬表明…主張は “直面する課題”にどう対応？ 北海道</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【期限せまる】ノースサファリ、除却期限前日も建物や動物残る 移送先・新施設は札幌近郊3候補地で難航 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BMmRhcENXT1pWcDVyOW9fUnpKMUhQcFFscmhEYVJJa0lZVm5xcHR0ZnVtLW95ZTFrb0ZSNDZITHVfaG52dFJOMmR3aU9QdGVVRzlrckl5WlE4b2xCS2JJVVhybUt0eVhNWFkwa0xR?oc=5",
+        "published": "Fri, 30 Oct 2026 09:34:32 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9BMmRhcENXT1pWcDVyOW9fUnpKMUhQcFFscmhEYVJJa0lZVm5xcHR0ZnVtLW95ZTFrb0ZSNDZITHVfaG52dFJOMmR3aU9QdGVVRzlrckl5WlE4b2xCS2JJVVhybUt0eVhNWFkwa0xR?oc=5\" target=\"_blank\">【期限せまる】ノースサファリ、除却期限前日も建物や動物残る 移送先・新施設は札幌近郊3候補地で難航</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "63124df50f96f3160f1f51b4",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014231+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014231+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014231+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝） - クレアウェブ",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5",
+        "published": "Fri, 30 Oct 2026 07:07:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5\" target=\"_blank\">【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝）</a>  <font color=\"#6f6f6f\">クレアウェブ</font>",
+        "rss_source": {
+          "name": "クレアウェブ",
+          "url": "https://crea.bunshun.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "2026年10月末をもって閉店・休業する店舗まとめ - 札幌速報",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5",
+        "published": "Thu, 29 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5\" target=\"_blank\">2026年10月末をもって閉店・休業する店舗まとめ</a>  <font color=\"#6f6f6f\">札幌速報</font>",
+        "rss_source": {
+          "name": "札幌速報",
+          "url": "https://sapporo-sokuho.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e406249f7466ebfae3c0782a",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014263+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014263+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014263+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+        "published": "Fri, 30 Oct 2026 11:09:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\" target=\"_blank\">10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "2026年10月末をもって閉店・休業する店舗まとめ - 札幌速報",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5",
+        "published": "Thu, 29 Oct 2026 23:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lVWZ5NUlHWGctdWNpQ2JlZkxMeW5iRHZnN1lKRFNtQlFPMjIwOHJtd1RZWVhKWTZ4Ym5hU0tJTHRLTGhYaDFZOEh3eU1tcEk2SmFuV2tza2l6aW1OSmFNZGtB?oc=5\" target=\"_blank\">2026年10月末をもって閉店・休業する店舗まとめ</a>  <font color=\"#6f6f6f\">札幌速報</font>",
+        "rss_source": {
+          "name": "札幌速報",
+          "url": "https://sapporo-sokuho.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9a28507eb40a02f83038e94e",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014293+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014293+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014293+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝） - クレアウェブ",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5",
+        "published": "Fri, 30 Oct 2026 07:07:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5\" target=\"_blank\">【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝）</a>  <font color=\"#6f6f6f\">クレアウェブ</font>",
+        "rss_source": {
+          "name": "クレアウェブ",
+          "url": "https://crea.bunshun.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6d79c2822799dcdaed88cfdc",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014321+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014321+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014321+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝） - クレアウェブ",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5",
+        "published": "Fri, 30 Oct 2026 07:07:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE83RE5FbW1fUDFtOW9Bd1FqNHRwMGVCVC1lOHY4T2NTM3NUT1dMTElrZjYxSTRkbWRpSzN2TlNnZWVBRko1THhQRF9QVzdjbjJJR19kZWduMldQSnR5dmt4LVhLMkVTU3NFWFk0ZFExTWdrQQ?oc=5\" target=\"_blank\">【札幌グランドホテル】「いい夫婦の日特別プラン」 ご利用期間：2026年11月14日（土）～11月23日（月・祝）</a>  <font color=\"#6f6f6f\">クレアウェブ</font>",
+        "rss_source": {
+          "name": "クレアウェブ",
+          "url": "https://crea.bunshun.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "ビジターサポーターの皆さまへ（11月3日 札幌戦） - FC今治",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xcDlRT2NNazByN09YZ3VJOS1XeDZCbFhmZUg3QmJJNGtNaFVxM0QtbVVtR2ZqcER2Z2g3amNSOFNQSlZHaXpuUllaQm9xVmVlZVRn?oc=5",
+        "published": "Fri, 30 Oct 2026 11:34:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xcDlRT2NNazByN09YZ3VJOS1XeDZCbFhmZUg3QmJJNGtNaFVxM0QtbVVtR2ZqcER2Z2g3amNSOFNQSlZHaXpuUllaQm9xVmVlZVRn?oc=5\" target=\"_blank\">ビジターサポーターの皆さまへ（11月3日 札幌戦）</a>  <font color=\"#6f6f6f\">FC今治</font>",
+        "rss_source": {
+          "name": "FC今治",
+          "url": "https://www.fcimabari.com"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "263779f92d6253e10d694a90",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014364+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014364+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014364+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載) - ライブドアニュース",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5",
+        "published": "Fri, 30 Oct 2026 10:06:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NOGR0MmlJT0VkSUd0RGNJT1hLSGt3T2RNUWM3NEs0M0ZQdEUwbnhQcTM3dXo0ZW5rdXZLdmlHT1VER3hrdGVRSkNKZUFuZG9BdnN1UWNkbWUzMG5qRXc?oc=5\" target=\"_blank\">「３人のいずれも知らない」 課題に直面する札幌市長選挙 来年春へ…知名度アップどうする 北海道 (2026年10月30日掲載)</a>  <font color=\"#6f6f6f\">ライブドアニュース</font>",
+        "rss_source": {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌・赤れんが庁舎で道産ワイン試飲会 30ワイナリー参加、ディナーも - 札幌経済新聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8yS3Bkb0ZSWW9peG5ZeW1aZHdQOTAzSFZYQm5QS2VjTTY5MlBSZExUVVFUdDMzd1FRQ0JlRDNQUEVsU05EQ3JNSFZJLVZNYjJtbXhv?oc=5",
+        "published": "Fri, 30 Oct 2026 09:49:30 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE8yS3Bkb0ZSWW9peG5ZeW1aZHdQOTAzSFZYQm5QS2VjTTY5MlBSZExUVVFUdDMzd1FRQ0JlRDNQUEVsU05EQ3JNSFZJLVZNYjJtbXhv?oc=5\" target=\"_blank\">札幌・赤れんが庁舎で道産ワイン試飲会 30ワイナリー参加、ディナーも</a>  <font color=\"#6f6f6f\">札幌経済新聞</font>",
+        "rss_source": {
+          "name": "札幌経済新聞",
+          "url": "https://sapporo.keizai.biz"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e60511a9852becda68421504",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:29.014408+00:00",
+    "first_seen_at": "2026-10-30T23:51:29.014408+00:00",
+    "last_seen_at": "2026-10-30T23:51:29.014408+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "ノースサファリサッポロの撤去期限と動物・施設移設問題",
+          "articles": [
+            {
+              "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送 - TBS NEWS DIG",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5",
+              "published": "Fri, 30 Oct 2026 09:47:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YdHl4RFdqbXBnWkNhcFVqRzgweEg4TmNXMnluUnJpVE5PdmJEYXlXLXh2QTYxMUtUZkJzamwxcmxUUnp3cHgxQklPY1lhX3Y4Q3lZUTR0dE5IQQ?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 | 北海道のニュース｜HBC北海道放送</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+              "rss_source": {
+                "name": "TBS NEWS DIG",
+                "url": "https://newsdig.tbs.co.jp"
+              },
+              "collection_role": "primary"
+            },
+            {
+              "title": "【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5",
+              "published": "Fri, 30 Oct 2026 09:48:21 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9kREZSeVI4cEtvdk8zZjktUEpwcnJ3U1FVTVZ6SmJfZm1XQ0RYTUNtV2tWNEU0Um5QRENUaWFpdTdXcjgzTExkTWp1RkRVbVZIblA4d1Y1QTV0aENKbzZfNnkxblh5TERLRVRIRmxMNlpydV9lVmtGOVQxODkyaWs?oc=5\" target=\"_blank\">【ノースサファリサッポロ】「今すぐの撤去難しい」運営会社代表がHBC単独取材に応じる 迫る撤去期限 220頭の動物や施設の移設先見通せず 札幌市南区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 2
+        },
+        {
+          "event_name": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5",
+              "published": "Fri, 30 Oct 2026 11:09:01 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE41OC1FcEVnZXZDM0VqS1JkRVh3clYwcUhtMzdhTlNRdnZueE5FeVE0dXRwTDNoa21pSy1kcHJWNk9xUDllTmhaY3lGa0h2akxOS0gwVDZ4cTVTR3F6a0ZJNFoxWmRxdXdEdDdfU3ZOX0ZnVFZyWTJIT1RuUlFucW8?oc=5\" target=\"_blank\">10月末の完全撤退は不可能か “ノースサファリサッポロ” 10月9日時点で25棟残る... 状況によっては刑事告発を視野に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "fee95b1adaf4558a7b8a8d2b",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:33.281063+00:00",
+    "first_seen_at": "2026-10-30T23:51:33.281063+00:00",
+    "last_seen_at": "2026-10-30T23:51:33.281063+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "uncertain_or_invalid_evidence",
+    "payload": {
+      "group": {
+        "event_name": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区 - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "逮捕後の報道段階",
+        "summary": "迷惑駐車を注意しようとした50代女性をはねて逃走した疑いで、27歳の男が逮捕されたと報じられています。女性は肘や膝を負傷したとされています。",
+        "latest": "27歳の男がひき逃げなどの疑いで逮捕されたことが最新の動きです。",
+        "next_watch": "今後、容疑の認否や事故の詳しい経緯、捜査の進展が報じられるかが注目されます。",
+        "articles": [
+          {
+            "title": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区 - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5",
+            "published": "Sat, 10 Oct 2026 01:42:17 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5\" target=\"_blank\">迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      }
+    },
+    "review_id": "8ca13f4dc0144be33d5f055d",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
+    "diagnostics": {
+      "target_event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "f350708b-b10d-4399-8000-a7587bcc35f4",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "逮捕",
+        "summary": "迷惑駐車を注意した女性をひき逃げした疑いで27歳の男が逮捕された段階。",
+        "latest": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区",
+        "next_watch": "",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5",
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTF56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxUQ01SdEc0ODFTbUFEQUtvX3R5VDdtRHRHcTJLMnRwb0xlX0ZKRTZtMlFvNFhNRmVwMmZQWnhPOG5OMnFDdE9xRDJpd25NbG5BMWJQV2Y0Vi1EVXB2R21rVFhibzZscXZ5NllMbkdIRl91WGxZaFlKMnNVY0MzRlU?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTF56UDBXWEVBWHNJNlFGVzBZRUgyalJ5Ulh2RU91Z19nWi0wVmZweXhXVE5adUF2QkprX1dIUnRmZDBBWG5SSEI4bVNNcC04Y0ZxTms4WTBDTERkdw?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "迷惑駐車を注意した女性をひき逃げした疑い",
+                "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い 27歳無職の男を逮捕「心当たりはありません」容疑否認 札幌",
+                "incoming_quote": "迷惑駐車を注意しようした50代女性をはねて逃走 ひき逃げなどの疑いで27歳男を逮捕「心当たりない」女性は肘や膝を負傷 札幌市豊平区"
+              },
+              {
+                "kind": "entity",
+                "value": "27歳男",
+                "existing_quote": "27歳無職の男を逮捕",
+                "incoming_quote": "27歳男を逮捕"
+              },
+              {
+                "kind": "detail",
+                "value": "迷惑駐車を注意した女性",
+                "existing_quote": "迷惑駐車を注意した女性をひき逃げした疑い",
+                "incoming_quote": "迷惑駐車を注意しようした50代女性をはねて逃走"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "副首都推進15日初会合 道・札幌市 主要団体が参加へ - 北海道新聞デジタル",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "政策・制度",
+        "tracking_value": "medium",
+        "current_stage": "初会合を前にした準備段階",
+        "summary": "「副首都」推進に向けた初会合が10月15日に開かれる見通しで、道と札幌市、主要団体が参加する段階です。記事タイトルと公開日時からは、まだ会合前で具体的な結論や決定内容は確認できません。",
+        "latest": "10月15日に初会合が開かれる予定で、道・札幌市・主要団体の参加が見込まれています。",
+        "next_watch": "15日の初会合で何が議論されるか、会合後に副首都推進に関する方針や具体策が示されるかが注目点です。",
+        "articles": [
+          {
+            "title": "副首都推進15日初会合 道・札幌市 主要団体が参加へ - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5",
+            "published": "Fri, 09 Oct 2026 23:43:54 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5\" target=\"_blank\">副首都推進15日初会合 道・札幌市 主要団体が参加へ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "28cdacb5f05403da53097ded",
+    "schema_version": 2,
+    "observed_at": "2026-10-30T23:51:51.554393+00:00",
+    "diagnostics": {
+      "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "target_event_name": "札幌市の副首都整備担当部設置",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yaWtaT0V3RzY5R01RWFFYRzZHYklPcHZTZzFDTWdqLWNEU2pSVDlfOWRnQmdGOHdxbGtzLU9PckhsRTNYdmh0N2lnS01jY3NaeHhNTkduNHZ5dU1ydmdGcWk3b2k4TDlKRndNNg?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1bW0wU3ZXTlZuS2IySzFUZGhJbnRNMGJJOW56MzVmSEF5V0FFNU9nd1lsM0FjTmNsMXRudFp0X3pqTjNoNk0wXzE4T3FlUFNpX25XeGRqTUZWZ01LbGIyaU5qczhlRDBYZk8ySHZn?oc=5",
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE14WktLcFhyRlpJMndtY3haeGlmSkptRk5NQWZfX2ZOblNzam93U0NncElZcS11Zm92dlFXN2RoOHVtUnJpVW5XM1FvcnhYYVd1MlFkQWk5NXlVQ05yZ3lHcGVuTWxrLUJmUnhFdTRoNEFJNDNZc1dtVnBwbVhjUTQ?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "副首都推進の初会合に向けた準備段階",
+        "summary": "札幌市の副首都推進に関し、道と札幌市、主要団体が参加する初会合が15日に開かれる予定が報じられています。",
+        "latest": "副首都推進15日初会合 道・札幌市 主要団体が参加へ",
+        "next_watch": "15日の初会合の開催有無と、議論内容や参加団体の公表",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1XdlRMa3JvTGpzRE4yMW9pV0ViakRKY0YtSk52QzFQdzFQc2h5YlV4WTRkdmJrbzFlRHNKVE5aNlhwRXJ4N1FIQ0dpQUl5NkhqVlYwZ2RfY1ZsZw?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "副首都推進",
+                "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                "incoming_quote": "副首都推進15日初会合 道・札幌市 主要団体が参加へ"
+              },
+              {
+                "kind": "detail",
+                "value": "札幌市",
+                "existing_quote": "札幌市、副首都整備担当部を立ち上げ 10月16日付で",
+                "incoming_quote": "副首都推進15日初会合 道・札幌市 主要団体が参加へ"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": [
+          {
+            "label": "副首都推進初会合",
+            "quote": "副首都推進15日初会合 道・札幌市 主要団体が参加へ",
+            "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85MzBmYkh3WUtwVFFzenJjLTljNExDcHRicXhjSmJBUFFLZGZ6TU82c1pEOEU3WUNsOG1FeVZrR2xlOVZHTVhTLXIwc01DaTF1VTJ4cm1YYWk5Zw?oc=5",
+            "status": "scheduled"
+          }
+        ]
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "manual_review",
+      "decision_attempts": 3
+    },
+    "first_seen_at": "2026-10-30T23:51:51.554393+00:00",
+    "last_seen_at": "2026-10-30T23:51:51.554393+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
