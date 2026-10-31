@@ -1,4 +1,302 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "3095508a42aec726960cd225",
+      "stage": "event_attachment",
+      "reason": "ValueError",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": null,
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+        ],
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "retry_format",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "「売却しようとした工具に別人の名前が」リサイクルショップ店員が通報 男逮捕…所持金は9円 札幌市 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kNndfZmVfaHdnSEhiVi02ODk3aVYyaE9DcEdrYmRaeUtYdHZXTGFJdEZlVTItcllHOVJZbkFpazJTaHZMV2J6OUlVNDgwcFVBZnZITnItdTdSZVdoS2xVMVlSUzdEaG5LTHZva0tERE9FZEhBU240RjZoNNIBgAFBVV95cUxPTEhRNi01R3hJbEoxTVhjYXFCSEJyVUNRYUdyNkt6dTRnQmRpNTR5ZHdOMlR2eVZmWHRqNTVjb0VjQ0pOMjdiM19RRkpZMTBBRFBHaGZ4YTl6M0hHWms0YW5lSWFVdXduLUNxWTFiNE1jeTg4ajNFRVp0QUlwSXEtTA?oc=5"
+      ]
+    },
+    {
+      "review_id": "5633781127c902e1230babe7",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+        "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "傷害容疑での逮捕段階",
+          "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕された件。",
+          "latest": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌",
+          "next_watch": "送検や起訴、容疑の補足事実の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "高校生に河川敷で暴行",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
+                },
+                {
+                  "kind": "entity",
+                  "value": "18歳アルバイトの女と16歳高校生",
+                  "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                  "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+      ]
+    },
+    {
+      "review_id": "d6accfad6ee929432925d8dc",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": "4002f5d8-6c3f-4678-afee-87597a7cb104",
+        "target_event_name": "2年前の札幌「闇バイト」事件 指示役か 2人再逮捕 強盗容疑 - 北海道新聞デジタル",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "4002f5d8-6c3f-4678-afee-87597a7cb104",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "2年前の札幌の「闇バイト」事件で、強盗容疑による再逮捕が報じられた段階",
+          "summary": "札幌で起きた「闇バイト」強盗事件の指示役2人が逮捕されたと報じられています。既存の同一案件では、2年前の札幌の「闇バイト」事件について指示役かもしれない2人が強盗容疑で再逮捕された段階でした。今回記事でも『札幌で80代男性を縛り現金強奪などの疑い』『首都圏で相次いだ強盗事件で既に逮捕』とあり、同じ事件の続報と判断できます。",
+          "latest": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yN3lxOXlpZExVajRyc2ZIOEZ1aW9rU2tfOEF2bzJCT050TFM3cmNnekMyT0d4dENDOVJldWdpY1p5YlMteVRUT3FaX1BtbUtvR1F1Y3I1UXZHUQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌の「闇バイト」事件",
+                  "existing_quote": "2年前の札幌「闇バイト」事件 指示役か 2人再逮捕 強盗容疑",
+                  "incoming_quote": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞"
+                },
+                {
+                  "kind": "entity",
+                  "value": "指示役2人",
+                  "existing_quote": "2年前の札幌「闇バイト」事件 指示役か 2人再逮捕 強盗容疑",
+                  "incoming_quote": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "『バールで黙らせて、騒いだらテープで縛りましょう』通信アプリで残忍指示―\"闇バイト\"強盗の指示役2人を逮捕―札幌で80代男性を縛り現金強奪などの疑い―首都圏で相次いだ強盗事件で既に逮捕＜北海道＞ - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LcEpxaDJfOUl2NVVtVTYzc28taDNMWnRmNVpvaURIclNjV01ydG9meXVPcTU4NzJ3bFI5WGdLdHFWRG1DQUxCdWRFZnBodDg1NDc1aWRFdzVPVWs3bmhCSFZmMjFtU3dJdHJuVGJZUGU2LWFPWkpHUEw3XzdpT0k?oc=5"
+      ]
+    },
+    {
+      "review_id": "81bcacf99ba330e3d294f13c",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PMjhVSFFJNVpHUm1PVExIc1dnSDdaSEtMZWZaQzlvSkp3Q1hzaXB6dXZSTUVYajYzd0poaG8zT2lMRmx1S1lwTTBHQkE?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "札幌で景盛学園が認定こども園の新築に向けて一般競争入札を行う見通しが示されています。",
+          "latest": "【札幌】景盛学園が認定こども園新築へ／28日に一般競争入札",
+          "next_watch": "28日の一般競争入札の実施結果",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PMjhVSFFJNVpHUm1PVExIc1dnSDdaSEtMZWZaQzlvSkp3Q1hzaXB6dXZSTUVYajYzd0poaG8zT2lMRmx1S1lwTTBHQkE?oc=5"
+          ],
+          "identity_matches": [],
+          "event_identity": {
+            "value": "景盛学園が認定こども園新築へ",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PMjhVSFFJNVpHUm1PVExIc1dnSDdaSEtMZWZaQzlvSkp3Q1hzaXB6dXZSTUVYajYzd0poaG8zT2lMRmx1S1lwTTBHQkE?oc=5",
+            "quote": "【札幌】景盛学園が認定こども園新築へ／28日に一般競争入札"
+          },
+          "progress_evidence": [],
+          "schedules": [
+            {
+              "label": "28日の一般競争入札",
+              "quote": "28日に一般競争入札",
+              "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PMjhVSFFJNVpHUm1PVExIc1dnSDdaSEtMZWZaQzlvSkp3Q1hzaXB6dXZSTUVYajYzd0poaG8zT2lMRmx1S1lwTTBHQkE?oc=5",
+              "status": "scheduled"
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【札幌】景盛学園が認定こども園新築へ／28日に一般競争入札 - e-kensin.net",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PMjhVSFFJNVpHUm1PVExIc1dnSDdaSEtMZWZaQzlvSkp3Q1hzaXB6dXZSTUVYajYzd0poaG8zT2lMRmx1S1lwTTBHQkE?oc=5"
+      ]
+    },
+    {
+      "review_id": "d1f970e1bcf40a58864e44ce",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+        "target_event_name": "公安調査庁によるアレフ札幌施設への立ち入り検査",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yV1cySmVNWnpoRnNNR3l2T052VEQ0RGpjUXhYZjZVdWdra2x4T1hHX2VJY1V5SFFFbFZ5UHE4WFlwY2VHanlkTllDeWJnZw?oc=5",
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tWGdiLV9adDJOVXpPa0VadlJIRFIwMVZIenJfbzZDVlg1RkRFTDlfSDB3a0hHY2ZhUkFkNTlxTGFhMkpRZm5LcE9fRDlSczlyRTduS1RINzBrT2lSazlodW1RNkkzMGJlLVd2a013?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "c3cff280-0e7c-4e41-a21c-f3a36fc40db6",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "公安調査庁がアレフ札幌施設に立ち入り検査した段階",
+          "summary": "公安調査庁が札幌のアレフ施設に立ち入り検査した件です。今回記事では、松本智津夫元死刑囚の写真や教材を確認したとされていますが、既存記事と同じ立ち入り検査の続報であり、段階の大きな変化は確認できません。",
+          "latest": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認（HTB北海道ニュース）",
+          "next_watch": "検査結果や行政処分、追加の立ち入りの有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UNnEtd2xZV0dsdDBxNUlIT252czdmN0U4Qy1td1RZbk1sb0hKWHQ4VlYtNjRpcFBPRjFxMXNoRlNsTXo4Q2k0cDlOUG9Bcy1NMGRCZjNBa0ZFWU56R1NENEhJcVhndVd4ZFI3QUFaTFZRakpZckZmY2F4T3c2MTA?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "アレフの札幌施設への公安調査庁による立ち入り検査",
+                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区",
+                  "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認（HTB北海道ニュース）"
+                },
+                {
+                  "kind": "entity",
+                  "value": "公安調査庁",
+                  "existing_quote": "オウム真理教の後継団体「アレフ」の国内最大規模施設に公安調査庁が立ち入り 札幌市白石区",
+                  "incoming_quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認（HTB北海道ニュース）"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "アレフの札幌施設への公安調査庁による立ち入り検査",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5",
+            "quote": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認（HTB北海道ニュース）"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "公安調査庁が札幌のアレフ施設へ立ち入り検査 松本智津夫元死刑囚の写真や教材を確認（HTB北海道ニュース） - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTHdIbDdpdFRqamRXaFRKVnlkelVwYmUxUnREOFBlbGF4UnpZem5GS2xncGVYME1MeGNLM3p1c3kxSGlOdUJxN0lSbk1NcUlGSkhnSm5wN0V4Q2wzd01QVHNzeWZaUzFIWWtOOQ?oc=5"
+      ]
+    },
+    {
+      "review_id": "74b0286d1424b29df893f49d",
+      "stage": "schedule_search",
+      "reason": "ValueError",
+      "observed_at": "2026-10-31T21:39:41.297095+00:00",
+      "diagnostics": {
+        "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+        "target_event_name": "札幌市の副首都整備担当部設置",
+        "ai_report": null,
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+      "event_name": null,
+      "article_urls": []
+    }
+  ]
 }

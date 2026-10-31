@@ -1,48 +1,47 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T17:46:44.101143+00:00",
+  "updated_at": "2026-10-31T21:40:06.806272+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 2815,
+  "waiting_article_count": 2809,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 526.16,
+  "oldest_wait_hours": 530.05,
   "stages": {
     "collection": {
-      "group_count": 24,
-      "article_count": 24,
-      "oldest_wait_hours": 22.31
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 2730,
-      "article_count": 2757,
-      "oldest_wait_hours": 520.97
+      "group_count": 2748,
+      "article_count": 2776,
+      "oldest_wait_hours": 524.86
     },
     "tracking": {
-      "group_count": 34,
-      "article_count": 34,
-      "oldest_wait_hours": 526.16
+      "group_count": 33,
+      "article_count": 33,
+      "oldest_wait_hours": 530.05
     }
   },
   "manual_review_counts": {
     "status_generation": 0,
-    "tracking": 62
+    "tracking": 63
   },
   "collection_retained_counts": {
-    "queued": 1151,
+    "queued": 1146,
     "classified_waiting": 5,
-    "duplicate_source": 186,
+    "duplicate_source": 189,
     "out_of_scope": 68,
     "already_saved": 28,
-    "downstream_waiting": 1756
+    "downstream_waiting": 1762
   },
-  "daily_accounted_usd": 0.0,
-  "monthly_accounted_usd": 0.0,
-  "daily_network_calls": 0,
+  "daily_accounted_usd": 0.151696,
+  "monthly_accounted_usd": 0.151696,
+  "daily_network_calls": 16,
   "alerts": [
     "waiting_article_count_at_least_100",
-    "oldest_wait_at_least_48_hours",
-    "waiting_increased_three_observations"
+    "oldest_wait_at_least_48_hours"
   ],
-  "daily_tracking_network_calls": 0,
-  "daily_tracking_accounted_usd": 0.0,
+  "daily_tracking_network_calls": 6,
+  "daily_tracking_accounted_usd": 0.135201,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }
