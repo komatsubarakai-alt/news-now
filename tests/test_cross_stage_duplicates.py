@@ -7,6 +7,7 @@ import os
 import runpy
 import tempfile
 import unittest
+from collections import Counter
 from contextlib import redirect_stdout
 from datetime import timedelta
 from pathlib import Path
@@ -32,6 +33,25 @@ def group(*articles, classified=False):
         result.update(category='事件・事故', tracking_value='high', current_stage='起訴',
                       summary='確認済みの分類', latest='起訴', next_watch='公判')
     return result
+
+
+def assert_triage_retains_sources(test, sources, kept, state, before=None):
+    """Conservation across every collection outcome, not just AI input/waiting."""
+    allowed = {'queued', 'downstream_waiting', 'already_saved',
+               'classified_waiting', 'out_of_scope'}
+    records = [state[a['url']] for a in sources]
+    for a, record in zip(sources, records):
+        test.assertEqual(record['article'], a)
+        test.assertEqual(record['source_fingerprint'], article_fingerprint(a))
+        test.assertIn(record['status'], allowed)
+        test.assertTrue(record['reason'])
+        previous = (before or {}).get(a['url'], {}).get('source_history', [])
+        test.assertEqual(record.get('source_history', [])[:len(previous)], previous)
+    test.assertEqual(Counter(article_fingerprint(a) for a in kept),
+                     Counter(article_fingerprint(a) for a, record in zip(sources, records)
+                             if record['status'] == 'queued'))
+    test.assertEqual(len(kept) + sum(record['status'] != 'queued' for record in records),
+                     len(sources))
 
 
 class CrossStagePolicyTests(unittest.TestCase):
@@ -129,6 +149,76 @@ class CrossStagePolicyTests(unittest.TestCase):
         self.assertEqual(updated['source_history'][0]['group'], g)
         self.assertEqual(updated['source_history'][0]['downstream_waiting'][0]['stage'], 'tracking')
 
+    def test_twenty_sources_nineteen_downstream_one_preclassified_outside(self):
+        # Entirely fictional counterpart of the failed conservation assumption.
+        sources = [{**article(), 'url': f'https://example.test/retained/{i}',
+                    'title': f'架空の確認記事{i}'} for i in range(20)]
+        outside = group(sources[-1], classified=True)
+        outside.update(category='対象外', tracking_value='low')
+        waiting = [group(a) for a in sources[:-1]]
+        original = copy.deepcopy((sources, waiting, outside)); state = {}
+        kept = triage_articles(sources, [], [outside], state, NOW, status_pending=waiting)
+        self.assertEqual(Counter(r['status'] for r in state.values()),
+                         Counter(downstream_waiting=19, out_of_scope=1))
+        assert_triage_retains_sources(self, sources, kept, state)
+        self.assertEqual(kept, [])
+        for a in sources[:-1]:
+            self.assertEqual(state[a['url']]['downstream_waiting'][0]['stage'],
+                             'status_generation')
+        self.assertEqual(state[sources[-1]['url']]['reason'],
+                         'previous_ai_out_of_scope_or_low_value')
+        self.assertEqual((sources, waiting, outside), original)
+
+    def test_all_collection_branches_preserve_sources(self):
+        sources = [{**article(), 'url': f'https://example.test/branch/{i}',
+                    'title': f'架空記事{i}'} for i in range(8)]
+        sources[6]['title'] = '架空サッカーの試合結果'
+        sources[7]['title'] = '架空市の広報番組案内'
+        classified = group(sources[2], classified=True)
+        outside = group(sources[3], classified=True)
+        outside.update(category='対象外', tracking_value='low')
+        state = {}; kept = triage_articles(sources, [group(sources[1])],
+            [classified, outside], state, NOW, status_pending=[group(sources[4])],
+            tracking_pending=[group(sources[5], classified=True)])
+        expected = ['queued', 'already_saved', 'classified_waiting', 'out_of_scope',
+                    'downstream_waiting', 'downstream_waiting', 'out_of_scope', 'queued']
+        self.assertEqual([state[a['url']]['status'] for a in sources], expected)
+        assert_triage_retains_sources(self, sources, kept, state)
+        self.assertEqual(kept, [sources[0], sources[7]])
+
+    def test_preclassified_outside_revision_reopens_with_history(self):
+        a = article(); outside = group(a, classified=True)
+        outside.update(category='対象外', tracking_value='low')
+        statuses = [outside]; original = copy.deepcopy(statuses); state = {}
+        self.assertEqual(triage_articles([a], [], statuses, state, NOW), [])
+        old = copy.deepcopy(state[a['url']])
+        changed = {**a, 'description': '架空の制度変更について新しい根拠が追加された'}
+        kept = triage_articles([changed], [], statuses, state, NOW + timedelta(hours=1))
+        self.assertEqual(kept, [changed]); self.assertEqual(statuses, original)
+        history = state[a['url']]['source_history']
+        self.assertEqual(history[0]['article'], a)
+        self.assertEqual(history[0]['status'], 'out_of_scope')
+        self.assertEqual(history[0]['reason'], old['reason'])
+        assert_triage_retains_sources(self, [changed], kept, state)
+
+    def test_ambiguous_official_information_is_not_excluded_without_classification(self):
+        a = {**article(), 'title': '架空市の公式情報番組',
+             'description': '内容は保存された見出しと説明だけでは確認できない'}
+        state = {}; kept = triage_articles([a], [], [], state, NOW)
+        self.assertEqual(kept, [a]); self.assertEqual(state[a['url']]['status'], 'queued')
+        assert_triage_retains_sources(self, [a], kept, state)
+
+    def test_classified_branch_is_idempotent_and_keeps_existing_history(self):
+        a = article(); classified = group(a, classified=True)
+        state = {}; triage_articles([a], [], [classified], state, NOW)
+        before = copy.deepcopy(state)
+        for hour in range(1, 4):
+            kept = triage_articles([a], [], [classified], state, NOW + timedelta(hours=hour))
+            self.assertEqual(kept, [])
+            self.assertEqual(state[a['url']]['status'], 'classified_waiting')
+            assert_triage_retains_sources(self, [a], kept, state, before)
+        self.assertEqual(state[a['url']]['source_history'], [])
+
 
 class CrossStageIntegrationTests(unittest.TestCase):
     def setUp(self):
@@ -220,12 +310,14 @@ class CrossStageIntegrationTests(unittest.TestCase):
         read = lambda n: json.loads((ROOT / n).read_text())
         sources = read('news_filtered.json'); pending = read('status_pending.json')
         tracking = read('tracking_pending.json'); state = copy.deepcopy(read('collection_triage.json')['items'])
+        state_before = copy.deepcopy(state)
         kept = triage_articles(sources, read('events.json'), read('news_status.json'), state, NOW,
                                status_pending=pending, tracking_pending=tracking)
         parked = [a for a in sources if state[a['url']]['status'] == 'downstream_waiting']
         index = tracking_classification_index(tracking)
         duplicate_groups = [g for g in pending if (g.get('event_name'), fingerprint(g)) in index]
-        self.assertEqual(len(kept) + len(parked), len(sources))
+        # Classified/saved/out-of-scope revisions are retained outcomes too.
+        assert_triage_retains_sources(self, sources, kept, state, state_before)
         for a in parked:
             self.assertIn(article_fingerprint(a), downstream_article_index(pending, tracking))
         self.assertEqual(hashes(), before)
