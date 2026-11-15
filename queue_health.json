@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T02:43:13.519709+00:00",
+  "updated_at": "2026-11-15T11:00:33.331498+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 2979,
+  "waiting_article_count": 3006,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 871.1,
+  "oldest_wait_hours": 879.39,
   "stages": {
     "collection": {
-      "group_count": 26,
-      "article_count": 26,
-      "oldest_wait_hours": 0.0
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 2888,
-      "article_count": 2918,
-      "oldest_wait_hours": 865.91
+      "group_count": 2940,
+      "article_count": 2970,
+      "oldest_wait_hours": 874.2
     },
     "tracking": {
-      "group_count": 35,
-      "article_count": 35,
-      "oldest_wait_hours": 871.1
+      "group_count": 36,
+      "article_count": 36,
+      "oldest_wait_hours": 879.39
     }
   },
   "manual_review_counts": {
@@ -27,22 +27,22 @@
     "tracking": 64
   },
   "collection_retained_counts": {
-    "queued": 1212,
+    "queued": 1235,
     "classified_waiting": 5,
-    "duplicate_source": 200,
-    "out_of_scope": 73,
+    "duplicate_source": 206,
+    "out_of_scope": 74,
     "already_saved": 28,
-    "downstream_waiting": 1871
+    "downstream_waiting": 1878
   },
-  "daily_accounted_usd": 0.027252,
-  "monthly_accounted_usd": 0.362378,
-  "daily_network_calls": 11,
+  "daily_accounted_usd": 0.071687,
+  "monthly_accounted_usd": 0.406813,
+  "daily_network_calls": 22,
   "alerts": [
     "waiting_article_count_at_least_100",
     "oldest_wait_at_least_48_hours",
     "waiting_increased_three_observations"
   ],
-  "daily_tracking_network_calls": 1,
-  "daily_tracking_accounted_usd": 0.002014,
+  "daily_tracking_network_calls": 2,
+  "daily_tracking_accounted_usd": 0.0268,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }

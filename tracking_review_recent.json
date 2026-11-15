@@ -2,10 +2,75 @@
   "schema_version": 1,
   "items": [
     {
+      "review_id": "678ddab36a67adae368564c9",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5",
+      "observed_at": "2026-11-15T11:00:26.460906+00:00",
+      "diagnostics": {
+        "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+        "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "地方公務員の男（34）を逮捕した段階",
+          "summary": "札幌市で、下着を撮影しようとして女性の胸元にスマホを近づけたとして地方公務員の男（34）が逮捕された件の続報です。",
+          "latest": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉",
+          "next_watch": "余罪の有無や処分の進展が報じられるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5VURIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "地方公務員の男（34）を逮捕",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市",
+                  "incoming_quote": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉"
+                },
+                {
+                  "kind": "detail",
+                  "value": "女性の胸元を…動画を”撮影状態”でスマホ向け撮影",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市",
+                  "incoming_quote": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉 - FNNプライムオンライン",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+      ]
+    },
+    {
       "review_id": "96240fc0f332700cf2a50dcf",
       "stage": "schedule_search",
       "reason": "search_identity_uncertain",
-      "observed_at": "2026-11-14T22:29:35.587376+00:00",
+      "observed_at": "2026-11-15T11:00:26.460906+00:00",
       "diagnostics": {
         "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
         "target_event_name": "札幌市の副首都整備担当部設置",
