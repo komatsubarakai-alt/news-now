@@ -148,3 +148,9 @@ python -m unittest experiments.allocation_lab.test_allocation experiments.alloca
 追加検証後もCを本番導入候補として推奨しない。
 未照合状態と新事件作成の安全条件の接続、重複事件の抑止、独立した正解付き標本での見逃し・誤統合評価が必要。
 今回、現行の追跡・検証条件や本番の作成処理は修正しない。
+
+## 新事件作成前の追加安全装置
+
+[新事件作成前の隔離安全装置](NEW_EVENT_GUARD.md) に、未照合候補の永続保存、実験用候補の許可条件、保存・再開、残る反例をまとめた。
+`python -m unittest experiments.allocation_lab.test_new_event_guard -v` で架空データの検証を実行できる。
+本番作成や公開を許可する機能ではない。
