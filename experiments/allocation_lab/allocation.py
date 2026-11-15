@@ -92,26 +92,35 @@ def shadow_ledger(seed):
         finally:os.chdir(previous)
 
 
-def simulate(plan,jobs,seed,windows,profiles,*,outcome='mock_pass',cost_mode='estimated_settlement',other_versions=(),asof=None):
+def simulate(plan,jobs,seed,windows,profiles,*,outcome='mock_pass',cost_mode='estimated_settlement',other_versions=(),asof=None,resume=None,priority_policy='native'):
     if plan not in PLANS or outcome not in ('mock_pass','mock_downstream','unknown','mock_invalid') or cost_mode not in ('estimated_settlement','reservation_only'):raise ValueError('unsupported experiment')
     if not windows and asof is None:raise ValueError('asof required for empty horizon')
-    source=copy.deepcopy(jobs);seed_before=copy.deepcopy(seed);attempted=set();completed=set();mock_tracking=set();receipts=[];trace=[];reserved=0;selected=Counter();hold=Counter()
+    from .priority import work_key,rank_jobs
+    resume=copy.deepcopy(resume or {})
+    contract={'plan':plan,'outcome':outcome,'cost_mode':cost_mode,'priority_policy':priority_policy,'profiles':profiles}
+    if resume and resume.get('contract')!=contract:raise ValueError('resume contract changed')
+    if resume.get('last_window') and any(at<=dt(resume['last_window']) for at in windows):raise ValueError('window already completed')
+    seed=resume.get('ledger',seed)
+    source=copy.deepcopy(jobs);seed_before=copy.deepcopy(seed)
+    attempted=set(resume.get('attempted',[]));completed=set(resume.get('completed',[]));mock_tracking=set(resume.get('mock_tracking',[]))
+    receipts=resume.get('receipts',[]);trace=resume.get('trace',[]);reserved=resume.get('reserved',0);selected=Counter(resume.get('selected',{}));hold=Counter(resume.get('hold',{}))
     all_ids=[j['id'] for stage in jobs.values() for j in stage]
     if len(set(all_ids))!=len(all_ids):raise ValueError('duplicate work ID')
     for stage,items in jobs.items():
         if stage not in ('pair','merge','status'):raise ValueError('unknown stage')
         for job in items:
             if job['stage']!=stage or not isinstance(job['prompt_bytes'],int) or job['prompt_bytes']<=0:raise ValueError('invalid job')
-    def pending_versions():return set(other_versions)|mock_tracking|{v for j in jobs['status'] if j['id'] not in completed for v in j['versions']}
-    initial=len(pending_versions());at_start=dt(asof) if asof else windows[0]
+    def pending_versions():return set(other_versions)|mock_tracking|{v for j in jobs['status'] if work_key(j) not in completed for v in j['versions']}
+    initial=resume.get('initial_waiting',len(pending_versions()));at_start=dt(asof) if asof else windows[0]
     def blocked(j):return bool(j.get('blocked_reason')) and bool(j.get('blocked_signature')) and j.get('blocked_signature')==j.get('context_signature')
     with shadow_ledger(seed):
         for round_index,at in enumerate(windows):
             per_run=Counter();failures=Counter()
-            with patch.object(native,'now',return_value=at),patch.dict(os.environ,{'GITHUB_RUN_ID':'allocation-'+str(round_index),'AI_PROCESSING_STAGE':'upstream'}):
+            with patch.object(native,'now',return_value=at),patch.dict(os.environ,{'GITHUB_RUN_ID':'allocation-'+at.isoformat(),'AI_PROCESSING_STAGE':'upstream'}):
                 for stage in ('pair','merge','status'):
-                    eligible=[j for j in jobs[stage] if j['id'] not in attempted and not blocked(j)]
-                    for j in eligible[:PLANS[plan][stage]]:
+                    eligible=[j for j in jobs[stage] if work_key(j) not in attempted and not blocked(j)]
+                    chosen=rank_jobs(eligible,priority_policy,PLANS[plan][stage]) if stage=='status' else eligible[:PLANS[plan][stage]]
+                    for j in chosen:
                         prompt='x'*j['prompt_bytes']
                         # Native reserve/settle are file writers to the temporary ledger only.
                         try:reservation=native.reserve(prompt,native.MODEL,1200)
@@ -120,31 +129,31 @@ def simulate(plan,jobs,seed,windows,profiles,*,outcome='mock_pass',cost_mode='es
                             why=rejection_reason(ledger,at,amount);failures[why]+=1
                             receipts.append({'at':at.isoformat(),'stage':stage,'id':j['id'],'state':'budget_wait','reason':why,'native_reason':str(error)})
                             break
-                        amount=reservation[2];reserved+=amount;selected[stage]+=1;per_run[stage]+=1;attempted.add(j['id'])
+                        amount=reservation[2];reserved+=amount;selected[stage]+=1;per_run[stage]+=1;attempted.add(work_key(j))
                         if cost_mode=='estimated_settlement':
                             profile=profiles[stage];inp=min(j['prompt_bytes']+2048,math.ceil(j['prompt_bytes']*profile['input_token_ratio']))
                             native.settle(reservation,{'usage':{'input_tokens':inp,'output_tokens':profile['output_tokens']}})
                         if stage=='status' and outcome in ('mock_pass','mock_downstream'):
-                            completed.add(j['id']);state='mock_pass_not_approval'
+                            completed.add(work_key(j));state='mock_pass_not_approval'
                             if outcome=='mock_downstream':mock_tracking.update(j['versions'])
                         else:state='unverified' if outcome=='unknown' else 'mock_invalid' if outcome=='mock_invalid' else 'comparison_only_no_merge'
                         if stage=='status' and state!='mock_pass_not_approval':hold[state]+=1
                         age=round((at-dt(j['first_seen_at'])).total_seconds()/3600,2) if j.get('first_seen_at') else None
-                        receipts.append({'at':at.isoformat(),'stage':stage,'id':j['id'],'state':state,'reservation_micro_usd':amount,'context_signature':j.get('context_signature'),'age_hours':age,'headline_signal':j.get('headline_signal',False),'can_apply':False,'can_publish':False})
+                        receipts.append({'at':at.isoformat(),'stage':stage,'id':j['id'],'state':state,'reservation_micro_usd':amount,'context_signature':j.get('context_signature'),'age_hours':age,'headline_signal':j.get('headline_signal',False),'followup_candidate':j.get('followup_candidate',False),'progress_candidate':j.get('progress_candidate',False),'due_related_candidate':j.get('due_related_candidate',False),'can_apply':False,'can_publish':False})
                 ledger=native.read('ai_budget.json',{});day,month=native.periods(at);daily=ledger.get('days',{}).get(day,{});monthly=ledger.get('months',{}).get(month,{})
                 if daily.get('calls',0)>40 or daily.get('reserved_micro_usd',0)>200000 or monthly.get('reserved_micro_usd',0)>5000000:raise AssertionError('native cap exceeded')
                 upstream_calls=daily.get('calls',0)-daily.get('tracking_calls',0);upstream_cost=daily.get('reserved_micro_usd',0)-daily.get('tracking_micro_usd',0)
                 if upstream_calls>24 or upstream_cost>100000:raise AssertionError('tracking protection weakened')
-                trace.append({'at':at.isoformat(),'calls':dict(per_run),'deferrals':dict(failures),'waiting_article_versions':len(pending_versions()),'completed_mock_groups':len(completed),'day':day,'daily_accounted_micro_usd':daily.get('reserved_micro_usd',0),'daily_calls':daily.get('calls',0),'run_calls':ledger.get('run',{}).get('calls',0),'monthly_accounted_micro_usd':monthly.get('reserved_micro_usd',0)})
+                trace.append({'at':at.isoformat(),'calls':dict(per_run),'deferrals':dict(failures),'waiting_article_versions':len(pending_versions()),'completed_mock_groups':sum(work_key(j) in completed for j in jobs['status']),'day':day,'daily_accounted_micro_usd':daily.get('reserved_micro_usd',0),'daily_calls':daily.get('calls',0),'run_calls':ledger.get('run',{}).get('calls',0),'monthly_accounted_micro_usd':monthly.get('reserved_micro_usd',0)})
         ledger=native.read('ai_budget.json',{})
     if jobs!=source or seed!=seed_before:raise AssertionError('input mutation')
-    finish=at_start+timedelta(hours=24);remaining=[j for j in jobs['status'] if j['id'] not in completed]
+    finish=at_start+timedelta(hours=24);remaining=[j for j in jobs['status'] if work_key(j) not in completed]
     max_age=max(((finish-dt(j['first_seen_at'])).total_seconds()/3600 for j in remaining if j.get('first_seen_at')),default=None)
     return {'plan':plan,'caps':PLANS[plan],'outcome':outcome,'cost_mode':cost_mode,'simulated_calls':dict(selected),'real_API_calls':0,
-            'completed_actual_groups':0,'completed_mock_groups':len(completed),'closed_mock_groups':len(completed) if outcome=='mock_pass' else 0,'transferred_mock_article_versions':len(mock_tracking),'final_status_groups':len(jobs['status'])-len(completed),'initial_waiting_article_versions':initial,'final_waiting_article_versions':len(pending_versions()),
-            'unexamined_pair_jobs':len(jobs['pair'])-selected['pair'],'unexamined_merge_jobs':len(jobs['merge'])-selected['merge'],'selected_count_by_stage':dict(selected),'attempted_work_ids':sorted(attempted),
+            'completed_actual_groups':0,'completed_mock_groups':sum(work_key(j) in completed for j in jobs['status']),'closed_mock_groups':sum(work_key(j) in completed for j in jobs['status']) if outcome=='mock_pass' else 0,'transferred_mock_article_versions':len(mock_tracking),'final_status_groups':sum(work_key(j) not in completed for j in jobs['status']),'initial_waiting_article_versions':initial,'final_waiting_article_versions':len(pending_versions()),
+            'unexamined_pair_jobs':sum(work_key(j) not in attempted for j in jobs['pair']),'unexamined_merge_jobs':sum(work_key(j) not in attempted for j in jobs['merge']),'selected_count_by_stage':dict(selected),'attempted_work_ids':sorted(attempted),
             'remaining_blocked_groups':sum(blocked(j) for j in jobs['status']),'holds':dict(hold),'reserved_sum_micro_usd':reserved,
             'oldest_remaining_status_age_hours':round(max_age,2) if max_age is not None else None,
             'selected_headline_signal_groups':sum(r.get('headline_signal',False) for r in receipts if r['stage']=='status' and 'reservation_micro_usd' in r),
             'selected_oldest_status_age_hours':max((r['age_hours'] for r in receipts if r['stage']=='status' and r.get('age_hours') is not None),default=None),
-            'trace':trace,'receipts':receipts,'ledger':ledger,'approval_count':0,'event_merges':0,'source_records_preserved':True,'inflow':'frozen_zero','tracking_demand':'no_new_tracking_calls; protected capacity remains available'}
+            'checkpoint':{'contract':contract,'last_window':windows[-1].isoformat() if windows else resume.get('last_window'),'attempted':sorted(attempted),'completed':sorted(completed),'mock_tracking':sorted(mock_tracking),'receipts':receipts,'trace':trace,'reserved':reserved,'selected':dict(selected),'hold':dict(hold),'ledger':ledger,'initial_waiting':initial},'priority_policy':priority_policy,'trace':trace,'receipts':receipts,'ledger':ledger,'approval_count':0,'event_merges':0,'source_records_preserved':True,'inflow':'frozen_zero','tracking_demand':'no_new_tracking_calls; protected capacity remains available'}

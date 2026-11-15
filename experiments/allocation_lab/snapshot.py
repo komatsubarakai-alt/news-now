@@ -8,6 +8,8 @@ from queue_policy import prioritize_groups, article_fingerprint
 from pending_triage import group_key
 from ai_candidates import build_candidates
 from .allocation import dt
+from .priority import signals
+from failed_response import validation_revision as native_validation_revision
 
 
 def read(root,name):return json.loads((Path(root)/(name+'.json')).read_text())
@@ -42,6 +44,8 @@ def adapt(root,profiles):
     memory=read(root,'queue_monitor_state').get('first_seen',{});collection=read(root,'collection_triage')['items']
     groups=prioritize_groups(read(root,'status_pending'),state,dt(at));make_prompt=status_prompt_factory((root/'news_status.py').read_text())
     jobs={'pair':[],'merge':[],'status':[]}
+    hints,schedules=signals(groups,read(root,'events'),dt(at))
+    validation_revision=native_validation_revision('status')
     for group in groups:
         key=group_key(group);entry=state.get(key,{})
         if entry.get('rejected_responses'):raise ValueError('rejected-answer snapshot requires native signature preflight; no inferred reuse')
@@ -51,13 +55,16 @@ def adapt(root,profiles):
         signature=hashlib.sha256(json.dumps(group,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
         jobs['status'].append({'id':'status-'+key,'stage':'status','versions':versions,'context_signature':signature,
             'first_seen_at':min(firsts).isoformat() if firsts else None,'priority_first_seen_at':entry.get('first_seen_at'),'prompt_bytes':len(make_prompt(group).encode('utf-8')),
-            'headline_signal':bool(re.search('起訴|判決|控訴|復旧|施行',' '.join(a.get('title','') for a in group.get('articles',[]))))})
+            'validation_revision':validation_revision,**hints[key],'headline_signal':bool(re.search('起訴|判決|控訴|復旧|施行',' '.join(a.get('title','') for a in group.get('articles',[]))))})
     candidates=build_candidates(read(root,'news_filtered'))
     # Candidate count is measured; their future prompt size uses historical calibration.
-    for i,_ in enumerate(candidates):jobs['pair'].append({'id':'pair-'+str(i),'stage':'pair','prompt_bytes':profiles['pair']['prompt_bytes']})
+    for candidate in candidates:
+        versions=sorted(article_fingerprint(candidate[k]) for k in ('article_a','article_b'))
+        signature=hashlib.sha256(json.dumps(versions).encode()).hexdigest()
+        jobs['pair'].append({'id':'pair-'+signature,'stage':'pair','context_signature':signature,'versions':versions,'validation_revision':hashlib.sha256(b''.join((root/n).read_bytes() for n in ('ai_candidates.py','news_pairing.py','merge_safety.py'))).hexdigest(),'prompt_bytes':profiles['pair']['prompt_bytes']})
     # Future group-candidate demand cannot be proved without pair outcomes.
     # Fixed synthetic demand is deliberately identical in all plans, not a measured queue.
-    for i in range(16):jobs['merge'].append({'id':'synthetic-merge-'+str(i),'stage':'merge','prompt_bytes':profiles['merge']['prompt_bytes']})
+    for i in range(16):jobs['merge'].append({'id':'synthetic-merge-'+str(i),'stage':'merge','context_signature':'fictional-merge-demand-'+str(i),'prompt_bytes':profiles['merge']['prompt_bytes']})
     collection=read(root,'collection_triage')['items']
     others=[article_fingerprint(a) for a in read(root,'news_inbox') if collection.get(a.get('url'),{}).get('status','queued')=='queued']
     others += [article_fingerprint(a) for g in read(root,'tracking_pending') for a in g.get('articles',[])]
@@ -89,3 +96,21 @@ def summarize_wait(root,evidence=None):
             'stages':stages,'unique_waiting_versions':len(assignments),
             'tracking_cached_rejection_overlay_not_additive':secondary,
             'meaning':'last observed stopping reason; not necessarily initial historical cause'}
+
+
+def pair_catalogue(root):
+    """Keep all incoming article-pair possibilities, even outside top-three.
+
+    This is an unexamined relationship inventory, not a demand for all-pair AI.
+    """
+    from itertools import combinations
+    from ai_candidates import get_keywords
+    articles=read(root,'news_filtered');retained=build_candidates(articles)
+    keys={tuple(sorted(article_fingerprint(c[k]) for k in ('article_a','article_b'))) for c in retained}
+    catalogue=[]
+    for a,b in combinations(articles,2):
+        versions=tuple(sorted((article_fingerprint(a),article_fingerprint(b))))
+        catalogue.append({'article_versions':versions,'native_retrieval_selected':versions in keys,
+                          'has_common_native_keyword':bool(set(get_keywords(a.get('title','')))&set(get_keywords(b.get('title','')))),
+                          'state':'unexamined','not_a_confirmed_distinct_event':True})
+    return catalogue
