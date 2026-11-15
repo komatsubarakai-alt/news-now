@@ -154,3 +154,9 @@ python -m unittest experiments.allocation_lab.test_allocation experiments.alloca
 [新事件作成前の隔離安全装置](NEW_EVENT_GUARD.md) に、未照合候補の永続保存、実験用候補の許可条件、保存・再開、残る反例をまとめた。
 `python -m unittest experiments.allocation_lab.test_new_event_guard -v` で架空データの検証を実行できる。
 本番作成や公開を許可する機能ではない。
+
+## 保留を確認・保管・訂正する運営フロー
+
+[1人運営の保留確認フロー](HOLD_WORKFLOW.md) に、根拠比較、認証を想定した確認記録、保留・再開、実験表示の停止・訂正、残る反例をまとめた。
+`python -m experiments.allocation_lab.hold_workflow_demo` は架空8件の操作列を通信なしで実行する。
+`python -m unittest experiments.allocation_lab.test_hold_workflow -v` で回帰テストを実行する。本番判断や公開には接続しない。
