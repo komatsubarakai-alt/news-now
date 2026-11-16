@@ -69605,5 +69605,623 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "d8add6c3295e3bd5f1d2e011fd8fc97be918fa074d2ab4780451d65dac6d82b9": {
+    "id": "resp_0ab44e225b8f73ac006afae8ddfc9887d1804459783bbefc91",
+    "object": "response",
+    "created_at": 1794828510,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828513,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0ab44e225b8f73ac006afae8deea3487d1b26369cc64474e64",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KQTNud2xJOWNXRF9waWVPdXliNUxkNmVSeTc3Sm9qdEpKRTFxand1Z3ZyWEZtZUxta3oyc0lJMlpkaXJqaTVacjI1NFdUUm94Mk1ZQ2NRamFsZw?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5paHJyR29Fc1lJYndLQjlfdVN1cl9saExoRGx1LVRtZ0NVczd0d1VXZ0I5dUh5SERXV2NOZThaTk90eG1HZzBsNm44SEtaRWNaNGVBbUwzOFNyaTViSDlaNktqQVAtV180TUdYdw?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\",\"existing_quote\":\"防犯カメラなどから特定 札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\",\"incoming_quote\":\"防犯カメラなどから特定 札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\"},{\"kind\":\"detail\",\"value\":\"防犯カメラなどから特定\",\"existing_quote\":\"防犯カメラなどから特定 札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\",\"incoming_quote\":\"防犯カメラなどから特定 札幌の共同住宅の自身の部屋に火をつけ…建物の一部焼損させた疑いで女を逮捕\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1747,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 534,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2281
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "6f444a79af88b9da78f12eb474c22ebc6693e7ce34cc193fe9d6faf1982076fe": {
+    "id": "resp_077fe785f182aafa006afae8e15ae087d183039faaf5802776",
+    "object": "response",
+    "created_at": 1794828513,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828518,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_077fe785f182aafa006afae8e2cd0887d18c5f045d58b4373b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌・ススキノの遊技施設トイレで起きた20歳学生への強盗事件\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9YLTA1Q3U4SmpuY0ZQR1ZoZ3RKS0pQRVprV3JPVFVKd3VdTHpMbkMwdzJYQksweWg0U3pRTmhSSlY0ZUFiRXhPbGhRalhyNXJCaDhYREhMamJ0QVJYWlh0dE16NUp0SGtkSUY5bVJVODdGS1kyRFlabHJPM2xhWHc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CdUZ1RlluN25qVXZOeUpwVWN2Tk03UXdsQVF4VG9JamEtRWc5eG4zSmtoMXJ3dkp5ZERmSFh3X1RCcGpZQmhZRDJFVkt2UUVaTGlvUUZqVGtUdw?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌・ススキノ\",\"existing_quote\":\"遊戯施設トイレで強盗事件…札幌・ススキノ パーマの男が20歳学生の首つかみ「金持ってんのか」 3000円奪い逃走\",\"incoming_quote\":\"「どう落とし前つけるんだ。金持ってんのか」札幌ススキノで20歳専門学校生の首をつかみ3000円奪って逃走 30代から40代の男の行方追う 現場は遊技施設のトイレ\"},{\"kind\":\"detail\",\"value\":\"3000円\",\"existing_quote\":\"遊戯施設トイレで強盗事件…札幌・ススキノ パーマの男が20歳学生の首つかみ「金持ってんのか」 3000円奪い逃走\",\"incoming_quote\":\"「どう落とし前つけるんだ。金持ってんのか」札幌ススキノで20歳専門学校生の首をつかみ3000円奪って逃走 30代から40代の男の行方追う 現場は遊技施設のトイレ\"}]},{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9YLTA1Q3U4SmpuY0ZQR1ZoZ3RKS0pQRVprV3JPVFVKd3VdTHpMbkMwdzJYQksweWg0U3pRTmhSSlY0ZUFiRXhPbGhRalhyNXJCaDhYREhMamJ0QVJYWlh0dE16NUp0SGtkSUY5bVJVODdGS1kyRFlabHJPM2xhWHc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CdUZ1RlluN25qVXZOeUpwVWN2Tk03UXdsQVF4VG9JamEtRWc5eG4zSmtoMXJ3dkp5ZERmSFh3X1RCcGpZQmhZRDJFVkt2UUVaTGlvUUZqVGtUdw?oc=5\",\"anchors\":[{\"kind\":\"entity\",\"value\":\"20歳学生\",\"existing_quote\":\"遊戯施設トイレで強盗事件…札幌・ススキノ パーマの男が20歳学生の首つかみ「金持ってんのか」 3000円奪い逃走\",\"incoming_quote\":\"「どう落とし前つけるんだ。金持ってんのか」札幌ススキノで20歳専門学校生の首をつかみ3000円奪って逃走 30代から40代の男の行方追う 現場は遊技施設のトイレ\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1827,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 947,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2774
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "4436b5a154f1f3fa726a26a8dbc6926e622eff91cb8638e6be62b69c7a8c5465": {
+    "id": "resp_05abaefd2c628886006afae8e6d15487d1a7bb8c52462ff57a",
+    "object": "response",
+    "created_at": 1794828518,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828521,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_05abaefd2c628886006afae8e7501487d18d52407af5056ff0",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌・すすきのの遊技施設トイレで起きた強盗事件\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9YLTA1Q3U4SmpuY0ZQR1ZoZ3RKS0pQRVprV3JPVFVKd3dVTHpMbkMwdzJYQksweWg0U3pRTmhSSlY0ZUFiRXhPbGhRalhyNXJCaDhYREhMamJ0QVJYWlh0dE16NUp0SGtkSUY5bVJVODdGS1kyRFlabHJPM2xhWHc?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1aSjZ5T2pNT05tSl9kNEdRVWd3UWc1d0hSYkFYcGh3VDVHUFFuTnlhSFFGbUlfd0hMREwtQnkwM01JUWotNTB0ZDUzckt2VVQtRzVwQUxQZWp5b2xLb0QxOHVFdFY1UXZyMTVkNllrUUF4MFg1NloyUzhiX3ExTjg?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌・すすきので強盗\",\"existing_quote\":\"「どう落とし前つけるんだ」 札幌・すすきので強盗 ビル男子トイレ内で首絞め金奪う…パーマの男逃走\",\"incoming_quote\":\"「どう落とし前つけるんだ。金持ってんのか」札幌ススキノで20歳専門学校生の首をつかみ3000円奪って逃走 30代から40代の男の行方追う 現場は遊技施設のトイレ\"},{\"kind\":\"entity\",\"value\":\"すすきの\",\"existing_quote\":\"「どう落とし前つけるんだ」 札幌・すすきので強盗 ビル男子トイレ内で首絞め金奪う…パーマの男逃走\",\"incoming_quote\":\"「どう落とし前つけるんだ。金持ってんのか」札幌ススキノで20歳専門学校生の首をつかみ3000円奪って逃走 30代から40代の男の行方追う 現場は遊技施設のトイレ\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1855,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 594,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2449
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "1b1b08963d9efc1fdc32a3750cf585b889912cde1339eaed60dce2a81f8a368b": {
+    "id": "resp_07bc4b0f690c4940006afae8e9f55c87d1bd9b3395dc4e21a7",
+    "object": "response",
+    "created_at": 1794828521,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828525,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_07bc4b0f690c4940006afae8eaebb487d181cab7bfc1ed1d9e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"札幌市で小中学生向けドライブスルー型の発熱外来を感染拡大を受け前倒し開設\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9vekZaWkg1ajNrMF9qYTN5OFNVd0lNTVBYeWdsSXFvRGVnRjltNXZKTlctTHJCMEY3Wk5yb1BSMTA3ZTlSTGpIX1BlSFRQRGE2QlNWV0MyMW9PTHkyaTJxNDhUQzVxMmJMNHB2eWNEam5iWTlyc0w5UEx6Z0NvbW8?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9vekZaWkg1ajNrMF9qYTN5OFNVd0lNTVBYeWdsSXFvRGVnRjltNXZKTlctTHJCMEY3Wk5yb1BSMTA3ZTlSTGpIX1BlSFRQRGE2QlNWV0MyMW9PTHkyaTJxNDhUQzVxMmJMNHB2eWNEam5iWTlyc0w5UEx6Z0NvbW8?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"札幌市でドライブスルー型の発熱外来\",\"existing_quote\":\"【インフル警報発令】札幌市でドライブスルー型の発熱外来―小中学生対象でインフル・コロナ検査可能…感染拡大を受け前倒し開設〈北海道〉\",\"incoming_quote\":\"【インフル警報発令の札幌市】小中学生向けドライブスルー発熱外来を開設_感染拡大を受けて前倒し開設〈北海道〉\"},{\"kind\":\"entity\",\"value\":\"小中学生\",\"existing_quote\":\"【インフル警報発令】札幌市でドライブスルー型の発熱外来―小中学生対象でインフル・コロナ検査可能…感染拡大を受け前倒し開設〈北海道〉\",\"incoming_quote\":\"【インフル警報発令の札幌市】小中学生向けドライブスルー発熱外来を開設_感染拡大を受けて前倒し開設〈北海道〉\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 592,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2426
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "0d7764c8c8ff3f1a7c8b0cf9781937d39477dd563a75e490a13f5e0ddb995717": {
+    "id": "resp_08a67f8f7e47f33d006afae8f4336887d193c676530fd144b3",
+    "object": "response",
+    "created_at": 1794828532,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828533,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_08a67f8f7e47f33d006afae8f5937c87d1a42c833128c09a7e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1641,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1661
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "1fcc38e5b5badee657515636d09e064e2dc8c23ca5c754d6c9b2777c08840704": {
+    "id": "resp_0617de9302156751006afae8f6302c87d1aa7db82b50fc2739",
+    "object": "response",
+    "created_at": 1794828534,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1794828535,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0617de9302156751006afae8f74be087d1b50f2b2d8ebfbe9b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1715,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1735
+    },
+    "user": null,
+    "metadata": {}
   }
 }
