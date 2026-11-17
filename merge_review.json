@@ -385044,7 +385044,7 @@
     },
     "review_id": "5633781127c902e1230babe7",
     "schema_version": 2,
-    "observed_at": "2026-10-31T21:39:41.297095+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
       "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
@@ -385061,9 +385061,9 @@
         "multi_event": false,
         "meaningful_change": false,
         "current_stage": "傷害容疑での逮捕段階",
-        "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕された件。",
+        "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕されたと報じられている。",
         "latest": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌",
-        "next_watch": "送検や起訴、容疑の補足事実の有無",
+        "next_watch": "",
         "completed": false,
         "completion_quote": "",
         "evidence_urls": [
@@ -385076,15 +385076,15 @@
             "anchors": [
               {
                 "kind": "case",
-                "value": "高校生に河川敷で暴行",
+                "value": "高校生に河川敷で暴行 公園で煙草の火を押し当てる",
                 "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
                 "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
               },
               {
                 "kind": "entity",
                 "value": "18歳アルバイトの女と16歳高校生",
-                "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
-                "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
+                "existing_quote": "18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                "incoming_quote": "18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
               }
             ]
           }
@@ -385096,8 +385096,8 @@
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -385190,11 +385190,102 @@
         "last_seen_at": "2026-10-25T16:47:11.381143+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌 - ｄメニューニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "傷害容疑で逮捕された段階",
+            "summary": "札幌で、高校生に対する暴行や煙草の火を押し当てる行為に関し、18歳のアルバイトの女と16歳の高校生が傷害容疑で逮捕されたとする記事です。",
+            "latest": "18歳の女と16歳の高校生が傷害容疑で逮捕されたことが伝えられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後、捜査の進展や容疑の詳しい経緯が報じられるかどうかが注目点です。",
+            "articles": [
+              {
+                "title": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌 - ｄメニューニュース",
+                "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5",
+                "published": "Sat, 10 Oct 2026 01:22:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5\" target=\"_blank\">高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+                "rss_source": {
+                  "name": "ｄメニューニュース",
+                  "url": "https://topics.smt.docomo.ne.jp"
+                },
+                "collection_role": "source_unconfirmed"
+              }
+            ]
+          }
+        },
+        "review_id": "5633781127c902e1230babe7",
+        "schema_version": 2,
+        "observed_at": "2026-10-31T21:39:41.297095+00:00",
+        "diagnostics": {
+          "target_event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+          "target_event_name": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌 - TBS NEWS DIG",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "1bd9c7a6-b3e1-4e54-beab-60115b5e0726",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "傷害容疑での逮捕段階",
+            "summary": "札幌で高校生に対する暴行・傷害容疑で、18歳アルバイトの女と16歳高校生が逮捕された件。",
+            "latest": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌",
+            "next_watch": "送検や起訴、容疑の補足事実の有無",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbmRLMW9sV3AtalBEa3kwdTR5XzZ1ZDFCenM5M2pOX0V1eEJmTTlRQlZTcEdQQ2h5cTVnUmF3c2tXSkpYSkRmNFY1aEEtWWkwSjNvblNKMFl4VTdQa0Rha2JhLUVENEhhVVFKYkVwWdIBdEFVX3lxTE5DdG9kVDRyY3dXeGdDdzBrT1dsRWNySnp0eHNDRERWeXFEYzZIYjBCdkNjNFFYYWJYZFJHYk1PTDNoRzg3Vk1sR0pWelR5WWtjV28wbU9ZRi1xOFZ0dnNGSzAwbm5WUUV0dlBENnVSSURPMDB1?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiaU1kZGlDbTh2eGJqODNYSEpXTzJ0eVI1aFA5UGctUDFZYVc2ZUczLU1XdmYwOEoxQ3poUFZobXhleGJQUFJBeHowVjRUdmJKSk9sWmRxVzhjem85RHR2UDZMYS1BZTA?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "高校生に河川敷で暴行",
+                    "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                    "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "18歳アルバイトの女と16歳高校生",
+                    "existing_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕 札幌",
+                    "incoming_quote": "高校生に河川敷で暴行 公園で煙草の火を押し当てる…18歳アルバイトの女と16歳高校生を傷害容疑で逮捕　札幌"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
+        "last_seen_at": "2026-10-31T21:39:41.297095+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-25T16:47:11.381143+00:00",
-    "last_seen_at": "2026-10-31T21:39:41.297095+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -418640,7 +418731,7 @@
     },
     "review_id": "8a99231de86fa7e1706b3a3f",
     "schema_version": 2,
-    "observed_at": "2026-10-29T16:11:56.036741+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -418660,7 +418751,9 @@
         "next_watch": "",
         "completed": false,
         "completion_quote": "",
-        "evidence_urls": [],
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5"
+        ],
         "identity_matches": [],
         "event_identity": {},
         "progress_evidence": [],
@@ -418669,8 +418762,8 @@
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -418741,11 +418834,80 @@
         "last_seen_at": "2026-10-28T16:41:30.974453+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "【道路予算カット発言】「政治家として問題がある」札幌市長が苦言…鈴木宗男氏も「人としての矜持が問われている」と一喝＿簗農水大臣に対して北海道内でも波紋 - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "政策・制度",
+            "tracking_value": "medium",
+            "current_stage": "政治家の発言をめぐる波紋が広がっている段階",
+            "summary": "記事タイトルと公開日時からは、簗農水大臣の「道路予算カット」発言に対し、札幌市長が苦言を呈し、鈴木宗男氏も強く批判するなど、北海道内で反発が広がっていることが分かります。発言の是非が政治面で問題視されている状況です。",
+            "latest": "2026年10月10日時点で、札幌市長が「政治家として問題がある」と苦言を示し、鈴木宗男氏も「人としての矜持が問われている」と一喝していることが最新の動きです。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は簗農水大臣本人や政府側の説明、発言の撤回や訂正の有無、道内自治体や関係者の追加反応が出るかに注目されます。",
+            "articles": [
+              {
+                "title": "【道路予算カット発言】「政治家として問題がある」札幌市長が苦言…鈴木宗男氏も「人としての矜持が問われている」と一喝＿簗農水大臣に対して北海道内でも波紋 - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5",
+                "published": "Sat, 10 Oct 2026 02:00:01 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5\" target=\"_blank\">【道路予算カット発言】「政治家として問題がある」札幌市長が苦言…鈴木宗男氏も「人としての矜持が問われている」と一喝＿簗農水大臣に対して北海道内でも波紋</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          }
+        },
+        "review_id": "8a99231de86fa7e1706b3a3f",
+        "schema_version": 2,
+        "observed_at": "2026-10-29T16:11:56.036741+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE42Z2VPaFRjRElzX0NDWjhfUE8wR1FfVWVNdXpwdGtFTWxkN3pvMnNnOURjRjJfVmZna1Rma3Z0VXRYQmJoWFE1MmxTNENkcDZEdlljclhkLXQxWHhBcTVnWmg2R1BGejdJZWZrYW0tVkhYc3NXZTYtVEkxVERlNEE?oc=5"
+          ],
+          "ai_report": {
+            "relation": "uncertain",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [],
+            "identity_matches": [],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-28T16:41:30.974453+00:00",
+        "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-28T16:41:30.974453+00:00",
-    "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -418779,7 +418941,7 @@
     },
     "review_id": "108ac8004a8a54f7ff6fe8a8",
     "schema_version": 2,
-    "observed_at": "2026-10-29T16:11:56.036741+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -418788,34 +418950,28 @@
         "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
       ],
       "ai_report": {
-        "relation": "new_event",
+        "relation": "uncertain",
         "event_id": "",
         "confidence": "low",
         "multi_event": false,
         "meaningful_change": false,
         "current_stage": "",
-        "summary": "札幌の空き家と固定資産税の負担をめぐる論点が示された記事で、既存の保存済み出来事とは直接の続報と確認できない。",
-        "latest": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う",
-        "next_watch": "札幌市が空き家対策や税制上の扱いについて具体的な方針や制度変更を示すか確認する。",
+        "summary": "",
+        "latest": "",
+        "next_watch": "",
         "completed": false,
         "completion_quote": "",
-        "evidence_urls": [
-          "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
-        ],
+        "evidence_urls": [],
         "identity_matches": [],
-        "event_identity": {
-          "value": "札幌の空き家放置を加速させる税金の壁",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5",
-          "quote": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う"
-        },
+        "event_identity": {},
         "progress_evidence": [],
         "schedules": []
       },
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -418891,11 +419047,85 @@
         "last_seen_at": "2026-10-28T16:41:30.974453+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う - 選挙ドットコム",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "政策・制度",
+            "tracking_value": "medium",
+            "current_stage": "空き家対策と固定資産税の制度について問題提起が行われている段階",
+            "summary": "記事タイトルからは、札幌の空き家放置を促す要因として、解体すると固定資産税が3〜4倍になる税制上の壁を市に問いかける内容だと分かります。具体的な制度変更や行政対応の有無は、タイトルと公開日時だけでは確認できません。",
+            "latest": "2026年10月10日に、札幌の空き家問題と固定資産税の負担増について問題提起する記事が公開されました。",
+            "next_watch": "現時点で明確な次の動きは確認できません。市側の見解、税制見直しの議論、空き家対策の具体策が出るかに注目されます。",
+            "articles": [
+              {
+                "title": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う - 選挙ドットコム",
+                "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5",
+                "published": "Sat, 10 Oct 2026 08:28:14 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5\" target=\"_blank\">解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う</a>  <font color=\"#6f6f6f\">選挙ドットコム</font>",
+                "rss_source": {
+                  "name": "選挙ドットコム",
+                  "url": "https://go2senkyo.com"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "108ac8004a8a54f7ff6fe8a8",
+        "schema_version": 2,
+        "observed_at": "2026-10-29T16:11:56.036741+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
+          ],
+          "ai_report": {
+            "relation": "new_event",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "札幌の空き家と固定資産税の負担をめぐる論点が示された記事で、既存の保存済み出来事とは直接の続報と確認できない。",
+            "latest": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う",
+            "next_watch": "札幌市が空き家対策や税制上の扱いについて具体的な方針や制度変更を示すか確認する。",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5"
+            ],
+            "identity_matches": [],
+            "event_identity": {
+              "value": "札幌の空き家放置を加速させる税金の壁",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhWGpRU3JXLVYyczA2LVd3Tng2bnRWWW9qRmFNVlFSN090b3Y5RVZyN2c3Q3RJeTc1V2xCMXlMbWZjbGxCMDNaeTJVVzNmX2JwekUtZ0ZzNms3RGNEODNF?oc=5",
+              "quote": "解体すると固定資産税が3〜4倍に！？札幌の空き家放置を加速させる税金の壁を市に問う"
+            },
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-10-28T16:41:30.974453+00:00",
+        "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-10-28T16:41:30.974453+00:00",
-    "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -430939,7 +431169,7 @@
     },
     "review_id": "4cf8f1129a5feea8ff354d8f",
     "schema_version": 2,
-    "observed_at": "2026-10-29T16:11:56.036741+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -430969,11 +431199,81 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "札幌のホテル「2段ベッドで稼ぐ」 長期滞在向け、高単価でも人気 - 日本経済新聞",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "企業・組織",
+            "tracking_value": "medium",
+            "current_stage": "ホテルの宿泊プラン・運営の工夫が紹介されている段階",
+            "summary": "札幌のホテルが、2段ベッドを活用して長期滞在向けの需要を取り込み、高単価でも人気を集めていることが記事タイトルから読み取れます。",
+            "latest": "ホテルが2段ベッドを使った長期滞在向けの取り組みで集客している点が報じられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。",
+            "articles": [
+              {
+                "title": "札幌のホテル「2段ベッドで稼ぐ」 長期滞在向け、高単価でも人気 - 日本経済新聞",
+                "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfUE5pd0FiS0hiaXJzY1A1M1gwSHVRQ2NETnJfUGRnMlVqRThUNk14RXhMeTFYQUJVTjlBU3dQZi1OQlNPNmZzOVlQZjdRdFJPVmxQZHRHSlUtVF90UDZpVlNPVlg4eVMyeDdpbQ?oc=5",
+                "published": "Sat, 10 Oct 2026 20:00:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFBfUE5pd0FiS0hiaXJzY1A1M1gwSHVRQ2NETnJfUGRnMlVqRThUNk14RXhMeTFYQUJVTjlBU3dQZi1OQlNPNmZzOVlQZjdRdFJPVmxQZHRHSlUtVF90UDZpVlNPVlg4eVMyeDdpbQ?oc=5\" target=\"_blank\">札幌のホテル「2段ベッドで稼ぐ」 長期滞在向け、高単価でも人気</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+                "rss_source": {
+                  "name": "日本経済新聞",
+                  "url": "https://www.nikkei.com"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "4cf8f1129a5feea8ff354d8f",
+        "schema_version": 2,
+        "observed_at": "2026-10-29T16:11:56.036741+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfUE5pd0FiS0hiaXJzY1A1M1gwSHVRQ2NETnJfUGRnMlVqRThUNk14RXhMeTFYQUJVTjlBU3dQZi1OQlNPNmZzOVlQZjdRdFJPVmxQZHRHSlUtVF90UDZpVlNPVlg4eVMyeDdpbQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "uncertain",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [],
+            "identity_matches": [],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-10-29T16:11:56.036741+00:00",
+        "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-29T16:11:56.036741+00:00",
-    "last_seen_at": "2026-10-29T16:11:56.036741+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -459844,7 +460144,7 @@
     },
     "review_id": "96240fc0f332700cf2a50dcf",
     "schema_version": 2,
-    "observed_at": "2026-11-17T14:30:14.450854+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
       "target_event_name": "札幌市の副首都整備担当部設置",
@@ -460091,11 +460391,50 @@
         "last_seen_at": "2026-11-16T22:10:23.545516+00:00",
         "observation_count": 6,
         "legacy_history_present": false
+      },
+      {
+        "stage": "schedule_search",
+        "reason": "search_identity_uncertain",
+        "payload": {
+          "event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "articles": [
+            {
+              "title": "知事定例記者会見（令和8年10月16日） - 北海道のホームページ",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBjanEzRWdKLU42YWxQdWFMS05NVW5uS0NJeVFIbDlNaEhEdTVzSEdsWHhORWhTZi0ySUMxcGtGbkpmYXRHVG9iekVDWWJjc1VwZmV6bGZIUmliM1lHUmlXNUtKeVZmXzkyWmFoN3R3MTJySmZjQUtEWVNibHNTSU0?oc=5",
+              "published": "Mon, 19 Oct 2026 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBjanEzRWdKLU42YWxQdWFMS05NVW5uS0NJeVFIbDlNaEhEdTVzSEdsWHhORWhTZi0ySUMxcGtGbkpmYXRHVG9iekVDWWJjc1VwZmV6bGZIUmliM1lHUmlXNUtKeVZmXzkyWmFoN3R3MTJySmZjQUtEWVNibHNTSU0?oc=5\" target=\"_blank\">知事定例記者会見（令和8年10月16日）</a>  <font color=\"#6f6f6f\">北海道のホームページ</font>",
+              "rss_source": {
+                "name": "北海道のホームページ",
+                "url": "https://www.pref.hokkaido.lg.jp"
+              },
+              "collection_role": "primary"
+            }
+          ]
+        },
+        "review_id": "96240fc0f332700cf2a50dcf",
+        "schema_version": 2,
+        "observed_at": "2026-11-17T14:30:14.450854+00:00",
+        "diagnostics": {
+          "target_event_id": "de81a3e4-e37c-4423-ac06-9a5d26e7be7e",
+          "target_event_name": "札幌市の副首都整備担当部設置",
+          "ai_report": {
+            "confidence": "low",
+            "matches": [],
+            "evidence_urls": [],
+            "identity_matches": []
+          },
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-11-14T22:29:35.587376+00:00",
+        "last_seen_at": "2026-11-17T14:30:14.450854+00:00",
+        "observation_count": 7,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-11-14T22:29:35.587376+00:00",
-    "last_seen_at": "2026-11-17T14:30:14.450854+00:00",
-    "observation_count": 7,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 8,
     "legacy_history_present": false
   },
   {
@@ -469768,7 +470107,7 @@
     },
     "review_id": "ea764eaa0dadb4dc8ccb31db",
     "schema_version": 2,
-    "observed_at": "2026-11-16T22:10:23.545516+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "",
       "target_event_name": null,
@@ -469777,25 +470116,31 @@
         "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
       ],
       "ai_report": {
-        "relation": "uncertain",
+        "relation": "new_event",
         "event_id": "",
         "confidence": "low",
         "multi_event": false,
         "meaningful_change": false,
         "current_stage": "",
-        "summary": "",
-        "latest": "",
-        "next_watch": "",
+        "summary": "JR北海道の「利用21%減少で札幌旭川間特急カムイライラック大幅減便か！」に関する予測記事で、2027年以降のダイヤ改正予定が示されています。",
+        "latest": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定)",
+        "next_watch": "2027年以降のダイヤ改正の正式発表",
         "completed": false,
         "completion_quote": "",
-        "evidence_urls": [],
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+        ],
         "identity_matches": [],
-        "event_identity": {},
+        "event_identity": {
+          "value": "札幌旭川間特急カムイライラック",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+          "quote": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！"
+        },
         "progress_evidence": [],
         "schedules": [
           {
-            "label": "JR北海道ダイヤ改正",
-            "quote": "JR北海道ダイヤ改正予測(2027年以降予定)",
+            "label": "2027年以降予定",
+            "quote": "2027年以降予定",
             "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
             "status": "scheduled"
           }
@@ -469804,8 +470149,8 @@
       "raw_ai_response": null,
       "http_status": null,
       "api_error_code": null,
-      "triage_status": "needs_evidence",
-      "decision_attempts": 2
+      "triage_status": "manual_review",
+      "decision_attempts": 3
     },
     "observation_history": [
       {
@@ -469888,11 +470233,86 @@
         "last_seen_at": "2026-11-16T02:47:13.518725+00:00",
         "observation_count": 1,
         "legacy_history_present": false
+      },
+      {
+        "stage": "event_attachment",
+        "reason": "uncertain_or_invalid_evidence",
+        "payload": {
+          "group": {
+            "event_name": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "地域・インフラ",
+            "tracking_value": "medium",
+            "current_stage": "2027年以降のダイヤ改正を見据えた減便予測段階",
+            "summary": "記事タイトルと公開日時からは、札幌-旭川間の特急カムイ・ライラックについて、利用が21%減少したことを背景に、2027年以降のJR北海道ダイヤ改正で大幅減便となる可能性が示されていることが分かります。ただし、実際の減便決定や改正内容は確認できません。",
+            "latest": "2026年10月9日時点の記事で、2027年以降予定のダイヤ改正に関する減便予測が報じられています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後はJR北海道の正式なダイヤ改正発表や、実際の減便の有無が注目点です。",
+            "articles": [
+              {
+                "title": "利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定) - 鉄道時刻表ニュース",
+                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+                "published": "Fri, 09 Oct 2026 02:34:35 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5\" target=\"_blank\">利用21%減少で札幌旭川間特急カムイライラック大幅減便か！ JR北海道ダイヤ改正予測(2027年以降予定)</a>  <font color=\"#6f6f6f\">鉄道時刻表ニュース</font>",
+                "rss_source": {
+                  "name": "鉄道時刻表ニュース",
+                  "url": "https://www.train-times.net"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "ea764eaa0dadb4dc8ccb31db",
+        "schema_version": 2,
+        "observed_at": "2026-11-16T22:10:23.545516+00:00",
+        "diagnostics": {
+          "target_event_id": "",
+          "target_event_name": null,
+          "target_source_urls": [],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5"
+          ],
+          "ai_report": {
+            "relation": "uncertain",
+            "event_id": "",
+            "confidence": "low",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [],
+            "identity_matches": [],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": [
+              {
+                "label": "JR北海道ダイヤ改正",
+                "quote": "JR北海道ダイヤ改正予測(2027年以降予定)",
+                "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNREJVY2Vscmk1U2xIekRIZDZYdXBLUTN2amtJc0s5V3Q5RnpubkpjUXNHR2cyd3FFa21WZ1ZSTzhBM1FuRHRfaUJ6aFA0NF9ZV3U4M0J6Mm1yMUNPRWRiTjI4b25MUQ?oc=5",
+                "status": "scheduled"
+              }
+            ]
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 2
+        },
+        "first_seen_at": "2026-11-16T02:47:13.518725+00:00",
+        "last_seen_at": "2026-11-16T22:10:23.545516+00:00",
+        "observation_count": 2,
+        "legacy_history_present": false
       }
     ],
     "first_seen_at": "2026-11-16T02:47:13.518725+00:00",
-    "last_seen_at": "2026-11-16T22:10:23.545516+00:00",
-    "observation_count": 2,
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 3,
     "legacy_history_present": false
   },
   {
@@ -482823,7 +483243,7 @@
     },
     "review_id": "9b570173f4aa128e2b944275",
     "schema_version": 2,
-    "observed_at": "2026-11-17T14:30:14.450854+00:00",
+    "observed_at": "2026-11-17T22:55:41.576252+00:00",
     "diagnostics": {
       "target_event_id": "1dc2a324-07a7-4433-87ec-f2bd27ff0b04",
       "target_event_name": "【札幌】景盛学園が認定こども園新築へ／28日に一般競争入札 - e-kensin.net",
@@ -482836,8 +483256,2196 @@
       "raw_ai_response": null,
       "http_status": null
     },
+    "observation_history": [
+      {
+        "stage": "backfill",
+        "reason": "search_identity_uncertain",
+        "payload": {
+          "event_id": "1dc2a324-07a7-4433-87ec-f2bd27ff0b04",
+          "articles": [
+            {
+              "title": "【札幌】景盛学園の宮ノ丘幼稚園改築／9月に一般競争を公告へ - e-kensin.net",
+              "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA5WnRfTFFnTGF0a1BfNFZhcDl5V0RSNnUxWEhvUHE3MTVEMExYRHlKbXdsVk9VT1Q3MXBCRjhwVldVZ05ZRFVWdThjUXI?oc=5",
+              "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTFA5WnRfTFFnTGF0a1BfNFZhcDl5V0RSNnUxWEhvUHE3MTVEMExYRHlKbXdsVk9VT1Q3MXBCRjhwVldVZ05ZRFVWdThjUXI?oc=5\" target=\"_blank\">【札幌】景盛学園の宮ノ丘幼稚園改築／9月に一般競争を公告へ</a>  <font color=\"#6f6f6f\">e-kensin.net</font>",
+              "rss_source": {
+                "name": "e-kensin.net",
+                "url": "https://e-kensin.net"
+              },
+              "collection_role": "primary"
+            }
+          ]
+        },
+        "review_id": "9b570173f4aa128e2b944275",
+        "schema_version": 2,
+        "observed_at": "2026-11-17T14:30:14.450854+00:00",
+        "diagnostics": {
+          "target_event_id": "1dc2a324-07a7-4433-87ec-f2bd27ff0b04",
+          "target_event_name": "【札幌】景盛学園が認定こども園新築へ／28日に一般競争入札 - e-kensin.net",
+          "ai_report": {
+            "confidence": "low",
+            "matches": [],
+            "evidence_urls": [],
+            "identity_matches": []
+          },
+          "raw_ai_response": null,
+          "http_status": null
+        },
+        "first_seen_at": "2026-11-17T14:30:14.450854+00:00",
+        "last_seen_at": "2026-11-17T14:30:14.450854+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-11-17T14:30:14.450854+00:00",
-    "last_seen_at": "2026-11-17T14:30:14.450854+00:00",
+    "last_seen_at": "2026-11-17T22:55:41.576252+00:00",
+    "observation_count": 2,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5",
+        "published": "Tue, 17 Nov 2026 09:41:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\" target=\"_blank\">不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5",
+        "published": "Tue, 17 Nov 2026 10:59:06 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5\" target=\"_blank\">札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"札幌ステラプレイス・アピアのクリスマス抽選会中止と不正アクセス\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌ステラプレイスとアピア\", \"existing_quote\": \"札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止\", \"incoming_quote\": \"札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス\"}, {\"kind\": \"detail\", \"value\": \"クリスマス抽選会中止\", \"existing_quote\": \"札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止\", \"incoming_quote\": \"札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス\"}]}]}"
+    },
+    "review_id": "b523b9fb00ce0b0cfcd1e477",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547498+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547498+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547498+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:17 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5\" target=\"_blank\">保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"same_event\", \"event_name\": \"保育園児らの送迎車を巡る威力業務妨害・恐喝関連事件（札幌市東区）\", \"confidence\": \"high\", \"identity_matches\": [{\"incoming_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5\", \"existing_url\": \"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\", \"anchors\": [{\"kind\": \"case\", \"value\": \"札幌・東区\", \"existing_quote\": \"園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区\", \"incoming_quote\": \"保育園児らを3時間近くも\\\"足止め\\\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB）\"}, {\"kind\": \"entity\", \"value\": \"威力業務妨害の疑い\", \"existing_quote\": \"園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区\", \"incoming_quote\": \"保育園児らを3時間近くも\\\"足止め\\\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB）\"}]}]}"
+    },
+    "review_id": "b29d695484eb0db0fe78275f",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547722+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547722+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547722+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5\" target=\"_blank\">【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌（１１月１８日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5\" target=\"_blank\">札幌（１１月１８日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "85c6c723543d158ac92e3b46",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547869+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547869+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547869+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5\" target=\"_blank\">【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5\" target=\"_blank\">＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "324509cd51a848289d358228",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547899+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547899+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547899+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5\" target=\"_blank\">【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "採用や育成の悩み共有 札幌で「出張人事図書館」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:01:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5\" target=\"_blank\">採用や育成の悩み共有 札幌で「出張人事図書館」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4fcbc49682c614a0b110585a",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547921+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547921+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547921+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5",
+        "published": "Tue, 17 Nov 2026 07:41:58 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5",
+        "published": "Tue, 17 Nov 2026 07:26:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9c5324740100577e0ba6b353",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547946+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547946+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547946+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NNVVtRWstNjZXcEVHeC1nOTNRRzlnMHZ4V0Nfd3dMRHFtWjRtUXBpZUM0SFo0d1F0SFN5czdpMWM2bVB5UFF5c01zYjBrMjNZTDdUbnJORzAyQQ?oc=5\" target=\"_blank\">【独自】勤務先の学習塾で生徒盗撮疑い 元講師を再逮捕へ 札幌中央署</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "55435484aef0beb95cc5ca86",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547965+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547965+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547965+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "74e89adbc9bb4912a0a36dff",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.547988+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.547988+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.547988+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a4c9d88a6bf4584a5e69a4fb",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548010+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548010+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548010+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5",
+        "published": "Mon, 16 Nov 2026 09:52:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5\" target=\"_blank\">札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5",
+        "published": "Mon, 16 Nov 2026 09:07:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5\" target=\"_blank\">札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c54d7c0bca65aff9636f1ef2",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548033+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548033+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548033+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "59ac6dff717e1f12091e39af",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548054+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548054+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548054+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:17 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5\" target=\"_blank\">保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "80a5bd0269f86238547b092c",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548076+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548076+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548076+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5",
+        "published": "Tue, 17 Nov 2026 14:25:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5\" target=\"_blank\">京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d12500e859313b6ec907e6ee",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548099+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548099+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548099+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5",
+        "published": "Tue, 17 Nov 2026 20:44:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5\" target=\"_blank\">【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5",
+        "published": "Tue, 17 Nov 2026 20:41:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5\" target=\"_blank\">【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "14cf5bc45dc3c1ea4423bc0d",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548119+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548119+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548119+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5",
+        "published": "Tue, 17 Nov 2026 14:25:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5\" target=\"_blank\">京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "62c6621f44e5f62638935594",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548141+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548141+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548141+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」初始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15MFRDUjlnNDNpWEF0ckE1MmR2U1V1bHJUQ2xnbnJrWVpyV2JScUxKLXFla1AzS2M0RlltMUROT0tVYTZQM1VkNnNhLTVkN0pHekRMVE5sWG5FSlpzQ0hXS1lncWdtY1ROSEttSkpZaUpsWmttMm1CeHJyU1BQUnc?oc=5",
+        "published": "Tue, 17 Nov 2026 08:30:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE15MFRDUjlnNDNpWEF0ckE1MmR2U1V1bHJUQ2xnbnJrWVpyV2JScUxKLXFla1AzS2M0RlltMUROT0tVYTZQM1VkNnNhLTVkN0pHekRMVE5sWG5FSlpzQ0hXS1lncWdtY1ROSEttSkpZaUpsWmttMm1CeHJyU1BQUnc?oc=5\" target=\"_blank\">市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」初始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "086030a36ef9634e573d9a60",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548161+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548161+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548161+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5",
+        "published": "Tue, 17 Nov 2026 07:26:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1afe868237cce2ca99ccad38",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548182+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548182+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548182+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」初始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15MFRDUjlnNDNpWEF0ckE1MmR2U1V1bHJUQ2xnbnJrWVpyV2JScUxKLXFla1AzS2M0RlltMUROT0tVYTZQM1VkNnNhLTVkN0pHekRMVE5sWG5FSlpzQ0hXS1lncWdtY1ROSEttSkpZaUpsWmttMm1CeHJyU1BQUnc?oc=5",
+        "published": "Tue, 17 Nov 2026 08:30:33 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE15MFRDUjlnNDNpWEF0ckE1MmR2U1V1bHJUQ2xnbnJrWVpyV2JScUxKLXFla1AzS2M0RlltMUROT0tVYTZQM1VkNnNhLTVkN0pHekRMVE5sWG5FSlpzQ0hXS1lncWdtY1ROSEttSkpZaUpsWmttMm1CeHJyU1BQUnc?oc=5\" target=\"_blank\">市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」初始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5",
+        "published": "Mon, 16 Nov 2026 09:07:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5\" target=\"_blank\">札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f507dbba87ab337c7f3f7163",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548203+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548203+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548203+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5",
+        "published": "Mon, 16 Nov 2026 22:00:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5\" target=\"_blank\">『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fb5b3cba8b4696a8bbe4786f",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548226+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548226+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548226+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5",
+        "published": "Mon, 16 Nov 2026 22:00:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5\" target=\"_blank\">『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9f06e79198f6c3940a94a6ff",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548246+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548246+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548246+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5",
+        "published": "Mon, 16 Nov 2026 09:52:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5\" target=\"_blank\">札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2663fdf46d24c9d69aa36556",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548267+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548267+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548267+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5",
+        "published": "Mon, 16 Nov 2026 22:00:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA0cFVuLXNQRXA3XzJPNEc2cUVPc19yWDRmMnpTeERJLTZpdUp5azdrQlVOeGRrZ0hkVE5ONGE1c09SX243X0g4TjJ1djZjdmZtQjlTMWdsVm5RaWRCeExPZHg0d1hPUm9wNjExZWtfeFcwMWVvSzMwemdrc3RJQnc?oc=5\" target=\"_blank\">『オモウマい店』札幌の食堂、名物のギョウザ定食は小鉢大量 客がメイン忘れて写真撮影（TV LIFE web）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』 - locipo.jp",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5",
+        "published": "Tue, 17 Nov 2026 16:38:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5\" target=\"_blank\">メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』</a>  <font color=\"#6f6f6f\">locipo.jp</font>",
+        "rss_source": {
+          "name": "locipo.jp",
+          "url": "https://locipo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d1b5f148019ebb25b2fdc578",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548290+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548290+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548290+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5",
+        "published": "Mon, 16 Nov 2026 09:07:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOVXA0dkNEMmxfSGpNc2Y4Y2Zldi1QemZBU1kxd3VxTkRqUjMtT25uSmJNQzRWSDlJWlpBMmlpdkM2RXdCWDNESjIwenhMbVN0aUpQVHR2bVJrcmhJOXNUZWthcHAxeWRKVE1iNWVlREpqQWRtUGtoLVdQSV91c3lJZmxTNzhjQUtoNW90WnRn?oc=5\" target=\"_blank\">札幌中心部で2台連なる“連節バス”がテスト走行、全長約18mで定員1.5倍「大量輸送」「運転手不足」に対応 札幌市は2030年の導入目指す</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c986d5edd7f746bd405c0d92",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548312+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548312+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548312+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5",
+        "published": "Tue, 17 Nov 2026 20:44:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5\" target=\"_blank\">【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "09afee7194d9a3e95620d812",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548337+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548337+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548337+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5",
+        "published": "Tue, 17 Nov 2026 20:44:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5\" target=\"_blank\">【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f105ae36b6472deefb1e0a25",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548357+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548357+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548357+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌（１１月１８日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5\" target=\"_blank\">札幌（１１月１８日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5\" target=\"_blank\">＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e1ba216c9a7545bcb428261d",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548378+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548378+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548378+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5",
+        "published": "Tue, 17 Nov 2026 20:41:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5\" target=\"_blank\">【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ce025ce3cf6c8ea999340202",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548398+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548398+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548398+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5",
+        "published": "Tue, 17 Nov 2026 20:41:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5\" target=\"_blank\">【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e15467dc0288bb7467b87d14",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548420+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548420+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548420+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5",
+        "published": "Tue, 17 Nov 2026 12:14:12 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5\" target=\"_blank\">陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3c39878cc2028778fa3011ec",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548441+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548441+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548441+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌（１１月１８日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5\" target=\"_blank\">札幌（１１月１８日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "採用や育成の悩み共有 札幌で「出張人事図書館」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:01:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5\" target=\"_blank\">採用や育成の悩み共有 札幌で「出張人事図書館」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0891af1a9b0eeecc6e671c40",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548460+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548460+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548460+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5",
+        "published": "Tue, 17 Nov 2026 09:41:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\" target=\"_blank\">不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 01:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5\" target=\"_blank\">【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0d876456ffbedff4b0d6a6ce",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548480+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548480+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548480+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5",
+        "published": "Tue, 17 Nov 2026 09:41:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\" target=\"_blank\">不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」本格始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpVDh4OHZLN3gwTkk4M3ZvZmVJYUpYV0twdG1JMmd0TTRVSGFuQWNVeE1TU3ZBcGVSU3NUY01seEFZdThCSlc0bEV5N0YyaC1KTThkNkdsbVlCZw?oc=5",
+        "published": "Tue, 17 Nov 2026 08:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpVDh4OHZLN3gwTkk4M3ZvZmVJYUpYV0twdG1JMmd0TTRVSGFuQWNVeE1TU3ZBcGVSU3NUY01seEFZdThCSlc0bEV5N0YyaC1KTThkNkdsbVlCZw?oc=5\" target=\"_blank\">市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」本格始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e08e824ae581256416a9151b",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548501+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548501+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548501+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5",
+        "published": "Tue, 17 Nov 2026 21:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5\" target=\"_blank\">軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1d65356f7283c21d064f5854",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548522+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548522+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548522+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5\" target=\"_blank\">＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "採用や育成の悩み共有 札幌で「出張人事図書館」 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:01:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrUjdoRzBRRzV3M2hobmZFQ1pMcmVNYUNDaW1MRUpVeERsTGtDSVdzcWlmU21oWHBxdldfZGhSNWFFSWRyS3JDX0ctaUE5VlcxcURId3YtRkRuUQ?oc=5\" target=\"_blank\">採用や育成の悩み共有 札幌で「出張人事図書館」</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "376f0bdd9d87c9ab456e198e",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548542+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548542+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548542+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言 - Yahoo!ファイナンス",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:41 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5\" target=\"_blank\">元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言</a>  <font color=\"#6f6f6f\">Yahoo!ファイナンス</font>",
+        "rss_source": {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "4b69c416cad07f3b8c6e5f6d",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548563+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548563+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548563+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言 - Yahoo!ファイナンス",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:41 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5\" target=\"_blank\">元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言</a>  <font color=\"#6f6f6f\">Yahoo!ファイナンス</font>",
+        "rss_source": {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3fac928ea060c6a4da52f763",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548586+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548586+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548586+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』 - locipo.jp",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5",
+        "published": "Tue, 17 Nov 2026 16:38:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5\" target=\"_blank\">メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』</a>  <font color=\"#6f6f6f\">locipo.jp</font>",
+        "rss_source": {
+          "name": "locipo.jp",
+          "url": "https://locipo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "a6dc3bc4bf0713aa7f79ef13",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548607+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548607+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548607+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌（１１月１８日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZVEc2alo2ZEFlMlNoeUNTWlJWVVhWQUNEczJrdm5WLUxnanV5bVpVX0lfU2FKYUl2Yi1hVWZ1MFB0c1d0VkJmQ240b0k0c2tNMTZFeHpoWjhpQQ?oc=5\" target=\"_blank\">札幌（１１月１８日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c9debb80e4e5da576588486e",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548626+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548626+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548626+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:17 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9BemFheVB5aFJLVHRhdEJ0TVJXTENpa2p6NXFwNGMxWGdyc0lHNFN1dGNERTEwSjNoWndKUEhWN2tfZ1BlTldhNmcwTGxESzE4dll3cmRBYmQyMnhCeEdHb1VLSnBxMzRNYkI1YnMzWjNBQVBoN0dDZU15Z0pCR1E?oc=5\" target=\"_blank\">保育園児らを3時間近くも\"足止め\"…コンビニオーナーの61歳男を威力業務妨害容疑で逮捕…送迎車の向きにクレームを付け、園長らを呼び出して文句言い続ける…別の恐喝事件でもすでに逮捕済み＜北海道札幌市＞（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』 - locipo.jp",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5",
+        "published": "Tue, 17 Nov 2026 16:38:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5\" target=\"_blank\">メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』</a>  <font color=\"#6f6f6f\">locipo.jp</font>",
+        "rss_source": {
+          "name": "locipo.jp",
+          "url": "https://locipo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0f446f96afa8d8765929c228",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548647+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548647+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548647+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5",
+        "published": "Tue, 17 Nov 2026 21:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5\" target=\"_blank\">軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5",
+        "published": "Tue, 17 Nov 2026 09:41:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\" target=\"_blank\">不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c50e66a6d905c2e97307e835",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548682+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548682+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548682+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5",
+        "published": "Tue, 17 Nov 2026 21:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeThIN0JrVGtxdVMzdC1LNnNYNU15Q1RlWTB5MkRsTHV1eDg5T0hsTkZ5akJfNkwydGE4TlZ4LW4tejlrRzFwT2NiRXIwRmZqS1ZKa2hweHJ0SmRzZzYwQTgtR2pfSGs1Mm5HNVpERHZrcGZzdWFsc2xnZUZneFNEeEJCU3R3VlVO?oc=5\" target=\"_blank\">軽乗用車がタクシー等に衝突 酒酔い運転の疑いで男を逮捕 飲酒運転で車3台絡む事故 札幌・すすきの</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 01:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5\" target=\"_blank\">【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "16a23747d7f100d0ae78b318",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548705+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548705+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548705+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5\" target=\"_blank\">＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5",
+        "published": "Tue, 17 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IT3pTaVEzRmptTTVaVjRLU19LNElKS05ZbTY1aWx3UFZ2RUxDd2xVQ1cxX3FqMUVnck1RNWhDNzdMejRiVVdMWEstLVlycndQMDJ4V1daa0JGUQ?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ed8356581b2f9f41d4471da7",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548724+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548724+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548724+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5",
+        "published": "Tue, 17 Nov 2026 20:40:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE03bDA2amNRLWlGNEF2X3FicnNnOHd2WGtEMkEzMHNmc2ZiR0NDZk5ZanU1RE1HWS1FWXZkakNSWHZPRjU1LWdDaTBOaWdEUGNrWDlQcWR6QmxnY3BSRzQyYm1mdzJDTDF3elJ5RTZxNm5JT0NnTkFnSnUyRzJpTXc?oc=5\" target=\"_blank\">『万引きした』自首した交番で大暴れ、\"公務執行妨害\"で逮捕された60歳の無職男、「柿の種」を万引きした\"窃盗容疑\"でも逮捕…所持金は9万円超で「捕まりたかった」〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5",
+        "published": "Tue, 17 Nov 2026 07:41:58 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "88e405ab653b4082cb38510c",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548745+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548745+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548745+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5",
+        "published": "Tue, 17 Nov 2026 07:41:58 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3pCUDFQTXNYYm5mUE5iQ2NWZDFjV0ZjM01pMUs0UEExRk1mTVBqbTd2VVRwSmlZUDZNMXdIdEJDdUhkR0FGMUJPNFhid00tTEVuOVRtYnh1ak9rdDZYd2FpQk8tbzhKeTIzczZ4QzRiVHNXOHlxZkJhb04tOGItc1Jn?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d7a04e2c759e83cbb9889200",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548766+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548766+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548766+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5",
+        "published": "Tue, 17 Nov 2026 07:26:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1aTkhCcVhEQ3MxZmlpT01Eb1hiRVFOOEo0RXZ6VmxXQzFuUlp6OXhfVldQODY2X2Fab2xFamxCQ2RSQXUwY3FDcmtkanpuaXB2SkVsYTFFZ29ZRnNreTRmNjNRbzFkTDl2azNJNHZmX2FseHdJREUwTU5qNDZuWlk?oc=5\" target=\"_blank\">【解説】駐輪場はどこ？ “冬期保管サービス” 札幌市内に７か所 受付開始…申し込み殺到の見通し</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "de8950f8f38b804636744cbd",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548787+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548787+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548787+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5",
+        "published": "Tue, 17 Nov 2026 14:25:02 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBKX3NJeFItc3FTODlyYmdOemVxYUhBMXluSEpVc0dvOERyME5ON2ctaFBqdFhQQ1E0WGc2VkowdmxlSWIzWmlJc3pHRkx5aEZZMklzXzlhX21Ed3EwZGVlYkhMcUN3OEZ1MWZWYXd3YXdZQzI5ajFxTVNOVllZNFU?oc=5\" target=\"_blank\">京王プラザ札幌で冬の「シマエナガランチ」 赤と白のホリデーカラーで（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "634d2dfc576a0451a66e49c0",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548809+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548809+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548809+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5",
+        "published": "Mon, 16 Nov 2026 09:52:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9KVmZXSWlzX2owU2xWcmotcUF4cm51RmZCTzhuZ2p1cTJBSVJXVVpPaDlyTnUxMFNzSlBuZ3VJbHA2ZjNRN29rU09vTTh3ZzUwQnhYa2JPSXJhclhkaWhnaGNNN2J1SFhvSFZuamdVbkpqVFNjMnhyVFlxSTF0VVE?oc=5\" target=\"_blank\">札幌市導入目指す「連節バス」 初の日中走行テストで渋滞による遅延も 2030年度本格運行へ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c2b009ca67fce1dfa66d7ce7",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548831+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548831+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548831+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5",
+        "published": "Tue, 17 Nov 2026 14:19:40 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFAydXNfWTdOek1uRFZxUUdKVkNJQllsYjhEQ3VhZTFGU1BWa2paR2FRcHlDTkw0NkJtQ0NUR19ocV9QTnoyWHRCc29UNVJoU0E0STJmVFp6MXhfTi15R3FhYWJQWjIxMzRDSDNMekxYaFRIR2hwUzl1TUVLOEI4VFk?oc=5\" target=\"_blank\">園児６人が乗る送迎車に“因縁”で足止め３時間 威力業務妨害の疑いで会社役員の男を再逮捕 札幌・東区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5",
+        "published": "Tue, 17 Nov 2026 12:14:12 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5\" target=\"_blank\">陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "efa9347c7ceb0205b0aaa240",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548851+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548851+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548851+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5",
+        "published": "Tue, 17 Nov 2026 12:14:12 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE45NDgzNEpWa0tLVGF0T1BHemhXdGtKdHBtSmhMMFNpSXhlSWFqVkpNbXpBeWVMNHVNdnpJSjJFeEdtNTdDcjBOMWlKRHlJMWhlc3VXTW1uSGdjTEYwUjBfTmNEb0JnNk1YTXowRzZWTnNJNVNlenJ3YzJ5TXMzMkE?oc=5\" target=\"_blank\">陸上ジュニア五輪 札幌・西岡中の金川陽人さんが全国3位 ジャベリックスロー 北口榛花選手の言葉を胸に</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1a92728e839115e034fbaef9",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548872+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548872+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548872+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 01:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5\" target=\"_blank\">【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」本格始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpVDh4OHZLN3gwTkk4M3ZvZmVJYUpYV0twdG1JMmd0TTRVSGFuQWNVeE1TU3ZBcGVSU3NUY01seEFZdThCSlc0bEV5N0YyaC1KTThkNkdsbVlCZw?oc=5",
+        "published": "Tue, 17 Nov 2026 08:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpVDh4OHZLN3gwTkk4M3ZvZmVJYUpYV0twdG1JMmd0TTRVSGFuQWNVeE1TU3ZBcGVSU3NUY01seEFZdThCSlc0bEV5N0YyaC1KTThkNkdsbVlCZw?oc=5\" target=\"_blank\">市民投稿で路面の滑りやすさを地図共有「つるつるウォッチ」本格始動 毎日300か所目指し転倒事故防止へ 昨冬は2064人が救急搬送 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3f1e9c56a6e342bf3ded0682",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548891+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548891+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548891+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5",
+        "published": "Tue, 17 Nov 2026 14:27:52 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNUNTdEc4NjN2c0ZyLWNtUkxVYnRucXhEbmdsVEtBbEhTNkNqNHdkdHdwSHlOVHRiOHFJLVNaX2JEUmd5RU1YekVyQkllQ1R1OVE5M19kSk5LNGZmNXlyd3k0Q0dObzBEUTVMSnI1SXJsMjNZV0luOTZXVTZhTzA?oc=5\" target=\"_blank\">よるの繁華街騒然 札幌・すすきので軽乗用車など３台が衝突 １台は歩道に乗り上げ</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言 - Yahoo!ファイナンス",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5",
+        "published": "Tue, 17 Nov 2026 21:15:41 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQMTBHRDBTaWZnY2M0UV85YnJ5Z08wdUZBMEFpQnlyaDM3VjhVYU9md2lhX3pIVUlxNW9kdnlRUWtGSmNUTXVvUl9TSGJUSDV1RVBiTk5rWTNicVdKMmUtV2x5QmlHbUdCMlhPRjhDYTQ3VUR0NG41MlJ1NmJqRGlnNmpVVFM4OXc?oc=5\" target=\"_blank\">元の暮らしにはもう戻れない…宇野千代が札幌の夫を捨てることを決めた\"年下の作家\"からのビビビなひと言</a>  <font color=\"#6f6f6f\">Yahoo!ファイナンス</font>",
+        "rss_source": {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "d2974ab9867dcea91789e9af",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548911+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548911+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548911+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 01:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5\" target=\"_blank\">【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5",
+        "published": "Tue, 17 Nov 2026 20:44:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMFA0UTNZbmJiVlZOMlZoNjV3eFRUZVFOR2V2ZUhsc0JtQmxnb2dTWmt5aGFlVEtIeC1vMjRnNS1BWk92OUNBN1dCZ015Ni05V0Qtc190Rmx1TFZWSlotR0h0a1BOekNSbEZ4Y0tfWWRhNWxLV0RNdnZaNGZmeTQ?oc=5\" target=\"_blank\">【札幌市中央区】11/18 最低2℃、ひんやりする場面も、夜は雨の予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0b861e408a27cc640e61ea1d",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548932+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548932+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548932+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 01:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE16TFdGdHZCUmp5MXpZMTJsZ0laQURxbi1YNmYtV21sd0Z4MmlzVDBvSEhFUG5sNmFOekNNV3R6NC1UVUxwME5Sa25ib3pkTWZJblBody1yQQ?oc=5\" target=\"_blank\">【タイヤ脱落】店でスタッドレスに交換直後、左前輪外れ車体は中央分離帯へ乗り上げる 警察が注意呼びかけ 札幌市中央区の国道</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "「絶対におやめください」コンサドーレ札幌が観戦客に呼びかけた迷惑行為に「応援してもらえなくなる」「気を付けて」サポーターからも呼びかけ - TRILL",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qbk5TektheG12TWYxZy1nNjBuSUx2bjBOWnhQNnZEeG1jZklFSHNZa0RBbS1WT29wb3ZTcnBEcGN6NXExcUZUQ3RnMmZLcDA?oc=5",
+        "published": "Tue, 17 Nov 2026 06:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE5qbk5TektheG12TWYxZy1nNjBuSUx2bjBOWnhQNnZEeG1jZklFSHNZa0RBbS1WT29wb3ZTcnBEcGN6NXExcUZUQ3RnMmZLcDA?oc=5\" target=\"_blank\">「絶対におやめください」コンサドーレ札幌が観戦客に呼びかけた迷惑行為に「応援してもらえなくなる」「気を付けて」サポーターからも呼びかけ</a>  <font color=\"#6f6f6f\">TRILL</font>",
+        "rss_source": {
+          "name": "TRILL",
+          "url": "https://trilltrill.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8341f646585eac6b7be4c4a3",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548952+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548952+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548952+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ - ガジェット通信",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5",
+        "published": "Tue, 17 Nov 2026 10:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5\" target=\"_blank\">600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ</a>  <font color=\"#6f6f6f\">ガジェット通信</font>",
+        "rss_source": {
+          "name": "ガジェット通信",
+          "url": "https://getnews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5",
+        "published": "Tue, 17 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jM2lENkZkUlBRanl4YWpBSGNmbjI1UnVfT1psa0pYSmIwNWJkX0pWYXNzNU1ScUNuR21naUdIdnYwVk1zRDczNThWTEVaTEJBSWpjZnVia3BHQQ?oc=5\" target=\"_blank\">＜札幌 歌で平和訴える 道内草分けの市民合唱団＞㊤ 護憲への思い 戦後に原点</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "331b316e0bdb5a6f33d665b6",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548971+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548971+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548971+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ - ガジェット通信",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5",
+        "published": "Tue, 17 Nov 2026 10:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5\" target=\"_blank\">600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ</a>  <font color=\"#6f6f6f\">ガジェット通信</font>",
+        "rss_source": {
+          "name": "ガジェット通信",
+          "url": "https://getnews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5",
+        "published": "Tue, 17 Nov 2026 20:41:11 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBBVWlQZlN6ZjhEZUtMUWxFXzNaUmcxSEZQd0hmNlRXanRCMXFYdXFvbTRPWmVwbWhfV0YyNjJZQ1l1WFJXQ1V4dlVYLTJ0RDcyWmNWeTN1ZjJKdjZJNy1OdUV0Q0pkYldNbU1sbWVnUTA1M3ljT1dnaG14UlFkdmM?oc=5\" target=\"_blank\">【札幌市北区】11/18 最高9℃、冷えるタイミングがありそう、昼間はやや風がある予想【朝版】</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0295fdb9485db6aae824204a",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.548991+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.548991+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.548991+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ - ガジェット通信",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5",
+        "published": "Tue, 17 Nov 2026 10:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE54NV9aRUJLd0kyNmlOaDJiLUFhaEhOcTBMOGdzU0JGYjMxb0FLbXRRcDRWOFU5NTZ5ZFNVbWFfSFFFb0dVSmhibFQwaw?oc=5\" target=\"_blank\">600円で食べられる！札幌の市場近くで「朝カレー」1滴で深みを変えるワケ</a>  <font color=\"#6f6f6f\">ガジェット通信</font>",
+        "rss_source": {
+          "name": "ガジェット通信",
+          "url": "https://getnews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』 - locipo.jp",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5",
+        "published": "Tue, 17 Nov 2026 16:38:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE42UDlJbVQ4ampTWmNfS1JXcjZpeVV3VlU5YUM0N3BQbVQyZUgwLVU0LXdrc3pGNFYtU1hObU9oVkF0TEhLQUx2T3B0TmNCVUhORno0UnBqRVBQR3M?oc=5\" target=\"_blank\">メインのギョウザはどこに！？小鉢9品付き990円定食！北海道札幌市「ギョウザとカレーのてっちゃん」『オモウマい店』</a>  <font color=\"#6f6f6f\">locipo.jp</font>",
+        "rss_source": {
+          "name": "locipo.jp",
+          "url": "https://locipo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "ac4e92e6c52a1bc72c11bd1c",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:20.549012+00:00",
+    "first_seen_at": "2026-11-17T22:55:20.549012+00:00",
+    "last_seen_at": "2026-11-17T22:55:20.549012+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+          "articles": [
+            {
+              "title": "不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止 - TBS NEWS DIG",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5",
+              "published": "Tue, 17 Nov 2026 09:41:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWSjNIbVpzcENKYUVtYzJVM0c4V25aUkZtMzhkSDZTNk1jbUFHU1JCUzkxbV9yY0M0MGVadWZDN09DM01TUUV1OTNMdWJQaTBxQ05fdlpRZWpOZw?oc=5\" target=\"_blank\">不正アクセス被害相次ぐ…アインHDの会員・購入情報流出か 札幌駅商業施設アピア、札幌ステラプレイスはクリスマス抽選会を中止</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+              "rss_source": {
+                "name": "TBS NEWS DIG",
+                "url": "https://newsdig.tbs.co.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス - 47NEWS",
+          "articles": [
+            {
+              "title": "札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス - 47NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5",
+              "published": "Tue, 17 Nov 2026 10:59:06 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1oMl9yUXpObC1HSkF3ZmtqaHRKMFlvRWdSbzVsWUJjNTJWTjVVdWduTWMyUkk2dWlIa29aVzZUNmpHTlQwR3I0V0Y4dw?oc=5\" target=\"_blank\">札幌ステラプレイスとアピア、クリスマス抽選中止 準備中に不正アクセス</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+              "rss_source": {
+                "name": "47NEWS",
+                "url": "https://www.47news.jp"
+              },
+              "collection_role": "primary"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "9bc2a654950aa0e986e0c823",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:24.090225+00:00",
+    "first_seen_at": "2026-11-17T22:55:24.090225+00:00",
+    "last_seen_at": "2026-11-17T22:55:24.090225+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "budget_deferred",
+    "payload": {
+      "remaining_from": [
+        0,
+        3
+      ],
+      "group_count": 29
+    },
+    "review_id": "4fddb177a322adeec7ba78f0",
+    "schema_version": 2,
+    "observed_at": "2026-11-17T22:55:25.508876+00:00",
+    "first_seen_at": "2026-11-17T22:55:25.508876+00:00",
+    "last_seen_at": "2026-11-17T22:55:25.508876+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
