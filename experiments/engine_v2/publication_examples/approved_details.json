@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "category": "事件・事故",
+      "event_id": "e1",
+      "event_name": "江別豊幌住宅強盗",
+      "tracking_value": "high",
+      "articles": [
+        {
+          "published": "2026-10-07T10:00:00+00:00",
+          "title": "江別豊幌住宅強盗 被害者山田 札幌の事件 容疑者を逮捕",
+          "url": "https://example.com/a"
+        },
+        {
+          "published": "2026-10-08T11:00:00+00:00",
+          "title": "江別豊幌住宅強盗 被害者山田 容疑者を起訴",
+          "url": "https://example.test/new"
+        }
+      ],
+      "article_count": 2,
+      "current_stage": "起訴",
+      "summary": "確認中",
+      "latest": "確認中",
+      "next_watch": "確認中",
+      "lifecycle": "review",
+      "progress_count": 1,
+      "progress_history": [
+        {
+          "at": "2026-10-08T11:00:00+00:00",
+          "evidence_urls": [
+            "https://example.test/new"
+          ],
+          "latest": "",
+          "progress_evidence": [
+            {
+              "quote": "江別豊幌住宅強盗 被害者山田 容疑者を起訴",
+              "url": "https://example.test/new"
+            }
+          ],
+          "source_at": "2026-10-08T11:00:00+00:00",
+          "stage": "起訴"
+        }
+      ],
+      "schedules": [],
+      "corrections": [],
+      "source_revisions": [],
+      "last_progress_at": "2026-10-08T11:00:00+00:00"
+    }
+  ],
+  "notices": [],
+  "scope": "isolated_simulation",
+  "deployable": false
+}

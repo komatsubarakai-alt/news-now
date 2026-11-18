@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>ニュースの現在地・15組の確認</title>
+<style>body{margin:auto;max-width:760px;padding:16px;font:16px/1.6 system-ui;background:#f4f6fa;color:#182534}h1{font-size:24px}h2{font-size:20px}h3{font-size:17px}article{background:white;padding:18px;margin:18px 0;border-radius:12px;border:1px solid #ccd5df}button,select,input[type=file]{font:inherit;min-height:46px;max-width:100%}button{padding:8px 14px;margin:4px;border-radius:8px;border:1px solid #526984;background:#fff}label{display:block;padding:9px 0}input[type=radio]{width:20px;height:20px;margin-right:10px}textarea{box-sizing:border-box;width:100%;min-height:90px;font:inherit}a,p,blockquote,code{overflow-wrap:anywhere}blockquote{margin:10px 0;padding:10px;border-left:4px solid #527fa6;background:#eef4fa}.warning{padding:12px;background:#fff0cb;border-radius:8px}.status{font-weight:bold;color:#855109}.toolbar{position:sticky;top:0;background:#f4f6fa;padding:6px 0;z-index:2}small{display:block}.choice{border-top:1px solid #ddd}#message{white-space:pre-wrap}details{margin:12px 0}</style>
+<h1>ニュースの現在地・手動確認</h1>
+<p class="warning">15組すべて正解未確認です。本文を取得・確認していません。AIで採用された2組も未確認です。ここでの判断は確認記録として保存し、正解データや本番に自動反映しません。</p>
+<p>通信なしで使える単一HTMLです。出典リンクを押した場合だけ外部サイトが開きます。見出しの一致だけでは同一事件と確定せず、発生日・場所・当事者・対象行為を確認してください。</p>
+<div class="toolbar"><p id="stats" aria-live="polite"></p><button id="export">判断記録をJSON保存</button><label>保存済みJSONを読み込む<input id="import" type="file" accept="application/json,.json"></label></div>
+<p id="message" role="status"></p><details><summary>確認する組を選ぶ（15組）</summary><nav id="index"></nav></details><main id="cards"></main>
+<script id="snapshot" type="application/json">__SNAPSHOT__</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('snapshot').textContent);
+const key='news-now-review:'+data.dataset_sha256;
+let drafts=Object.create(null);
+function node(tag,text){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;}
+function notice(text){document.getElementById('message').textContent=text;}
+function link(article){const a=node('a',article.title||article.url);try{const u=new URL(article.url);if(['http:','https:'].includes(u.protocol)){a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';}}catch{}return a;}
+function validate(value,allowIncomplete=false){
+ if(!value||value.schema!=='news-now-review-v1'||value.repository!==data.repository||value.dataset_sha256!==data.dataset_sha256||!Array.isArray(value.records)||value.records.length>15)throw Error('形式違い、または古い評価データです。');
+ const next=Object.create(null);
+ for(const r of value.records){
+  if(!r||typeof r.sample_id!=='string'||Object.hasOwn(next,r.sample_id))throw Error('重複または不明な標本です。');
+  const source=data.rows.find(x=>x.sample_id===r.sample_id);
+  if(!source||r.evidence_sha256!==source.evidence_sha256||r.event_id!==source.target_event_id)throw Error('根拠・事件IDが一致しません。');
+  if(!(['same_event','different_event','hold'].includes(r.choice)||(allowIncomplete&&r.choice===null))||typeof r.note!=='string'||r.note.length>5000||typeof r.reviewed_at!=='string'||!Number.isFinite(Date.parse(r.reviewed_at))||typeof r.incoming_body_checked!=='boolean'||typeof r.reference_body_checked!=='boolean'||r.record_scope!=='review_only')throw Error('判断記録が不正です。');
+  next[r.sample_id]={sample_id:r.sample_id,evidence_sha256:r.evidence_sha256,event_id:r.event_id,choice:r.choice,note:r.note,reviewed_at:r.reviewed_at,incoming_body_checked:r.incoming_body_checked,reference_body_checked:r.reference_body_checked,record_scope:'review_only'};
+ }
+ return next;
+}
+function envelope(includeIncomplete=false){return {schema:'news-now-review-v1',repository:data.repository,dataset_sha256:data.dataset_sha256,snapshot_revision:data.snapshot_revision,records:Object.values(drafts).filter(r=>includeIncomplete||r.choice!==null)};}
+function saved(){try{localStorage.setItem(key,JSON.stringify(envelope(true)));}catch{notice('この端末では下書きを保存できません。ページを閉じる前にJSON保存してください。');}stats();}
+function stats(){document.getElementById('stats').textContent=`判断記録あり ${Object.values(drafts).filter(r=>r.choice!==null).length} / ${data.rows.length}組（正解確定は0組）`;}
+function record(row){return drafts[row.sample_id]||{sample_id:row.sample_id,evidence_sha256:row.evidence_sha256,event_id:row.target_event_id,choice:null,note:'',reviewed_at:new Date().toISOString(),incoming_body_checked:false,reference_body_checked:false,record_scope:'review_only'};}
+function render(){
+ const cards=document.getElementById('cards');cards.replaceChildren();const index=document.getElementById('index');index.replaceChildren();stats();
+ for(const row of data.rows){
+  const card=node('article');card.id=row.sample_id;const jump=node('a',row.sample_id+' '+row.name);jump.href='#'+row.sample_id;const item=node('p');item.append(jump);index.append(item);card.append(node('h2',row.sample_id+' '+row.name),node('p','比較対象：'+row.event_name),node('code','事件ID '+row.target_event_id),node('p',row.current_status));
+  for(const [field,label,quote]of [['incoming_article','新しい記事',row.incoming_quote],['reference_article','比較する元記事',row.reference_quote]]){
+   const source=row[field],url=node('details');url.append(node('summary','出典URLを表示'),node('small',source.url));card.append(node('h3',label),link(source),url,node('p','公開日時: '+(source.published||'未確認')),node('blockquote',quote),node('small','引用元：保存済み見出し・RSS情報。記事本文は未確認。'));
+  }
+  card.append(node('h3','同一事件の可能性'),node('p',row.same_reason),node('h3','別事件の可能性・矛盾／確認すべき点'),node('p',row.different_reason));
+  const current=node('p',drafts[row.sample_id]?.choice?'現在の確認記録：'+({'same_event':'同一事件','different_event':'別事件','hold':'判断保留'}[drafts[row.sample_id].choice]):'現在の確認記録：未入力');card.append(current);
+  const choices=node('fieldset');choices.append(node('legend','判断（正解データには自動反映しません）'));
+  for(const [value,label]of [['same_event','同一事件'],['different_event','別事件'],['hold','判断保留']]){
+   const l=node('label'),input=node('input');input.type='radio';input.name=row.sample_id;input.value=value;input.checked=drafts[row.sample_id]?.choice===value;
+   input.addEventListener('change',()=>{drafts[row.sample_id]={...record(row),choice:value,reviewed_at:new Date().toISOString()};current.textContent='現在の確認記録：'+label;saved();});l.append(input,node('span',label));choices.append(l);
+  }
+  card.append(choices);
+  for(const [field,label]of [['incoming_body_checked','新記事の本文を自分で確認した'],['reference_body_checked','元記事の本文を自分で確認した']]){
+   const l=node('label'),input=node('input');input.type='checkbox';input.checked=drafts[row.sample_id]?.[field]||false;
+   input.addEventListener('change',()=>{drafts[row.sample_id]={...record(row),[field]:input.checked,reviewed_at:new Date().toISOString()};saved();});l.append(input,node('span',label));card.append(l);
+  }
+  const l=node('label','判断理由・本文で確認した日付や場所・追加根拠（URL等）'),text=node('textarea');text.maxLength=5000;text.value=drafts[row.sample_id]?.note||'';text.addEventListener('input',()=>{drafts[row.sample_id]={...record(row),note:text.value,reviewed_at:new Date().toISOString()};saved();});l.append(text);card.append(l);cards.append(card);
+ }
+}
+try{const stored=localStorage.getItem(key);if(stored)drafts=validate(JSON.parse(stored),true);}catch{notice('端末の下書きは使えません。必要ならJSONを読み込んでください。');}
+document.getElementById('export').addEventListener('click',()=>{
+ const output=envelope();if(!output.records.length){notice('判断を選んでから保存してください。');return;}
+ const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));const a=node('a');a.href=url;a.download='news-now-review-records.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('確認記録をJSON保存しました。正解データ・本番は変更していません。');
+});
+document.getElementById('import').addEventListener('change',async e=>{
+ try{const file=e.target.files[0];if(!file)return;if(file.size>1000000)throw Error('ファイルが大きすぎます。');const imported=validate(JSON.parse(await file.text()));drafts=Object.assign(Object.create(null),drafts,imported);saved();render();notice('確認記録を読み込みました。正解データには反映していません。');}catch(error){notice('読み込みできません：'+error.message);}
+});
+render();
+</script></html>
