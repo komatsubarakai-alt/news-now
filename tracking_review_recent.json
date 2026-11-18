@@ -1,4 +1,336 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "a5e279d36edb84c579b73f9f",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE05YUFnWkZZYURBWEtOSG42X0NiN1NjbVBDdFB5SWdpWXRobVc4YTlCSEpTbXJqZlliYjY2Xy0yaFc5Vm1HZHRmdWFaTkVyMVQ2aXVMQkpzQ2VxZHpLak9TUFN2aXVLaU8xZWM0UUZSbnFnLWpFLTBNdXdXa2pzQkU?oc=5",
+      "observed_at": "2026-11-18T22:00:36.649300+00:00",
+      "diagnostics": {
+        "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+        "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE05YUFnWkZZYURBWEtOSG42X0NiN1NjbVBDdFB5SWdpWXRobVc4YTlCSEpTbXJqZlliYjY2Xy0yaFc5Vm1HZHRmdWFaTkVyMVQ2aXVMQkpzQ2VxZHpLak9TUFN2aXVLaU8xZWM0UUZSbnFnLWpFLTBNdXdXa2pzQkU?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "地方公務員の男（34）を逮捕した段階",
+          "summary": "札幌市で、下着を撮影しようとして女性の胸元にスマホを近づけたとして地方公務員の男（34）が逮捕された。今回記事でも同種の行為と逮捕が確認できるが、直接の続報として新たな進展は確認できない。",
+          "latest": "動画を\"撮影状態\"でスマホ向け撮影",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE05YUFnWkZZYURBWEtOSG42X0NiN1NjbVBDdFB5SWdpWXRobVc4YTlCSEpTbXJqZlliYjY2Xy0yaFc5Vm1HZHRmdWFaTkVyMVQ2aXVMQkpzQ2VxZHpLak9TUFN2aXVLaU8xZWM0UUZSbnFnLWpFLTBNdXdXa2pzQkU?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE05YUFnWkZZYURBWEtOSG42X0NiN1NjbVBDdFB5SWdpWXRobVc4YTlCSEpTbXJqZlliYjY2Xy0yaFc5Vm1HZHRmdWFaTkVyMVQ2aXVMQkpzQ2VxZHpLak9TUFN2aXVLaU8xZWM0UUZSbnFnLWpFLTBNdXdXa2pzQkU?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "女性の胸元を…",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市",
+                  "incoming_quote": "【盗撮未遂】女性の胸元を…動画を\"撮影状態\"でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉（北海道ニュースUHB）"
+                },
+                {
+                  "kind": "entity",
+                  "value": "地方公務員の男（34）",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市",
+                  "incoming_quote": "【盗撮未遂】女性の胸元を…動画を\"撮影状態\"でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉（北海道ニュースUHB）"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【盗撮未遂】女性の胸元を…動画を\"撮影状態\"でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉（北海道ニュースUHB） - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE05YUFnWkZZYURBWEtOSG42X0NiN1NjbVBDdFB5SWdpWXRobVc4YTlCSEpTbXJqZlliYjY2Xy0yaFc5Vm1HZHRmdWFaTkVyMVQ2aXVMQkpzQ2VxZHpLak9TUFN2aXVLaU8xZWM0UUZSbnFnLWpFLTBNdXdXa2pzQkU?oc=5"
+      ]
+    },
+    {
+      "review_id": "a3393ca313f3f38982c608e8",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMibkFVX3lxTE5UVk43V3hUck9uZV85Uk9hME1IM19YWVFWaHdqZlg2WWpWZXlEMnc3V051ZXprbjVQeE9PUW9TV285MWg2T3BfT3VObTc2V0FSUEZnUjAySUo5d3BIMHg2aEJGVWtkbjBlMTFVSVN3?oc=5",
+      "observed_at": "2026-11-18T22:00:36.649300+00:00",
+      "diagnostics": {
+        "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+        "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UVk43V3hUck9uZV85Uk9hME1IM19YWVFWaHdqZlg2WWpWZXlEMnc3V051ZXprbjVQeE9PUW9TV285MWg2T3BfT3VObTc2V0FSUEZnUjAySUo5d3BIMHg2aEJGVWtkbjBlMTFVSVN3?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "地方公務員の男（34）を逮捕した段階",
+          "summary": "札幌市で、下着を撮影しようとして女性の胸元にスマホを近づけたとして地方公務員の男（34）が逮捕された。",
+          "latest": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市",
+          "next_watch": "捜査の進展や起訴の有無",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UVk43V3hUck9uZV85Uk9hME1IM19YWVFWaHdqZlg2WWpWZXlEMnc3V051ZXprbjVQeE9PUW9TV285MWg2T3BfT3VObTc2V0FSUEZnUjAySUo5d3BIMHg2aEJGVWtkbjBlMTFVSVN3?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UVk43V3hUck9uZV85Uk9hME1IM19YWVFWaHdqZlg2WWpWZXlEMnc3V051ZXprbjVQeE9PUW9TV285MWg2T3BfT3VObTc2V0FSUEZnUjAySUo5d3BIMHg2aEJGVWtkbjBlMTFVSVN3?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+                  "incoming_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "地方公務員の男（34）",
+                  "existing_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+                  "incoming_quote": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - au Webポータル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UVk43V3hUck9uZV85Uk9hME1IM19YWVFWaHdqZlg2WWpWZXlEMnc3V051ZXprbjVQeE9PUW9TV285MWg2T3BfT3VObTc2V0FSUEZnUjAySUo5d3BIMHg2aEJGVWtkbjBlMTFVSVN3?oc=5"
+      ]
+    },
+    {
+      "review_id": "45d12be65585e1de1bee5f85",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5",
+      "observed_at": "2026-11-18T22:00:36.649300+00:00",
+      "diagnostics": {
+        "target_event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+        "target_event_name": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ - 47NEWS",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+          "https://news.google.com/rss/articles/CBMia0FVX3lxTE10T0pSbTM4cFN1MWgwOEdlUnNzSDNhQmlYMnprRW4yX2FObVFkeEV6bW4xQ3lwRW1Ea0E1dlZxREstV2NIZDlUdHo3VW1TRnczUVNaRlFVdTFUYVVxa3otVXUxRndNOVZubG93?oc=5",
+          "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XcG5PZ1JfU0VYcjhJWUtGWHdHX3NLN2w5b1FBRUplV3Y1TjZqSXFHX1haQzYxaVIyalJHRGtlZmt3aUZuX3YyenVKQQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "cd3f5f7e-7ba9-4e72-886f-550866a8433d",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "控訴審の初公判日程が報じられた段階",
+          "summary": "知床沈没をめぐる控訴審について、12月に初公判が開かれる見通しと札幌高裁が船体を返却することが報じられています。",
+          "latest": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ",
+          "next_watch": "控訴審の初公判の実施状況と、船体返却の進捗",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42TkhQaFBxYmZuVC1PZGNkMTBiOFNIS3RPWnJrR3dpUDNva0NUSmZmX2lxcHhwLUFmT08tRjNnZzNtaEpjdGVMVVNnNlh5dDhIQV9SbE1OUWV1azhxbExKY182TFd3bHpvclB2b256UjllYUV6ZTVsOTh0cURXMVE?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "知床沈没",
+                  "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ",
+                  "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+                },
+                {
+                  "kind": "detail",
+                  "value": "札幌高裁",
+                  "existing_quote": "知床沈没、控訴審は12月初公判 札幌高裁、船体は返却へ",
+                  "incoming_quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "知床沈没",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5",
+            "quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ"
+          },
+          "progress_evidence": [],
+          "schedules": [
+            {
+              "label": "12月初公判",
+              "quote": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ",
+              "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5",
+              "status": "scheduled"
+            }
+          ]
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "知床沈没、控訴審は１２月初公判 札幌高裁、船体は返却へ｜全国のニュース｜Web東奥 - 東奥日報社",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xM3VLZGRQSEVzV1JJWllBTjhCVjNOT0NTbkxoMEdza2dxQ3NiaDhvWTRHRXVBa1hMcWhNQ0lHQnhjYzN6UUdqTDM2Z3d2cU1iemNQZWQwYnY?oc=5"
+      ]
+    },
+    {
+      "review_id": "7fc76e2c9143729275427d0e",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-11-18T22:00:36.649300+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE01YkR4d3M0bklPTWc3QkppcXQyeHNseENiS3Y2S3lHV2pNU1VSa0xTeTVCTE5Lb2daSVpaajhCSk9Hc0pyVG5iZHNrN3NnT3pHV052WGJLS1JXN0Qwc0VRck1DMlNsLWRVSzJ1eEVB?oc=5"
+        ],
+        "ai_report": {
+          "relation": "new_event",
+          "event_id": "",
+          "confidence": "medium",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "無許可建築物撤去期限を控え、残る動物の飼育や移籍対応が続いている段階",
+          "summary": "札幌市のノースサファリについて、残る220匹の動物を20人で飼育していることや、無許可建築物の撤去期限まで約1か月であること、目標として『地域との共生』が示されている。",
+          "latest": "残る220匹は移籍20人が飼育",
+          "next_watch": "無許可建築物の撤去期限に向けた対応や、動物の移籍・飼育体制の変化",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE01YkR4d3M0bklPTWc3QkppcXQyeHNseENiS3Y2S3lHV2pNU1VSa0xTeTVCTE5Lb2daSVpaajhCSk9Hc0pyVG5iZHNrN3NnT3pHV052WGJLS1JXN0Qwc0VRck1DMlNsLWRVSzJ1eEVB?oc=5"
+          ],
+          "identity_matches": [],
+          "event_identity": {
+            "value": "北海道アニマルワールド",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE01YkR4d3M0bklPTWc3QkppcXQyeHNseENiS3Y2S3lHV2pNU1VSa0xTeTVCTE5Lb2daSVpaajhCSk9Hc0pyVG5iZHNrN3NnT3pHV052WGJLS1JXN0Qwc0VRck1DMlNsLWRVSzJ1eEVB?oc=5",
+            "quote": "「北海道アニマルワールド」語る現在地"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【独占取材】「北海道アニマルワールド」語る現在地 残る220匹は移籍20人が飼育「動物に罪はない。守りたい」目標は『地域との共生』無許可建築物撤去期限まで約1か月”ノースサファリ”の今〈北海道札幌市〉（FNNプライムオンライン） - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE01YkR4d3M0bklPTWc3QkppcXQyeHNseENiS3Y2S3lHV2pNU1VSa0xTeTVCTE5Lb2daSVpaajhCSk9Hc0pyVG5iZHNrN3NnT3pHV052WGJLS1JXN0Qwc0VRck1DMlNsLWRVSzJ1eEVB?oc=5"
+      ]
+    },
+    {
+      "review_id": "678ddab36a67adae368564c9",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5",
+      "observed_at": "2026-11-18T22:00:36.649300+00:00",
+      "diagnostics": {
+        "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+        "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "地方公務員の男（34）を逮捕した段階",
+          "summary": "札幌市で、女性の胸元にスマホを向けて下着を撮影しようとしたとして地方公務員の男（34）が現行犯逮捕された。",
+          "latest": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉",
+          "next_watch": "余罪の有無や送致・起訴の有無が報じられるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5VURIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市",
+                  "existing_quote": "札幌市",
+                  "incoming_quote": "〈北海道札幌市〉"
+                },
+                {
+                  "kind": "entity",
+                  "value": "地方公務員の男（34）",
+                  "existing_quote": "地方公務員の男（34）を逮捕",
+                  "incoming_quote": "地方公務員の34歳の男を現行犯逮捕"
+                },
+                {
+                  "kind": "detail",
+                  "value": "女性の胸元を",
+                  "existing_quote": "女性の胸元を",
+                  "incoming_quote": "女性の胸元を"
+                }
+              ]
+            }
+          ],
+          "event_identity": {
+            "value": "地方公務員の男（34）",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5",
+            "quote": "地方公務員の34歳の男を現行犯逮捕"
+          },
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【盗撮未遂】女性の胸元を…動画を”撮影状態”でスマホ向け撮影_地方公務員の34歳の男を現行犯逮捕「間違いありません」と容疑を認める_余罪有無含め追及〈北海道札幌市〉 - FNNプライムオンライン",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VSGhRM3lhTV90ZFhPRlo4dWV2ZkFrcGhXNWFqR0MxQXltTVVJTmdTWVB0MElmdFNfNzc5ZndvLUQ4REFwWEN0N1lEcTFBQQ?oc=5"
+      ]
+    }
+  ]
 }
