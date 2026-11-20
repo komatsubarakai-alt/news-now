@@ -79802,5 +79802,932 @@
     },
     "user": null,
     "metadata": {}
+  },
+  "a2311bbabd034f577732dad40e40c1e31d406345ddb0c84911123a50312def2d": {
+    "id": "resp_0ec592d666119c18006b0043f4f81087d086bf3766709045ca",
+    "object": "response",
+    "created_at": 1795179508,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179511,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0ec592d666119c18006b0043f5bc0487d094a88e89ecd60e75",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rMlZsRGFlZXNMYTJlVW9Yamp1bnNwLVRIQjVLWDZicTgxRlYtTUdxS0ZCaHl1bndPSUJSWFZMeHJEakd4UnBGcjVaandzTVJlUjVOemRETXY?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yYmhMaTJTaXUyeEdlajZSMExSQURHeTROSWRobTFnVWZmbWh2YVNBVDdkQTU4OWNIRjVsbzBwUEFQOTdwUUp4Z2pROWVmek1Ic3ZsQXZsMlNMdUVtdEJ2ZG8tWnQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"ノースサファリ違法建築\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"},{\"kind\":\"detail\",\"value\":\"札幌市が完全撤去求める履行催告\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1648,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 403,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2051
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "05cb47e95d4066811ea5ef58d0f5bb5d1db9de7a2da4d20a2178a0fc4fe413c1": {
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179514,
+    "created_at": 1795179512,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_09c274b500d41694006b0043f7e46087d08ba09f4d4c3bc501",
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IcFdiTDI0SjluVmprS1lwbW5VUFVzZFBvRS1PRUFzdXpGc09QM2F0b2RuYlJodXVxY1h3Ty1tMGJuaHI2R0JSR0hDOHRPalc3YXpnYWZSQnVYdw?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yYmhMaTJTaXUyeEdlajZSMExSQURHeTROSWRobTFnVWZmbWh2YVNBVDdkQTU4OWNIRjVsbzBwUEFQOTdwUUo4Z2pROWVmek1Ic3ZsQXZsMlNMdUVtdEJ2ZG8tWnQ?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"}]}]}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_09c274b500d41694006b0043f8ceb087d0ae7b3c369adf8818",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1657,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2006
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "f919638c59da0598919443889fe841ec47b62a6e4d372308d232ceabf7c52596": {
+    "id": "resp_03a372d04e62c5ff006b0043fbaa4087d08141d1bee42e058b",
+    "object": "response",
+    "created_at": 1795179515,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179518,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_03a372d04e62c5ff006b0043fd05fc87d09abdbf0f6adc881e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IcFdiTDI0SjluVmprS1lwbW5VUFVzZFBvRS1PRUFzdXpGc09QM2F0b2RuYlJodXVxY1h3Ty1tMGJuaHI2R0JSR0hDOHRPalc3YXpnYWZSQnVYdw?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rMlZsRGFlZXNMYTJlVW9Yamp1bnNwLVRIQjVLWDZicTgxRlYtTUdxS0ZCaHl1bndPSUJSWFZMeHJEakd4UnBGcjVaandzTVJlUjVOemRETXY?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"ノースサファリ違法建築\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"},{\"kind\":\"entity\",\"value\":\"札幌市\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"}]}]}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1644,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2032
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "5a7d5b8d23922d89775177fc1b61aab7883e1326c7f2c042fd5ed268d2e6e026": {
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179523,
+    "created_at": 1795179519,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_0b722af936835858006b0043ff3cfc87d08a3be2c53bab420e",
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"event_name\":\"雪国あるある？札幌の街角に設置された緑色の箱\",\"confidence\":\"high\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wZHhDdGN5YmRKeVVKMHhjUmNBNHU1ZU5IdkdBWlZDdHVJWWZNQmRqYVFMWmdyTlhYV244QzNuNTVuclV4cmpBaGNfRG96OVZm?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNaWRtekZNRmtSX055OTVycVpqWDk2b2lGUENvM3RqNzlISUp1eE9HOTZBc1RuaG9hUmVOekNVcEEzNFVHaVYzbUdjbjdOR2kwc09rVkduVnBodkJsTjM3V3BXWlFiSDdoOWVtYlRzeGIzMUtCbk5VTUpfXy1mTnp0d2ozdi3SAYoBQVVfeXFMTThjbzBObk55dHJtMnFyRmZxSjZlSFk0eldfZGZZeDZ1eXg2eF81MXY1ZW93dTJ4VmUza0puc18yYXF5eWl3NXczaHJMeHBFMk1VSEx4WEtRRXk2SkdYamhRaTRzbUg2dzhIOC1senVvbHByNkUyeVFPOURQYkZoSGFRWkJUMEJURDJR?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"雪国あるある？札幌の街角に設置された緑色の箱\",\"existing_quote\":\"雪国あるある？札幌の街角に設置された緑色の箱　珍しくて思わず撮影した写真が237万回表示　「ゴミ入ってるとこまでがデフォ」\",\"incoming_quote\":\"雪国あるある？札幌の街角に設置された緑色の箱 珍しくて思わず撮影した写真が237万回表示 「ゴミ入ってるとこまでがデフォ」\"},{\"kind\":\"detail\",\"value\":\"珍しくて思わず撮影した写真が237万回表示\",\"existing_quote\":\"雪国あるある？札幌の街角に設置された緑色の箱　珍しくて思わず撮影した写真が237万回表示　「ゴミ入ってるとこまでがデフォ」\",\"incoming_quote\":\"雪国あるある？札幌の街角に設置された緑色の箱 珍しくて思わず撮影した写真が237万回表示 「ゴミ入ってるとこまでがデフォ」\"}]}]}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_0b722af936835858006b0043ffe70c87d0bc28242b8ff8dc44",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1892,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 653,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2545
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "d2e0d79c86dac1d2f86b7ce75343b1aaf726453d14139a49a17be029119b895d": {
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179535,
+    "created_at": 1795179533,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_0091705f9a1ac41d006b00440d88dc87d0bbdb4ef07c0f6fb2",
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"same_event\",\"confidence\":\"high\",\"event_name\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"identity_matches\":[{\"incoming_url\":\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IcFdiTDI0SjluVmprS1lwbW5VUFVzZFBvRS1PRUFzdXpGc09QM2F0b2RuYlJodXVxY1h3Ty1tMGJuaHI2R0JSR0hDOHRPalc3YXpnYWZSQnVYdw?oc=5\",\"existing_url\":\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rMlZsRGFlZXNMYTJlVW9Yamp1bnNwLVRIQjVLWDZicTgxRlYtTUdxS0ZCaHl1bndPSUJSWFZMeHJEakd4UnBGcjVaandzTVJlUjVOemRETXY?oc=5\",\"anchors\":[{\"kind\":\"case\",\"value\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"existing_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\",\"incoming_quote\":\"ノースサファリ違法建築 札幌市が完全撤去求める履行催告\"}]}]}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_0091705f9a1ac41d006b00440df7a087d0ab35449b51434b1a",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1527,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1862
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c511233773c79963e049f2dbfae1d1e0c368be8a93da42e5048965ea628faae9": {
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179537,
+    "created_at": 1795179536,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_0bb5fcfc96dc1d0b006b004410989087d08c6fd8fcf57c8cc8",
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"relation\":\"different\",\"confidence\":\"high\",\"event_name\":\"\",\"identity_matches\":[]}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_0bb5fcfc96dc1d0b006b0044115a8487d0b037a25df066997c",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1861,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1881
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "c456f3102105e192e94ed0d3481fa82d4420cab9a05d1f701bda9a51b0867229": {
+    "id": "resp_0eb3311d76fdd2e4006b00441b758087d099d843be411abad3",
+    "object": "response",
+    "created_at": 1795179547,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179549,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0eb3311d76fdd2e4006b00441bf6b887d0861d5f2a12c43a34",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"low\",\n  \"current_stage\": \"男が逮捕された段階\",\n  \"summary\": \"札幌市で、売却しようとした工具に別人の名前が書かれていたことをきっかけに、リサイクルショップ店員が通報し、男が逮捕されたと報じられています。公開された記事タイトルと日時から確認できる範囲では、逮捕までが最新の動きです。\",\n  \"latest\": \"2026年10月10日公開の記事で、男の逮捕が伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 674,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 850
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "47b56c90e350092a4123a1344711267202a95d93a15e299009b1e1d4570bd37b": {
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179550,
+    "created_at": 1795179549,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_0ac55a6263183286006b00441d76f487d0bbb9cf08f225e826",
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"男が逮捕された段階\",\n  \"summary\": \"路上で下半身を露出した後、小学校に侵入したとされる男が札幌市で逮捕されたという記事です。公開時点では、逮捕が伝えられている段階です。\",\n  \"latest\": \"男の逮捕が報じられた。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません\"\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_0ac55a6263183286006b00441e0f4887d0b536f212cf0a3221",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 672,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 135,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 807
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "2e974212a896d36ed298f43855f1df3cf48a7295adb2967a87e82b17cedfad5d": {
+    "id": "resp_0fc996e5c56741f4006b00441efdf087d0833e8d979533ff7e",
+    "object": "response",
+    "created_at": 1795179551,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1795179552,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "input_transformations": [],
+    "instructions": null,
+    "max_output_tokens": 1200,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0fc996e5c56741f4006b00441f904c87d09bdde9c9aa203805",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"category\": \"事件・事故\",\n  \"tracking_value\": \"medium\",\n  \"current_stage\": \"逮捕報道の段階\",\n  \"summary\": \"札幌市中央区で、恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕されたと報じられています。\",\n  \"latest\": \"2026年10月11日公開時点で、逮捕が伝えられています。\",\n  \"next_watch\": \"現時点で明確な次の動きは確認できません。今後は、容疑の詳しい内容や捜査の進展、処分の有無などが報じられる可能性があります。\"\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 665,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 170,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 835
+    },
+    "user": null,
+    "metadata": {}
   }
 }
