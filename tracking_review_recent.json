@@ -2,10 +2,183 @@
   "schema_version": 1,
   "items": [
     {
+      "review_id": "361c535826b5a5d5eb466ac8",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-11-22T15:23:33.949708+00:00",
+      "diagnostics": {
+        "target_event_id": "",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMibkFVX3lxTE81UE0xNGlHMTNuZFlGdHU2a2RJOHZCc2JucTJHTDVLWHZuSlpieTlsZWNDX2dMTHZWMUF1ejBwcmE1cThYLVBsQVZLZHpHWWxSVzlBRVgtUzFPSFA1SmtOUGJ0V21IdDNoczA0MjZ3?oc=5"
+        ],
+        "ai_report": {
+          "relation": "uncertain",
+          "event_id": "",
+          "confidence": "low",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "",
+          "summary": "",
+          "latest": "",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE81UE0xNGlHMTNuZFlGdHU2a2RJOHZCc2JucTJHTDVLWHZuSlpieTlsZWNDX2dMTHZWMUF1ejBwcmE1cThYLVBsQVZLZHpHWWxSVzlBRVgtUzFPSFA1SmtOUGJ0V21IdDNoczA0MjZ3?oc=5"
+          ],
+          "identity_matches": [],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようした疑いで逮捕 - au Webポータル",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE81UE0xNGlHMTNuZFlGdHU2a2RJOHZCc2JucTJHTDVLWHZuSlpieTlsZWNDX2dMTHZWMUF1ejBwcmE1cThYLVBsQVZLZHpHWWxSVzlBRVgtUzFPSFA1SmtOUGJ0V21IdDNoczA0MjZ3?oc=5"
+      ]
+    },
+    {
+      "review_id": "290d4671351a48b18a866b44",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMie0FVX3lxTE5Gd1M1VVRVWFpfQlJ0Qkg3eDFPLUhvV0VIYXBzY0V5b05HWDRFa0lTcTZZcFB4b2N4X1dONFNiR19yTUh1Z2xyZTJPc0RrdGtQOWJsc3hsTHJ5ek9jdndBcHg5NFVYTVpXQ2NnWmtXRmU5cV9nMmhRdkpyd9IBgAFBVV95cUxPb2pOZklFaHdLZDNkR2VCcXRQSl9mVWZFV2lNWEtjSm0xaVdzMXNwVklPYVJCYlFJYVU1MEVGSmRfeHdFTmdzeXJmUzlNQ0ZVUFRJRE9sNVdGRE9ibDV0M3pQUmZGSDJUYTU0aXNUSmNnUEZWSUJBdTFjQjdjd1V4Mw?oc=5",
+      "observed_at": "2026-11-22T15:23:33.949708+00:00",
+      "diagnostics": {
+        "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Gd1M1VVRVWFpfQlJ0Qkg3eDFPLUhvV0VIYXBzY0V5b05HWDRFa0lTcTZZcFB4b2N4X1dONFNiR19yTUh1Z2xyZTJPc0RrdGtQOWJsc3hsTHJ5ek9jdndBcHg5NFVYTVpXQ2NnWmtXRmU5cV9nMmhRdkpyd9IBgAFBVV95cUxPb2pOZklFaHdLZDNkR2VCcXRQSl9mVWZFV2lNWEtjSm0xaVdzMXNwVklPYVJCYlFJYVU1MEVGSmRfeHdFTmdzeXJmUzlNQ0ZVUFRJRE9sNVdGRE9ibDV0M3pQUmZGSDJUYTU0aXNUSmNnUEZWSUJBdTFjQjdjd1V4Mw?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "札幌市で、路上で下半身を露出したうえ小学校に侵入したとして男が逮捕された件です。",
+          "latest": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕　札幌市",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Gd1M1VVRVWFpfQlJ0Qkg3eDFPLUhvV0VIYXBzY0V5b05HWDRFa0lTcTZZcFB4b2N4X1dONFNiR19yTUh1Z2xyZTJPc0RrdGtQOWJsc3hsTHJ5ek9jdndBcHg5NFVYTVpXQ2NnWmtXRmU5cV9nMmhRdkpyd9IBgAFBVV95cUxPb2pOZklFaHdLZDNkR2VCcXRQSl9mVWZFV2lNWEtjSm0xaVdzMXNwVklPYVJCYlFJYVU1MEVGSmRfeHdFTmdzeXJmUzlNQ0ZVUFRJRE9sNVdGRE9ibDV0M3pQUmZGSDJUYTU0aXNUSmNnUEZWSUJBdTFjQjdjd1V4Mw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Gd1M1VVRVWFpfQlJ0Qkg3eDFPLUhvV0VIYXBzY0V5b05HWDRFa0lTcTZZcFB4b2N4X1dONFNiR19yTUh1Z2xyZTJPc0RrdGtQOWJsc3hsTHJ5ek9jdndBcHg5NFVYTVpXQ2NnWmtXRmU5cV9nMmhRdkpyd9IBgAFBVV95cUxPb2pOZklFaHdLZDNkR2VCcXRQSl9mVWZFV2lNWEtjSm0xaVdzMXNwVklPYVJCYlFJYVU1MEVGSmRfeHdFTmdzeXJmUzlNQ0ZVUFRJRE9sNVdGRE9ibDV0M3pQUmZGSDJUYTU0aXNUSmNnUEZWSUJBdTFjQjdjd1V4Mw?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "「学校付近で下半身を出していたようだ」",
+                  "existing_quote": "「男が家に入り込んできて体を触られた」20代女性が暮らす4階一室に男が侵入→寝ていた女性の下半身を触る→女性が悲鳴を上げると玄関から逃走→30～40代ぐらい・ヤセ型男の行方を追う＜北海道札幌市＞",
+                  "incoming_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕　札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "札幌市",
+                  "existing_quote": "「男が家に入り込んできて体を触られた」20代女性が暮らす4階一室に男が侵入→寝ていた女性の下半身を触る→女性が悲鳴を上げると玄関から逃走→30～40代ぐらい・ヤセ型男の行方を追う＜北海道札幌市＞",
+                  "incoming_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕　札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "manual_review",
+        "decision_attempts": 3
+      },
+      "event_id": null,
+      "event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕　札幌市 - ｄメニューニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Gd1M1VVRVWFpfQlJ0Qkg3eDFPLUhvV0VIYXBzY0V5b05HWDRFa0lTcTZZcFB4b2N4X1dONFNiR19yTUh1Z2xyZTJPc0RrdGtQOWJsc3hsTHJ5ek9jdndBcHg5NFVYTVpXQ2NnWmtXRmU5cV9nMmhRdkpyd9IBgAFBVV95cUxPb2pOZklFaHdLZDNkR2VCcXRQSl9mVWZFV2lNWEtjSm0xaVdzMXNwVklPYVJCYlFJYVU1MEVGSmRfeHdFTmdzeXJmUzlNQ0ZVUFRJRE9sNVdGRE9ibDV0M3pQUmZGSDJUYTU0aXNUSmNnUEZWSUJBdTFjQjdjd1V4Mw?oc=5"
+      ]
+    },
+    {
+      "review_id": "02668c8d09cc5cbf95319593",
+      "stage": "event_attachment",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-11-22T15:23:33.949708+00:00",
+      "diagnostics": {
+        "target_event_id": "5476859f-fa90-4ad0-a0ff-f12c0115af0c",
+        "target_event_name": null,
+        "target_source_urls": [],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uRkFtTzZpeWRFd2VzVXQyeXVyQzIxeU5WYU0wVHdEeEFVdTZWOGxEVlZSNzNuUVJIZ3V2Q19VNGs0VmtoM01UZUROTk9kRFN3Vmp2S1ItUWpEbTcwOWxpQUxUWW9yWUdkNWt3bm5ldnZZdktuWmVldTF0Zi1HMUU?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "5476859f-fa90-4ad0-a0ff-f12c0115af0c",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "札幌市で大雨警報が発表され、冠水被害が確認されている段階",
+          "summary": "札幌市で一時「レベル3大雨警報」が発表され、駐車場で水が噴出し道路冠水も起きている。",
+          "latest": "札幌市で一時「レベル3大雨警報」発表 駐車場で水が噴出 道路冠水も",
+          "next_watch": "雨の収束後に、被害の拡大や交通影響、復旧状況が続報されるか",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uRkFtTzZpeWRFd2VzVXQyeXVyQzIxeU5WYU0wVHdEeEFVdTZWOGxEVlZSNzNuUVJIZ3V2Q19VNGs0VmtoM01UZUROTk9kRFN3Vmp2S1ItUWpEbTcwOWxpQUxUWW9yWUdkNWt3bm5ldnZZdktuWmVldTF0Zi1HMUU?oc=5",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nMm53R3Y5djhxcHh4LTFfdzhINXUyNzlKbGxGRkJyQ0plOWNWSmpqOHlVaEx1RzA4ZlE4MmEzOHVVSVJNYXUzM0huZm1qSDZmYmcyeHZpSVFwdw?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uRkFtTzZpeWRFd2VzVXQyeXVyQzIxeU5WYU0wVHdEeEFVdTZWOGxEVlZSNzNuUVJIZ3V2Q19VNGs0VmtoM01UZUROTk9kRFN3Vmp2S1ItUWpEbTcwOWxpQUxUWW9yWUdkNWt3bm5ldnZZdktuWmVldTF0Zi1HMUU?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nMm53R3Y5djhxcHh4LTFfdzhINXUyNzlKbGxGRkJyQ0plOWNWSmpqOHlVaEx1RzA4ZlE4MmEzOHVVSVJNYXUzM0huZm1qSDZmYmcyeHZpSVFwdw?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌",
+                  "existing_quote": "【札幌で大雨】",
+                  "incoming_quote": "【札幌で大雨】"
+                },
+                {
+                  "kind": "detail",
+                  "value": "レベル3大雨警報",
+                  "existing_quote": "【レベル3大雨警報】北海道・札幌市に発表 23:42時点",
+                  "incoming_quote": "一時「レベル3大雨警報」発表"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【札幌で大雨】一時「レベル3大雨警報」発表 駐車場で水が噴出 道路冠水も（HTB北海道ニュース） - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE5uRkFtTzZpeWRFd2VzVXQyeXVyQzIxeU5WYU0wVHdEeEFVdTZWOGxEVlZSNzNuUVJIZ3V2Q19VNGs0VmtoM01UZUROTk9kRFN3Vmp2S1ItUWpEbTcwOWxpQUxUWW9yWUdkNWt3bm5ldnZZdktuWmVldTF0Zi1HMUU?oc=5"
+      ]
+    },
+    {
       "review_id": "cfb3edb91f3abb7866b8801d",
       "stage": "event_attachment",
       "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-11-22T06:55:59.544743+00:00",
+      "observed_at": "2026-11-22T15:23:33.949708+00:00",
       "diagnostics": {
         "target_event_id": "",
         "target_event_name": null,
@@ -20,8 +193,8 @@
           "multi_event": false,
           "meaningful_change": false,
           "current_stage": "",
-          "summary": "",
-          "latest": "",
+          "summary": "JR北海道の駅前ホテル3件・約806室について、北見・札幌・旭川でオーナーが異なる理由と必要ADRを扱う記事。",
+          "latest": "JR北海道の駅前ホテル3件・約806室 — 北見・札幌・旭川でオーナーが違う理由と必要ADR",
           "next_watch": "",
           "completed": false,
           "completion_quote": "",
@@ -41,13 +214,34 @@
         "http_status": null,
         "api_error_code": null,
         "triage_status": "needs_evidence",
-        "decision_attempts": 1
+        "decision_attempts": 2
       },
       "event_id": null,
       "event_name": "JR北海道の駅前ホテル3件・約806室 — 北見・札幌・旭川でオーナーが違う理由と必要ADR - HotelBank",
       "article_urls": [
         "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVXRMRXNWRE5yWG1GZDdWRG92MTdKS3dzaEh2VjZzcDRBbDR6RlF3NzF0bGg2XzlLY0VrTlpnRm5rVXJXVnJCLVFDWXg0SkYwS0VKeEg3YVAyLWREd1NrMTBMc0xxUEpLOXJ2WkxfdlI4Ykhna25QYmVDbnZkYkNUQnFZZ1FSOXFNM2diWmJxWVI1Z2phU2dDUlltNC1HRnpzUC1DYUdKN3B3SU5vLWFNdUdiMmlPS01SMXUxWnpiNA?oc=5"
       ]
+    },
+    {
+      "review_id": "a3d32dbdf3878ced5389073e",
+      "stage": "backfill",
+      "reason": "search_identity_uncertain",
+      "observed_at": "2026-11-22T15:23:33.949708+00:00",
+      "diagnostics": {
+        "target_event_id": "c3db09a6-f6aa-490a-a3eb-c1a52a93bdbd",
+        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 (STVニュース北海道) - Yahoo!ニュース",
+        "ai_report": {
+          "confidence": "low",
+          "matches": [],
+          "evidence_urls": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "c3db09a6-f6aa-490a-a3eb-c1a52a93bdbd",
+      "event_name": null,
+      "article_urls": []
     }
   ]
 }
