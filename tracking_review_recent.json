@@ -1,4 +1,70 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "review_id": "4202c983d3e3ddc427c9f572",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
+      "observed_at": "2026-11-26T19:40:21.508821+00:00",
+      "diagnostics": {
+        "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "逮捕",
+          "summary": "",
+          "latest": "",
+          "next_watch": "",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "路上で下半身を露出、その後小学校に侵入",
+                  "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+                  "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
+                },
+                {
+                  "kind": "entity",
+                  "value": "小学校に侵入した男",
+                  "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+                  "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 1
+      },
+      "event_id": null,
+      "event_name": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
+      ]
+    }
+  ]
 }

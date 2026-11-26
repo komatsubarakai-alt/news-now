@@ -35293,9 +35293,9 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "040fb254f8b75c61651f6d447396579c5ebb28910a5db6375522a3bbb9632b75",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00",
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_history": [
         {
           "source_fingerprint": "6c90274b436ca9690599aeb33db69b90cd2d4f4f045c986b5147782abb2b9937",
@@ -35306,6 +35306,13 @@
               "source_fingerprint": "4853f974935d31cf949a3385ff5598ad446a8b33d599fbf5cc0877c24adc8653"
             }
           ]
+        }
+      ],
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "6a7f1ef50ff2aa8603451677",
+          "source_fingerprint": "676d3e5584129e9b930e4403b9b23bb017128bfd7f308ff2a29a271ba4f6ca1d"
         }
       ]
     },
@@ -71089,9 +71096,9 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "19d57ae369917e80ab40ee5c10cf087f88fe8487a80060bff3db44cdf42f0b38",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00",
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_history": [
         {
           "source_fingerprint": "1801e5eb15a28a33c7073edee370234b798ae4434908820242eeef0fe9698c61",
@@ -71102,6 +71109,13 @@
               "source_fingerprint": "2411667567d26d71eb698fffd1d08296aa7dc73fbfbad3c46a739c33f6de60ce"
             }
           ]
+        }
+      ],
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "fe8603de72f38ddc082d8bfc",
+          "source_fingerprint": "498ce3b6aeaa352014e4434a9585d119033760cbe85e87e705ea1945f575aa70"
         }
       ]
     },
@@ -114200,7 +114214,7 @@
       "source_fingerprint": "762c5c6068c1a31a16299b8010dea0215c2d33c4020b96e4d6a9959a5194adfa",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -114545,9 +114559,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "332512610a27c77aabb6be672d2ee14879d91ede0ba32e1e8f9dca60e5c77abf",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "b325cf3b82798174722c052f",
+          "source_fingerprint": "870455c7cdb8df6356ad7d285b92761b8632f1c6095ba50c17a0f6b7748de3da"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CS0xpbXVCbDFyczhBTEZqTHhSZXR4OHk2VExLS1JDNllkQ1U3M0dIcXIwdzU4RnJ0MlhSMXROQ2JVWTM2MUtNM05rZXJYRjZFek1KX1hJQzU5UQ?oc=5": {
       "first_seen_at": "2026-11-24T10:59:17.912948+00:00",
@@ -115057,7 +115078,7 @@
       "source_fingerprint": "bcbe2648de1fa7f598330b861145a61c757bd35f015db1c1f4047bc28eabebe6",
       "status": "out_of_scope",
       "reason": "sports_result_or_fixture",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00"
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WRUZvUGhVS2dnUTFvOVRsVEZ1TGtRUklsZ0J4OXJoMTZuSmRRZWhvakdua2pDUVJkdDVVQnR6cEI0dTh1Y2VqVEtIMi1kcHVsWV9zNkdKM1l4dw?oc=5": {
       "first_seen_at": "2026-11-25T15:39:38.281439+00:00",
@@ -115095,7 +115116,7 @@
       "source_fingerprint": "2e709ef4aa38b8b3bd43f358945a627e8b2e72ccec0a2f143b59b469bebe0c28",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -115213,7 +115234,7 @@
       "source_fingerprint": "8f48b0e44b149a75c10b3f669ed0583eea8d53e6f365639d5304657c15d62aa5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -115469,7 +115490,7 @@
       "source_fingerprint": "353f1005a810382272bf5ec057b6809843c58afc93df1707ba3fd0ca2467acf9",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -115495,7 +115516,7 @@
       "source_fingerprint": "8356472e2adf567d1c7e8292d265c3543ff0aa98034a6d712c259ac1148636a5",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -115728,7 +115749,7 @@
       "source_fingerprint": "38257f45020dada8813ccef1c1af6dd25ecc681a6f47ec8d4c8f9c82bf8ebad7",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -115922,9 +115943,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "4855db69f6a3ea7416b6ab05e94f25e5592454b813f6c5e054968a0122a12315",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "a5b37dce35dc86fef62ec1be",
+          "source_fingerprint": "ce5b07deb08463b5b6c7b41adba7cedfc7d7bfca6593c750a2413265d6228ca5"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MR0REY1RNdUxUY21BSVZHa0xFZm1KNWE5andDb1V1VFpSRDFFQ3BNM0FreGRfN2F2LUpvM3FJRnRjSmtOVmdhS1pTRnNZVlVuUzBEMTB2WXFwZlFMUzQ2QVJCYjhVTkc2OHk1LVk0OG1Qd0xTQlEyU3ktd1ZFNTQ?oc=5": {
       "first_seen_at": "2026-11-25T15:39:38.281439+00:00",
@@ -115944,7 +115972,7 @@
       "source_fingerprint": "63444a8823e9c30260497e200f8beee04d1eb7cb7867247a5636ff00c338dd7a",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116237,7 +116265,7 @@
       "source_fingerprint": "4dad32282fbfc225ca9956c44293ab72053dd5aafd3f4f9a6091cd4671014107",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116369,7 +116397,7 @@
       "source_fingerprint": "f3b38a541aa08fe43791e8a4129171a3df309003f0dd17d37afcede1df2eee26",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116569,7 +116597,7 @@
       "source_fingerprint": "3edfa430836b9ccb7a65b55ead038a8f66e6ececc60ac094558dde654613493e",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116614,7 +116642,7 @@
       "source_fingerprint": "7842f0633d31ee87313fd2e340d115855dd8d910076685a1f157c8b0f1631951",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116624,12 +116652,36 @@
       ]
     },
     "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80VFNySjA3TEF0VU5EYWFsX1ZzNGJjQ3dzcFp6bk9nYTZzR2oyT1lJV1Q1SlR0dWtXUFZDeDcwZ1IwN3JESlBYT2tGM0FSanVsbHhlbEZvVQ?oc=5": {
-      "first_seen_at": "2026-11-25T15:39:38.281439+00:00",
-      "source_history": [],
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [
+        {
+          "article": {
+            "title": "展示室にっきWEB版（2026年度） - 札幌市",
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80VFNySjA3TEF0VU5EYWFsX1ZzNGJjQ3dzcFp6bk9nYTZzR2oyT1lJV1Q1SlR0dWtXUFZDeDcwZ1IwN3JESlBYT2tGM0FSanVsbHhlbEZvVQ?oc=5",
+            "published": "Wed, 25 Nov 2026 12:42:47 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE80VFNySjA3TEF0VU5EYWFsX1ZzNGJjQ3dzcFp6bk9nYTZzR2oyT1lJV1Q1SlR0dWtXUFZDeDcwZ1IwN3JESlBYT2tGM0FSanVsbHhlbEZvVQ?oc=5\" target=\"_blank\">展示室にっきWEB版（2026年度）</a>  <font color=\"#6f6f6f\">札幌市</font>",
+            "rss_source": {
+              "name": "札幌市",
+              "url": "https://www.city.sapporo.jp"
+            },
+            "collection_role": "primary"
+          },
+          "status": "downstream_waiting",
+          "reason": "unchanged_downstream_source",
+          "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
+          "downstream_waiting": [
+            {
+              "stage": "status_generation",
+              "group_key": "a8f0b09fb8d96505fcbc1993",
+              "source_fingerprint": "2b65f252e8ba2cb212113ea994592e84e0d166f2d809301948ffaa4890bf05a3"
+            }
+          ]
+        }
+      ],
       "article": {
         "title": "展示室にっきWEB版（2026年度） - 札幌市",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80VFNySjA3TEF0VU5EYWFsX1ZzNGJjQ3dzcFp6bk9nYTZzR2oyT1lJV1Q1SlR0dWtXUFZDeDcwZ1IwN3JESlBYT2tGM0FSanVsbHhlbEZvVQ?oc=5",
-        "published": "Wed, 25 Nov 2026 12:42:47 GMT",
+        "published": "Thu, 26 Nov 2026 11:53:18 GMT",
         "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE80VFNySjA3TEF0VU5EYWFsX1ZzNGJjQ3dzcFp6bk9nYTZzR2oyT1lJV1Q1SlR0dWtXUFZDeDcwZ1IwN3JESlBYT2tGM0FSanVsbHhlbEZvVQ?oc=5\" target=\"_blank\">展示室にっきWEB版（2026年度）</a>  <font color=\"#6f6f6f\">札幌市</font>",
         "rss_source": {
           "name": "札幌市",
@@ -116637,15 +116689,20 @@
         },
         "collection_role": "primary"
       },
-      "source_fingerprint": "f07e2f212c209c21006918edf389abb95f73b5fd655fcf5b6923c0070c8d7a17",
-      "status": "downstream_waiting",
-      "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
-      "downstream_waiting": [
+      "source_fingerprint": "d26a54dee830395791024ad0642657939d34a64c53b8c4e8b1588152737559f8",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_history": [
         {
-          "stage": "status_generation",
-          "group_key": "a8f0b09fb8d96505fcbc1993",
-          "source_fingerprint": "2b65f252e8ba2cb212113ea994592e84e0d166f2d809301948ffaa4890bf05a3"
+          "source_fingerprint": "f07e2f212c209c21006918edf389abb95f73b5fd655fcf5b6923c0070c8d7a17",
+          "references": [
+            {
+              "stage": "status_generation",
+              "group_key": "a8f0b09fb8d96505fcbc1993",
+              "source_fingerprint": "2b65f252e8ba2cb212113ea994592e84e0d166f2d809301948ffaa4890bf05a3"
+            }
+          ]
         }
       ]
     },
@@ -116666,7 +116723,7 @@
       "source_fingerprint": "fa7fa00e82100c9077d445cce9b731bce4574be5cb62cbae46c5da12651b15ec",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116692,7 +116749,7 @@
       "source_fingerprint": "b81d9b7d4dfb6d4f6d5ddace516f1660b38df33bc0291a9132d761746195b838",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -116717,9 +116774,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "a032a22cff0e4332013fc67c880850251eaab0faec380fed1733a852944f9b00",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-25T15:39:38.281439+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "143e1bdc8a878a461f76c55a",
+          "source_fingerprint": "3a64cd9598811d4de02e0b6a32258c8be4f43aedaff9b4d965cad5f76c1b6a69"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zeE01OW9ZVUdEUUdXQkNLVnY3MnRZeFVmcHp3eHFCSWstcUNIQVJUX3VFZUdlNGdvazFPNll0d3B3ZGpsbklESlQxNGNMRWNUYXU4MUpqWDBmdw?oc=5": {
       "first_seen_at": "2026-11-25T15:39:38.281439+00:00",
@@ -116879,11 +116943,18 @@
         "collection_role": "supplementary",
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "queued",
-      "reason": "needs_classification",
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wSWdrekN1MnBIdVhTbEhsb2FLX3FGekVGWHdUTDlqX0RGWHBnSlpGVTFzWnZiUEk2V1hreDdaQXhkZGNjbnh2WUFXdDBYRERMVnByZ0p6M0JRQQ?oc=5",
       "source_fingerprint": "ccf29755f94d66ea14217319cd15edf43e34351681bbc9c97fb677d0cf43ac59",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "d3be8e6df45d281ec0062d8b",
+          "source_fingerprint": "f6026f9c5c78153226903f6f06eeffb1e9b853314f755bd926881637ac312559"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE04YzBfZkU4dzJ2TDdNLVlPdll5cDRaT25Edzd6dTRFTlBJWk12TEMzS2lRVDlrTUloYklldTlJZlhwalZmeTM5amN5UWc1TGMyamhaOF9QeWRUczdfTk9zOUxQZVNKVGxDMjVncEZBRFdlcGNOdWF1cEhCbGNTSWc?oc=5": {
       "article": {
@@ -116902,7 +116973,7 @@
       "reason": "unchanged_downstream_source",
       "representative_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qdnJmNXlUeFJiaTYwN2FIZjFDZWdJUVI2elJKVXllanotcXowSm9zRF9nMGhuNFEtcHpEYkhCQmJJQ2VKV0U5Q1UzUGRYVThGS1lNeVV2T3M1MlYtYTBOVkMzdXg3MnVkQTV4T3B6QUwyczYtb0I4VGlNQi0ycXM?oc=5",
       "source_fingerprint": "7c6a123c3213dbd0ea6dec4e8911746d0636086a363d401d6cf659bf6f43ccf4",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117003,7 +117074,7 @@
       "source_fingerprint": "c3b02545662566215e8d9c9deb0032894ff2951640ac2ac1368405632202dcba",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117032,27 +117103,6 @@
       "last_seen_at": "2026-11-26T00:25:17.911597+00:00"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzRnRheFEzTkxhMDBjRk5wdWZYSkdJTUd4S0l3bmFUcEF4R2UzbTZQRi12djhaOEUyNW02ejZPNkw2U1dHa0pIU1NJbDN3THBYSVBtS0hvS0kwYklIbUJuSXRGZWFycElVOU1KOERLZTFYRUJmVzJJNjBCZzUwdms?oc=5": {
-      "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
-      "source_history": [
-        {
-          "article": {
-            "title": "飼い犬にエサや水を与えず衰弱死させたか―自称・風俗店従業員の26歳女を逮捕「私の行動が原因で起きたことです」〈札幌市〉 - Yahoo!ニュース",
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzRnRheFEzTkxhMDBjRk5wdWZYSkdJTUd4S0l3bmFUcEF4R2UzbTZQRi12djhaOEUyNW02ejZPNkw2U1dHa0pIU1NJbDN3THBYSVBtS0hvS0kwYklIbUJuSXRGZWFycElVOU1KOERLZTFYRUJmVzJJNjBCZzUwdms?oc=5",
-            "published": "Wed, 25 Nov 2026 23:16:39 GMT",
-            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBzRnRheFEzTkxhMDBjRk5wdWZYSkdJTUd4S0l3bmFUcEF4R2UzbTZQRi12djhaOEUyNW02ejZPNkw2U1dHa0pIU1NJbDN3THBYSVBtS0hvS0kwYklIbUJuSXRGZWFycElVOU1KOERLZTFYRUJmVzJJNjBCZzUwdms?oc=5\" target=\"_blank\">飼い犬にエサや水を与えず衰弱死させたか―自称・風俗店従業員の26歳女を逮捕「私の行動が原因で起きたことです」〈札幌市〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
-            "rss_source": {
-              "name": "Yahoo!ニュース",
-              "url": "https://news.yahoo.co.jp"
-            },
-            "collection_role": "supplementary",
-            "collection_reason": "original_unconfirmed_or_unavailable"
-          },
-          "status": "queued",
-          "reason": "needs_classification",
-          "last_seen_at": "2026-11-26T00:25:17.911597+00:00",
-          "downstream_waiting": []
-        }
-      ],
       "article": {
         "title": "飼い犬にエサや水を与えず衰弱死させたか―自称・風俗店従業員の26歳女を逮捕「私の行動が原因で起きたことです」〈札幌市〉 - Yahoo!ニュース",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzRnRheFEzTkxhMDBjRk5wdWZYSkdJTUd4S0l3bmFUcEF4R2UzbTZQRi12djhaOEUyNW02ejZPNkw2U1dHa0pIU1NJbDN3THBYSVBtS0hvS0kwYklIbUJuSXRGZWFycElVOU1KOERLZTFYRUJmVzJJNjBCZzUwdms?oc=5",
@@ -117061,14 +117111,11 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        },
-        "collection_role": "supplementary",
-        "collection_reason": "original_unconfirmed_or_unavailable"
+        }
       },
-      "source_fingerprint": "50224a970903ed054cbcf7ba6653125d23fcca8782deec9c7ba8a7257516e37f",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "duplicate_source",
+      "reason": "exact_headline_original_available",
+      "representative_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5pYUxtNlRDWE9jTHE5TU96MWFpZldYWGFfQ2dhNjFZbkhNYzVKX1kwcmVYUnFURDdQOGJjRG1BY0lQdmY5aWJkRmV3T2lxUllQaUs5QmlEYw?oc=5"
     },
     "https://news.google.com/rss/articles/CBMib0FVX3lxTFAtVnhzR1drWUtKa2VoREpfbWpQRkZjSTV3MGNVLUlDOEQ5dnlnUHg0bVhvRWhDbnRQaUgwUkxuYVhzZkcwOEdWSkg1UTRHeHU0RDQzLW9oRmlESGpmZWRCMk01OGRNZGxvbGRkWUJ5b9IBdEFVX3lxTE5Nc1k5MTdiZWltblppdWtNUk9ZVFVmUGlxaUlfS0ctZVBTdTk1WEZPVzZRZkNXZnc1eGtPaEJiWWNfZUx5RFdIaVVPYlBGNjNRN1JJelFwMkt3R3h5NEVPa2lvcXdLdVNBeFZaTWFMNk1ucy04?oc=5": {
       "first_seen_at": "2026-11-26T00:25:17.911597+00:00",
@@ -117151,7 +117198,7 @@
       "source_fingerprint": "6da5dd9c8d4e2e7594e70e9abe230fcf5a1fdf94cf7c75ad16a55f638b0312f2",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117251,9 +117298,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "ac8873f9392b396e905df2f0b91b1934340e3f2380c61601818d3ab44e6ec058",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "84d0239eeac30e20ae87aa67",
+          "source_fingerprint": "8c4024ab6b9fcc50dd590b4fc085671c0a29eda2f7dfc7cf11123e587d263704"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95YlpXa3pxTk1za0YwS0VNR3BaUUljSGJuMkhGcm9PbHluWTJHdHVkZ3p2QS1ELU40S05VS1FrbXNPNXRfazZnR3JZMkF3c1Vsa19hQg?oc=5": {
       "first_seen_at": "2026-11-26T00:25:17.911597+00:00",
@@ -117315,9 +117369,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "d0d5aa30b2a2ef02a889656e408783435fd3b9bd8144f70f675882f408f73051",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "21146eebd41f440ac6a11a37",
+          "source_fingerprint": "54333bc200239742f0dd308dc937c5459e9a03bf90c246aecd174e18f8b5e7a1"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mVnNCdkI0Q0U5aHFPb2pZbmp1ZThialpiczdMc0t0ZUI0ME1jTUZULVUwTzBUVTYwaDl1S3RJMUNsTTR6UnlWSW1la3U4ZFlRdTA4Slg5OA?oc=5": {
       "first_seen_at": "2026-11-26T00:25:17.911597+00:00",
@@ -117363,7 +117424,7 @@
       "source_fingerprint": "bbdaa0fb64b7202339c958f750d083d3755d67bdebac873129b01c1b182f2aa8",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117430,7 +117491,7 @@
       "source_fingerprint": "5e341ba40662dfbb0eac61e64cb8aa49ec8747901d1277550ee504b61bc57ef4",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117515,7 +117576,7 @@
       "source_fingerprint": "5689348c4378bc743671533f9b65c3b6f01f8b5c589ab3b4ef2f562584aacfa0",
       "status": "downstream_waiting",
       "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
       "downstream_waiting": [
         {
           "stage": "status_generation",
@@ -117725,9 +117786,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "59d61816ab6a5c0985c6bb620b75f958f4e0c6a4bc196c0f33868b57cc297afe",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "26449863e9bb11aa07615016",
+          "source_fingerprint": "5e2155f4482ac7568a9e901fd57177498adc5151f8a701f07997a67d1d2a0c6a"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zTFQ5VjJscTVWWlRhUmlPSzI3STEyb0FMRkd3QjZBanhJd3VuY00wb3RoLVlDZU5UYlFMY29YNjQteDAzLUpQVmxvVHpfVzdUNmUzdzJZcXdRQ2c?oc=5": {
       "first_seen_at": "2026-11-26T00:25:17.911597+00:00",
@@ -117789,17 +117857,49 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "25aae9f43841440bd963f459a256c79f094c4e1cd211775467affac4152c4e14",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T00:25:17.911597+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "16167a97c024b2b1d4f813dc",
+          "source_fingerprint": "69b8f07f8dd70489af366ece1b8dc1e6ca36cc14b9ea60037fd0e29cd9f9bfde"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hNWZyWG9yb05LNHptVnM5X1RDSjVQUmt6UmRtQWdibUpWX1JXWXc5Q1ZkV0hJaktNMkU1TjkySWUySFlBMlVaWm9VWXlSbTFyMkZ6bmkzWnhoaE5uNHgxNW1XbWl2Z2tJR0p5T20xWWhuT0MyWVBPWHBYUElndWc?oc=5": {
-      "first_seen_at": "2026-11-26T00:25:17.911597+00:00",
-      "source_history": [],
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [
+        {
+          "article": {
+            "title": "夜の神社で…男子高校生殴られ下顎を骨折 “土下座”も強要 19歳男を逮捕 札幌市清田区 - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hNWZyWG9yb05LNHptVnM5X1RDSjVQUmt6UmRtQWdibUpWX1JXWXc5Q1ZkV0hJaktNMkU1TjkySWUySFlBMlVaWm9VWXlSbTFyMkZ6bmkzWnhoaE5uNHgxNW1XbWl2Z2tJR0p5T20xWWhuT0MyWVBPWHBYUElndWc?oc=5",
+            "published": "Wed, 25 Nov 2026 20:49:32 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9hNWZyWG9yb05LNHptVnM5X1RDSjVQUmt6UmRtQWdibUpWX1JXWXc5Q1ZkV0hJaktNMkU1TjkySWUySFlBMlVaWm9VWXlSbTFyMkZ6bmkzWnhoaE5uNHgxNW1XbWl2Z2tJR0p5T20xWWhuT0MyWVBPWHBYUElndWc?oc=5\" target=\"_blank\">夜の神社で…男子高校生殴られ下顎を骨折 “土下座”も強要 19歳男を逮捕 札幌市清田区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          },
+          "status": "downstream_waiting",
+          "reason": "unchanged_downstream_source",
+          "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+          "downstream_waiting": [
+            {
+              "stage": "status_generation",
+              "group_key": "989f23124f72780f0b0de630",
+              "source_fingerprint": "995f0e4f41454c59b512b91235980ab7f8e81facb0b7f0187c38dedb5b26d377"
+            }
+          ]
+        }
+      ],
       "article": {
         "title": "夜の神社で…男子高校生殴られ下顎を骨折 “土下座”も強要 19歳男を逮捕 札幌市清田区 - Yahoo!ニュース",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hNWZyWG9yb05LNHptVnM5X1RDSjVQUmt6UmRtQWdibUpWX1JXWXc5Q1ZkV0hJaktNMkU1TjkySWUySFlBMlVaWm9VWXlSbTFyMkZ6bmkzWnhoaE5uNHgxNW1XbWl2Z2tJR0p5T20xWWhuT0MyWVBPWHBYUElndWc?oc=5",
-        "published": "Wed, 25 Nov 2026 20:49:32 GMT",
+        "published": "Wed, 25 Nov 2026 20:47:00 GMT",
         "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9hNWZyWG9yb05LNHptVnM5X1RDSjVQUmt6UmRtQWdibUpWX1JXWXc5Q1ZkV0hJaktNMkU1TjkySWUySFlBMlVaWm9VWXlSbTFyMkZ6bmkzWnhoaE5uNHgxNW1XbWl2Z2tJR0p5T20xWWhuT0MyWVBPWHBYUElndWc?oc=5\" target=\"_blank\">夜の神社で…男子高校生殴られ下顎を骨折 “土下座”も強要 19歳男を逮捕 札幌市清田区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
         "rss_source": {
           "name": "Yahoo!ニュース",
@@ -117808,15 +117908,20 @@
         "collection_role": "supplementary",
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "source_fingerprint": "4e020ccd54c4f966d7cc669fbe009ff3d89ebc91470abaca5cd7127af7ce4b2a",
-      "status": "downstream_waiting",
-      "reason": "unchanged_downstream_source",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
-      "downstream_waiting": [
+      "source_fingerprint": "b8bb79ac2a083f084b0b96a01435c340088c3b8ad15c842e480303f03c1c2271",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_history": [
         {
-          "stage": "status_generation",
-          "group_key": "989f23124f72780f0b0de630",
-          "source_fingerprint": "995f0e4f41454c59b512b91235980ab7f8e81facb0b7f0187c38dedb5b26d377"
+          "source_fingerprint": "4e020ccd54c4f966d7cc669fbe009ff3d89ebc91470abaca5cd7127af7ce4b2a",
+          "references": [
+            {
+              "stage": "status_generation",
+              "group_key": "989f23124f72780f0b0de630",
+              "source_fingerprint": "995f0e4f41454c59b512b91235980ab7f8e81facb0b7f0187c38dedb5b26d377"
+            }
+          ]
         }
       ]
     },
@@ -117836,9 +117941,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "1cac53d1f3239519f93ac5454a61c09b53266ca0baafe113a47fff04aa5fc631",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "bbab3c0e1853670989b2952c",
+          "source_fingerprint": "3772d9de2b01c42bb8536622ef303ec85187c2caf69840ac4731c77812231a7c"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94U2w0V1pJcjd5SU1aUmM2TDJDc3FoVVJvejFQbzZfM3lzN2xCSmZGUGwxV1g4QXd4aXI1SVhxOVRYaVhNM25zc1NBbXd0TUgzWXdZY19NNlkxQQ?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -117874,9 +117986,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "8ecefb0dea0fcdbdced5f7650f76c972c67725c256aaac029ff88df3cc771f16",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "bbf3c143dd68b32bb7f1cb53",
+          "source_fingerprint": "0a9a61ffa959fadf511df6554e9299de62353c2da86fceb2e21f109518f42727"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XUHhSdGxJS2NjMlR1WW1mdktLeHFLS0pjaEpIVVNHLUFmMGJzSlBiS1cwVmY0TlRfLXR5b05QUi0tWEJDbGJBNFlSMnpfT0taNWVqLVB1MGd5NnRwUVZ6bnpxYXRLcHdWYm5lMTJWLWphcXZLSGhIUHl3VVVGSm8?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -117932,9 +118051,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "0c987548718bf7b78e2cd4f454807e3f67e090d4e0cf8b4317cbe52c245f3991",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "ab539ed3949a2b7da0e89ed1",
+          "source_fingerprint": "fe0b9efa489e1890d82b2902f3378e4ae12e2bd2bf313f0d21c83f9e76d6cdc6"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMidkFVX3lxTE43d01ac0d1TkVwV1c0STFSRE16cnpGSUxWNUI1UU1QN2s5bnpFT0lxQnRBeHAxZTBaRFFXdVBlaTBaNm9INk40RVZxMlFrNzBiQmpOS3lrT29takJXRXB2UG1UZ280eE5qNC1FTnR6QlZyT0NQWUE?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -117970,9 +118096,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "4d5fc4d25126ed8db789c4ba0088575429fd725dbb69a82425fa17ee14459d5e",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "caadee538631db563acab9d9",
+          "source_fingerprint": "9de67f66900a2948bd33a443197dcf6373fc3395a6fd7d40b7403bb44b0b6784"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jRlpBZmpyR2xIMHdkV25Cc2syVEZtOUF6Q1p1UmhLc1hDOGRWeXpfVE15Zk9DcTEzeXZDbGNxYUZVc09sT05jSDZ3bDNhcXVXZzZaMVNqYkhaR29IaFViNkl3?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -117989,9 +118122,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "9c17a1e5ad745c43019daf1d6a8fdb972b91acb6a84a296895fa6979ff1be8f6",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "ec2ebb6bf48f5781c0570772",
+          "source_fingerprint": "d72b3f088a3c35c72e153099bf30506c84cecf335aec983aaa3c4e711da9424d"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hUjlzal9NNXcwN2hwUy1vVUpLYjBwZE9FQ1FVMXBVaU5pNFU1Mjk2czhZUmRtRkFlVjhqc2xDNmJIaVhlYnVXWDNrRTlmMjFkckJlNUN6NC1QSjQ3OHFJcWEwSmUzY1B1cWc?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118046,9 +118186,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "89082a8bbc51ac50d31596d08e439288567669c366d9f70ea0425511c6673e72",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "da919aa82971073cfea75a0c",
+          "source_fingerprint": "f83c2d8e2804c932a0606c07d5df9e3f136243a3b554877a8d2190dd70cc90f7"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ycXNDMmRFQWd6eS1jc1JQSVBPaTAxS2xrMk9nNDFsSDAyazRydll1MmxYZlZGTGtvMEozdDN3ZVhGeko2WV9HVFQ0R2JfSG82QjdMeVZ1LUhFbmJs?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118065,9 +118212,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "97449bff506397ae6f010c5a0449b5aef4a71a1c872e771128c664ebfc6df777",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "259e719b71c98a71fa35c5c8",
+          "source_fingerprint": "1de51f2deb582683d432a7e8b7bad374671ec5fb4835e263f93f78c36df15cfe"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1rOGM1Qno3Ry1YMExMTk1Ib2R6WDcyVzBrLTk1cHVlU29EN3RWZzFIX2tmTUVRb2tKQzBfc0hEXzQ4Rjh0bGx3VklEU183dw?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118141,9 +118295,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "07293c60893f1d4742e50f00607c02441cdc5aa704e80e4ce1e30131717de43c",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "2286706b1686eb64b3c77d63",
+          "source_fingerprint": "5b2fcaacdb8b8275a409ea17cbe43976600f49468617fd6ac68697209aa2838e"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSbG9nMzBoRVJYanpOcVVVamhKTlBGOVpkangteGFEMnBWZHk3S1FoZFEtdFNib09hOHNHd2xyWnZ5aUVZdFU0aXRGcXhvc0YzRWtvUzEzaHNyUQ?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118160,9 +118321,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "f142026fe6004aed5ec4133972635b2cce7672e9ab20b7f9beb376c88c085b62",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "1abccd5d5bf1d7a7edd5dfb3",
+          "source_fingerprint": "34317af77411e464a5d2e1ef0fa438c2521a228dde6891934e54df5c6732c495"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tbGdYd0JQVVpSN20xZElCSkc3RzBOeldUXzVHNzRwcVpNZUFKMGVYem1HVUdXc1BVSnhkTWVQZGFzRHladGE5MVpCSnZ2TFNlUGRMakhB?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118199,9 +118367,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "3780e09ad08bbe93e4409df1e8c0a2480272e30e5d40b0038ac5e731e06b2f01",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "eafe63174df44c30d9e96f1a",
+          "source_fingerprint": "7cfc23069cebb393ffb309101ff0e872a5ce0a69997f0748b48840b9426df3c6"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2eGs2Ujh5Q2lSeXJuTzdMSjFvZkE2a2V5QzJRc2J3dVJaUUpOaUtzQ0JOVi0zRWVCNUhEMHkydW1kYzNvTVdQckJnRjdxcjVQRkJQMWRTZ2pOdW5BNlkwakpfZ2MzZzFNSXc0TW9qSVZ3WnYyNkRjUFJ2c09FTUU?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118238,9 +118413,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "f070a752b9c727c3ac8505dd573014c520119975a80c6618e0d6c9bf79b9a325",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "27245eb8eb123b491a52c889",
+          "source_fingerprint": "3a8598d14c414c0a4a26e1097c633523c2739180c490cdb029d00c88fba6c58a"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NQkQxRmRfclp4c0NjVkhFUER2UEJzc21KUGZwQ0hQZ1VyWG1TNlN6TEV2YTFNem9rUmxYM3ZMRmFRT2k2VHhiTmU5RTY4MmtsWUdjQ1QyX0plOTFQRG1HYkM2dVJLUXVnTUpZTng5TXFHazhvNnBpbGZtSzJ0V1k?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118258,9 +118440,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "1159b01b97d67957cf0c1144d5be02949f70b5c911af0d9b2ac8154ce0ff2d10",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "43824afc92cc4df4afa8b325",
+          "source_fingerprint": "994286476a8b33f94de2b8e34781e170a7ef3bab82dfdd31b24866818ee683a4"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcUY1TFlyTkFINTJxNmVuc0xneHU5Yk1CZVJIblREN3BmY194RHVILWZOcWdKcDMtbU5rMmdGVjNZcUZZb0ZUeUU3NWNrLWRIekZLSzlMektjMm9hYU5LbzNLN3NhNV9oYVhsVGtHT1ZDYlAtRm1uR3JiSWdPdENRUUk4VVVyT1k?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118279,7 +118468,7 @@
       "source_fingerprint": "87bbc58b5ca411ccc2990e2404b76fcba1e5300fcfa5744240a01a744ef8d59c",
       "status": "out_of_scope",
       "reason": "sports_result_or_fixture",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMWkFOVHA3elpZY2hyVENjbEU4U3B2MFRPU0otYWJIX3hrbm9jWDJzbUliVHMyNXFRdmxiVlFWVjJQMTJzTEdhcUswdUhfekdXeFkwT1I2ZTBwRFFLY0RwdTR2cEdfRmVnbkY5X0JzS0JYMXdrZk5TRi1vcTg0R0E?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118355,9 +118544,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "fcc21986d1e4ac2afb9fb90e1213583923d4ea6b7f653e47652c2ceff3680d93",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "dc87619e972b0ac9208b55c1",
+          "source_fingerprint": "a00bc4c5670ecb33a32dd99a724e6b8b5b25a063137be0b2dc24c577e6ffcd20"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE44dHY2X29EaWEwOXRwSllTZVhSaHZIbl90TGZQaU5WNGVVS3dCV2VVVUt5OUROWmRNRHhnWl9tVDE1cFJ6eEIyT0RjRTdUVkJLVkpCejRJQ1hxYXdsR2EwcXVpX25zWndLRVhEYy1RXzg2ZE1nRjJTa1ZkVjc4TWM?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118375,9 +118571,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "0d4a164bbd33f0f1b05cf1d2a73642e170217fc07d67c222d8584c8843026996",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "3e0ed99ccf5a20f3dfa411b6",
+          "source_fingerprint": "d98c9de9c04c001d65ddef434064ebff7b72ec051f3a299e21bcf89cf5d75750"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE40MkpVRktFbFk3Q1c5OGVMRkdDSnh3S3dSNlRPMG5SVEdkNE9KN21LQ29GY0tOQVNPYWdnSzhvc2RtdUxYcDYwZkNuMm5ZeUJRQUFoNjRSX0RYRVZtOGtYNkJPYWctUnJ5TEVrbkE3aWFxNUhYYUxGQVpzTXdzRVU?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118433,9 +118636,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "51096b3e81a524a3f2d92aaf099410be6f0fc19cb80711a0c60a3f987e6e8235",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "3d79e3ee3c1fe19d36f11d6f",
+          "source_fingerprint": "81687f091a03b9f18f3a2938867a043da7cb7cdbad8d39071d58f3a7cf42b89c"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BS1YySl9DdnMzZGVhdXgtd1M4RFNpTXE4ZjNTLWNNbE5vTGF2bElSakNUT3VWOHlMMi1xV2tEZTVkNDdXSW9oTkpKbGlPSDFCOWYtTno1XzllZw?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118452,9 +118662,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "fd72340557e2e250ea97a43b617ce5f782026672e25b2a73ec624b6ae68e6aad",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "6d01e6f4cb780f1267e25dae",
+          "source_fingerprint": "f838efed1da7f21d063fc9df18ebc726790cef7345b2c93d07d8c321dfa8082e"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE55Q2k0Q3Vnc1BUd1BMLTdtZS1OTWRLMW1VbmNKNnZyMFB1b2ZNSWVnMEhNUkFlQ2NZeC1oTE5iTmE2OEJIb1BPWWZzblA2LVdndWFmWlE5WlpfVWNMd3Q4YVFJb2gzSkZPanp5QnMtZTJyWUo1NjZxVTdzTUM3Vzg?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118568,9 +118785,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "021ccc94ad9978c54ab7f6fc66a2514a1131afd9dd322387e2b4f451e46b7c4d",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "cd2f014df027f85f8d7d36f2",
+          "source_fingerprint": "e8698f9d573871327f93768a74014dd7bc7c57a32d3a6e3b05d7e2d49b9e2dd7"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MYTY3NG1RX3BjMllva3dpNFBkekJSclllMWoxR2YzaTROQlRwNk0yLVIwV1A5d1BBVE14OFhiR0tuR2M0VGhCeUxxTDNUUVk0UDROZ29FdGM5TlFyYlpCbERmTWl5QQ?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118587,9 +118811,16 @@
         "collection_role": "primary"
       },
       "source_fingerprint": "25ff05c497cbff289307977108722bcb09c3a4cd4f4f92e7006379a43576378b",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "721af6f790957b619410660c",
+          "source_fingerprint": "7a6f6f4053f6f37e1c19968fdc65785176f05f58c54b4a26b016e44b1e80d3a5"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wSnBlSDJmMmhiYjduWm5LT1dyRTZFYWpmNDlKUU5nVzVQb0pSck0zaEZmWU5yZmk5WHp6S2NleGg5RWVLLWI0YWJqNjRtdENYZFZvSDdmd2dVY085N0dVZWlYUk1kTnc?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118630,12 +118861,30 @@
       "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZU90Tl9jQ0VqUzlWUVdmeW5PeTdjbzZDRTNNV0RSUW5iSm9lZS1iSGZHay13QUNFbFBCRG9KbVlaZnExWWI0RjdUZnNPWEJ0cWFmZk5GNGJrUQ?oc=5": {
-      "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
-      "source_history": [],
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [
+        {
+          "article": {
+            "title": "札幌市の環境債、札証ESGに上場 発行額50億円、太陽光導入やLED化に - 北海道新聞デジタル",
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZU90Tl9jQ0VqUzlWUVdmeW5PeTdjbzZDRTNNV0RSUW5iSm9lZS1iSGZHay13QUNFbFBCRG9KbVlaZnExWWI0RjdUZnNPWEJ0cWFmZk5GNGJrUQ?oc=5",
+            "published": "Thu, 26 Nov 2026 08:33:04 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZU90Tl9jQ0VqUzlWUVdmeW5PeTdjbzZDRTNNV0RSUW5iSm9lZS1iSGZHay13QUNFbFBCRG9KbVlaZnExWWI0RjdUZnNPWEJ0cWFmZk5GNGJrUQ?oc=5\" target=\"_blank\">札幌市の環境債、札証ESGに上場 発行額50億円、太陽光導入やLED化に</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+            "rss_source": {
+              "name": "北海道新聞デジタル",
+              "url": "https://www.hokkaido-np.co.jp"
+            },
+            "collection_role": "primary"
+          },
+          "status": "queued",
+          "reason": "needs_classification",
+          "last_seen_at": "2026-11-26T09:34:40.125378+00:00",
+          "downstream_waiting": []
+        }
+      ],
       "article": {
         "title": "札幌市の環境債、札証ESGに上場 発行額50億円、太陽光導入やLED化に - 北海道新聞デジタル",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZU90Tl9jQ0VqUzlWUVdmeW5PeTdjbzZDRTNNV0RSUW5iSm9lZS1iSGZHay13QUNFbFBCRG9KbVlaZnExWWI0RjdUZnNPWEJ0cWFmZk5GNGJrUQ?oc=5",
-        "published": "Thu, 26 Nov 2026 08:33:04 GMT",
+        "published": "Thu, 26 Nov 2026 07:22:07 GMT",
         "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZU90Tl9jQ0VqUzlWUVdmeW5PeTdjbzZDRTNNV0RSUW5iSm9lZS1iSGZHay13QUNFbFBCRG9KbVlaZnExWWI0RjdUZnNPWEJ0cWFmZk5GNGJrUQ?oc=5\" target=\"_blank\">札幌市の環境債、札証ESGに上場 発行額50億円、太陽光導入やLED化に</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
         "rss_source": {
           "name": "北海道新聞デジタル",
@@ -118643,10 +118892,10 @@
         },
         "collection_role": "primary"
       },
-      "source_fingerprint": "c37a8849181b366c2ee690ea63a7f4026c34709cf8f65bcd788b0b41d1543434",
+      "source_fingerprint": "348453fb928e2330450c7e955974006b7651e1d6b4af1bac245d8a57cc122408",
       "status": "queued",
       "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0V3FlMmpSZW85QWJNcG1taXNLVmNwSTdBclpzdmlmdURXYktWejdLQ1JOYkEtWmFWV3JTc2pvdkh1X2RrRkRrT2FoMGM0UWZNZzdJdlRyYVZiTnlya2VhV2VJMUgzOUtoZm9kT2hPOVBnNjFyR3RvUDdoc3UxbGc?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118664,9 +118913,16 @@
         "collection_reason": "original_unconfirmed_or_unavailable"
       },
       "source_fingerprint": "f947d7f9bb6c9ed249e7db7c3addac1c8a507814519f36c111e01c2df1b9ed44",
-      "status": "queued",
-      "reason": "needs_classification",
-      "last_seen_at": "2026-11-26T09:34:40.125378+00:00"
+      "status": "downstream_waiting",
+      "reason": "unchanged_downstream_source",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "downstream_waiting": [
+        {
+          "stage": "status_generation",
+          "group_key": "27245eb8eb123b491a52c889",
+          "source_fingerprint": "3a8598d14c414c0a4a26e1097c633523c2739180c490cdb029d00c88fba6c58a"
+        }
+      ]
     },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxONEliWVpQVkM1ZzdvRWZaZHR3WlZnNk9UOE1zS1BmWEUyZFR0SnlDYW5WMkVWRHQzU0gxYTYtSENWQU03cklwNTRaQVVSZllBNlU4dVhTVGhWYWJoMEF3eWFtTDR1VGFyQmxkd1BXWkJBSnFXVEc5Xzc3TzR5d2lZenBCNF9mMEI2Y3c?oc=5": {
       "first_seen_at": "2026-11-26T09:34:40.125378+00:00",
@@ -118784,18 +119040,22 @@
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jS2lkS1RKYUJLLVU2aXpyTFRQeWwtZHpLc0drdUJSa2p2amx0SUJRcV9sX096dFpXQzhNaFhxVlNQNUtXcHFYUEhqTGRlUTZucktfSGtDamV2SlZma0RlN3VxVkhxa3l0NFNiUkUzbDh5ZmU3VTRYMjVhbTJuZXM?oc=5": {
       "article": {
-        "title": "ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止に〈北海道・札幌市保健所〉 - Yahoo!ニュース",
+        "title": "ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止―受水槽にヒビ確認…何らかの原因で汚染された水などが混入か〈北海道・札幌市保健所〉 - Yahoo!ニュース",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jS2lkS1RKYUJLLVU2aXpyTFRQeWwtZHpLc0drdUJSa2p2amx0SUJRcV9sX096dFpXQzhNaFhxVlNQNUtXcHFYUEhqTGRlUTZucktfSGtDamV2SlZma0RlN3VxVkhxa3l0NFNiUkUzbDh5ZmU3VTRYMjVhbTJuZXM?oc=5",
         "published": "Thu, 26 Nov 2026 07:11:01 GMT",
-        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9jS2lkS1RKYUJLLVU2aXpyTFRQeWwtZHpLc0drdUJSa2p2amx0SUJRcV9sX096dFpXQzhNaFhxVlNQNUtXcHFYUEhqTGRlUTZucktfSGtDamV2SlZma0RlN3VxVkhxa3l0NFNiUkUzbDh5ZmU3VTRYMjVhbTJuZXM?oc=5\" target=\"_blank\">ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止に〈北海道・札幌市保健所〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9jS2lkS1RKYUJLLVU2aXpyTFRQeWwtZHpLc0drdUJSa2p2amx0SUJRcV9sX096dFpXQzhNaFhxVlNQNUtXcHFYUEhqTGRlUTZucktfSGtDamV2SlZma0RlN3VxVkhxa3l0NFNiUkUzbDh5ZmU3VTRYMjVhbTJuZXM?oc=5\" target=\"_blank\">ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止―受水槽にヒビ確認…何らかの原因で汚染された水などが混入か〈北海道・札幌市保健所〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBja0VoQ0J2czdUTGQ0SnJsSkQtcXNLWTBNdXVDdEE0eWdtcklqZ1l0M3EzZkJqdHRiSFhkU2g3eU44QVdwaVNrZmI5dkU5WXg4dGtPSlZWWQ?oc=5"
+      "status": "queued",
+      "reason": "needs_classification",
+      "representative_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBja0VoQ0J2czdUTGQ0SnJsSkQtcXNLWTBNdXVDdEE0eWdtcklqZ1l0M3EzZkJqdHRiSFhkU2g3eU44QVdwaVNrZmI5dkU5WXg4dGtPSlZWWQ?oc=5",
+      "source_fingerprint": "5636c50f957406a24574f5042a54dcdb71675d7f6cfcb6a75bfd8bb37f522ee2",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NRkJaNXA0X1dlLTc4a1Z6UWE0dC05bVNEek5hVWNGTU1HX3ozTjN6dmZLUWhJaWhBUExTVjYzZjFQVlFEcG9Ta2hLNTYxR0N3eDNudjNacWxJeFBzVXVYSzY2WWVqdUwwektoS0pfMmNON1h6UDZ2TkRReUhqWjA?oc=5": {
       "article": {
@@ -118810,7 +119070,7 @@
       },
       "status": "duplicate_source",
       "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QMlRFM1ExM1BTNVNob24wemNnNTRxRm0xanlHdkl1Mkd6Y2ZWT3ZBMFU4QnV5WGtlS21STG41dWRHaEFFc0hWamI2NDJ0WFpzUm9kdzdaR2I2QQ?oc=5"
+      "representative_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzVVQ2WnR4cFF1MTJtZHFFY1JxVko5Z1l5X3BrUHBRbHBLN25kWDh4X2s3TXlWRjBRbEoyU0R1RUNuMmFwSVFzVGhCa0I1STF5NFYzSEtwUQ?oc=5"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE11NmlTWlBGSjZFWkFPU29ZQ1hBNW9zZ2lqQkxqd3FsaXQ4dnJYZl9PUEV5U2I2UEk3LXRwZjBXSFduWnJxaWlLUWlZZ3Y4SzZuV1o1am5HMW1LOU5RTUp4dmJheGpuQjF2MGR0c1pfZlQzOEV5MjJWTEpIeEJMaTA?oc=5": {
       "article": {
@@ -118821,11 +119081,15 @@
         "rss_source": {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp"
-        }
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
       },
-      "status": "duplicate_source",
-      "reason": "exact_headline_original_available",
-      "representative_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40MkpVRktFbFk3Q1c5OGVMRkdDSnh3S3dSNlRPMG5SVEdkNE9KN21LQ29GY0tOQVNPYWdnSzhvc2RtdUxYcDYwZkNuMm5ZeUJRQUFoNjRSX0RYRVZtOGtYNkJPYWctUnJ5TEVrbkE3aWFxNUhYYUxGQVpzTXdzRVU?oc=5"
+      "status": "queued",
+      "reason": "needs_classification",
+      "representative_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40MkpVRktFbFk3Q1c5OGVMRkdDSnh3S3dSNlRPMG5SVEdkNE9KN21LQ29GY0tOQVNPYWdnSzhvc2RtdUxYcDYwZkNuMm5ZeUJRQUFoNjRSX0RYRVZtOGtYNkJPYWctUnJ5TEVrbkE3aWFxNUhYYUxGQVpzTXdzRVU?oc=5",
+      "source_fingerprint": "d52782e6257f005dfd71bc643eaf82e5488627135e09a4804d1f248967518244",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
     },
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdEV6WHhVdDBVRC1ucGNEa2hSb0c4Vl9pekRYRXJoUnpLZEpEVG1PblY0V0VVaHktVEtzWEVBRjVDOWZfa29aamt3NlNTZ0tTOWpXMDhNWEt4MW1vRWxMYzlFQ3VPNFBIYnEwNHJrTkJtVE41Uk9JNkl4RkRCSFBEaGtDMDR2X2VVWjZRYTl3?oc=5": {
       "article": {
@@ -118841,6 +119105,987 @@
       "status": "duplicate_source",
       "reason": "exact_headline_original_available",
       "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zU0UyRGlzVjBzR1lGbmpZYU1CNjdjcHhDRy1nVEhtZDc0dEZhTEt1VEhzQmpjdG1JYktYRW83OTBFZ0hyVndxV25DeHJEYTkyWTdxQ0w4eGxLQQ?oc=5"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3RDRCdHhpQl9oVVVIVzhDRVRTd1QycUdFbHVqSkVQYzAxZ1JVSWVtVkZBVzRsNVhxSGNNRVNNVzE5QUZsMF9vRzExdGFpMVUxeldkNWxDZ19wUQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "【独自】札幌市夜間急病センター、訪日外国人の診療費3倍 対応経費かさむ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3RDRCdHhpQl9oVVVIVzhDRVRTd1QycUdFbHVqSkVQYzAxZ1JVSWVtVkZBVzRsNVhxSGNNRVNNVzE5QUZsMF9vRzExdGFpMVUxeldkNWxDZ19wUQ?oc=5",
+        "published": "Thu, 26 Nov 2026 07:10:51 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3RDRCdHhpQl9oVVVIVzhDRVRTd1QycUdFbHVqSkVQYzAxZ1JVSWVtVkZBVzRsNVhxSGNNRVNNVzE5QUZsMF9vRzExdGFpMVUxeldkNWxDZ19wUQ?oc=5\" target=\"_blank\">【独自】札幌市夜間急病センター、訪日外国人の診療費3倍 対応経費かさむ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "d352c4c763513c2063beba5028769585249f46379166bb00da218db9545c83e6",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50MDFzQWxUQlZnQkkzNjRJRWRDRHctakNMbEFhZmJic2FoU1k5c2tzVWZlOGhGWXlZQkFnb0t6clN1Ti1pUmJ4UHh0elk4T3UxNW84dTUxR2VqZw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌のコーヒー文化記録 著者2人 来夏出版へＣＦ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50MDFzQWxUQlZnQkkzNjRJRWRDRHctakNMbEFhZmJic2FoU1k5c2tzVWZlOGhGWXlZQkFnb0t6clN1Ti1pUmJ4UHh0elk4T3UxNW84dTUxR2VqZw?oc=5",
+        "published": "Thu, 26 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE50MDFzQWxUQlZnQkkzNjRJRWRDRHctakNMbEFhZmJic2FoU1k5c2tzVWZlOGhGWXlZQkFnb0t6clN1Ti1pUmJ4UHh0elk4T3UxNW84dTUxR2VqZw?oc=5\" target=\"_blank\">札幌のコーヒー文化記録 著者2人 来夏出版へＣＦ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "f20773560e3a94b58056909065b9c571533d9e9d95553b3a39931ff6b8cf4b4f",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ud3RaUDU2RWJlUVRtLUtGcXhsd1cxVGJBUGdzb1NvX2lPVjZVaDNwak13N2R5YzRSamJXRDBib1NtVUNxbEgtdFU0RTI4ZVZ5OExxdFhCeEpYdw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "モルック愛好家 普及拡大に期待 札幌で28年 世界大会 出場目指し練習 国際交流、文化知る機会に - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ud3RaUDU2RWJlUVRtLUtGcXhsd1cxVGJBUGdzb1NvX2lPVjZVaDNwak13N2R5YzRSamJXRDBib1NtVUNxbEgtdFU0RTI4ZVZ5OExxdFhCeEpYdw?oc=5",
+        "published": "Thu, 26 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ud3RaUDU2RWJlUVRtLUtGcXhsd1cxVGJBUGdzb1NvX2lPVjZVaDNwak13N2R5YzRSamJXRDBib1NtVUNxbEgtdFU0RTI4ZVZ5OExxdFhCeEpYdw?oc=5\" target=\"_blank\">モルック愛好家 普及拡大に期待 札幌で28年 世界大会 出場目指し練習 国際交流、文化知る機会に</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "1be01e2eb4dfe0440c97d1bfa8bb5e6af3bd11b1f90fbd62217642c28de37fa9",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfMHR2bXFoTFBqcDktb01ULTVHTTM4S1BPaFVwLUFBTlhEZlg5ZjJXbHVVTEw3Q0E5RThYbkFBMFNaZHFDUlVIUXdQd2ljb19kbzdOSzZoeFNNTTg?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・ススキノ５店舗でノロ検出 - 下野新聞社",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfMHR2bXFoTFBqcDktb01ULTVHTTM4S1BPaFVwLUFBTlhEZlg5ZjJXbHVVTEw3Q0E5RThYbkFBMFNaZHFDUlVIUXdQd2ljb19kbzdOSzZoeFNNTTg?oc=5",
+        "published": "Thu, 26 Nov 2026 10:43:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfMHR2bXFoTFBqcDktb01ULTVHTTM4S1BPaFVwLUFBTlhEZlg5ZjJXbHVVTEw3Q0E5RThYbkFBMFNaZHFDUlVIUXdQd2ljb19kbzdOSzZoeFNNTTg?oc=5\" target=\"_blank\">札幌・ススキノ５店舗でノロ検出</a>  <font color=\"#6f6f6f\">下野新聞社</font>",
+        "rss_source": {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "a5db0a4c660cb51fb4965b39769df3006a0afb4ef599ecc1b9b04f267381ed57",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkRUhSUXJveVRzYTc1THJ5bjVmUUFkQUVlUXJwd25oMjEyZlVIb0I3Sk5RNHYtMW1DbEVaYXpHZW5UUkhXRURBMGJrRGpXYWV5VlBxS0FR?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・ススキノ５店舗でノロ検出 １６人症状、ビル給水影響か | | 全国のニュース - 佐賀新聞",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkRUhSUXJveVRzYTc1THJ5bjVmUUFkQUVlUXJwd25oMjEyZlVIb0I3Sk5RNHYtMW1DbEVaYXpHZW5UUkhXRURBMGJrRGpXYWV5VlBxS0FR?oc=5",
+        "published": "Thu, 26 Nov 2026 10:43:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkRUhSUXJveVRzYTc1THJ5bjVmUUFkQUVlUXJwd25oMjEyZlVIb0I3Sk5RNHYtMW1DbEVaYXpHZW5UUkhXRURBMGJrRGpXYWV5VlBxS0FR?oc=5\" target=\"_blank\">札幌・ススキノ５店舗でノロ検出 １６人症状、ビル給水影響か | | 全国のニュース</a>  <font color=\"#6f6f6f\">佐賀新聞</font>",
+        "rss_source": {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "56650c770dc67f37dd02d6618d6af9de774769dce45e693b30d97593bcf8e1aa",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fcnlRRDdkSk5weFR2a0tMREFfcmp1T3N6MWtETmJVM3B0amVsbER1WENiN0pGcWdhek5iS21QdzlEbEhJZDgwWi1aaG5CVlllU0FNS1RYQlZkT1R6Z2xGdHl2a3JRRFFWTng3bUkzd3BuSUMzbXM2Tjk5el82b2s?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌市が住民税非課税世帯に5000円給付へ 対象は33万～35万世帯…物価高対策で来年3月末めどに - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fcnlRRDdkSk5weFR2a0tMREFfcmp1T3N6MWtETmJVM3B0amVsbER1WENiN0pGcWdhek5iS21QdzlEbEhJZDgwWi1aaG5CVlllU0FNS1RYQlZkT1R6Z2xGdHl2a3JRRFFWTng3bUkzd3BuSUMzbXM2Tjk5el82b2s?oc=5",
+        "published": "Thu, 26 Nov 2026 11:05:19 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fcnlRRDdkSk5weFR2a0tMREFfcmp1T3N6MWtETmJVM3B0amVsbER1WENiN0pGcWdhek5iS21QdzlEbEhJZDgwWi1aaG5CVlllU0FNS1RYQlZkT1R6Z2xGdHl2a3JRRFFWTng3bUkzd3BuSUMzbXM2Tjk5el82b2s?oc=5\" target=\"_blank\">札幌市が住民税非課税世帯に5000円給付へ 対象は33万～35万世帯…物価高対策で来年3月末めどに</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "d9b27e78e4ce5c66c5e282ee64fb266e89c2372ff549302b8ed36769bc683b6e",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9feFhsRjNWVUZENGRtc1hZNHlweDNvYXA3aGRyUEItZTZ6VnE3TVB3d1RpXzBtUURiTzN3b29TUjJFdE5rbmEzWWJ1Ujd0TUJVWWVGWC1lOFpvdw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "物価高騰対策 住民税非課税世帯に現金５０００円の給付検討 年度内給付目指し調整 札幌市 - HTB北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9feFhsRjNWVUZENGRtc1hZNHlweDNvYXA3aGRyUEItZTZ6VnE3TVB3d1RpXzBtUURiTzN3b29TUjJFdE5rbmEzWWJ1Ujd0TUJVWWVGWC1lOFpvdw?oc=5",
+        "published": "Thu, 26 Nov 2026 09:55:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9feFhsRjNWVUZENGRtc1hZNHlweDNvYXA3aGRyUEItZTZ6VnE3TVB3d1RpXzBtUURiTzN3b29TUjJFdE5rbmEzWWJ1Ujd0TUJVWWVGWC1lOFpvdw?oc=5\" target=\"_blank\">物価高騰対策 住民税非課税世帯に現金５０００円の給付検討 年度内給付目指し調整 札幌市</a>  <font color=\"#6f6f6f\">HTB北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "b2b05c5514e3a85894fb3379e02db168d19f7deb21d738118fd552531a9fc054",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZU1hIWDZSNzZ1MWtoZnprT0Y3MVU5UmNiY1VCcFFoZFpXbVo0bTZmZUhqRjhnVWxpd251bVE4eFZQOEFFaUpWSmp3VTVfcjgyQ25QNE1qQS1tdG5HX0lZcG5MWHlFeDltQ09vNTBaSHlWQlRxY3pFd1liR2NFNWc?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "バー店内遺体遺棄 被告「殺人はしていません」 札幌地裁初公判（毎日新聞） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZU1hIWDZSNzZ1MWtoZnprT0Y3MVU5UmNiY1VCcFFoZFpXbVo0bTZmZUhqRjhnVWxpd251bVE4eFZQOEFFaUpWSmp3VTVfcjgyQ25QNE1qQS1tdG5HX0lZcG5MWHlFeDltQ09vNTBaSHlWQlRxY3pFd1liR2NFNWc?oc=5",
+        "published": "Thu, 26 Nov 2026 11:04:30 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZU1hIWDZSNzZ1MWtoZnprT0Y3MVU5UmNiY1VCcFFoZFpXbVo0bTZmZUhqRjhnVWxpd251bVE4eFZQOEFFaUpWSmp3VTVfcjgyQ25QNE1qQS1tdG5HX0lZcG5MWHlFeDltQ09vNTBaSHlWQlRxY3pFd1liR2NFNWc?oc=5\" target=\"_blank\">バー店内遺体遺棄 被告「殺人はしていません」 札幌地裁初公判（毎日新聞）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "00ee8fe741b58d6f364ab00656f577c778dee6ca0e5309ee48b7c2a3d036f2ef",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKRnA2VVpBRWx1OWQzZ3hqeWswZHRRM2o3dGdkcU05YTBDa2xocFdmYVJNa3RFallMVjlLVWdGSTdyRWptdF9iN1BIRi1ncWh3YU1tZkhWUF9vUQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "日高のバー壁に女性遺体 被告が殺人罪否認、遺棄罪は認める 札幌地裁初公判 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKRnA2VVpBRWx1OWQzZ3hqeWswZHRRM2o3dGdkcU05YTBDa2xocFdmYVJNa3RFallMVjlLVWdGSTdyRWptdF9iN1BIRi1ncWh3YU1tZkhWUF9vUQ?oc=5",
+        "published": "Thu, 26 Nov 2026 01:08:30 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKRnA2VVpBRWx1OWQzZ3hqeWswZHRRM2o3dGdkcU05YTBDa2xocFdmYVJNa3RFallMVjlLVWdGSTdyRWptdF9iN1BIRi1ncWh3YU1tZkhWUF9vUQ?oc=5\" target=\"_blank\">日高のバー壁に女性遺体 被告が殺人罪否認、遺棄罪は認める 札幌地裁初公判</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "500d7e877657957ce217468dbd924a26a1caf5da28eaacd312fda381398e8440",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iV0FHUGlEZGFQT2Rja1VuOTFFbzVqNkljdnhaaWJPMy1keVJVR3RadHdaUXBTV1RncnB3cXdwWmZxYlhmazlvZTh5WHd0b0pTZEN3SGFhck55TkdTVXpPTF9qOFpKYXFBTmFRaDlPQ1dNNmpCamlNdVU1ZFVNaGM?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "空き瓶などが入った袋で母親（80）の頭を殴打 母親は頭から出血 女（53）を逮捕 札幌市 - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iV0FHUGlEZGFQT2Rja1VuOTFFbzVqNkljdnhaaWJPMy1keVJVR3RadHdaUXBTV1RncnB3cXdwWmZxYlhmazlvZTh5WHd0b0pTZEN3SGFhck55TkdTVXpPTF9qOFpKYXFBTmFRaDlPQ1dNNmpCamlNdVU1ZFVNaGM?oc=5",
+        "published": "Thu, 26 Nov 2026 19:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1iV0FHUGlEZGFQT2Rja1VuOTFFbzVqNkljdnhaaWJPMy1keVJVR3RadHdaUXBTV1RncnB3cXdwWmZxYlhmazlvZTh5WHd0b0pTZEN3SGFhck55TkdTVXpPTF9qOFpKYXFBTmFRaDlPQ1dNNmpCamlNdVU1ZFVNaGM?oc=5\" target=\"_blank\">空き瓶などが入った袋で母親（80）の頭を殴打 母親は頭から出血 女（53）を逮捕 札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "284abcefe388d997e13e205fe752023a98a525c8e4475f3692b015e19590f406",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzVVQ2WnR4cFF1MTJtZHFFY1JxVko5Z1l5X3BrUHBRbHBLN25kWDh4X2s3TXlWRjBRbEoyU0R1RUNuMmFwSVFzVGhCa0I1STF5NFYzSEtwUQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "動物220頭残るノースサファリサッポロ 移転候補地に北海道京極町を検討 新会社が公有地活用を打診 札幌市 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzVVQ2WnR4cFF1MTJtZHFFY1JxVko5Z1l5X3BrUHBRbHBLN25kWDh4X2s3TXlWRjBRbEoyU0R1RUNuMmFwSVFzVGhCa0I1STF5NFYzSEtwUQ?oc=5",
+        "published": "Thu, 26 Nov 2026 01:11:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzVVQ2WnR4cFF1MTJtZHFFY1JxVko5Z1l5X3BrUHBRbHBLN25kWDh4X2s3TXlWRjBRbEoyU0R1RUNuMmFwSVFzVGhCa0I1STF5NFYzSEtwUQ?oc=5\" target=\"_blank\">動物220頭残るノースサファリサッポロ 移転候補地に北海道京極町を検討 新会社が公有地活用を打診 札幌市</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "8087eb738ac14437345817eba60a15845249996595c77070c36c27e77f56d545",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OazFfdzlrQlFZWG9KRFJ3SjB0bUcwWVhqTHd4czV1VFcxUUw1cEtMTENJcENTdFRhOUlLYVBRX3M3cXJkM25BUUp3bFpRTzhKVUNuaFN3MEVhVDhONlpORjlmTUJLYXQ3ZXNFNQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "北海道滝上町、ドローンでヒグマ監視 北海道・札幌市が12月に「AI活用セミナー」 - 日本経済新聞",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OazFfdzlrQlFZWG9KRFJ3SjB0bUcwWVhqTHd4czV1VFcxUUw1cEtMTENJcENTdFRhOUlLYVBRX3M3cXJkM25BUUp3bFpRTzhKVUNuaFN3MEVhVDhONlpORjlmTUJLYXQ3ZXNFNQ?oc=5",
+        "published": "Thu, 26 Nov 2026 10:00:05 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE1OazFfdzlrQlFZWG9KRFJ3SjB0bUcwWVhqTHd4czV1VFcxUUw1cEtMTENJcENTdFRhOUlLYVBRX3M3cXJkM25BUUp3bFpRTzhKVUNuaFN3MEVhVDhONlpORjlmTUJLYXQ3ZXNFNQ?oc=5\" target=\"_blank\">北海道滝上町、ドローンでヒグマ監視 北海道・札幌市が12月に「AI活用セミナー」</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+        "rss_source": {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "e1878b7051257378ea8c7f41697329f3626094d0f32db6cce1d6fae0ff5e3fed",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHbkFWU1dLdUlIV3NTVHUzalJjLUtQSzdiR3dNSlJLbTExcTVRMzludWw5RS1jTDQtYzhhY1h3QXdkZmhOWWtidDllMlpZRHIwb09ZTy16bzVIeHFOZTJpZGFYSQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌延伸、事業費縮減策を提言へ 北海道新幹線で国交省有識者会議 - 時事ドットコム",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHbkFWU1dLdUlIV3NTVHUzalJjLUtQSzdiR3dNSlJLbTExcTVRMzludWw5RS1jTDQtYzhhY1h3QXdkZmhOWWtidDllMlpZRHIwb09ZTy16bzVIeHFOZTJpZGFYSQ?oc=5",
+        "published": "Thu, 26 Nov 2026 10:45:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHbkFWU1dLdUlIV3NTVHUzalJjLUtQSzdiR3dNSlJLbTExcTVRMzludWw5RS1jTDQtYzhhY1h3QXdkZmhOWWtidDllMlpZRHIwb09ZTy16bzVIeHFOZTJpZGFYSQ?oc=5\" target=\"_blank\">札幌延伸、事業費縮減策を提言へ 北海道新幹線で国交省有識者会議</a>  <font color=\"#6f6f6f\">時事ドットコム</font>",
+        "rss_source": {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "fa89205ebc4b3305820459a5a1184a981dd8f6ec40e5699f4a2098e5bc4284b7",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTE0ycjIycnZVT2YzV21CN1RaaGlFOWgzaUcwNmVDc0lRUE96UUhxdHJlN1JxVzFtYUVzSlJ2dGZteEwzWnZiYnBSbzNtc0tTRzNLSjNGNWRyZm9IU2FlSXhPVXRzRnVKdlRmV20wbV9R?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "バー店内遺体遺棄 被告「殺人はしていません」 札幌地裁初公判 - au Webポータル",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0ycjIycnZVT2YzV21CN1RaaGlFOWgzaUcwNmVDc0lRUE96UUhxdHJlN1JxVzFtYUVzSlJ2dGZteEwzWnZiYnBSbzNtc0tTRzNLSjNGNWRyZm9IU2FlSXhPVXRzRnVKdlRmV20wbV9R?oc=5",
+        "published": "Thu, 26 Nov 2026 11:04:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE0ycjIycnZVT2YzV21CN1RaaGlFOWgzaUcwNmVDc0lRUE96UUhxdHJlN1JxVzFtYUVzSlJ2dGZteEwzWnZiYnBSbzNtc0tTRzNLSjNGNWRyZm9IU2FlSXhPVXRzRnVKdlRmV20wbV9R?oc=5\" target=\"_blank\">バー店内遺体遺棄 被告「殺人はしていません」 札幌地裁初公判</a>  <font color=\"#6f6f6f\">au Webポータル</font>",
+        "rss_source": {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "76918774ca288e77c5aa27fb605c2e4135a825bf2d94f772328e5b6778ffe4a0",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5pYUxtNlRDWE9jTHE5TU96MWFpZldYWGFfQ2dhNjFZbkhNYzVKX1kwcmVYUnFURDdQOGJjRG1BY0lQdmY5aWJkRmV3T2lxUllQaUs5QmlEYw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "飼い犬にエサや水を与えず衰弱死させたか―自称・風俗店従業員の26歳女を逮捕「私の行動が原因で起きたことです」〈札幌市〉 - UHB 北海道文化放送",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5pYUxtNlRDWE9jTHE5TU96MWFpZldYWGFfQ2dhNjFZbkhNYzVKX1kwcmVYUnFURDdQOGJjRG1BY0lQdmY5aWJkRmV3T2lxUllQaUs5QmlEYw?oc=5",
+        "published": "Wed, 25 Nov 2026 23:17:55 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE5pYUxtNlRDWE9jTHE5TU96MWFpZldYWGFfQ2dhNjFZbkhNYzVKX1kwcmVYUnFURDdQOGJjRG1BY0lQdmY5aWJkRmV3T2lxUllQaUs5QmlEYw?oc=5\" target=\"_blank\">飼い犬にエサや水を与えず衰弱死させたか―自称・風俗店従業員の26歳女を逮捕「私の行動が原因で起きたことです」〈札幌市〉</a>  <font color=\"#6f6f6f\">UHB 北海道文化放送</font>",
+        "rss_source": {
+          "name": "UHB 北海道文化放送",
+          "url": "https://www.uhb.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "e44e8c6b373db11c7aa87f3dba2338498449cf0c23bb186f1e9d4e3a8982ae7b",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPamktNnZXSHpqbzNTNjZ0U2J6dUJSUmROWFlpQlljM2RVbnZUX1gwMVk1UDhaWkxiNFhURVF0dmktTkNqWGlQTHY3MF9wZGZNdVVWZXBIeW02V1FOdWVnN1I3VHR1YkU5VXI2dkpKdG1HWE5RMmF2eEEwc9IBgAFBVV95cUxPSmwzWVZjbUIyLTJHQlE4Uk4zV2lROXZTeDB4NU9BMjBMOHhTS0RJbmNhdUlUVHBfbUpGc0Q3V29SWHVXTWtCSkN6Wks0eVFZZHVnRXliclNaUW1BdEM3Z0VrV3g3NlA3MnZoc3dhbHRFbTFJVEY2cjdWMy0wMVRoYg?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌市が住民税非課税世帯に5000円給付へ　対象は33万〜35万世帯…物価高対策で来年3月末めどに - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPamktNnZXSHpqbzNTNjZ0U2J6dUJSUmROWFlpQlljM2RVbnZUX1gwMVk1UDhaWkxiNFhURVF0dmktTkNqWGlQTHY3MF9wZGZNdVVWZXBIeW02V1FOdWVnN1I3VHR1YkU5VXI2dkpKdG1HWE5RMmF2eEEwc9IBgAFBVV95cUxPSmwzWVZjbUIyLTJHQlE4Uk4zV2lROXZTeDB4NU9BMjBMOHhTS0RJbmNhdUlUVHBfbUpGc0Q3V29SWHVXTWtCSkN6Wks0eVFZZHVnRXliclNaUW1BdEM3Z0VrV3g3NlA3MnZoc3dhbHRFbTFJVEY2cjdWMy0wMVRoYg?oc=5",
+        "published": "Thu, 26 Nov 2026 11:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBPamktNnZXSHpqbzNTNjZ0U2J6dUJSUmROWFlpQlljM2RVbnZUX1gwMVk1UDhaWkxiNFhURVF0dmktTkNqWGlQTHY3MF9wZGZNdVVWZXBIeW02V1FOdWVnN1I3VHR1YkU5VXI2dkpKdG1HWE5RMmF2eEEwc9IBgAFBVV95cUxPSmwzWVZjbUIyLTJHQlE4Uk4zV2lROXZTeDB4NU9BMjBMOHhTS0RJbmNhdUlUVHBfbUpGc0Q3V29SWHVXTWtCSkN6Wks0eVFZZHVnRXliclNaUW1BdEM3Z0VrV3g3NlA3MnZoc3dhbHRFbTFJVEY2cjdWMy0wMVRoYg?oc=5\" target=\"_blank\">札幌市が住民税非課税世帯に5000円給付へ　対象は33万〜35万世帯…物価高対策で来年3月末めどに</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "source_fingerprint": "02b4cf7980ea2aaed492eafc58a547c9a9e47e28df9b34cea8933832ca0eb0a1",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iRGtYNUh4NTR3VGlDcjhieHVZaUJJNU9LQ3dWMlZiT1FyUHd5ZU9sVGphb296b0E3SEtVV0E5b3MxU3NsdGIyQ2tSd1BVMnRaUFN1R2trODJRSHhPREtqRGpUcmVsb2xP?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌で過ごす年末年始、料理する人にも休暇を。ずわい蟹や鉄板焼きビーフステーキ、親子で楽しむパフェづくり体験も！家族で楽しむディナーブッフェを大みそか・元日の2日間限定開催 - ニコニコニュース",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iRGtYNUh4NTR3VGlDcjhieHVZaUJJNU9LQ3dWMlZiT1FyUHd5ZU9sVGphb296b0E3SEtVV0E5b3MxU3NsdGIyQ2tSd1BVMnRaUFN1R2trODJRSHhPREtqRGpUcmVsb2xP?oc=5",
+        "published": "Thu, 26 Nov 2026 17:30:22 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iRGtYNUh4NTR3VGlDcjhieHVZaUJJNU9LQ3dWMlZiT1FyUHd5ZU9sVGphb296b0E3SEtVV0E5b3MxU3NsdGIyQ2tSd1BVMnRaUFN1R2trODJRSHhPREtqRGpUcmVsb2xP?oc=5\" target=\"_blank\">札幌で過ごす年末年始、料理する人にも休暇を。ずわい蟹や鉄板焼きビーフステーキ、親子で楽しむパフェづくり体験も！家族で楽しむディナーブッフェを大みそか・元日の2日間限定開催</a>  <font color=\"#6f6f6f\">ニコニコニュース</font>",
+        "rss_source": {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "a24dfaa6a077d7f0c7ef46c156111605ebce3619b3ea367bda0f88a4cd0bf906",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9od1J2aEQwTTZmQVVjVXhTTzlFQW9EZWhucnBkdE5HNk1ZdkRCMWIwQTViNU1BdWlSMXJYR1JzcmVjZi1xTkJkQjlxOTlEUjVJVXQ0TV9ES2I0WHhQa1Z3?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "〘IC閉鎖〙道央道 札幌南ICで緊急工事 下り線出口規制予定［26日23:30-27日05:00］ - 千葉テレビ放送株式会社",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9od1J2aEQwTTZmQVVjVXhTTzlFQW9EZWhucnBkdE5HNk1ZdkRCMWIwQTViNU1BdWlSMXJYR1JzcmVjZi1xTkJkQjlxOTlEUjVJVXQ0TV9ES2I0WHhQa1Z3?oc=5",
+        "published": "Thu, 26 Nov 2026 10:33:03 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9od1J2aEQwTTZmQVVjVXhTTzlFQW9EZWhucnBkdE5HNk1ZdkRCMWIwQTViNU1BdWlSMXJYR1JzcmVjZi1xTkJkQjlxOTlEUjVJVXQ0TV9ES2I0WHhQa1Z3?oc=5\" target=\"_blank\">〘IC閉鎖〙道央道 札幌南ICで緊急工事 下り線出口規制予定［26日23:30-27日05:00］</a>  <font color=\"#6f6f6f\">千葉テレビ放送株式会社</font>",
+        "rss_source": {
+          "name": "千葉テレビ放送株式会社",
+          "url": "https://www.chiba-tv.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "2bd3c5dd35468d63dde2c5fbd8042f3d6a385f22772d960b1a0097bb48524410",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OZ3dKdi1GNk0xWk1TR2VYMnJPMUJwRk5SeEJ5QUpnTVRPaFZhWXZEQnJpbUlaaXlacEVXV2V5Q0FJa2Nuek1KSmF3MDJpU2tkSGtna2tqUWFST20x?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "オグロプレーリードッグ「おはぎ」が死亡しました - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OZ3dKdi1GNk0xWk1TR2VYMnJPMUJwRk5SeEJ5QUpnTVRPaFZhWXZEQnJpbUlaaXlacEVXV2V5Q0FJa2Nuek1KSmF3MDJpU2tkSGtna2tqUWFST20x?oc=5",
+        "published": "Fri, 20 Nov 2026 08:42:06 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OZ3dKdi1GNk0xWk1TR2VYMnJPMUJwRk5SeEJ5QUpnTVRPaFZhWXZEQnJpbUlaaXlacEVXV2V5Q0FJa2Nuek1KSmF3MDJpU2tkSGtna2tqUWFST20x?oc=5\" target=\"_blank\">オグロプレーリードッグ「おはぎ」が死亡しました</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "a9658aac70cc8805e65e819bf83c675fadbd25742ac58a63b3866b45b2cc1cb0",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlZm5HMV91Y1M5RjBNbklDZDhwRldvMWxOMHExbUJrQXNkTjhpaU1BZ01wcXJJRVY5c1pQc2g5M25vcm1nWnQ2eHg3SWVFUnBSUzRTSldn?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "動物愛護管理センター（あいまる さっぽろ） - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlZm5HMV91Y1M5RjBNbklDZDhwRldvMWxOMHExbUJrQXNkTjhpaU1BZ01wcXJJRVY5c1pQc2g5M25vcm1nWnQ2eHg3SWVFUnBSUzRTSldn?oc=5",
+        "published": "Thu, 19 Nov 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlZm5HMV91Y1M5RjBNbklDZDhwRldvMWxOMHExbUJrQXNkTjhpaU1BZ01wcXJJRVY5c1pQc2g5M25vcm1nWnQ2eHg3SWVFUnBSUzRTSldn?oc=5\" target=\"_blank\">動物愛護管理センター（あいまる さっぽろ）</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "5def6589b51136a5dc14c7d9a85020c47778e6a0dc0bf0c610f540a6681d0227",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhcHlGM2Y3Wm1DNGJjZk9sYnpTeDUwd2trbFJjRVl2OUxKeGJyTjF4UlJPUnRnUi1Mekp1blZZaGdUTmlFbG5JTVdDNlcyaWZ2dWpTMA?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "インフルエンザ（定点あたり報告数、各区別報告数） - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhcHlGM2Y3Wm1DNGJjZk9sYnpTeDUwd2trbFJjRVl2OUxKeGJyTjF4UlJPUnRnUi1Mekp1blZZaGdUTmlFbG5JTVdDNlcyaWZ2dWpTMA?oc=5",
+        "published": "Mon, 16 Nov 2026 08:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhcHlGM2Y3Wm1DNGJjZk9sYnpTeDUwd2trbFJjRVl2OUxKeGJyTjF4UlJPUnRnUi1Mekp1blZZaGdUTmlFbG5JTVdDNlcyaWZ2dWpTMA?oc=5\" target=\"_blank\">インフルエンザ（定点あたり報告数、各区別報告数）</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "73021cc6c3806e9eeb84a22bd99309226c8922cfc5c31b2264ba696c5c5589cf",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PbWhxSEJ6NTd1ZWhCN2RLYS0zNlBCRXh3X1AtaUphWTl4WGxxbmtwX3JGMkxjNzF0QWdzQmVOcjRhX0FmdWVEUWNpNEo0ME12UkJzbEtVbFJPUQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PbWhxSEJ6NTd1ZWhCN2RLYS0zNlBCRXh3X1AtaUphWTl4WGxxbmtwX3JGMkxjNzF0QWdzQmVOcjRhX0FmdWVEUWNpNEo0ME12UkJzbEtVbFJPUQ?oc=5",
+        "published": "Thu, 26 Nov 2026 06:50:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PbWhxSEJ6NTd1ZWhCN2RLYS0zNlBCRXh3X1AtaUphWTl4WGxxbmtwX3JGMkxjNzF0QWdzQmVOcjRhX0FmdWVEUWNpNEo0ME12UkJzbEtVbFJPUQ?oc=5\" target=\"_blank\">【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "30d9d966258fed084eec0fc88f659e20aba8eb92a9a20ebed51b2d9a227e90a6",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4Z3FWUUJHcW16Tk44RDhqMmdSV0hfbjUxZWJrUUFmNG9rYTNiMEFzejM1Rnc5dEtmSTlYSnNIWGE3SFREaG1pazJkc3dyY2M2TTNEWmEweUQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "北海道への貢献たたえる 札幌で道新文化賞贈呈式 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4Z3FWUUJHcW16Tk44RDhqMmdSV0hfbjUxZWJrUUFmNG9rYTNiMEFzejM1Rnc5dEtmSTlYSnNIWGE3SFREaG1pazJkc3dyY2M2TTNEWmEweUQ?oc=5",
+        "published": "Thu, 26 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4Z3FWUUJHcW16Tk44RDhqMmdSV0hfbjUxZWJrUUFmNG9rYTNiMEFzejM1Rnc5dEtmSTlYSnNIWGE3SFREaG1pazJkc3dyY2M2TTNEWmEweUQ?oc=5\" target=\"_blank\">北海道への貢献たたえる 札幌で道新文化賞贈呈式</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "be8a02c5ffd1bedf3e05390e1cee27bc411bf173268df47146a360a6a34a1c37",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zZ3JFUkM2Z1hKZUJpWDBTaVlQSC05YTNwZm5aT3JhM2dPUTVYbnJUMWRwVE5ZQjhFRVJ1M0NTVXV2T005eW9DdGFhejB0UEY4R2VJZHZ1RzBSZw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌市、非課税世帯に5000円 物価高対策で方針 来年3月末までに - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zZ3JFUkM2Z1hKZUJpWDBTaVlQSC05YTNwZm5aT3JhM2dPUTVYbnJUMWRwVE5ZQjhFRVJ1M0NTVXV2T005eW9DdGFhejB0UEY4R2VJZHZ1RzBSZw?oc=5",
+        "published": "Thu, 26 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zZ3JFUkM2Z1hKZUJpWDBTaVlQSC05YTNwZm5aT3JhM2dPUTVYbnJUMWRwVE5ZQjhFRVJ1M0NTVXV2T005eW9DdGFhejB0UEY4R2VJZHZ1RzBSZw?oc=5\" target=\"_blank\">札幌市、非課税世帯に5000円 物価高対策で方針 来年3月末までに</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "28fa0b24a4617f833b6c6619a07ace41f121b3a7d2cefc750d04ec695ea57b03",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCVkhoZnp3TjY1d3ZtdlBjQ1I5U1U3RDZMVzB1QjlkZ2Q3NE9FbEpEVkVCTXJ2R2g1YzFTUTlNVUNmdUpxWk9WX3ZkVlg0RlBjcThYeTFoSDIzdw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "「安平町図鑑」で魅力発信 動画「札幌人」福津さん移住し制作、公開 収録スタジオ兼ねたカフェも - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCVkhoZnp3TjY1d3ZtdlBjQ1I5U1U3RDZMVzB1QjlkZ2Q3NE9FbEpEVkVCTXJ2R2g1YzFTUTlNVUNmdUpxWk9WX3ZkVlg0RlBjcThYeTFoSDIzdw?oc=5",
+        "published": "Thu, 26 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCVkhoZnp3TjY1d3ZtdlBjQ1I5U1U3RDZMVzB1QjlkZ2Q3NE9FbEpEVkVCTXJ2R2g1YzFTUTlNVUNmdUpxWk9WX3ZkVlg0RlBjcThYeTFoSDIzdw?oc=5\" target=\"_blank\">「安平町図鑑」で魅力発信 動画「札幌人」福津さん移住し制作、公開 収録スタジオ兼ねたカフェも</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "6346f8177a5121889e55dacf1ef4e2a027ae02695dd5229827fe984f8ce1f264",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MWE5ZREdCcXg1Zm9ETHpBQm9JdXVweF9QTzVhY180c0s4bmVDMkdCdUczbDE5dTNib211WVRmNFlTRGI5Z01VNzhGZzNOXzdHVExDX2E3OGlvT3lzRnBCcHJLcw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か | 北海道のニュース｜HBC北海道放送 (2ページ) - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MWE5ZREdCcXg1Zm9ETHpBQm9JdXVweF9QTzVhY180c0s4bmVDMkdCdUczbDE5dTNib211WVRmNFlTRGI5Z01VNzhGZzNOXzdHVExDX2E3OGlvT3lzRnBCcHJLcw?oc=5",
+        "published": "Thu, 26 Nov 2026 06:50:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MWE5ZREdCcXg1Zm9ETHpBQm9JdXVweF9QTzVhY180c0s4bmVDMkdCdUczbDE5dTNib211WVRmNFlTRGI5Z01VNzhGZzNOXzdHVExDX2E3OGlvT3lzRnBCcHJLcw?oc=5\" target=\"_blank\">【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か | 北海道のニュース｜HBC北海道放送 (2ページ)</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "bcd9c1801c73d5f9b02329c640826ab6aef39ed47b397ddaca4629dad09ac8a7",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE5aLXQ0eTNJd3JNVlpESldrU21IUjJqM1NKM1dLWi1zOHhwQjZUeFBteGczMzM0N2tBcFE4aEJ0RFBsYVUzMWdHZjZTd0Q2OEFzZm0tRVlYVFV3c0o5cnFuektaNm9HVDRXWEI0aTYxSU8wa3V0dlduOVhOTTRVWDQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "【ススキノの飲食店ビルで集団食中毒】水道水からノロウイルス検出…ビル内に水を供給する「受水槽」にひび確認、トイレの汚水がたまる「汚水槽」から水が混入か…客と従業員16人が嘔吐や発熱〈北海道札幌市〉（北海道ニュースUHB） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5aLXQ0eTNJd3JNVlpESldrU21IUjJqM1NKM1dLWi1zOHhwQjZUeFBteGczMzM0N2tBcFE4aEJ0RFBsYVUzMWdHZjZTd0Q2OEFzZm0tRVlYVFV3c0o5cnFuektaNm9HVDRXWEI0aTYxSU8wa3V0dlduOVhOTTRVWDQ?oc=5",
+        "published": "Thu, 26 Nov 2026 11:50:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5aLXQ0eTNJd3JNVlpESldrU21IUjJqM1NKM1dLWi1zOHhwQjZUeFBteGczMzM0N2tBcFE4aEJ0RFBsYVUzMWdHZjZTd0Q2OEFzZm0tRVlYVFV3c0o5cnFuektaNm9HVDRXWEI0aTYxSU8wa3V0dlduOVhOTTRVWDQ?oc=5\" target=\"_blank\">【ススキノの飲食店ビルで集団食中毒】水道水からノロウイルス検出…ビル内に水を供給する「受水槽」にひび確認、トイレの汚水がたまる「汚水槽」から水が混入か…客と従業員16人が嘔吐や発熱〈北海道札幌市〉（北海道ニュースUHB）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "8388f84787ff9e6dc54e3749c5c516806dc9f18b491e92d8ded4013ff19713b5",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCdENIRHAwYnNEOWdYMEViRGU5SWZBTDVxVlpzNFpvZnFwdHZmdDBvWm5uemE4N1gzZjZUYWVCVFlRaS1mT3lSM0lxSlI2YzZ6THZFM3RZdngxc2psUG9nSlR0T3k2TlRWOEtVWWVBMzgySjVweFFXbFVoc2ZfMnM?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・ススキノ5店舗でノロ検出 16人症状、ビル給水影響か（共同通信） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCdENIRHAwYnNEOWdYMEViRGU5SWZBTDVxVlpzNFpvZnFwdHZmdDBvWm5uemE4N1gzZjZUYWVCVFlRaS1mT3lSM0lxSlI2YzZ6THZFM3RZdngxc2psUG9nSlR0T3k2TlRWOEtVWWVBMzgySjVweFFXbFVoc2ZfMnM?oc=5",
+        "published": "Thu, 26 Nov 2026 10:43:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBCdENIRHAwYnNEOWdYMEViRGU5SWZBTDVxVlpzNFpvZnFwdHZmdDBvWm5uemE4N1gzZjZUYWVCVFlRaS1mT3lSM0lxSlI2YzZ6THZFM3RZdngxc2psUG9nSlR0T3k2TlRWOEtVWWVBMzgySjVweFFXbFVoc2ZfMnM?oc=5\" target=\"_blank\">札幌・ススキノ5店舗でノロ検出 16人症状、ビル給水影響か（共同通信）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "c65888eef661e89b047c17e5cf9ba775252a0bdc0bda897b4cd6031b0d683bf0",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE5adnhGbkhkd0hSLW9pZDJOV1hEbzVsNkc1bnZ0eTlvMTN0X2F2NUVBOVpiemxhZC1DX3FkTTJPU1NwdF9fQjBlSmZEcHZJWnRwQW5Qb19RRmZ4TXZBbk90ckhkNHZLS3pSQlpYNXh1eWV1TmhadEFfSkFmX2lodXM?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌千秋庵が「生ノースマン チョコレート」 3回目の冬季限定販売（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5adnhGbkhkd0hSLW9pZDJOV1hEbzVsNkc1bnZ0eTlvMTN0X2F2NUVBOVpiemxhZC1DX3FkTTJPU1NwdF9fQjBlSmZEcHZJWnRwQW5Qb19RRmZ4TXZBbk90ckhkNHZLS3pSQlpYNXh1eWV1TmhadEFfSkFmX2lodXM?oc=5",
+        "published": "Thu, 26 Nov 2026 13:29:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5adnhGbkhkd0hSLW9pZDJOV1hEbzVsNkc1bnZ0eTlvMTN0X2F2NUVBOVpiemxhZC1DX3FkTTJPU1NwdF9fQjBlSmZEcHZJWnRwQW5Qb19RRmZ4TXZBbk90ckhkNHZLS3pSQlpYNXh1eWV1TmhadEFfSkFmX2lodXM?oc=5\" target=\"_blank\">札幌千秋庵が「生ノースマン チョコレート」 3回目の冬季限定販売（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "fb7a3ee54432dffe34bf94e80bfd3e13d975e223253d20aaaaea8ab974dc20f3",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE00N3BDejFsbzFUbDBkQlNhRjVLWVloeFNJRTF4TEFqN1hjNlZwb1B0cXVNM000UUhBOG5tRk85SFV3eXMzTkRuaExKQlhTaUVCNDFHbVViTDktMVZhcXlMUHhvSlBpRkpoVzNNOGpsbUtiOTI3SGpCUXg3Y1NrMjg?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌延伸、事業費縮減策を提言へ 北海道新幹線で国交省有識者会議（時事通信） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00N3BDejFsbzFUbDBkQlNhRjVLWVloeFNJRTF4TEFqN1hjNlZwb1B0cXVNM000UUhBOG5tRk85SFV3eXMzTkRuaExKQlhTaUVCNDFHbVViTDktMVZhcXlMUHhvSlBpRkpoVzNNOGpsbUtiOTI3SGpCUXg3Y1NrMjg?oc=5",
+        "published": "Thu, 26 Nov 2026 10:45:54 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE00N3BDejFsbzFUbDBkQlNhRjVLWVloeFNJRTF4TEFqN1hjNlZwb1B0cXVNM000UUhBOG5tRk85SFV3eXMzTkRuaExKQlhTaUVCNDFHbVViTDktMVZhcXlMUHhvSlBpRkpoVzNNOGpsbUtiOTI3SGpCUXg3Y1NrMjg?oc=5\" target=\"_blank\">札幌延伸、事業費縮減策を提言へ 北海道新幹線で国交省有識者会議（時事通信）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "a5c8371409a8ce150e8877c7376c3064f1ed26331a4f7f52b8408eb7569af8ee",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lSkpkamxYUEViOV9wOGhHVnFoTmk3Ykkxc19QRXoxVkl0SFZWQzVRVTVoY05hYWhEQ2xPRS1pWnVTaFNLZ1J2c0NTeHdjNUJtenhkaTNhSHFSZGRRZTVPS3BKMHBLeXM0dG5qZHpFY3ZjblJNUWtvYTAwVTUya3c?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "友人男性に借用書を強要 現金21万円を脅し取った疑い 大学生の男2人を再逮捕 「金払うか 山に埋められるか」7月にも恐喝疑い 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lSkpkamxYUEViOV9wOGhHVnFoTmk3Ykkxc19QRXoxVkl0SFZWQzVRVTVoY05hYWhEQ2xPRS1pWnVTaFNLZ1J2c0NTeHdjNUJtenhkaTNhSHFSZGRRZTVPS3BKMHBLeXM0dG5qZHpFY3ZjblJNUWtvYTAwVTUya3c?oc=5",
+        "published": "Thu, 26 Nov 2026 04:58:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5lSkpkamxYUEViOV9wOGhHVnFoTmk3Ykkxc19QRXoxVkl0SFZWQzVRVTVoY05hYWhEQ2xPRS1pWnVTaFNLZ1J2c0NTeHdjNUJtenhkaTNhSHFSZGRRZTVPS3BKMHBLeXM0dG5qZHpFY3ZjblJNUWtvYTAwVTUya3c?oc=5\" target=\"_blank\">友人男性に借用書を強要 現金21万円を脅し取った疑い 大学生の男2人を再逮捕 「金払うか 山に埋められるか」7月にも恐喝疑い 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "27b2df747065f7cbf01f6e75bec358cab1d4c78a3abb6651b6b0fbb95d8c524c",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvOGQtVmhCdDV1UUlaTUFWcGpIUEVfdUVfM3Q4cnBKM3RtU2l6WV9hUzVMSUlTQjZvaXROaGQ4aWdTWkIybkFUQUZkd0VRT19heDdQNmlFaWRLbEZfdHllZWp0VDdmQUhhY0gwaFUyNk1ZMFFPclo5bGt3ZDR0ckk?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "飲食店ビルで集団食中毒 受水槽がノロウイルス汚染か 16人に症状…全員快方にむかう 札幌・すすきの - 日テレNEWS NNN",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvOGQtVmhCdDV1UUlaTUFWcGpIUEVfdUVfM3Q4cnBKM3RtU2l6WV9hUzVMSUlTQjZvaXROaGQ4aWdTWkIybkFUQUZkd0VRT19heDdQNmlFaWRLbEZfdHllZWp0VDdmQUhhY0gwaFUyNk1ZMFFPclo5bGt3ZDR0ckk?oc=5",
+        "published": "Thu, 26 Nov 2026 09:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBvOGQtVmhCdDV1UUlaTUFWcGpIUEVfdUVfM3Q4cnBKM3RtU2l6WV9hUzVMSUlTQjZvaXROaGQ4aWdTWkIybkFUQUZkd0VRT19heDdQNmlFaWRLbEZfdHllZWp0VDdmQUhhY0gwaFUyNk1ZMFFPclo5bGt3ZDR0ckk?oc=5\" target=\"_blank\">飲食店ビルで集団食中毒 受水槽がノロウイルス汚染か 16人に症状…全員快方にむかう 札幌・すすきの</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+        "rss_source": {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "69ff74f7b8583346e5dcb448550f111ed2c0291ace065d0106ab0e39dc2631ba",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zVnluZXJiSU1VQ1VuMEM0WFhUUzdLM1RZa1dsZVRfaXplR0NseTFycVU0RUlFWDF0UDZsLUhVWE16VDBEV0F5bEQ0WHZLaWZRYmZKNmg3eVlydw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・秋元市長の政治団体は収入3％減 25年政治資金収支報告 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zVnluZXJiSU1VQ1VuMEM0WFhUUzdLM1RZa1dsZVRfaXplR0NseTFycVU0RUlFWDF0UDZsLUhVWE16VDBEV0F5bEQ0WHZLaWZRYmZKNmg3eVlydw?oc=5",
+        "published": "Thu, 26 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zVnluZXJiSU1VQ1VuMEM0WFhUUzdLM1RZa1dsZVRfaXplR0NseTFycVU0RUlFWDF0UDZsLUhVWE16VDBEV0F5bEQ0WHZLaWZRYmZKNmg3eVlydw?oc=5\" target=\"_blank\">札幌・秋元市長の政治団体は収入3％減 25年政治資金収支報告</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "5aa0549b269aff3b1d2c311e1d60379ac1cf8b6a96f3d1bcb0dadd3736e37447",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9adlc5QmJzUFdsNWQzN25VLWFNUFlvR0tnaEd1c2dOU1pLRklvaTBmVnRxQzBITThQaG9TT1YyWVZZNmk3WWY4a0FaRHVsYkw0dEp2Ylp2TnVMZw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "北海道と韓国、DCや半導体産業の未来は 札幌で初フォーラム - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9adlc5QmJzUFdsNWQzN25VLWFNUFlvR0tnaEd1c2dOU1pLRklvaTBmVnRxQzBITThQaG9TT1YyWVZZNmk3WWY4a0FaRHVsYkw0dEp2Ylp2TnVMZw?oc=5",
+        "published": "Thu, 26 Nov 2026 10:41:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9adlc5QmJzUFdsNWQzN25VLWFNUFlvR0tnaEd1c2dOU1pLRklvaTBmVnRxQzBITThQaG9TT1YyWVZZNmk3WWY4a0FaRHVsYkw0dEp2Ylp2TnVMZw?oc=5\" target=\"_blank\">北海道と韓国、DCや半導体産業の未来は 札幌で初フォーラム</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "8a6a0ff8bbb3b55b3a6359e8e8887c21e27479f0c1e107309e227d29a4c78a95",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iaFJMVTZsd1FUX29oYllzTHpqYVdHbmNtYm94WTNzckh2aW1iRVV1ZnlNcFI2YU16S1l0Z1lSQkdfOGV3S24zdWZ0eDF4OVVpdGtTVGVWZDdpdw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌（１１月２７日付）おくやみ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iaFJMVTZsd1FUX29oYllzTHpqYVdHbmNtYm94WTNzckh2aW1iRVV1ZnlNcFI2YU16S1l0Z1lSQkdfOGV3S24zdWZ0eDF4OVVpdGtTVGVWZDdpdw?oc=5",
+        "published": "Thu, 26 Nov 2026 11:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iaFJMVTZsd1FUX29oYllzTHpqYVdHbmNtYm94WTNzckh2aW1iRVV1ZnlNcFI2YU16S1l0Z1lSQkdfOGV3S24zdWZ0eDF4OVVpdGtTVGVWZDdpdw?oc=5\" target=\"_blank\">札幌（１１月２７日付）おくやみ</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "533d04944aae374b0f6613eed9cdf8f5080754114fbe24d4a8f271f99bd74a8b",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GTmZqNnlObVA1NURSSE5RY1RaVHNuOVNFOGl1dXhHMTJaUWVuNUlXVk1QMGkwcllsbV9oLUtTQzJXemxwN1pNTHBKcUFIclJsVVFQTm52bi11Zw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "10月の札幌オフィス空室率、0.13ポイント減3.44％ 3カ月ぶり小幅低下 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GTmZqNnlObVA1NURSSE5RY1RaVHNuOVNFOGl1dXhHMTJaUWVuNUlXVk1QMGkwcllsbV9oLUtTQzJXemxwN1pNTHBKcUFIclJsVVFQTm52bi11Zw?oc=5",
+        "published": "Thu, 26 Nov 2026 11:31:49 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GTmZqNnlObVA1NURSSE5RY1RaVHNuOVNFOGl1dXhHMTJaUWVuNUlXVk1QMGkwcllsbV9oLUtTQzJXemxwN1pNTHBKcUFIclJsVVFQTm52bi11Zw?oc=5\" target=\"_blank\">10月の札幌オフィス空室率、0.13ポイント減3.44％ 3カ月ぶり小幅低下</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "b63eb15bcd59362471868201949cafac125468c75a16355583f05e8d747dfd8d",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2S3paRXU2NTMxMXVETjVQQUdyNm9CSW9ZcEp2NG5yV3F0YkhGX3FtdU9WMGxvejV4UTNPZlRaWEd5Uy1BdDRSME9jOVlCT1p0Tmk5WERMN0FjcUlYcHc?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・ススキノ５店舗でノロ検出 １６人症状、ビル給水影響か - 沖縄タイムス社",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2S3paRXU2NTMxMXVETjVQQUdyNm9CSW9ZcEp2NG5yV3F0YkhGX3FtdU9WMGxvejV4UTNPZlRaWEd5Uy1BdDRSME9jOVlCT1p0Tmk5WERMN0FjcUlYcHc?oc=5",
+        "published": "Thu, 26 Nov 2026 10:43:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2S3paRXU2NTMxMXVETjVQQUdyNm9CSW9ZcEp2NG5yV3F0YkhGX3FtdU9WMGxvejV4UTNPZlRaWEd5Uy1BdDRSME9jOVlCT1p0Tmk5WERMN0FjcUlYcHc?oc=5\" target=\"_blank\">札幌・ススキノ５店舗でノロ検出 １６人症状、ビル給水影響か</a>  <font color=\"#6f6f6f\">沖縄タイムス社</font>",
+        "rss_source": {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "0aa5e5eef7eb0fa04bc8d9068d6e58ecba68dbf596b7de372421eb330986b23a",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TTzUzVzNXdWhiMV8yVWxxdmxLT18zNzJGUGc2SjVHM0ZONExLam8xMGs5T3pBNzdPaGxlY2w2a2lSLXFFVk1wUnRINXUyeVl1V1kzbEhwTkxIYnhMcmVRLS1mRGtsV1I0OV9TQ0Q3aw?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌延伸、事業費縮減策を提言へ＝北海道新幹線で国交省有識者会議 - iJAMPポータル",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TTzUzVzNXdWhiMV8yVWxxdmxLT18zNzJGUGc2SjVHM0ZONExLam8xMGs5T3pBNzdPaGxlY2w2a2lSLXFFVk1wUnRINXUyeVl1V1kzbEhwTkxIYnhMcmVRLS1mRGtsV1I0OV9TQ0Q3aw?oc=5",
+        "published": "Thu, 26 Nov 2026 10:48:34 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1TTzUzVzNXdWhiMV8yVWxxdmxLT18zNzJGUGc2SjVHM0ZONExLam8xMGs5T3pBNzdPaGxlY2w2a2lSLXFFVk1wUnRINXUyeVl1V1kzbEhwTkxIYnhMcmVRLS1mRGtsV1I0OV9TQ0Q3aw?oc=5\" target=\"_blank\">札幌延伸、事業費縮減策を提言へ＝北海道新幹線で国交省有識者会議</a>  <font color=\"#6f6f6f\">iJAMPポータル</font>",
+        "rss_source": {
+          "name": "iJAMPポータル",
+          "url": "https://portal.ijamp.jiji.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "f85b137dce39c5eee15d016daae1e55fffcb25c7bc4b4648f88648c383d29f41",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14QXJEQ1p0d1FUdW1jVmNwTmFqbE1lZUVJLTNEaUsxX1pHVWphdGFhX2VYQWptbDNVNVVlZUdSMEthVWpFRmthdk9WdjRNUUNCeU1RMXJlRVpsQQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "11月28日(土)今年ラスト開催！「OPEN CAMPUS 2026」 ―札幌大学を体験して、話そう！― - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14QXJEQ1p0d1FUdW1jVmNwTmFqbE1lZUVJLTNEaUsxX1pHVWphdGFhX2VYQWptbDNVNVVlZUdSMEthVWpFRmthdk9WdjRNUUNCeU1RMXJlRVpsQQ?oc=5",
+        "published": "Thu, 26 Nov 2026 00:47:16 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE14QXJEQ1p0d1FUdW1jVmNwTmFqbE1lZUVJLTNEaUsxX1pHVWphdGFhX2VYQWptbDNVNVVlZUdSMEthVWpFRmthdk9WdjRNUUNCeU1RMXJlRVpsQQ?oc=5\" target=\"_blank\">11月28日(土)今年ラスト開催！「OPEN CAMPUS 2026」 ―札幌大学を体験して、話そう！―</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "05c5c1931d356346da2f4c50863a28a368551c61bda2eebd54dea8df1d3fffa9",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zeEc0R0JGZ0h1dHQxaTBVZEpoVWR4eFlReEkxUzZlbkZtWFVEeHpFREtyT05MZjh6SWtud2hoZEZNTlk1TklTbU96WW5uTjVObnp5ZUxPN2hRZUhGT09JRG9pUjFCMTA?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "11月28日(土)今年ラスト開催！「OPEN CAMPUS 2026」 ―札幌大学を体験して、話そう！―｜入試情報 - 札幌大学",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zeEc0R0JGZ0h1dHQxaTBVZEpoVWR4eFlReEkxUzZlbkZtWFVEeHpFREtyT05MZjh6SWtud2hoZEZNTlk1TklTbU96WW5uTjVObnp5ZUxPN2hRZUhGT09JRG9pUjFCMTA?oc=5",
+        "published": "Thu, 26 Nov 2026 03:46:21 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zeEc0R0JGZ0h1dHQxaTBVZEpoVWR4eFlReEkxUzZlbkZtWFVEeHpFREtyT05MZjh6SWtud2hoZEZNTlk1TklTbU96WW5uTjVObnp5ZUxPN2hRZUhGT09JRG9pUjFCMTA?oc=5\" target=\"_blank\">11月28日(土)今年ラスト開催！「OPEN CAMPUS 2026」 ―札幌大学を体験して、話そう！―｜入試情報</a>  <font color=\"#6f6f6f\">札幌大学</font>",
+        "rss_source": {
+          "name": "札幌大学",
+          "url": "https://www.sapporo-u.ac.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "dd5e2fe8343a5c751e4abf45c136c1e196a0a0948b3b714895c4b7b4480aacd5",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBUbjNaeTN3T1NqWjZaVE5MTU9Ea2FORjlZVHhmQ0RWbWNoQ25qazg0b19CWmxQdi1sLWlUOVAzZ1NieEgyWDRnUmlOM2lmUnNHNVBwTmlPcWxTTmVLTngzTHpHbFg2eVdWRTBna2dYZVBDVVRBU1hZelVCVmo3Sk0?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "トクリュウか…現金700万円や高級腕時計など400万円相当盗んだか 建設業の男ら再逮捕 北海道 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBUbjNaeTN3T1NqWjZaVE5MTU9Ea2FORjlZVHhmQ0RWbWNoQ25qazg0b19CWmxQdi1sLWlUOVAzZ1NieEgyWDRnUmlOM2lmUnNHNVBwTmlPcWxTTmVLTngzTHpHbFg2eVdWRTBna2dYZVBDVVRBU1hZelVCVmo3Sk0?oc=5",
+        "published": "Thu, 26 Nov 2026 09:47:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBUbjNaeTN3T1NqWjZaVE5MTU9Ea2FORjlZVHhmQ0RWbWNoQ25qazg0b19CWmxQdi1sLWlUOVAzZ1NieEgyWDRnUmlOM2lmUnNHNVBwTmlPcWxTTmVLTngzTHpHbFg2eVdWRTBna2dYZVBDVVRBU1hZelVCVmo3Sk0?oc=5\" target=\"_blank\">トクリュウか…現金700万円や高級腕時計など400万円相当盗んだか 建設業の男ら再逮捕 北海道</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "efcf53d2d7f00e2e7b8e5d795b0288487e5eea674eab22dd5dff336be5ce82e7",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JMUlSOFhOTnlabldlMWlrRmdRNkMzZnVoQ0M1cWJYcDlHMVpkbmk4a193a2FsYkpYSE52cUhvNUZzUFhkSEh2OUxJSk5fZUpTb285bTU1RUFRbGFIdFZwbEZn?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "11/28(土)～SATELLITE札幌店にて『さくらももこ ゆめいろ商店』開催！ - ちびまる子ちゃん オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JMUlSOFhOTnlabldlMWlrRmdRNkMzZnVoQ0M1cWJYcDlHMVpkbmk4a193a2FsYkpYSE52cUhvNUZzUFhkSEh2OUxJSk5fZUpTb285bTU1RUFRbGFIdFZwbEZn?oc=5",
+        "published": "Thu, 26 Nov 2026 07:43:23 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JMUlSOFhOTnlabldlMWlrRmdRNkMzZnVoQ0M1cWJYcDlHMVpkbmk4a193a2FsYkpYSE52cUhvNUZzUFhkSEh2OUxJSk5fZUpTb285bTU1RUFRbGFIdFZwbEZn?oc=5\" target=\"_blank\">11/28(土)～SATELLITE札幌店にて『さくらももこ ゆめいろ商店』開催！</a>  <font color=\"#6f6f6f\">ちびまる子ちゃん オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "ちびまる子ちゃん オフィシャルサイト",
+          "url": "https://www.chibimaru.tv"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "ae81791f1ed2ba1233941e0b90aa562158126a7d4b95e4d48c25c809605fbefc",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rbkptTXdNMlRrVkQyTFkwRTdHSGVBZmhvWk5WTUVwbWk1NjB1d0UxMXZ1SGRFY2hzR0Noakp2Zkw1TlZ4dWQzUDJNQnBEX21PUmZZWjMtRm5lQQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "こどもまんなかアワード 札幌「ふじゼミ」表彰 各地でプログラミング教室 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rbkptTXdNMlRrVkQyTFkwRTdHSGVBZmhvWk5WTUVwbWk1NjB1d0UxMXZ1SGRFY2hzR0Noakp2Zkw1TlZ4dWQzUDJNQnBEX21PUmZZWjMtRm5lQQ?oc=5",
+        "published": "Thu, 26 Nov 2026 11:45:28 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rbkptTXdNMlRrVkQyTFkwRTdHSGVBZmhvWk5WTUVwbWk1NjB1d0UxMXZ1SGRFY2hzR0Noakp2Zkw1TlZ4dWQzUDJNQnBEX21PUmZZWjMtRm5lQQ?oc=5\" target=\"_blank\">こどもまんなかアワード 札幌「ふじゼミ」表彰 各地でプログラミング教室</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "fa2eca5af3b96f96a9cf615982cc88a2b669788be1e83a5ef1fca4acff49db34",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiZ3RLT3hoRklsQ3QyVVpDWkhxSmVSandqRzd0blF2ZUUwR3hBYWI0am5tX2ZvSVkycmF4OWc2MXBnd2c0dk0tNE9IME9lRnpfcVczOFI0U0lSQnFxZTY3QThWQ3Y4VEdDd0Q1a1VTVTc0TVVka2RDSHRXWW5fXzg?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "汚水槽の水が受水槽に…すすきので集団食中毒 ビルに入る飲食店の利用者からノロウイルス １６人症状訴え - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiZ3RLT3hoRklsQ3QyVVpDWkhxSmVSandqRzd0blF2ZUUwR3hBYWI0am5tX2ZvSVkycmF4OWc2MXBnd2c0dk0tNE9IME9lRnpfcVczOFI0U0lSQnFxZTY3QThWQ3Y4VEdDd0Q1a1VTVTc0TVVka2RDSHRXWW5fXzg?oc=5",
+        "published": "Thu, 26 Nov 2026 07:32:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBiZ3RLT3hoRklsQ3QyVVpDWkhxSmVSandqRzd0blF2ZUUwR3hBYWI0am5tX2ZvSVkycmF4OWc2MXBnd2c0dk0tNE9IME9lRnpfcVczOFI0U0lSQnFxZTY3QThWQ3Y4VEdDd0Q1a1VTVTc0TVVka2RDSHRXWW5fXzg?oc=5\" target=\"_blank\">汚水槽の水が受水槽に…すすきので集団食中毒 ビルに入る飲食店の利用者からノロウイルス １６人症状訴え</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "source_fingerprint": "fec2d6a382975250a7754f6983bb6a2cdd9edcab755df6df151bfe3d2e3de315",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jcmtLaEVVTm45am9DS1RIdEVNc01uUFp2NFIzb0dES09XWnFBNHNtaGVCZnQxQmdQWXdSOXM3anlFZ2U0VnowMDNoNDZib3pleHVmT2xMSGJXaExScUpkZXJtcXItdmJnUVFheQ?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "北海道と韓国、半導体やAI分野で連携探る 札幌でフォーラム - 日本経済新聞",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jcmtLaEVVTm45am9DS1RIdEVNc01uUFp2NFIzb0dES09XWnFBNHNtaGVCZnQxQmdQWXdSOXM3anlFZ2U0VnowMDNoNDZib3pleHVmT2xMSGJXaExScUpkZXJtcXItdmJnUVFheQ?oc=5",
+        "published": "Thu, 26 Nov 2026 09:32:31 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9jcmtLaEVVTm45am9DS1RIdEVNc01uUFp2NFIzb0dES09XWnFBNHNtaGVCZnQxQmdQWXdSOXM3anlFZ2U0VnowMDNoNDZib3pleHVmT2xMSGJXaExScUpkZXJtcXItdmJnUVFheQ?oc=5\" target=\"_blank\">北海道と韓国、半導体やAI分野で連携探る 札幌でフォーラム</a>  <font color=\"#6f6f6f\">日本経済新聞</font>",
+        "rss_source": {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "bd686e7e0e2afb021e2292dc02fa2de636c68b1f7d408258977f9f6323dc7e60",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE90LTNKTHFIQmF2a3JqcmtMRkNmZmJFTFdMeThkU0dPcFVMQ1RUTklic1VFUXpPMGRmQWhmbWk3NXNOWW1QUkljVDFHNWh6UlhTWXNn?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "北洋銀、４月から移動店舗導入【札幌市】 - 釧路新聞電子版",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE90LTNKTHFIQmF2a3JqcmtMRkNmZmJFTFdMeThkU0dPcFVMQ1RUTklic1VFUXpPMGRmQWhmbWk3NXNOWW1QUkljVDFHNWh6UlhTWXNn?oc=5",
+        "published": "Thu, 26 Nov 2026 19:06:47 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE90LTNKTHFIQmF2a3JqcmtMRkNmZmJFTFdMeThkU0dPcFVMQ1RUTklic1VFUXpPMGRmQWhmbWk3NXNOWW1QUkljVDFHNWh6UlhTWXNn?oc=5\" target=\"_blank\">北洋銀、４月から移動店舗導入【札幌市】</a>  <font color=\"#6f6f6f\">釧路新聞電子版</font>",
+        "rss_source": {
+          "name": "釧路新聞電子版",
+          "url": "https://kushironews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "65baa8bc228a08d687e7870956e622aec2d9df61a76a74fdb007bf51debb42de",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yYThWTi01bW9yV0M3NWprRXhIODJtcjRiTmJPV1Z4eWNmVE9qTXk3OHlCWEFtdzJFay1TaGpjOWF1eEdmV204MEU1NA?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "札幌・秋元市長の政治団体は収入3％減 25年政治資金収支報告 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yYThWTi01bW9yV0M3NWprRXhIODJtcjRiTmJPV1Z4eWNmVE9qTXk3OHlCWEFtdzJFay1TaGpjOWF1eEdmV204MEU1NA?oc=5",
+        "published": "Thu, 26 Nov 2026 15:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yYThWTi01bW9yV0M3NWprRXhIODJtcjRiTmJPV1Z4eWNmVE9qTXk3OHlCWEFtdzJFay1TaGpjOWF1eEdmV204MEU1NA?oc=5\" target=\"_blank\">札幌・秋元市長の政治団体は収入3％減 25年政治資金収支報告</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "df962db5e793049669d2fb78cb86f612aec9cc54b39ee2bd927172d2b750f783",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDQ3BKWm1PWHdXbXRwWFRYNEVMYkgwUlBIaXB6QjZfQWtmc0JDbXBUcTI3VnZoZFhITTBjYm10SXd2Z1IzV2ZCdHBubWdFbmtabE1LYldHRnM1VzZnV2VDUGNR?oc=5": {
+      "first_seen_at": "2026-11-26T19:39:39.223266+00:00",
+      "source_history": [],
+      "article": {
+        "title": "「株式会社ふるさと物語」様 2026/27シーズン 明治安田J2リーグ クラブパートナー新規決定のお知らせ - 北海道コンサドーレ札幌オフィシャルサイト",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDQ3BKWm1PWHdXbXRwWFRYNEVMYkgwUlBIaXB6QjZfQWtmc0JDbXBUcTI3VnZoZFhITTBjYm10SXd2Z1IzV2ZCdHBubWdFbmtabE1LYldHRnM1VzZnV2VDUGNR?oc=5",
+        "published": "Thu, 26 Nov 2026 02:02:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDQ3BKWm1PWHdXbXRwWFRYNEVMYkgwUlBIaXB6QjZfQWtmc0JDbXBUcTI3VnZoZFhITTBjYm10SXd2Z1IzV2ZCdHBubWdFbmtabE1LYldHRnM1VzZnV2VDUGNR?oc=5\" target=\"_blank\">「株式会社ふるさと物語」様 2026/27シーズン 明治安田J2リーグ クラブパートナー新規決定のお知らせ</a>  <font color=\"#6f6f6f\">北海道コンサドーレ札幌オフィシャルサイト</font>",
+        "rss_source": {
+          "name": "北海道コンサドーレ札幌オフィシャルサイト",
+          "url": "https://www.consadole-sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "source_fingerprint": "30f79953acd189c660b40abe69c461b47bf3655c63aa0a8f066ff86f01430ec7",
+      "status": "queued",
+      "reason": "needs_classification",
+      "last_seen_at": "2026-11-26T19:39:39.223266+00:00"
+    },
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaQmlodVdsNEhGTXJPdUYySmV1SWI2d1dNeUl5ZVZ0c2YtV0I4NXVJVVJHb1cyNFI5b3VoSUE4aDVSbmVwaE9kZnlDRW1YQlJQTklWN2dyaVljWGF6Y3gyM0lNOTc2am8?oc=5": {
+      "article": {
+        "title": "【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaQmlodVdsNEhGTXJPdUYySmV1SWI2d1dNeUl5ZVZ0c2YtV0I4NXVJVVJHb1cyNFI5b3VoSUE4aDVSbmVwaE9kZnlDRW1YQlJQTklWN2dyaVljWGF6Y3gyM0lNOTc2am8?oc=5",
+        "published": "Thu, 26 Nov 2026 06:50:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaQmlodVdsNEhGTXJPdUYySmV1SWI2d1dNeUl5ZVZ0c2YtV0I4NXVJVVJHb1cyNFI5b3VoSUE4aDVSbmVwaE9kZnlDRW1YQlJQTklWN2dyaVljWGF6Y3gyM0lNOTc2am8?oc=5\" target=\"_blank\">【速報】札幌すすきのの飲食店ビルで集団食中毒 男女16人が胃腸炎症状を発症 ビル内の水からノロウイルス検出 受水槽にひび 汚染が原因か</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        }
+      },
+      "status": "duplicate_source",
+      "reason": "same_endpoint_exact_headline",
+      "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PbWhxSEJ6NTd1ZWhCN2RLYS0zNlBCRXh3X1AtaUphWTl4WGxxbmtwX3JGMkxjNzF0QWdzQmVOcjRhX0FmdWVEUWNpNEo0ME12UkJzbEtVbFJPUQ?oc=5"
+    },
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcllQTXpwUzR1SVY5LWozYXZJdW9vTEJLNDZkWDZOVm1USkxLcG5kX0l6OF9QTzJzeVZabXZ6X1VzTVYtUWNfVklZMXVVSlZTVlh5YWdRWEtRenZIWFd0ZldZQnpxbjJ6UkNZZlZhUDBDMFhpclhObmdSTTd2TWdXd2lIV3YwQnM5bkRCNVNR?oc=5": {
+      "article": {
+        "title": "ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止―受水槽にヒビ確認…何らかの原因で汚染された水などが混入か〈北海道・札幌市保健所〉 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcllQTXpwUzR1SVY5LWozYXZJdW9vTEJLNDZkWDZOVm1USkxLcG5kX0l6OF9QTzJzeVZabXZ6X1VzTVYtUWNfVklZMXVVSlZTVlh5YWdRWEtRenZIWFd0ZldZQnpxbjJ6UkNZZlZhUDBDMFhpclhObmdSTTd2TWdXd2lIV3YwQnM5bkRCNVNR?oc=5",
+        "published": "Thu, 26 Nov 2026 07:11:01 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOcllQTXpwUzR1SVY5LWozYXZJdW9vTEJLNDZkWDZOVm1USkxLcG5kX0l6OF9QTzJzeVZabXZ6X1VzTVYtUWNfVklZMXVVSlZTVlh5YWdRWEtRenZIWFd0ZldZQnpxbjJ6UkNZZlZhUDBDMFhpclhObmdSTTd2TWdXd2lIV3YwQnM5bkRCNVNR?oc=5\" target=\"_blank\">ビルの\"地下受水槽\"が汚染『ノロウイルス』飲食店で客や従業員16人が食中毒―すすきのの飲食店ビルで給水停止―受水槽にヒビ確認…何らかの原因で汚染された水などが混入か〈北海道・札幌市保健所〉</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        }
+      },
+      "status": "duplicate_source",
+      "reason": "same_endpoint_exact_headline",
+      "representative_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jS2lkS1RKYUJLLVU2aXpyTFRQeWwtZHpLc0drdUJSa2p2amx0SUJRcV9sX096dFpXQzhNaFhxVlNQNUtXcHFYUEhqTGRlUTZucktfSGtDamV2SlZma0RlN3VxVkhxa3l0NFNiUkUzbDh5ZmU3VTRYMjVhbTJuZXM?oc=5"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qUERyM3l5MGthanZyMU40WXUxVjV3S2lVdUZ1UlFMc3c3dHRlWUIyN1puVThIMUloS0lYUlpabG1GUXpyVEZZX0FrQVhzOHhCR3YwU2VrXy14eHFxdTJpenZhYVNNczdzUWhjSUZnaDExeERIT1paNmdoYXhGLUE?oc=5": {
+      "article": {
+        "title": "物価高騰対策 住民税非課税世帯に現金５０００円の給付検討 年度内給付目指し調整 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qUERyM3l5MGthanZyMU40WXUxVjV3S2lVdUZ1UlFMc3c3dHRlWUIyN1puVThIMUloS0lYUlpabG1GUXpyVEZZX0FrQVhzOHhCR3YwU2VrXy14eHFxdTJpenZhYVNNczdzUWhjSUZnaDExeERIT1paNmdoYXhGLUE?oc=5",
+        "published": "Thu, 26 Nov 2026 09:55:32 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5qUERyM3l5MGthanZyMU40WXUxVjV3S2lVdUZ1UlFMc3c3dHRlWUIyN1puVThIMUloS0lYUlpabG1GUXpyVEZZX0FrQVhzOHhCR3YwU2VrXy14eHFxdTJpenZhYVNNczdzUWhjSUZnaDExeERIT1paNmdoYXhGLUE?oc=5\" target=\"_blank\">物価高騰対策 住民税非課税世帯に現金５０００円の給付検討 年度内給付目指し調整 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        }
+      },
+      "status": "duplicate_source",
+      "reason": "exact_headline_original_available",
+      "representative_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9feFhsRjNWVUZENGRtc1hZNHlweDNvYXA3aGRyUEItZTZ6VnE3TVB3d1RpXzBtUURiTzN3b29TUjJFdE5rbmEzWWJ1Ujd0TUJVWWVGWC1lOFpvdw?oc=5"
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE5obk9KMGdVUjAya2tRVlZlSXpwNVFtcVNaZzliSzVNc2dXZXB4WlBHbTFuTUU1ejJOOGdLTWZnT0gxZzV0a3JUcnZOWEt3TS0zT0IzQUVWM2tTR194Ri1IQWJyNEVKRWJoUEtXdTNxQk1qaHNteHRaZ3dfbWZJWXc?oc=5": {
+      "article": {
+        "title": "空き瓶などが入った袋で母親（80）の頭を殴打 母親は頭から出血 女（53）を逮捕 札幌市 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5obk9KMGdVUjAya2tRVlZlSXpwNVFtcVNaZzliSzVNc2dXZXB4WlBHbTFuTUU1ejJOOGdLTWZnT0gxZzV0a3JUcnZOWEt3TS0zT0IzQUVWM2tTR194Ri1IQWJyNEVKRWJoUEtXdTNxQk1qaHNteHRaZ3dfbWZJWXc?oc=5",
+        "published": "Thu, 26 Nov 2026 19:05:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5obk9KMGdVUjAya2tRVlZlSXpwNVFtcVNaZzliSzVNc2dXZXB4WlBHbTFuTUU1ejJOOGdLTWZnT0gxZzV0a3JUcnZOWEt3TS0zT0IzQUVWM2tTR194Ri1IQWJyNEVKRWJoUEtXdTNxQk1qaHNteHRaZ3dfbWZJWXc?oc=5\" target=\"_blank\">空き瓶などが入った袋で母親（80）の頭を殴打 母親は頭から出血 女（53）を逮捕 札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        }
+      },
+      "status": "duplicate_source",
+      "reason": "exact_headline_original_available",
+      "representative_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iV0FHUGlEZGFQT2Rja1VuOTFFbzVqNkljdnhaaWJPMy1keVJVR3RadHdaUXBTV1RncnB3cXdwWmZxYlhmazlvZTh5WHd0b0pTZEN3SGFhck55TkdTVXpPTF9qOFpKYXFBTmFRaDlPQ1dNNmpCamlNdVU1ZFVNaGM?oc=5"
     }
   }
 }
