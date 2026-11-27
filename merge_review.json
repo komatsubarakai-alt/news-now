@@ -314817,10 +314817,30 @@
     },
     "review_id": "1243288b6b5abaf9e48fc659",
     "schema_version": 2,
-    "observed_at": "2026-10-20T01:01:06.142662+00:00",
+    "observed_at": "2026-11-27T22:00:06.702107+00:00",
+    "observation_history": [
+      {
+        "stage": "group_merge",
+        "reason": "budget_deferred",
+        "payload": {
+          "remaining_from": [
+            0,
+            6
+          ],
+          "group_count": 29
+        },
+        "review_id": "1243288b6b5abaf9e48fc659",
+        "schema_version": 2,
+        "observed_at": "2026-10-20T01:01:06.142662+00:00",
+        "first_seen_at": "2026-10-20T01:01:06.142662+00:00",
+        "last_seen_at": "2026-10-20T01:01:06.142662+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-10-20T01:01:06.142662+00:00",
-    "last_seen_at": "2026-10-20T01:01:06.142662+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-11-27T22:00:06.702107+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -553867,7 +553887,7 @@
     },
     "review_id": "4202c983d3e3ddc427c9f572",
     "schema_version": 2,
-    "observed_at": "2026-11-26T19:40:21.508821+00:00",
+    "observed_at": "2026-11-27T22:00:30.344178+00:00",
     "diagnostics": {
       "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
       "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
@@ -553920,11 +553940,105 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - Yahoo!ニュース",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "警察が経緯を確認している段階",
+            "summary": "札幌市豊平区で、路上で下半身を露出した後に小学校へ侵入したとみられる25歳の男が、職員の110番通報で対応され、酒酔い状態で「記憶がない」と話していると報じられています。",
+            "latest": "職員が不審な男の通報を行い、酒酔いの25歳男が事情を説明している段階です。",
+            "next_watch": "警察による詳しい経緯の確認や、男の処分・送検などがあるかどうかが注目点ですが、現時点で明確な次の動きは確認できません。",
+            "articles": [
+              {
+                "title": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - Yahoo!ニュース",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
+                "published": "Sun, 11 Oct 2026 23:56:14 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5\" target=\"_blank\">路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+                "rss_source": {
+                  "name": "Yahoo!ニュース",
+                  "url": "https://news.yahoo.co.jp"
+                },
+                "collection_role": "supplementary",
+                "collection_reason": "original_unconfirmed_or_unavailable"
+              }
+            ]
+          }
+        },
+        "review_id": "4202c983d3e3ddc427c9f572",
+        "schema_version": 2,
+        "observed_at": "2026-11-26T19:40:21.508821+00:00",
+        "diagnostics": {
+          "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+          "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "逮捕",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "路上で下半身を露出、その後小学校に侵入",
+                    "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+                    "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "小学校に侵入した男",
+                    "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+                    "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-11-26T19:40:21.508821+00:00",
+        "last_seen_at": "2026-11-26T19:40:21.508821+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-11-26T19:40:21.508821+00:00",
-    "last_seen_at": "2026-11-26T19:40:21.508821+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-11-27T22:00:30.344178+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -556212,7 +556326,7 @@
     },
     "review_id": "46c4702555adefffdbf19eee",
     "schema_version": 2,
-    "observed_at": "2026-11-27T02:54:01.582618+00:00",
+    "observed_at": "2026-11-27T22:00:30.344178+00:00",
     "diagnostics": {
       "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
       "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
@@ -556265,11 +556379,104 @@
       "http_status": null,
       "api_error_code": null,
       "triage_status": "needs_evidence",
-      "decision_attempts": 1
+      "decision_attempts": 2
     },
+    "observation_history": [
+      {
+        "stage": "event_attachment",
+        "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5",
+        "payload": {
+          "group": {
+            "event_name": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕 - HTB 北海道テレビ",
+            "article_count": 1,
+            "source_article_count": 1,
+            "category": "事件・事故",
+            "tracking_value": "medium",
+            "current_stage": "逮捕報道",
+            "summary": "札幌市中央区で、恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕されたと報じられています。記事タイトルと公開日時の範囲では、逮捕以外の詳しい進展は確認できません。",
+            "latest": "2026年10月11日9時28分時点で、恵庭市の職員が盗撮未遂の疑いで逮捕されたという報道が出ています。",
+            "next_watch": "現時点で明確な次の動きは確認できません。今後は、容疑の詳細、本人や勤務先の対応、捜査の進展が報じられるかどうかに注目されます。",
+            "articles": [
+              {
+                "title": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕 - HTB 北海道テレビ",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5",
+                "published": "Sun, 11 Oct 2026 09:28:00 GMT",
+                "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5\" target=\"_blank\">札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+                "rss_source": {
+                  "name": "HTB 北海道テレビ",
+                  "url": "https://www.htb.co.jp"
+                },
+                "collection_role": "primary"
+              }
+            ]
+          }
+        },
+        "review_id": "46c4702555adefffdbf19eee",
+        "schema_version": 2,
+        "observed_at": "2026-11-27T02:54:01.582618+00:00",
+        "diagnostics": {
+          "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+          "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
+          "target_source_urls": [
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
+          ],
+          "input_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5"
+          ],
+          "ai_report": {
+            "relation": "same_event",
+            "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
+            "confidence": "high",
+            "multi_event": false,
+            "meaningful_change": false,
+            "current_stage": "",
+            "summary": "",
+            "latest": "",
+            "next_watch": "",
+            "completed": false,
+            "completion_quote": "",
+            "evidence_urls": [
+              "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5"
+            ],
+            "identity_matches": [
+              {
+                "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5",
+                "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
+                "anchors": [
+                  {
+                    "kind": "case",
+                    "value": "札幌市中央区",
+                    "existing_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようした疑いで逮捕",
+                    "incoming_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕"
+                  },
+                  {
+                    "kind": "entity",
+                    "value": "恵庭市の職員",
+                    "existing_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようした疑いで逮捕",
+                    "incoming_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕"
+                  }
+                ]
+              }
+            ],
+            "event_identity": {},
+            "progress_evidence": [],
+            "schedules": []
+          },
+          "raw_ai_response": null,
+          "http_status": null,
+          "api_error_code": null,
+          "triage_status": "needs_evidence",
+          "decision_attempts": 1
+        },
+        "first_seen_at": "2026-11-27T02:54:01.582618+00:00",
+        "last_seen_at": "2026-11-27T02:54:01.582618+00:00",
+        "observation_count": 1,
+        "legacy_history_present": false
+      }
+    ],
     "first_seen_at": "2026-11-27T02:54:01.582618+00:00",
-    "last_seen_at": "2026-11-27T02:54:01.582618+00:00",
-    "observation_count": 1,
+    "last_seen_at": "2026-11-27T22:00:30.344178+00:00",
+    "observation_count": 2,
     "legacy_history_present": false
   },
   {
@@ -560909,6 +561116,2004 @@
     "observed_at": "2026-11-27T12:30:54.458560+00:00",
     "first_seen_at": "2026-11-27T12:30:54.458560+00:00",
     "last_seen_at": "2026-11-27T12:30:54.458560+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+        "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5",
+        "published": "Thu, 26 Nov 2026 21:30:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5\" target=\"_blank\">強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c449e9591f1341e482fc2ef6",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340789+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340789+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340789+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+        "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5",
+        "published": "Fri, 27 Nov 2026 13:22:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5\" target=\"_blank\">高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "277fea1443825c4562fd2fad",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340861+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340861+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340861+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5",
+        "published": "Tue, 24 Nov 2026 11:02:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5\" target=\"_blank\">「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+        "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "9fa2efe65454d3d52d64471b",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340902+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340902+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340902+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:32:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5\" target=\"_blank\">１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5",
+        "published": "Fri, 27 Nov 2026 13:41:39 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5\" target=\"_blank\">1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "264f74989149837edd06977d",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340932+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340932+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340932+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5",
+        "published": "Tue, 24 Nov 2026 11:02:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5\" target=\"_blank\">「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5",
+        "published": "Fri, 27 Nov 2026 13:41:39 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5\" target=\"_blank\">1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "899a81e097c84b6412d65cad",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340959+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340959+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340959+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+        "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書 - Infoseek",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5",
+        "published": "Fri, 27 Nov 2026 13:41:39 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE9ERUYtTndLZGlSVzNiR2lLdDNIMVRORVFrOGNxN3NBNzBxRUFyTnZ3eW5HZjNZU3FoTHltVmZtV29xTnkycE1JTTJCUy1Vczk5X1gyQTFUM2J3aTJXMzRoVE9KOVh5NzRfN1J5Tg?oc=5\" target=\"_blank\">1000億円の縮小が可能 北海道新幹線札幌延伸 当初最大1兆2000億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">Infoseek</font>",
+        "rss_source": {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "adc373091a74fc37431c6446",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.340985+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.340985+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.340985+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5",
+        "published": "Tue, 24 Nov 2026 11:02:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5\" target=\"_blank\">「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:32:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5\" target=\"_blank\">１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e98cea6a4f03bf3d99503091",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341010+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341010+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341010+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 47NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ILVZaUW5GZ2tFM3ZkYzhnVWNHTllBZWtOVkFLck1tQmo4LVV6VW9lSGRGY2tRM2dFY0JpWEZkVHpxQnRvcnNmR0xTUQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ILVZaUW5GZ2tFM3ZkYzhnVWNHTllBZWtOVkFLck1tQmo4LVV6VW9lSGRGY2tRM2dFY0JpWEZkVHpxQnRvcnNmR0xTUQ?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">47NEWS</font>",
+        "rss_source": {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b9c005a94e9a88582e2ab0a2",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341033+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341033+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341033+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース - ＳＴＶ札幌テレビ 放送",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5",
+        "published": "Tue, 24 Nov 2026 11:02:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNM1lobFJWRzZ4bm9fbk1xM0MtdlhaeHJJVkVzU0ZvZ2dkcnZtMjh6c2NEUXZmNVJpdlRLb2RJaGNubzJjY0NUaVZYMkNzVFpndmZ0ejFzX0RBd09STGFpMmV1UnF0UkVWcXNRZkN1T0hzTURKR2ExUGJYN3pnaDZlTnVn?oc=5\" target=\"_blank\">「送金すれば男性シンガーソングライターに会えるかも」 札幌の女性が1000万円の詐欺被害 北海道 ｜ ニュース</a>  <font color=\"#6f6f6f\">ＳＴＶ札幌テレビ 放送</font>",
+        "rss_source": {
+          "name": "ＳＴＶ札幌テレビ 放送",
+          "url": "https://www.stv.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5\" target=\"_blank\">札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "c852da1604d9ca6cdd86f21a",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341060+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341060+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341060+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5",
+        "published": "Fri, 27 Nov 2026 16:50:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5\" target=\"_blank\">すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5",
+        "published": "Fri, 27 Nov 2026 14:01:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5\" target=\"_blank\">札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cf46ab32707e04285a18849e",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341088+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341088+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341088+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5",
+        "published": "Fri, 27 Nov 2026 03:04:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5\" target=\"_blank\">「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5",
+        "published": "Fri, 27 Nov 2026 13:22:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5\" target=\"_blank\">高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "f086bb80ae960126faa19a54",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341114+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341114+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341114+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "37935e4dee58d70add95675c",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341139+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341139+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341139+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "72ed52dbac3deed476f1bfda",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341164+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341164+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341164+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "車2台にはねられ高齢女性死亡 札幌・白石区の道道 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:03:42 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5\" target=\"_blank\">車2台にはねられ高齢女性死亡 札幌・白石区の道道</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1a7aaa638b00cf0c9aa70db1",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341188+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341188+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341188+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "af2d0c187992dff6289ca866",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341210+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341210+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341210+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "車2台にはねられ高齢女性死亡 札幌・白石区の道道 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:03:42 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5\" target=\"_blank\">車2台にはねられ高齢女性死亡 札幌・白石区の道道</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "606ff4eb156e264f50bf0c46",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341237+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341237+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341237+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "車2台にはねられ高齢女性死亡 札幌・白石区の道道 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:03:42 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VWHBHOWRGZnNCQ0ticTdISzFneU1NREVuNkQwcldlV2d3aTdfQ0VEX3lFNnJrR0VjcVJFeXVyZVI3Q3VNNExrYU4yQkRZVTlISUhWUV91dGhkQQ?oc=5\" target=\"_blank\">車2台にはねられ高齢女性死亡 札幌・白石区の道道</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5497a2ee5c8933142ba71673",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341261+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341261+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341261+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 08:42:06 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5\" target=\"_blank\">出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b5639a4767bd440705425b8f",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341284+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341284+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341284+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 08:42:06 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5\" target=\"_blank\">出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "b7af8f1208fbcd52cccfdd61",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341306+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341306+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341306+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5",
+        "published": "Fri, 27 Nov 2026 08:42:06 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ2JHdW9GMGZKVklNell2dVpWREJvS0VPS0x2ZFYyWDUwWDFzQ05nbTFfRHJfejAzcnJMd29aanRzeW9ITldTaUZ0b2w1dm51VXJvd0RaU25DQQ?oc=5\" target=\"_blank\">出会いのムード♡札幌ドームが演出 12月11日、初の縁結びイベント</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "52c0295d6d411fb1b6e93475",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341328+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341328+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341328+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "児童77人分情報 閲覧可能状態に 札幌・新琴似西小 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5\" target=\"_blank\">児童77人分情報 閲覧可能状態に 札幌・新琴似西小</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "bfd0c8326e62c39a2d996158",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341350+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341350+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341350+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "児童77人分情報 閲覧可能状態に 札幌・新琴似西小 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5\" target=\"_blank\">児童77人分情報 閲覧可能状態に 札幌・新琴似西小</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "150d8eb66d2ea2105b3404b1",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341374+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341374+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341374+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "児童77人分情報 閲覧可能状態に 札幌・新琴似西小 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5\" target=\"_blank\">児童77人分情報 閲覧可能状態に 札幌・新琴似西小</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "10e253b676ddae52f0b0bc58",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341398+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341398+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341398+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:30:53 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SWXhGeU5nUEdyRWhoRHZkSGZnQUJvWDZjSGwxYVZDNUp0RjJTS295emtNdkRoQzhOZzNjeENPLU94QTVFQWVHdWFIY2l3UXk0NkZ0T1I3VC1LZw?oc=5\" target=\"_blank\">新幹線札幌延伸の総事業費、当初比2倍超3.4兆円 国交省が公表</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "cbf8e3a6f4bf35ed5f110291",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341422+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341422+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341422+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5",
+        "published": "Fri, 27 Nov 2026 01:04:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wNWtMcWJMblE4SVBDNDFQSDhYWlhyMDlWNlFtZUE3VGtMVXRmOUk5X1hEeFgyaEYzcE5oMXY1a1NPcUxIR2dZNWlyX0xtY0hVa0YwemlNQTlLdw?oc=5\" target=\"_blank\">【動画解説】札幌に環状高速ができるのか 政治力が絡む巨大構想</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "0715add006c841bdece01cdf",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341443+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341443+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341443+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5",
+        "published": "Fri, 27 Nov 2026 13:23:48 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwb05CeXRCQVVIRmswMzFzYUdPaUxUdVRVeEtRUjlLRk1sRDVUeDVOdFJycjYzUFRBZmVaVElmQjlQX2xqRWVYODRYOUV0RDVkVTNvODhPeTlNZw?oc=5\" target=\"_blank\">全道展80周年、会員・会友の近作展 札幌・近代美術館で28日開幕</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "＜秋元・札幌市長動静＞ - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE94Z09TN3lRYkV2TUE3NERPV3dCejNnaGoxNkEyUEJjNjZQVnh2V0pKbGNwcklNQ2JVSk9SYmRTWFZ2LUdPVjFHcDN4NUFPUjBqak1ZWThJdC1tdw?oc=5\" target=\"_blank\">＜秋元・札幌市長動静＞</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "e1e85acad96eb2c36431e73e",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341465+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341465+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341465+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5",
+        "published": "Fri, 27 Nov 2026 16:50:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5\" target=\"_blank\">すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5",
+        "published": "Fri, 27 Nov 2026 03:04:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5\" target=\"_blank\">「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "31a9e77008486ee57a9eb33d",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341490+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341490+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341490+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5",
+        "published": "Fri, 27 Nov 2026 03:04:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5\" target=\"_blank\">「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5",
+        "published": "Fri, 27 Nov 2026 14:01:13 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5\" target=\"_blank\">札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "3f4a3ba6007208520aca2ca8",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341514+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341514+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341514+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5",
+        "published": "Fri, 27 Nov 2026 16:50:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5\" target=\"_blank\">すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5",
+        "published": "Thu, 26 Nov 2026 21:30:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5\" target=\"_blank\">強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "2b7bf44ce839eed4bdb58a7a",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341539+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341539+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341539+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5",
+        "published": "Fri, 27 Nov 2026 03:04:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5\" target=\"_blank\">「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5",
+        "published": "Thu, 26 Nov 2026 21:30:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5\" target=\"_blank\">強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "05070a62ae8c6bbd3905d594",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341565+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341565+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341565+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5\" target=\"_blank\">札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5",
+        "published": "Fri, 27 Nov 2026 14:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5\" target=\"_blank\">札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "1e87bc8541302e9da157c1d4",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341591+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341591+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341591+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5",
+        "published": "Fri, 27 Nov 2026 16:50:37 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5\" target=\"_blank\">すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5",
+        "published": "Fri, 27 Nov 2026 13:22:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5\" target=\"_blank\">高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "fa8b39d53ac3722ce14bfd1f",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341616+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341616+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341616+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5",
+        "published": "Fri, 27 Nov 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5\" target=\"_blank\">札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路 - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5",
+        "published": "Fri, 27 Nov 2026 13:22:14 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1DUlVtaFBPSF80TXZqb0d1bGhTU09Za1NZZ0NSWGltUFFiWUxmX2hmMnYzUzdVMUxYazhuRG1TTnVQakNBbEFsOXZmakFuNmg0UWw2UmhvTUNucjVVVEJPTFFhV3JUTExzRjJwUzdRYTFOa2Zna2x4MV9LdVJKazA?oc=5\" target=\"_blank\">高齢女性が乗用車2台にはねられ死亡 警察は運転手2人から当時の状況を聴く 札幌市白石区北郷の片側2車線の直線道路</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "6d37423d0c34cc02c0294a4b",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341640+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341640+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341640+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:32:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5\" target=\"_blank\">１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5",
+        "published": "Fri, 27 Nov 2026 14:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5\" target=\"_blank\">札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8e2a58fe632b048a342b4ca3",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341665+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341665+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341665+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5",
+        "published": "Fri, 27 Nov 2026 13:32:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tQzVGckFBZUpHUmlYME9RVlFnUDdGc1R6VU9uUy1jVzJ4ZDV6YVhyZE1oNnZuaC1KT0RPOXlYRVNJdG4yZ0VndFlRWkJIQi1Ma19FYWdBOVVCUQ?oc=5\" target=\"_blank\">１０００億円の縮小が可能 北海道新幹線札幌延伸 当初最大１兆２０００億円を試算 国交省が報告書</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5",
+        "published": "Fri, 27 Nov 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5\" target=\"_blank\">札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "52485c50769399f874c52aaa",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341687+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341687+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341687+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5\" target=\"_blank\">札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5",
+        "published": "Thu, 26 Nov 2026 21:30:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5\" target=\"_blank\">強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "da7710f6404f46c327a196f6",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341715+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341715+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341715+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5",
+        "published": "Fri, 27 Nov 2026 14:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5\" target=\"_blank\">札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5",
+        "published": "Fri, 27 Nov 2026 10:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jejFmeGhRMldCY1N5Mm5Lak80bWxUUlJkcVduUG9mOG9PV3ZkM0o1WHlMcUJDY2gwZGdGZlZyR1RiamJWajdQeUMyNWhQOFAySXM1WG8wMC1RZw?oc=5\" target=\"_blank\">札幌・白石区で高齢女性が車2台に相次いではねられる 女性は死亡</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "938b68256e1a3c03cacca502",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341737+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341737+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341737+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5\" target=\"_blank\">札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "児童77人分情報 閲覧可能状態に 札幌・新琴似西小 - 北海道新聞デジタル",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5",
+        "published": "Fri, 27 Nov 2026 19:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Qc2ZxUXVncWRLWVBTSndLY1FObEU1U0UzVkdpOWgyWEtkcVlJTDBNZTRVM201S0Y1TThzeUw3U1VPak5IVzFTRG5DZkhEMkVkZldidnVnak0?oc=5\" target=\"_blank\">児童77人分情報 閲覧可能状態に 札幌・新琴似西小</a>  <font color=\"#6f6f6f\">北海道新聞デジタル</font>",
+        "rss_source": {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "80b29753c7119853cadc5709",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341760+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341760+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341760+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "秋元札幌市長に2027年度予算編成に対する要望書を提出 - 選挙ドットコム",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qZlhLY0gwNXJ6TWt0SnItR0ZaY2ZMcFR1a3BPaDlpaENBM0tiOVJ1b3RqSWhYeXQ3WTZmVi1CMWtWQmVOTnItTDBZd1RxeWpHSmdvODNRZ3ZQMER0QTZj?oc=5",
+        "published": "Fri, 27 Nov 2026 05:23:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qZlhLY0gwNXJ6TWt0SnItR0ZaY2ZMcFR1a3BPaDlpaENBM0tiOVJ1b3RqSWhYeXQ3WTZmVi1CMWtWQmVOTnItTDBZd1RxeWpHSmdvODNRZ3ZQMER0QTZj?oc=5\" target=\"_blank\">秋元札幌市長に2027年度予算編成に対する要望書を提出</a>  <font color=\"#6f6f6f\">選挙ドットコム</font>",
+        "rss_source": {
+          "name": "選挙ドットコム",
+          "url": "https://go2senkyo.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉 - FNNプライムオンライン",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:30:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VTGdDOXhYTmFKcXBuNjRONGEwTk5FWUJYMlBIWGJleGRxN3c3eEZTZkp6cVhERThtWXpIYzZLOUJwdldnLUNrSGRjajdKZw?oc=5\" target=\"_blank\">札幌の小学校で給食のアレルギーなど児童77人分の「個人情報」が漏えい…他校の教員や児童ら38人が閲覧…GIGAアカウントに保存する際に共有設定を誤る〈北海道札幌市〉</a>  <font color=\"#6f6f6f\">FNNプライムオンライン</font>",
+        "rss_source": {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "5fd10fb8db6ddcdc6e12bd18",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341789+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341789+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341789+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "秋元札幌市長に2027年度予算編成に対する要望書を提出 - 選挙ドットコム",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qZlhLY0gwNXJ6TWt0SnItR0ZaY2ZMcFR1a3BPaDlpaENBM0tiOVJ1b3RqSWhYeXQ3WTZmVi1CMWtWQmVOTnItTDBZd1RxeWpHSmdvODNRZ3ZQMER0QTZj?oc=5",
+        "published": "Fri, 27 Nov 2026 05:23:04 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qZlhLY0gwNXJ6TWt0SnItR0ZaY2ZMcFR1a3BPaDlpaENBM0tiOVJ1b3RqSWhYeXQ3WTZmVi1CMWtWQmVOTnItTDBZd1RxeWpHSmdvODNRZ3ZQMER0QTZj?oc=5\" target=\"_blank\">秋元札幌市長に2027年度予算編成に対する要望書を提出</a>  <font color=\"#6f6f6f\">選挙ドットコム</font>",
+        "rss_source": {
+          "name": "選挙ドットコム",
+          "url": "https://go2senkyo.com"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧 - HTB 北海道テレビ",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5",
+        "published": "Fri, 27 Nov 2026 14:14:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fSWtYM2h1NkdlZ3NkYVJxdkdDbVBITmNLSlFyRzFUYmFESVlwNTV0NVRZejlfRFJLTWxhUWdDdDVxT19naFN2ZkdCSlNiLWI3azdMcFMyWTN4Zw?oc=5\" target=\"_blank\">札幌市立小学校で“配慮を要する児童の情報７７人分漏洩” 他校の児童が発見し発覚 ３８人がデータ閲覧</a>  <font color=\"#6f6f6f\">HTB 北海道テレビ</font>",
+        "rss_source": {
+          "name": "HTB 北海道テレビ",
+          "url": "https://www.htb.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "8eef98ddfbf0647bf024bd2a",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341826+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341826+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341826+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場 - ｄメニューニュース",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTFBLNm8yd2pwV3QwVExyR3gzRWJRam9EMEZXU3FtWnJ3bXhxR1FUc3BsejZ6UkhldGNiSEJOLWpCcG12RmJsaG16NFMydjhjNEVJTnZhUGVMUnJyRzFZRUg4UnBuRGZMNEdCSnR1R05nONIBdEFVX3lxTE5jMkpFODF0bng2UDAyUDY0clNNeUlXZlQtZEdXYjNjanVxLTE1SWc5UzVoeXZXSTM4NW55VFFwNDlaX2ZtVDBjcEJHMTdmTjI2YTE2UjM0YUtmSmprQm5KMzNfd1NVOGd3ZjhpZVZhMmkyWTlw?oc=5\" target=\"_blank\">札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場</a>  <font color=\"#6f6f6f\">ｄメニューニュース</font>",
+        "rss_source": {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp"
+        },
+        "collection_role": "source_unconfirmed"
+      },
+      "article_b": {
+        "title": "知床の漁師が札幌に集結、鮭の魅力を届ける「鮭漁師祭り」開催！「鮭いくら丼」を100食無料で提供 - ガジェット通信",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5feUozV1ljTFk3ekhwNjNRb0JPT1FqcC05N0NiTExpMDY2UHN6dF9EbGpjTEJkakMtaTFGaTZ5NElETEZpWFN3clQ0cw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:15:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5feUozV1ljTFk3ekhwNjNRb0JPT1FqcC05N0NiTExpMDY2UHN6dF9EbGpjTEJkakMtaTFGaTZ5NElETEZpWFN3clQ0cw?oc=5\" target=\"_blank\">知床の漁師が札幌に集結、鮭の魅力を届ける「鮭漁師祭り」開催！「鮭いくら丼」を100食無料で提供</a>  <font color=\"#6f6f6f\">ガジェット通信</font>",
+        "rss_source": {
+          "name": "ガジェット通信",
+          "url": "https://getnews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "24c4482e39670767e6d62a12",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341853+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341853+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341853+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "知床の漁師が札幌に集結、鮭の魅力を届ける「鮭漁師祭り」開催！「鮭いくら丼」を100食無料で提供 - ガジェット通信",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5feUozV1ljTFk3ekhwNjNRb0JPT1FqcC05N0NiTExpMDY2UHN6dF9EbGpjTEJkakMtaTFGaTZ5NElETEZpWFN3clQ0cw?oc=5",
+        "published": "Fri, 27 Nov 2026 12:15:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5feUozV1ljTFk3ekhwNjNRb0JPT1FqcC05N0NiTExpMDY2UHN6dF9EbGpjTEJkakMtaTFGaTZ5NElETEZpWFN3clQ0cw?oc=5\" target=\"_blank\">知床の漁師が札幌に集結、鮭の魅力を届ける「鮭漁師祭り」開催！「鮭いくら丼」を100食無料で提供</a>  <font color=\"#6f6f6f\">ガジェット通信</font>",
+        "rss_source": {
+          "name": "ガジェット通信",
+          "url": "https://getnews.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95T3JnbzVhaG9fdFV0WkFleHB4Z2ZWODkxTzNEMXhGUmRuTk9BeWx1MVZOb2xfMHR4QzhCZzBsVTJjZi0yMENOOW1vRHF0QXdzam5TQUp2dE56dw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE95T3JnbzVhaG9fdFV0WkFleHB4Z2ZWODkxTzNEMXhGUmRuTk9BeWx1MVZOb2xfMHR4QzhCZzBsVTJjZi0yMENOOW1vRHF0QXdzam5TQUp2dE56dw?oc=5\" target=\"_blank\">札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "99f115c08984fb52dbae575f",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341879+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341879+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341879+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン） - Yahoo!ニュース",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5",
+        "published": "Thu, 26 Nov 2026 21:30:35 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZlJELWw5VzF2YmRrdS1GUVVDWHZCcTFqVjRkNFF3UWt6RTZSck1KdVB1VEtnalFGMjdKQktBY0t6S2lPeE9ha19ETkpQUWQxMWIwVVUtU0JHMXdGd2NuZTFiTkc0OWlFd0V4UXFET25fYXJEVzgwTGplRFY2MUE?oc=5\" target=\"_blank\">強烈なパンチ力で人気の「札幌ブラック」が渋谷で復活！（食べログマガジン）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+        "rss_source": {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp"
+        },
+        "collection_role": "supplementary",
+        "collection_reason": "original_unconfirmed_or_unavailable"
+      },
+      "article_b": {
+        "title": "札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場 - TBS NEWS DIG",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95T3JnbzVhaG9fdFV0WkFleHB4Z2ZWODkxTzNEMXhGUmRuTk9BeWx1MVZOb2xfMHR4QzhCZzBsVTJjZi0yMENOOW1vRHF0QXdzam5TQUp2dE56dw?oc=5",
+        "published": "Fri, 27 Nov 2026 08:35:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE95T3JnbzVhaG9fdFV0WkFleHB4Z2ZWODkxTzNEMXhGUmRuTk9BeWx1MVZOb2xfMHR4QzhCZzBsVTJjZi0yMENOOW1vRHF0QXdzam5TQUp2dE56dw?oc=5\" target=\"_blank\">札幌の人気パン店「どんぐり本店」で3日間限定『蒸しまんパラダイス』開催 角煮やすきやきなど具材ぎっしりの新作6種が登場</a>  <font color=\"#6f6f6f\">TBS NEWS DIG</font>",
+        "rss_source": {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "44123f15adc2c4d781ef93ec",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341905+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341905+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341905+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "冬の感謝祭～円山動物園からちょっと早めのクリスマス～ - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SOXlITGF6R2YzOUxXQ2ZVRGxzQlhKTllhREVjVmhONk1WamE3bXlQQlNYRmJDMWRoSEtjeExFLWdFeXRYd1VYRDhHd2VkMTJLcjY0UWhyM3FoWVBF?oc=5",
+        "published": "Tue, 24 Nov 2026 01:00:36 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SOXlITGF6R2YzOUxXQ2ZVRGxzQlhKTllhREVjVmhONk1WamE3bXlQQlNYRmJDMWRoSEtjeExFLWdFeXRYd1VYRDhHd2VkMTJLcjY0UWhyM3FoWVBF?oc=5\" target=\"_blank\">冬の感謝祭～円山動物園からちょっと早めのクリスマス～</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "住民票・印鑑証明・戸籍証明書・戸籍の附票の証明書コンビニ交付サービス（コンビニ交付） - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sT2lnU1g1VXYzeVR4aG1CbmltWUJqSEpmcHVleFQ0NjJLcFJlU0JTdzdidzdsRWQ1XzRJUzZJT0NxS2tKQ1kxeXpPaXBoNTlzb3hwOXFncw?oc=5",
+        "published": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sT2lnU1g1VXYzeVR4aG1CbmltWUJqSEpmcHVleFQ0NjJLcFJlU0JTdzdidzdsRWQ1XzRJUzZJT0NxS2tKQ1kxeXpPaXBoNTlzb3hwOXFncw?oc=5\" target=\"_blank\">住民票・印鑑証明・戸籍証明書・戸籍の附票の証明書コンビニ交付サービス（コンビニ交付）</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "24d3b64e09a00087cd661b46",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341927+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341927+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341927+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "冬の感謝祭～円山動物園からちょっと早めのクリスマス～ - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SOXlITGF6R2YzOUxXQ2ZVRGxzQlhKTllhREVjVmhONk1WamE3bXlQQlNYRmJDMWRoSEtjeExFLWdFeXRYd1VYRDhHd2VkMTJLcjY0UWhyM3FoWVBF?oc=5",
+        "published": "Tue, 24 Nov 2026 01:00:36 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SOXlITGF6R2YzOUxXQ2ZVRGxzQlhKTllhREVjVmhONk1WamE3bXlQQlNYRmJDMWRoSEtjeExFLWdFeXRYd1VYRDhHd2VkMTJLcjY0UWhyM3FoWVBF?oc=5\" target=\"_blank\">冬の感謝祭～円山動物園からちょっと早めのクリスマス～</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "臨時小児ドライブスルー発熱外来 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UYllscHhiRjFaaXNGQkNieFRTSFVleUpSc0p4ekdJYk5uV3hrWTFzTURKNG1vTUs4eEhrV0NEcUtPaFRsUFZlSVVZTVFUU1ZGdEhkejZGdw?oc=5",
+        "published": "Tue, 24 Nov 2026 02:25:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UYllscHhiRjFaaXNGQkNieFRTSFVleUpSc0p4ekdJYk5uV3hrWTFzTURKNG1vTUs4eEhrV0NEcUtPaFRsUFZlSVVZTVFUU1ZGdEhkejZGdw?oc=5\" target=\"_blank\">臨時小児ドライブスルー発熱外来</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "07555fd04c21c4c14eed0faf",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341954+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341954+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341954+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "article_grouping",
+    "reason": "uncertain_pair",
+    "payload": {
+      "article_a": {
+        "title": "住民票・印鑑証明・戸籍証明書・戸籍の附票の証明書コンビニ交付サービス（コンビニ交付） - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sT2lnU1g1VXYzeVR4aG1CbmltWUJqSEpmcHVleFQ0NjJLcFJlU0JTdzdidzdsRWQ1XzRJUzZJT0NxS2tKQ1kxeXpPaXBoNTlzb3hwOXFncw?oc=5",
+        "published": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sT2lnU1g1VXYzeVR4aG1CbmltWUJqSEpmcHVleFQ0NjJLcFJlU0JTdzdidzdsRWQ1XzRJUzZJT0NxS2tKQ1kxeXpPaXBoNTlzb3hwOXFncw?oc=5\" target=\"_blank\">住民票・印鑑証明・戸籍証明書・戸籍の附票の証明書コンビニ交付サービス（コンビニ交付）</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "article_b": {
+        "title": "臨時小児ドライブスルー発熱外来 - 札幌市",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UYllscHhiRjFaaXNGQkNieFRTSFVleUpSc0p4ekdJYk5uV3hrWTFzTURKNG1vTUs4eEhrV0NEcUtPaFRsUFZlSVVZTVFUU1ZGdEhkejZGdw?oc=5",
+        "published": "Tue, 24 Nov 2026 02:25:07 GMT",
+        "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UYllscHhiRjFaaXNGQkNieFRTSFVleUpSc0p4ekdJYk5uV3hrWTFzTURKNG1vTUs4eEhrV0NEcUtPaFRsUFZlSVVZTVFUU1ZGdEhkejZGdw?oc=5\" target=\"_blank\">臨時小児ドライブスルー発熱外来</a>  <font color=\"#6f6f6f\">札幌市</font>",
+        "rss_source": {
+          "name": "札幌市",
+          "url": "https://www.city.sapporo.jp"
+        },
+        "collection_role": "primary"
+      },
+      "ai_result": "{\"relation\": \"uncertain\", \"confidence\": \"low\", \"reason\": \"stage_budget_deferred\"}"
+    },
+    "review_id": "bbe743b44348d13319fa1a77",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:02.341977+00:00",
+    "first_seen_at": "2026-11-27T22:00:02.341977+00:00",
+    "last_seen_at": "2026-11-27T22:00:02.341977+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+              "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5",
+              "published": "Fri, 27 Nov 2026 16:50:37 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE82Z2puNFJwU00xTmlLejZUOXFQVEotcjQtb21VUDc4Sm5kaTVCbmZ3Zk5uNGN5aUhFZ2hnWEVKVmNRQmx3OEJ0LWNKbFREcXY0LUh6NWNFVkx3SVdEQ0xvdEJwNGpuNDV4amhGWmlDYUp6cG4tYVN3dEJteXVncm8?oc=5\" target=\"_blank\">すすきのにカニ料理の飲食ビル「札幌かに横丁」 2店が先行オープン（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "5972ccf9fc895a5952d7602e",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:03.649492+00:00",
+    "first_seen_at": "2026-11-27T22:00:03.649492+00:00",
+    "last_seen_at": "2026-11-27T22:00:03.649492+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+              "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5",
+              "published": "Fri, 27 Nov 2026 03:04:14 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9fbUtmTkRlZWxuU0ZjTUxyRDRUZ1FGQUxBUGswSHU4STZQV2JuNERLN0lrdFpCQUdvekF6MVJkT1c2VG0wTEJOSURLQzhobkVScjAyRGxIYldEMEk4eXJyemNGYmtfX3A5WEFWcUNyT3V4eUxyMHNKQTFTYzZYcWs?oc=5\" target=\"_blank\">「事業所内のストーブから出火」プレハブ２階建ての板金業者作業所で火事 札幌・白石区</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "c6ecc8c32b6b2c00a5c5827a",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:03.649551+00:00",
+    "first_seen_at": "2026-11-27T22:00:03.649551+00:00",
+    "last_seen_at": "2026-11-27T22:00:03.649551+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "group_merge",
+    "reason": "explicit_pair_conflict",
+    "payload": {
+      "groups": [
+        {
+          "event_name": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線 - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5",
+              "published": "Fri, 27 Nov 2026 09:49:00 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBFdzhiR3VWNGk3Y2hFVm9tWHMwUWs2d3pROGpDU21ZQXhKSGRCNGdiYzBBUFFmRFlob1dIUnlXdS1ULTVULXgyT3ZEbXRvOXVqOTJvNHpqRmlyNzN5T0UyNlBId0U3NDBMd2NnUlZOSGJ1ZnZDSnhLdmxjVUxnQTg?oc=5\" target=\"_blank\">札幌延伸事業費1兆978億円増 1000億円圧縮も当初の倍以上 開業は2038年度末の見込み 北海道新幹線</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        },
+        {
+          "event_name": "札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+          "articles": [
+            {
+              "title": "札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5",
+              "published": "Fri, 27 Nov 2026 14:01:13 GMT",
+              "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYW85bmNiMGplcXpPWTVHSlNhVVN0NVhUOWpPdzZuU09mbktfTlNzcF9iUjkycWwyV2R6TVJrWTJkSWJQdDNyQnJ1aGgzNWRJaUFBLUd5Z2prOVlPTjdRT2RXMTBJYnNJSThJMnJWMExkVzAxNTlBemdtTFQxb3c?oc=5\" target=\"_blank\">札幌ステラプレイスに「KINOTOYA BAKE」 焼きたて菓子販売（みんなの経済新聞ネットワーク）</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+              "rss_source": {
+                "name": "Yahoo!ニュース",
+                "url": "https://news.yahoo.co.jp"
+              },
+              "collection_role": "supplementary",
+              "collection_reason": "original_unconfirmed_or_unavailable"
+            }
+          ],
+          "article_count": 1
+        }
+      ]
+    },
+    "review_id": "a0b54b66c4634b79489c7961",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:03.649589+00:00",
+    "first_seen_at": "2026-11-27T22:00:03.649589+00:00",
+    "last_seen_at": "2026-11-27T22:00:03.649589+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5",
+    "payload": {
+      "group": {
+        "event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - 日テレNEWS NNN",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "男が逮捕された段階",
+        "summary": "札幌市で、路上で下半身を露出したとみられる男が、その後小学校に侵入したとして逮捕されたという記事です。記事タイトルから確認できる範囲では、逮捕までが報じられています。",
+        "latest": "男が逮捕されたことが最新です。",
+        "next_watch": "現時点で明確な次の動きは確認できません。今後、容疑の詳細や事件の経緯に関する続報が出るかどうかが注目点です。",
+        "articles": [
+          {
+            "title": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - 日テレNEWS NNN",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5",
+            "published": "Sun, 11 Oct 2026 19:43:00 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5\" target=\"_blank\">「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市</a>  <font color=\"#6f6f6f\">日テレNEWS NNN</font>",
+            "rss_source": {
+              "name": "日テレNEWS NNN",
+              "url": "https://news.ntv.co.jp"
+            },
+            "collection_role": "primary"
+          }
+        ]
+      }
+    },
+    "review_id": "f29985d84281dd858f02ccaa",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:30.344178+00:00",
+    "diagnostics": {
+      "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+      "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
+      "target_source_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+      ],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5"
+      ],
+      "ai_report": {
+        "relation": "same_event",
+        "event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "逮捕",
+        "summary": "札幌市で、路上で下半身を露出したうえ小学校に侵入したとして男が逮捕された段階。",
+        "latest": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+        "next_watch": "",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5"
+        ],
+        "identity_matches": [
+          {
+            "incoming_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5",
+            "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
+            "anchors": [
+              {
+                "kind": "case",
+                "value": "札幌市",
+                "existing_quote": "札幌市",
+                "incoming_quote": "札幌市"
+              },
+              {
+                "kind": "detail",
+                "value": "路上で下半身露出→小学校に侵入した男を逮捕",
+                "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
+                "incoming_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市"
+              }
+            ]
+          }
+        ],
+        "event_identity": {},
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-11-27T22:00:30.344178+00:00",
+    "last_seen_at": "2026-11-27T22:00:30.344178+00:00",
+    "observation_count": 1,
+    "legacy_history_present": false
+  },
+  {
+    "stage": "event_attachment",
+    "reason": "uncertain_or_invalid_evidence",
+    "payload": {
+      "group": {
+        "event_name": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市 - Yahoo!ニュース",
+        "article_count": 1,
+        "source_article_count": 1,
+        "category": "事件・事故",
+        "tracking_value": "medium",
+        "current_stage": "札幌市南区の住宅火災が発生し、隣の建物へ延焼中と報じられている段階",
+        "summary": "北海道札幌市南区で住宅の火事が発生し、隣接する建物に延焼していると伝えられています。",
+        "latest": "火災が隣の建物へ延焼中と報じられていること",
+        "next_watch": "火災の鎮火状況、延焼の有無、けが人や被害の確認などが続報で明らかになるかどうかです。",
+        "articles": [
+          {
+            "title": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市 - Yahoo!ニュース",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5",
+            "published": "Mon, 12 Oct 2026 03:05:01 GMT",
+            "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5\" target=\"_blank\">【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市</a>  <font color=\"#6f6f6f\">Yahoo!ニュース</font>",
+            "rss_source": {
+              "name": "Yahoo!ニュース",
+              "url": "https://news.yahoo.co.jp"
+            },
+            "collection_role": "supplementary",
+            "collection_reason": "original_unconfirmed_or_unavailable"
+          }
+        ]
+      }
+    },
+    "review_id": "77de22e701a2c40d08e29be9",
+    "schema_version": 2,
+    "observed_at": "2026-11-27T22:00:30.344178+00:00",
+    "diagnostics": {
+      "target_event_id": "",
+      "target_event_name": null,
+      "target_source_urls": [],
+      "input_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
+      ],
+      "ai_report": {
+        "relation": "new_event",
+        "event_id": "",
+        "confidence": "high",
+        "multi_event": false,
+        "meaningful_change": false,
+        "current_stage": "住宅火災の発生・延焼中",
+        "summary": "札幌市南区の住宅で火災が起き、隣の建物に延焼中と報じられています。",
+        "latest": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市",
+        "next_watch": "延焼の拡大、けが人や逃げ遅れの有無、消火完了の有無",
+        "completed": false,
+        "completion_quote": "",
+        "evidence_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV3RXA1A1VTBhOGs?oc=5"
+        ],
+        "identity_matches": [],
+        "event_identity": {
+          "value": "南区の住宅で火事",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV3RXA1A1VTBhOGs?oc=5",
+          "quote": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市"
+        },
+        "progress_evidence": [],
+        "schedules": []
+      },
+      "raw_ai_response": null,
+      "http_status": null,
+      "api_error_code": null,
+      "triage_status": "needs_evidence",
+      "decision_attempts": 1
+    },
+    "first_seen_at": "2026-11-27T22:00:30.344178+00:00",
+    "last_seen_at": "2026-11-27T22:00:30.344178+00:00",
     "observation_count": 1,
     "legacy_history_present": false
   }
