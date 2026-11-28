@@ -2,14 +2,81 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "2404eeacab4b556fdbfa4d4a",
+      "review_id": "705ace22ef02fc0a48d53caa",
       "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-11-28T13:05:16.860735+00:00",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5",
+      "observed_at": "2026-11-28T20:58:42.721775+00:00",
+      "diagnostics": {
+        "target_event_id": "0ea25e05-4ddd-4f71-88f9-4bd28fa3a62f",
+        "target_event_name": "【速報】「一軒家が燃えている」3連休最終日の札幌で火事…近隣に建物に延焼か_消防車など11台で消火活動中〈北海道札幌市〉 - FNNプライムオンライン",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5CalRPZUFONW9zelI0U19pcDBCS1FKNjdsNlZaeGM1bnRHVV94VFBxOXNHRDFtSTRYbnlnX3l2Q254Sk9mTEk0dnQ1MjNFUQ?oc=5"
+        ],
+        "input_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
+        ],
+        "ai_report": {
+          "relation": "same_event",
+          "event_id": "0ea25e05-4ddd-4f71-88f9-4bd28fa3a62f",
+          "confidence": "high",
+          "multi_event": false,
+          "meaningful_change": false,
+          "current_stage": "火災の発生と消火活動中",
+          "summary": "札幌市南区の住宅火災で、隣の建物に延焼している段階。",
+          "latest": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市",
+          "next_watch": "消火完了や延焼範囲、けが人・被害の有無。",
+          "completed": false,
+          "completion_quote": "",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
+          ],
+          "identity_matches": [
+            {
+              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9jDMycTlHNXBmM2xSU2dWZVlYYjhxMjhYMDRBLTMzX0tUWWZhWVcySGdRSktmRVRlN0pXQWRSZVBYaXAzbjd6UzF4M1pJVWdQbDFVNHdCaGluMWJzV1dvZF82WENKbnAwa0xXMlNSanhZQ2c2UzltU01OVWZIY0U?oc=5",
+              "anchors": [
+                {
+                  "kind": "case",
+                  "value": "札幌市南区の住宅で火事",
+                  "existing_quote": "札幌市厚別区大谷地で住宅火災",
+                  "incoming_quote": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市"
+                },
+                {
+                  "kind": "entity",
+                  "value": "隣の建物に延焼中",
+                  "existing_quote": "“住宅は全焼”…隣のアパートにも燃え移る",
+                  "incoming_quote": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市"
+                }
+              ]
+            }
+          ],
+          "event_identity": {},
+          "progress_evidence": [],
+          "schedules": []
+        },
+        "raw_ai_response": null,
+        "http_status": null,
+        "api_error_code": null,
+        "triage_status": "needs_evidence",
+        "decision_attempts": 2
+      },
+      "event_id": null,
+      "event_name": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市 - Yahoo!ニュース",
+      "article_urls": [
+        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
+      ]
+    },
+    {
+      "review_id": "a2837c261ad7f488f25fdb30",
+      "stage": "event_attachment",
+      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5",
+      "observed_at": "2026-11-28T20:58:42.721775+00:00",
       "diagnostics": {
         "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
-        "target_event_name": null,
-        "target_source_urls": [],
+        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
+        "target_source_urls": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+        ],
         "input_urls": [
           "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5"
         ],
@@ -20,29 +87,28 @@
           "multi_event": false,
           "meaningful_change": false,
           "current_stage": "逮捕",
-          "summary": "札幌市豊平区で、路上で下半身を露出した後に小学校へ侵入した疑いで25歳の男が逮捕された段階。",
+          "summary": "札幌市で、路上で下半身を露出したうえ小学校に侵入したとして男が逮捕された。",
           "latest": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区",
-          "next_watch": "捜査結果や送検・起訴の有無",
+          "next_watch": "",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5",
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5"
           ],
           "identity_matches": [
             {
               "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
+              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
               "anchors": [
                 {
                   "kind": "case",
-                  "value": "路上で下半身を露出、その後小学校に侵入",
+                  "value": "札幌市豊平区",
                   "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
                   "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
                 },
                 {
                   "kind": "entity",
-                  "value": "札幌市豊平区",
+                  "value": "小学校に侵入した男",
                   "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
                   "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
                 }
@@ -57,13 +123,34 @@
         "http_status": null,
         "api_error_code": null,
         "triage_status": "needs_evidence",
-        "decision_attempts": 1
+        "decision_attempts": 2
       },
       "event_id": null,
       "event_name": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - TBS NEWS DIG",
       "article_urls": [
         "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5"
       ]
+    },
+    {
+      "review_id": "22b869eefa9c7eac23471a2c",
+      "stage": "backfill",
+      "reason": "search_identity_uncertain",
+      "observed_at": "2026-11-28T20:58:42.721775+00:00",
+      "diagnostics": {
+        "target_event_id": "0ea25e05-4ddd-4f71-88f9-4bd28fa3a62f",
+        "target_event_name": "【速報】「一軒家が燃えている」3連休最終日の札幌で火事…近隣に建物に延焼か_消防車など11台で消火活動中〈北海道札幌市〉 - FNNプライムオンライン",
+        "ai_report": {
+          "confidence": "low",
+          "matches": [],
+          "evidence_urls": [],
+          "identity_matches": []
+        },
+        "raw_ai_response": null,
+        "http_status": null
+      },
+      "event_id": "0ea25e05-4ddd-4f71-88f9-4bd28fa3a62f",
+      "event_name": null,
+      "article_urls": []
     }
   ]
 }
