@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T03:56:06.210829+00:00",
+  "updated_at": "2026-11-28T13:05:24.852422+00:00",
   "ai_pause_reason": null,
-  "waiting_article_count": 4211,
+  "waiting_article_count": 4236,
   "oldest_wait_at": "2026-10-09T19:37:21.457421+00:00",
-  "oldest_wait_hours": 1184.31,
+  "oldest_wait_hours": 1193.47,
   "stages": {
     "collection": {
-      "group_count": 30,
-      "article_count": 30,
-      "oldest_wait_hours": 0.0
+      "group_count": 0,
+      "article_count": 0,
+      "oldest_wait_hours": 0
     },
     "status_generation": {
-      "group_count": 4096,
-      "article_count": 4149,
-      "oldest_wait_hours": 1145.41
+      "group_count": 4150,
+      "article_count": 4203,
+      "oldest_wait_hours": 1154.56
     },
     "tracking": {
-      "group_count": 32,
-      "article_count": 32,
-      "oldest_wait_hours": 1184.31
+      "group_count": 33,
+      "article_count": 33,
+      "oldest_wait_hours": 1193.47
     }
   },
   "manual_review_counts": {
@@ -27,22 +27,22 @@
     "tracking": 81
   },
   "collection_retained_counts": {
-    "queued": 1744,
+    "queued": 1776,
     "classified_waiting": 5,
-    "duplicate_source": 286,
+    "duplicate_source": 290,
     "out_of_scope": 106,
     "already_saved": 28,
-    "downstream_waiting": 2645
+    "downstream_waiting": 2641
   },
-  "daily_accounted_usd": 0.067247,
-  "monthly_accounted_usd": 2.2106,
-  "daily_network_calls": 12,
+  "daily_accounted_usd": 0.115351,
+  "monthly_accounted_usd": 2.258704,
+  "daily_network_calls": 23,
   "alerts": [
     "waiting_article_count_at_least_100",
     "oldest_wait_at_least_48_hours",
     "waiting_increased_three_observations"
   ],
-  "daily_tracking_network_calls": 2,
-  "daily_tracking_accounted_usd": 0.050451,
+  "daily_tracking_network_calls": 3,
+  "daily_tracking_accounted_usd": 0.077277,
   "note": "Unique article revisions across active stages; archive/manual review excluded. Spend covers this repository after cost-control deployment."
 }

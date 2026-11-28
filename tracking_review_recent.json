@@ -2,18 +2,16 @@
   "schema_version": 1,
   "items": [
     {
-      "review_id": "f29985d84281dd858f02ccaa",
+      "review_id": "2404eeacab4b556fdbfa4d4a",
       "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5",
-      "observed_at": "2026-11-27T22:00:30.344178+00:00",
+      "reason": "uncertain_or_invalid_evidence",
+      "observed_at": "2026-11-28T13:05:16.860735+00:00",
       "diagnostics": {
         "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
-        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
-        ],
+        "target_event_name": null,
+        "target_source_urls": [],
         "input_urls": [
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5"
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5"
         ],
         "ai_report": {
           "relation": "same_event",
@@ -22,83 +20,19 @@
           "multi_event": false,
           "meaningful_change": false,
           "current_stage": "逮捕",
-          "summary": "札幌市で、路上で下半身を露出したうえ小学校に侵入したとして男が逮捕された段階。",
-          "latest": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
-          "next_watch": "",
+          "summary": "札幌市豊平区で、路上で下半身を露出した後に小学校へ侵入した疑いで25歳の男が逮捕された段階。",
+          "latest": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区",
+          "next_watch": "捜査結果や送検・起訴の有無",
           "completed": false,
           "completion_quote": "",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5"
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
           ],
           "identity_matches": [
             {
-              "incoming_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5",
+              "incoming_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5",
               "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市",
-                  "existing_quote": "札幌市",
-                  "incoming_quote": "札幌市"
-                },
-                {
-                  "kind": "detail",
-                  "value": "路上で下半身露出→小学校に侵入した男を逮捕",
-                  "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
-                  "incoming_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市"
-                }
-              ]
-            }
-          ],
-          "event_identity": {},
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 1
-      },
-      "event_id": null,
-      "event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - 日テレNEWS NNN",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZlRwVS1Wb1BwbHVxb2txVUIzRldkcWROcy1wekxxZU43bUJObG8yeEpOQUwtUTFUa0VWZWFmNEo5QWJJVE1OWU5oQzhsSm1BSTJpTGhKeXlLM1hrU0YxMEljZWE0NExxc0t0SERETkZHRy0wZFhOZXNCMjFjR3YtQjVOQUw1TG8?oc=5"
-      ]
-    },
-    {
-      "review_id": "4202c983d3e3ddc427c9f572",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
-      "observed_at": "2026-11-27T22:00:30.344178+00:00",
-      "diagnostics": {
-        "target_event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
-        "target_event_name": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市 - Yahoo!ニュース",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "0b65c57a-4dc7-4ff6-a818-fdaaf5d25ac3",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "逮捕",
-          "summary": "",
-          "latest": "",
-          "next_watch": "",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
-          ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12a0pFLUU5ZWFJ2WWY1eEZHNHJMdUdaZGh4a3F1VXZpU0xUek1mNlduSFdSUFBQLVVyeWF3TUJsV201T2dtbDNLY3RRdDNqXzhnZC1CajhZR09ZZHk0NVFCQ1hQblloaVAzdzNCcVEwM3VKMTI2aDg2bWtTaEJoSjg?oc=5",
               "anchors": [
                 {
                   "kind": "case",
@@ -108,7 +42,7 @@
                 },
                 {
                   "kind": "entity",
-                  "value": "小学校に侵入した男",
+                  "value": "札幌市豊平区",
                   "existing_quote": "「学校付近で下半身を出していたようだ」路上で下半身露出→小学校に侵入した男を逮捕 札幌市",
                   "incoming_quote": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区"
                 }
@@ -123,125 +57,12 @@
         "http_status": null,
         "api_error_code": null,
         "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - Yahoo!ニュース",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DMEs5ZENlS01aOUNMaV80SFdHLVYzY3ljS1JLRjNjOUlXbENUWk53eldPTXRFemhkR0F5RHdISVZsemNFOThkWHRWbk1WRHRzbjRvUmYxNHN3aU95Z3NVOWtIam12VlBvMkpnMU93U3JuRHVaaDRFenIwTlhoTzg?oc=5"
-      ]
-    },
-    {
-      "review_id": "77de22e701a2c40d08e29be9",
-      "stage": "event_attachment",
-      "reason": "uncertain_or_invalid_evidence",
-      "observed_at": "2026-11-27T22:00:30.344178+00:00",
-      "diagnostics": {
-        "target_event_id": "",
-        "target_event_name": null,
-        "target_source_urls": [],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
-        ],
-        "ai_report": {
-          "relation": "new_event",
-          "event_id": "",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "住宅火災の発生・延焼中",
-          "summary": "札幌市南区の住宅で火災が起き、隣の建物に延焼中と報じられています。",
-          "latest": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市",
-          "next_watch": "延焼の拡大、けが人や逃げ遅れの有無、消火完了の有無",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV3RXA1A1VTBhOGs?oc=5"
-          ],
-          "identity_matches": [],
-          "event_identity": {
-            "value": "南区の住宅で火事",
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV3RXA1A1VTBhOGs?oc=5",
-            "quote": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市"
-          },
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
         "decision_attempts": 1
       },
       "event_id": null,
-      "event_name": "【速報】南区の住宅で火事 隣の建物に延焼中 北海道札幌市 - Yahoo!ニュース",
+      "event_name": "路上で下半身を露出、その後小学校に侵入か「不審な男が学校に、下半身を出していたそう」と職員が110番、酒酔いの25歳男「記憶がない」札幌市豊平区 - TBS NEWS DIG",
       "article_urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIWnR3ZUloZkYtLVJhelJUM1R6c1hqM2FkQ296dTFJM3BzV2tLVzc0SEI4ZkxjaXdWMDhXU3FpdUlTNXRKMjE2ZnBjQWVFTkhUVkpac09BX2c2T3dQYUN1ak12Z1ZVY0RHbDRjdDUxTElKMGRWV0d3RXA1VTBhOGs?oc=5"
-      ]
-    },
-    {
-      "review_id": "46c4702555adefffdbf19eee",
-      "stage": "event_attachment",
-      "reason": "article_identity_unproved:https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5",
-      "observed_at": "2026-11-27T22:00:30.344178+00:00",
-      "diagnostics": {
-        "target_event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
-        "target_event_name": "「盗撮のことで揉めている」下着を撮影しようとスマホを女性の胸元に…地方公務員の男（34）を逮捕 札幌市 - 日テレNEWS NNN",
-        "target_source_urls": [
-          "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5"
-        ],
-        "input_urls": [
-          "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5"
-        ],
-        "ai_report": {
-          "relation": "same_event",
-          "event_id": "9dd03701-c4a1-44d2-a6bf-f8279ba02bfd",
-          "confidence": "high",
-          "multi_event": false,
-          "meaningful_change": false,
-          "current_stage": "",
-          "summary": "",
-          "latest": "",
-          "next_watch": "",
-          "completed": false,
-          "completion_quote": "",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5"
-          ],
-          "identity_matches": [
-            {
-              "incoming_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5",
-              "existing_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdGhlS2FzSWRLQ01QQ2VIUmQ2TG1weGhUUE83c3FRaTBLU0FyczZ1RnI3MkllMHB1aWRXYlJ4VnNkWmFZOWtiV2dWUHdaZ3ZvUUgtakk5UVRIRGQ3UTEwS0tZWENORl9GZ3V4RXF4a29FZ3VYODdhNUxJYmphSXVYdENKb19VZTQ?oc=5",
-              "anchors": [
-                {
-                  "kind": "case",
-                  "value": "札幌市中央区",
-                  "existing_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようした疑いで逮捕",
-                  "incoming_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕"
-                },
-                {
-                  "kind": "entity",
-                  "value": "恵庭市の職員",
-                  "existing_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようした疑いで逮捕",
-                  "incoming_quote": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕"
-                }
-              ]
-            }
-          ],
-          "event_identity": {},
-          "progress_evidence": [],
-          "schedules": []
-        },
-        "raw_ai_response": null,
-        "http_status": null,
-        "api_error_code": null,
-        "triage_status": "needs_evidence",
-        "decision_attempts": 2
-      },
-      "event_id": null,
-      "event_name": "札幌市中央区で恵庭市の職員がスマホで女性の下着を盗撮しようとした疑いで逮捕 - HTB 北海道テレビ",
-      "article_urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KakQ5N244b2hLRGxnWnowaTJTdDBkaEVDMm9zZEVQQmpVUkJXWFRodDVnTFROdVFHZk5IS0tTOUI4MjFzSXptZXhqRzBRQVl2YkpiNkU2YU51Zw?oc=5"
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Y0FiZDBtQlVfVnpwalBlcUJaR1IzdHVuU3lPZUY3UXdnMmg0OE5qNzhrZXBRaHZPTW9oYnlBVktpT2Vab0p5cGhNTm5SdWRfWk9kWndwcw?oc=5"
       ]
     }
   ]
